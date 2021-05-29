@@ -1,7 +1,7 @@
 Name: "LOOT_DATABASE"
-RootId: 10326145803342175751
+RootId: 9904375601217783865
 Objects {
-  Id: 127010591469428739
+  Id: 688037899985773358
   Name: "Slots"
   Transform {
     Location {
@@ -14,12 +14,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10326145803342175751
-  ChildIds: 11118363400839175522
-  ChildIds: 7250426815561822048
-  ChildIds: 806538703129686704
-  ChildIds: 11772166106573599905
-  ChildIds: 4613368282004873431
+  ParentId: 9904375601217783865
+  ChildIds: 13429433764089193963
+  ChildIds: 3986427747023420279
+  ChildIds: 5427156116446764528
+  ChildIds: 8681768049265087831
+  ChildIds: 15650504129153391831
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -40,7 +40,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4613368282004873431
+  Id: 15650504129153391831
   Name: "GoldenEgg"
   Transform {
     Location {
@@ -53,7 +53,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 127010591469428739
+  ParentId: 688037899985773358
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -105,7 +105,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11772166106573599905
+  Id: 8681768049265087831
   Name: "Yellow"
   Transform {
     Location {
@@ -118,7 +118,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 127010591469428739
+  ParentId: 688037899985773358
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -170,7 +170,7 @@ Objects {
   }
 }
 Objects {
-  Id: 806538703129686704
+  Id: 5427156116446764528
   Name: "Red"
   Transform {
     Location {
@@ -183,7 +183,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 127010591469428739
+  ParentId: 688037899985773358
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -235,7 +235,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7250426815561822048
+  Id: 3986427747023420279
   Name: "Pink"
   Transform {
     Location {
@@ -248,7 +248,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 127010591469428739
+  ParentId: 688037899985773358
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -300,7 +300,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11118363400839175522
+  Id: 13429433764089193963
   Name: "Teal"
   Transform {
     Location {
@@ -313,7 +313,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 127010591469428739
+  ParentId: 688037899985773358
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"

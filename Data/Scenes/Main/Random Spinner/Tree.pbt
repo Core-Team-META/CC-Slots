@@ -1,7 +1,7 @@
 Name: "Random Spinner"
-RootId: 18093751751331330559
+RootId: 8453249901324603248
 Objects {
-  Id: 10326145803342175751
+  Id: 9904375601217783865
   Name: "SLOT_DATABASE"
   Transform {
     Location {
@@ -14,12 +14,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 18093751751331330559
+  ParentId: 8453249901324603248
   UnregisteredParameters {
     Overrides {
       Name: "cs:Slots"
       ObjectReference {
-        SelfId: 127010591469428739
+        SelfId: 688037899985773358
       }
     }
   }
@@ -44,7 +44,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12102070069637362194
+  Id: 12280971450803704961
   Name: "Networking"
   Transform {
     Location {
@@ -60,7 +60,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 18093751751331330559
+  ParentId: 8453249901324603248
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

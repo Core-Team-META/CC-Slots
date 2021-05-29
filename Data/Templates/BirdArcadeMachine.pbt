@@ -126,7 +126,7 @@ Assets {
           Overrides {
             Name: "cs:Networking"
             ObjectReference {
-              SelfId: 12102070069637362194
+              SelfId: 12280971450803704961
             }
           }
           Overrides {
@@ -340,7 +340,7 @@ Assets {
           Overrides {
             Name: "cs:UIContainer"
             ObjectReference {
-              SelfId: 6899026615953202178
+              SelfId: 7637385122368510837
             }
           }
           Overrides {
@@ -358,13 +358,13 @@ Assets {
           Overrides {
             Name: "cs:SpinButton"
             ObjectReference {
-              SelfId: 569458683727720459
+              SelfId: 17198093286223507946
             }
           }
           Overrides {
             Name: "cs:Networking"
             ObjectReference {
-              SelfId: 12102070069637362194
+              SelfId: 12280971450803704961
             }
           }
           Overrides {

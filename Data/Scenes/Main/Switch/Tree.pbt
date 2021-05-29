@@ -1,7 +1,7 @@
 Name: "Switch"
-RootId: 14781444158084441623
+RootId: 1432241134931721953
 Objects {
-  Id: 13436424758275131289
+  Id: 17692710436272950975
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -16,7 +16,7 @@ Objects {
       Z: 0.0427837707
     }
   }
-  ParentId: 14781444158084441623
+  ParentId: 1432241134931721953
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -66,7 +66,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13180481675149708716
+  Id: 12254987765701536419
   Name: "Gear - generic large solid"
   Transform {
     Location {
@@ -79,7 +79,7 @@ Objects {
       Z: 0.0526740812
     }
   }
-  ParentId: 14781444158084441623
+  ParentId: 1432241134931721953
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
