@@ -110,7 +110,7 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "bp:Game ID"
-            String: "0abf2d/birdslots"
+            String: "a955b0/imagescowboyslots"
           }
           Overrides {
             Name: "bp:Screenshot Index"
