@@ -60,11 +60,11 @@ Objects {
       value {
         Overrides {
           Name: "cs:SlotId"
-          String: "B2"
+          String: "B4"
         }
         Overrides {
           Name: "cs:Theme"
-          String: "Fantasy"
+          String: "Western"
         }
       }
     }
@@ -163,11 +163,11 @@ Objects {
       value {
         Overrides {
           Name: "cs:SlotId"
-          String: "B1"
+          String: "B2"
         }
         Overrides {
           Name: "cs:Theme"
-          String: "Western"
+          String: "Fantasy"
         }
       }
     }
@@ -237,6 +237,10 @@ Objects {
         Overrides {
           Name: "cs:SlotId"
           String: "B1"
+        }
+        Overrides {
+          Name: "cs:Theme"
+          String: "Fantasy"
         }
       }
     }
