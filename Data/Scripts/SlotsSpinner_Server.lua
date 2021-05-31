@@ -130,42 +130,40 @@ function PickItemRandomly(player, betAmount, slotId)
     for _, item in ipairs(items) do
         total = total + item.chance
     end
-    local slot1 = GetRandomSlot(total)
-    local slot2 = GetRandomSlot(total)
-    local slot3 = GetRandomSlot(total)
+    local currentSlots = {}
+    currentSlots[1] = GetRandomSlot(total)
+    currentSlots[2] = GetRandomSlot(total)
+    currentSlots[3] = GetRandomSlot(total)
 
-    newData:SetNetworkedCustomProperty("ItemID", Vector3.New(slot1, slot2, slot3))
+    newData:SetNetworkedCustomProperty("ItemID", Vector3.New(currentSlots[1], currentSlots[2], currentSlots[3]))
     newData:SetNetworkedCustomProperty("playerId", player.id)
     newData:SetNetworkedCustomProperty("spinTime", time() + spinDuration)
 
     Task.Spawn(
         function()
             local betBonus = betAmount * 0.20
-            if slot1 == 5 and slot2 ~= 5 and slot3 ~= 5 then
-                betBonus = betBonus * 2
-            elseif slot1 ~= 5 and slot2 == 5 and slot3 ~= 5 then
-                betBonus = betBonus * 2
-            elseif slot1 ~= 5 and slot2 == 5 and slot3 ~= 5 then
-                betBonus = betBonus * 2
+            local lastResult, matching = nil, 0
+            local winninCard
+            for _, result in ipairs(currentSlots) do
+                if not lastResult then
+                    lastResult = result
+                end
+                if result == lastResult or lastResult == 5 then
+                    matching = matching + 1
+                    winninCard = result
+                end
+                lastResult = result
             end
-            if slot1 == 5 and slot2 == 5 and slot3 ~= 5 then
-                betBonus = betBonus * 5
-            elseif  slot1 ~= 5 and slot2 == 5 and slot3 == 5 then
-                betBonus = betBonus * 5
-            elseif  slot1 == 5 and slot2 == 5 and slot3 ~= 5 then
+            if matching == 2 then
+                betBonus = betBonus * 2
+            elseif matching == 3 then
                 betBonus = betBonus * 5
             end
 
-            if slot1 == slot2 and slot2 == slot3 then
-                player:AddResource(RESOURCE_NAME, CoreMath.Round(items[slot1].reward * betBonus))
-            elseif slot1 == slot2 then
-                local reward = CoreMath.Round((items[slot1].reward * 0.20) * betBonus)
-                player:AddResource(RESOURCE_NAME, reward)
-            elseif slot2 == slot3 then
-                local reward = CoreMath.Round((items[slot2].reward * 0.20) * betBonus)
-                player:AddResource(RESOURCE_NAME, reward)
-            elseif slot1 == slot3 then
-                local reward = CoreMath.Round((items[slot1].reward * 0.20) * betBonus)
+            if matching == 3 then
+                player:AddResource(RESOURCE_NAME, CoreMath.Round(items[winninCard].reward * betBonus))
+            elseif matching == 2 then
+                local reward = CoreMath.Round((items[winninCard].reward * 0.20) * betBonus)
                 player:AddResource(RESOURCE_NAME, reward)
             end
         end,

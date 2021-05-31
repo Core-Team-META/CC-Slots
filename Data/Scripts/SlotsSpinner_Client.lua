@@ -197,19 +197,19 @@ function WrapItems()
                 hasMoved = true
                 itemPosition.z = itemPosition.z - itemTotalSpacing[i]
             end
-          
+
             if hasMoved then
                 item:SetPosition(itemPosition)
             end
             local itemWorldPos = item:GetWorldPosition()
             local isVisable = item:IsVisibleInHierarchy()
-            local shouldPlayerView = itemWorldPos.z < centerPosition.z + (18 * 3) and itemWorldPos.z > centerPosition.z - (18 * 3)
+            local shouldPlayerView =
+                itemWorldPos.z < centerPosition.z + (18 * 3) and itemWorldPos.z > centerPosition.z - (18 * 3)
             if not isVisable and shouldPlayerView then
                 item.visibility = Visibility.FORCE_ON
             elseif isVisable and not shouldPlayerView then
                 item.visibility = Visibility.FORCE_OFF
             end
-         
         end
     end
 end
@@ -234,26 +234,14 @@ function OnNetworkObjectAdded(parentObject, childObject) --
             itemTotalSpacing[i] = itemTotalSpacing[i] + spacing
         end
     end
-    local slot1 = results.x
-    local slot2 = results.y
-    local slot3 = results.z
     currentSlots[1] = results.x
     currentSlots[2] = results.y
     currentSlots[3] = results.z
-    if slot1 == slot2 or slot2 == slot3 or slot1 == slot3 then
-        isWinner = true
-    end
+
     for i = 1, 3 do
-        local itemId = 1
-        if i == 1 then
-            itemId = slot1
-        elseif i == 2 then
-            itemId = slot2
-        elseif i == 3 then
-            itemId = slot3
-        end
+        local itemId = currentSlots[i]
         itemId = CoreMath.Round(itemId)
-        spinDistance[i] = SPIN_SPEED 
+        spinDistance[i] = SPIN_SPEED
         local slotCard = lootCards[i][itemId]
         spinTargetPosition[i] = slotCard.clientUserData.startPosition.z
     end
@@ -267,36 +255,35 @@ function OnNetworkObjectAdded(parentObject, childObject) --
         local msg
         local betAmount = LOCAL_PLAYER.clientUserData.betAmount
         local betBonus = betAmount * 0.20
-        if slot1 == 5 and slot2 ~= 5 and slot3 ~= 5 then
-            betBonus = betBonus * 2
-        elseif slot1 ~= 5 and slot2 == 5 and slot3 ~= 5 then
-            betBonus = betBonus * 2
-        elseif slot1 ~= 5 and slot2 == 5 and slot3 ~= 5 then
-            betBonus = betBonus * 2
+        local lastResult, matching = nil, 0
+        local winningCard
+        for _, result in ipairs(currentSlots) do
+            if not lastResult then
+                lastResult = result
+            end
+            if result == lastResult or lastResult == 5 then
+                matching = matching + 1
+                winningCard = result
+            end
+            lastResult = result
         end
-        if slot1 == 5 and slot2 == 5 and slot3 ~= 5 then
+        if matching == 2 then
+            betBonus = betBonus * 2
+            isWinner = true
+        elseif matching == 3 then
             betBonus = betBonus * 5
-        elseif slot1 ~= 5 and slot2 == 5 and slot3 == 5 then
-            betBonus = betBonus * 5
-        elseif slot1 == 5 and slot2 == 5 and slot3 ~= 5 then
-            betBonus = betBonus * 5
+            isWinner = true
         end
-        if slot1 == slot2 and slot2 == slot3 then
+
+        if matching == 3 then
             msg =
-                "Bet " .. tostring(betAmount) .. " and Won " .. tostring(CoreMath.Round(items[slot1].reward * betBonus))
-        elseif slot1 == slot2 then
-            msg =
-                "Bet " ..
-                tostring(betAmount) .. " and Won " .. tostring(CoreMath.Round((items[slot1].reward * 0.25) * betBonus))
-        elseif slot2 == slot3 then
+                "Bet " .. tostring(betAmount) .. " and Won " .. tostring(CoreMath.Round(items[winningCard].reward * betBonus))
+        elseif matching == 2 then
             msg =
                 "Bet " ..
-                tostring(betAmount) .. " and Won " .. tostring(CoreMath.Round((items[slot2].reward * 0.25) * betBonus))
-        elseif slot1 == slot3 then
-            msg =
-                "Bet " ..
-                tostring(betAmount) .. " and Won " .. tostring(CoreMath.Round((items[slot1].reward * 0.25) * betBonus))
-        else
+                tostring(betAmount) .. " and Won " .. tostring(CoreMath.Round((items[winningCard].reward * 0.25) * betBonus))
+
+            else
             msg = "Bet " .. tostring(betAmount) .. " and Lost "
         end
 
@@ -321,7 +308,7 @@ function Tick(dt)
             if currentSlots[i] == 5 then
                 SLOT_SOUND_BONUS:Play()
                 slotSound[i] = true
-            elseif i > 1 and currentSlots[i - 1] == currentSlots[i] then
+            elseif i > 1 and (currentSlots[i - 1] == currentSlots[i] or currentSlots[i - 1] == 5) then
                 SLOT_SOUND_BONUS:Play()
                 slotSound[i] = true
             else
@@ -385,4 +372,5 @@ for _, network in ipairs(NETWORKING:GetChildren()) do
         network.networkedPropertyChangedEvent:Connect(OnNetworkChanged)
     end
 end
+Task.Wait(1)
 Init()
