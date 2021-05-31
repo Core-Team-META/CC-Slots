@@ -1,6 +1,6 @@
 Assets {
   Id: 314447478209560258
-  Name: "Custom Neon from Sign Font 1 Neon Outline_ H"
+  Name: "Salloon Neo Sign Custom Material"
   PlatformAssetType: 13
   SerializationVersion: 85
   CustomMaterialAsset {

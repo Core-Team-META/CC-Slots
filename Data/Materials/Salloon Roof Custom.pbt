@@ -1,6 +1,6 @@
 Assets {
   Id: 6699089050138548861
-  Name: "Custom Ceiling from Craftsman Roof 01 Peak"
+  Name: "Salloon Roof Custom"
   PlatformAssetType: 13
   SerializationVersion: 85
   CustomMaterialAsset {

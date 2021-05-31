@@ -1,6 +1,6 @@
 Assets {
   Id: 4208141358098749721
-  Name: "Custom Wood Floor Dark_5"
+  Name: "Slot Symbol Border"
   PlatformAssetType: 13
   SerializationVersion: 85
   CustomMaterialAsset {
