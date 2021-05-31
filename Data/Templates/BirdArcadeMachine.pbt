@@ -15,7 +15,7 @@ Assets {
             Z: 1.2196
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 3877198441100997701
         ChildIds: 9576669645920691922
         ChildIds: 1305762752064114430
         Collidable_v2 {
@@ -88,7 +88,11 @@ Assets {
           }
           Overrides {
             Name: "cs:SlotId"
-            String: "ONE"
+            String: "B3"
+          }
+          Overrides {
+            Name: "cs:Theme"
+            String: "Birds"
           }
         }
         Collidable_v2 {
@@ -407,6 +411,12 @@ Assets {
             Name: "cs:CollectAllCoinsMarimba01SFX"
             ObjectReference {
               SubObjectId: 7893141603885424392
+            }
+          }
+          Overrides {
+            Name: "cs:WinLine"
+            ObjectReference {
+              SubObjectId: 7863441272497583118
             }
           }
         }

@@ -24,6 +24,7 @@ local PLAYER_POSITION = script:GetCustomProperty("PlayerPosition"):WaitForObject
 local spinDuration = SETTINGS:GetCustomProperty("SpinDuration") or 1
 local RESOURCE_NAME = SETTINGS:GetCustomProperty("ResourceName")
 local SLOT_ID = SETTINGS:GetCustomProperty("SlotId")
+local THEME_ID = SETTINGS:GetCustomProperty("Theme") or "Fantasy"
 local PlayerData = script:GetCustomProperty("RandomSpinner_Data")
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -32,7 +33,7 @@ local PlayerData = script:GetCustomProperty("RandomSpinner_Data")
 
 local playerSpamPrevent = {}
 local lootCards = {}
-local items = API.GetItems()
+local items = API.GetSlots(THEME_ID)
 local newData = World.SpawnAsset(PlayerData, {parent = NETWORKING})
 local sitPosition = PLAYER_POSITION:GetWorldPosition()
 local sitRotation = PLAYER_POSITION:GetWorldRotation()

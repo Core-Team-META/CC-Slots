@@ -60,7 +60,11 @@ Objects {
       value {
         Overrides {
           Name: "cs:SlotId"
-          String: "B4"
+          String: "B2"
+        }
+        Overrides {
+          Name: "cs:Theme"
+          String: "Fantasy"
         }
       }
     }
@@ -73,17 +77,10 @@ Objects {
   Id: 3503080953070820686
   Name: "BirdArcadeMachine"
   Transform {
-    Location {
-      X: 403.025024
-      Y: -484.721619
-      Z: -16.9112206
-    }
-    Rotation {
-    }
     Scale {
-      X: 1.2196
-      Y: 1.2196
-      Z: 1.2196
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 3877198441100997701
@@ -114,23 +111,6 @@ Objects {
           Rotator {
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.2196
-            Y: 1.2196
-            Z: 1.2196
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 9576669645920691922
-      value {
-        Overrides {
-          Name: "cs:SlotId"
-          String: "B3"
-        }
       }
     }
     TemplateAsset {
@@ -142,17 +122,10 @@ Objects {
   Id: 10030648283478874071
   Name: "BirdArcadeMachine"
   Transform {
-    Location {
-      X: 176.32251
-      Y: -484.721619
-      Z: -16.9112206
-    }
-    Rotation {
-    }
     Scale {
-      X: 1.2196
-      Y: 1.2196
-      Z: 1.2196
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 3877198441100997701
@@ -183,14 +156,6 @@ Objects {
           Rotator {
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.2196
-            Y: 1.2196
-            Z: 1.2196
-          }
-        }
       }
     }
     ParameterOverrideMap {
@@ -198,7 +163,11 @@ Objects {
       value {
         Overrides {
           Name: "cs:SlotId"
-          String: "B2"
+          String: "B1"
+        }
+        Overrides {
+          Name: "cs:Theme"
+          String: "Western"
         }
       }
     }

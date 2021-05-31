@@ -26,6 +26,7 @@ local SLOT_SOUND_BONUS = script:GetCustomProperty("CollectAllCoinsMarimba01SFX")
 
 local SETTINGS = script:GetCustomProperty("Settings"):WaitForObject()
 local SLOT_CAM = script:GetCustomProperty("SlotCam"):WaitForObject()
+local WIN_LINE = script:GetCustomProperty("WinLine"):WaitForObject()
 local SLOT = {}
 SLOT[1] = script:GetCustomProperty("Slot1"):WaitForObject()
 SLOT[2] = script:GetCustomProperty("Slot2"):WaitForObject()
@@ -41,18 +42,19 @@ local TOGGLE_KEYBIND = SETTINGS:GetCustomProperty("KeyBind") or "ability_extra_2
 local SPIN_SPEED = SETTINGS:GetCustomProperty("DefaultSpeed") or 10000
 local RESOURCE_NAME = SETTINGS:GetCustomProperty("ResourceName")
 local SLOT_ID = SETTINGS:GetCustomProperty("SlotId")
+local THEME_ID = SETTINGS:GetCustomProperty("Theme") or "Fantasy"
 ------------------------------------------------------------------------------------------------------------------------
 -- LOCAL VARIABLES
 ------------------------------------------------------------------------------------------------------------------------
 
 local results = Vector3.New(1, 1, 1)
-local items = API.GetItems()
+local items = API.GetSlots(THEME_ID)
 
 local isEnabled = false
 local spacing = 600
 
 local lootCards = {}
-
+local centerPosition = WIN_LINE:GetWorldPosition()
 local verticalScrollPosition = {0, 0, 0}
 local itemTotalSpacing = {0, 0, 0}
 local pivotStartPosition = {}
@@ -156,11 +158,11 @@ end
 
 function InitializeLootCard(lootCard, item, slot)
     if slot == 1 and item.id ~= results.x then
-        item = API.GetItemById(math.random(1, #items))
+        item = API.GetSlotById(THEME_ID, math.random(1, #items))
     elseif slot == 2 and item.id ~= results.y then
-        item = API.GetItemById(math.random(1, #items))
+        item = API.GetSlotById(THEME_ID, math.random(1, #items))
     elseif slot == 3 and item.id ~= results.z then
-        item = API.GetItemById(math.random(1, #items))
+        item = API.GetSlotById(THEME_ID, math.random(1, #items))
     end
 
     local gamePortal = lootCard:GetCustomProperty("GamePortal"):WaitForObject()
@@ -176,7 +178,7 @@ function InitializeLootCard(lootCard, item, slot)
     lootCard.clientUserData.item = item
 end
 
--- Wraps items based on the horizontal position
+-- Wraps items based on the vertical position
 function WrapItems()
     for i, lootCard in pairs(lootCards) do
         local center = verticalScrollPosition[i]
@@ -195,10 +197,19 @@ function WrapItems()
                 hasMoved = true
                 itemPosition.z = itemPosition.z - itemTotalSpacing[i]
             end
-
+          
             if hasMoved then
                 item:SetPosition(itemPosition)
             end
+            local itemWorldPos = item:GetWorldPosition()
+            local isVisable = item:IsVisibleInHierarchy()
+            local shouldPlayerView = itemWorldPos.z < centerPosition.z + (18 * 3) and itemWorldPos.z > centerPosition.z - (18 * 3)
+            if not isVisable and shouldPlayerView then
+                item.visibility = Visibility.FORCE_ON
+            elseif isVisable and not shouldPlayerView then
+                item.visibility = Visibility.FORCE_OFF
+            end
+         
         end
     end
 end
@@ -242,7 +253,7 @@ function OnNetworkObjectAdded(parentObject, childObject) --
             itemId = slot3
         end
         itemId = CoreMath.Round(itemId)
-        spinDistance[i] = SPIN_SPEED --+ (3000 * math.random(1, 5))
+        spinDistance[i] = SPIN_SPEED 
         local slotCard = lootCards[i][itemId]
         spinTargetPosition[i] = slotCard.clientUserData.startPosition.z
     end
@@ -252,7 +263,6 @@ function OnNetworkObjectAdded(parentObject, childObject) --
     winnerSoundHasPlayed = false
     slotSound = {false, false, false}
     BELL:Play()
-    print(player.name)
     if player == LOCAL_PLAYER then
         local msg
         local betAmount = LOCAL_PLAYER.clientUserData.betAmount

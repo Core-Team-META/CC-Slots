@@ -1,6 +1,6 @@
 Assets {
   Id: 16952813177389789887
-  Name: "LootItemsDatabaseAPI"
+  Name: "SlotsDatabaseAPI"
   PlatformAssetType: 3
   TextAsset {
   }

@@ -1,8 +1,736 @@
 Name: "LOOT_DATABASE"
 RootId: 9904375601217783865
 Objects {
+  Id: 4936133151646100131
+  Name: "Birds"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9904375601217783865
+  ChildIds: 12427969281506128650
+  ChildIds: 16782535428312568583
+  ChildIds: 10290695693523027845
+  ChildIds: 9964571208803907861
+  ChildIds: 16627333605171255905
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 9169683292736877109
+    SubobjectId: 14336680307333660137
+    InstanceId: 17771080832798645400
+    TemplateId: 14767819289351633414
+  }
+}
+Objects {
+  Id: 16627333605171255905
+  Name: "Wild Sheriff"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4936133151646100131
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:GamePortal"
+      String: "0abf2d/birdslots"
+    }
+    Overrides {
+      Name: "cs:ScreenshotIndex"
+      Int: 5
+    }
+    Overrides {
+      Name: "cs:Chance"
+      Float: 5
+    }
+    Overrides {
+      Name: "cs:Reward"
+      Int: 250
+    }
+    Overrides {
+      Name: "cs:Match2SFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+    Overrides {
+      Name: "cs:Match3SFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Basic Sniper_1"
+  }
+  InstanceHistory {
+    SelfId: 1701057616709612719
+    SubobjectId: 12550408989901159283
+    InstanceId: 17771080832798645400
+    TemplateId: 14767819289351633414
+  }
+}
+Objects {
+  Id: 9964571208803907861
+  Name: "Guns"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4936133151646100131
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:GamePortal"
+      String: "0abf2d/birdslots"
+    }
+    Overrides {
+      Name: "cs:ScreenshotIndex"
+      Int: 4
+    }
+    Overrides {
+      Name: "cs:Chance"
+      Float: 10
+    }
+    Overrides {
+      Name: "cs:Reward"
+      Int: 100
+    }
+    Overrides {
+      Name: "cs:Match2SFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+    Overrides {
+      Name: "cs:Match3SFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Basic Sniper_2"
+  }
+  InstanceHistory {
+    SelfId: 1701057616709612719
+    SubobjectId: 12550408989901159283
+    InstanceId: 17771080832798645400
+    TemplateId: 14767819289351633414
+  }
+}
+Objects {
+  Id: 10290695693523027845
+  Name: "Canteen"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4936133151646100131
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:GamePortal"
+      String: "0abf2d/birdslots"
+    }
+    Overrides {
+      Name: "cs:ScreenshotIndex"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:Chance"
+      Float: 15
+    }
+    Overrides {
+      Name: "cs:Reward"
+      Int: 50
+    }
+    Overrides {
+      Name: "cs:Match2SFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+    Overrides {
+      Name: "cs:Match3SFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Even Cooler Gun_1"
+  }
+  InstanceHistory {
+    SelfId: 18043899592095658405
+    SubobjectId: 4890789954066775673
+    InstanceId: 17771080832798645400
+    TemplateId: 14767819289351633414
+  }
+}
+Objects {
+  Id: 16782535428312568583
+  Name: "Cactus"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4936133151646100131
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:GamePortal"
+      String: "0abf2d/birdslots"
+    }
+    Overrides {
+      Name: "cs:ScreenshotIndex"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:Chance"
+      Float: 20
+    }
+    Overrides {
+      Name: "cs:Reward"
+      Int: 25
+    }
+    Overrides {
+      Name: "cs:Match2SFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+    Overrides {
+      Name: "cs:Match3SFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Another Cool Gun_1"
+  }
+  InstanceHistory {
+    SelfId: 16490284211346344671
+    SubobjectId: 6732352053841462531
+    InstanceId: 17771080832798645400
+    TemplateId: 14767819289351633414
+  }
+}
+Objects {
+  Id: 12427969281506128650
+  Name: "Boot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4936133151646100131
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:GamePortal"
+      String: "0abf2d/birdslots"
+    }
+    Overrides {
+      Name: "cs:ScreenshotIndex"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:Chance"
+      Float: 25
+    }
+    Overrides {
+      Name: "cs:Reward"
+      Int: 15
+    }
+    Overrides {
+      Name: "cs:Match2SFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+    Overrides {
+      Name: "cs:Match3SFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Cool Gun_1"
+  }
+  InstanceHistory {
+    SelfId: 8219657377845172806
+    SubobjectId: 14674216655756645786
+    InstanceId: 17771080832798645400
+    TemplateId: 14767819289351633414
+  }
+}
+Objects {
+  Id: 11122983215502595586
+  Name: "Western"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9904375601217783865
+  ChildIds: 16906953365676031498
+  ChildIds: 7078914735219292397
+  ChildIds: 2050290031838906093
+  ChildIds: 16144456119984321757
+  ChildIds: 14935117657472495938
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 9169683292736877109
+    SubobjectId: 14336680307333660137
+    InstanceId: 17771080832798645400
+    TemplateId: 14767819289351633414
+  }
+}
+Objects {
+  Id: 14935117657472495938
+  Name: "Wild Sheriff"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11122983215502595586
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:GamePortal"
+      String: "a955b0/imagescowboyslots"
+    }
+    Overrides {
+      Name: "cs:ScreenshotIndex"
+      Int: 5
+    }
+    Overrides {
+      Name: "cs:Chance"
+      Float: 5
+    }
+    Overrides {
+      Name: "cs:Reward"
+      Int: 250
+    }
+    Overrides {
+      Name: "cs:Match2SFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+    Overrides {
+      Name: "cs:Match3SFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Wild Sheriff"
+  }
+  InstanceHistory {
+    SelfId: 1701057616709612719
+    SubobjectId: 12550408989901159283
+    InstanceId: 17771080832798645400
+    TemplateId: 14767819289351633414
+  }
+}
+Objects {
+  Id: 16144456119984321757
+  Name: "Guns"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11122983215502595586
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:GamePortal"
+      String: "a955b0/imagescowboyslots"
+    }
+    Overrides {
+      Name: "cs:ScreenshotIndex"
+      Int: 4
+    }
+    Overrides {
+      Name: "cs:Chance"
+      Float: 10
+    }
+    Overrides {
+      Name: "cs:Reward"
+      Int: 100
+    }
+    Overrides {
+      Name: "cs:Match2SFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+    Overrides {
+      Name: "cs:Match3SFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Guns"
+  }
+  InstanceHistory {
+    SelfId: 1701057616709612719
+    SubobjectId: 12550408989901159283
+    InstanceId: 17771080832798645400
+    TemplateId: 14767819289351633414
+  }
+}
+Objects {
+  Id: 2050290031838906093
+  Name: "Canteen"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11122983215502595586
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:GamePortal"
+      String: "a955b0/imagescowboyslots"
+    }
+    Overrides {
+      Name: "cs:ScreenshotIndex"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:Chance"
+      Float: 15
+    }
+    Overrides {
+      Name: "cs:Reward"
+      Int: 50
+    }
+    Overrides {
+      Name: "cs:Match2SFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+    Overrides {
+      Name: "cs:Match3SFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Canteen"
+  }
+  InstanceHistory {
+    SelfId: 18043899592095658405
+    SubobjectId: 4890789954066775673
+    InstanceId: 17771080832798645400
+    TemplateId: 14767819289351633414
+  }
+}
+Objects {
+  Id: 7078914735219292397
+  Name: "Cactus"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11122983215502595586
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:GamePortal"
+      String: "a955b0/imagescowboyslots"
+    }
+    Overrides {
+      Name: "cs:ScreenshotIndex"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:Chance"
+      Float: 20
+    }
+    Overrides {
+      Name: "cs:Reward"
+      Int: 25
+    }
+    Overrides {
+      Name: "cs:Match2SFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+    Overrides {
+      Name: "cs:Match3SFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Cactus"
+  }
+  InstanceHistory {
+    SelfId: 16490284211346344671
+    SubobjectId: 6732352053841462531
+    InstanceId: 17771080832798645400
+    TemplateId: 14767819289351633414
+  }
+}
+Objects {
+  Id: 16906953365676031498
+  Name: "Boot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11122983215502595586
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:GamePortal"
+      String: "a955b0/imagescowboyslots"
+    }
+    Overrides {
+      Name: "cs:ScreenshotIndex"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:Chance"
+      Float: 25
+    }
+    Overrides {
+      Name: "cs:Reward"
+      Int: 15
+    }
+    Overrides {
+      Name: "cs:Match2SFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+    Overrides {
+      Name: "cs:Match3SFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Boot"
+  }
+  InstanceHistory {
+    SelfId: 8219657377845172806
+    SubobjectId: 14674216655756645786
+    InstanceId: 17771080832798645400
+    TemplateId: 14767819289351633414
+  }
+}
+Objects {
   Id: 688037899985773358
-  Name: "Slots"
+  Name: "Fantasy"
   Transform {
     Location {
     }
@@ -41,7 +769,7 @@ Objects {
 }
 Objects {
   Id: 15650504129153391831
-  Name: "GoldenEgg"
+  Name: "Wild"
   Transform {
     Location {
     }
@@ -95,7 +823,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Basic Sniper_1"
+    FilePartitionName: "Wild"
   }
   InstanceHistory {
     SelfId: 1701057616709612719
@@ -106,7 +834,7 @@ Objects {
 }
 Objects {
   Id: 8681768049265087831
-  Name: "Yellow"
+  Name: "Rabbit"
   Transform {
     Location {
     }
@@ -160,7 +888,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Basic Sniper_2"
+    FilePartitionName: "Rabbit"
   }
   InstanceHistory {
     SelfId: 1701057616709612719
@@ -171,7 +899,7 @@ Objects {
 }
 Objects {
   Id: 5427156116446764528
-  Name: "Red"
+  Name: "Gnome"
   Transform {
     Location {
     }
@@ -225,7 +953,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Even Cooler Gun_1"
+    FilePartitionName: "Gnome"
   }
   InstanceHistory {
     SelfId: 18043899592095658405
@@ -236,7 +964,7 @@ Objects {
 }
 Objects {
   Id: 3986427747023420279
-  Name: "Pink"
+  Name: "Elf"
   Transform {
     Location {
     }
@@ -290,7 +1018,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Another Cool Gun_1"
+    FilePartitionName: "Elf"
   }
   InstanceHistory {
     SelfId: 16490284211346344671
@@ -301,7 +1029,7 @@ Objects {
 }
 Objects {
   Id: 13429433764089193963
-  Name: "Teal"
+  Name: "Dragon"
   Transform {
     Location {
     }
@@ -355,7 +1083,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Cool Gun_1"
+    FilePartitionName: "Dragon"
   }
   InstanceHistory {
     SelfId: 8219657377845172806
