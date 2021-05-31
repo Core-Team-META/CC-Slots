@@ -785,7 +785,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
-      String: "a955b0/imagescowboyslots"
+      String: "b6aa76/buck-slots-enchanted-2"
     }
     Overrides {
       Name: "cs:ScreenshotIndex"
@@ -850,7 +850,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
-      String: "a955b0/imagescowboyslots"
+      String: "b6aa76/buck-slots-enchanted-2"
     }
     Overrides {
       Name: "cs:ScreenshotIndex"
@@ -915,7 +915,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
-      String: "a955b0/imagescowboyslots"
+      String: "b6aa76/buck-slots-enchanted-2"
     }
     Overrides {
       Name: "cs:ScreenshotIndex"
@@ -980,7 +980,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
-      String: "a955b0/imagescowboyslots"
+      String: "b6aa76/buck-slots-enchanted-2"
     }
     Overrides {
       Name: "cs:ScreenshotIndex"
@@ -1045,7 +1045,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
-      String: "a955b0/imagescowboyslots"
+      String: "b6aa76/buck-slots-enchanted-2"
     }
     Overrides {
       Name: "cs:ScreenshotIndex"
