@@ -99,6 +99,7 @@ function OnInteracted(trigger, object)
         object:SetWorldPosition(sitPosition)
         object:SetWorldRotation(sitRotation)
         object.animationStance = "unarmed_sit_chair_upright"
+        object.maxJumpCount = 0
     end
 end
 
@@ -118,6 +119,7 @@ function OnPlayerQuit(player, slotId)
         player.movementControlMode = MovementControlMode.LOOK_RELATIVE
         player.animationStance = "unarmed_stance"
         player:SetWorldPosition(standPosition)
+        player.maxJumpCount = 1
     end
 end
 
