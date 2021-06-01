@@ -23,6 +23,7 @@ function Initialize()
             slotEntry.id = index
             slotEntry.chance = item:GetCustomProperty("Chance")
             slotEntry.reward = item:GetCustomProperty("Reward")
+            slotEntry.isWild = item:GetCustomProperty("isWild")
             slotsDatabase[theme.name][index] = slotEntry
         end
     end

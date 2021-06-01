@@ -72,6 +72,10 @@ Objects {
       Int: 250
     }
     Overrides {
+      Name: "cs:isWild"
+      Bool: false
+    }
+    Overrides {
       Name: "cs:Match2SFX"
       AssetReference {
         Id: 841534158063459245
@@ -135,6 +139,10 @@ Objects {
     Overrides {
       Name: "cs:Reward"
       Int: 100
+    }
+    Overrides {
+      Name: "cs:isWild"
+      Bool: false
     }
     Overrides {
       Name: "cs:Match2SFX"
@@ -202,6 +210,10 @@ Objects {
       Int: 50
     }
     Overrides {
+      Name: "cs:isWild"
+      Bool: false
+    }
+    Overrides {
       Name: "cs:Match2SFX"
       AssetReference {
         Id: 841534158063459245
@@ -267,6 +279,10 @@ Objects {
       Int: 25
     }
     Overrides {
+      Name: "cs:isWild"
+      Bool: false
+    }
+    Overrides {
       Name: "cs:Match2SFX"
       AssetReference {
         Id: 841534158063459245
@@ -330,6 +346,10 @@ Objects {
     Overrides {
       Name: "cs:Reward"
       Int: 15
+    }
+    Overrides {
+      Name: "cs:isWild"
+      Bool: false
     }
     Overrides {
       Name: "cs:Match2SFX"
@@ -436,6 +456,10 @@ Objects {
       Int: 250
     }
     Overrides {
+      Name: "cs:isWild"
+      Bool: false
+    }
+    Overrides {
       Name: "cs:Match2SFX"
       AssetReference {
         Id: 841534158063459245
@@ -499,6 +523,10 @@ Objects {
     Overrides {
       Name: "cs:Reward"
       Int: 100
+    }
+    Overrides {
+      Name: "cs:isWild"
+      Bool: false
     }
     Overrides {
       Name: "cs:Match2SFX"
@@ -566,6 +594,10 @@ Objects {
       Int: 50
     }
     Overrides {
+      Name: "cs:isWild"
+      Bool: false
+    }
+    Overrides {
       Name: "cs:Match2SFX"
       AssetReference {
         Id: 841534158063459245
@@ -631,6 +663,10 @@ Objects {
       Int: 25
     }
     Overrides {
+      Name: "cs:isWild"
+      Bool: false
+    }
+    Overrides {
       Name: "cs:Match2SFX"
       AssetReference {
         Id: 841534158063459245
@@ -694,6 +730,10 @@ Objects {
     Overrides {
       Name: "cs:Reward"
       Int: 15
+    }
+    Overrides {
+      Name: "cs:isWild"
+      Bool: false
     }
     Overrides {
       Name: "cs:Match2SFX"
@@ -805,6 +845,10 @@ Objects {
       Int: 100
     }
     Overrides {
+      Name: "cs:isWild"
+      Bool: false
+    }
+    Overrides {
       Name: "cs:Match2SFX"
       AssetReference {
         Id: 841534158063459245
@@ -868,6 +912,10 @@ Objects {
     Overrides {
       Name: "cs:Reward"
       Int: 75
+    }
+    Overrides {
+      Name: "cs:isWild"
+      Bool: false
     }
     Overrides {
       Name: "cs:Match2SFX"
@@ -935,6 +983,10 @@ Objects {
       Int: 45
     }
     Overrides {
+      Name: "cs:isWild"
+      Bool: false
+    }
+    Overrides {
       Name: "cs:Match2SFX"
       AssetReference {
         Id: 841534158063459245
@@ -998,6 +1050,10 @@ Objects {
     Overrides {
       Name: "cs:Reward"
       Int: 40
+    }
+    Overrides {
+      Name: "cs:isWild"
+      Bool: false
     }
     Overrides {
       Name: "cs:Match2SFX"
@@ -1065,6 +1121,10 @@ Objects {
       Int: 35
     }
     Overrides {
+      Name: "cs:isWild"
+      Bool: false
+    }
+    Overrides {
       Name: "cs:Match2SFX"
       AssetReference {
         Id: 841534158063459245
@@ -1128,6 +1188,10 @@ Objects {
     Overrides {
       Name: "cs:Reward"
       Int: 30
+    }
+    Overrides {
+      Name: "cs:isWild"
+      Bool: true
     }
     Overrides {
       Name: "cs:Match2SFX"
@@ -1195,6 +1259,10 @@ Objects {
       Int: 25
     }
     Overrides {
+      Name: "cs:isWild"
+      Bool: false
+    }
+    Overrides {
       Name: "cs:Match2SFX"
       AssetReference {
         Id: 841534158063459245
@@ -1258,6 +1326,10 @@ Objects {
     Overrides {
       Name: "cs:Reward"
       Int: 20
+    }
+    Overrides {
+      Name: "cs:isWild"
+      Bool: false
     }
     Overrides {
       Name: "cs:Match2SFX"
@@ -1325,6 +1397,10 @@ Objects {
       Int: 15
     }
     Overrides {
+      Name: "cs:isWild"
+      Bool: false
+    }
+    Overrides {
       Name: "cs:Match2SFX"
       AssetReference {
         Id: 841534158063459245
@@ -1388,6 +1464,10 @@ Objects {
     Overrides {
       Name: "cs:Reward"
       Int: 10
+    }
+    Overrides {
+      Name: "cs:isWild"
+      Bool: false
     }
     Overrides {
       Name: "cs:Match2SFX"
