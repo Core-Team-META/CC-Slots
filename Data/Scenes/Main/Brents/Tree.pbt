@@ -82,6 +82,19 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 15670674726375095123
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1.59653604
+            Y: 9.81875134
+            Z: -24.233469
+          }
+        }
+      }
+    }
     TemplateAsset {
       Id: 17265156502920242
     }
@@ -106,15 +119,6 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 5800025967639114438
-      value {
-        Overrides {
-          Name: "Name"
-          String: "SpinButton"
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 8019821520510676024
       value {
         Overrides {
@@ -134,31 +138,6 @@ Objects {
           Rotator {
             Yaw: 90
           }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.2196
-            Y: 1.2196
-            Z: 1.2196
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 9576669645920691922
-      value {
-        Overrides {
-          Name: "cs:SlotId"
-          String: "W4"
-        }
-        Overrides {
-          Name: "cs:MinBet"
-          Int: 100
-        }
-        Overrides {
-          Name: "cs:MaxBet"
-          Int: 1000
         }
       }
     }
