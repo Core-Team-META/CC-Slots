@@ -192,6 +192,7 @@ Objects {
   Name: "Barstool"
   Transform {
     Location {
+      X: -18.720459
     }
     Rotation {
     }
@@ -231,6 +232,7 @@ Objects {
   Name: "Humanoid 2 Rig"
   Transform {
     Location {
+      X: 57.5091553
       Y: 7.94824219
       Z: 105
     }
@@ -551,8 +553,9 @@ Objects {
   Name: "Player Position"
   Transform {
     Location {
-      X: 71.7110596
-      Z: 120.195709
+      X: 38.7886963
+      Y: 7.94824219
+      Z: 105
     }
     Rotation {
     }
@@ -658,7 +661,7 @@ Objects {
   ChildIds: 309538023655698780
   ChildIds: 13355405688662092936
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -2606,7 +2609,7 @@ Objects {
     }
   }
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
