@@ -242,9 +242,7 @@ function OnNetworkObjectAdded(parentObject, childObject) --
     currentSlots[1] = results.x
     currentSlots[2] = results.y
     currentSlots[3] = results.z
-    if slot1 == slot2 or slot2 == slot3 or slot1 == slot3 then
-        isWinner = true
-    end
+ 
     for i = 1, 3 do
         local itemId = 1
         if i == 1 then
@@ -268,50 +266,11 @@ function OnNetworkObjectAdded(parentObject, childObject) --
     if player == LOCAL_PLAYER then
         local msg
         local betAmount = LOCAL_PLAYER.clientUserData.betAmount
-        local betBonus = betAmount * 0.20
-        --
-        --[[if slot1 == 5 and slot2 ~= 5 and slot3 ~= 5 then
-            betBonus = betBonus * 2
-        elseif slot1 ~= 5 and slot2 == 5 and slot3 ~= 5 then
-            betBonus = betBonus * 2
-        elseif slot1 ~= 5 and slot2 == 5 and slot3 ~= 5 then
-            betBonus = betBonus * 2
-        end]] if
-            slot1 == 5 and slot2 == 5 and slot3 ~= 5
-         then
-            betBonus = betBonus * 5
-        elseif slot1 ~= 5 and slot2 == 5 and slot3 == 5 then
-            betBonus = betBonus * 5
-        elseif slot1 == 5 and slot2 == 5 and slot3 ~= 5 then
-            betBonus = betBonus * 5
-        end
-        if slot1 == slot2 and slot2 == slot3 then
-            msg =
-                "Bet " .. tostring(betAmount) .. " and Won " .. tostring(CoreMath.Round(items[slot1].reward * betBonus))
-        elseif slot1 == slot2 and items[slot3].isWild then
-            msg =
-                "Bet " ..
-                tostring(betAmount) .. " and Won " .. tostring(CoreMath.Round((items[slot1].reward) * betBonus))
-        elseif slot2 == slot3 and items[slot1].isWild then
-            msg =
-                "Bet " ..
-                tostring(betAmount) .. " and Won " .. tostring(CoreMath.Round((items[slot2].reward) * betBonus))
-        elseif slot1 == slot3 and items[slot2].isWild then
-            msg =
-                "Bet " ..
-                tostring(betAmount) .. " and Won " .. tostring(CoreMath.Round((items[slot1].reward) * betBonus))
-        elseif items[slot2].isWild and slot2 == slot3 then
-            msg =
-                "Bet " ..
-                tostring(betAmount) .. " and Won " .. tostring(CoreMath.Round((items[slot1].reward) * betBonus))
-        elseif items[slot1].isWild and slot1 == slot2 then
-            msg =
-                "Bet " ..
-                tostring(betAmount) .. " and Won " .. tostring(CoreMath.Round((items[slot3].reward) * betBonus))
-        elseif items[slot1].isWild and slot1 == slot3 then
-            msg =
-                "Bet " ..
-                tostring(betAmount) .. " and Won " .. tostring(CoreMath.Round((items[slot2].reward) * betBonus))
+        local reward
+        isWinner, reward = API.CheckWin(slot1, slot2, slot3, betAmount, items)
+
+        if isWinner then
+            msg = "Bet " .. tostring(betAmount) .. " and Won " .. tostring(reward)
         else
             msg = "Bet " .. tostring(betAmount) .. " and Lost "
         end
