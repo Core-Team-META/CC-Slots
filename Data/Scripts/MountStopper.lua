@@ -2,7 +2,9 @@ local trigger = script.parent
 
 function OnBeginOverlap(trigger, object)
     if object and Object.IsValid(object) and object:IsA("Player") then
+        object:SetMounted(false)
         object.canMount = false
+        
     end
 end
 

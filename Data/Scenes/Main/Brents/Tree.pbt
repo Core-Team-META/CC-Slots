@@ -1,6 +1,173 @@
 Name: "Brents"
 RootId: 4675025735314061901
 Objects {
+  Id: 13420275938363672477
+  Name: "WesternArcadeMachine"
+  Transform {
+    Location {
+      X: 1255
+      Y: -673
+    }
+    Rotation {
+      Yaw: 89.9999924
+    }
+    Scale {
+      X: 1.2196
+      Y: 1.2196
+      Z: 1.2196
+    }
+  }
+  ParentId: 4675025735314061901
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5800025967639114438
+      value {
+        Overrides {
+          Name: "Name"
+          String: "SpinButton"
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8019821520510676024
+      value {
+        Overrides {
+          Name: "Name"
+          String: "WesternArcadeMachine"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1255
+            Y: -469
+            Z: -17
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 89.9999847
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.2196
+            Y: 1.2196
+            Z: 1.2196
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9576669645920691922
+      value {
+        Overrides {
+          Name: "cs:SlotId"
+          String: "W5"
+        }
+        Overrides {
+          Name: "cs:MinBet"
+          Int: 100
+        }
+        Overrides {
+          Name: "cs:MaxBet"
+          Int: 1000
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17265156502920242
+    }
+  }
+}
+Objects {
+  Id: 4256872059160934724
+  Name: "WesternArcadeMachine"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4675025735314061901
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5800025967639114438
+      value {
+        Overrides {
+          Name: "Name"
+          String: "SpinButton"
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8019821520510676024
+      value {
+        Overrides {
+          Name: "Name"
+          String: "WesternArcadeMachine"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1255
+            Y: -673
+            Z: -17
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 90
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.2196
+            Y: 1.2196
+            Z: 1.2196
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9576669645920691922
+      value {
+        Overrides {
+          Name: "cs:SlotId"
+          String: "W4"
+        }
+        Overrides {
+          Name: "cs:MinBet"
+          Int: 100
+        }
+        Overrides {
+          Name: "cs:MaxBet"
+          Int: 1000
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17265156502920242
+    }
+  }
+}
+Objects {
   Id: 4839566590110050637
   Name: "Mount "
   Transform {

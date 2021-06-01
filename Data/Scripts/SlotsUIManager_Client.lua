@@ -14,22 +14,16 @@ local QUIT_BUTTON = script:GetCustomProperty("QUIT_BUTTON"):WaitForObject()
 local SETTINGS = script:GetCustomProperty("Settings"):WaitForObject()
 
 local RESOURCE_NAME = SETTINGS:GetCustomProperty("ResourceName")
-local minBet = SETTINGS:GetCustomProperty("MinBet") or 5
-local maxBet = SETTINGS:GetCustomProperty("MaxBet") or 100
 local PastBets = script:GetCustomProperty("PastBets"):WaitForObject()
 
 local pastBets = {}
 
-if minBet < 5 then
-    minBet = 5
-    warn("MinBet must be greater than 5")
-end
-
-LOCAL_PLAYER.clientUserData.betAmount = minBet
 LOCAL_PLAYER.clientUserData.notification = {}
 
 function OnButtonClick(button)
     local currentBet = LOCAL_PLAYER.clientUserData.betAmount
+    local minBet = LOCAL_PLAYER.clientUserData.minBet
+    local maxBet = LOCAL_PLAYER.clientUserData.maxBet
     if button == ReduceButton then
         if minBet < currentBet then
             LOCAL_PLAYER.clientUserData.betAmount = currentBet - 1
@@ -73,6 +67,8 @@ function Tick()
             pastBets[i].text = v
         end
     end
+ 
+    
 end
 
 for i, bet in ipairs(PastBets:GetChildren()) do
@@ -80,8 +76,23 @@ for i, bet in ipairs(PastBets:GetChildren()) do
     pastBets[index] = bet
 end
 
+
+function OnBindingPressed(player, keybind)
+    if keybind == "ability_primary" then
+        local hitResult = UI.GetCursorHitResult()
+        if hitResult and hitResult.other and hitResult.other.name == "SpinButton" then
+            local slotId = LOCAL_PLAYER.clientUserData.slotId
+            if slotId then
+                Events.BroadcastToServer(API.Broadcasts.spin, LOCAL_PLAYER.clientUserData.betAmount or 1, slotId)
+            end
+        end
+    end
+end
+
 ReduceButton.clickedEvent:Connect(OnButtonClick)
 IncreaseButton.clickedEvent:Connect(OnButtonClick)
 MinBet.clickedEvent:Connect(OnButtonClick)
 MaxBet.clickedEvent:Connect(OnButtonClick)
 QUIT_BUTTON.clickedEvent:Connect(OnButtonClick)
+LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)
+

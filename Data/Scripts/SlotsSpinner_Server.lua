@@ -23,7 +23,7 @@ local PLAYER_POSITION = script:GetCustomProperty("PlayerPosition"):WaitForObject
 
 local spinDuration = SETTINGS:GetCustomProperty("SpinDuration") or 1
 local RESOURCE_NAME = SETTINGS:GetCustomProperty("ResourceName")
-local SLOT_ID = SETTINGS:GetCustomProperty("SlotId")
+local SLOT_ID = SETTINGS.id--SETTINGS:GetCustomProperty("SlotId")
 local THEME_ID = SETTINGS:GetCustomProperty("Theme") or "Fantasy"
 local PlayerData = script:GetCustomProperty("RandomSpinner_Data")
 
@@ -151,9 +151,9 @@ function PickItemRandomly(player, betAmount, slotId)
 
             if slot1 == slot2 and slot2 == slot3 then
                 player:AddResource(RESOURCE_NAME, CoreMath.Round(items[slot1].reward * betBonus))
-            elseif slot1 == slot2 and slot3 == 5 then
+            elseif slot1 == slot2 and items[slot3].isWild then
                 player:AddResource(RESOURCE_NAME, CoreMath.Round(items[slot1].reward * betBonus))
-            elseif slot2 == slot3 and slot1 == 5 then
+            elseif slot2 == slot3 and items[slot1].isWild then
                 player:AddResource(RESOURCE_NAME, CoreMath.Round(items[slot2].reward * betBonus))
             elseif slot1 == slot3 and items[slot2].isWild then
                 player:AddResource(RESOURCE_NAME, CoreMath.Round(items[slot1].reward * betBonus))

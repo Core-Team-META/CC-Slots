@@ -73,7 +73,7 @@ Objects {
     }
     Overrides {
       Name: "cs:isWild"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:Match2SFX"
@@ -457,7 +457,7 @@ Objects {
     }
     Overrides {
       Name: "cs:isWild"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:Match2SFX"

@@ -1829,19 +1829,6 @@ Objects {
         }
       }
     }
-    ParameterOverrideMap {
-      key: 9576669645920691922
-      value {
-        Overrides {
-          Name: "cs:SlotId"
-          String: "B2"
-        }
-        Overrides {
-          Name: "cs:Theme"
-          String: "Fantasy"
-        }
-      }
-    }
     TemplateAsset {
       Id: 16937292603236468724
     }

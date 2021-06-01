@@ -88,11 +88,11 @@ Assets {
           }
           Overrides {
             Name: "cs:SlotId"
-            String: "B3"
+            String: "B2"
           }
           Overrides {
             Name: "cs:Theme"
-            String: "Birds"
+            String: "Fantasy"
           }
         }
         Collidable_v2 {
@@ -2155,7 +2155,7 @@ Assets {
       }
       Objects {
         Id: 5800025967639114438
-        Name: "Cylinder"
+        Name: "SpinButton"
         Transform {
           Location {
             X: 57.5102921

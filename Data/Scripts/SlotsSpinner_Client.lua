@@ -41,15 +41,17 @@ local SPIN_DURATION = SETTINGS:GetCustomProperty("SpinDuration") or 1
 local TOGGLE_KEYBIND = SETTINGS:GetCustomProperty("KeyBind") or "ability_extra_24"
 local SPIN_SPEED = SETTINGS:GetCustomProperty("DefaultSpeed") or 10000
 local RESOURCE_NAME = SETTINGS:GetCustomProperty("ResourceName")
-local SLOT_ID = SETTINGS:GetCustomProperty("SlotId")
+local SLOT_ID = SETTINGS.id
+--SETTINGS:GetCustomProperty("SlotId")
 local THEME_ID = SETTINGS:GetCustomProperty("Theme") or "Fantasy"
+local MIN_BET = SETTINGS:GetCustomProperty("MinBet") or 5
+local MAX_BET = SETTINGS:GetCustomProperty("MaxBet") or 100
 ------------------------------------------------------------------------------------------------------------------------
 -- LOCAL VARIABLES
 ------------------------------------------------------------------------------------------------------------------------
 
 local results = Vector3.New(1, 1, 1)
 local items = API.GetSlots(THEME_ID)
-
 local isEnabled = false
 local spacing = 600
 
@@ -286,27 +288,27 @@ function OnNetworkObjectAdded(parentObject, childObject) --
         if slot1 == slot2 and slot2 == slot3 then
             msg =
                 "Bet " .. tostring(betAmount) .. " and Won " .. tostring(CoreMath.Round(items[slot1].reward * betBonus))
-        elseif slot1 == slot2 and slot3 == 5 then
+        elseif slot1 == slot2 and items[slot3].isWild then
             msg =
                 "Bet " ..
                 tostring(betAmount) .. " and Won " .. tostring(CoreMath.Round((items[slot1].reward) * betBonus))
-        elseif slot2 == slot3 and slot1 == 5 then
+        elseif slot2 == slot3 and items[slot1].isWild then
             msg =
                 "Bet " ..
                 tostring(betAmount) .. " and Won " .. tostring(CoreMath.Round((items[slot2].reward) * betBonus))
-        elseif slot1 == slot3 and slot2 == 5 then
+        elseif slot1 == slot3 and items[slot2].isWild then
             msg =
                 "Bet " ..
                 tostring(betAmount) .. " and Won " .. tostring(CoreMath.Round((items[slot1].reward) * betBonus))
-        elseif slot2 == 5 and slot2 == slot3 then
+        elseif items[slot2].isWild and slot2 == slot3 then
             msg =
                 "Bet " ..
                 tostring(betAmount) .. " and Won " .. tostring(CoreMath.Round((items[slot1].reward) * betBonus))
-        elseif slot1 == 5 and slot1 == slot2 then
+        elseif items[slot1].isWild and slot1 == slot2 then
             msg =
                 "Bet " ..
                 tostring(betAmount) .. " and Won " .. tostring(CoreMath.Round((items[slot3].reward) * betBonus))
-        elseif slot1 == 5 and slot1 == slot3 then
+        elseif items[slot1].isWild and slot1 == slot3 then
             msg =
                 "Bet " ..
                 tostring(betAmount) .. " and Won " .. tostring(CoreMath.Round((items[slot2].reward) * betBonus))
@@ -377,6 +379,9 @@ function OnNetworkChanged(object, string)
         end
         if currentPlayer and currentPlayer == LOCAL_PLAYER then
             LOCAL_PLAYER.clientUserData.slotId = SLOT_ID
+            LOCAL_PLAYER.clientUserData.betAmount = MIN_BET
+            LOCAL_PLAYER.clientUserData.minBet = MIN_BET
+            LOCAL_PLAYER.clientUserData.maxBet = MAX_BET
             Show()
         end
     elseif string == "spinTime" then
