@@ -39,6 +39,7 @@ local sitPosition = PLAYER_POSITION:GetWorldPosition()
 local sitRotation = PLAYER_POSITION:GetWorldRotation()
 local standPosition
 newData.name = SLOT_ID
+
 if spinDuration < 1 then
     spinDuration = 1
     warn("Spin Duration must be great than 1")
@@ -125,7 +126,7 @@ function PickItemRandomly(player, betAmount, slotId)
         return
     end
     player:RemoveResource(RESOURCE_NAME, betAmount)
-    playerSpamPrevent[player] = time() + spinDuration + 0.5
+    playerSpamPrevent[player] = time() + spinDuration + 0.1
     local total = 0
     for _, item in ipairs(items) do
         total = total + item.chance
@@ -140,29 +141,9 @@ function PickItemRandomly(player, betAmount, slotId)
 
     Task.Spawn(
         function()
-            local betBonus = betAmount * 0.20
-            if slot1 == 5 and slot2 == 5 and slot3 ~= 5 then
-                betBonus = betBonus * 5
-            elseif slot1 ~= 5 and slot2 == 5 and slot3 == 5 then
-                betBonus = betBonus * 5
-            elseif slot1 == 5 and slot2 == 5 and slot3 ~= 5 then
-                betBonus = betBonus * 5
-            end
-
-            if slot1 == slot2 and slot2 == slot3 then
-                player:AddResource(RESOURCE_NAME, CoreMath.Round(items[slot1].reward * betBonus))
-            elseif slot1 == slot2 and items[slot3].isWild then
-                player:AddResource(RESOURCE_NAME, CoreMath.Round(items[slot1].reward * betBonus))
-            elseif slot2 == slot3 and items[slot1].isWild then
-                player:AddResource(RESOURCE_NAME, CoreMath.Round(items[slot2].reward * betBonus))
-            elseif slot1 == slot3 and items[slot2].isWild then
-                player:AddResource(RESOURCE_NAME, CoreMath.Round(items[slot1].reward * betBonus))
-            elseif items[slot2].isWild and slot2 == slot3 then
-                player:AddResource(RESOURCE_NAME, CoreMath.Round(items[slot1].reward * betBonus))
-            elseif items[slot1].isWild and slot1 == slot2 then
-                player:AddResource(RESOURCE_NAME, CoreMath.Round(items[slot3].reward * betBonus))
-            elseif items[slot1].isWild and slot1 == slot3 then
-                player:AddResource(RESOURCE_NAME, CoreMath.Round(items[slot2].reward * betBonus))
+            local isWinner, reward = API.CheckWin(slot1, slot2, slot3, betAmount, items)
+            if isWinner then
+                player:AddResource(RESOURCE_NAME, reward)
             end
         end,
         spinDuration + 0.5

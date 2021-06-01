@@ -65,7 +65,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Chance"
-      Float: 5
+      Float: 100
     }
     Overrides {
       Name: "cs:Reward"
@@ -341,7 +341,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Chance"
-      Float: 25
+      Float: 50
     }
     Overrides {
       Name: "cs:Reward"
@@ -449,7 +449,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Chance"
-      Float: 5
+      Float: 50
     }
     Overrides {
       Name: "cs:Reward"
@@ -725,7 +725,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Chance"
-      Float: 25
+      Float: 100
     }
     Overrides {
       Name: "cs:Reward"
@@ -1183,7 +1183,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Chance"
-      Float: 8
+      Float: 100
     }
     Overrides {
       Name: "cs:Reward"
@@ -1390,7 +1390,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Chance"
-      Float: 15
+      Float: 30
     }
     Overrides {
       Name: "cs:Reward"
@@ -1459,7 +1459,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Chance"
-      Float: 20
+      Float: 100
     }
     Overrides {
       Name: "cs:Reward"
