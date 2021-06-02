@@ -26,9 +26,8 @@ Assets {
             Float: 0
           }
           Overrides {
-            Name: "cs:LastBet"
-            Vector {
-            }
+            Name: "cs:BetAmount"
+            Int: 0
           }
           Overrides {
             Name: "cs:playerId:isrep"
@@ -39,7 +38,7 @@ Assets {
             Bool: true
           }
           Overrides {
-            Name: "cs:LastBet:isrep"
+            Name: "cs:BetAmount:isrep"
             Bool: true
           }
         }

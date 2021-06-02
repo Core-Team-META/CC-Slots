@@ -143,7 +143,7 @@ function PickItemRandomly(player, betAmount, slotId)
     newData:SetNetworkedCustomProperty("ItemID", Vector3.New(slot1, slot2, slot3))
     newData:SetNetworkedCustomProperty("playerId", player.id)
     newData:SetNetworkedCustomProperty("spinTime", time() + spinDuration)
-
+    newData:SetNetworkedCustomProperty("BetAmount", betAmount)
     Task.Spawn(
         function()
             local isWinner, reward = API.CheckWin(slot1, slot2, slot3, betAmount, items, ODDS)

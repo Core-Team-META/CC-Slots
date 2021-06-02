@@ -354,6 +354,9 @@ function OnNetworkChanged(object, string)
         end
     elseif string == "spinTime" then
         spinEndTime = object:GetCustomProperty(string)
+    elseif string == "BetAmount" then
+        local betAmount = object:GetCustomProperty(string)
+        currentPlayer.clientUserData.betAmount = betAmount
     else
         OnNetworkObjectAdded(_, object)
     end
