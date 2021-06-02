@@ -2,7 +2,7 @@ Assets {
   Id: 4675428059380998110
   Name: "Slots Housing Base Tree Enchanted"
   PlatformAssetType: 13
-  SerializationVersion: 85
+  SerializationVersion: 87
   CustomMaterialAsset {
     BaseMaterialId: 3303642670326605352
     ParameterOverrides {

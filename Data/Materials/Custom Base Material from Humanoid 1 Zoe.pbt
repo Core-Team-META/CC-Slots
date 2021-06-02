@@ -2,7 +2,7 @@ Assets {
   Id: 9904895682715922322
   Name: "Custom Base Material from Humanoid 1 Zoe_zombie"
   PlatformAssetType: 13
-  SerializationVersion: 85
+  SerializationVersion: 87
   CustomMaterialAsset {
     BaseMaterialId: 6999580355068914447
     ParameterOverrides {

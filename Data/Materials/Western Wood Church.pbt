@@ -2,7 +2,7 @@ Assets {
   Id: 18286087132053460169
   Name: "Western Wood Church"
   PlatformAssetType: 13
-  SerializationVersion: 85
+  SerializationVersion: 87
   CustomMaterialAsset {
     BaseMaterialId: 2365290216206093343
     ParameterOverrides {

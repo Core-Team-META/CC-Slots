@@ -2,7 +2,7 @@ Assets {
   Id: 5881521322780548655
   Name: "Custom Wood Siding White_zombie"
   PlatformAssetType: 13
-  SerializationVersion: 85
+  SerializationVersion: 87
   CustomMaterialAsset {
     BaseMaterialId: 10154733390433530583
     ParameterOverrides {

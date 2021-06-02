@@ -275,6 +275,7 @@ Assets {
         ChildIds: 3387152528755599583
         ChildIds: 16555115586858073026
         ChildIds: 12238763159774561264
+        ChildIds: 1197505145889187960
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -932,6 +933,47 @@ Assets {
         }
       }
       Objects {
+        Id: 1197505145889187960
+        Name: "SlotsCabinet_Client"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.819941
+            Y: 0.819941
+            Z: 0.819941
+          }
+        }
+        ParentId: 4386101123756257253
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:GEO"
+            ObjectReference {
+              SubObjectId: 18035254857092324981
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 2709210118577912534
+          }
+        }
+      }
+      Objects {
         Id: 18035254857092324981
         Name: "GEO"
         Transform {
@@ -1039,6 +1081,14 @@ Assets {
         ParentId: 18035254857092324981
         UnregisteredParameters {
           Overrides {
+            Name: "cs:isButton"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:ButtonType"
+            String: "MinButton"
+          }
+          Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
               Id: 5821748287712453779
@@ -1136,6 +1186,14 @@ Assets {
         ParentId: 18035254857092324981
         UnregisteredParameters {
           Overrides {
+            Name: "cs:isButton"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:ButtonType"
+            String: "MaxButton"
+          }
+          Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
               Id: 5821748287712453779
@@ -1230,6 +1288,14 @@ Assets {
         ParentId: 18035254857092324981
         UnregisteredParameters {
           Overrides {
+            Name: "cs:isButton"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:ButtonType"
+            String: "SpinButton"
+          }
+          Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
               Id: 11047468966635421578
@@ -1303,6 +1369,14 @@ Assets {
         }
         ParentId: 18035254857092324981
         UnregisteredParameters {
+          Overrides {
+            Name: "cs:isButton"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:ButtonType"
+            String: "LowerButton"
+          }
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
@@ -1401,6 +1475,14 @@ Assets {
         ParentId: 18035254857092324981
         UnregisteredParameters {
           Overrides {
+            Name: "cs:isButton"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:ButtonType"
+            String: "RaiseButton"
+          }
+          Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
               Id: 5821748287712453779
@@ -1496,6 +1578,14 @@ Assets {
         }
         ParentId: 18035254857092324981
         UnregisteredParameters {
+          Overrides {
+            Name: "cs:isButton"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:ButtonType"
+            String: "ExitButton"
+          }
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
             Bool: false
@@ -49422,5 +49512,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 85
+  SerializationVersion: 87
 }

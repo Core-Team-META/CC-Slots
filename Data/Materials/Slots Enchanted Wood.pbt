@@ -2,7 +2,7 @@ Assets {
   Id: 1652538462460430911
   Name: "Slots Enchanted Wood"
   PlatformAssetType: 13
-  SerializationVersion: 85
+  SerializationVersion: 87
   CustomMaterialAsset {
     BaseMaterialId: 14231809728886464860
     ParameterOverrides {

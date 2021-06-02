@@ -1,6 +1,6 @@
 Assets {
-  Id: 8977377326277669485
-  Name: "SlotsUIManager_Client"
+  Id: 2709210118577912534
+  Name: "SlotsCabinet_Client"
   PlatformAssetType: 3
   TextAsset {
     CustomParameters {
@@ -8,6 +8,12 @@ Assets {
         Name: "cs:NotificationAPI"
         AssetReference {
           Id: 1385660465302450066
+        }
+      }
+      Overrides {
+        Name: "cs:API"
+        AssetReference {
+          Id: 16952813177389789887
         }
       }
     }

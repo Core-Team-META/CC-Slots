@@ -2,7 +2,7 @@ Assets {
   Id: 8816531669694584002
   Name: "Rocket Launcher Metal Basic Steel - Brown"
   PlatformAssetType: 13
-  SerializationVersion: 85
+  SerializationVersion: 87
   CustomMaterialAsset {
     BaseMaterialId: 14212988502358508072
     ParameterOverrides {

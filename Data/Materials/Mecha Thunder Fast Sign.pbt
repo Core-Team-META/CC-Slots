@@ -2,7 +2,7 @@ Assets {
   Id: 4183673900708379615
   Name: "Mecha Thunder Fast Sign"
   PlatformAssetType: 13
-  SerializationVersion: 85
+  SerializationVersion: 87
   CustomMaterialAsset {
     BaseMaterialId: 16584640328638568506
     ParameterOverrides {

@@ -2,7 +2,7 @@ Assets {
   Id: 2258895979065809125
   Name: "Western Wood Trim"
   PlatformAssetType: 13
-  SerializationVersion: 85
+  SerializationVersion: 87
   CustomMaterialAsset {
     BaseMaterialId: 2365290216206093343
     ParameterOverrides {
