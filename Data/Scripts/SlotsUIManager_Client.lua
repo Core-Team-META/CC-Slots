@@ -67,8 +67,6 @@ function Tick()
             pastBets[i].text = v
         end
     end
- 
-    
 end
 
 for i, bet in ipairs(PastBets:GetChildren()) do
@@ -76,14 +74,17 @@ for i, bet in ipairs(PastBets:GetChildren()) do
     pastBets[index] = bet
 end
 
+function OnPlayerJoined(player)
+    player.clientUserData.notification = {}
+end
 
 function OnBindingPressed(player, keybind)
     if keybind == "ability_primary" then
         local hitResult = UI.GetCursorHitResult()
         if hitResult and hitResult.other and hitResult.other.name == "SpinButton" then
-            local slotId = LOCAL_PLAYER.clientUserData.slotId
+            local slotId = player.clientUserData.slotId
             if slotId then
-                Events.BroadcastToServer(API.Broadcasts.spin, LOCAL_PLAYER.clientUserData.betAmount or 1, slotId)
+                Events.BroadcastToServer(API.Broadcasts.spin, player.clientUserData.betAmount or 1, slotId)
             end
         end
     end
@@ -94,5 +95,6 @@ IncreaseButton.clickedEvent:Connect(OnButtonClick)
 MinBet.clickedEvent:Connect(OnButtonClick)
 MaxBet.clickedEvent:Connect(OnButtonClick)
 QUIT_BUTTON.clickedEvent:Connect(OnButtonClick)
-LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)
+--LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)
 
+Game.playerJoinedEvent:Connect(OnPlayerJoined)

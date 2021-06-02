@@ -5,7 +5,8 @@ API.isInitialized = false
 API.Broadcasts = {
     spin = "RSS_Random",
     destroy = "RSS_Destroy",
-    quit = "RSS_Quit"
+    quit = "RSS_Quit",
+    slotChange = "RSS_Slot"
 }
 
 local function GetJackpotReward(odds)

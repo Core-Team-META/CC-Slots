@@ -91,6 +91,10 @@ Assets {
             Name: "cs:Theme"
             String: "Western"
           }
+          Overrides {
+            Name: "cs:Odds"
+            Float: 0.95
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -952,6 +956,12 @@ Assets {
             Name: "cs:GEO"
             ObjectReference {
               SubObjectId: 18035254857092324981
+            }
+          }
+          Overrides {
+            Name: "cs:Settings"
+            ObjectReference {
+              SubObjectId: 9576669645920691922
             }
           }
         }
@@ -2341,7 +2351,7 @@ Assets {
           }
         }
         ParentId: 18035254857092324981
-        ChildIds: 3169013060607268521
+        ChildIds: 122022105717807445
         ChildIds: 6016212787217245530
         ChildIds: 4664421298776084731
         ChildIds: 17897823281697368323
@@ -2363,6 +2373,37 @@ Assets {
         }
       }
       Objects {
+        Id: 122022105717807445
+        Name: "ClientContext"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 10058346830389356160
+        ChildIds: 3169013060607268521
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
         Id: 3169013060607268521
         Name: "Text"
         Transform {
@@ -2379,7 +2420,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 10058346830389356160
+        ParentId: 122022105717807445
         ChildIds: 4801514519900023255
         ChildIds: 16439501239442106095
         ChildIds: 5858942238414124749

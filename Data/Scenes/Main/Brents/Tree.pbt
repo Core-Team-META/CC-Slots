@@ -1,6 +1,59 @@
 Name: "Brents"
 RootId: 4675025735314061901
 Objects {
+  Id: 15640159180418818263
+  Name: "MechaArcadeMachine"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4675025735314061901
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8019821520510676024
+      value {
+        Overrides {
+          Name: "Name"
+          String: "MechaArcadeMachine"
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -90
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.2196
+            Y: 1.2196
+            Z: 1.2196
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -183
+            Y: -489
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7352794389691591513
+    }
+  }
+}
+Objects {
   Id: 13420275938363672477
   Name: "WesternArcadeMachine"
   Transform {

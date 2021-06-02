@@ -88,14 +88,16 @@ end
 ------------------------------------------------------------------------------------------------------------------------
 
 local function Show()
-    isEnabled = true
-    -- SCREEN_GROUP.visibility = Visibility.INHERIT
-    UI_CONTAINER.visibility = Visibility.INHERIT
-    UI.SetCursorVisible(true)
-    UI.SetCanCursorInteractWithUI(true)
-    LOCAL_PLAYER:SetOverrideCamera(SLOT_CAM)
-    LOCAL_PLAYER.isVisibleToSelf = false
+    if currentPlayer == LOCAL_PLAYER then
+        isEnabled = true
+        -- SCREEN_GROUP.visibility = Visibility.INHERIT
+        UI_CONTAINER.visibility = Visibility.INHERIT
+        UI.SetCursorVisible(true)
+        UI.SetCanCursorInteractWithUI(true)
+        LOCAL_PLAYER:SetOverrideCamera(SLOT_CAM)
+        LOCAL_PLAYER.isVisibleToSelf = false
     --Activate()
+    end
 end
 
 local function Deactivate()
@@ -112,14 +114,17 @@ local function Deactivate()
 end
 
 local function Hide()
-    isEnabled = false
-    -- SCREEN_GROUP.visibility = Visibility.FORCE_OFF
-    UI_CONTAINER.visibility = Visibility.FORCE_OFF
-    UI.SetCursorVisible(false)
-    UI.SetCanCursorInteractWithUI(false)
-    LOCAL_PLAYER:ClearOverrideCamera()
-    LOCAL_PLAYER.isVisibleToSelf = true
+    print(currentPlayer)
+    if currentPlayer == LOCAL_PLAYER then
+        isEnabled = false
+        -- SCREEN_GROUP.visibility = Visibility.FORCE_OFF
+        UI_CONTAINER.visibility = Visibility.FORCE_OFF
+        UI.SetCursorVisible(false)
+        UI.SetCanCursorInteractWithUI(false)
+        LOCAL_PLAYER:ClearOverrideCamera()
+        LOCAL_PLAYER.isVisibleToSelf = true
     --Deactivate()
+    end
 end
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -243,7 +248,7 @@ function OnNetworkObjectAdded(parentObject, childObject) --
     currentSlots[1] = results.x
     currentSlots[2] = results.y
     currentSlots[3] = results.z
- 
+
     for i = 1, 3 do
         local itemId = 1
         if i == 1 then
@@ -264,27 +269,26 @@ function OnNetworkObjectAdded(parentObject, childObject) --
     winnerSoundHasPlayed = false
     slotSound = {false, false, false}
     BELL:Play()
-    if player == LOCAL_PLAYER then
-        local msg
-        local betAmount = LOCAL_PLAYER.clientUserData.betAmount
-        local reward
-        isWinner, reward = API.CheckWin(slot1, slot2, slot3, betAmount, items, ODDS)
 
-        if isWinner then
-            msg = "Bet " .. tostring(betAmount) .. " and Won " .. tostring(reward)
-        else
-            msg = "Bet " .. tostring(betAmount) .. " and Lost "
-        end
+    local msg
+    local betAmount = player.clientUserData.betAmount
+    local reward
+    isWinner, reward = API.CheckWin(slot1, slot2, slot3, betAmount, items, ODDS)
 
-        Task.Spawn(
-            function()
-                NOTIFICATION.Add(LOCAL_PLAYER, msg)
-            end,
-            SPIN_DURATION
-        )
+    if isWinner then
+        msg = "Bet " .. tostring(betAmount) .. " and Won " .. tostring(reward)
+    else
+        msg = "Bet " .. tostring(betAmount) .. " and Lost "
+    end
+
+    Task.Spawn(
+        function()
+            NOTIFICATION.Add(player, msg)
+        end,
+        SPIN_DURATION
+    )
 
     --Events.BroadcastToServer(API.Broadcasts.destroy, childObject.id)
-    end
 end
 
 function Tick(dt)
@@ -330,18 +334,22 @@ end
 function OnNetworkChanged(object, string)
     if string == "playerId" then
         local playerId = object:GetCustomProperty(string)
-        if playerId == "" and currentPlayer == LOCAL_PLAYER then
-            LOCAL_PLAYER.clientUserData.slotId = nil
-            currentPlayer = nil
+        if playerId == "" and Object.IsValid(currentPlayer) then
             Hide()
+            currentPlayer.clientUserData.slotId = nil
+            currentPlayer = nil
+            
         else
             currentPlayer = Game.FindPlayer(playerId)
+            if currentPlayer then
+                Events.Broadcast(API.Broadcasts.slotChange, currentPlayer, SLOT_ID)
+            end
         end
-        if currentPlayer and currentPlayer == LOCAL_PLAYER then
-            LOCAL_PLAYER.clientUserData.slotId = SLOT_ID
-            LOCAL_PLAYER.clientUserData.betAmount = MIN_BET
-            LOCAL_PLAYER.clientUserData.minBet = MIN_BET
-            LOCAL_PLAYER.clientUserData.maxBet = MAX_BET
+        if currentPlayer and Object.IsValid(currentPlayer) then
+            currentPlayer.clientUserData.slotId = SLOT_ID
+            currentPlayer.clientUserData.betAmount = MIN_BET
+            currentPlayer.clientUserData.minBet = MIN_BET
+            currentPlayer.clientUserData.maxBet = MAX_BET
             Show()
         end
     elseif string == "spinTime" then

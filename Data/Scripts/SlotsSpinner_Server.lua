@@ -147,9 +147,14 @@ function PickItemRandomly(player, betAmount, slotId)
     Task.Spawn(
         function()
             local isWinner, reward = API.CheckWin(slot1, slot2, slot3, betAmount, items, ODDS)
+            local lastBetType = 0
             if isWinner then
                 player:AddResource(RESOURCE_NAME, reward)
+                lastBetType = 1
             end
+           --[[ reward = reward or 0
+            newData:SetNetworkedCustomProperty("LastBet", Vector3.New(lastBetType, betAmount, reward))
+            ]]--
         end,
         spinDuration + 0.5
     )
