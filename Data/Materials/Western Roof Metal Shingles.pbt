@@ -2,7 +2,7 @@ Assets {
   Id: 5829919729098071914
   Name: "Western Roof Metal Shingles"
   PlatformAssetType: 13
-  SerializationVersion: 85
+  SerializationVersion: 87
   CustomMaterialAsset {
     BaseMaterialId: 10846713176429176452
     ParameterOverrides {

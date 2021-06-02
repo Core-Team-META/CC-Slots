@@ -2,7 +2,7 @@ Assets {
   Id: 3929470986925478719
   Name: "Custom Marble Basic 01_eye"
   PlatformAssetType: 13
-  SerializationVersion: 85
+  SerializationVersion: 87
   CustomMaterialAsset {
     BaseMaterialId: 15745211306479370650
     ParameterOverrides {

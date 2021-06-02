@@ -2,7 +2,7 @@ Assets {
   Id: 5950584397689068807
   Name: "Custom Stone _zombie"
   PlatformAssetType: 13
-  SerializationVersion: 85
+  SerializationVersion: 87
   CustomMaterialAsset {
     BaseMaterialId: 6031796211283932189
     ParameterOverrides {

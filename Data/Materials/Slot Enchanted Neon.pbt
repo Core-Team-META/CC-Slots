@@ -2,7 +2,7 @@ Assets {
   Id: 9595547193265480821
   Name: "Slot Enchanted Neon"
   PlatformAssetType: 13
-  SerializationVersion: 85
+  SerializationVersion: 87
   CustomMaterialAsset {
     BaseMaterialId: 12317579452826413443
     ParameterOverrides {

@@ -2,7 +2,7 @@ Assets {
   Id: 11214458359331033735
   Name: "RarityGlow"
   PlatformAssetType: 13
-  SerializationVersion: 85
+  SerializationVersion: 87
   CustomMaterialAsset {
     BaseMaterialId: 18120130033142528272
     ParameterOverrides {
