@@ -46,6 +46,7 @@ local SLOT_ID = SETTINGS.id
 local THEME_ID = SETTINGS:GetCustomProperty("Theme") or "Fantasy"
 local MIN_BET = SETTINGS:GetCustomProperty("MinBet") or 5
 local MAX_BET = SETTINGS:GetCustomProperty("MaxBet") or 100
+local ODDS = SETTINGS:GetCustomProperty("Odds")
 ------------------------------------------------------------------------------------------------------------------------
 -- LOCAL VARIABLES
 ------------------------------------------------------------------------------------------------------------------------
@@ -267,7 +268,7 @@ function OnNetworkObjectAdded(parentObject, childObject) --
         local msg
         local betAmount = LOCAL_PLAYER.clientUserData.betAmount
         local reward
-        isWinner, reward = API.CheckWin(slot1, slot2, slot3, betAmount, items)
+        isWinner, reward = API.CheckWin(slot1, slot2, slot3, betAmount, items, ODDS)
 
         if isWinner then
             msg = "Bet " .. tostring(betAmount) .. " and Won " .. tostring(reward)

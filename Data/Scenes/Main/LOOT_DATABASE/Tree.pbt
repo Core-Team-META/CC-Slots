@@ -64,10 +64,6 @@ Objects {
       Int: 5
     }
     Overrides {
-      Name: "cs:Chance"
-      Float: 100
-    }
-    Overrides {
       Name: "cs:Reward"
       Int: 250
     }
@@ -131,10 +127,6 @@ Objects {
     Overrides {
       Name: "cs:ScreenshotIndex"
       Int: 4
-    }
-    Overrides {
-      Name: "cs:Chance"
-      Float: 10
     }
     Overrides {
       Name: "cs:Reward"
@@ -202,10 +194,6 @@ Objects {
       Int: 3
     }
     Overrides {
-      Name: "cs:Chance"
-      Float: 15
-    }
-    Overrides {
       Name: "cs:Reward"
       Int: 50
     }
@@ -271,10 +259,6 @@ Objects {
       Int: 2
     }
     Overrides {
-      Name: "cs:Chance"
-      Float: 20
-    }
-    Overrides {
       Name: "cs:Reward"
       Int: 25
     }
@@ -338,10 +322,6 @@ Objects {
     Overrides {
       Name: "cs:ScreenshotIndex"
       Int: 1
-    }
-    Overrides {
-      Name: "cs:Chance"
-      Float: 50
     }
     Overrides {
       Name: "cs:Reward"
@@ -448,10 +428,6 @@ Objects {
       Int: 5
     }
     Overrides {
-      Name: "cs:Chance"
-      Float: 50
-    }
-    Overrides {
       Name: "cs:Reward"
       Int: 250
     }
@@ -515,10 +491,6 @@ Objects {
     Overrides {
       Name: "cs:ScreenshotIndex"
       Int: 4
-    }
-    Overrides {
-      Name: "cs:Chance"
-      Float: 10
     }
     Overrides {
       Name: "cs:Reward"
@@ -586,10 +558,6 @@ Objects {
       Int: 3
     }
     Overrides {
-      Name: "cs:Chance"
-      Float: 15
-    }
-    Overrides {
       Name: "cs:Reward"
       Int: 50
     }
@@ -653,10 +621,6 @@ Objects {
     Overrides {
       Name: "cs:ScreenshotIndex"
       Int: 2
-    }
-    Overrides {
-      Name: "cs:Chance"
-      Float: 20
     }
     Overrides {
       Name: "cs:Reward"
@@ -724,10 +688,6 @@ Objects {
       Int: 1
     }
     Overrides {
-      Name: "cs:Chance"
-      Float: 100
-    }
-    Overrides {
       Name: "cs:Reward"
       Int: 15
     }
@@ -783,16 +743,11 @@ Objects {
     }
   }
   ParentId: 9904375601217783865
-  ChildIds: 13429433764089193963
+  ChildIds: 16725416025905319276
   ChildIds: 3986427747023420279
   ChildIds: 5427156116446764528
   ChildIds: 8681768049265087831
   ChildIds: 15650504129153391831
-  ChildIds: 7973351451651871879
-  ChildIds: 4760807769971581948
-  ChildIds: 9340159905996295215
-  ChildIds: 10199642504770273164
-  ChildIds: 3929303761208300164
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -808,351 +763,6 @@ Objects {
   InstanceHistory {
     SelfId: 9169683292736877109
     SubobjectId: 14336680307333660137
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
-  }
-}
-Objects {
-  Id: 3929303761208300164
-  Name: "Cent"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 688037899985773358
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:GamePortal"
-      String: "0929a4/fantasy-images-2"
-    }
-    Overrides {
-      Name: "cs:ScreenshotIndex"
-      Int: 5
-    }
-    Overrides {
-      Name: "cs:Chance"
-      Float: 3
-    }
-    Overrides {
-      Name: "cs:Reward"
-      Int: 100
-    }
-    Overrides {
-      Name: "cs:isWild"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Match2SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:Match3SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Wild"
-  }
-  InstanceHistory {
-    SelfId: 1701057616709612719
-    SubobjectId: 12550408989901159283
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
-  }
-}
-Objects {
-  Id: 10199642504770273164
-  Name: "Q"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 688037899985773358
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:GamePortal"
-      String: "0929a4/fantasy-images-2"
-    }
-    Overrides {
-      Name: "cs:ScreenshotIndex"
-      Int: 4
-    }
-    Overrides {
-      Name: "cs:Chance"
-      Float: 4
-    }
-    Overrides {
-      Name: "cs:Reward"
-      Int: 75
-    }
-    Overrides {
-      Name: "cs:isWild"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Match2SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:Match3SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Rabbit"
-  }
-  InstanceHistory {
-    SelfId: 1701057616709612719
-    SubobjectId: 12550408989901159283
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
-  }
-}
-Objects {
-  Id: 9340159905996295215
-  Name: "K"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 688037899985773358
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:GamePortal"
-      String: "0929a4/fantasy-images-2"
-    }
-    Overrides {
-      Name: "cs:ScreenshotIndex"
-      Int: 3
-    }
-    Overrides {
-      Name: "cs:Chance"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:Reward"
-      Int: 45
-    }
-    Overrides {
-      Name: "cs:isWild"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Match2SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:Match3SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Gnome"
-  }
-  InstanceHistory {
-    SelfId: 18043899592095658405
-    SubobjectId: 4890789954066775673
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
-  }
-}
-Objects {
-  Id: 4760807769971581948
-  Name: "J"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 688037899985773358
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:GamePortal"
-      String: "0929a4/fantasy-images-2"
-    }
-    Overrides {
-      Name: "cs:ScreenshotIndex"
-      Int: 2
-    }
-    Overrides {
-      Name: "cs:Chance"
-      Float: 6
-    }
-    Overrides {
-      Name: "cs:Reward"
-      Int: 40
-    }
-    Overrides {
-      Name: "cs:isWild"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Match2SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:Match3SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Elf"
-  }
-  InstanceHistory {
-    SelfId: 16490284211346344671
-    SubobjectId: 6732352053841462531
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
-  }
-}
-Objects {
-  Id: 7973351451651871879
-  Name: "A"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 688037899985773358
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:GamePortal"
-      String: "0929a4/fantasy-images-2"
-    }
-    Overrides {
-      Name: "cs:ScreenshotIndex"
-      Int: 1
-    }
-    Overrides {
-      Name: "cs:Chance"
-      Float: 7
-    }
-    Overrides {
-      Name: "cs:Reward"
-      Int: 35
-    }
-    Overrides {
-      Name: "cs:isWild"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Match2SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:Match3SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Dragon"
-  }
-  InstanceHistory {
-    SelfId: 8219657377845172806
-    SubobjectId: 14674216655756645786
     InstanceId: 17771080832798645400
     TemplateId: 14767819289351633414
   }
@@ -1182,12 +792,8 @@ Objects {
       Int: 5
     }
     Overrides {
-      Name: "cs:Chance"
-      Float: 100
-    }
-    Overrides {
       Name: "cs:Reward"
-      Int: 30
+      Int: 20
     }
     Overrides {
       Name: "cs:isWild"
@@ -1251,12 +857,8 @@ Objects {
       Int: 4
     }
     Overrides {
-      Name: "cs:Chance"
-      Float: 10
-    }
-    Overrides {
       Name: "cs:Reward"
-      Int: 25
+      Int: 5
     }
     Overrides {
       Name: "cs:isWild"
@@ -1320,12 +922,8 @@ Objects {
       Int: 3
     }
     Overrides {
-      Name: "cs:Chance"
-      Float: 13
-    }
-    Overrides {
       Name: "cs:Reward"
-      Int: 20
+      Int: 4
     }
     Overrides {
       Name: "cs:isWild"
@@ -1389,12 +987,8 @@ Objects {
       Int: 2
     }
     Overrides {
-      Name: "cs:Chance"
-      Float: 30
-    }
-    Overrides {
       Name: "cs:Reward"
-      Int: 15
+      Int: 3
     }
     Overrides {
       Name: "cs:isWild"
@@ -1434,7 +1028,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13429433764089193963
+  Id: 16725416025905319276
   Name: "Dragon"
   Transform {
     Location {
@@ -1458,12 +1052,8 @@ Objects {
       Int: 1
     }
     Overrides {
-      Name: "cs:Chance"
-      Float: 100
-    }
-    Overrides {
       Name: "cs:Reward"
-      Int: 10
+      Int: 2
     }
     Overrides {
       Name: "cs:isWild"

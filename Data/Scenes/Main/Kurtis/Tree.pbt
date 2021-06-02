@@ -3932,6 +3932,10 @@ Objects {
       Name: "cs:Theme"
       String: "Fantasy"
     }
+    Overrides {
+      Name: "cs:Odds"
+      Float: 0.95
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

@@ -8,6 +8,10 @@ API.Broadcasts = {
     quit = "RSS_Quit"
 }
 
+local function GetJackpotReward(odds)
+    return 125 * odds - 98
+end
+
 function Initialize()
     local database = World.FindObjectByName("SLOT_DATABASE")
     local themes = database:GetChildren()
@@ -21,9 +25,9 @@ function Initialize()
             slotEntry.gamePortal = item:GetCustomProperty("GamePortal")
             slotEntry.screenshotIndex = item:GetCustomProperty("ScreenshotIndex")
             slotEntry.id = index
-            slotEntry.chance = item:GetCustomProperty("Chance")
-            slotEntry.reward = item:GetCustomProperty("Reward")
+            slotEntry.chance = 1
             slotEntry.isWild = item:GetCustomProperty("isWild")
+            slotEntry.reward = index + 1
             slotsDatabase[theme.name][index] = slotEntry
         end
     end
@@ -43,18 +47,13 @@ function API.GetSlotById(theme, id)
     return slotsDatabase[theme][id]
 end
 
-function API.CheckWin(slot1, slot2, slot3, betAmount, items)
-    local betBonus = betAmount * 0.20
-    if slot1 == 5 and slot2 == 5 and slot3 ~= 5 then
-        betBonus = betBonus * 5
-    elseif slot1 ~= 5 and slot2 == 5 and slot3 == 5 then
-        betBonus = betBonus * 5
-    elseif slot1 == 5 and slot2 == 5 and slot3 ~= 5 then
-        betBonus = betBonus * 5
-    end
+function API.CheckWin(slot1, slot2, slot3, betAmount, items, odds)
+    local betBonus = betAmount
 
-    if slot1 == slot2 and slot2 == slot3 then
+    if slot1 == slot2 and slot2 == slot3 and not items[slot1].isWild then
         return true, CoreMath.Round(items[slot1].reward * betBonus)
+    elseif items[slot1].isWild and slot1 == slot2 and slot2 == slot3 then
+        return true, CoreMath.Round(GetJackpotReward(odds) * betBonus)
     elseif slot1 == slot2 and items[slot3].isWild then
         return true, CoreMath.Round(items[slot1].reward * betBonus)
     elseif slot2 == slot3 and items[slot1].isWild then

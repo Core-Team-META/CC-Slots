@@ -1,3 +1,4 @@
+local enableDevMode = false
 ------------------------------------------------------------------------------------------------------------------------
 -- Slots Spinner Server
 -- Author Morticai (META) - (https://www.coregames.com/user/d1073dbcc404405cbef8ce728e53d380)
@@ -23,7 +24,9 @@ local PLAYER_POSITION = script:GetCustomProperty("PlayerPosition"):WaitForObject
 
 local spinDuration = SETTINGS:GetCustomProperty("SpinDuration") or 1
 local RESOURCE_NAME = SETTINGS:GetCustomProperty("ResourceName")
-local SLOT_ID = SETTINGS.id--SETTINGS:GetCustomProperty("SlotId")
+local ODDS = SETTINGS:GetCustomProperty("Odds")
+local SLOT_ID = SETTINGS.id
+--SETTINGS:GetCustomProperty("SlotId")
 local THEME_ID = SETTINGS:GetCustomProperty("Theme") or "Fantasy"
 local PlayerData = script:GetCustomProperty("RandomSpinner_Data")
 
@@ -60,8 +63,8 @@ local function Unequip(player, socket)
     end
 end
 
-local function GetRandomSlot(total)
-    local value = math.random() * total
+local function GetRandomSlot(reelTotal)
+    local value = math.random() * reelTotal
     local total = 0
     for _, item in ipairs(items) do
         total = total + item.chance
@@ -129,13 +132,13 @@ function PickItemRandomly(player, betAmount, slotId)
     end
     player:RemoveResource(RESOURCE_NAME, betAmount)
     playerSpamPrevent[player] = time() + spinDuration + 0.1
-    local total = 0
+    local reelTotal = 0
     for _, item in ipairs(items) do
-        total = total + item.chance
+        reelTotal = reelTotal + item.chance
     end
-    local slot1 = GetRandomSlot(total)
-    local slot2 = GetRandomSlot(total)
-    local slot3 = GetRandomSlot(total)
+    local slot1 = GetRandomSlot(reelTotal)
+    local slot2 = GetRandomSlot(reelTotal)
+    local slot3 = GetRandomSlot(reelTotal)
 
     newData:SetNetworkedCustomProperty("ItemID", Vector3.New(slot1, slot2, slot3))
     newData:SetNetworkedCustomProperty("playerId", player.id)
@@ -143,7 +146,7 @@ function PickItemRandomly(player, betAmount, slotId)
 
     Task.Spawn(
         function()
-            local isWinner, reward = API.CheckWin(slot1, slot2, slot3, betAmount, items)
+            local isWinner, reward = API.CheckWin(slot1, slot2, slot3, betAmount, items, ODDS)
             if isWinner then
                 player:AddResource(RESOURCE_NAME, reward)
             end
@@ -162,3 +165,39 @@ Events.ConnectForPlayer(API.Broadcasts.destroy, DestroyObject)
 Events.ConnectForPlayer(API.Broadcasts.quit, OnPlayerQuit)
 PLAY_TRIGGER.interactedEvent:Connect(OnInteracted)
 PLAY_TRIGGER.endOverlapEvent:Connect(EndOverlap)
+
+if enableDevMode then
+    local betAmount = 5
+    local totalSpent = 0
+    local totalWon = 0
+    local tempCount = 0
+    local totalSpins = 0
+    local totalWins = 0
+    local totalLoss = 0
+
+    for i = 1, 10000 do
+        totalSpins = i
+        local total = 0
+        for _, item in ipairs(items) do
+            total = total + item.chance
+        end
+        local slot1 = GetRandomSlot(total)
+        local slot2 = GetRandomSlot(total)
+        local slot3 = GetRandomSlot(total)
+        local isWinner, reward = API.CheckWin(slot1, slot2, slot3, betAmount, items, ODDS)
+        totalSpent = totalSpent + betAmount
+        if isWinner then
+            totalWon = totalWon + reward
+            totalWins = totalWins + 1
+        else
+            totalLoss = totalLoss + 1
+        end
+        tempCount = tempCount + 1
+        if tempCount > 50 then
+            Task.Wait()
+            tempCount = 0
+        end
+    end
+
+    print(THEME_ID, totalSpent, totalWon, totalWins, totalLoss)
+end
