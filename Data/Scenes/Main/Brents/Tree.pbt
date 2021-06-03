@@ -1,7 +1,7 @@
 Name: "Brents"
 RootId: 4675025735314061901
 Objects {
-  Id: 5375489668664873025
+  Id: 16682869803356586025
   Name: "Zombie Arcade Multiline - Zombie"
   Transform {
     Scale {
@@ -28,8 +28,71 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
+            X: 1243
+            Y: -670
+            Z: -17
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 89.9999924
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.2196
+            Y: 1.2196
+            Z: 1.2196
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15388843617968423410
+    }
+  }
+}
+Objects {
+  Id: 14568800126466436500
+  Name: "FantasyArcadeMachine"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4675025735314061901
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 13561356530882030136
+      value {
+        Overrides {
+          Name: "cs:Theme"
+          String: "Fantasy"
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16807770656924046066
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FantasyArcadeMachine"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
             X: 1246.56189
-            Y: -651
+            Y: -981
             Z: -17
           }
         }
@@ -42,7 +105,7 @@ Objects {
       }
     }
     TemplateAsset {
-      Id: 15388843617968423410
+      Id: 4603317766580022085
     }
   }
 }

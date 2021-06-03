@@ -50,7 +50,7 @@ function OnBindingPressed(player, keybind)
                 local currentBet = player.clientUserData.betAmount
                 local minBet = player.clientUserData.minBet
                 local maxBet = player.clientUserData.maxBet
-                if slotId and slotId ~= SLOT_ID then
+                if slotId ~= SLOT_ID then
                     return
                 end
                 if buttonType == "SpinButton" then
