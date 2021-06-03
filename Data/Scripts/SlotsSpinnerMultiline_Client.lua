@@ -80,7 +80,10 @@ local winnerSoundHasPlayed = false
 local isWinner = false
 local playerSpamPrevent
 local currentPlayerId, currentPlayer
+
 local lastSpinCount = 0
+ROOT.clientUserData.animationCount = 0
+
 if SPIN_DURATION < 1 then
     SPIN_DURATION = 1
     warn("Spin Duration must be great than 1")
@@ -270,6 +273,8 @@ function OnNetworkObjectAdded(parentObject, childObject) --
         line.object.visibility = Visibility.FORCE_OFF
     end
 
+    ROOT.clientUserData.animationCount = ROOT.clientUserData.animationCount + 1
+
     results = API.ConvertStringToTable(dataStr)
     playerId = childObject:GetCustomProperty("playerId")
 
@@ -323,7 +328,7 @@ function OnNetworkObjectAdded(parentObject, childObject) --
             msg = "Bet " .. tostring(betAmount) .. " and Lost "
         end
     end
-
+    local animationCount = ROOT.clientUserData.animationCount
     Task.Spawn(
         function()
             if player == LOCAL_PLAYER then
@@ -333,7 +338,8 @@ function OnNetworkObjectAdded(parentObject, childObject) --
                 if lastTask and lastTask ~= TaskStatus.COMPLETED then
                     lastTask:Cancel()
                 end
-                lastTask = API.DisplayWinLines(winLines, winningPatterns, cardFrames)
+                Task.Wait()
+                lastTask = API.DisplayWinLines(winLines, winningPatterns, cardFrames, animationCount, ROOT)
             end
         end,
         SPIN_DURATION

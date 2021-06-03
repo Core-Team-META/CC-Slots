@@ -146,7 +146,8 @@ function PickItemRandomly(player, betAmount, slotId)
     for i = 1, 9 do
         slotsTable[i] = 4--GetRandomSlot(reelTotal)
     end
-    
+    spinCount = spinCount + 1
+    slotsTable.count = spinCount
     --[[
     slotsTable[1] = 3
     slotsTable[2] = testValue
@@ -159,8 +160,6 @@ function PickItemRandomly(player, betAmount, slotId)
     slotsTable[9] = 3]]
 
     local dataStr = API.ConvertTableToString(slotsTable)
-    --#TODO We may have problems in the future sending an empty string over the network right before real data
-    newData:SetNetworkedCustomProperty("data", "")
     newData:SetNetworkedCustomProperty("data", dataStr)
     newData:SetNetworkedCustomProperty("playerId", player.id)
     Task.Spawn(
