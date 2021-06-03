@@ -144,9 +144,10 @@ function PickItemRandomly(player, betAmount, slotId)
 
     local slotsTable = {}
     for i = 1, 9 do
-        slotsTable[i] = GetRandomSlot(reelTotal)
+        slotsTable[i] = 4--GetRandomSlot(reelTotal)
     end
-    
+    spinCount = spinCount + 1
+    slotsTable.count = spinCount
     --[[
     slotsTable[1] = 3
     slotsTable[2] = testValue

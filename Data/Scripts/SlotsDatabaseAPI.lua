@@ -18,13 +18,12 @@ API.Broadcasts = {
     2  5  8
     1  4  7
 ]]
-
 API.WIN_LINES = {
     {table = {3, 6, 9}, multiplier = 1},
-    {table = {2, 5, 8}, multiplier = 1}, 
+    {table = {2, 5, 8}, multiplier = 1},
     {table = {1, 4, 7}, multiplier = 1},
     {table = {3, 5, 7}, multiplier = 1},
-    {table = {1, 5, 9}, multiplier = 1},
+    {table = {1, 5, 9}, multiplier = 1}
 
     --[[{table = {3, 5, 9}, multiplier = 1},
     {table = {2, 6, 8}, multiplier = 1},
@@ -250,7 +249,7 @@ function API.CheckMultilineWin(vectorTable, betAmount, items, odds)
         return false
     else
         if Environment.IsServer() then
-            print("Winnings: "..tostring(reward))
+            print("Winnings: " .. tostring(reward))
             API.TablePrint(winningPatterns)
         end
         return true, reward, winningPatterns
@@ -258,7 +257,6 @@ function API.CheckMultilineWin(vectorTable, betAmount, items, odds)
 end
 
 if Environment.IsClient() then
-    
     function API.AddWinLine(player, lineID)
         local linesTable = player.clientUserData.WinLinesTable or {}
         local linesCount = player.clientUserData.WinLinesCount or 0
@@ -273,7 +271,7 @@ if Environment.IsClient() then
     end
 
     function API.RemoveWinLine(player, lineID)
-        local linesTable = player.clientUserData.WinLinesTable 
+        local linesTable = player.clientUserData.WinLinesTable
         local linesCount = player.clientUserData.WinLinesCount
 
         if not linesTable or linesTable == {} or not linesTable[lineID] then
@@ -284,18 +282,46 @@ if Environment.IsClient() then
         player.clientUserData.WinLinesCount = linesCount - 1
     end
 
-    function API.DisplayWinLines(winLines, winningPatterns, cardFrames)
+    local function WinLineDelay(delay, winLines, winningPatterns, cardFrames, count, object)
+        while time() < delay do
+            if count ~= object.clientUserData.animationCount then
+                API.ClearDisplayWinLines(winLines, winningPatterns, cardFrames)
+                return
+            end
+            Task.Wait()
+        end
+    end
+
+    function API.DisplayWinLines(winLines, winningPatterns, cardFrames, count, object)
         for id, _ in pairs(winningPatterns) do
             for _, position in ipairs(API.WIN_LINES[id].table) do
                 cardFrames[position]:SetColor(winLines[id].color)
-                Task.Wait(0.3)
+                WinLineDelay(time() + 0.3, winLines, winningPatterns, cardFrames, count, object)
             end
-            Task.Wait(0.1)
+            if count ~= object.clientUserData.animationCount then
+                API.ClearDisplayWinLines(winLines, winningPatterns, cardFrames)
+                return
+            end
+            WinLineDelay(time() + 0.1, winLines, winningPatterns, cardFrames, count, object)
             for _, position in ipairs(API.WIN_LINES[id].table) do
                 cardFrames[position]:SetColor(Color.BLACK)
             end
             winLines[id].object.visibility = Visibility.INHERIT
-            Task.Wait(0.2)
+            if count ~= object.clientUserData.animationCount then
+                API.ClearDisplayWinLines(winLines, winningPatterns, cardFrames)
+                return
+            end
+            WinLineDelay(time() + 0.2, winLines, winningPatterns, cardFrames, count, object)
+        end
+    end
+
+    function API.ClearDisplayWinLines(winLines, winningPatterns, cardFrames)
+        print("Clear win lines")
+        for id, _ in pairs(winningPatterns) do
+            for _, position in ipairs(API.WIN_LINES[id].table) do
+                cardFrames[position]:SetColor(Color.BLACK)
+            end
+            winLines[id].object.visibility = Visibility.FORCE_OFF
         end
     end
 end

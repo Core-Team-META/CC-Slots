@@ -80,7 +80,10 @@ local winnerSoundHasPlayed = false
 local isWinner = false
 local playerSpamPrevent
 local currentPlayerId, currentPlayer
+
 local lastSpinCount = 0
+ROOT.clientUserData.animationCount = 0
+
 if SPIN_DURATION < 1 then
     SPIN_DURATION = 1
     warn("Spin Duration must be great than 1")
@@ -169,7 +172,7 @@ function Activate()
         for index, item in pairs(items) do
             local params = {parent = SLOT[i], position = position}
             local lootCard = World.SpawnAsset(LOOT_CARD_TEMPLATE, params)
-            
+
             if index < 4 then -- get the frames of the 3v3 grid
                 cardFrames[count] = lootCard:GetCustomProperty("Frame"):WaitForObject()
                 --cardFrames[count]:SetColor(Color.WHITE)
@@ -211,7 +214,6 @@ function InitializeLootCard(lootCard, item, slot)
     --[[local gradient = lootCard:GetCustomProperty("Gradient"):WaitForObject()
     local bar = lootCard:GetCustomProperty("Bar"):WaitForObject()
     local border = lootCard:GetCustomProperty("Border"):WaitForObject()]]
-
     gamePortal:SetSmartProperty("Game ID", item.gamePortal)
     gamePortal:SetSmartProperty("Screenshot Index", item.screenshotIndex)
 
@@ -256,6 +258,7 @@ function WrapItems()
     end
 end
 
+local lastTask
 function OnNetworkObjectAdded(parentObject, childObject) --
     local player, playerId
 
@@ -269,6 +272,8 @@ function OnNetworkObjectAdded(parentObject, childObject) --
         print("hiding line")
         line.object.visibility = Visibility.FORCE_OFF
     end
+
+    ROOT.clientUserData.animationCount = ROOT.clientUserData.animationCount + 1
 
     results = API.ConvertStringToTable(dataStr)
     playerId = childObject:GetCustomProperty("playerId")
@@ -323,14 +328,18 @@ function OnNetworkObjectAdded(parentObject, childObject) --
             msg = "Bet " .. tostring(betAmount) .. " and Lost "
         end
     end
-
+    local animationCount = ROOT.clientUserData.animationCount
     Task.Spawn(
         function()
             if player == LOCAL_PLAYER then
                 NOTIFICATION.Add(LOCAL_PLAYER, msg)
             end
             if isWinner then
-                API.DisplayWinLines(winLines, winningPatterns, cardFrames)
+                if lastTask and lastTask ~= TaskStatus.COMPLETED then
+                    lastTask:Cancel()
+                end
+                Task.Wait()
+                lastTask = API.DisplayWinLines(winLines, winningPatterns, cardFrames, animationCount, ROOT)
             end
         end,
         SPIN_DURATION
