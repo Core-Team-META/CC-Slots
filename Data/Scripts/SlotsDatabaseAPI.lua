@@ -240,7 +240,7 @@ function API.CheckMultilineWin(vectorTable, betAmount, items, odds)
             if value then
                 reward = CoreMath.Round(reward + (betAmount * items[value].reward * pattern.multiplier))
             else -- 3 wilds; Jackpot!
-                reward = CoreMath.Round(reward * betAmount)
+                reward = CoreMath.Round(reward + (GetJackpotReward(odds) * betAmount))
             end
             winningPatterns[index] = true
         end
@@ -285,9 +285,7 @@ if Environment.IsClient() then
     end
 
     function API.DisplayWinLines(winLines, winningPatterns, cardFrames)
-        print("Displaying win lines")
         for id, _ in pairs(winningPatterns) do
-            print("Id: "..tostring(id))
             for _, position in ipairs(API.WIN_LINES[id].table) do
                 cardFrames[position]:SetColor(winLines[id].color)
                 Task.Wait(0.3)
