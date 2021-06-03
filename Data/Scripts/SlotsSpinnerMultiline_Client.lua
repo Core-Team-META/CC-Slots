@@ -143,6 +143,7 @@ function Init()
     -- SCREEN_GROUP.visibility = Visibility.FORCE_OFF
     TRIGGER.interactedEvent:Connect(OnInteracted)
     TRIGGER.interactionLabel = "Play " .. SLOT_NAME
+    LOCAL_PLAYER.clientUserData.notification = LOCAL_PLAYER.clientUserData.notification or {}
     LOCAL_PLAYER.clientUserData.SlotTriggers = LOCAL_PLAYER.clientUserData.SlotTriggers or {}
     LOCAL_PLAYER.clientUserData.SlotTriggers[SLOT_ID] = TRIGGER
     SLOT_CAM:SetRotationOffset(SLOT_CAM:GetWorldRotation())
@@ -435,7 +436,6 @@ end
 ------------------------------------------------------------------------------------------------------------------------
 -- LISTENERS
 ------------------------------------------------------------------------------------------------------------------------
-Task.Wait(1)
 for _, network in ipairs(NETWORKING:GetChildren()) do
     if network.name == SLOT_ID then
         local dataStr = network:GetCustomProperty("data")
