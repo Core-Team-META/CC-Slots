@@ -52,7 +52,7 @@ local ODDS = SETTINGS:GetCustomProperty("Odds")
 -- LOCAL VARIABLES
 ------------------------------------------------------------------------------------------------------------------------
 
-local results = {Vector3.New(1, 1, 1), Vector3.New(1, 1, 1), Vector3.New(1, 1, 1)}
+local results = {1, 1, 1, 1, 1, 1, 1, 1, 1}
 local items = API.GetSlots(THEME_ID)
 local isEnabled = false
 local spacing = 600
@@ -79,7 +79,7 @@ local winnerSoundHasPlayed = false
 local isWinner = false
 local playerSpamPrevent
 local currentPlayerId, currentPlayer
-
+local lastSpinCount = 0
 if SPIN_DURATION < 1 then
     SPIN_DURATION = 1
     warn("Spin Duration must be great than 1")
@@ -143,19 +143,8 @@ function Init()
         spinTargetPosition[i] = slotCard.clientUserData.startPosition.z
     end
 
-    WIN_LINE_OBJECTS.visibility = Visibility.FORCE_OFF
     for _, line in ipairs(WIN_LINE_OBJECTS:GetChildren()) do
         local id = line:GetCustomProperty("ID")
-
-        if not id then
-            error("Win line object is missing the ID property: "..line.name)
-        end
-
-        if winLines[id] then
-            error("Can not have duplicate win line IDs: "..line.name)
-        end
-
-        winLines[id] = line
     end
 end
 
@@ -179,30 +168,30 @@ end
 function InitializeLootCard(lootCard, item, slot)
     local itemId = item.id
 
-    for _, result in ipairs(results) do
-        result.x = result.x > 0 and result.x or 1
+    --[[for _, result in ipairs(results) do
+        result = result.x > 0 and result.x or 1
         result.y = result.y > 0 and result.y or 1
         result.z = result.z > 0 and result.z or 1
-    end
+    end]]--
 
     if slot == 1 and item.id == 1 then
-        item = API.GetSlotById(THEME_ID, results[1].x)
+        item = API.GetSlotById(THEME_ID, results[1])
     elseif slot == 1 and item.id == 2 then
-        item = API.GetSlotById(THEME_ID, results[1].y)
+        item = API.GetSlotById(THEME_ID, results[2])
     elseif slot == 1 and item.id == 3 then
-        item = API.GetSlotById(THEME_ID, results[1].z)
+        item = API.GetSlotById(THEME_ID, results[3])
     elseif slot == 2 and item.id == 1 then
-        item = API.GetSlotById(THEME_ID, results[2].x)
+        item = API.GetSlotById(THEME_ID, results[4])
     elseif slot == 2 and item.id == 2 then
-        item = API.GetSlotById(THEME_ID, results[2].y)
+        item = API.GetSlotById(THEME_ID, results[5])
     elseif slot == 2 and item.id == 3 then
-        item = API.GetSlotById(THEME_ID, results[2].z)
+        item = API.GetSlotById(THEME_ID, results[6])
     elseif slot == 3 and item.id == 1 then
-        item = API.GetSlotById(THEME_ID, results[3].x)
+        item = API.GetSlotById(THEME_ID, results[7])
     elseif slot == 3 and item.id == 2 then
-        item = API.GetSlotById(THEME_ID, results[3].y)
+        item = API.GetSlotById(THEME_ID, results[8])
     elseif slot == 3 and item.id == 3 then
-        item = API.GetSlotById(THEME_ID, results[3].z)
+        item = API.GetSlotById(THEME_ID, results[9])
     end
 
     local gamePortal = lootCard:GetCustomProperty("GamePortal"):WaitForObject()
@@ -256,18 +245,16 @@ end
 
 function OnNetworkObjectAdded(parentObject, childObject) --
     local player, playerId
-    spinEndTime = childObject:GetCustomProperty("spinTime")
-    while not spinEndTime or spinEndTime < time() or not playerId do
-        results[1] = childObject:GetCustomProperty("Row1")
-        results[2] = childObject:GetCustomProperty("Row2")
-        results[3] = childObject:GetCustomProperty("Row3")
-        playerId = childObject:GetCustomProperty("playerId")
-        spinEndTime = childObject:GetCustomProperty("spinTime")
 
+    local dataStr = childObject:GetCustomProperty("data")
+
+    while dataStr == "" do
         Task.Wait()
+        dataStr = childObject:GetCustomProperty("data")
     end
 
-    WIN_LINE_OBJECTS.visibility = Visibility.FORCE_OFF
+    results = API.ConvertStringToTable(dataStr)
+    playerId = childObject:GetCustomProperty("playerId")
 
     player = Game.FindPlayer(playerId)
     local position = Vector3.ZERO
@@ -285,7 +272,7 @@ function OnNetworkObjectAdded(parentObject, childObject) --
     currentSlots[1] = slot1
     currentSlots[2] = slot2
     currentSlots[3] = slot3
- 
+
     for i = 1, 3 do
         local itemId = 1
         if i == 1 then
@@ -306,42 +293,27 @@ function OnNetworkObjectAdded(parentObject, childObject) --
     winnerSoundHasPlayed = false
     slotSound = {false, false, false}
     BELL:Play()
-    
-    local msg
-    local betAmount = player.clientUserData.betAmount or 100
-    local reward
-    local winningPatterns
-    isWinner, reward, winningPatterns = API.CheckMultilineWin(results, betAmount, items, ODDS)
-
     if player == LOCAL_PLAYER then
+        local msg
+        local betAmount = LOCAL_PLAYER.clientUserData.betAmount
+        local reward
+        isWinner, reward = API.CheckMultilineWin(results, betAmount, items, ODDS)
+
         if isWinner then
             msg = "Bet " .. tostring(betAmount) .. " and Won " .. tostring(reward)
         else
             msg = "Bet " .. tostring(betAmount) .. " and Lost "
         end
-    end
 
-    Task.Spawn(
-        function()
-            if player == LOCAL_PLAYER then
+        Task.Spawn(
+            function()
                 NOTIFICATION.Add(LOCAL_PLAYER, msg)
-            end
-            if isWinner then
-                for id, line in ipairs(winLines) do
-                    if winningPatterns[id] then
-                        line.visibility = Visibility.INHERIT
-                    else
-                        line.visibility = Visibility.FORCE_OFF
-                    end
-                end
-                WIN_LINE_OBJECTS.visibility = Visibility.INHERIT
-            end
-        end,
-        SPIN_DURATION
-    )
+            end,
+            SPIN_DURATION
+        )
 
     --Events.BroadcastToServer(API.Broadcasts.destroy, childObject.id)
-    
+    end
 end
 
 function Tick(dt)
@@ -387,7 +359,9 @@ end
 function OnNetworkChanged(object, string)
     if string == "playerId" then
         local playerId = object:GetCustomProperty(string)
-        if playerId == "" and currentPlayer == LOCAL_PLAYER then
+
+
+        if not playerId and currentPlayer == LOCAL_PLAYER then
             LOCAL_PLAYER.clientUserData.slotId = nil
             currentPlayer = nil
             Hide()
@@ -401,9 +375,8 @@ function OnNetworkChanged(object, string)
             LOCAL_PLAYER.clientUserData.maxBet = MAX_BET
             Show()
         end
-    elseif string == "spinTime" then
+    elseif string == "data" then
         OnNetworkObjectAdded(_, object)
-        spinEndTime = object:GetCustomProperty(string)
     end
 end
 
@@ -412,9 +385,10 @@ end
 ------------------------------------------------------------------------------------------------------------------------
 for _, network in ipairs(NETWORKING:GetChildren()) do
     if network.name == SLOT_ID then
-        results[1] = network:GetCustomProperty("Row1")
-        results[2] = network:GetCustomProperty("Row2")
-        results[3] = network:GetCustomProperty("Row3")
+        local dataStr = network:GetCustomProperty("data")
+        if dataStr ~= "" then
+            results = API.ConvertStringToTable(dataStr)
+        end
         currentPlayerId = network:GetCustomProperty("playerId")
         if currentPlayerId ~= "" then
             currentPlayer = Game.FindPlayer(currentPlayerId)

@@ -22,51 +22,15 @@ Assets {
             String: ""
           }
           Overrides {
-            Name: "cs:spinTime"
-            Float: 0
-          }
-          Overrides {
-            Name: "cs:Row1"
-            Vector {
-              X: 1
-              Y: 1
-              Z: 1
-            }
-          }
-          Overrides {
-            Name: "cs:Row2"
-            Vector {
-              X: 1
-              Y: 1
-              Z: 1
-            }
-          }
-          Overrides {
-            Name: "cs:Row3"
-            Vector {
-              X: 1
-              Y: 1
-              Z: 1
-            }
+            Name: "cs:data"
+            String: ""
           }
           Overrides {
             Name: "cs:playerId:isrep"
             Bool: true
           }
           Overrides {
-            Name: "cs:spinTime:isrep"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:Row1:isrep"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:Row2:isrep"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:Row3:isrep"
+            Name: "cs:data:isrep"
             Bool: true
           }
         }

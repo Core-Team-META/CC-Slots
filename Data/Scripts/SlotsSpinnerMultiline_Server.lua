@@ -41,6 +41,7 @@ local newData = World.SpawnAsset(PlayerData, {parent = NETWORKING})
 local sitPosition = PLAYER_POSITION:GetWorldPosition()
 local sitRotation = PLAYER_POSITION:GetWorldRotation()
 local standPosition
+local spinCount = 0
 newData.name = SLOT_ID
 
 if spinDuration < 1 then
@@ -141,7 +142,7 @@ function PickItemRandomly(player, betAmount, slotId)
     for i=1, 9 do 
         slotsTable[i] = GetRandomSlot(reelTotal)
     end
-
+    
     --[[
     slotsTable[2] = 1
     slotsTable[5] = 5
@@ -151,13 +152,13 @@ function PickItemRandomly(player, betAmount, slotId)
     slotsTable[3] = 2
     slotsTable[6] = 2
     slotsTable[9] = 2]]
-
-    newData:SetNetworkedCustomProperty("Row1", Vector3.New(slotsTable[1], slotsTable[2], slotsTable[3]))
+    local dataStr = API.ConvertTableToString(slotsTable)
+   --[[ newData:SetNetworkedCustomProperty("Row1", Vector3.New(slotsTable[1], slotsTable[2], slotsTable[3]))
     newData:SetNetworkedCustomProperty("Row2", Vector3.New(slotsTable[4], slotsTable[5], slotsTable[6]))
-    newData:SetNetworkedCustomProperty("Row3", Vector3.New(slotsTable[7], slotsTable[8], slotsTable[9]))
+    newData:SetNetworkedCustomProperty("Row3", Vector3.New(slotsTable[7], slotsTable[8], slotsTable[9]))]]--
+    newData:SetNetworkedCustomProperty("data", dataStr)
     newData:SetNetworkedCustomProperty("playerId", player.id)
-    Task.Wait()
-    newData:SetNetworkedCustomProperty("spinTime", time())
+  
 
     Task.Spawn(
         function()
