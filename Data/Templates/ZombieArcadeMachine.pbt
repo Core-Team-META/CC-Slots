@@ -21328,7 +21328,6 @@ Assets {
         }
         ParentId: 6359004446680559621
         ChildIds: 7171622000579626838
-        ChildIds: 5227805797095538411
         ChildIds: 9044988576690647507
         ChildIds: 2369290529733391305
         ChildIds: 10918267628292386160
@@ -21405,80 +21404,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 5227805797095538411
-        Name: "Sphere"
-        Transform {
-          Location {
-            Y: 1.43193269
-            Z: 11.9030876
-          }
-          Rotation {
-            Roll: -23.8797913
-          }
-          Scale {
-            X: 0.221627772
-            Y: 0.234701961
-            Z: 0.190760747
-          }
-        }
-        ParentId: 9025067067510044427
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 9514371197224103587
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 1
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 1
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 14231359905544918373
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
           StaticMesh {
             Physics {
               Mass: 100
