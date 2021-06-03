@@ -723,6 +723,14 @@ Assets {
             Int: 1
           }
           Overrides {
+            Name: "cs:Color"
+            Color {
+              R: 0.117000006
+              G: 0.86423862
+              A: 1
+            }
+          }
+          Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
               Id: 17562164668774050038
@@ -788,6 +796,14 @@ Assets {
           Overrides {
             Name: "cs:ID"
             Int: 2
+          }
+          Overrides {
+            Name: "cs:Color"
+            Color {
+              R: 0.87
+              G: 0.864238501
+              A: 1
+            }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -863,6 +879,15 @@ Assets {
             Int: 3
           }
           Overrides {
+            Name: "cs:Color"
+            Color {
+              R: 0.87
+              G: 0.014789965
+              B: 0.014789965
+              A: 1
+            }
+          }
+          Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
               Id: 17562164668774050038
@@ -936,6 +961,14 @@ Assets {
             Int: 4
           }
           Overrides {
+            Name: "cs:Color"
+            Color {
+              R: 0.866000056
+              B: 0.692799807
+              A: 1
+            }
+          }
+          Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
               Id: 17562164668774050038
@@ -1007,6 +1040,15 @@ Assets {
           Overrides {
             Name: "cs:ID"
             Int: 5
+          }
+          Overrides {
+            Name: "cs:Color"
+            Color {
+              R: 0.161544144
+              G: 0.762
+              B: 0.561848104
+              A: 1
+            }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
