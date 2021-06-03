@@ -25,7 +25,6 @@ Objects {
   ChildIds: 4675025735314061901
   ChildIds: 2669417942466758110
   ChildIds: 15899737562429904580
-  ChildIds: 16682869803356586025
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -38,52 +37,6 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
-  }
-}
-Objects {
-  Id: 16682869803356586025
-  Name: "Zombie Arcade Multiline - Zombie"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12176439763912673964
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Zombie Arcade Multiline - Zombie"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 1243
-            Y: -670
-            Z: -17
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 90
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 15388843617968423410
-    }
   }
 }
 Objects {
