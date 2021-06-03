@@ -249,7 +249,6 @@ function API.CheckMultilineWin(vectorTable, betAmount, items, odds)
         return false
     else
         if Environment.IsServer() then
-            print("Winnings: " .. tostring(reward))
             API.TablePrint(winningPatterns)
         end
         return true, reward, winningPatterns
@@ -316,7 +315,6 @@ if Environment.IsClient() then
     end
 
     function API.ClearDisplayWinLines(winLines, winningPatterns, cardFrames)
-        print("Clear win lines")
         for id, _ in pairs(winningPatterns) do
             for _, position in ipairs(API.WIN_LINES[id].table) do
                 cardFrames[position]:SetColor(Color.BLACK)
