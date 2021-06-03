@@ -149,15 +149,15 @@ function PickItemRandomly(player, betAmount, slotId)
     spinCount = spinCount + 1
     slotsTable.count = spinCount
     --[[
-    slotsTable[1] = 3
-    slotsTable[2] = testValue
-    slotsTable[3] = 3
-    slotsTable[4] = 4
-    slotsTable[5] = testValue
-    slotsTable[6] = 4
-    slotsTable[7] = 3
-    slotsTable[8] = testValue
-    slotsTable[9] = 3]]
+    slotsTable[1] = 5
+    slotsTable[2] = 5
+    slotsTable[3] = 5
+    slotsTable[4] = 5
+    slotsTable[5] = 5
+    slotsTable[6] = 5
+    slotsTable[7] = 5
+    slotsTable[8] = 5
+    slotsTable[9] = 5 --]]
 
     local dataStr = API.ConvertTableToString(slotsTable)
     newData:SetNetworkedCustomProperty("data", dataStr)

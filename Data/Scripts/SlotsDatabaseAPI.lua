@@ -250,7 +250,7 @@ function API.CheckMultilineWin(vectorTable, betAmount, items, odds)
         return false
     else
         if Environment.IsServer() then
-            API.TablePrint(winningPatterns)
+            --API.TablePrint(winningPatterns)
         end
         return true, reward, winningPatterns
     end

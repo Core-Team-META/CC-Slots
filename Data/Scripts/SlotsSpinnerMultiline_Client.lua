@@ -68,6 +68,9 @@ pivotStartPosition[1] = SLOT[1]:GetPosition()
 pivotStartPosition[2] = SLOT[2]:GetPosition()
 pivotStartPosition[3] = SLOT[3]:GetPosition()
 
+local cancelAnimation = {}
+cancelAnimation.value = false
+
 -- This is what we are spinning towards
 local spinTargetPosition = {}
 local spinDistance = {500, 500, 500}
@@ -267,8 +270,8 @@ function OnNetworkObjectAdded(parentObject, childObject) --
         dataStr = childObject:GetCustomProperty("data")
     end
 
+    cancelAnimation.value = true
     for id, line in ipairs(winLines) do
-        print("hiding line")
         line.object.visibility = Visibility.FORCE_OFF
     end
 
@@ -338,7 +341,7 @@ function OnNetworkObjectAdded(parentObject, childObject) --
                     lastTask:Cancel()
                 end
                 Task.Wait()
-                lastTask = API.DisplayWinLines(winLines, winningPatterns, cardFrames, animationCount, ROOT)
+                lastTask = API.DisplayWinLines(winLines, winningPatterns, cardFrames, cancelAnimation)
             end
         end,
         SPIN_DURATION
