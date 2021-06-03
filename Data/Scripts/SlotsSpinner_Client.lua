@@ -15,7 +15,6 @@ local NOTIFICATION = require(script:GetCustomProperty("NotificationAPI"))
 local ROOT = script:GetCustomProperty("ROOT"):WaitForObject()
 local NETWORKING = script:GetCustomProperty("Networking"):WaitForObject()
 local SCREEN_GROUP = script:GetCustomProperty("ScreenGroup"):WaitForObject()
-local UI_CONTAINER = script:GetCustomProperty("UIContainer"):WaitForObject()
 local LOOT_CARD_TEMPLATE = script:GetCustomProperty("LootCardTemplate")
 local SPIN_BUTTON = script:GetCustomProperty("SpinButton"):WaitForObject()
 local BACKGROUND = script:GetCustomProperty("Background"):WaitForObject()
@@ -90,13 +89,11 @@ end
 local function Show()
     if currentPlayer == LOCAL_PLAYER then
         isEnabled = true
-        -- SCREEN_GROUP.visibility = Visibility.INHERIT
-        UI_CONTAINER.visibility = Visibility.INHERIT
         UI.SetCursorVisible(true)
         UI.SetCanCursorInteractWithUI(true)
         LOCAL_PLAYER:SetOverrideCamera(SLOT_CAM)
         LOCAL_PLAYER.isVisibleToSelf = false
-    --Activate()
+        Events.Broadcast(API.Broadcasts.uiShow)
     end
 end
 
@@ -117,13 +114,11 @@ local function Hide()
     print(currentPlayer)
     if currentPlayer == LOCAL_PLAYER then
         isEnabled = false
-        -- SCREEN_GROUP.visibility = Visibility.FORCE_OFF
-        UI_CONTAINER.visibility = Visibility.FORCE_OFF
         UI.SetCursorVisible(false)
         UI.SetCanCursorInteractWithUI(false)
         LOCAL_PLAYER:ClearOverrideCamera()
         LOCAL_PLAYER.isVisibleToSelf = true
-    --Deactivate()
+        Events.Broadcast(API.Broadcasts.uiHide)
     end
 end
 
@@ -135,7 +130,7 @@ function Init()
     -- SCREEN_GROUP:AttachToLocalView()
     -- SCREEN_GROUP.visibility = Visibility.FORCE_OFF
     SLOT_CAM:SetRotationOffset(SLOT_CAM:GetWorldRotation())
-    UI_CONTAINER.visibility = Visibility.FORCE_OFF
+    
     Activate()
     isEnabled = true
     for i = 1, 3 do
@@ -288,7 +283,6 @@ function OnNetworkObjectAdded(parentObject, childObject) --
         SPIN_DURATION
     )
 
-    --Events.BroadcastToServer(API.Broadcasts.destroy, childObject.id)
 end
 
 function Tick(dt)

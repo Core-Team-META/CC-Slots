@@ -439,8 +439,8 @@ Assets {
         Name: "ScreenGroup"
         Transform {
           Location {
-            Y: 84.8519287
-            Z: 134.60083
+            Y: 84.8518753
+            Z: 140
           }
           Rotation {
             Pitch: -12.9999876

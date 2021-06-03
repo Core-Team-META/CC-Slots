@@ -19,6 +19,25 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 3387152528755599583
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            Y: 84.8516235
+            Z: 140.209915
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -13
+            Yaw: -90
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 8019821520510676024
       value {
         Overrides {
@@ -130,6 +149,15 @@ Objects {
           Rotator {
             Yaw: 90
           }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9576669645920691922
+      value {
+        Overrides {
+          Name: "cs:StartingCurrency"
+          Int: 100000
         }
       }
     }

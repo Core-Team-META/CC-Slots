@@ -271,6 +271,12 @@ Objects {
         SelfId: 4695308851505568589
       }
     }
+    Overrides {
+      Name: "cs:UIContainer"
+      ObjectReference {
+        SelfId: 7637385122368510837
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

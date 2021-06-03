@@ -9,18 +9,34 @@
 local API = require(script:GetCustomProperty("API"))
 local NOTIFICATION = require(script:GetCustomProperty("NotificationAPI"))
 
+------------------------------------------------------------------------------------------------------------------------
+-- OBJECTS
+------------------------------------------------------------------------------------------------------------------------
+
+local LOCAL_PLAYER = Game.GetLocalPlayer()
 local GEO = script:GetCustomProperty("GEO"):WaitForObject()
 local SETTINGS = script:GetCustomProperty("Settings"):WaitForObject()
-local SLOT_ID = SETTINGS.id
-local RESOURCE_NAME = SETTINGS:GetCustomProperty("ResourceName")
-
 local BetAmount = GEO:GetCustomProperty("BetAmount"):WaitForObject()
 local PlayerWallet = GEO:GetCustomProperty("PlayerWallet"):WaitForObject()
 local BetAmount = GEO:GetCustomProperty("BetAmount"):WaitForObject()
 
-local LOCAL_PLAYER = Game.GetLocalPlayer()
+------------------------------------------------------------------------------------------------------------------------
+-- CUSTOM PROPERTIES
+------------------------------------------------------------------------------------------------------------------------
+
+local SLOT_ID = SETTINGS.id
+local RESOURCE_NAME = SETTINGS:GetCustomProperty("ResourceName")
+
+------------------------------------------------------------------------------------------------------------------------
+-- LOCAL VARIABLES
+------------------------------------------------------------------------------------------------------------------------
+
 local CurrentPlayer = nil
 local pastBets = {}
+
+------------------------------------------------------------------------------------------------------------------------
+-- GLOBAL FUNCTIONS
+------------------------------------------------------------------------------------------------------------------------
 
 function OnBindingPressed(player, keybind)
     if keybind == "ability_primary" then
@@ -77,9 +93,9 @@ function Tick()
         return
     end
     if Object.IsValid(CurrentPlayer) then
-        PlayerWallet.text = tostring(CurrentPlayer:GetResource(RESOURCE_NAME))
+        PlayerWallet.text = tostring(API.FormatInt(CurrentPlayer:GetResource(RESOURCE_NAME)))
         if CurrentPlayer.clientUserData.betAmount then
-            BetAmount.text = tostring(CurrentPlayer.clientUserData.betAmount)
+            BetAmount.text = tostring(API.FormatInt(CurrentPlayer.clientUserData.betAmount))
         end
     end
     if CurrentPlayer.clientUserData.notification then
@@ -93,6 +109,10 @@ function Tick()
         end
     end
 end
+
+------------------------------------------------------------------------------------------------------------------------
+-- LISTNERS
+------------------------------------------------------------------------------------------------------------------------
 
 LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)
 Events.Connect(API.Broadcasts.slotChange, OnSlotChanged)

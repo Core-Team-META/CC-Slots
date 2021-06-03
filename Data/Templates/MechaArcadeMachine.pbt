@@ -1004,6 +1004,7 @@ Assets {
         ChildIds: 1497739991443212344
         ChildIds: 8030904137641736019
         ChildIds: 12627799022557844509
+        ChildIds: 122022105717807445
         ChildIds: 5892907538412886896
         ChildIds: 3580537202393740168
         ChildIds: 5118725230034109434
@@ -1660,6 +1661,438 @@ Assets {
               LinearDamping: 0.01
             }
             BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 122022105717807445
+        Name: "ClientContext"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 18035254857092324981
+        ChildIds: 3169013060607268521
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
+        Id: 3169013060607268521
+        Name: "Text"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Pitch: 83.6007614
+            Yaw: 90
+            Roll: 1.53204073e-05
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 122022105717807445
+        ChildIds: 4801514519900023255
+        ChildIds: 16439501239442106095
+        ChildIds: 5858942238414124749
+        ChildIds: 2499262719443294300
+        ChildIds: 17128151922108687020
+        ChildIds: 384278207375666523
+        ChildIds: 14849670546813434296
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 4801514519900023255
+        Name: "Bet Amount"
+        Transform {
+          Location {
+            X: 94.5486221
+            Y: -9.8387146
+            Z: -27.9066525
+          }
+          Rotation {
+            Yaw: -3.4150944e-06
+          }
+          Scale {
+            X: 0.230536327
+            Y: 0.155997127
+            Z: 0.230536327
+          }
+        }
+        ParentId: 3169013060607268521
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Text {
+          Text: "1"
+          FontAsset {
+            Id: 3719536377982098645
+          }
+          Color {
+            R: 1
+            G: 0.60158962
+            B: 0.0600000024
+            A: 1
+          }
+          HorizontalSize: 1
+          VerticalSize: 1
+          HorizontalAlignment {
+            Value: "mc:ecoretexthorizontalalign:left"
+          }
+          VerticalAlignment {
+            Value: "mc:ecoretextverticalalign:center"
+          }
+        }
+      }
+      Objects {
+        Id: 16439501239442106095
+        Name: "Player Wallet"
+        Transform {
+          Location {
+            X: 94.4762497
+            Y: -31.7069054
+            Z: -43.0893059
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.33882
+            Y: 0.229269549
+            Z: 0.33882
+          }
+        }
+        ParentId: 3169013060607268521
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Text {
+          Text: "0"
+          FontAsset {
+            Id: 3719536377982098645
+          }
+          Color {
+            R: 2
+            G: 1.20317936
+            B: 0.120000124
+            A: 1
+          }
+          HorizontalSize: 1
+          VerticalSize: 1
+          HorizontalAlignment {
+            Value: "mc:ecoretexthorizontalalign:right"
+          }
+          VerticalAlignment {
+            Value: "mc:ecoretextverticalalign:center"
+          }
+        }
+      }
+      Objects {
+        Id: 5858942238414124749
+        Name: "Recent Activity 1"
+        Transform {
+          Location {
+            X: 94.4374542
+            Y: 9.76752472
+            Z: -36.2184792
+          }
+          Rotation {
+            Yaw: -3.4150944e-06
+          }
+          Scale {
+            X: 0.154270142
+            Y: 0.104390085
+            Z: 0.154270142
+          }
+        }
+        ParentId: 3169013060607268521
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Text {
+          Text: "Press Spin To Begin"
+          FontAsset {
+            Id: 3719536377982098645
+          }
+          Color {
+            R: 0.177814513
+            G: 0.537
+            A: 1
+          }
+          HorizontalSize: 1
+          VerticalSize: 1
+          HorizontalAlignment {
+            Value: "mc:ecoretexthorizontalalign:left"
+          }
+          VerticalAlignment {
+            Value: "mc:ecoretextverticalalign:center"
+          }
+        }
+      }
+      Objects {
+        Id: 2499262719443294300
+        Name: "Recent Activity 2"
+        Transform {
+          Location {
+            X: 94.983696
+            Y: 31.4687538
+            Z: -36.1874428
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.154270142
+            Y: 0.104390085
+            Z: 0.154270142
+          }
+        }
+        ParentId: 3169013060607268521
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Text {
+          Text: " "
+          FontAsset {
+            Id: 3719536377982098645
+          }
+          Color {
+            R: 0.537
+            G: 0.0268500056
+            A: 1
+          }
+          HorizontalSize: 1
+          VerticalSize: 1
+          HorizontalAlignment {
+            Value: "mc:ecoretexthorizontalalign:left"
+          }
+          VerticalAlignment {
+            Value: "mc:ecoretextverticalalign:center"
+          }
+        }
+      }
+      Objects {
+        Id: 17128151922108687020
+        Name: "Recent Activity 3"
+        Transform {
+          Location {
+            X: 94.9829254
+            Y: 31.4687538
+            Z: -33.1497421
+          }
+          Rotation {
+            Pitch: -3.05175781e-05
+            Yaw: 1.75057746e-11
+          }
+          Scale {
+            X: 0.154270142
+            Y: 0.104390085
+            Z: 0.154270142
+          }
+        }
+        ParentId: 3169013060607268521
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Text {
+          Text: " "
+          FontAsset {
+            Id: 3719536377982098645
+          }
+          Color {
+            R: 0.537
+            G: 0.0268500056
+            A: 1
+          }
+          HorizontalSize: 1
+          VerticalSize: 1
+          HorizontalAlignment {
+            Value: "mc:ecoretexthorizontalalign:left"
+          }
+          VerticalAlignment {
+            Value: "mc:ecoretextverticalalign:center"
+          }
+        }
+      }
+      Objects {
+        Id: 384278207375666523
+        Name: "Recent Activity 4"
+        Transform {
+          Location {
+            X: 94.9820709
+            Y: 31.4687538
+            Z: -30.1994095
+          }
+          Rotation {
+            Pitch: -6.10351563e-05
+            Yaw: 3.33831018e-11
+          }
+          Scale {
+            X: 0.154270142
+            Y: 0.104390085
+            Z: 0.154270142
+          }
+        }
+        ParentId: 3169013060607268521
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Text {
+          Text: " "
+          FontAsset {
+            Id: 3719536377982098645
+          }
+          Color {
+            R: 0.537
+            G: 0.0268500056
+            A: 1
+          }
+          HorizontalSize: 1
+          VerticalSize: 1
+          HorizontalAlignment {
+            Value: "mc:ecoretexthorizontalalign:left"
+          }
+          VerticalAlignment {
+            Value: "mc:ecoretextverticalalign:center"
+          }
+        }
+      }
+      Objects {
+        Id: 14849670546813434296
+        Name: "Recent Activity 5"
+        Transform {
+          Location {
+            X: 94.9827423
+            Y: 31.4687538
+            Z: -27.3054276
+          }
+          Rotation {
+            Pitch: -0.000122070313
+            Yaw: 6.22879942e-11
+          }
+          Scale {
+            X: 0.154270142
+            Y: 0.104390085
+            Z: 0.154270142
+          }
+        }
+        ParentId: 3169013060607268521
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Text {
+          Text: " "
+          FontAsset {
+            Id: 3719536377982098645
+          }
+          Color {
+            R: 0.537
+            G: 0.0268500056
+            A: 1
+          }
+          HorizontalSize: 1
+          VerticalSize: 1
+          HorizontalAlignment {
+            Value: "mc:ecoretexthorizontalalign:left"
+          }
+          VerticalAlignment {
+            Value: "mc:ecoretextverticalalign:center"
           }
         }
       }
@@ -2351,7 +2784,6 @@ Assets {
           }
         }
         ParentId: 18035254857092324981
-        ChildIds: 122022105717807445
         ChildIds: 6016212787217245530
         ChildIds: 4664421298776084731
         ChildIds: 17897823281697368323
@@ -2370,438 +2802,6 @@ Assets {
         }
         Folder {
           IsGroup: true
-        }
-      }
-      Objects {
-        Id: 122022105717807445
-        Name: "ClientContext"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 10058346830389356160
-        ChildIds: 3169013060607268521
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 3169013060607268521
-        Name: "Text"
-        Transform {
-          Location {
-          }
-          Rotation {
-            Pitch: 83.6007614
-            Yaw: 90
-            Roll: 1.53204073e-05
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 122022105717807445
-        ChildIds: 4801514519900023255
-        ChildIds: 16439501239442106095
-        ChildIds: 5858942238414124749
-        ChildIds: 2499262719443294300
-        ChildIds: 17128151922108687020
-        ChildIds: 384278207375666523
-        ChildIds: 14849670546813434296
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 4801514519900023255
-        Name: "Bet Amount"
-        Transform {
-          Location {
-            X: 94.5486221
-            Y: -9.8387146
-            Z: -27.9066525
-          }
-          Rotation {
-            Yaw: -3.4150944e-06
-          }
-          Scale {
-            X: 0.230536327
-            Y: 0.155997127
-            Z: 0.230536327
-          }
-        }
-        ParentId: 3169013060607268521
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Text {
-          Text: "99999999999"
-          FontAsset {
-            Id: 3719536377982098645
-          }
-          Color {
-            R: 1
-            G: 0.60158962
-            B: 0.0600000024
-            A: 1
-          }
-          HorizontalSize: 1
-          VerticalSize: 1
-          HorizontalAlignment {
-            Value: "mc:ecoretexthorizontalalign:left"
-          }
-          VerticalAlignment {
-            Value: "mc:ecoretextverticalalign:center"
-          }
-        }
-      }
-      Objects {
-        Id: 16439501239442106095
-        Name: "Player Wallet"
-        Transform {
-          Location {
-            X: 94.4762497
-            Y: -31.7069054
-            Z: -43.0893059
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.33882
-            Y: 0.229269549
-            Z: 0.33882
-          }
-        }
-        ParentId: 3169013060607268521
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Text {
-          Text: "99999999999"
-          FontAsset {
-            Id: 3719536377982098645
-          }
-          Color {
-            R: 2
-            G: 1.20317936
-            B: 0.120000124
-            A: 1
-          }
-          HorizontalSize: 1
-          VerticalSize: 1
-          HorizontalAlignment {
-            Value: "mc:ecoretexthorizontalalign:right"
-          }
-          VerticalAlignment {
-            Value: "mc:ecoretextverticalalign:center"
-          }
-        }
-      }
-      Objects {
-        Id: 5858942238414124749
-        Name: "Recent Activity 1"
-        Transform {
-          Location {
-            X: 94.4374542
-            Y: 9.76752472
-            Z: -36.2184792
-          }
-          Rotation {
-            Yaw: -3.4150944e-06
-          }
-          Scale {
-            X: 0.154270142
-            Y: 0.104390085
-            Z: 0.154270142
-          }
-        }
-        ParentId: 3169013060607268521
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Text {
-          Text: "You Bet _______ and Won _______"
-          FontAsset {
-            Id: 3719536377982098645
-          }
-          Color {
-            R: 0.177814513
-            G: 0.537
-            A: 1
-          }
-          HorizontalSize: 1
-          VerticalSize: 1
-          HorizontalAlignment {
-            Value: "mc:ecoretexthorizontalalign:left"
-          }
-          VerticalAlignment {
-            Value: "mc:ecoretextverticalalign:center"
-          }
-        }
-      }
-      Objects {
-        Id: 2499262719443294300
-        Name: "Recent Activity 2"
-        Transform {
-          Location {
-            X: 94.983696
-            Y: 31.4687538
-            Z: -36.1874428
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.154270142
-            Y: 0.104390085
-            Z: 0.154270142
-          }
-        }
-        ParentId: 3169013060607268521
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Text {
-          Text: "You Bet _______ and Lost _______"
-          FontAsset {
-            Id: 3719536377982098645
-          }
-          Color {
-            R: 0.537
-            G: 0.0268500056
-            A: 1
-          }
-          HorizontalSize: 1
-          VerticalSize: 1
-          HorizontalAlignment {
-            Value: "mc:ecoretexthorizontalalign:left"
-          }
-          VerticalAlignment {
-            Value: "mc:ecoretextverticalalign:center"
-          }
-        }
-      }
-      Objects {
-        Id: 17128151922108687020
-        Name: "Recent Activity 3"
-        Transform {
-          Location {
-            X: 94.9829254
-            Y: 31.4687538
-            Z: -33.1497421
-          }
-          Rotation {
-            Pitch: -3.05175781e-05
-            Yaw: 1.75057746e-11
-          }
-          Scale {
-            X: 0.154270142
-            Y: 0.104390085
-            Z: 0.154270142
-          }
-        }
-        ParentId: 3169013060607268521
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Text {
-          Text: "You Bet _______ and Lost _______"
-          FontAsset {
-            Id: 3719536377982098645
-          }
-          Color {
-            R: 0.537
-            G: 0.0268500056
-            A: 1
-          }
-          HorizontalSize: 1
-          VerticalSize: 1
-          HorizontalAlignment {
-            Value: "mc:ecoretexthorizontalalign:left"
-          }
-          VerticalAlignment {
-            Value: "mc:ecoretextverticalalign:center"
-          }
-        }
-      }
-      Objects {
-        Id: 384278207375666523
-        Name: "Recent Activity 4"
-        Transform {
-          Location {
-            X: 94.9820709
-            Y: 31.4687538
-            Z: -30.1994095
-          }
-          Rotation {
-            Pitch: -6.10351563e-05
-            Yaw: 3.33831018e-11
-          }
-          Scale {
-            X: 0.154270142
-            Y: 0.104390085
-            Z: 0.154270142
-          }
-        }
-        ParentId: 3169013060607268521
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Text {
-          Text: "You Bet _______ and Lost _______"
-          FontAsset {
-            Id: 3719536377982098645
-          }
-          Color {
-            R: 0.537
-            G: 0.0268500056
-            A: 1
-          }
-          HorizontalSize: 1
-          VerticalSize: 1
-          HorizontalAlignment {
-            Value: "mc:ecoretexthorizontalalign:left"
-          }
-          VerticalAlignment {
-            Value: "mc:ecoretextverticalalign:center"
-          }
-        }
-      }
-      Objects {
-        Id: 14849670546813434296
-        Name: "Recent Activity 5"
-        Transform {
-          Location {
-            X: 94.9827423
-            Y: 31.4687538
-            Z: -27.3054276
-          }
-          Rotation {
-            Pitch: -0.000122070313
-            Yaw: 6.22879942e-11
-          }
-          Scale {
-            X: 0.154270142
-            Y: 0.104390085
-            Z: 0.154270142
-          }
-        }
-        ParentId: 3169013060607268521
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Text {
-          Text: "You Bet _______ and Lost _______"
-          FontAsset {
-            Id: 3719536377982098645
-          }
-          Color {
-            R: 0.537
-            G: 0.0268500056
-            A: 1
-          }
-          HorizontalSize: 1
-          VerticalSize: 1
-          HorizontalAlignment {
-            Value: "mc:ecoretexthorizontalalign:left"
-          }
-          VerticalAlignment {
-            Value: "mc:ecoretextverticalalign:center"
-          }
         }
       }
       Objects {
@@ -47996,6 +47996,15 @@ Assets {
       }
     }
     Assets {
+      Id: 3719536377982098645
+      Name: "Anton"
+      PlatformAssetType: 28
+      PrimaryAsset {
+        AssetType: "FontAssetRef"
+        AssetId: "AntonRegular_ref"
+      }
+    }
+    Assets {
       Id: 7625382804772008570
       Name: "Glass 01 (no distortion)"
       PlatformAssetType: 2
@@ -48083,15 +48092,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_mil_tank_hst_hull_001_mid_ref"
-      }
-    }
-    Assets {
-      Id: 3719536377982098645
-      Name: "Anton"
-      PlatformAssetType: 28
-      PrimaryAsset {
-        AssetType: "FontAssetRef"
-        AssetId: "AntonRegular_ref"
       }
     }
     Assets {

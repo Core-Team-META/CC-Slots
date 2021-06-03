@@ -6,7 +6,11 @@ API.Broadcasts = {
     spin = "RSS_Random",
     destroy = "RSS_Destroy",
     quit = "RSS_Quit",
-    slotChange = "RSS_Slot"
+    slotChange = "RSS_Slot",
+    uiShow = "RSS_Show",
+    uiHide = "RSS_Hide",
+    enableSlotButton = "RSS_EnableSlot",
+    disableSlotButton = "RSS_DisableSlot"
 }
 
 local function GetJackpotReward(odds)
@@ -70,6 +74,15 @@ function API.CheckWin(slot1, slot2, slot3, betAmount, items, odds)
     else
         return false
     end
+end
+
+function API.FormatInt(number)
+    if not tonumber(number) then
+        return
+    end
+    local i, j, minus, int, fraction = tostring(number):find("([-]?)(%d+)([.]?%d*)")
+    int = int:reverse():gsub("(%d%d%d)", "%1,")
+    return minus .. int:reverse():gsub("^,", "") .. fraction
 end
 
 return API
