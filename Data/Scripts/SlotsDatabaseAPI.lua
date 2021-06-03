@@ -2,6 +2,7 @@ local API = {}
 
 API.isInitialized = false
 
+
 API.Broadcasts = {
     spin = "RSS_Random",
     destroy = "RSS_Destroy",
@@ -284,18 +285,48 @@ if Environment.IsClient() then
         player.clientUserData.WinLinesCount = linesCount - 1
     end
 
-    function API.DisplayWinLines(winLines, winningPatterns, cardFrames)
+    function CustomWait(duration, cancelAnimation)
+        local endTime = time()+duration
+        while time() < endTime do
+            if cancelAnimation.value then
+                break
+            end
+            Task.Wait()
+        end
+    end
+
+    function API.DisplayWinLines(winLines, winningPatterns, cardFrames, cancelAnimation)
+        cancelAnimation.value = false
         for id, _ in pairs(winningPatterns) do
             for _, position in ipairs(API.WIN_LINES[id].table) do
+                if cancelAnimation.value then
+                    break
+                end
                 cardFrames[position]:SetColor(winLines[id].color)
-                Task.Wait(0.3)
+                CustomWait(0.3, cancelAnimation)
             end
-            Task.Wait(0.1)
+            if not cancelAnimation.value then
+                CustomWait(0.1, cancelAnimation)
+            end
             for _, position in ipairs(API.WIN_LINES[id].table) do
                 cardFrames[position]:SetColor(Color.BLACK)
             end
+
+            if cancelAnimation.value then
+                break
+            end
+
             winLines[id].object.visibility = Visibility.INHERIT
-            Task.Wait(0.2)
+            
+            if not cancelAnimation.value then 
+                CustomWait(0.2, cancelAnimation)
+            end
+        end
+
+        if cancelAnimation.value then
+            for _, line in ipairs(winLines) do
+                line.object.visibility = Visibility.FORCE_OFF
+            end
         end
     end
 end
