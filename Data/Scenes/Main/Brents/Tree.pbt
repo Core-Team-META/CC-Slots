@@ -50945,7 +50945,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Theme"
-      String: "Zach-Western"
+      String: "Mecha"
     }
     Overrides {
       Name: "cs:Odds"
@@ -51076,12 +51076,13 @@ Objects {
   Name: "Slot Cam"
   Transform {
     Location {
-      Y: 113.745239
+      X: 127.910782
+      Y: 0.819963872
       Z: 149.156433
     }
     Rotation {
       Pitch: -20
-      Yaw: -90
+      Yaw: 180
     }
     Scale {
       X: 0.819941
@@ -51359,12 +51360,13 @@ Objects {
   Name: "ScreenGroup"
   Transform {
     Location {
-      Y: 84.8519287
-      Z: 140
+      X: 89.4229431
+      Y: 0.215210453
+      Z: 135.677902
     }
     Rotation {
-      Pitch: -13
-      Yaw: -90
+      Pitch: -7.54229736
+      Yaw: 180
     }
     Scale {
       X: 0.0253759455

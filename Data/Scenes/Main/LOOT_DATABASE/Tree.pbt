@@ -1,6 +1,370 @@
 Name: "LOOT_DATABASE"
 RootId: 9904375601217783865
 Objects {
+  Id: 11641541088542490757
+  Name: "Mecha"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9904375601217783865
+  ChildIds: 11217077053663374695
+  ChildIds: 778882865042561290
+  ChildIds: 16181728115989129310
+  ChildIds: 13287426585902132197
+  ChildIds: 7846809714333166258
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 9169683292736877109
+    SubobjectId: 14336680307333660137
+    InstanceId: 17771080832798645400
+    TemplateId: 14767819289351633414
+  }
+}
+Objects {
+  Id: 7846809714333166258
+  Name: "Wild Sheriff"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11641541088542490757
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:GamePortal"
+      String: "ec1a79/mechathunderimages"
+    }
+    Overrides {
+      Name: "cs:ScreenshotIndex"
+      Int: 5
+    }
+    Overrides {
+      Name: "cs:Reward"
+      Int: 250
+    }
+    Overrides {
+      Name: "cs:isWild"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:Match2SFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+    Overrides {
+      Name: "cs:Match3SFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Basic Sniper_1"
+  }
+  InstanceHistory {
+    SelfId: 1701057616709612719
+    SubobjectId: 12550408989901159283
+    InstanceId: 17771080832798645400
+    TemplateId: 14767819289351633414
+  }
+}
+Objects {
+  Id: 13287426585902132197
+  Name: "Guns"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11641541088542490757
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:GamePortal"
+      String: "ec1a79/mechathunderimages"
+    }
+    Overrides {
+      Name: "cs:ScreenshotIndex"
+      Int: 4
+    }
+    Overrides {
+      Name: "cs:Reward"
+      Int: 100
+    }
+    Overrides {
+      Name: "cs:isWild"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:Match2SFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+    Overrides {
+      Name: "cs:Match3SFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Basic Sniper_2"
+  }
+  InstanceHistory {
+    SelfId: 1701057616709612719
+    SubobjectId: 12550408989901159283
+    InstanceId: 17771080832798645400
+    TemplateId: 14767819289351633414
+  }
+}
+Objects {
+  Id: 16181728115989129310
+  Name: "Canteen"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11641541088542490757
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:GamePortal"
+      String: "ec1a79/mechathunderimages"
+    }
+    Overrides {
+      Name: "cs:ScreenshotIndex"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:Reward"
+      Int: 50
+    }
+    Overrides {
+      Name: "cs:isWild"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:Match2SFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+    Overrides {
+      Name: "cs:Match3SFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Even Cooler Gun_1"
+  }
+  InstanceHistory {
+    SelfId: 18043899592095658405
+    SubobjectId: 4890789954066775673
+    InstanceId: 17771080832798645400
+    TemplateId: 14767819289351633414
+  }
+}
+Objects {
+  Id: 778882865042561290
+  Name: "Cactus"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11641541088542490757
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:GamePortal"
+      String: "ec1a79/mechathunderimages"
+    }
+    Overrides {
+      Name: "cs:ScreenshotIndex"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:Reward"
+      Int: 25
+    }
+    Overrides {
+      Name: "cs:isWild"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:Match2SFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+    Overrides {
+      Name: "cs:Match3SFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Another Cool Gun_1"
+  }
+  InstanceHistory {
+    SelfId: 16490284211346344671
+    SubobjectId: 6732352053841462531
+    InstanceId: 17771080832798645400
+    TemplateId: 14767819289351633414
+  }
+}
+Objects {
+  Id: 11217077053663374695
+  Name: "Boot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11641541088542490757
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:GamePortal"
+      String: "ec1a79/mechathunderimages"
+    }
+    Overrides {
+      Name: "cs:ScreenshotIndex"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:Reward"
+      Int: 15
+    }
+    Overrides {
+      Name: "cs:isWild"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:Match2SFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+    Overrides {
+      Name: "cs:Match3SFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Cool Gun_1"
+  }
+  InstanceHistory {
+    SelfId: 8219657377845172806
+    SubobjectId: 14674216655756645786
+    InstanceId: 17771080832798645400
+    TemplateId: 14767819289351633414
+  }
+}
+Objects {
   Id: 11111262964968099360
   Name: "Zach-Western"
   Transform {
@@ -459,7 +823,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Basic Sniper_1"
+    FilePartitionName: "Wild Sheriff_1"
   }
   InstanceHistory {
     SelfId: 1701057616709612719
@@ -524,7 +888,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Basic Sniper_2"
+    FilePartitionName: "Guns_1"
   }
   InstanceHistory {
     SelfId: 1701057616709612719
@@ -589,7 +953,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Even Cooler Gun_1"
+    FilePartitionName: "Canteen_1"
   }
   InstanceHistory {
     SelfId: 18043899592095658405
@@ -654,7 +1018,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Another Cool Gun_1"
+    FilePartitionName: "Cactus_1"
   }
   InstanceHistory {
     SelfId: 16490284211346344671
@@ -719,7 +1083,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Cool Gun_1"
+    FilePartitionName: "Boot_1"
   }
   InstanceHistory {
     SelfId: 8219657377845172806
@@ -823,7 +1187,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Wild Sheriff_1"
+    FilePartitionName: "Wild Sheriff_2"
   }
   InstanceHistory {
     SelfId: 1701057616709612719
@@ -888,7 +1252,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Guns_1"
+    FilePartitionName: "Guns_2"
   }
   InstanceHistory {
     SelfId: 1701057616709612719
@@ -953,7 +1317,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Canteen_1"
+    FilePartitionName: "Canteen_2"
   }
   InstanceHistory {
     SelfId: 18043899592095658405
@@ -1018,7 +1382,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Cactus_1"
+    FilePartitionName: "Cactus_2"
   }
   InstanceHistory {
     SelfId: 16490284211346344671
@@ -1083,7 +1447,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Boot_1"
+    FilePartitionName: "Boot_2"
   }
   InstanceHistory {
     SelfId: 8219657377845172806
