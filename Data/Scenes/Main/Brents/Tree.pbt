@@ -1,6 +1,52 @@
 Name: "Brents"
 RootId: 4675025735314061901
 Objects {
+  Id: 5375489668664873025
+  Name: "Zombie Arcade Multiline - Zombie"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4675025735314061901
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 12176439763912673964
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Zombie Arcade Multiline - Zombie"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1246.56189
+            Y: -651
+            Z: -17
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 89.9999847
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15388843617968423410
+    }
+  }
+}
+Objects {
   Id: 13556259260968431056
   Name: "MechaArcadeMachine"
   Transform {
