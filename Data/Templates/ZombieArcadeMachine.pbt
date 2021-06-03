@@ -380,13 +380,13 @@ Assets {
           Overrides {
             Name: "cs:DoorShopBellRing02SFX"
             ObjectReference {
-              SubObjectId: 10109363985706699143
+              SubObjectId: 10603592880660053684
             }
           }
           Overrides {
             Name: "cs:ChestCoinsOpening01SFX"
             ObjectReference {
-              SubObjectId: 3981975498829435103
+              SubObjectId: 11756775905907467843
             }
           }
           Overrides {
@@ -404,7 +404,7 @@ Assets {
           Overrides {
             Name: "cs:CollectAllCoinsMarimba01SFX"
             ObjectReference {
-              SubObjectId: 15090251343756784018
+              SubObjectId: 3131622959971112994
             }
           }
           Overrides {
@@ -701,10 +701,10 @@ Assets {
           }
         }
         ParentId: 6315632036355631025
-        ChildIds: 3981975498829435103
-        ChildIds: 10109363985706699143
+        ChildIds: 11756775905907467843
+        ChildIds: 3131622959971112994
         ChildIds: 1290826550380932363
-        ChildIds: 15090251343756784018
+        ChildIds: 10603592880660053684
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -722,12 +722,12 @@ Assets {
         }
       }
       Objects {
-        Id: 3981975498829435103
-        Name: "Chest Coins Opening 01 SFX"
+        Id: 11756775905907467843
+        Name: "Game Coin Win 01 SFX"
         Transform {
           Location {
-            X: 9.01602173
-            Z: -5.22244263
+            X: 9.01602268
+            Z: -5.22244453
           }
           Rotation {
           }
@@ -752,22 +752,22 @@ Assets {
         }
         AudioInstance {
           AudioAsset {
-            Id: 2579731272602421365
+            Id: 1797377950360092645
           }
           Volume: 1
           Falloff: 1000
-          Radius: 500
+          Radius: -1
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
         }
       }
       Objects {
-        Id: 10109363985706699143
-        Name: "Coins Win Loop 03 SFX"
+        Id: 3131622959971112994
+        Name: "Voice Character Zombie Snarl Attack 03 SFX"
         Transform {
           Location {
-            X: 9.01602173
-            Z: -5.22244263
+            X: 9.01602268
+            Z: -5.22244453
           }
           Rotation {
           }
@@ -792,7 +792,7 @@ Assets {
         }
         AudioInstance {
           AudioAsset {
-            Id: 3475320157792941589
+            Id: 14288833496764834364
           }
           Volume: 1
           Falloff: 1000
@@ -834,7 +834,8 @@ Assets {
           AudioAsset {
             Id: 3591911827021139355
           }
-          Volume: 1
+          Pitch: -800
+          Volume: 0.5
           Falloff: 1000
           Radius: 500
           IsSpatializationEnabled: true
@@ -842,12 +843,12 @@ Assets {
         }
       }
       Objects {
-        Id: 15090251343756784018
-        Name: "Collect All Coins Marimba 01 SFX"
+        Id: 10603592880660053684
+        Name: "Coins Win Loop 02 SFX"
         Transform {
           Location {
-            Y: 0.00109863281
-            Z: 1.52587891e-05
+            X: 9.01602268
+            Z: -5.22244453
           }
           Rotation {
           }
@@ -872,12 +873,12 @@ Assets {
         }
         AudioInstance {
           AudioAsset {
-            Id: 3517605131435578695
+            Id: 10297692092872794914
           }
+          Pitch: -1500
           Volume: 1
-          Falloff: 1000
+          Falloff: -1
           Radius: -1
-          EnableOcclusion: true
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
         }
@@ -24251,21 +24252,21 @@ Assets {
       }
     }
     Assets {
-      Id: 2579731272602421365
-      Name: "Chest Coins Opening 01 SFX"
+      Id: 1797377950360092645
+      Name: "Game Coin Win 01 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_chest_coins_opening_01_Cue_ref"
+        AssetId: "sfx_game_coin_win_01_Cue_ref"
       }
     }
     Assets {
-      Id: 3475320157792941589
-      Name: "Coins Win Loop 03 SFX"
+      Id: 14288833496764834364
+      Name: "Voice Character Zombie Snarl Attack 03 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_coins_win_loop_03_Cue_ref"
+        AssetId: "sfx_vo_zombie_snarl_attack_03a_Cue_ref"
       }
     }
     Assets {
@@ -24278,12 +24279,12 @@ Assets {
       }
     }
     Assets {
-      Id: 3517605131435578695
-      Name: "Collect All Coins Marimba 01 SFX"
+      Id: 10297692092872794914
+      Name: "Coins Win Loop 02 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_collect_all_coins_marimba_Cue_ref"
+        AssetId: "sfx_coins_win_loop_02_Cue_ref"
       }
     }
     Assets {
