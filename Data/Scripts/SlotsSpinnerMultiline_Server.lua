@@ -144,10 +144,12 @@ function PickItemRandomly(player, betAmount, slotId)
 
     local slotsTable = {}
     for i = 1, 9 do
-        slotsTable[i] = GetRandomSlot(reelTotal)
+        slotsTable[i] = 4--GetRandomSlot(reelTotal)
     end
 
     local dataStr = API.ConvertTableToString(slotsTable)
+    --#TODO We may have problems in the future sending an empty string over the network right before real data
+    newData:SetNetworkedCustomProperty("data", "")
     newData:SetNetworkedCustomProperty("data", dataStr)
     newData:SetNetworkedCustomProperty("playerId", player.id)
     Task.Spawn(

@@ -169,7 +169,7 @@ function Activate()
         for index, item in pairs(items) do
             local params = {parent = SLOT[i], position = position}
             local lootCard = World.SpawnAsset(LOOT_CARD_TEMPLATE, params)
-            
+
             if index < 4 then -- get the frames of the 3v3 grid
                 cardFrames[count] = lootCard:GetCustomProperty("Frame"):WaitForObject()
                 --cardFrames[count]:SetColor(Color.WHITE)
@@ -211,7 +211,6 @@ function InitializeLootCard(lootCard, item, slot)
     --[[local gradient = lootCard:GetCustomProperty("Gradient"):WaitForObject()
     local bar = lootCard:GetCustomProperty("Bar"):WaitForObject()
     local border = lootCard:GetCustomProperty("Border"):WaitForObject()]]
-
     gamePortal:SetSmartProperty("Game ID", item.gamePortal)
     gamePortal:SetSmartProperty("Screenshot Index", item.screenshotIndex)
 
@@ -256,6 +255,7 @@ function WrapItems()
     end
 end
 
+local lastTask
 function OnNetworkObjectAdded(parentObject, childObject) --
     local player, playerId
 
@@ -330,7 +330,10 @@ function OnNetworkObjectAdded(parentObject, childObject) --
                 NOTIFICATION.Add(LOCAL_PLAYER, msg)
             end
             if isWinner then
-                API.DisplayWinLines(winLines, winningPatterns, cardFrames)
+                if lastTask and lastTask ~= TaskStatus.COMPLETED then
+                    lastTask:Cancel()
+                end
+                lastTask = API.DisplayWinLines(winLines, winningPatterns, cardFrames)
             end
         end,
         SPIN_DURATION
