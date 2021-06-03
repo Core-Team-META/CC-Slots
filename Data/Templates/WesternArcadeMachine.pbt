@@ -15,7 +15,7 @@ Assets {
             Z: 1.2196
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 4675025735314061901
         ChildIds: 9576669645920691922
         ChildIds: 7550658468792557249
         Collidable_v2 {
@@ -85,7 +85,7 @@ Assets {
           }
           Overrides {
             Name: "cs:SlotId"
-            String: "W4"
+            String: "W5"
           }
           Overrides {
             Name: "cs:Theme"
@@ -279,6 +279,7 @@ Assets {
         ChildIds: 3387152528755599583
         ChildIds: 16555115586858073026
         ChildIds: 12238763159774561264
+        ChildIds: 15607121114094964478
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -936,6 +937,57 @@ Assets {
         }
       }
       Objects {
+        Id: 15607121114094964478
+        Name: "SlotsCabinet_Client"
+        Transform {
+          Location {
+            X: -16.3993206
+            Y: 1179.07507
+            Z: 1.63988197
+          }
+          Rotation {
+            Yaw: -179.999969
+          }
+          Scale {
+            X: 0.819941
+            Y: 0.819941
+            Z: 0.819941
+          }
+        }
+        ParentId: 4386101123756257253
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:GEO"
+            ObjectReference {
+              SubObjectId: 7550658468792557249
+            }
+          }
+          Overrides {
+            Name: "cs:Settings"
+            ObjectReference {
+              SubObjectId: 9576669645920691922
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 2709210118577912534
+          }
+        }
+      }
+      Objects {
         Id: 7550658468792557249
         Name: "GEO"
         Transform {
@@ -950,7 +1002,7 @@ Assets {
           }
         }
         ParentId: 8019821520510676024
-        ChildIds: 5241124591101635119
+        ChildIds: 4057712282766271292
         ChildIds: 12259455088070908316
         ChildIds: 3318481257071144314
         ChildIds: 15477784715046307671
@@ -1017,14 +1069,46 @@ Assets {
         }
       }
       Objects {
+        Id: 4057712282766271292
+        Name: "ClientContext"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 7550658468792557249
+        ChildIds: 5241124591101635119
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
         Id: 5241124591101635119
         Name: "Text"
         Transform {
           Location {
           }
           Rotation {
-            Pitch: 83.6005173
-            Yaw: 89.9998169
+            Pitch: 83.6003876
+            Yaw: 89.9996643
+            Roll: -3.06395668e-05
           }
           Scale {
             X: 1.00032806
@@ -1032,7 +1116,7 @@ Assets {
             Z: 1.00032806
           }
         }
-        ParentId: 7550658468792557249
+        ParentId: 4057712282766271292
         ChildIds: 17677231974341486802
         ChildIds: 14799599801109542276
         ChildIds: 3974353292677330302
@@ -1487,6 +1571,14 @@ Assets {
         ParentId: 12259455088070908316
         UnregisteredParameters {
           Overrides {
+            Name: "cs:isButton"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:ButtonType"
+            String: "ExitButton"
+          }
+          Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
             Bool: false
           }
@@ -1575,6 +1667,14 @@ Assets {
         ParentId: 12259455088070908316
         UnregisteredParameters {
           Overrides {
+            Name: "cs:isButton"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:ButtonType"
+            String: "SpinButton"
+          }
+          Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
               Id: 11047468966635421578
@@ -1647,6 +1747,14 @@ Assets {
         }
         ParentId: 12259455088070908316
         UnregisteredParameters {
+          Overrides {
+            Name: "cs:isButton"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:ButtonType"
+            String: "MinButton"
+          }
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
@@ -1745,6 +1853,14 @@ Assets {
         ParentId: 12259455088070908316
         UnregisteredParameters {
           Overrides {
+            Name: "cs:isButton"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:ButtonType"
+            String: "MaxButton"
+          }
+          Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
               Id: 5821748287712453779
@@ -1842,6 +1958,14 @@ Assets {
         ParentId: 12259455088070908316
         UnregisteredParameters {
           Overrides {
+            Name: "cs:isButton"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:ButtonType"
+            String: "LowerButton"
+          }
+          Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
               Id: 5821748287712453779
@@ -1938,6 +2062,14 @@ Assets {
         }
         ParentId: 12259455088070908316
         UnregisteredParameters {
+          Overrides {
+            Name: "cs:isButton"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:ButtonType"
+            String: "RaiseButton"
+          }
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
@@ -28197,9 +28329,9 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: 1.59650779
-            Y: 9.81902695
-            Z: -24.2334347
+            X: 1.59653604
+            Y: 9.81875134
+            Z: -24.233469
           }
           Rotation {
             Pitch: 82.4549713

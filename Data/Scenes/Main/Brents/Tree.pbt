@@ -26,24 +26,17 @@ Objects {
           String: "MechaArcadeMachine"
         }
         Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -90
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.2196
-            Y: 1.2196
-            Z: 1.2196
-          }
-        }
-        Overrides {
           Name: "Position"
           Vector {
             X: -183
             Y: -489
+            Z: -15
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -90
           }
         }
       }
@@ -57,17 +50,10 @@ Objects {
   Id: 13420275938363672477
   Name: "WesternArcadeMachine"
   Transform {
-    Location {
-      X: 1255
-      Y: -673
-    }
-    Rotation {
-      Yaw: 89.9999924
-    }
     Scale {
-      X: 1.2196
-      Y: 1.2196
-      Z: 1.2196
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 4675025735314061901
@@ -78,15 +64,6 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
-    ParameterOverrideMap {
-      key: 5800025967639114438
-      value {
-        Overrides {
-          Name: "Name"
-          String: "SpinButton"
-        }
-      }
-    }
     ParameterOverrideMap {
       key: 8019821520510676024
       value {
@@ -106,44 +83,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: 89.9999847
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.2196
-            Y: 1.2196
-            Z: 1.2196
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 9576669645920691922
-      value {
-        Overrides {
-          Name: "cs:SlotId"
-          String: "W5"
-        }
-        Overrides {
-          Name: "cs:MinBet"
-          Int: 100
-        }
-        Overrides {
-          Name: "cs:MaxBet"
-          Int: 1000
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 15670674726375095123
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 1.59653604
-            Y: 9.81875134
-            Z: -24.233469
           }
         }
       }
