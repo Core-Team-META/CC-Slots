@@ -86,7 +86,7 @@ function OnSlotChanged(slotPlayer, slotId)
 end
 
 function Tick()
-    if not CurrentPlayer then
+    if not Object.IsValid(CurrentPlayer) then
         return
     end
     if CurrentPlayer.clientUserData.slotId ~= SLOT_ID then
