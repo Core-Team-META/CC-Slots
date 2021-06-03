@@ -1877,7 +1877,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
-      String: "b6aa76/buck-slots-enchanted-2"
+      String: "2987c1/kingsransomimages"
     }
     Overrides {
       Name: "cs:ScreenshotIndex"
@@ -1942,7 +1942,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
-      String: "b6aa76/buck-slots-enchanted-2"
+      String: "2987c1/kingsransomimages"
     }
     Overrides {
       Name: "cs:ScreenshotIndex"
@@ -2007,7 +2007,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
-      String: "b6aa76/buck-slots-enchanted-2"
+      String: "2987c1/kingsransomimages"
     }
     Overrides {
       Name: "cs:ScreenshotIndex"
@@ -2072,7 +2072,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
-      String: "b6aa76/buck-slots-enchanted-2"
+      String: "2987c1/kingsransomimages"
     }
     Overrides {
       Name: "cs:ScreenshotIndex"
@@ -2137,7 +2137,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
-      String: "b6aa76/buck-slots-enchanted-2"
+      String: "2987c1/kingsransomimages"
     }
     Overrides {
       Name: "cs:ScreenshotIndex"

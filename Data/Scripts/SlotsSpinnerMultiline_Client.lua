@@ -33,7 +33,7 @@ SLOT[1] = script:GetCustomProperty("Slot1"):WaitForObject()
 SLOT[2] = script:GetCustomProperty("Slot2"):WaitForObject()
 SLOT[3] = script:GetCustomProperty("Slot3"):WaitForObject()
 local LOCAL_PLAYER = Game.GetLocalPlayer()
-
+local lastTask
 ------------------------------------------------------------------------------------------------------------------------
 -- CUSTOM PROPERTIES
 ------------------------------------------------------------------------------------------------------------------------
@@ -258,7 +258,6 @@ function WrapItems()
     end
 end
 
-local lastTask
 function OnNetworkObjectAdded(parentObject, childObject) --
     local player, playerId
 

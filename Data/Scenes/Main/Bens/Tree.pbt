@@ -28,7 +28,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 75
+            X: 141
             Y: -1059
             Z: -16
           }
@@ -36,75 +36,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 9361746567858354449
-      value {
-        Overrides {
-          Name: "cs:Odds"
-          Float: 0.97
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 1457333972175442622
-    }
-  }
-}
-Objects {
-  Id: 8571389705321310135
-  Name: "Western Arcade Multiline - Wester"
-  Transform {
-    Location {
-      X: 643
-      Y: -1059
-      Z: -16
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.2196
-      Y: 1.2196
-      Z: 1.2196
-    }
-  }
-  ParentId: 2669417942466758110
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 2054124747642327321
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Western Arcade Multiline - Wester"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 263
-            Y: -1059
-            Z: -16
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.2196
-            Y: 1.2196
-            Z: 1.2196
           }
         }
       }
@@ -158,7 +89,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 455
+            X: 414
             Y: -1059
             Z: -16
           }
@@ -227,7 +158,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 643
+            X: 660
             Y: -1059
             Z: -16
           }
@@ -289,7 +220,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 830
+            X: 914
             Y: -1059
             Z: -16
           }
