@@ -146,6 +146,17 @@ function PickItemRandomly(player, betAmount, slotId)
     for i = 1, 9 do
         slotsTable[i] = GetRandomSlot(reelTotal)
     end
+    
+    --[[
+    slotsTable[1] = 3
+    slotsTable[2] = testValue
+    slotsTable[3] = 3
+    slotsTable[4] = 4
+    slotsTable[5] = testValue
+    slotsTable[6] = 4
+    slotsTable[7] = 3
+    slotsTable[8] = testValue
+    slotsTable[9] = 3]]
 
     local dataStr = API.ConvertTableToString(slotsTable)
     newData:SetNetworkedCustomProperty("data", dataStr)
