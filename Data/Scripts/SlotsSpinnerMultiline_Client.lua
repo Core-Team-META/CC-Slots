@@ -90,14 +90,14 @@ end
 ------------------------------------------------------------------------------------------------------------------------
 
 local function Show()
-    isEnabled = true
-    -- SCREEN_GROUP.visibility = Visibility.INHERIT
-    UI_CONTAINER.visibility = Visibility.INHERIT
-    UI.SetCursorVisible(true)
-    UI.SetCanCursorInteractWithUI(true)
-    LOCAL_PLAYER:SetOverrideCamera(SLOT_CAM)
-    LOCAL_PLAYER.isVisibleToSelf = false
-    --Activate()
+    if currentPlayer == LOCAL_PLAYER then
+        isEnabled = true
+        UI.SetCursorVisible(true)
+        UI.SetCanCursorInteractWithUI(true)
+        LOCAL_PLAYER:SetOverrideCamera(SLOT_CAM)
+        LOCAL_PLAYER.isVisibleToSelf = false
+        Events.Broadcast(API.Broadcasts.uiShow)
+    end
 end
 
 local function Deactivate()
@@ -114,14 +114,15 @@ local function Deactivate()
 end
 
 local function Hide()
-    isEnabled = false
-    -- SCREEN_GROUP.visibility = Visibility.FORCE_OFF
-    UI_CONTAINER.visibility = Visibility.FORCE_OFF
-    UI.SetCursorVisible(false)
-    UI.SetCanCursorInteractWithUI(false)
-    LOCAL_PLAYER:ClearOverrideCamera()
-    LOCAL_PLAYER.isVisibleToSelf = true
-    --Deactivate()
+    print(currentPlayer)
+    if currentPlayer == LOCAL_PLAYER then
+        isEnabled = false
+        UI.SetCursorVisible(false)
+        UI.SetCanCursorInteractWithUI(false)
+        LOCAL_PLAYER:ClearOverrideCamera()
+        LOCAL_PLAYER.isVisibleToSelf = true
+        Events.Broadcast(API.Broadcasts.uiHide)
+    end
 end
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -383,19 +384,22 @@ end
 function OnNetworkChanged(object, string)
     if string == "playerId" then
         local playerId = object:GetCustomProperty(string)
-
-        if not playerId and currentPlayer == LOCAL_PLAYER then
-            LOCAL_PLAYER.clientUserData.slotId = nil
+        if playerId == "" and Object.IsValid(currentPlayer) then
+            Hide()
+            currentPlayer.clientUserData.slotId = nil
             currentPlayer = nil
             Hide()
         else
             currentPlayer = Game.FindPlayer(playerId)
+            if currentPlayer then
+                Events.Broadcast(API.Broadcasts.slotChange, currentPlayer, SLOT_ID)
+            end
         end
-        if currentPlayer and currentPlayer == LOCAL_PLAYER then
-            LOCAL_PLAYER.clientUserData.slotId = SLOT_ID
-            LOCAL_PLAYER.clientUserData.betAmount = MIN_BET
-            LOCAL_PLAYER.clientUserData.minBet = MIN_BET
-            LOCAL_PLAYER.clientUserData.maxBet = MAX_BET
+        if currentPlayer and Object.IsValid(currentPlayer) then
+            currentPlayer.clientUserData.slotId = SLOT_ID
+            currentPlayer.clientUserData.betAmount = MIN_BET
+            currentPlayer.clientUserData.minBet = MIN_BET
+            currentPlayer.clientUserData.maxBet = MAX_BET
             Show()
         end
     elseif string == "data" then

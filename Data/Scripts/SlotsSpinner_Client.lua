@@ -15,6 +15,7 @@ local NOTIFICATION = require(script:GetCustomProperty("NotificationAPI"))
 local ROOT = script:GetCustomProperty("ROOT"):WaitForObject()
 local NETWORKING = script:GetCustomProperty("Networking"):WaitForObject()
 local SCREEN_GROUP = script:GetCustomProperty("ScreenGroup"):WaitForObject()
+local UI_CONTAINER = script:GetCustomProperty("UIContainer"):WaitForObject()
 local LOOT_CARD_TEMPLATE = script:GetCustomProperty("LootCardTemplate")
 local SPIN_BUTTON = script:GetCustomProperty("SpinButton"):WaitForObject()
 local BACKGROUND = script:GetCustomProperty("Background"):WaitForObject()
@@ -22,6 +23,7 @@ local BELL = script:GetCustomProperty("DoorShopBellRing02SFX"):WaitForObject()
 local WINNER_SOUND = script:GetCustomProperty("ChestCoinsOpening01SFX"):WaitForObject()
 local SLOT_SOUND = script:GetCustomProperty("CashRegisterDrawerMechanismLockClose01SF"):WaitForObject()
 local SLOT_SOUND_BONUS = script:GetCustomProperty("CollectAllCoinsMarimba01SFX"):WaitForObject()
+--local WIN_LINE_OBJECTS = script:GetCustomProperty("WinLinesObjects"):WaitForObject()
 
 local SETTINGS = script:GetCustomProperty("Settings"):WaitForObject()
 local SLOT_CAM = script:GetCustomProperty("SlotCam"):WaitForObject()
@@ -50,12 +52,13 @@ local ODDS = SETTINGS:GetCustomProperty("Odds")
 -- LOCAL VARIABLES
 ------------------------------------------------------------------------------------------------------------------------
 
-local results = Vector3.New(1, 1, 1)
+local results = {1, 1, 1, 1, 1, 1, 1, 1, 1}
 local items = API.GetSlots(THEME_ID)
 local isEnabled = false
 local spacing = 600
 
 local lootCards = {}
+local winLines = {}
 local centerPosition = WIN_LINE:GetWorldPosition()
 local verticalScrollPosition = {0, 0, 0}
 local itemTotalSpacing = {0, 0, 0}
