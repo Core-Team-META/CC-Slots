@@ -24,6 +24,7 @@ local WINNER_SOUND = script:GetCustomProperty("ChestCoinsOpening01SFX"):WaitForO
 local SLOT_SOUND = script:GetCustomProperty("CashRegisterDrawerMechanismLockClose01SF"):WaitForObject()
 local SLOT_SOUND_BONUS = script:GetCustomProperty("CollectAllCoinsMarimba01SFX"):WaitForObject()
 local WIN_LINE_OBJECTS = script:GetCustomProperty("WinLinesObjects"):WaitForObject()
+local TRIGGER = script:GetCustomProperty("Trigger"):WaitForObject()
 
 local SETTINGS = script:GetCustomProperty("Settings"):WaitForObject()
 local SLOT_CAM = script:GetCustomProperty("SlotCam"):WaitForObject()
@@ -42,6 +43,7 @@ local SPIN_DURATION = SETTINGS:GetCustomProperty("SpinDuration") or 1
 local TOGGLE_KEYBIND = SETTINGS:GetCustomProperty("KeyBind") or "ability_extra_24"
 local SPIN_SPEED = SETTINGS:GetCustomProperty("DefaultSpeed") or 10000
 local RESOURCE_NAME = SETTINGS:GetCustomProperty("ResourceName")
+local SLOT_NAME = SETTINGS:GetCustomProperty("Name") or "Slot"
 local SLOT_ID = SETTINGS.id
 --SETTINGS:GetCustomProperty("SlotId")
 local THEME_ID = SETTINGS:GetCustomProperty("Theme") or "Fantasy"
@@ -139,6 +141,10 @@ end
 function Init()
     -- SCREEN_GROUP:AttachToLocalView()
     -- SCREEN_GROUP.visibility = Visibility.FORCE_OFF
+    TRIGGER.interactedEvent:Connect(OnInteracted)
+    TRIGGER.interactionLabel = "Play " .. SLOT_NAME
+    LOCAL_PLAYER.clientUserData.SlotTriggers = LOCAL_PLAYER.clientUserData.SlotTriggers or {}
+    LOCAL_PLAYER.clientUserData.SlotTriggers[SLOT_ID] = TRIGGER
     SLOT_CAM:SetRotationOffset(SLOT_CAM:GetWorldRotation())
     UI_CONTAINER.visibility = Visibility.FORCE_OFF
     Activate()
@@ -163,6 +169,15 @@ function Init()
         end
 
         winLines[id] = {object = line, color = line:GetCustomProperty("Color")}
+    end
+end
+
+function OnInteracted(trigger, object)
+    if object == LOCAL_PLAYER then
+        local slotId = object.clientUserData.slotId
+        if not slotId or slotId == 0 or slotId ~= SLOT_ID then
+            Events.BroadcastToServer(API.Broadcasts.playSlot, SLOT_ID)
+        end
     end
 end
 
@@ -269,13 +284,13 @@ function OnNetworkObjectAdded(parentObject, childObject) --
         Task.Wait()
         dataStr = childObject:GetCustomProperty("data")
     end
-
+    Events.Broadcast(API.Broadcasts.enableTriggers)
     cancelAnimation.value = true
     for id, line in ipairs(winLines) do
         line.object.visibility = Visibility.FORCE_OFF
     end
 
-    ROOT.clientUserData.animationCount = ROOT.clientUserData.animationCount + 1
+    --ROOT.clientUserData.animationCount = ROOT.clientUserData.animationCount + 1
 
     results = API.ConvertStringToTable(dataStr)
     playerId = childObject:GetCustomProperty("playerId")
@@ -397,13 +412,13 @@ function OnNetworkChanged(object, string)
             Hide()
             currentPlayer.clientUserData.slotId = nil
             currentPlayer = nil
-            Hide()
         else
             currentPlayer = Game.FindPlayer(playerId)
             if currentPlayer then
                 Events.Broadcast(API.Broadcasts.slotChange, currentPlayer, SLOT_ID)
             end
         end
+
         if currentPlayer and Object.IsValid(currentPlayer) then
             currentPlayer.clientUserData.slotId = SLOT_ID
             currentPlayer.clientUserData.betAmount = MIN_BET
@@ -411,6 +426,7 @@ function OnNetworkChanged(object, string)
             currentPlayer.clientUserData.maxBet = MAX_BET
             Show()
         end
+        Events.Broadcast(API.Broadcasts.enableTriggers, OnEnable)
     elseif string == "data" then
         OnNetworkObjectAdded(_, object)
     end
@@ -419,6 +435,7 @@ end
 ------------------------------------------------------------------------------------------------------------------------
 -- LISTENERS
 ------------------------------------------------------------------------------------------------------------------------
+Task.Wait(1)
 for _, network in ipairs(NETWORKING:GetChildren()) do
     if network.name == SLOT_ID then
         local dataStr = network:GetCustomProperty("data")

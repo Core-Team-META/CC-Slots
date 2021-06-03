@@ -11,7 +11,10 @@ API.Broadcasts = {
     uiShow = "RSS_Show",
     uiHide = "RSS_Hide",
     enableSlotButton = "RSS_EnableSlot",
-    disableSlotButton = "RSS_DisableSlot"
+    disableSlotButton = "RSS_DisableSlot",
+    playSlot = "RSS_Sit",
+    disableTriggers = "RSS_DisableTrigger",
+    enableTriggers = "RSS_EnableTrigger"
 }
 
 --[[

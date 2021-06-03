@@ -85,6 +85,7 @@ function OnSlotChanged(slotPlayer, slotId)
     end
 end
 
+
 function Tick()
     if not Object.IsValid(CurrentPlayer) then
         return
@@ -113,6 +114,5 @@ end
 ------------------------------------------------------------------------------------------------------------------------
 -- LISTNERS
 ------------------------------------------------------------------------------------------------------------------------
-
 LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)
 Events.Connect(API.Broadcasts.slotChange, OnSlotChanged)

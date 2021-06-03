@@ -15,7 +15,7 @@ Assets {
             Z: 1.2196
           }
         }
-        ParentId: 2669417942466758110
+        ParentId: 17884978274586394764
         ChildIds: 9361746567858354449
         ChildIds: 2882467268834965731
         Collidable_v2 {
@@ -47,9 +47,12 @@ Assets {
         }
         ParentId: 2054124747642327321
         ChildIds: 17209371654655629974
-        ChildIds: 14711670391019192221
         ChildIds: 14669756790987276305
         UnregisteredParameters {
+          Overrides {
+            Name: "cs:Name"
+            String: "Stampede Saloon"
+          }
           Overrides {
             Name: "cs:SpinDuration"
             Float: 4
@@ -167,48 +170,6 @@ Assets {
         }
       }
       Objects {
-        Id: 14711670391019192221
-        Name: "Trigger"
-        Transform {
-          Location {
-            Y: 30.0000114
-            Z: -1.56391325e-05
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.86671317
-            Y: 1.86671317
-            Z: 5.88848925
-          }
-        }
-        ParentId: 9361746567858354449
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Trigger {
-          Interactable: true
-          InteractionLabel: "PlaySlot"
-          TeamSettings {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          TriggerShape_v2 {
-            Value: "mc:etriggershape:box"
-          }
-        }
-      }
-      Objects {
         Id: 14669756790987276305
         Name: "ClientContext"
         Transform {
@@ -228,6 +189,7 @@ Assets {
         ChildIds: 12695320728626205914
         ChildIds: 4184187495746506502
         ChildIds: 5496312974954149659
+        ChildIds: 14711670391019192221
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -376,6 +338,12 @@ Assets {
             Name: "cs:WinLinesObjects"
             ObjectReference {
               SubObjectId: 6502947207396677561
+            }
+          }
+          Overrides {
+            Name: "cs:Trigger"
+            ObjectReference {
+              SubObjectId: 14711670391019192221
             }
           }
         }
@@ -1391,6 +1359,50 @@ Assets {
         Script {
           ScriptAsset {
             Id: 2709210118577912534
+          }
+        }
+      }
+      Objects {
+        Id: 14711670391019192221
+        Name: "Trigger"
+        Transform {
+          Location {
+            X: 0.819941
+            Y: 104.132507
+            Z: 63.1354294
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.5
+            Y: 0.5
+            Z: 1.75
+          }
+        }
+        ParentId: 14669756790987276305
+        UnregisteredParameters {
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:alwaysvisible"
+        }
+        Trigger {
+          Interactable: true
+          InteractionLabel: "Play Stampede Saloon"
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
           }
         }
       }

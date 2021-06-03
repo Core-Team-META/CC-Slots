@@ -15,7 +15,7 @@ Assets {
             Z: 1.2196
           }
         }
-        ParentId: 4675025735314061901
+        ParentId: 8704132432388920203
         ChildIds: 10019489083536113633
         ChildIds: 4101573010599316044
         Collidable_v2 {
@@ -47,9 +47,12 @@ Assets {
         }
         ParentId: 12176439763912673964
         ChildIds: 12971856005837650702
-        ChildIds: 11198121875398670651
         ChildIds: 9951259973650144728
         UnregisteredParameters {
+          Overrides {
+            Name: "cs:Name"
+            String: "Undead Bread"
+          }
           Overrides {
             Name: "cs:SpinDuration"
             Float: 4
@@ -167,48 +170,6 @@ Assets {
         }
       }
       Objects {
-        Id: 11198121875398670651
-        Name: "Trigger"
-        Transform {
-          Location {
-            Y: 30.0000114
-            Z: -1.56391325e-05
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.86671317
-            Y: 1.86671317
-            Z: 5.88848925
-          }
-        }
-        ParentId: 10019489083536113633
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Trigger {
-          Interactable: true
-          InteractionLabel: "PlaySlot"
-          TeamSettings {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          TriggerShape_v2 {
-            Value: "mc:etriggershape:box"
-          }
-        }
-      }
-      Objects {
         Id: 9951259973650144728
         Name: "ClientContext"
         Transform {
@@ -228,6 +189,7 @@ Assets {
         ChildIds: 17673945708612743369
         ChildIds: 16475603689255463372
         ChildIds: 15634755082233919425
+        ChildIds: 11198121875398670651
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -376,6 +338,12 @@ Assets {
             Name: "cs:WinLinesObjects"
             ObjectReference {
               SubObjectId: 8809933099076568715
+            }
+          }
+          Overrides {
+            Name: "cs:Trigger"
+            ObjectReference {
+              SubObjectId: 11198121875398670651
             }
           }
         }
@@ -1391,6 +1359,48 @@ Assets {
         Script {
           ScriptAsset {
             Id: 2709210118577912534
+          }
+        }
+      }
+      Objects {
+        Id: 11198121875398670651
+        Name: "Trigger"
+        Transform {
+          Location {
+            X: 5.45396506e-05
+            Y: 102.490044
+            Z: 86.0937729
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.5
+            Y: 0.5
+            Z: 1.75
+          }
+        }
+        ParentId: 9951259973650144728
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Trigger {
+          Interactable: true
+          InteractionLabel: "PlaySlot"
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
           }
         }
       }

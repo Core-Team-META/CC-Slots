@@ -16,7 +16,7 @@ local API = require(script:GetCustomProperty("API"))
 
 local NETWORKING = script:GetCustomProperty("Networking"):WaitForObject()
 local SETTINGS = script:GetCustomProperty("Settings"):WaitForObject()
-local PLAY_TRIGGER = script:GetCustomProperty("Trigger"):WaitForObject()
+--local PLAY_TRIGGER = script:GetCustomProperty("Trigger"):WaitForObject()
 local PLAYER_POSITION = script:GetCustomProperty("PlayerPosition"):WaitForObject()
 ------------------------------------------------------------------------------------------------------------------------
 -- CUSTOM PROPERTIES
@@ -95,11 +95,11 @@ function DestroyObject(player, objectId)
     end
 end
 
-function OnInteracted(trigger, object)
+function OnInteracted(object, slotId)
+    if slotId ~= SLOT_ID then return end
     local currentId = newData:GetCustomProperty("playerId")
     if currentId == "" and object and Object.IsValid(object) and object:IsA("Player") then
         newData:SetNetworkedCustomProperty("playerId", object.id)
-        trigger.isInteractable = false
 
         -- Sit player down
         object.movementControlMode = MovementControlMode.NONE
@@ -115,13 +115,11 @@ function EndOverlap(trigger, object)
     local currentId = newData:GetCustomProperty("playerId")
     if currentId ~= "" and object.id == currentId and Object.IsValid(object) and object:IsA("Player") then
         newData:SetNetworkedCustomProperty("playerId", "")
-        trigger.isInteractable = true
     end
 end
 
 function OnPlayerQuit(player, slotId)
     if slotId == SLOT_ID then
-        PLAY_TRIGGER.isInteractable = true
         newData:SetNetworkedCustomProperty("playerId", "")
 
         player.movementControlMode = MovementControlMode.LOOK_RELATIVE
@@ -181,8 +179,7 @@ Init()
 Events.ConnectForPlayer(API.Broadcasts.spin, PickItemRandomly)
 Events.ConnectForPlayer(API.Broadcasts.destroy, DestroyObject)
 Events.ConnectForPlayer(API.Broadcasts.quit, OnPlayerQuit)
-PLAY_TRIGGER.interactedEvent:Connect(OnInteracted)
-PLAY_TRIGGER.endOverlapEvent:Connect(EndOverlap)
+Events.ConnectForPlayer(API.Broadcasts.playSlot, OnInteracted)
 
 if enableDevMode then
     local betAmount = 5
