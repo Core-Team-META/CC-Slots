@@ -19,7 +19,7 @@ API.Broadcasts = {
     1  4  7
 ]]
 
-API.PATTERNS = {
+API.WIN_LINES = {
     {table = {3, 6, 9}, multiplier = 1},
     {table = {2, 5, 8}, multiplier = 1}, 
     {table = {1, 4, 7}, multiplier = 1},
@@ -222,7 +222,7 @@ function API.CheckMultilineWin(vectorTable, betAmount, items, odds)
         slotTable = vectorTable
     end
 
-    for index, pattern in ipairs(API.PATTERNS) do
+    for index, pattern in ipairs(API.WIN_LINES) do
         local isPattern = true
         local value
         for _, position in ipairs(pattern.table) do
@@ -254,6 +254,51 @@ function API.CheckMultilineWin(vectorTable, betAmount, items, odds)
             API.TablePrint(winningPatterns)
         end
         return true, reward, winningPatterns
+    end
+end
+
+if Environment.IsClient() then
+    
+    function API.AddWinLine(player, lineID)
+        local linesTable = player.clientUserData.WinLinesTable or {}
+        local linesCount = player.clientUserData.WinLinesCount or 0
+
+        if not linesTable[lineID] then -- Check that they don't already have the line
+            linesTable[lineID] = true
+            linesCount = linesCount + 1
+        end
+
+        player.clientUserData.WinLinesTable = linesTable
+        player.clientUserData.WinLinesCount = linesCount
+    end
+
+    function API.RemoveWinLine(player, lineID)
+        local linesTable = player.clientUserData.WinLinesTable 
+        local linesCount = player.clientUserData.WinLinesCount
+
+        if not linesTable or linesTable == {} or not linesTable[lineID] then
+            return
+        end
+
+        player.clientUserData.WinLinesTable[lineID] = nil
+        player.clientUserData.WinLinesCount = linesCount - 1
+    end
+
+    function API.DisplayWinLines(winLines, winningPatterns, cardFrames)
+        print("Displaying win lines")
+        for id, _ in pairs(winningPatterns) do
+            print("Id: "..tostring(id))
+            for _, position in ipairs(API.WIN_LINES[id].table) do
+                cardFrames[position]:SetColor(winLines[id].color)
+                Task.Wait(0.3)
+            end
+            Task.Wait(0.1)
+            for _, position in ipairs(API.WIN_LINES[id].table) do
+                cardFrames[position]:ResetColor()
+            end
+            winLines[id].object.visibility = Visibility.INHERIT
+            Task.Wait(0.2)
+        end
     end
 end
 

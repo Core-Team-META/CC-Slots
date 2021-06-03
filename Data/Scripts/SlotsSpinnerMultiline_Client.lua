@@ -58,6 +58,7 @@ local isEnabled = false
 local spacing = 600
 
 local lootCards = {}
+local cardFrames = {}
 local winLines = {}
 local centerPosition = WIN_LINE:GetWorldPosition()
 local verticalScrollPosition = {0, 0, 0}
@@ -144,7 +145,6 @@ function Init()
         spinTargetPosition[i] = slotCard.clientUserData.startPosition.z
     end
 
-    WIN_LINE_OBJECTS.visibility = Visibility.FORCE_OFF
     for _, line in ipairs(WIN_LINE_OBJECTS:GetChildren()) do
         local id = line:GetCustomProperty("ID")
 
@@ -156,18 +156,26 @@ function Init()
             error("Can not have duplicate win line IDs: " .. line.name)
         end
 
-        winLines[id] = line
+        winLines[id] = {object = line, color = line:GetCustomProperty("Color")}
     end
 end
 
 function Activate()
     local position = Vector3.ZERO
+    local count = 1
     for i = 1, 3 do
         itemTotalSpacing[i] = 0
         lootCards[i] = {}
         for index, item in pairs(items) do
             local params = {parent = SLOT[i], position = position}
             local lootCard = World.SpawnAsset(LOOT_CARD_TEMPLATE, params)
+            
+            if index < 4 then -- get the frames of the 3v3 grid
+                cardFrames[count] = lootCard:GetCustomProperty("Frame"):WaitForObject()
+                --cardFrames[count]:SetColor(Color.WHITE)
+                count = count + 1
+            end
+
             InitializeLootCard(lootCard, item, i)
 
             lootCards[i][index] = lootCard
@@ -200,9 +208,9 @@ function InitializeLootCard(lootCard, item, slot)
     end
 
     local gamePortal = lootCard:GetCustomProperty("GamePortal"):WaitForObject()
-    local gradient = lootCard:GetCustomProperty("Gradient"):WaitForObject()
+    --[[local gradient = lootCard:GetCustomProperty("Gradient"):WaitForObject()
     local bar = lootCard:GetCustomProperty("Bar"):WaitForObject()
-    local border = lootCard:GetCustomProperty("Border"):WaitForObject()
+    local border = lootCard:GetCustomProperty("Border"):WaitForObject()]]
 
     gamePortal:SetSmartProperty("Game ID", item.gamePortal)
     gamePortal:SetSmartProperty("Screenshot Index", item.screenshotIndex)
@@ -256,7 +264,12 @@ function OnNetworkObjectAdded(parentObject, childObject) --
         Task.Wait()
         dataStr = childObject:GetCustomProperty("data")
     end
-    WIN_LINE_OBJECTS.visibility = Visibility.FORCE_OFF
+
+    for id, line in ipairs(winLines) do
+        print("hiding line")
+        line.object.visibility = Visibility.FORCE_OFF
+    end
+
     results = API.ConvertStringToTable(dataStr)
     playerId = childObject:GetCustomProperty("playerId")
 
@@ -317,14 +330,7 @@ function OnNetworkObjectAdded(parentObject, childObject) --
                 NOTIFICATION.Add(LOCAL_PLAYER, msg)
             end
             if isWinner then
-                for id, line in ipairs(winLines) do
-                    if winningPatterns[id] then
-                        line.visibility = Visibility.INHERIT
-                    else
-                        line.visibility = Visibility.FORCE_OFF
-                    end
-                end
-                WIN_LINE_OBJECTS.visibility = Visibility.INHERIT
+                API.DisplayWinLines(winLines, winningPatterns, cardFrames)
             end
         end,
         SPIN_DURATION
