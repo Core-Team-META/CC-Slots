@@ -294,7 +294,7 @@ if Environment.IsClient() then
             end
             Task.Wait(0.1)
             for _, position in ipairs(API.WIN_LINES[id].table) do
-                cardFrames[position]:ResetColor()
+                cardFrames[position]:SetColor(Color.BLACK)
             end
             winLines[id].object.visibility = Visibility.INHERIT
             Task.Wait(0.2)
