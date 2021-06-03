@@ -2,6 +2,7 @@ local API = {}
 
 API.isInitialized = false
 
+
 API.Broadcasts = {
     spin = "RSS_Random",
     destroy = "RSS_Destroy",
@@ -281,45 +282,48 @@ if Environment.IsClient() then
         player.clientUserData.WinLinesCount = linesCount - 1
     end
 
-    local function WinLineDelay(delay, winLines, winningPatterns, cardFrames, count, object)
-        while time() < delay do
-            if count ~= object.clientUserData.animationCount then
-                API.ClearDisplayWinLines(winLines, winningPatterns, cardFrames)
-                return
+    function CustomWait(duration, cancelAnimation)
+        local endTime = time()+duration
+        while time() < endTime do
+            if cancelAnimation.value then
+                break
             end
             Task.Wait()
         end
     end
 
-    function API.DisplayWinLines(winLines, winningPatterns, cardFrames, count, object)
+    function API.DisplayWinLines(winLines, winningPatterns, cardFrames, cancelAnimation)
+        cancelAnimation.value = false
         for id, _ in pairs(winningPatterns) do
             for _, position in ipairs(API.WIN_LINES[id].table) do
+                if cancelAnimation.value then
+                    break
+                end
                 cardFrames[position]:SetColor(winLines[id].color)
-                WinLineDelay(time() + 0.3, winLines, winningPatterns, cardFrames, count, object)
+                CustomWait(0.3, cancelAnimation)
             end
-            if count ~= object.clientUserData.animationCount then
-                API.ClearDisplayWinLines(winLines, winningPatterns, cardFrames)
-                return
+            if not cancelAnimation.value then
+                CustomWait(0.1, cancelAnimation)
             end
-            WinLineDelay(time() + 0.1, winLines, winningPatterns, cardFrames, count, object)
             for _, position in ipairs(API.WIN_LINES[id].table) do
                 cardFrames[position]:SetColor(Color.BLACK)
             end
-            winLines[id].object.visibility = Visibility.INHERIT
-            if count ~= object.clientUserData.animationCount then
-                API.ClearDisplayWinLines(winLines, winningPatterns, cardFrames)
-                return
-            end
-            WinLineDelay(time() + 0.2, winLines, winningPatterns, cardFrames, count, object)
-        end
-    end
 
-    function API.ClearDisplayWinLines(winLines, winningPatterns, cardFrames)
-        for id, _ in pairs(winningPatterns) do
-            for _, position in ipairs(API.WIN_LINES[id].table) do
-                cardFrames[position]:SetColor(Color.BLACK)
+            if cancelAnimation.value then
+                break
             end
-            winLines[id].object.visibility = Visibility.FORCE_OFF
+
+            winLines[id].object.visibility = Visibility.INHERIT
+            
+            if not cancelAnimation.value then 
+                CustomWait(0.2, cancelAnimation)
+            end
+        end
+
+        if cancelAnimation.value then
+            for _, line in ipairs(winLines) do
+                line.object.visibility = Visibility.FORCE_OFF
+            end
         end
     end
 end
