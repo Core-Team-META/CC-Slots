@@ -5,11 +5,12 @@ Objects {
   Name: "Western Arcade Multiline"
   Transform {
     Location {
-      X: -61.7876434
-      Y: -655
+      X: 390
+      Y: -230
       Z: -17
     }
     Rotation {
+      Yaw: 90
     }
     Scale {
       X: 1.2196
