@@ -149,11 +149,11 @@ function Init()
         local id = line:GetCustomProperty("ID")
 
         if not id then
-            error("Win line object is missing the ID property: "..line.name)
+            error("Win line object is missing the ID property: " .. line.name)
         end
 
         if winLines[id] then
-            error("Can not have duplicate win line IDs: "..line.name)
+            error("Can not have duplicate win line IDs: " .. line.name)
         end
 
         winLines[id] = line
@@ -179,15 +179,7 @@ end
 
 function InitializeLootCard(lootCard, item, slot)
     local itemId = item.id
-    --
-
-    --[[for _, result in ipairs(results) do
-        result = result.x > 0 and result.x or 1
-        result.y = result.y > 0 and result.y or 1
-        result.z = result.z > 0 and result.z or 1
-    end]] if
-        slot == 1 and item.id == 1
-     then
+    if slot == 1 and item.id == 1 then
         item = API.GetSlotById(THEME_ID, results[1])
     elseif slot == 1 and item.id == 2 then
         item = API.GetSlotById(THEME_ID, results[2])

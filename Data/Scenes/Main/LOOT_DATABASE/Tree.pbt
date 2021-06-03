@@ -57,7 +57,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
-      String: "0abf2d/birdslots"
+      String: "ec1a79/mechathunderimages"
     }
     Overrides {
       Name: "cs:ScreenshotIndex"
@@ -122,7 +122,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
-      String: "0abf2d/birdslots"
+      String: "ec1a79/mechathunderimages"
     }
     Overrides {
       Name: "cs:ScreenshotIndex"
@@ -187,7 +187,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
-      String: "0abf2d/birdslots"
+      String: "ec1a79/mechathunderimages"
     }
     Overrides {
       Name: "cs:ScreenshotIndex"
@@ -252,7 +252,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
-      String: "0abf2d/birdslots"
+      String: "ec1a79/mechathunderimages"
     }
     Overrides {
       Name: "cs:ScreenshotIndex"
@@ -317,7 +317,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
-      String: "0abf2d/birdslots"
+      String: "ec1a79/mechathunderimages"
     }
     Overrides {
       Name: "cs:ScreenshotIndex"

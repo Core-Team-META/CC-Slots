@@ -207,7 +207,7 @@ function API.CheckMultilineWin(vectorTable, betAmount, items, odds)
     local reward = 0
     local winningPatterns = {}
     local slotTable = {}
-
+    local betAmount = (betAmount * 0.65) * odds
     if type(vectorTable[1]) ~= "number" then
         slotTable[1] = vectorTable[1].x
         slotTable[2] = vectorTable[1].y
@@ -240,7 +240,7 @@ function API.CheckMultilineWin(vectorTable, betAmount, items, odds)
             if value then
                 reward = CoreMath.Round(reward + (betAmount * items[value].reward * pattern.multiplier))
             else -- 3 wilds; Jackpot!
-                reward = CoreMath.Round(GetJackpotReward(odds) * betAmount)
+                reward = CoreMath.Round(reward * betAmount)
             end
             winningPatterns[index] = true
         end

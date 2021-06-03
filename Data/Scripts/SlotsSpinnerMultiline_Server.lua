@@ -67,9 +67,13 @@ end
 local function GetRandomSlot(reelTotal)
     local value = math.random() * reelTotal
     local total = 0
+  
     for _, item in ipairs(items) do
         total = total + item.chance
         if total >= value then
+            if item.isWild then
+                return math.random(1, 5)
+            end
             return item.id
         end
     end
@@ -139,27 +143,13 @@ function PickItemRandomly(player, betAmount, slotId)
     end
 
     local slotsTable = {}
-    for i=1, 9 do 
+    for i = 1, 9 do
         slotsTable[i] = GetRandomSlot(reelTotal)
     end
-    
-    --[[
-    slotsTable[2] = 1
-    slotsTable[5] = 5
-    slotsTable[8] = 5
 
-    --[[
-    slotsTable[3] = 2
-    slotsTable[6] = 2
-    slotsTable[9] = 2]]
     local dataStr = API.ConvertTableToString(slotsTable)
-   --[[ newData:SetNetworkedCustomProperty("Row1", Vector3.New(slotsTable[1], slotsTable[2], slotsTable[3]))
-    newData:SetNetworkedCustomProperty("Row2", Vector3.New(slotsTable[4], slotsTable[5], slotsTable[6]))
-    newData:SetNetworkedCustomProperty("Row3", Vector3.New(slotsTable[7], slotsTable[8], slotsTable[9]))]]--
     newData:SetNetworkedCustomProperty("data", dataStr)
     newData:SetNetworkedCustomProperty("playerId", player.id)
-  
-
     Task.Spawn(
         function()
             local isWinner, reward = API.CheckMultilineWin(slotsTable, betAmount, items, ODDS)
@@ -193,14 +183,16 @@ if enableDevMode then
 
     for i = 1, 10000 do
         totalSpins = i
-        local total = 0
+
+        local reelTotal = 0
         for _, item in ipairs(items) do
-            total = total + item.chance
+            reelTotal = reelTotal + item.chance
         end
-        local slot1 = GetRandomSlot(total)
-        local slot2 = GetRandomSlot(total)
-        local slot3 = GetRandomSlot(total)
-        local isWinner, reward = API.CheckWin(slot1, slot2, slot3, betAmount, items, ODDS)
+        local slotsTable = {}
+        for i = 1, 9 do
+            slotsTable[i] = GetRandomSlot(reelTotal)
+        end
+        local isWinner, reward = API.CheckMultilineWin(slotsTable, betAmount, items, ODDS)
         totalSpent = totalSpent + betAmount
         if isWinner then
             totalWon = totalWon + reward
@@ -215,5 +207,5 @@ if enableDevMode then
         end
     end
 
-    print(THEME_ID, totalSpent, totalWon, totalWins, totalLoss)
+    print(THEME_ID, totalSpent, totalWon, totalWins, totalLoss, totalWon / totalSpent)
 end

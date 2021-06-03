@@ -55,6 +55,15 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 9361746567858354449
+      value {
+        Overrides {
+          Name: "cs:Odds"
+          Float: 0.97
+        }
+      }
+    }
     TemplateAsset {
       Id: 1457333972175442622
     }
@@ -112,6 +121,15 @@ Objects {
             Y: 1.2196
             Z: 1.2196
           }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9361746567858354449
+      value {
+        Overrides {
+          Name: "cs:Odds"
+          Float: 0.97
         }
       }
     }
@@ -175,6 +193,15 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 9361746567858354449
+      value {
+        Overrides {
+          Name: "cs:Odds"
+          Float: 0.97
+        }
+      }
+    }
     TemplateAsset {
       Id: 1457333972175442622
     }
@@ -232,6 +259,15 @@ Objects {
             Y: 1.2196
             Z: 1.2196
           }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9361746567858354449
+      value {
+        Overrides {
+          Name: "cs:Odds"
+          Float: 0.97
         }
       }
     }
@@ -296,6 +332,15 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 9361746567858354449
+      value {
+        Overrides {
+          Name: "cs:Odds"
+          Float: 0.97
+        }
+      }
+    }
     TemplateAsset {
       Id: 1457333972175442622
     }
@@ -338,6 +383,15 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9361746567858354449
+      value {
+        Overrides {
+          Name: "cs:Odds"
+          Float: 0.97
         }
       }
     }

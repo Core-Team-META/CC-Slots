@@ -417,6 +417,7 @@ Objects {
       ChatMode {
         Value: "mc:echatmode:teamandall"
       }
+      EnablePlayModeProfiler: true
       ChatSettings {
         ChatMode {
         }

@@ -60,6 +60,15 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 9576669645920691922
+      value {
+        Overrides {
+          Name: "cs:Theme"
+          String: "Birds"
+        }
+      }
+    }
     TemplateAsset {
       Id: 7352794389691591513
     }
