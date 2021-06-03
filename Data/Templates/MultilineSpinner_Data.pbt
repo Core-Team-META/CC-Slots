@@ -28,16 +28,25 @@ Assets {
           Overrides {
             Name: "cs:Row1"
             Vector {
+              X: 1
+              Y: 1
+              Z: 1
             }
           }
           Overrides {
             Name: "cs:Row2"
             Vector {
+              X: 1
+              Y: 1
+              Z: 1
             }
           }
           Overrides {
             Name: "cs:Row3"
             Vector {
+              X: 1
+              Y: 1
+              Z: 1
             }
           }
           Overrides {

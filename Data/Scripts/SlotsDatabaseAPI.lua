@@ -180,7 +180,7 @@ function API.CheckMultilineWin(vectorTable, betAmount, items, odds)
             else -- 3 wilds; Jackpot!
                 reward = CoreMath.Round(GetJackpotReward(odds) * betAmount)
             end
-            table.insert(winningPatterns, index)
+            winningPatterns[index] = true
         end
     end
 

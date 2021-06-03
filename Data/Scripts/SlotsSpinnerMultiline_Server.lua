@@ -156,7 +156,8 @@ function PickItemRandomly(player, betAmount, slotId)
     newData:SetNetworkedCustomProperty("Row2", Vector3.New(slotsTable[4], slotsTable[5], slotsTable[6]))
     newData:SetNetworkedCustomProperty("Row3", Vector3.New(slotsTable[7], slotsTable[8], slotsTable[9]))
     newData:SetNetworkedCustomProperty("playerId", player.id)
-    newData:SetNetworkedCustomProperty("spinTime", time() + spinDuration)
+    Task.Wait()
+    newData:SetNetworkedCustomProperty("spinTime", time())
 
     Task.Spawn(
         function()
