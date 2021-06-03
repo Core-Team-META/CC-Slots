@@ -73,6 +73,9 @@ function Tick()
     if not CurrentPlayer then
         return
     end
+    if CurrentPlayer.clientUserData.slotId ~= SLOT_ID then
+        return
+    end
     if Object.IsValid(CurrentPlayer) then
         PlayerWallet.text = tostring(CurrentPlayer:GetResource(RESOURCE_NAME))
         if CurrentPlayer.clientUserData.betAmount then

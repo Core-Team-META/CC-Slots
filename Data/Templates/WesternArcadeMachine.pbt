@@ -1174,7 +1174,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Text {
-          Text: "99999999999"
+          Text: "100"
           FontAsset {
             Id: 3719536377982098645
           }
@@ -1228,7 +1228,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Text {
-          Text: "99999999999"
+          Text: "0"
           FontAsset {
             Id: 3719536377982098645
           }
@@ -1282,7 +1282,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Text {
-          Text: "You Bet _______ and Won _______"
+          Text: " Press Spin To Begin"
           FontAsset {
             Id: 3719536377982098645
           }
@@ -1335,7 +1335,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Text {
-          Text: "You Bet _______ and Lost _______"
+          Text: " "
           FontAsset {
             Id: 3719536377982098645
           }
@@ -1388,7 +1388,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Text {
-          Text: "You Bet _______ and Lost _______"
+          Text: " "
           FontAsset {
             Id: 3719536377982098645
           }
@@ -1441,7 +1441,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Text {
-          Text: "You Bet _______ and Lost _______"
+          Text: " "
           FontAsset {
             Id: 3719536377982098645
           }
@@ -1494,7 +1494,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Text {
-          Text: "You Bet _______ and Lost _______"
+          Text: " "
           FontAsset {
             Id: 3719536377982098645
           }
