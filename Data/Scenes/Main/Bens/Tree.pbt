@@ -4,17 +4,10 @@ Objects {
   Id: 17906749208611150506
   Name: "Western Arcade Multiline - Wester"
   Transform {
-    Location {
-      X: 455
-      Y: -1059
-      Z: -16
-    }
-    Rotation {
-    }
     Scale {
-      X: 1.2196
-      Y: 1.2196
-      Z: 1.2196
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 2669417942466758110
@@ -43,14 +36,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.2196
-            Y: 1.2196
-            Z: 1.2196
           }
         }
       }
