@@ -47,14 +47,9 @@ Assets {
         }
         ParentId: 2054124747642327321
         ChildIds: 17209371654655629974
-        ChildIds: 15396600651397860960
         ChildIds: 14711670391019192221
         ChildIds: 14669756790987276305
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:KeyBind"
-            String: "ability_extra_24"
-          }
           Overrides {
             Name: "cs:SpinDuration"
             Float: 4
@@ -76,24 +71,12 @@ Assets {
             Int: 1000
           }
           Overrides {
-            Name: "cs:GiveStartingCurrency"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:StartingCurrency"
-            Int: 1000
-          }
-          Overrides {
-            Name: "cs:SlotId"
-            String: "W4"
-          }
-          Overrides {
             Name: "cs:Theme"
             String: "Western"
           }
           Overrides {
             Name: "cs:Odds"
-            Float: 0.95
+            Float: 0.97
           }
         }
         Collidable_v2 {
@@ -180,47 +163,6 @@ Assets {
         Script {
           ScriptAsset {
             Id: 8866662970896710292
-          }
-        }
-      }
-      Objects {
-        Id: 15396600651397860960
-        Name: "SlotsPlayerManagerMultiline_Server"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 9361746567858354449
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:Settings"
-            ObjectReference {
-              SubObjectId: 9361746567858354449
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Script {
-          ScriptAsset {
-            Id: 12108206478747560337
           }
         }
       }
