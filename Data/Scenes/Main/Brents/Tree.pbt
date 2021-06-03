@@ -1,8 +1,8 @@
 Name: "Brents"
 RootId: 4675025735314061901
 Objects {
-  Id: 5375489668664873025
-  Name: "Zombie Arcade Multiline - Zombie"
+  Id: 14568800126466436500
+  Name: "FantasyArcadeMachine"
   Transform {
     Scale {
       X: 1
@@ -19,17 +19,26 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 12176439763912673964
+      key: 13561356530882030136
+      value {
+        Overrides {
+          Name: "cs:Theme"
+          String: "Fantasy"
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16807770656924046066
       value {
         Overrides {
           Name: "Name"
-          String: "Zombie Arcade Multiline - Zombie"
+          String: "FantasyArcadeMachine"
         }
         Overrides {
           Name: "Position"
           Vector {
             X: 1246.56189
-            Y: -651
+            Y: -981
             Z: -17
           }
         }
@@ -42,7 +51,7 @@ Objects {
       }
     }
     TemplateAsset {
-      Id: 15388843617968423410
+      Id: 4603317766580022085
     }
   }
 }
