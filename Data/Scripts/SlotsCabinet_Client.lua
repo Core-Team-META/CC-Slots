@@ -34,21 +34,24 @@ function OnBindingPressed(player, keybind)
                 local currentBet = player.clientUserData.betAmount
                 local minBet = player.clientUserData.minBet
                 local maxBet = player.clientUserData.maxBet
-                if slotId and buttonType == "SpinButton" then
+                if slotId and slotId ~= SLOT_ID then
+                    return
+                end
+                if buttonType == "SpinButton" then
                     Events.BroadcastToServer(API.Broadcasts.spin, currentBet or 1, slotId)
-                elseif slotId and buttonType == "LowerButton" then
+                elseif buttonType == "LowerButton" then
                     if minBet < currentBet then
                         player.clientUserData.betAmount = currentBet - 1
                     end
-                elseif slotId and buttonType == "RaiseButton" then
+                elseif buttonType == "RaiseButton" then
                     if maxBet > currentBet then
                         player.clientUserData.betAmount = currentBet + 1
                     end
-                elseif slotId and buttonType == "MaxButton" then
+                elseif buttonType == "MaxButton" then
                     player.clientUserData.betAmount = maxBet
-                elseif slotId and buttonType == "MinButton" then
+                elseif buttonType == "MinButton" then
                     player.clientUserData.betAmount = minBet
-                elseif slotId and buttonType == "ExitButton" then
+                elseif buttonType == "ExitButton" then
                     Events.BroadcastToServer(API.Broadcasts.quit, slotId)
                 end
             end
