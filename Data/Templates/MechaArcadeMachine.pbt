@@ -16,7 +16,7 @@ Assets {
           }
         }
         ParentId: 4675025735314061901
-        ChildIds: 9576669645920691922
+        ChildIds: 16460223943244810137
         ChildIds: 18035254857092324981
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -32,12 +32,13 @@ Assets {
         }
       }
       Objects {
-        Id: 9576669645920691922
+        Id: 16460223943244810137
         Name: "Settings"
         Transform {
           Location {
           }
           Rotation {
+            Yaw: 89.9999924
           }
           Scale {
             X: 1
@@ -46,15 +47,10 @@ Assets {
           }
         }
         ParentId: 8019821520510676024
-        ChildIds: 17352007669120098355
-        ChildIds: 15678785402692980184
-        ChildIds: 6801173867132155687
-        ChildIds: 4386101123756257253
+        ChildIds: 10040235265298899998
+        ChildIds: 12227192544232325397
+        ChildIds: 12542699250359385753
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:KeyBind"
-            String: "ability_extra_24"
-          }
           Overrides {
             Name: "cs:SpinDuration"
             Float: 4
@@ -76,24 +72,12 @@ Assets {
             Int: 1000
           }
           Overrides {
-            Name: "cs:GiveStartingCurrency"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:StartingCurrency"
-            Int: 1000
-          }
-          Overrides {
-            Name: "cs:SlotId"
-            String: "W4"
-          }
-          Overrides {
             Name: "cs:Theme"
-            String: "Western"
+            String: "Mecha"
           }
           Overrides {
             Name: "cs:Odds"
-            Float: 0.95
+            Float: 0.97
           }
         }
         Collidable_v2 {
@@ -113,8 +97,8 @@ Assets {
         }
       }
       Objects {
-        Id: 17352007669120098355
-        Name: "SlotsSpinner_Server"
+        Id: 10040235265298899998
+        Name: "SlotsSpinnerMultiline_Server"
         Transform {
           Location {
           }
@@ -126,7 +110,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 9576669645920691922
+        ParentId: 16460223943244810137
         UnregisteredParameters {
           Overrides {
             Name: "cs:Networking"
@@ -137,19 +121,19 @@ Assets {
           Overrides {
             Name: "cs:RandomSpinner_Data"
             AssetReference {
-              Id: 14049773049646805525
+              Id: 15301825380268527984
             }
           }
           Overrides {
             Name: "cs:Settings"
             ObjectReference {
-              SubObjectId: 9576669645920691922
+              SubObjectId: 16460223943244810137
             }
           }
           Overrides {
             Name: "cs:Trigger"
             ObjectReference {
-              SubObjectId: 6801173867132155687
+              SubObjectId: 12227192544232325397
             }
           }
           Overrides {
@@ -158,45 +142,10 @@ Assets {
               SubObjectId: 3580537202393740168
             }
           }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Script {
-          ScriptAsset {
-            Id: 11132854693431165177
-          }
-        }
-      }
-      Objects {
-        Id: 15678785402692980184
-        Name: "SlotsPlayerManager_Server"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 9576669645920691922
-        UnregisteredParameters {
           Overrides {
-            Name: "cs:Settings"
-            ObjectReference {
-              SubObjectId: 9576669645920691922
+            Name: "cs:API"
+            AssetReference {
+              Id: 16952813177389789887
             }
           }
         }
@@ -214,12 +163,12 @@ Assets {
         }
         Script {
           ScriptAsset {
-            Id: 13996959647834889831
+            Id: 8866662970896710292
           }
         }
       }
       Objects {
-        Id: 6801173867132155687
+        Id: 12227192544232325397
         Name: "Trigger"
         Transform {
           Location {
@@ -234,7 +183,7 @@ Assets {
             Z: 5.88848925
           }
         }
-        ParentId: 9576669645920691922
+        ParentId: 16460223943244810137
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -261,7 +210,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4386101123756257253
+        Id: 12542699250359385753
         Name: "ClientContext"
         Transform {
           Location {
@@ -274,12 +223,12 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 9576669645920691922
-        ChildIds: 9503245155996374211
-        ChildIds: 3387152528755599583
-        ChildIds: 16555115586858073026
-        ChildIds: 12238763159774561264
-        ChildIds: 1197505145889187960
+        ParentId: 16460223943244810137
+        ChildIds: 14570674419111689573
+        ChildIds: 18386286007147709238
+        ChildIds: 15396463938736122450
+        ChildIds: 6887363701579149710
+        ChildIds: 3009318347596777875
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -295,8 +244,8 @@ Assets {
         }
       }
       Objects {
-        Id: 9503245155996374211
-        Name: "SlotsSpinner_Client"
+        Id: 14570674419111689573
+        Name: "SlotsSpinnerMultiline_Client"
         Transform {
           Location {
           }
@@ -308,54 +257,42 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4386101123756257253
+        ParentId: 12542699250359385753
         UnregisteredParameters {
           Overrides {
             Name: "cs:ROOT"
             ObjectReference {
-              SubObjectId: 4386101123756257253
+              SubObjectId: 12542699250359385753
             }
           }
           Overrides {
             Name: "cs:ScreenGroup"
             ObjectReference {
-              SubObjectId: 3387152528755599583
+              SubObjectId: 18386286007147709238
             }
           }
           Overrides {
             Name: "cs:Slot1"
             ObjectReference {
-              SubObjectId: 551488549372744832
+              SubObjectId: 11780294681972350519
             }
           }
           Overrides {
             Name: "cs:Slot2"
             ObjectReference {
-              SubObjectId: 14637365329285908304
+              SubObjectId: 3164242371514934526
             }
           }
           Overrides {
             Name: "cs:Slot3"
             ObjectReference {
-              SubObjectId: 2277904057925818135
+              SubObjectId: 12948863942702522885
             }
           }
           Overrides {
             Name: "cs:UIContainer"
             ObjectReference {
               SelfId: 7637385122368510837
-            }
-          }
-          Overrides {
-            Name: "cs:LootCardTemplate"
-            AssetReference {
-              Id: 9096356360026426828
-            }
-          }
-          Overrides {
-            Name: "cs:API"
-            AssetReference {
-              Id: 16952813177389789887
             }
           }
           Overrides {
@@ -373,49 +310,73 @@ Assets {
           Overrides {
             Name: "cs:Settings"
             ObjectReference {
-              SubObjectId: 9576669645920691922
+              SubObjectId: 16460223943244810137
             }
           }
           Overrides {
             Name: "cs:Background"
             ObjectReference {
-              SubObjectId: 15383024505811860822
+              SubObjectId: 3135080119565334078
             }
           }
           Overrides {
             Name: "cs:DoorShopBellRing02SFX"
             ObjectReference {
-              SubObjectId: 16041026296964649701
+              SubObjectId: 2065784908915576911
             }
           }
           Overrides {
             Name: "cs:ChestCoinsOpening01SFX"
             ObjectReference {
-              SubObjectId: 6665127276589276647
+              SubObjectId: 16972869631749071327
             }
           }
           Overrides {
             Name: "cs:CashRegisterDrawerMechanismLockClose01SF"
             ObjectReference {
-              SubObjectId: 18277914158250310191
+              SubObjectId: 5700923727706977962
             }
           }
           Overrides {
             Name: "cs:SlotCam"
             ObjectReference {
-              SubObjectId: 12238763159774561264
+              SubObjectId: 6887363701579149710
             }
           }
           Overrides {
             Name: "cs:CollectAllCoinsMarimba01SFX"
             ObjectReference {
-              SubObjectId: 7893141603885424392
+              SubObjectId: 12285664267215493246
             }
           }
           Overrides {
             Name: "cs:WinLine"
             ObjectReference {
-              SubObjectId: 7863441272497583118
+              SubObjectId: 15287665891553958979
+            }
+          }
+          Overrides {
+            Name: "cs:API"
+            AssetReference {
+              Id: 16952813177389789887
+            }
+          }
+          Overrides {
+            Name: "cs:LootCardTemplate"
+            AssetReference {
+              Id: 9096356360026426828
+            }
+          }
+          Overrides {
+            Name: "cs:NotificationAPI"
+            AssetReference {
+              Id: 1385660465302450066
+            }
+          }
+          Overrides {
+            Name: "cs:WinLinesObjects"
+            ObjectReference {
+              SubObjectId: 4592247303736011057
             }
           }
         }
@@ -428,23 +389,27 @@ Assets {
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
         Script {
           ScriptAsset {
-            Id: 15724549458391373530
+            Id: 3776689697470864247
           }
         }
       }
       Objects {
-        Id: 3387152528755599583
+        Id: 18386286007147709238
         Name: "ScreenGroup"
         Transform {
           Location {
-            Y: 84.8519287
-            Z: 134.60083
+            X: 89.4229431
+            Y: 0.215210453
+            Z: 135.677902
           }
           Rotation {
-            Pitch: -12.9999876
-            Yaw: -89.9999847
+            Pitch: -7.54229736
+            Yaw: 180
           }
           Scale {
             X: 0.0253759455
@@ -452,12 +417,13 @@ Assets {
             Z: 0.0253759455
           }
         }
-        ParentId: 4386101123756257253
-        ChildIds: 551488549372744832
-        ChildIds: 14637365329285908304
-        ChildIds: 2277904057925818135
-        ChildIds: 15383024505811860822
-        ChildIds: 7863441272497583118
+        ParentId: 12542699250359385753
+        ChildIds: 11780294681972350519
+        ChildIds: 3164242371514934526
+        ChildIds: 12948863942702522885
+        ChildIds: 3135080119565334078
+        ChildIds: 15287665891553958979
+        ChildIds: 4592247303736011057
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -472,7 +438,7 @@ Assets {
         }
       }
       Objects {
-        Id: 551488549372744832
+        Id: 11780294681972350519
         Name: "Slot1"
         Transform {
           Location {
@@ -487,7 +453,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 3387152528755599583
+        ParentId: 18386286007147709238
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -504,7 +470,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14637365329285908304
+        Id: 3164242371514934526
         Name: "Slot2"
         Transform {
           Location {
@@ -518,7 +484,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 3387152528755599583
+        ParentId: 18386286007147709238
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -535,7 +501,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2277904057925818135
+        Id: 12948863942702522885
         Name: "Slot3"
         Transform {
           Location {
@@ -550,7 +516,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 3387152528755599583
+        ParentId: 18386286007147709238
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -567,7 +533,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15383024505811860822
+        Id: 3135080119565334078
         Name: "Background"
         Transform {
           Location {
@@ -583,7 +549,7 @@ Assets {
             Z: 100
           }
         }
-        ParentId: 3387152528755599583
+        ParentId: 18386286007147709238
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -625,7 +591,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7863441272497583118
+        Id: 15287665891553958979
         Name: "Win Line"
         Transform {
           Location {
@@ -640,12 +606,12 @@ Assets {
             Z: 0.143468633
           }
         }
-        ParentId: 3387152528755599583
+        ParentId: 18386286007147709238
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 7441880884784901044
+              Id: 17562164668774050038
             }
           }
           Overrides {
@@ -661,7 +627,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:forceoff"
@@ -690,26 +656,31 @@ Assets {
         }
       }
       Objects {
-        Id: 16555115586858073026
-        Name: "Audio"
+        Id: 4592247303736011057
+        Name: "Win Lines"
         Transform {
           Location {
-            Y: 2.81939793
-            Z: 144.850845
+            X: 2999.99927
+            Y: -0.000739557086
+            Z: -8.38784
           }
           Rotation {
+            Pitch: 6.83018879e-06
+            Yaw: 2.39056535e-05
+            Roll: 4.26886845e-06
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 39.4074
+            Y: 39.4074
+            Z: 39.4074
           }
         }
-        ParentId: 4386101123756257253
-        ChildIds: 6665127276589276647
-        ChildIds: 16041026296964649701
-        ChildIds: 18277914158250310191
-        ChildIds: 7893141603885424392
+        ParentId: 18386286007147709238
+        ChildIds: 17315923897398010802
+        ChildIds: 9185867054679500944
+        ChildIds: 15149954408567675178
+        ChildIds: 3665354962785414065
+        ChildIds: 15029454066430982967
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -727,7 +698,403 @@ Assets {
         }
       }
       Objects {
-        Id: 6665127276589276647
+        Id: 17315923897398010802
+        Name: "Straight_Top"
+        Transform {
+          Location {
+            X: 0.446243107
+            Y: -2.15038085e-06
+            Z: 15.5
+          }
+          Rotation {
+            Yaw: -3.41509367e-05
+            Roll: -6.4033e-06
+          }
+          Scale {
+            X: 0.0253759865
+            Y: 0.799778223
+            Z: 0.0036406524
+          }
+        }
+        ParentId: 4592247303736011057
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:ID"
+            Int: 1
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 17562164668774050038
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.117000006
+              G: 0.86423862
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12095835209017042614
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableDistanceFieldLighting: true
+          DisableCastShadows: true
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 9185867054679500944
+        Name: "Straight_Middle"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.0253759865
+            Y: 0.799778223
+            Z: 0.0036406524
+          }
+        }
+        ParentId: 4592247303736011057
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:ID"
+            Int: 2
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 17562164668774050038
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.87
+              G: 0.864238501
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12095835209017042614
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableDistanceFieldLighting: true
+          DisableCastShadows: true
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 15149954408567675178
+        Name: "Straight_Bottom"
+        Transform {
+          Location {
+            X: 0.44626981
+            Y: -1.56391332e-06
+            Z: -15.5
+          }
+          Rotation {
+            Pitch: 6.83018879e-06
+            Yaw: 2.3905659e-05
+            Roll: 5.97641611e-06
+          }
+          Scale {
+            X: 0.0253759865
+            Y: 0.799778223
+            Z: 0.0036406524
+          }
+        }
+        ParentId: 4592247303736011057
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:ID"
+            Int: 3
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 17562164668774050038
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.87
+              G: 0.014789965
+              B: 0.014789965
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12095835209017042614
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableDistanceFieldLighting: true
+          DisableCastShadows: true
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 3665354962785414065
+        Name: "Diagonal_Top"
+        Transform {
+          Location {
+            X: -5.62886135e-06
+            Y: -3.12782572e-06
+            Z: 2.43812865e-05
+          }
+          Rotation {
+            Yaw: -6.10351563e-05
+            Roll: 29.999979
+          }
+          Scale {
+            X: 0.0253759865
+            Y: 0.89
+            Z: 0.0036406524
+          }
+        }
+        ParentId: 4592247303736011057
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:ID"
+            Int: 4
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 17562164668774050038
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.866000056
+              B: 0.692799807
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12095835209017042614
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableDistanceFieldLighting: true
+          DisableCastShadows: true
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 15029454066430982967
+        Name: "Diagonal_Bottom"
+        Transform {
+          Location {
+            X: -5.62886089e-06
+            Y: -3.12782549e-06
+            Z: 2.43812865e-05
+          }
+          Rotation {
+            Pitch: 6.83018879e-06
+            Yaw: -3.05175781e-05
+            Roll: -30
+          }
+          Scale {
+            X: 0.0253759865
+            Y: 0.89
+            Z: 0.0036406524
+          }
+        }
+        ParentId: 4592247303736011057
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:ID"
+            Int: 5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 17562164668774050038
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.161544144
+              G: 0.762
+              B: 0.561848104
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12095835209017042614
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableDistanceFieldLighting: true
+          DisableCastShadows: true
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 15396463938736122450
+        Name: "Audio"
+        Transform {
+          Location {
+            Y: 2.81939793
+            Z: 144.850845
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12542699250359385753
+        ChildIds: 16972869631749071327
+        ChildIds: 2065784908915576911
+        ChildIds: 5700923727706977962
+        ChildIds: 12285664267215493246
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 16972869631749071327
         Name: "Chest Coins Opening 01 SFX"
         Transform {
           Location {
@@ -742,7 +1109,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16555115586858073026
+        ParentId: 15396463938736122450
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -767,7 +1134,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16041026296964649701
+        Id: 2065784908915576911
         Name: "Coins Win Loop 03 SFX"
         Transform {
           Location {
@@ -782,7 +1149,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16555115586858073026
+        ParentId: 15396463938736122450
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -807,7 +1174,7 @@ Assets {
         }
       }
       Objects {
-        Id: 18277914158250310191
+        Id: 5700923727706977962
         Name: "Cash Register Drawer Mechanism Lock Close 01 SFX"
         Transform {
           Location {
@@ -822,7 +1189,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16555115586858073026
+        ParentId: 15396463938736122450
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -847,7 +1214,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7893141603885424392
+        Id: 12285664267215493246
         Name: "Collect All Coins Marimba 01 SFX"
         Transform {
           Location {
@@ -862,7 +1229,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16555115586858073026
+        ParentId: 15396463938736122450
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -888,16 +1255,17 @@ Assets {
         }
       }
       Objects {
-        Id: 12238763159774561264
+        Id: 6887363701579149710
         Name: "Slot Cam"
         Transform {
           Location {
-            Y: 113.745239
+            X: 127.910782
+            Y: 0.819963872
             Z: 149.156433
           }
           Rotation {
             Pitch: -20
-            Yaw: -90
+            Yaw: 180
           }
           Scale {
             X: 0.819941
@@ -905,7 +1273,7 @@ Assets {
             Z: 0.819941
           }
         }
-        ParentId: 4386101123756257253
+        ParentId: 12542699250359385753
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -937,12 +1305,16 @@ Assets {
         }
       }
       Objects {
-        Id: 1197505145889187960
+        Id: 3009318347596777875
         Name: "SlotsCabinet_Client"
         Transform {
           Location {
+            X: -212.364822
+            Y: 469.825928
+            Z: 1.63988197
           }
           Rotation {
+            Yaw: -179.999954
           }
           Scale {
             X: 0.819941
@@ -950,7 +1322,7 @@ Assets {
             Z: 0.819941
           }
         }
-        ParentId: 4386101123756257253
+        ParentId: 12542699250359385753
         UnregisteredParameters {
           Overrides {
             Name: "cs:GEO"
@@ -961,7 +1333,7 @@ Assets {
           Overrides {
             Name: "cs:Settings"
             ObjectReference {
-              SubObjectId: 9576669645920691922
+              SubObjectId: 16460223943244810137
             }
           }
         }
@@ -2308,11 +2680,11 @@ Assets {
         Name: "Player Position"
         Transform {
           Location {
-            Y: 58.2558975
+            Y: 58.2558708
             Z: 99.9600067
           }
           Rotation {
-            Yaw: -89.9999924
+            Yaw: -90
           }
           Scale {
             X: 0.819941
@@ -47888,15 +48260,6 @@ Assets {
       }
     }
     Assets {
-      Id: 7441880884784901044
-      Name: "Emissive Glow Transparent"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_basic_emissive_001"
-      }
-    }
-    Assets {
       Id: 2579731272602421365
       Name: "Chest Coins Opening 01 SFX"
       PlatformAssetType: 7
@@ -47993,6 +48356,15 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_plane_1m_001"
+      }
+    }
+    Assets {
+      Id: 7441880884784901044
+      Name: "Emissive Glow Transparent"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_basic_emissive_001"
       }
     }
     Assets {

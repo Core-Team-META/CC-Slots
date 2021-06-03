@@ -47,14 +47,9 @@ Assets {
         }
         ParentId: 12176439763912673964
         ChildIds: 12971856005837650702
-        ChildIds: 11655941980163661193
         ChildIds: 11198121875398670651
         ChildIds: 9951259973650144728
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:KeyBind"
-            String: "ability_extra_24"
-          }
           Overrides {
             Name: "cs:SpinDuration"
             Float: 4
@@ -74,18 +69,6 @@ Assets {
           Overrides {
             Name: "cs:MaxBet"
             Int: 1000
-          }
-          Overrides {
-            Name: "cs:GiveStartingCurrency"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:StartingCurrency"
-            Int: 1000
-          }
-          Overrides {
-            Name: "cs:SlotId"
-            String: "W4"
           }
           Overrides {
             Name: "cs:Theme"
@@ -184,47 +167,6 @@ Assets {
         }
       }
       Objects {
-        Id: 11655941980163661193
-        Name: "SlotsPlayerManagerMultiline_Server"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 10019489083536113633
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:Settings"
-            ObjectReference {
-              SubObjectId: 10019489083536113633
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Script {
-          ScriptAsset {
-            Id: 12108206478747560337
-          }
-        }
-      }
-      Objects {
         Id: 11198121875398670651
         Name: "Trigger"
         Transform {
@@ -283,7 +225,7 @@ Assets {
         ParentId: 10019489083536113633
         ChildIds: 5007137772712765222
         ChildIds: 1443018460828362131
-        ChildIds: 13948750523711205724
+        ChildIds: 17673945708612743369
         ChildIds: 16475603689255463372
         ChildIds: 15634755082233919425
         UnregisteredParameters {
@@ -379,19 +321,19 @@ Assets {
           Overrides {
             Name: "cs:DoorShopBellRing02SFX"
             ObjectReference {
-              SubObjectId: 14909362147135885442
+              SubObjectId: 15634894581188545365
             }
           }
           Overrides {
             Name: "cs:ChestCoinsOpening01SFX"
             ObjectReference {
-              SubObjectId: 4328736034321657344
+              SubObjectId: 16786533359404340130
             }
           }
           Overrides {
             Name: "cs:CashRegisterDrawerMechanismLockClose01SF"
             ObjectReference {
-              SubObjectId: 3203504368938962037
+              SubObjectId: 6499861579325970666
             }
           }
           Overrides {
@@ -403,7 +345,7 @@ Assets {
           Overrides {
             Name: "cs:CollectAllCoinsMarimba01SFX"
             ObjectReference {
-              SubObjectId: 4186612709659345431
+              SubObjectId: 6964825889557130691
             }
           }
           Overrides {
@@ -1155,14 +1097,13 @@ Assets {
         }
       }
       Objects {
-        Id: 13948750523711205724
+        Id: 17673945708612743369
         Name: "Audio"
         Transform {
           Location {
-            Y: 2.81939793
-            Z: 144.850845
           }
           Rotation {
+            Yaw: -89.9999771
           }
           Scale {
             X: 1
@@ -1171,10 +1112,10 @@ Assets {
           }
         }
         ParentId: 9951259973650144728
-        ChildIds: 4328736034321657344
-        ChildIds: 14909362147135885442
-        ChildIds: 3203504368938962037
-        ChildIds: 4186612709659345431
+        ChildIds: 16786533359404340130
+        ChildIds: 6964825889557130691
+        ChildIds: 6499861579325970666
+        ChildIds: 15634894581188545365
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1192,12 +1133,12 @@ Assets {
         }
       }
       Objects {
-        Id: 4328736034321657344
-        Name: "Chest Coins Opening 01 SFX"
+        Id: 16786533359404340130
+        Name: "Game Coin Win 01 SFX"
         Transform {
           Location {
-            X: 9.01602173
-            Z: -5.22244263
+            X: 9.01602268
+            Z: -5.22244453
           }
           Rotation {
           }
@@ -1207,7 +1148,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13948750523711205724
+        ParentId: 17673945708612743369
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1222,22 +1163,22 @@ Assets {
         }
         AudioInstance {
           AudioAsset {
-            Id: 2579731272602421365
+            Id: 1797377950360092645
           }
           Volume: 1
           Falloff: 1000
-          Radius: 500
+          Radius: -1
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
         }
       }
       Objects {
-        Id: 14909362147135885442
-        Name: "Coins Win Loop 03 SFX"
+        Id: 6964825889557130691
+        Name: "Voice Character Zombie Snarl Attack 03 SFX"
         Transform {
           Location {
-            X: 9.01602173
-            Z: -5.22244263
+            X: 9.01602268
+            Z: -5.22244453
           }
           Rotation {
           }
@@ -1247,7 +1188,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13948750523711205724
+        ParentId: 17673945708612743369
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1262,7 +1203,7 @@ Assets {
         }
         AudioInstance {
           AudioAsset {
-            Id: 3475320157792941589
+            Id: 14288833496764834364
           }
           Volume: 1
           Falloff: 1000
@@ -1272,7 +1213,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3203504368938962037
+        Id: 6499861579325970666
         Name: "Cash Register Drawer Mechanism Lock Close 01 SFX"
         Transform {
           Location {
@@ -1287,7 +1228,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13948750523711205724
+        ParentId: 17673945708612743369
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1304,7 +1245,8 @@ Assets {
           AudioAsset {
             Id: 3591911827021139355
           }
-          Volume: 1
+          Pitch: -800
+          Volume: 0.5
           Falloff: 1000
           Radius: 500
           IsSpatializationEnabled: true
@@ -1312,12 +1254,12 @@ Assets {
         }
       }
       Objects {
-        Id: 4186612709659345431
-        Name: "Collect All Coins Marimba 01 SFX"
+        Id: 15634894581188545365
+        Name: "Coins Win Loop 02 SFX"
         Transform {
           Location {
-            Y: 0.00109863281
-            Z: 1.52587891e-05
+            X: 9.01602268
+            Z: -5.22244453
           }
           Rotation {
           }
@@ -1327,7 +1269,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13948750523711205724
+        ParentId: 17673945708612743369
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1342,12 +1284,12 @@ Assets {
         }
         AudioInstance {
           AudioAsset {
-            Id: 3517605131435578695
+            Id: 10297692092872794914
           }
+          Pitch: -1500
           Volume: 1
-          Falloff: 1000
+          Falloff: -1
           Radius: -1
-          EnableOcclusion: true
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
         }
@@ -25409,21 +25351,21 @@ Assets {
       }
     }
     Assets {
-      Id: 2579731272602421365
-      Name: "Chest Coins Opening 01 SFX"
+      Id: 1797377950360092645
+      Name: "Game Coin Win 01 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_chest_coins_opening_01_Cue_ref"
+        AssetId: "sfx_game_coin_win_01_Cue_ref"
       }
     }
     Assets {
-      Id: 3475320157792941589
-      Name: "Coins Win Loop 03 SFX"
+      Id: 14288833496764834364
+      Name: "Voice Character Zombie Snarl Attack 03 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_coins_win_loop_03_Cue_ref"
+        AssetId: "sfx_vo_zombie_snarl_attack_03a_Cue_ref"
       }
     }
     Assets {
@@ -25436,12 +25378,12 @@ Assets {
       }
     }
     Assets {
-      Id: 3517605131435578695
-      Name: "Collect All Coins Marimba 01 SFX"
+      Id: 10297692092872794914
+      Name: "Coins Win Loop 02 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_collect_all_coins_marimba_Cue_ref"
+        AssetId: "sfx_coins_win_loop_02_Cue_ref"
       }
     }
     Assets {
