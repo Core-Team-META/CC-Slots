@@ -143,8 +143,19 @@ function Init()
         spinTargetPosition[i] = slotCard.clientUserData.startPosition.z
     end
 
+    WIN_LINE_OBJECTS.visibility = Visibility.FORCE_OFF
     for _, line in ipairs(WIN_LINE_OBJECTS:GetChildren()) do
         local id = line:GetCustomProperty("ID")
+
+        if not id then
+            error("Win line object is missing the ID property: "..line.name)
+        end
+
+        if winLines[id] then
+            error("Can not have duplicate win line IDs: "..line.name)
+        end
+
+        winLines[id] = line
     end
 end
 
@@ -167,14 +178,15 @@ end
 
 function InitializeLootCard(lootCard, item, slot)
     local itemId = item.id
+    --
 
     --[[for _, result in ipairs(results) do
         result = result.x > 0 and result.x or 1
         result.y = result.y > 0 and result.y or 1
         result.z = result.z > 0 and result.z or 1
-    end]]--
-
-    if slot == 1 and item.id == 1 then
+    end]] if
+        slot == 1 and item.id == 1
+     then
         item = API.GetSlotById(THEME_ID, results[1])
     elseif slot == 1 and item.id == 2 then
         item = API.GetSlotById(THEME_ID, results[2])
@@ -247,12 +259,11 @@ function OnNetworkObjectAdded(parentObject, childObject) --
     local player, playerId
 
     local dataStr = childObject:GetCustomProperty("data")
-
     while dataStr == "" do
         Task.Wait()
         dataStr = childObject:GetCustomProperty("data")
     end
-
+    WIN_LINE_OBJECTS.visibility = Visibility.FORCE_OFF
     results = API.ConvertStringToTable(dataStr)
     playerId = childObject:GetCustomProperty("playerId")
 
@@ -293,27 +304,40 @@ function OnNetworkObjectAdded(parentObject, childObject) --
     winnerSoundHasPlayed = false
     slotSound = {false, false, false}
     BELL:Play()
-    if player == LOCAL_PLAYER then
-        local msg
-        local betAmount = LOCAL_PLAYER.clientUserData.betAmount
-        local reward
-        isWinner, reward = API.CheckMultilineWin(results, betAmount, items, ODDS)
 
+    local msg
+    local betAmount = player.clientUserData.betAmount or 100
+    local reward
+    local winningPatterns
+    isWinner, reward, winningPatterns = API.CheckMultilineWin(results, betAmount, items, ODDS)
+    if player == LOCAL_PLAYER then
         if isWinner then
             msg = "Bet " .. tostring(betAmount) .. " and Won " .. tostring(reward)
         else
             msg = "Bet " .. tostring(betAmount) .. " and Lost "
         end
+    end
 
-        Task.Spawn(
-            function()
+    Task.Spawn(
+        function()
+            if player == LOCAL_PLAYER then
                 NOTIFICATION.Add(LOCAL_PLAYER, msg)
-            end,
-            SPIN_DURATION
-        )
+            end
+            if isWinner then
+                for id, line in ipairs(winLines) do
+                    if winningPatterns[id] then
+                        line.visibility = Visibility.INHERIT
+                    else
+                        line.visibility = Visibility.FORCE_OFF
+                    end
+                end
+                WIN_LINE_OBJECTS.visibility = Visibility.INHERIT
+            end
+        end,
+        SPIN_DURATION
+    )
 
     --Events.BroadcastToServer(API.Broadcasts.destroy, childObject.id)
-    end
 end
 
 function Tick(dt)
@@ -359,7 +383,6 @@ end
 function OnNetworkChanged(object, string)
     if string == "playerId" then
         local playerId = object:GetCustomProperty(string)
-
 
         if not playerId and currentPlayer == LOCAL_PLAYER then
             LOCAL_PLAYER.clientUserData.slotId = nil
