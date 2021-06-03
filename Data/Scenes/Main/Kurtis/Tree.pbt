@@ -5,8 +5,8 @@ Objects {
   Name: "New Slot Machine Horizontal"
   Transform {
     Location {
-      X: 1071
-      Y: -256
+      X: 1072
+      Y: -762
     }
     Rotation {
     }
