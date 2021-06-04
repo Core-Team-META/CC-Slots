@@ -28,6 +28,11 @@ local TRIGGER = script:GetCustomProperty("Trigger"):WaitForObject()
 
 local SETTINGS = script:GetCustomProperty("Settings"):WaitForObject()
 local SLOT_CAM = script:GetCustomProperty("SlotCam"):WaitForObject()
+
+SLOT_CAM.isDistanceAdjustable = true
+SLOT_CAM.minDistance = 0
+SLOT_CAM.maxDistance = 50
+
 local WIN_LINE = script:GetCustomProperty("WinLine"):WaitForObject()
 local SLOT = {}
 SLOT[1] = script:GetCustomProperty("Slot1"):WaitForObject()
@@ -103,6 +108,9 @@ local function Show()
         isEnabled = true
         UI.SetCursorVisible(true)
         UI.SetCanCursorInteractWithUI(true)
+        if LOCAL_PLAYER.clientUserData.slotCamDistance then
+            SLOT_CAM.currentDistance = LOCAL_PLAYER.clientUserData.slotCamDistance
+        end
         LOCAL_PLAYER:SetOverrideCamera(SLOT_CAM)
         LOCAL_PLAYER.isVisibleToSelf = false
         Events.Broadcast(API.Broadcasts.uiShow)
@@ -128,6 +136,7 @@ local function Hide()
         isEnabled = false
         UI.SetCursorVisible(false)
         UI.SetCanCursorInteractWithUI(false)
+        LOCAL_PLAYER.clientUserData.slotCamDistance = SLOT_CAM.currentDistance
         LOCAL_PLAYER:ClearOverrideCamera()
         LOCAL_PLAYER.isVisibleToSelf = true
         Events.Broadcast(API.Broadcasts.uiHide)
