@@ -346,6 +346,12 @@ Assets {
               SubObjectId: 14711670391019192221
             }
           }
+          Overrides {
+            Name: "cs:WinningLinesAudio"
+            ObjectReference {
+              SubObjectId: 8813261356416286177
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1085,6 +1091,7 @@ Assets {
         ChildIds: 8732137718690606791
         ChildIds: 3069294940434499618
         ChildIds: 14986464568006911734
+        ChildIds: 8813261356416286177
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1106,8 +1113,8 @@ Assets {
         Name: "Chest Coins Opening 01 SFX"
         Transform {
           Location {
-            X: 9.01602173
-            Z: -5.22244263
+            X: 9.01599789
+            Z: -22.1625042
           }
           Rotation {
           }
@@ -1146,8 +1153,8 @@ Assets {
         Name: "Coins Win Loop 03 SFX"
         Transform {
           Location {
-            X: 9.01602173
-            Z: -5.22244263
+            X: 9.01599789
+            Z: -22.1625042
           }
           Rotation {
           }
@@ -1186,8 +1193,8 @@ Assets {
         Name: "Cash Register Drawer Mechanism Lock Close 01 SFX"
         Transform {
           Location {
-            X: 9.01602173
-            Z: -5.22244263
+            X: 9.01599789
+            Z: -22.1625042
           }
           Rotation {
           }
@@ -1226,8 +1233,8 @@ Assets {
         Name: "Collect All Coins Marimba 01 SFX"
         Transform {
           Location {
-            Y: 0.00109863281
-            Z: 1.52587891e-05
+            Y: 0.001100995
+            Z: -16.9400463
           }
           Rotation {
           }
@@ -1260,6 +1267,224 @@ Assets {
           EnableOcclusion: true
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
+        }
+      }
+      Objects {
+        Id: 8813261356416286177
+        Name: "WinningLinesAudio"
+        Transform {
+          Location {
+            Z: -20.2198105
+          }
+          Rotation {
+            Yaw: 89.9999771
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12695320728626205914
+        ChildIds: 5122856250144310675
+        ChildIds: 4503536952752703756
+        ChildIds: 3440800252657286182
+        ChildIds: 1629070235392453365
+        ChildIds: 11014310722963009684
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 5122856250144310675
+        Name: "Game Coin Win 05 SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.819941
+            Y: 0.819941
+            Z: 0.819941
+          }
+        }
+        ParentId: 8813261356416286177
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 13887162897588078967
+          }
+          Volume: 1
+          Falloff: 3000
+          Radius: 2000
+        }
+      }
+      Objects {
+        Id: 4503536952752703756
+        Name: "Game Coin Win 04 SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.819941
+            Y: 0.819941
+            Z: 0.819941
+          }
+        }
+        ParentId: 8813261356416286177
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 4276835650099830821
+          }
+          Volume: 1
+          Falloff: 3000
+          Radius: 2000
+        }
+      }
+      Objects {
+        Id: 3440800252657286182
+        Name: "Game Coin Win 03 SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.819941
+            Y: 0.819941
+            Z: 0.819941
+          }
+        }
+        ParentId: 8813261356416286177
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 9017527930339834734
+          }
+          Volume: 1
+          Falloff: 3000
+          Radius: 2000
+        }
+      }
+      Objects {
+        Id: 1629070235392453365
+        Name: "Game Coin Win 02 SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.819941
+            Y: 0.819941
+            Z: 0.819941
+          }
+        }
+        ParentId: 8813261356416286177
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 12665542067389017961
+          }
+          Volume: 1
+          Falloff: 3000
+          Radius: 2000
+        }
+      }
+      Objects {
+        Id: 11014310722963009684
+        Name: "Game Coin Win 01 SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.819941
+            Y: 0.819941
+            Z: 0.819941
+          }
+        }
+        ParentId: 8813261356416286177
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 1797377950360092645
+          }
+          Volume: 1
+          Falloff: 3000
+          Radius: 2000
         }
       }
       Objects {
@@ -31849,6 +32074,51 @@ Assets {
       PrimaryAsset {
         AssetType: "AudioAssetRef"
         AssetId: "sfx_collect_all_coins_marimba_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 13887162897588078967
+      Name: "Game Coin Win 05 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_game_coin_win_05_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 4276835650099830821
+      Name: "Game Coin Win 04 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_game_coin_win_04_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 9017527930339834734
+      Name: "Game Coin Win 03 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_game_coin_win_03_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 12665542067389017961
+      Name: "Game Coin Win 02 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_game_coin_win_02_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 1797377950360092645
+      Name: "Game Coin Win 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_game_coin_win_01_Cue_ref"
       }
     }
     Assets {

@@ -27,6 +27,7 @@ Objects {
   ChildIds: 15899737562429904580
   ChildIds: 11868088348151088341
   ChildIds: 4752946518672690872
+  ChildIds: 16542247845955429070
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -39,6 +40,47 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 16542247845955429070
+  Name: "Game Coin Win 01 SFX"
+  Transform {
+    Location {
+      X: 525
+      Y: -694
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 1797377950360092645
+    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    EnableOcclusion: true
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
   }
 }
 Objects {

@@ -146,6 +146,7 @@ function PickItemRandomly(player, betAmount, slotId)
     end
     spinCount = spinCount + 1
     slotsTable.count = spinCount
+    slotsTable.bet = betAmount
     --[[
     slotsTable[1] = 5
     slotsTable[2] = 5

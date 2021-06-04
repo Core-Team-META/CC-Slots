@@ -197,14 +197,6 @@ Objects {
             Yaw: 89.9999847
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.2196
-            Y: 1.2196
-            Z: 1.2196
-          }
-        }
       }
     }
     TemplateAsset {
@@ -850,18 +842,10 @@ Objects {
   Id: 2356365894609140298
   Name: "MechaArcadeMachine"
   Transform {
-    Location {
-      X: 1253
-      Y: -116
-      Z: -15
-    }
-    Rotation {
-      Yaw: 89.9999924
-    }
     Scale {
-      X: 1.2196
-      Y: 1.2196
-      Z: 1.2196
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 11546936440891399579
@@ -890,14 +874,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.2196
-            Y: 1.2196
-            Z: 1.2196
           }
         }
       }

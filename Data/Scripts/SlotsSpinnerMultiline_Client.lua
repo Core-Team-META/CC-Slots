@@ -23,6 +23,7 @@ local BELL = script:GetCustomProperty("DoorShopBellRing02SFX"):WaitForObject()
 local WINNER_SOUND = script:GetCustomProperty("ChestCoinsOpening01SFX"):WaitForObject()
 local SLOT_SOUND = script:GetCustomProperty("CashRegisterDrawerMechanismLockClose01SF"):WaitForObject()
 local SLOT_SOUND_BONUS = script:GetCustomProperty("CollectAllCoinsMarimba01SFX"):WaitForObject()
+local WINNING_LINES_AUDIO = script:GetCustomProperty("WinningLinesAudio"):WaitForObject()
 local WIN_LINE_OBJECTS = script:GetCustomProperty("WinLinesObjects"):WaitForObject()
 local TRIGGER = script:GetCustomProperty("Trigger"):WaitForObject()
 
@@ -92,7 +93,8 @@ local playerSpamPrevent
 local currentPlayerId, currentPlayer
 
 local lastSpinCount = 0
-ROOT.clientUserData.animationCount = 0
+local winningLineAudio = WINNING_LINES_AUDIO:GetChildren()
+--ROOT.clientUserData.animationCount = 0
 
 if SPIN_DURATION < 1 then
     SPIN_DURATION = 1
@@ -344,29 +346,30 @@ function OnNetworkObjectAdded(parentObject, childObject) --
     BELL:Play()
 
     local msg
-    local betAmount = player.clientUserData.betAmount or 100
+    player.clientUserData.betAmount = results.bet or MIN_BET
+    local betAmount = player.clientUserData.betAmount
     local reward
     local winningPatterns
     isWinner, reward, winningPatterns = API.CheckMultilineWin(results, betAmount, items, ODDS)
-    if player == LOCAL_PLAYER then
-        if isWinner then
-            msg = "Bet " .. tostring(betAmount) .. " and Won " .. tostring(reward)
-        else
-            msg = "Bet " .. tostring(betAmount) .. " and Lost "
-        end
+
+    if isWinner then
+        msg = "Bet " .. tostring(betAmount) .. " and Won " .. tostring(reward)
+    else
+        msg = "Bet " .. tostring(betAmount) .. " and Lost "
     end
+
     local animationCount = ROOT.clientUserData.animationCount
     Task.Spawn(
         function()
-            if player == LOCAL_PLAYER then
-                NOTIFICATION.Add(LOCAL_PLAYER, msg)
-            end
+            player.clientUserData.notification = player.clientUserData.notification or {}
+            NOTIFICATION.Add(player, msg)
+
             if isWinner then
                 if lastTask and lastTask ~= TaskStatus.COMPLETED then
                     lastTask:Cancel()
                 end
                 Task.Wait()
-                lastTask = API.DisplayWinLines(winLines, winningPatterns, cardFrames, cancelAnimation)
+                lastTask = API.DisplayWinLines(winLines, winningPatterns, cardFrames, cancelAnimation, winningLineAudio)
             end
         end,
         SPIN_DURATION
@@ -381,17 +384,17 @@ function Tick(dt)
     end
     for i = 1, 3 do
         local SPIN_DURATION = SPIN_DURATION - (3 - i + 0.5)
-        if time() >= spinStartTime + SPIN_DURATION and not slotSound[i] then
-            if currentSlots[i] == 5 then
+        if time() >= spinStartTime + SPIN_DURATION and not slotSound[i] then --
+            --[[if currentSlots[i] == 5 then
                 SLOT_SOUND_BONUS:Play()
                 slotSound[i] = true
             elseif i > 1 and currentSlots[i - 1] == currentSlots[i] then
                 SLOT_SOUND_BONUS:Play()
                 slotSound[i] = true
-            else
-                SLOT_SOUND:Play()
-                slotSound[i] = true
-            end
+            else]] SLOT_SOUND:Play(
+
+            )
+            slotSound[i] = true
         end
         local r = math.max(0, (SPIN_DURATION + spinStartTime - time()) / SPIN_DURATION)
         r = r * r

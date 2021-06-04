@@ -295,7 +295,7 @@ if Environment.IsClient() then
         end
     end
 
-    function API.DisplayWinLines(winLines, winningPatterns, cardFrames, cancelAnimation)
+    function API.DisplayWinLines(winLines, winningPatterns, cardFrames, cancelAnimation, winningLineAudio)
         cancelAnimation.value = false
         for id, _ in pairs(winningPatterns) do
             for _, position in ipairs(API.WIN_LINES[id].table) do
@@ -303,6 +303,7 @@ if Environment.IsClient() then
                     break
                 end
                 cardFrames[position]:SetColor(winLines[id].color)
+                winningLineAudio[id]:Play()
                 CustomWait(0.3, cancelAnimation)
             end
             if not cancelAnimation.value then
