@@ -21,8 +21,8 @@ Objects {
   ChildIds: 1977088044939697698
   ChildIds: 5291635600436413331
   ChildIds: 9146863772229897293
-  ChildIds: 5996246182052556599
   ChildIds: 2244921487039929985
+  ChildIds: 12280786718736551635
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -40,16 +40,15 @@ Objects {
   }
 }
 Objects {
-  Id: 2244921487039929985
-  Name: "Sci-fi Gated Slow Power Down 01 SFX"
+  Id: 12280786718736551635
+  Name: "Creature Beast Snarl 01 SFX"
   Transform {
     Location {
-      X: 106.561462
-      Y: -291
-      Z: 161.66008
+      X: 141
+      Y: -1055.56152
+      Z: 160.66008
     }
     Rotation {
-      Yaw: 89.9999771
     }
     Scale {
       X: 1
@@ -72,17 +71,16 @@ Objects {
   }
   AudioInstance {
     AudioAsset {
-      Id: 6867265987523889158
+      Id: 2982046455873149876
     }
-    Volume: 0.6
+    Pitch: 700
+    Volume: 1
     Falloff: 1000
     Radius: 500
-    IsSpatializationEnabled: true
-    IsAttenuationEnabled: true
   }
 }
 Objects {
-  Id: 5996246182052556599
+  Id: 2244921487039929985
   Name: "Sci-fi Gated Slow Power Down 01 SFX"
   Transform {
     Location {

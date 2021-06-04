@@ -1268,9 +1268,9 @@ Assets {
         }
         AudioInstance {
           AudioAsset {
-            Id: 10297692092872794914
+            Id: 9359120805280380838
           }
-          Pitch: -1500
+          Pitch: -200
           Volume: 1
           Falloff: -1
           Radius: -1
@@ -19015,12 +19015,12 @@ Assets {
       }
     }
     Assets {
-      Id: 10297692092872794914
-      Name: "Coins Win Loop 02 SFX"
+      Id: 9359120805280380838
+      Name: "Electro Chimes Magic Sparkle Loop 01 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_coins_win_loop_02_Cue_ref"
+        AssetId: "sfx_electro_chimes_magic_sparkle_loop_01_Cue_ref"
       }
     }
     Assets {
