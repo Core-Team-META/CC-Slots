@@ -150,9 +150,6 @@ end
 ------------------------------------------------------------------------------------------------------------------------
 
 function Init()
-    -- SCREEN_GROUP:AttachToLocalView()
-    -- SCREEN_GROUP.visibility = Visibility.FORCE_OFF
-    TRIGGER.interactedEvent:Connect(OnInteracted)
     TRIGGER.interactionLabel = "Play " .. SLOT_NAME
     LOCAL_PLAYER.clientUserData.notification = LOCAL_PLAYER.clientUserData.notification or {}
     LOCAL_PLAYER.clientUserData.SlotTriggers = LOCAL_PLAYER.clientUserData.SlotTriggers or {}
@@ -182,10 +179,10 @@ function Init()
 
         winLines[id] = {object = line, color = line:GetCustomProperty("Color")}
     end
+    TRIGGER.interactedEvent:Connect(OnInteracted)
 end
 
 function OnInteracted(trigger, object)
-
     if trigger == TRIGGER and object == LOCAL_PLAYER then
         if playerSpamPrevent and playerSpamPrevent > time() then
             return
@@ -193,7 +190,6 @@ function OnInteracted(trigger, object)
         playerSpamPrevent = time() + 2
         local slotId = object.clientUserData.slotId
         if not slotId or slotId == 0 or slotId ~= SLOT_ID then
-            warn("Sent")
             Events.BroadcastToServer(API.Broadcasts.playSlot, SLOT_ID)
         end
     end
@@ -222,6 +218,7 @@ function Activate()
             itemTotalSpacing[i] = itemTotalSpacing[i] + spacing
         end
     end
+    spinStartTime = time()
 end
 
 function InitializeLootCard(lootCard, item, slot)
@@ -373,6 +370,7 @@ function OnNetworkObjectAdded(parentObject, childObject) --
             if not Object.IsValid(player) then
                 return
             end
+
             player.clientUserData.notification = player.clientUserData.notification or {}
             NOTIFICATION.Add(player, msg)
 
@@ -399,18 +397,15 @@ function Tick(dt)
     if not next(spinTargetPosition) then
         return
     end
+    if time() > spinStartTime + SPIN_DURATION then
+        SLOT_SOUND:Stop()
+        BELL:Stop()
+        return
+    end
     for i = 1, 3 do
         local SPIN_DURATION = SPIN_DURATION - (3 - i + 0.5)
-        if time() >= spinStartTime + SPIN_DURATION and not slotSound[i] then --
-            --[[if currentSlots[i] == 5 then
-                SLOT_SOUND_BONUS:Play()
-                slotSound[i] = true
-            elseif i > 1 and currentSlots[i - 1] == currentSlots[i] then
-                SLOT_SOUND_BONUS:Play()
-                slotSound[i] = true
-            else]] SLOT_SOUND:Play(
-
-            )
+        if not slotSound[i] then --
+            SLOT_SOUND:Play()
             slotSound[i] = true
         end
         local r = math.max(0, (SPIN_DURATION + spinStartTime - time()) / SPIN_DURATION)
@@ -423,6 +418,7 @@ function Tick(dt)
     end
     if time() > playSoundTime then
         BELL:Stop()
+        SLOT_SOUND:Stop()
         if not winnerSoundHasPlayed and isWinner then
             WINNER_SOUND:Play()
             isWinner = false
@@ -436,7 +432,9 @@ function Tick(dt)
 end
 
 function OnNetworkChanged(object, string)
-    if object.name ~= SLOT_ID then return end
+    if object.name ~= SLOT_ID then
+        return
+    end
     if string == "playerId" then
         local playerId = object:GetCustomProperty(string)
         if playerId == "" and Object.IsValid(currentPlayer) then
@@ -457,6 +455,7 @@ function OnNetworkChanged(object, string)
             currentPlayer.clientUserData.maxBet = MAX_BET
             Show()
         end
+      
         Events.Broadcast(API.Broadcasts.enableTriggers)
     elseif string == "data" then
         OnNetworkObjectAdded(_, object)

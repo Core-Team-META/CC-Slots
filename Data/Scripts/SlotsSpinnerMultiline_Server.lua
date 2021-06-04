@@ -37,12 +37,12 @@ local PlayerData = script:GetCustomProperty("RandomSpinner_Data")
 local playerSpamPrevent = {}
 local lootCards = {}
 local items = API.GetSlots(THEME_ID)
-local newData = World.SpawnAsset(PlayerData, {parent = NETWORKING})
+local SlotData = World.SpawnAsset(PlayerData, {parent = NETWORKING})
 local sitPosition = PLAYER_POSITION:GetWorldPosition()
 local sitRotation = PLAYER_POSITION:GetWorldRotation()
 local standPosition
 local spinCount = 0
-newData.name = SLOT_ID
+SlotData.name = SLOT_ID
 
 if spinDuration < 1 then
     spinDuration = 1
@@ -104,12 +104,8 @@ function OnInteracted(object, slotId)
     end
     playerSpamPrevent[object] = time() + 1
 
-    local currentId = newData:GetCustomProperty("playerId")
+    local currentId = SlotData:GetCustomProperty("playerId")
     if currentId == "" and object and Object.IsValid(object) and object:IsA("Player") then
-        newData:SetNetworkedCustomProperty("playerId", object.id)
-
-        Task.Wait()
-
         if Object.IsValid(object) then
             --object:SetWorldPosition(sitPosition)
             --object:SetWorldRotation(sitRotation)
@@ -119,8 +115,11 @@ function OnInteracted(object, slotId)
             object.maxJumpCount = 0
             object:ResetVelocity()
             object:SetWorldTransform(Transform.New(sitRotation, sitPosition, Vector3.ONE))
-        else
-            newData:SetNetworkedCustomProperty("playerId", "")
+
+            Task.Wait()
+            if Object.IsValid(object) then
+                SlotData:SetNetworkedCustomProperty("playerId", object.id)
+            end
         end
     end
 end
@@ -134,22 +133,22 @@ function OnPlayerQuit(player, slotId)
     end
     playerSpamPrevent[player] = time() + 1
 
-    local playerId = newData:GetCustomProperty("playerId")
+    local playerId = SlotData:GetCustomProperty("playerId")
     if playerId == player.id then
-        newData:SetNetworkedCustomProperty("playerId", "")
+        if Object.IsValid(player) then
+            player.movementControlMode = MovementControlMode.LOOK_RELATIVE
+            player.animationStance = "unarmed_stance"
+            player.maxJumpCount = 1
+            Task.Wait()
+            if Object.IsValid(player) then
+                player:SetWorldTransform(Transform.New(sitRotation, standPosition, Vector3.ONE))
+            -- player:SetWorldPosition(standPosition)
+            end
+        end
+        Task.Wait()
+        SlotData:SetNetworkedCustomProperty("playerId", "")
     else
         return
-    end
-
-    Task.Wait()
-    if Object.IsValid(player) then
-        player.movementControlMode = MovementControlMode.LOOK_RELATIVE
-        player.animationStance = "unarmed_stance"
-        player.maxJumpCount = 1
-        Task.Wait()
-        if Object.IsValid(player) then
-            player:SetWorldPosition(standPosition)
-        end
     end
 end
 
@@ -182,10 +181,10 @@ function PickItemRandomly(player, betAmount, slotId)
     slotsTable[8] = 5
     slotsTable[9] = 5 --]]
     local dataStr = API.ConvertTableToString(slotsTable)
-    newData:SetNetworkedCustomProperty("data", dataStr)
-    local playerId = newData:GetCustomProperty("playerId")
+    SlotData:SetNetworkedCustomProperty("data", dataStr)
+    local playerId = SlotData:GetCustomProperty("playerId")
     if playerId ~= player.id then
-        newData:SetNetworkedCustomProperty("playerId", player.id)
+        SlotData:SetNetworkedCustomProperty("playerId", player.id)
     end
     Task.Spawn(
         function()
@@ -200,8 +199,6 @@ function PickItemRandomly(player, betAmount, slotId)
     )
 end
 
-Init()
-
 ------------------------------------------------------------------------------------------------------------------------
 -- LISTENERS
 ------------------------------------------------------------------------------------------------------------------------
@@ -209,6 +206,7 @@ Events.ConnectForPlayer(API.Broadcasts.spin, PickItemRandomly)
 Events.ConnectForPlayer(API.Broadcasts.destroy, DestroyObject)
 Events.ConnectForPlayer(API.Broadcasts.quit, OnPlayerQuit)
 Events.ConnectForPlayer(API.Broadcasts.playSlot, OnInteracted)
+Init()
 
 if enableDevMode then
     local betAmount = 5
