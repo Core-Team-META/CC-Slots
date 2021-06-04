@@ -308,7 +308,7 @@ Assets {
           Overrides {
             Name: "cs:CollectAllCoinsMarimba01SFX"
             ObjectReference {
-              SubObjectId: 9887144516331948429
+              SelfId: 841534158063459245
             }
           }
           Overrides {
@@ -356,7 +356,7 @@ Assets {
           Overrides {
             Name: "cs:LossAudio"
             ObjectReference {
-              SubObjectId: 9887144516331948429
+              SubObjectId: 6177730291472853339
             }
           }
         }
@@ -1095,7 +1095,7 @@ Assets {
         }
         ParentId: 6646527021209299112
         ChildIds: 9502923465780268565
-        ChildIds: 9887144516331948429
+        ChildIds: 6177730291472853339
         ChildIds: 14329590274300027703
         ChildIds: 14098761012982466368
         ChildIds: 14065695822329010502
@@ -1156,19 +1156,18 @@ Assets {
         }
       }
       Objects {
-        Id: 9887144516331948429
-        Name: "Voice Character Zombie Snarl Attack 03 SFX"
+        Id: 6177730291472853339
+        Name: "Meta Fantasy Debuff 01 SFX"
         Transform {
           Location {
-            X: 9.01602268
-            Z: -5.22244453
           }
           Rotation {
+            Yaw: 90.0000305
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.819941
+            Y: 0.819941
+            Z: 0.819941
           }
         }
         ParentId: 7117490227374159637
@@ -1186,8 +1185,9 @@ Assets {
         }
         AudioInstance {
           AudioAsset {
-            Id: 14288833496764834364
+            Id: 9365243189432465701
           }
+          Volume: 0.6
           Falloff: 1000
           Radius: 500
           IsSpatializationEnabled: true
@@ -15815,12 +15815,12 @@ Assets {
       }
     }
     Assets {
-      Id: 14288833496764834364
-      Name: "Voice Character Zombie Snarl Attack 03 SFX"
+      Id: 9365243189432465701
+      Name: "Meta Fantasy Debuff 01 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_vo_zombie_snarl_attack_03a_Cue_ref"
+        AssetId: "sfx_meta_fantasy_debuff_01_Cue_ref"
       }
     }
     Assets {
