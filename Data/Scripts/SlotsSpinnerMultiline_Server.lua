@@ -131,22 +131,19 @@ function OnInteracted(object, slotId)
     if slotId ~= SLOT_ID then
         return
     end
-    if playerSpamPrevent[object] and playerSpamPrevent[object] > time() then
+    --[[if playerSpamPrevent[object] and playerSpamPrevent[object] > time() then
         return
     end
-    playerSpamPrevent[object] = time() + 1
+    playerSpamPrevent[object] = time() + 1]]
 
     local currentId = SlotData:GetCustomProperty("playerId")
 
     if currentId == "" and object and Object.IsValid(object) and object:IsA("Player") then
         if Object.IsValid(object) then
 
-            -- Sit player down & move to stool location
-            object.movementControlMode = MovementControlMode.NONE
+            --Sit player down & move to stool location
+            object:AttachToCoreObject(PLAYER_POSITION)
             object.animationStance = "unarmed_sit_chair_upright"
-            object.maxJumpCount = 0
-            object:ResetVelocity()
-            object:SetWorldTransform(Transform.New(sitRotation, sitPosition, Vector3.ONE))
 
             Task.Wait() -- Testing for giving the server a frame before data set
 
@@ -166,22 +163,16 @@ function OnPlayerQuit(player, slotId)
     if slotId ~= SLOT_ID then
         return
     end
-    if playerSpamPrevent[player] and playerSpamPrevent[player] > time() then
+    --[[if playerSpamPrevent[player] and playerSpamPrevent[player] > time() then
         return
     end
-    playerSpamPrevent[player] = time() + 1
+    playerSpamPrevent[player] = time() + 1]]
 
     local playerId = SlotData:GetCustomProperty("playerId")
     if playerId == player.id then
         if Object.IsValid(player) then
-            player.movementControlMode = MovementControlMode.LOOK_RELATIVE
+            player:Detach()
             player.animationStance = "unarmed_stance"
-            player.maxJumpCount = 1
-            Task.Wait()
-            if Object.IsValid(player) then
-                player:SetWorldTransform(Transform.New(sitRotation, standPosition, Vector3.ONE))
-            -- player:SetWorldPosition(standPosition)
-            end
         end
         Task.Wait()
         SlotData:SetNetworkedCustomProperty("playerId", "")
@@ -209,6 +200,7 @@ function PickItemRandomly(player, betAmount, slotId)
     for i = 1, 9 do
         slotsTable[i] = GetRandomSlot(reelTotal)
     end
+
     spinCount = spinCount < 9 and spinCount + 1 or 1
     slotsTable.c = spinCount
     slotsTable.b = betAmount

@@ -207,10 +207,10 @@ end
 -- @params object player
 function OnInteracted(trigger, player)
     if trigger == TRIGGER and player == LOCAL_PLAYER then
-        if playerSpamPrevent and playerSpamPrevent > time() then
+        --[[if playerSpamPrevent and playerSpamPrevent > time() then
             return
         end
-        playerSpamPrevent = time() + 2
+        playerSpamPrevent = time() + 2]]
         local slotId = player.clientUserData.slotId
         if not slotId or slotId == 0 or slotId ~= SLOT_ID then
             Events.BroadcastToServer(API.Broadcasts.playSlot, SLOT_ID)
