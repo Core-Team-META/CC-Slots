@@ -53,6 +53,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2982046455873149876
+  Name: "Creature Beast Snarl 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_creature_beast_snarl_01_Cue_ref"
+  }
+}
+Assets {
   Id: 1797377950360092645
   Name: "Game Coin Win 01 SFX"
   PlatformAssetType: 7
