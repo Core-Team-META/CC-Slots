@@ -353,7 +353,7 @@ function OnNetworkObjectAdded(parentObject, childObject) --
     BELL:Play()
 
     local msg
-    player.clientUserData.betAmount = results.bet or MIN_BET
+    player.clientUserData.betAmount = results.b or MIN_BET
     local betAmount = player.clientUserData.betAmount
     local reward
     local winningPatterns

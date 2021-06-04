@@ -119,22 +119,28 @@ function OnInteracted(object, slotId)
 end
 
 function OnPlayerQuit(player, slotId)
-    if slotId == SLOT_ID then
-        local playerId = newData:GetCustomProperty("playerId")
-        if playerId == player.id then
-            newData:SetNetworkedCustomProperty("playerId", "")
-        else
-            return
-        end
-
-        player.movementControlMode = MovementControlMode.LOOK_RELATIVE
-        player.animationStance = "unarmed_stance"
-        player:SetWorldPosition(standPosition)
-        player.maxJumpCount = 1
-        
-        --Wait 1 server frame to allow new network property to set
-        Task.Wait()
+    if playerSpamPrevent[player] and playerSpamPrevent[player] > time() then
+        return
     end
+    if slotId ~= SLOT_ID then
+        return
+    end
+    playerSpamPrevent[player] = time() + 0.5
+
+    local playerId = newData:GetCustomProperty("playerId")
+    if playerId == player.id then
+        newData:SetNetworkedCustomProperty("playerId", "")
+    else
+        return
+    end
+
+    player.movementControlMode = MovementControlMode.LOOK_RELATIVE
+    player.animationStance = "unarmed_stance"
+    player:SetWorldPosition(standPosition)
+    player.maxJumpCount = 1
+
+    --Wait 1 server frame to allow new network property to set
+    Task.Wait()
 end
 
 function PickItemRandomly(player, betAmount, slotId)
@@ -152,9 +158,9 @@ function PickItemRandomly(player, betAmount, slotId)
     for i = 1, 9 do
         slotsTable[i] = GetRandomSlot(reelTotal)
     end
-    spinCount = spinCount + 1
-    slotsTable.count = spinCount
-    slotsTable.bet = betAmount
+    spinCount = spinCount < 9 and spinCount + 1 or 1
+    slotsTable.c = spinCount
+    slotsTable.b = betAmount
     --[[
     slotsTable[1] = 5
     slotsTable[2] = 5
