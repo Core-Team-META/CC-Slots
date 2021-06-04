@@ -18,36 +18,6 @@ Assets {
         ParentId: 8704132432388920203
         ChildIds: 10019489083536113633
         ChildIds: 4101573010599316044
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 10019489083536113633
-        Name: "Settings"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 12176439763912673964
-        ChildIds: 12971856005837650702
-        ChildIds: 9951259973650144728
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -81,6 +51,38 @@ Assets {
             Name: "cs:Odds"
             Float: 0.95
           }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 10019489083536113633
+        Name: "Settings"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12176439763912673964
+        ChildIds: 12971856005837650702
+        ChildIds: 9951259973650144728
+        UnregisteredParameters {
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -129,7 +131,7 @@ Assets {
           Overrides {
             Name: "cs:Settings"
             ObjectReference {
-              SubObjectId: 10019489083536113633
+              SubObjectId: 12176439763912673964
             }
           }
           Overrides {
@@ -271,7 +273,7 @@ Assets {
           Overrides {
             Name: "cs:Settings"
             ObjectReference {
-              SubObjectId: 10019489083536113633
+              SubObjectId: 12176439763912673964
             }
           }
           Overrides {
@@ -1575,7 +1577,7 @@ Assets {
           Overrides {
             Name: "cs:Settings"
             ObjectReference {
-              SubObjectId: 10019489083536113633
+              SubObjectId: 12176439763912673964
             }
           }
         }

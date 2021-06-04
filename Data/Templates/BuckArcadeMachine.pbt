@@ -18,6 +18,40 @@ Assets {
         ParentId: 15934103657560976012
         ChildIds: 15616733867502178517
         ChildIds: 14196059096330370434
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Name"
+            String: "A Slot Needs A Name"
+          }
+          Overrides {
+            Name: "cs:SpinDuration"
+            Float: 4
+          }
+          Overrides {
+            Name: "cs:DefaultSpinSpeed"
+            Int: 10000
+          }
+          Overrides {
+            Name: "cs:ResourceName"
+            String: "Coins"
+          }
+          Overrides {
+            Name: "cs:MinBet"
+            Int: 100
+          }
+          Overrides {
+            Name: "cs:MaxBet"
+            Int: 1000
+          }
+          Overrides {
+            Name: "cs:Theme"
+            String: "Buck-Fantasy"
+          }
+          Overrides {
+            Name: "cs:Odds"
+            Float: 0.95
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -50,38 +84,6 @@ Assets {
         ChildIds: 4014697584830105018
         ChildIds: 6646527021209299112
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:Name"
-            String: "A Slot Needs A Name"
-          }
-          Overrides {
-            Name: "cs:SpinDuration"
-            Float: 4
-          }
-          Overrides {
-            Name: "cs:DefaultSpinSpeed"
-            Int: 10000
-          }
-          Overrides {
-            Name: "cs:ResourceName"
-            String: "Coins"
-          }
-          Overrides {
-            Name: "cs:MinBet"
-            Int: 100
-          }
-          Overrides {
-            Name: "cs:MaxBet"
-            Int: 1000
-          }
-          Overrides {
-            Name: "cs:Theme"
-            String: "Fantasy"
-          }
-          Overrides {
-            Name: "cs:Odds"
-            Float: 0.95
-          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -130,7 +132,7 @@ Assets {
           Overrides {
             Name: "cs:Settings"
             ObjectReference {
-              SubObjectId: 15616733867502178517
+              SubObjectId: 16387345666213076374
             }
           }
           Overrides {
@@ -272,7 +274,7 @@ Assets {
           Overrides {
             Name: "cs:Settings"
             ObjectReference {
-              SubObjectId: 15616733867502178517
+              SubObjectId: 16387345666213076374
             }
           }
           Overrides {
@@ -1574,7 +1576,7 @@ Assets {
           Overrides {
             Name: "cs:Settings"
             ObjectReference {
-              SubObjectId: 15616733867502178517
+              SubObjectId: 16387345666213076374
             }
           }
         }

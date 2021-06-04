@@ -69,6 +69,7 @@ end
 -- LOCAL FUNCTIONS
 ------------------------------------------------------------------------------------------------------------------------
 
+
 -- @param object player
 -- @param string socket
 local function Unequip(player, socket)
@@ -81,6 +82,7 @@ local function Unequip(player, socket)
         end
     end
 end
+
 
 -- @param float reelTotal
 -- @return int item.id
@@ -102,10 +104,13 @@ end
 ------------------------------------------------------------------------------------------------------------------------
 -- GLOBAL FUNCTIONS
 ------------------------------------------------------------------------------------------------------------------------
+
+
 function Init()
     local directionVector = sitRotation * Vector3.FORWARD
     standPosition = sitPosition - (directionVector * 100)
 end
+
 
 -- @params object player
 -- @params string objectId
@@ -116,6 +121,7 @@ function DestroyObject(player, objectId)
         end
     end
 end
+
 
 -- Called when a player interacts with slot machine trigger
 -- Changes players position / animation to the slot machine stool
@@ -131,8 +137,10 @@ function OnInteracted(object, slotId)
     playerSpamPrevent[object] = time() + 1
 
     local currentId = SlotData:GetCustomProperty("playerId")
+
     if currentId == "" and object and Object.IsValid(object) and object:IsA("Player") then
         if Object.IsValid(object) then
+
             -- Sit player down & move to stool location
             object.movementControlMode = MovementControlMode.NONE
             object.animationStance = "unarmed_sit_chair_upright"
@@ -141,6 +149,7 @@ function OnInteracted(object, slotId)
             object:SetWorldTransform(Transform.New(sitRotation, sitPosition, Vector3.ONE))
 
             Task.Wait() -- Testing for giving the server a frame before data set
+
             if Object.IsValid(object) then
                 -- Update machines current player so other players can't also use the machine
                 SlotData:SetNetworkedCustomProperty("playerId", object.id)
@@ -148,6 +157,7 @@ function OnInteracted(object, slotId)
         end
     end
 end
+
 
 -- Reset players animation & position, and nil out machines current player
 -- @params object player

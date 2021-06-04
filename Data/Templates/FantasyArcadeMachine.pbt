@@ -18,37 +18,6 @@ Assets {
         ParentId: 17410893842474904431
         ChildIds: 13561356530882030136
         ChildIds: 18047838208522175744
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 13561356530882030136
-        Name: "Settings"
-        Transform {
-          Location {
-          }
-          Rotation {
-            Yaw: -6.83018834e-06
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 16807770656924046066
-        ChildIds: 9456072242787987159
-        ChildIds: 13629590038186395649
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -82,6 +51,39 @@ Assets {
             Name: "cs:Odds"
             Float: 0.95
           }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 13561356530882030136
+        Name: "Settings"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Yaw: -6.83018834e-06
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 16807770656924046066
+        ChildIds: 9456072242787987159
+        ChildIds: 13629590038186395649
+        UnregisteredParameters {
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -130,7 +132,7 @@ Assets {
           Overrides {
             Name: "cs:Settings"
             ObjectReference {
-              SubObjectId: 13561356530882030136
+              SubObjectId: 16807770656924046066
             }
           }
           Overrides {
@@ -222,6 +224,12 @@ Assets {
         ParentId: 13629590038186395649
         UnregisteredParameters {
           Overrides {
+            Name: "cs:Settings"
+            ObjectReference {
+              SubObjectId: 16807770656924046066
+            }
+          }
+          Overrides {
             Name: "cs:ROOT"
             ObjectReference {
               SubObjectId: 13629590038186395649
@@ -270,12 +278,6 @@ Assets {
             }
           }
           Overrides {
-            Name: "cs:Settings"
-            ObjectReference {
-              SubObjectId: 13561356530882030136
-            }
-          }
-          Overrides {
             Name: "cs:Background"
             ObjectReference {
               SubObjectId: 5775268581525843333
@@ -308,7 +310,6 @@ Assets {
           Overrides {
             Name: "cs:CollectAllCoinsMarimba01SFX"
             ObjectReference {
-              SelfId: 841534158063459245
             }
           }
           Overrides {
@@ -1574,7 +1575,7 @@ Assets {
           Overrides {
             Name: "cs:Settings"
             ObjectReference {
-              SubObjectId: 13561356530882030136
+              SubObjectId: 16807770656924046066
             }
           }
         }
