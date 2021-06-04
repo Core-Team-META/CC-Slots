@@ -1,3 +1,6 @@
+if true then
+    return 
+end
 local Ease3D = require(script:GetCustomProperty("Ease3D"))
 local Duration = script:GetCustomProperty("Duration")
 local Flag_Root = script:GetCustomProperty("Flag_Root"):WaitForObject()
@@ -27,5 +30,7 @@ end
 Task.Wait(Delay)
 
 function Tick()
+    --[[
     Swing()
+    ]]--
 end
