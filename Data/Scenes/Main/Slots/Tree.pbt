@@ -61,6 +61,15 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 15616733867502178517
+      value {
+        Overrides {
+          Name: "cs:Theme"
+          String: "Buck-Fantasy"
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16387345666213076374
       value {
         Overrides {
@@ -123,6 +132,15 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 15616733867502178517
+      value {
+        Overrides {
+          Name: "cs:Theme"
+          String: "Buck-Fantasy"
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16387345666213076374
       value {
         Overrides {
@@ -176,6 +194,15 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 15616733867502178517
+      value {
+        Overrides {
+          Name: "cs:Theme"
+          String: "Buck-Fantasy"
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16387345666213076374
       value {
