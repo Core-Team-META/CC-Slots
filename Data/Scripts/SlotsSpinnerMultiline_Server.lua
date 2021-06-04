@@ -67,7 +67,7 @@ end
 local function GetRandomSlot(reelTotal)
     local value = math.random() * reelTotal
     local total = 0
-  
+
     for _, item in ipairs(items) do
         total = total + item.chance
         if total >= value then
@@ -96,7 +96,14 @@ function DestroyObject(player, objectId)
 end
 
 function OnInteracted(object, slotId)
-    if slotId ~= SLOT_ID then return end
+    if playerSpamPrevent[object] and playerSpamPrevent[object] > time() then
+        return
+    end
+    if slotId ~= SLOT_ID then
+        return
+    end
+    playerSpamPrevent[object] = time() + 0.5
+
     local currentId = newData:GetCustomProperty("playerId")
     if currentId == "" and object and Object.IsValid(object) and object:IsA("Player") then
         newData:SetNetworkedCustomProperty("playerId", object.id)
@@ -111,21 +118,22 @@ function OnInteracted(object, slotId)
     end
 end
 
-function EndOverlap(trigger, object)
-    local currentId = newData:GetCustomProperty("playerId")
-    if currentId ~= "" and object.id == currentId and Object.IsValid(object) and object:IsA("Player") then
-        newData:SetNetworkedCustomProperty("playerId", "")
-    end
-end
-
 function OnPlayerQuit(player, slotId)
     if slotId == SLOT_ID then
-        newData:SetNetworkedCustomProperty("playerId", "")
+        local playerId = newData:GetCustomProperty("playerId")
+        if playerId == player.id then
+            newData:SetNetworkedCustomProperty("playerId", "")
+        else
+            return
+        end
 
         player.movementControlMode = MovementControlMode.LOOK_RELATIVE
         player.animationStance = "unarmed_stance"
         player:SetWorldPosition(standPosition)
         player.maxJumpCount = 1
+        
+        --Wait 1 server frame to allow new network property to set
+        Task.Wait()
     end
 end
 
@@ -157,15 +165,19 @@ function PickItemRandomly(player, betAmount, slotId)
     slotsTable[7] = 5
     slotsTable[8] = 5
     slotsTable[9] = 5 --]]
-
     local dataStr = API.ConvertTableToString(slotsTable)
     newData:SetNetworkedCustomProperty("data", dataStr)
-    newData:SetNetworkedCustomProperty("playerId", player.id)
+    local playerId = newData:GetCustomProperty("playerId")
+    if playerId ~= player.id then
+        newData:SetNetworkedCustomProperty("playerId", player.id)
+    end
     Task.Spawn(
         function()
             local isWinner, reward = API.CheckMultilineWin(slotsTable, betAmount, items, ODDS)
             if isWinner then
-                player:AddResource(RESOURCE_NAME, reward)
+                if Object.IsValid(player) then
+                    player:AddResource(RESOURCE_NAME, reward)
+                end
             end
         end,
         spinDuration + 0.5

@@ -114,7 +114,6 @@ local function Deactivate()
 end
 
 local function Hide()
-    print(currentPlayer)
     if currentPlayer == LOCAL_PLAYER then
         isEnabled = false
         UI.SetCursorVisible(false)

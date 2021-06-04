@@ -134,7 +134,6 @@ local function Deactivate()
 end
 
 local function Hide()
-    print(currentPlayer)
     if currentPlayer == LOCAL_PLAYER then
         isEnabled = false
         UI.SetCursorVisible(false)
@@ -187,6 +186,10 @@ end
 
 function OnInteracted(trigger, object)
     if object == LOCAL_PLAYER then
+        if playerSpamPrevent and playerSpamPrevent > time() then
+            return
+        end
+        playerSpamPrevent = time() + 0.5
         local slotId = object.clientUserData.slotId
         if not slotId or slotId == 0 or slotId ~= SLOT_ID then
             Events.BroadcastToServer(API.Broadcasts.playSlot, SLOT_ID)
@@ -245,7 +248,10 @@ function InitializeLootCard(lootCard, item, slot)
     --[[local gradient = lootCard:GetCustomProperty("Gradient"):WaitForObject()
     local bar = lootCard:GetCustomProperty("Bar"):WaitForObject()
     local border = lootCard:GetCustomProperty("Border"):WaitForObject()]]
-    gamePortal:SetSmartProperty("Game ID", item.gamePortal)
+    local currentGameId = gamePortal:GetCustomProperty("Game ID")
+    if currentGameId ~= item.gamePortal then
+        gamePortal:SetSmartProperty("Game ID", item.gamePortal)
+    end
     gamePortal:SetSmartProperty("Screenshot Index", item.screenshotIndex)
 
     -- Store this position
@@ -362,6 +368,9 @@ function OnNetworkObjectAdded(parentObject, childObject) --
     local animationCount = ROOT.clientUserData.animationCount
     Task.Spawn(
         function()
+            if not Object.IsValid(player) then
+                return
+            end
             player.clientUserData.notification = player.clientUserData.notification or {}
             NOTIFICATION.Add(player, msg)
 
@@ -425,6 +434,7 @@ function Tick(dt)
 end
 
 function OnNetworkChanged(object, string)
+    if object.name ~= SLOT_ID then return end
     if string == "playerId" then
         local playerId = object:GetCustomProperty(string)
         if playerId == "" and Object.IsValid(currentPlayer) then
@@ -445,7 +455,7 @@ function OnNetworkChanged(object, string)
             currentPlayer.clientUserData.maxBet = MAX_BET
             Show()
         end
-        Events.Broadcast(API.Broadcasts.enableTriggers, OnEnable)
+        Events.Broadcast(API.Broadcasts.enableTriggers)
     elseif string == "data" then
         OnNetworkObjectAdded(_, object)
     end
