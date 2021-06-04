@@ -328,33 +328,9 @@ Assets {
             }
           }
           Overrides {
-            Name: "cs:DoorShopBellRing02SFX"
-            ObjectReference {
-              SubObjectId: 14098761012982466368
-            }
-          }
-          Overrides {
-            Name: "cs:ChestCoinsOpening01SFX"
-            ObjectReference {
-              SubObjectId: 9502923465780268565
-            }
-          }
-          Overrides {
-            Name: "cs:CashRegisterDrawerMechanismLockClose01SF"
-            ObjectReference {
-              SubObjectId: 14329590274300027703
-            }
-          }
-          Overrides {
             Name: "cs:SlotCam"
             ObjectReference {
               SubObjectId: 5085627275137513377
-            }
-          }
-          Overrides {
-            Name: "cs:CollectAllCoinsMarimba01SFX"
-            ObjectReference {
-              SelfId: 841534158063459245
             }
           }
           Overrides {
@@ -394,15 +370,9 @@ Assets {
             }
           }
           Overrides {
-            Name: "cs:WinningLinesAudio"
+            Name: "cs:Audio"
             ObjectReference {
-              SubObjectId: 14065695822329010502
-            }
-          }
-          Overrides {
-            Name: "cs:LossAudio"
-            ObjectReference {
-              SubObjectId: 6177730291472853339
+              SubObjectId: 7117490227374159637
             }
           }
         }
@@ -1569,6 +1539,38 @@ Assets {
         ChildIds: 14329590274300027703
         ChildIds: 14098761012982466368
         ChildIds: 14065695822329010502
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:SlotSound"
+            ObjectReference {
+              SubObjectId: 14329590274300027703
+            }
+          }
+          Overrides {
+            Name: "cs:WinnerSound"
+            ObjectReference {
+              SubObjectId: 9502923465780268565
+            }
+          }
+          Overrides {
+            Name: "cs:WinLinesAudio"
+            ObjectReference {
+              SubObjectId: 14065695822329010502
+            }
+          }
+          Overrides {
+            Name: "cs:SlotSpinSound"
+            ObjectReference {
+              SubObjectId: 14098761012982466368
+            }
+          }
+          Overrides {
+            Name: "cs:LossSound"
+            ObjectReference {
+              SubObjectId: 6177730291472853339
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }

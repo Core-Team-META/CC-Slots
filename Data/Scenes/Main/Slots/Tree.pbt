@@ -38,18 +38,10 @@ Objects {
   Id: 13807006811214976517
   Name: "BuckArcadeMachine"
   Transform {
-    Location {
-      X: 1243
-      Y: -561
-      Z: -17
-    }
-    Rotation {
-      Yaw: 89.9999542
-    }
     Scale {
-      X: 1.2196
-      Y: 1.2196
-      Z: 1.2196
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 15934103657560976012
@@ -60,15 +52,6 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
-    ParameterOverrideMap {
-      key: 15616733867502178517
-      value {
-        Overrides {
-          Name: "cs:Theme"
-          String: "Buck-Fantasy"
-        }
-      }
-    }
     ParameterOverrideMap {
       key: 16387345666213076374
       value {
@@ -88,14 +71,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: 89.9999542
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.2196
-            Y: 1.2196
-            Z: 1.2196
           }
         }
       }
@@ -294,23 +269,6 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.2196
-            Y: 1.2196
-            Z: 1.2196
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 9361746567858354449
-      value {
-        Overrides {
-          Name: "cs:Odds"
-          Float: 0.97
         }
       }
     }

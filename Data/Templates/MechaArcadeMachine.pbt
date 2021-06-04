@@ -324,33 +324,9 @@ Assets {
             }
           }
           Overrides {
-            Name: "cs:DoorShopBellRing02SFX"
-            ObjectReference {
-              SubObjectId: 2065784908915576911
-            }
-          }
-          Overrides {
-            Name: "cs:ChestCoinsOpening01SFX"
-            ObjectReference {
-              SubObjectId: 16972869631749071327
-            }
-          }
-          Overrides {
-            Name: "cs:CashRegisterDrawerMechanismLockClose01SF"
-            ObjectReference {
-              SubObjectId: 5700923727706977962
-            }
-          }
-          Overrides {
             Name: "cs:SlotCam"
             ObjectReference {
               SubObjectId: 6887363701579149710
-            }
-          }
-          Overrides {
-            Name: "cs:CollectAllCoinsMarimba01SFX"
-            ObjectReference {
-              SubObjectId: 12285664267215493246
             }
           }
           Overrides {
@@ -390,15 +366,9 @@ Assets {
             }
           }
           Overrides {
-            Name: "cs:WinningLinesAudio"
+            Name: "cs:Audio"
             ObjectReference {
-              SubObjectId: 17230905071135125268
-            }
-          }
-          Overrides {
-            Name: "cs:LossAudio"
-            ObjectReference {
-              SubObjectId: 9927850264106210951
+              SubObjectId: 15396463938736122450
             }
           }
         }
@@ -1564,9 +1534,40 @@ Assets {
         ChildIds: 16972869631749071327
         ChildIds: 2065784908915576911
         ChildIds: 5700923727706977962
-        ChildIds: 12285664267215493246
         ChildIds: 9927850264106210951
         ChildIds: 17230905071135125268
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:SlotSound"
+            ObjectReference {
+              SubObjectId: 5700923727706977962
+            }
+          }
+          Overrides {
+            Name: "cs:WinnerSound"
+            ObjectReference {
+              SubObjectId: 16972869631749071327
+            }
+          }
+          Overrides {
+            Name: "cs:WinLinesAudio"
+            ObjectReference {
+              SubObjectId: 17230905071135125268
+            }
+          }
+          Overrides {
+            Name: "cs:SlotSpinSound"
+            ObjectReference {
+              SubObjectId: 2065784908915576911
+            }
+          }
+          Overrides {
+            Name: "cs:LossSound"
+            ObjectReference {
+              SubObjectId: 9927850264106210951
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1699,47 +1700,6 @@ Assets {
           Volume: 1
           Falloff: 1000
           Radius: 500
-          IsSpatializationEnabled: true
-          IsAttenuationEnabled: true
-        }
-      }
-      Objects {
-        Id: 12285664267215493246
-        Name: "Collect All Coins Marimba 01 SFX"
-        Transform {
-          Location {
-            Y: 0.00109863281
-            Z: 1.52587891e-05
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 15396463938736122450
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        AudioInstance {
-          AudioAsset {
-            Id: 3517605131435578695
-          }
-          Volume: 1
-          Falloff: 1000
-          Radius: -1
-          EnableOcclusion: true
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
         }
@@ -49013,15 +48973,6 @@ Assets {
       PrimaryAsset {
         AssetType: "AudioAssetRef"
         AssetId: "sfx_cash_register_drawer_close_latch_switch_lock_01a_Cue_ref"
-      }
-    }
-    Assets {
-      Id: 3517605131435578695
-      Name: "Collect All Coins Marimba 01 SFX"
-      PlatformAssetType: 7
-      PrimaryAsset {
-        AssetType: "AudioAssetRef"
-        AssetId: "sfx_collect_all_coins_marimba_Cue_ref"
       }
     }
     Assets {

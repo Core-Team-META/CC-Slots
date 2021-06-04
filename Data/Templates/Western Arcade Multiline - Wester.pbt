@@ -327,33 +327,9 @@ Assets {
             }
           }
           Overrides {
-            Name: "cs:DoorShopBellRing02SFX"
-            ObjectReference {
-              SubObjectId: 8732137718690606791
-            }
-          }
-          Overrides {
-            Name: "cs:ChestCoinsOpening01SFX"
-            ObjectReference {
-              SubObjectId: 10236210887333142359
-            }
-          }
-          Overrides {
-            Name: "cs:CashRegisterDrawerMechanismLockClose01SF"
-            ObjectReference {
-              SubObjectId: 3069294940434499618
-            }
-          }
-          Overrides {
             Name: "cs:SlotCam"
             ObjectReference {
               SubObjectId: 4184187495746506502
-            }
-          }
-          Overrides {
-            Name: "cs:CollectAllCoinsMarimba01SFX"
-            ObjectReference {
-              SubObjectId: 14986464568006911734
             }
           }
           Overrides {
@@ -393,15 +369,9 @@ Assets {
             }
           }
           Overrides {
-            Name: "cs:WinningLinesAudio"
+            Name: "cs:Audio"
             ObjectReference {
-              SubObjectId: 8813261356416286177
-            }
-          }
-          Overrides {
-            Name: "cs:LossAudio"
-            ObjectReference {
-              SubObjectId: 630347960283277743
+              SubObjectId: 12695320728626205914
             }
           }
         }
@@ -1566,12 +1536,43 @@ Assets {
           }
         }
         ParentId: 14669756790987276305
+        ChildIds: 3069294940434499618
         ChildIds: 630347960283277743
         ChildIds: 10236210887333142359
         ChildIds: 8732137718690606791
-        ChildIds: 3069294940434499618
-        ChildIds: 14986464568006911734
         ChildIds: 8813261356416286177
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:SlotSound"
+            ObjectReference {
+              SubObjectId: 3069294940434499618
+            }
+          }
+          Overrides {
+            Name: "cs:WinnerSound"
+            ObjectReference {
+              SubObjectId: 10236210887333142359
+            }
+          }
+          Overrides {
+            Name: "cs:WinLinesAudio"
+            ObjectReference {
+              SubObjectId: 8813261356416286177
+            }
+          }
+          Overrides {
+            Name: "cs:SlotSpinSound"
+            ObjectReference {
+              SubObjectId: 8732137718690606791
+            }
+          }
+          Overrides {
+            Name: "cs:LossSound"
+            ObjectReference {
+              SubObjectId: 630347960283277743
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1586,6 +1587,46 @@ Assets {
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 3069294940434499618
+        Name: "Cash Register Drawer Mechanism Lock Close 01 SFX"
+        Transform {
+          Location {
+            X: 9.01599789
+            Z: -22.1625042
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12695320728626205914
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 3591911827021139355
+          }
+          Volume: 1
+          Falloff: 1000
+          Radius: 500
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
         }
       }
       Objects {
@@ -1706,89 +1747,8 @@ Assets {
         }
       }
       Objects {
-        Id: 3069294940434499618
-        Name: "Cash Register Drawer Mechanism Lock Close 01 SFX"
-        Transform {
-          Location {
-            X: 9.01599789
-            Z: -22.1625042
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 12695320728626205914
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        AudioInstance {
-          AudioAsset {
-            Id: 3591911827021139355
-          }
-          Volume: 1
-          Falloff: 1000
-          Radius: 500
-          IsSpatializationEnabled: true
-          IsAttenuationEnabled: true
-        }
-      }
-      Objects {
-        Id: 14986464568006911734
-        Name: "Collect All Coins Marimba 01 SFX"
-        Transform {
-          Location {
-            Y: 0.001100995
-            Z: -16.9400463
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 12695320728626205914
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        AudioInstance {
-          AudioAsset {
-            Id: 3517605131435578695
-          }
-          Volume: 1
-          Falloff: 1000
-          Radius: -1
-          EnableOcclusion: true
-          IsSpatializationEnabled: true
-          IsAttenuationEnabled: true
-        }
-      }
-      Objects {
         Id: 8813261356416286177
-        Name: "WinningLinesAudio"
+        Name: "WinLinesAudio"
         Transform {
           Location {
             Z: -20.2198105
@@ -32466,6 +32426,15 @@ Assets {
       }
     }
     Assets {
+      Id: 3591911827021139355
+      Name: "Cash Register Drawer Mechanism Lock Close 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_cash_register_drawer_close_latch_switch_lock_01a_Cue_ref"
+      }
+    }
+    Assets {
       Id: 2982046455873149876
       Name: "Creature Beast Snarl 01 SFX"
       PlatformAssetType: 7
@@ -32490,24 +32459,6 @@ Assets {
       PrimaryAsset {
         AssetType: "AudioAssetRef"
         AssetId: "sfx_coins_win_loop_03_Cue_ref"
-      }
-    }
-    Assets {
-      Id: 3591911827021139355
-      Name: "Cash Register Drawer Mechanism Lock Close 01 SFX"
-      PlatformAssetType: 7
-      PrimaryAsset {
-        AssetType: "AudioAssetRef"
-        AssetId: "sfx_cash_register_drawer_close_latch_switch_lock_01a_Cue_ref"
-      }
-    }
-    Assets {
-      Id: 3517605131435578695
-      Name: "Collect All Coins Marimba 01 SFX"
-      PlatformAssetType: 7
-      PrimaryAsset {
-        AssetType: "AudioAssetRef"
-        AssetId: "sfx_collect_all_coins_marimba_Cue_ref"
       }
     }
     Assets {

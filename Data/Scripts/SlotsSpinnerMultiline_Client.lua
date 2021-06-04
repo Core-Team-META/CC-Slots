@@ -40,14 +40,16 @@ local UI_CONTAINER = script:GetCustomProperty("UIContainer"):WaitForObject()
 local LOOT_CARD_TEMPLATE = script:GetCustomProperty("LootCardTemplate")
 local SPIN_BUTTON = script:GetCustomProperty("SpinButton"):WaitForObject()
 local BACKGROUND = script:GetCustomProperty("Background"):WaitForObject()
-local BELL = script:GetCustomProperty("DoorShopBellRing02SFX"):WaitForObject()
-local WINNER_SOUND = script:GetCustomProperty("ChestCoinsOpening01SFX"):WaitForObject()
-local SLOT_SOUND = script:GetCustomProperty("CashRegisterDrawerMechanismLockClose01SF"):WaitForObject()
-local SLOT_SOUND_BONUS = script:GetCustomProperty("CollectAllCoinsMarimba01SFX"):WaitForObject()
-local WINNING_LINES_AUDIO = script:GetCustomProperty("WinningLinesAudio"):WaitForObject()
+
+
+--local SLOT_SOUND = script:GetCustomProperty("CashRegisterDrawerMechanismLockClose01SF"):WaitForObject()
+--local WINNER_SOUND = script:GetCustomProperty("ChestCoinsOpening01SFX"):WaitForObject()
+--local WINNING_LINES_AUDIO = script:GetCustomProperty("WinningLinesAudio"):WaitForObject() -- WIN_LINES_AUDIO
+--local BELL = script:GetCustomProperty("DoorShopBellRing02SFX"):WaitForObject() -- SLOT_SPIN_SOUND
+
 local WIN_LINE_OBJECTS = script:GetCustomProperty("WinLinesObjects"):WaitForObject()
 local TRIGGER = script:GetCustomProperty("Trigger"):WaitForObject()
-local LOSS_SOUND = script:GetCustomProperty("LossAudio"):WaitForObject()
+
 local SETTINGS = script:GetCustomProperty("Settings"):WaitForObject()
 local SLOT_CAM = script:GetCustomProperty("SlotCam"):WaitForObject()
 local WIN_LINE = script:GetCustomProperty("WinLine"):WaitForObject()
@@ -55,6 +57,15 @@ local SLOT = {}
 SLOT[1] = script:GetCustomProperty("Slot1"):WaitForObject()
 SLOT[2] = script:GetCustomProperty("Slot2"):WaitForObject()
 SLOT[3] = script:GetCustomProperty("Slot3"):WaitForObject()
+
+if not script:GetCustomProperty("Audio") then return end
+
+local AUDIO = script:GetCustomProperty("Audio"):WaitForObject()
+local SLOT_SOUND = AUDIO:GetCustomProperty("SlotSound"):WaitForObject()
+local WINNER_SOUND = AUDIO:GetCustomProperty("WinnerSound"):WaitForObject()
+local WIN_LINES_AUDIO = AUDIO:GetCustomProperty("WinLinesAudio"):WaitForObject()
+local SLOT_SPIN_SOUND = AUDIO:GetCustomProperty("SlotSpinSound"):WaitForObject()
+local LOSS_SOUND = AUDIO:GetCustomProperty("LossSound"):WaitForObject()
 
 ------------------------------------------------------------------------------------------------------------------------
 -- CUSTOM PROPERTIES
@@ -86,7 +97,7 @@ SLOT_CAM.maxDistance = 50
 
 -- Tables
 local items = API.GetSlots(THEME_ID)
-local winningLineAudio = WINNING_LINES_AUDIO:GetChildren()
+local winningLineAudio = WIN_LINES_AUDIO:GetChildren()
 
 local results = {1, 1, 1, 1, 1, 1, 1, 1, 1}
 local lootCards = {}
@@ -395,7 +406,7 @@ function OnSlotDataChanged(dataObject)
     playerSpamPrevent = time() + SPIN_DURATION + 0.1
     winnerSoundHasPlayed = false
     slotSound = {false, false, false}
-    BELL:Play()
+    SLOT_SPIN_SOUND:Play()
     isSoundPlaying = true
     local msg
     player.clientUserData.betAmount = results.b or MIN_BET
@@ -427,7 +438,7 @@ function OnSlotDataChanged(dataObject)
                 Task.Wait()
                 lastTask = API.DisplayWinLines(winLines, winningPatterns, cardFrames, cancelAnimation, winningLineAudio)
             else
-                local lossRand = math.random(5)
+                local lossRand = 1--math.random(5)
                 if lossRand == 1 then
                     LOSS_SOUND:Play()
                 end
@@ -479,7 +490,7 @@ function Tick(dt)
     if time() > spinStartTime + SPIN_DURATION then
         if isSoundPlaying then
             SLOT_SOUND:Stop()
-            BELL:Stop()
+            SLOT_SPIN_SOUND:Stop()
             isSoundPlaying = false
         end
         return
@@ -502,7 +513,7 @@ function Tick(dt)
     end
 
     if time() > playSoundTime then
-        BELL:Stop()
+        SLOT_SPIN_SOUND:Stop()
         SLOT_SOUND:Stop()
         if not winnerSoundHasPlayed and isWinner then
             WINNER_SOUND:Play()

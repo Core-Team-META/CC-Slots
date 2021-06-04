@@ -18,14 +18,13 @@ Objects {
   ChildIds: 17429109800966978246
   ChildIds: 4752946518672690872
   ChildIds: 11868088348151088341
+  ChildIds: 10029497814753878703
   ChildIds: 17390311630592559610
   ChildIds: 10615916000806978389
   ChildIds: 8453249901324603248
-  ChildIds: 10029497814753878703
   ChildIds: 3877198441100997701
   ChildIds: 4675025735314061901
   ChildIds: 2669417942466758110
-  ChildIds: 15899737562429904580
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -38,38 +37,6 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
-  }
-}
-Objects {
-  Id: 15899737562429904580
-  Name: "Kurtis"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Kurtis"
   }
 }
 Objects {
@@ -166,38 +133,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Slots"
-  }
-}
-Objects {
-  Id: 10029497814753878703
-  Name: "Town Geo"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Town Geo"
   }
 }
 Objects {
@@ -307,6 +242,38 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Player Settings"
+  }
+}
+Objects {
+  Id: 10029497814753878703
+  Name: "Environment"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Town Geo"
   }
 }
 Objects {
