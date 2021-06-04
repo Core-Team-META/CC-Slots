@@ -1,6 +1,218 @@
 Name: "Slots"
 RootId: 3877198441100997701
 Objects {
+  Id: 15934103657560976012
+  Name: "Buck Fantasy"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3877198441100997701
+  ChildIds: 3491886025729460644
+  ChildIds: 10443422214113796889
+  ChildIds: 13807006811214976517
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 13807006811214976517
+  Name: "BuckArcadeMachine"
+  Transform {
+    Location {
+      X: 1243
+      Y: -561
+      Z: -17
+    }
+    Rotation {
+      Yaw: 89.9999542
+    }
+    Scale {
+      X: 1.2196
+      Y: 1.2196
+      Z: 1.2196
+    }
+  }
+  ParentId: 15934103657560976012
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16387345666213076374
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BuckArcadeMachine"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1243
+            Y: -322
+            Z: -17
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 89.9999542
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.2196
+            Y: 1.2196
+            Z: 1.2196
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 11962211811655823388
+    }
+  }
+}
+Objects {
+  Id: 10443422214113796889
+  Name: "BuckArcadeMachine"
+  Transform {
+    Location {
+      X: 1243
+      Y: -801
+      Z: -17
+    }
+    Rotation {
+      Yaw: 89.9999771
+    }
+    Scale {
+      X: 1.2196
+      Y: 1.2196
+      Z: 1.2196
+    }
+  }
+  ParentId: 15934103657560976012
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16387345666213076374
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BuckArcadeMachine"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1243
+            Y: -561
+            Z: -17
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 89.9999619
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.2196
+            Y: 1.2196
+            Z: 1.2196
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 11962211811655823388
+    }
+  }
+}
+Objects {
+  Id: 3491886025729460644
+  Name: "BuckArcadeMachine"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15934103657560976012
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16387345666213076374
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BuckArcadeMachine"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1243
+            Y: -801
+            Z: -17
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 89.9999847
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.2196
+            Y: 1.2196
+            Z: 1.2196
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 11962211811655823388
+    }
+  }
+}
+Objects {
   Id: 17884978274586394764
   Name: "Western"
   Transform {
