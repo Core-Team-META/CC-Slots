@@ -56,21 +56,29 @@ local pastBets = {}
 -- GLOBAL FUNCTIONS
 ------------------------------------------------------------------------------------------------------------------------
 
+
+-- @params object player
+-- @param string keybind
 function OnBindingPressed(player, keybind)
     if keybind == "ability_primary" then
         local hitResult = UI.GetCursorHitResult()
         if hitResult and hitResult.other then
+
             local object = hitResult.other
             local isButton = object:GetCustomProperty("isButton")
             local buttonType = object:GetCustomProperty("ButtonType")
+            
             if isButton and buttonType then
+
                 local slotId = player.clientUserData.slotId
                 local currentBet = player.clientUserData.betAmount
                 local minBet = player.clientUserData.minBet
                 local maxBet = player.clientUserData.maxBet
+
                 if slotId ~= SLOT_ID then
                     return
                 end
+
                 if buttonType == "SpinButton" then
                     Events.BroadcastToServer(API.Broadcasts.spin, currentBet or 1, slotId)
                 elseif buttonType == "LowerButton" then
@@ -93,6 +101,9 @@ function OnBindingPressed(player, keybind)
     end
 end
 
+
+-- @params obect slotPlayer
+-- @prams string slotId
 function OnSlotChanged(slotPlayer, slotId)
     if slotPlayer and slotId == SLOT_ID then
         CurrentPlayer = slotPlayer
