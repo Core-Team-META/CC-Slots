@@ -1,3 +1,20 @@
+--[[
+Copyright 2021 Manticore Games, Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+documentation files (the "Software"), to deal in the Software without restriction, including without limitation the
+rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit
+persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the
+Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+--]]
+
 ------------------------------------------------------------------------------------------------------------------------
 -- Slots Spinner Client
 -- Author Morticai (META) - (https://www.coregames.com/user/d1073dbcc404405cbef8ce728e53d380)
@@ -6,12 +23,16 @@
 ------------------------------------------------------------------------------------------------------------------------
 -- REQUIRES
 ------------------------------------------------------------------------------------------------------------------------
+
 local API = require(script:GetCustomProperty("API"))
 local NOTIFICATION = require(script:GetCustomProperty("NotificationAPI"))
 
 ------------------------------------------------------------------------------------------------------------------------
 -- OBJECTS
 ------------------------------------------------------------------------------------------------------------------------
+
+local LOCAL_PLAYER = Game.GetLocalPlayer()
+
 local ROOT = script:GetCustomProperty("ROOT"):WaitForObject()
 local NETWORKING = script:GetCustomProperty("Networking"):WaitForObject()
 local SCREEN_GROUP = script:GetCustomProperty("ScreenGroup"):WaitForObject()
@@ -27,21 +48,14 @@ local WINNING_LINES_AUDIO = script:GetCustomProperty("WinningLinesAudio"):WaitFo
 local WIN_LINE_OBJECTS = script:GetCustomProperty("WinLinesObjects"):WaitForObject()
 local TRIGGER = script:GetCustomProperty("Trigger"):WaitForObject()
 local LOSS_SOUND = script:GetCustomProperty("LossAudio"):WaitForObject()
-
 local SETTINGS = script:GetCustomProperty("Settings"):WaitForObject()
 local SLOT_CAM = script:GetCustomProperty("SlotCam"):WaitForObject()
-
-SLOT_CAM.isDistanceAdjustable = true
-SLOT_CAM.minDistance = 0
-SLOT_CAM.maxDistance = 50
-
 local WIN_LINE = script:GetCustomProperty("WinLine"):WaitForObject()
 local SLOT = {}
 SLOT[1] = script:GetCustomProperty("Slot1"):WaitForObject()
 SLOT[2] = script:GetCustomProperty("Slot2"):WaitForObject()
 SLOT[3] = script:GetCustomProperty("Slot3"):WaitForObject()
-local LOCAL_PLAYER = Game.GetLocalPlayer()
-local lastTask
+
 ------------------------------------------------------------------------------------------------------------------------
 -- CUSTOM PROPERTIES
 ------------------------------------------------------------------------------------------------------------------------
@@ -49,29 +63,42 @@ local lastTask
 local SPIN_DURATION = SETTINGS:GetCustomProperty("SpinDuration") or 1
 local TOGGLE_KEYBIND = SETTINGS:GetCustomProperty("KeyBind") or "ability_extra_24"
 local SPIN_SPEED = SETTINGS:GetCustomProperty("DefaultSpeed") or 10000
-local RESOURCE_NAME = SETTINGS:GetCustomProperty("ResourceName")
+local RESOURCE_NAME = SETTINGS:GetCustomProperty("ResourceName") or "SlotCoin"
 local SLOT_NAME = SETTINGS:GetCustomProperty("Name") or "Slot"
 local SLOT_ID = SETTINGS.id
---SETTINGS:GetCustomProperty("SlotId")
-local THEME_ID = SETTINGS:GetCustomProperty("Theme") or "Fantasy"
+local THEME_ID = SETTINGS:GetCustomProperty("Theme")
 local MIN_BET = SETTINGS:GetCustomProperty("MinBet") or 5
 local MAX_BET = SETTINGS:GetCustomProperty("MaxBet") or 100
 local ODDS = SETTINGS:GetCustomProperty("Odds")
+
+if not THEME_ID then
+    warn("Theme refrence is missing")
+end
+
 ------------------------------------------------------------------------------------------------------------------------
 -- LOCAL VARIABLES
 ------------------------------------------------------------------------------------------------------------------------
 
-local results = {1, 1, 1, 1, 1, 1, 1, 1, 1}
-local items = API.GetSlots(THEME_ID)
-local isEnabled = false
-local spacing = 600
+local centerPosition = WIN_LINE:GetWorldPosition()
+SLOT_CAM.isDistanceAdjustable = true
+SLOT_CAM.minDistance = 0
+SLOT_CAM.maxDistance = 50
 
+-- Tables
+local items = API.GetSlots(THEME_ID)
+local winningLineAudio = WINNING_LINES_AUDIO:GetChildren()
+
+local results = {1, 1, 1, 1, 1, 1, 1, 1, 1}
 local lootCards = {}
 local cardFrames = {}
 local winLines = {}
-local centerPosition = WIN_LINE:GetWorldPosition()
+local currentSlots = {}
+local spinTargetPosition = {}
 local verticalScrollPosition = {0, 0, 0}
 local itemTotalSpacing = {0, 0, 0}
+local spinDistance = {500, 500, 500}
+local slotSound = {true, true, true}
+
 local pivotStartPosition = {}
 pivotStartPosition[1] = SLOT[1]:GetPosition()
 pivotStartPosition[2] = SLOT[2]:GetPosition()
@@ -80,24 +107,26 @@ pivotStartPosition[3] = SLOT[3]:GetPosition()
 local cancelAnimation = {}
 cancelAnimation.value = false
 
--- This is what we are spinning towards
-local spinTargetPosition = {}
-local spinDistance = {500, 500, 500}
-local slotSound = {true, true, true}
-local currentSlots = {}
-local spinStartTime = 0
-local playSoundTime = 0
-local spinEndTime
+-- Bool
+local isEnabled = false
 local winnerSoundHasPlayed = false
 local isWinner = false
 local isSoundPlaying = false
-local playerSpamPrevent
-local currentPlayerId, currentPlayer
 
+-- Ints
+local spinStartTime = 0
+local playSoundTime = 0
+local spacing = 600
 local lastSpinCount = 0
-local winningLineAudio = WINNING_LINES_AUDIO:GetChildren()
---ROOT.clientUserData.animationCount = 0
 
+-- Nil variables
+local spinEndTime
+local playerSpamPrevent
+local currentPlayerId
+local currentPlayer
+local lastTask
+
+-- Check all custom properties are within limits
 if SPIN_DURATION < 1 then
     SPIN_DURATION = 1
     warn("Spin Duration must be great than 1")
@@ -121,19 +150,6 @@ local function Show()
     end
 end
 
-local function Deactivate()
-    for i = 1, 3 do
-        if lootCards[i] then
-            for _, card in ipairs(lootCards[i]) do
-                if Object.IsValid(card) then
-                    card:Destroy()
-                end
-            end
-        end
-    end
-    lootCards = {}
-end
-
 local function Hide()
     if currentPlayer == LOCAL_PLAYER then
         isEnabled = false
@@ -146,50 +162,56 @@ local function Hide()
     end
 end
 
+local function ConnectListners()
+    for _, network in ipairs(NETWORKING:GetChildren()) do
+        if network.name == SLOT_ID then
+            local dataStr = network:GetCustomProperty("data")
+            if dataStr ~= "" then
+                results = API.ConvertStringToTable(dataStr)
+            end
+            currentPlayerId = network:GetCustomProperty("playerId")
+            if currentPlayerId ~= "" then
+                currentPlayer = Game.FindPlayer(currentPlayerId)
+            end
+            network.networkedPropertyChangedEvent:Connect(OnNetworkChanged)
+        end
+    end
+    TRIGGER.interactedEvent:Connect(OnInteracted)
+end
+
+local function CreateClientUserData()
+    LOCAL_PLAYER.clientUserData.notification = LOCAL_PLAYER.clientUserData.notification or {}
+    LOCAL_PLAYER.clientUserData.SlotTriggers = LOCAL_PLAYER.clientUserData.SlotTriggers or {}
+    LOCAL_PLAYER.clientUserData.SlotTriggers[SLOT_ID] = TRIGGER
+end
+
 ------------------------------------------------------------------------------------------------------------------------
 -- GLOBAL FUNCTIONS
 ------------------------------------------------------------------------------------------------------------------------
 
 function Init()
+    ConnectListners()
+    CreateClientUserData()
+
     TRIGGER.interactionLabel = "Play " .. SLOT_NAME
-    LOCAL_PLAYER.clientUserData.notification = LOCAL_PLAYER.clientUserData.notification or {}
-    LOCAL_PLAYER.clientUserData.SlotTriggers = LOCAL_PLAYER.clientUserData.SlotTriggers or {}
-    LOCAL_PLAYER.clientUserData.SlotTriggers[SLOT_ID] = TRIGGER
     SLOT_CAM:SetRotationOffset(SLOT_CAM:GetWorldRotation())
+
+    -- Need to setup if check if creator has UI enabled
     UI_CONTAINER.visibility = Visibility.FORCE_OFF
+
+    -- Force run each slot once, to allow portal images to load in
     Activate()
-    isEnabled = true
-    for i = 1, 3 do
-        local itemId = 1
-        itemId = CoreMath.Round(itemId)
-        spinDistance[i] = SPIN_SPEED --+ (3000 * math.random(1, 5))
-        local slotCard = lootCards[i][itemId]
-        spinTargetPosition[i] = slotCard.clientUserData.startPosition.z
-    end
-
-    for _, line in ipairs(WIN_LINE_OBJECTS:GetChildren()) do
-        local id = line:GetCustomProperty("ID")
-
-        if not id then
-            error("Win line object is missing the ID property: " .. line.name)
-        end
-
-        if winLines[id] then
-            error("Can not have duplicate win line IDs: " .. line.name)
-        end
-
-        winLines[id] = {object = line, color = line:GetCustomProperty("Color")}
-    end
-    TRIGGER.interactedEvent:Connect(OnInteracted)
 end
 
-function OnInteracted(trigger, object)
-    if trigger == TRIGGER and object == LOCAL_PLAYER then
+-- @params object trigger
+-- @params object player
+function OnInteracted(trigger, player)
+    if trigger == TRIGGER and player == LOCAL_PLAYER then
         if playerSpamPrevent and playerSpamPrevent > time() then
             return
         end
         playerSpamPrevent = time() + 2
-        local slotId = object.clientUserData.slotId
+        local slotId = player.clientUserData.slotId
         if not slotId or slotId == 0 or slotId ~= SLOT_ID then
             Events.BroadcastToServer(API.Broadcasts.playSlot, SLOT_ID)
         end
@@ -197,8 +219,10 @@ function OnInteracted(trigger, object)
 end
 
 function Activate()
+
     local position = Vector3.ZERO
     local count = 1
+
     for i = 1, 3 do
         itemTotalSpacing[i] = 0
         lootCards[i] = {}
@@ -219,9 +243,37 @@ function Activate()
             itemTotalSpacing[i] = itemTotalSpacing[i] + spacing
         end
     end
+
     spinStartTime = time()
+
+    isEnabled = true
+
+    for i = 1, 3 do
+        local itemId = 1
+        itemId = CoreMath.Round(itemId)
+        spinDistance[i] = SPIN_SPEED
+        local slotCard = lootCards[i][itemId]
+        spinTargetPosition[i] = slotCard.clientUserData.startPosition.z
+    end
+
+    for _, line in ipairs(WIN_LINE_OBJECTS:GetChildren()) do
+        local id = line:GetCustomProperty("ID")
+
+        if not id then
+            error("Win line object is missing the ID property: " .. line.name)
+        end
+
+        if winLines[id] then
+            error("Can not have duplicate win line IDs: " .. line.name)
+        end
+
+        winLines[id] = {object = line, color = line:GetCustomProperty("Color")}
+    end
 end
 
+-- @params object lootCard
+-- @params table item
+-- @params int slot
 function InitializeLootCard(lootCard, item, slot)
     local itemId = item.id
     if slot == 1 and item.id == 1 then
@@ -245,13 +297,12 @@ function InitializeLootCard(lootCard, item, slot)
     end
 
     local gamePortal = lootCard:GetCustomProperty("GamePortal"):WaitForObject()
-    --[[local gradient = lootCard:GetCustomProperty("Gradient"):WaitForObject()
-    local bar = lootCard:GetCustomProperty("Bar"):WaitForObject()
-    local border = lootCard:GetCustomProperty("Border"):WaitForObject()]]
     local currentGameId = gamePortal:GetCustomProperty("Game ID")
+
     if currentGameId ~= item.gamePortal then
         gamePortal:SetSmartProperty("Game ID", item.gamePortal)
     end
+
     gamePortal:SetSmartProperty("Screenshot Index", item.screenshotIndex)
 
     -- Store this position
@@ -267,6 +318,7 @@ function WrapItems()
 
         local down = center - halfSpacing
         local up = center + halfSpacing
+
         for _, item in pairs(lootCard) do
             local itemPosition = item:GetPosition()
             local hasMoved = false
@@ -295,27 +347,31 @@ function WrapItems()
     end
 end
 
-function OnNetworkObjectAdded(parentObject, childObject) --
+-- @params object slotDataObject
+function OnSlotDataChanged(dataObject)
     local player, playerId
 
-    local dataStr = childObject:GetCustomProperty("data")
+    local dataStr = dataObject:GetCustomProperty("data")
     while dataStr == "" do
         Task.Wait()
-        dataStr = childObject:GetCustomProperty("data")
+        dataStr = dataObject:GetCustomProperty("data")
     end
+
     Events.Broadcast(API.Broadcasts.enableTriggers)
+
     cancelAnimation.value = true
+
     for id, line in ipairs(winLines) do
         line.object.visibility = Visibility.FORCE_OFF
     end
 
-    --ROOT.clientUserData.animationCount = ROOT.clientUserData.animationCount + 1
-
     results = API.ConvertStringToTable(dataStr)
-    playerId = childObject:GetCustomProperty("playerId")
+    playerId = dataObject:GetCustomProperty("playerId")
 
     player = Game.FindPlayer(playerId)
+
     local position = Vector3.ZERO
+
     for i = 1, 3 do
         itemTotalSpacing[i] = 0
         for index, item in ipairs(items) do
@@ -324,27 +380,16 @@ function OnNetworkObjectAdded(parentObject, childObject) --
             itemTotalSpacing[i] = itemTotalSpacing[i] + spacing
         end
     end
-    local slot1 = 2
-    local slot2 = 2
-    local slot3 = 2
-    currentSlots[1] = slot1
-    currentSlots[2] = slot2
-    currentSlots[3] = slot3
 
     for i = 1, 3 do
         local itemId = 1
-        if i == 1 then
-            itemId = slot1
-        elseif i == 2 then
-            itemId = slot2
-        elseif i == 3 then
-            itemId = slot3
-        end
+        currentSlots[i] = itemId
         itemId = CoreMath.Round(itemId)
         spinDistance[i] = SPIN_SPEED
         local slotCard = lootCards[i][2]
         spinTargetPosition[i] = slotCard.clientUserData.startPosition.z
     end
+
     spinStartTime = time()
     playSoundTime = time() + SPIN_DURATION
     playerSpamPrevent = time() + SPIN_DURATION + 0.1
@@ -390,55 +435,15 @@ function OnNetworkObjectAdded(parentObject, childObject) --
         end,
         SPIN_DURATION
     )
-
-    --Events.BroadcastToServer(API.Broadcasts.destroy, childObject.id)
 end
 
-function Tick(dt)
-    if not next(spinTargetPosition) then
-        return
-    end
-    if time() > spinStartTime + SPIN_DURATION then
-        if isSoundPlaying then
-            SLOT_SOUND:Stop()
-            BELL:Stop()
-            isSoundPlaying = false
-        end
-        return
-    end
-    for i = 1, 3 do
-        local SPIN_DURATION = SPIN_DURATION - (3 - i + 0.5)
-        if not slotSound[i] then --
-            SLOT_SOUND:Play()
-            slotSound[i] = true
-        end
-        local r = math.max(0, (SPIN_DURATION + spinStartTime - time()) / SPIN_DURATION)
-        r = r * r
-        verticalScrollPosition[i] = spinTargetPosition[i] - (r * spinDistance[i])
-
-        WrapItems()
-
-        SLOT[i]:SetPosition(pivotStartPosition[i] - verticalScrollPosition[i] * Vector3.UP)
-    end
-    if time() > playSoundTime then
-        BELL:Stop()
-        SLOT_SOUND:Stop()
-        if not winnerSoundHasPlayed and isWinner then
-            WINNER_SOUND:Play()
-            isWinner = false
-        end
-    end
-    if LOCAL_PLAYER == currentPlayer and playerSpamPrevent and playerSpamPrevent > time() then
-        SPIN_BUTTON.isInteractable = false
-    elseif LOCAL_PLAYER == currentPlayer then
-        SPIN_BUTTON.isInteractable = true
-    end
-end
-
+-- @params object object
+-- @params string string
 function OnNetworkChanged(object, string)
     if object.name ~= SLOT_ID then
         return
     end
+
     if string == "playerId" then
         local playerId = object:GetCustomProperty(string)
         if playerId == "" and Object.IsValid(currentPlayer) then
@@ -462,24 +467,57 @@ function OnNetworkChanged(object, string)
 
         Events.Broadcast(API.Broadcasts.enableTriggers)
     elseif string == "data" then
-        OnNetworkObjectAdded(_, object)
+        OnSlotDataChanged(object)
+    end
+end
+
+function Tick(dt)
+    if not next(spinTargetPosition) then
+        return
+    end
+
+    if time() > spinStartTime + SPIN_DURATION then
+        if isSoundPlaying then
+            SLOT_SOUND:Stop()
+            BELL:Stop()
+            isSoundPlaying = false
+        end
+        return
+    end
+
+    for i = 1, 3 do
+        local SPIN_DURATION = SPIN_DURATION - (3 - i + 0.5)
+        if not slotSound[i] then 
+            SLOT_SOUND:Play()
+            slotSound[i] = true
+        end
+
+        local r = math.max(0, (SPIN_DURATION + spinStartTime - time()) / SPIN_DURATION)
+        r = r * r
+        verticalScrollPosition[i] = spinTargetPosition[i] - (r * spinDistance[i])
+
+        WrapItems()
+
+        SLOT[i]:SetPosition(pivotStartPosition[i] - verticalScrollPosition[i] * Vector3.UP)
+    end
+
+    if time() > playSoundTime then
+        BELL:Stop()
+        SLOT_SOUND:Stop()
+        if not winnerSoundHasPlayed and isWinner then
+            WINNER_SOUND:Play()
+            isWinner = false
+        end
+    end
+
+    if LOCAL_PLAYER == currentPlayer and playerSpamPrevent and playerSpamPrevent > time() then
+        SPIN_BUTTON.isInteractable = false
+    elseif LOCAL_PLAYER == currentPlayer then
+        SPIN_BUTTON.isInteractable = true
     end
 end
 
 ------------------------------------------------------------------------------------------------------------------------
 -- LISTENERS
 ------------------------------------------------------------------------------------------------------------------------
-for _, network in ipairs(NETWORKING:GetChildren()) do
-    if network.name == SLOT_ID then
-        local dataStr = network:GetCustomProperty("data")
-        if dataStr ~= "" then
-            results = API.ConvertStringToTable(dataStr)
-        end
-        currentPlayerId = network:GetCustomProperty("playerId")
-        if currentPlayerId ~= "" then
-            currentPlayer = Game.FindPlayer(currentPlayerId)
-        end
-        network.networkedPropertyChangedEvent:Connect(OnNetworkChanged)
-    end
-end
 Init()

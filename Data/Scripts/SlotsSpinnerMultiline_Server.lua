@@ -1,4 +1,20 @@
-local enableDevMode = false
+--[[
+Copyright 2021 Manticore Games, Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+documentation files (the "Software"), to deal in the Software without restriction, including without limitation the
+rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit
+persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the
+Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+--]]
+
 ------------------------------------------------------------------------------------------------------------------------
 -- Slots Spinner Server
 -- Author Morticai (META) - (https://www.coregames.com/user/d1073dbcc404405cbef8ce728e53d380)
@@ -16,17 +32,17 @@ local API = require(script:GetCustomProperty("API"))
 
 local NETWORKING = script:GetCustomProperty("Networking"):WaitForObject()
 local SETTINGS = script:GetCustomProperty("Settings"):WaitForObject()
---local PLAY_TRIGGER = script:GetCustomProperty("Trigger"):WaitForObject()
 local PLAYER_POSITION = script:GetCustomProperty("PlayerPosition"):WaitForObject()
+
 ------------------------------------------------------------------------------------------------------------------------
 -- CUSTOM PROPERTIES
 ------------------------------------------------------------------------------------------------------------------------
 
 local spinDuration = SETTINGS:GetCustomProperty("SpinDuration") or 1
-local RESOURCE_NAME = SETTINGS:GetCustomProperty("ResourceName")
+local RESOURCE_NAME = SETTINGS:GetCustomProperty("ResourceName") or "SlotCoin"
+local IS_DEV_MODE = SETTINGS:GetCustomProperty("IsDevMode") or false
 local ODDS = SETTINGS:GetCustomProperty("Odds")
 local SLOT_ID = SETTINGS.id
---SETTINGS:GetCustomProperty("SlotId")
 local THEME_ID = SETTINGS:GetCustomProperty("Theme") or "Fantasy"
 local PlayerData = script:GetCustomProperty("RandomSpinner_Data")
 
@@ -53,6 +69,8 @@ end
 -- LOCAL FUNCTIONS
 ------------------------------------------------------------------------------------------------------------------------
 
+-- @param object player
+-- @param string socket
 local function Unequip(player, socket)
     for _, equipment in ipairs(player:GetEquipment()) do
         if equipment.socket == socket then
@@ -64,6 +82,8 @@ local function Unequip(player, socket)
     end
 end
 
+-- @param float reelTotal
+-- @return int item.id
 local function GetRandomSlot(reelTotal)
     local value = math.random() * reelTotal
     local total = 0
@@ -87,6 +107,8 @@ function Init()
     standPosition = sitPosition - (directionVector * 100)
 end
 
+-- @params object player
+-- @params string objectId
 function DestroyObject(player, objectId)
     for _, object in ipairs(NETWORKING:GetChildren()) do
         if object.id == objectId and Object.IsValid(object) then
@@ -95,6 +117,10 @@ function DestroyObject(player, objectId)
     end
 end
 
+-- Called when a player interacts with slot machine trigger
+-- Changes players position / animation to the slot machine stool
+-- @params object object
+-- @params string slotId
 function OnInteracted(object, slotId)
     if slotId ~= SLOT_ID then
         return
@@ -107,23 +133,25 @@ function OnInteracted(object, slotId)
     local currentId = SlotData:GetCustomProperty("playerId")
     if currentId == "" and object and Object.IsValid(object) and object:IsA("Player") then
         if Object.IsValid(object) then
-            --object:SetWorldPosition(sitPosition)
-            --object:SetWorldRotation(sitRotation)
-            -- Sit player down
+            -- Sit player down & move to stool location
             object.movementControlMode = MovementControlMode.NONE
             object.animationStance = "unarmed_sit_chair_upright"
             object.maxJumpCount = 0
             object:ResetVelocity()
             object:SetWorldTransform(Transform.New(sitRotation, sitPosition, Vector3.ONE))
 
-            Task.Wait()
+            Task.Wait() -- Testing for giving the server a frame before data set
             if Object.IsValid(object) then
+                -- Update machines current player so other players can't also use the machine
                 SlotData:SetNetworkedCustomProperty("playerId", object.id)
             end
         end
     end
 end
 
+-- Reset players animation & position, and nil out machines current player
+-- @params object player
+-- @params string slotId
 function OnPlayerQuit(player, slotId)
     if slotId ~= SLOT_ID then
         return
@@ -152,6 +180,10 @@ function OnPlayerQuit(player, slotId)
     end
 end
 
+
+-- @params object player
+-- @params int betAmount
+-- @params string slotId
 function PickItemRandomly(player, betAmount, slotId)
     if playerSpamPrevent[player] and playerSpamPrevent[player] > time() or SLOT_ID ~= slotId then
         return
@@ -170,16 +202,7 @@ function PickItemRandomly(player, betAmount, slotId)
     spinCount = spinCount < 9 and spinCount + 1 or 1
     slotsTable.c = spinCount
     slotsTable.b = betAmount
-    --[[
-    slotsTable[1] = 5
-    slotsTable[2] = 5
-    slotsTable[3] = 5
-    slotsTable[4] = 5
-    slotsTable[5] = 5
-    slotsTable[6] = 5
-    slotsTable[7] = 5
-    slotsTable[8] = 5
-    slotsTable[9] = 5 --]]
+
     local dataStr = API.ConvertTableToString(slotsTable)
     SlotData:SetNetworkedCustomProperty("data", dataStr)
     local playerId = SlotData:GetCustomProperty("playerId")
@@ -206,9 +229,10 @@ Events.ConnectForPlayer(API.Broadcasts.spin, PickItemRandomly)
 Events.ConnectForPlayer(API.Broadcasts.destroy, DestroyObject)
 Events.ConnectForPlayer(API.Broadcasts.quit, OnPlayerQuit)
 Events.ConnectForPlayer(API.Broadcasts.playSlot, OnInteracted)
+
 Init()
 
-if enableDevMode then
+if IS_DEV_MODE then
     local betAmount = 5
     local totalSpent = 0
     local totalWon = 0
