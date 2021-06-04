@@ -20,7 +20,6 @@ Objects {
   ChildIds: 11868088348151088341
   ChildIds: 17390311630592559610
   ChildIds: 10615916000806978389
-  ChildIds: 9904375601217783865
   ChildIds: 8453249901324603248
   ChildIds: 10029497814753878703
   ChildIds: 3877198441100997701
@@ -203,7 +202,7 @@ Objects {
 }
 Objects {
   Id: 8453249901324603248
-  Name: "Slot Networking"
+  Name: "Slot Primary Component"
   Transform {
     Location {
       X: 94
@@ -241,52 +240,6 @@ Objects {
     InstanceId: 17771080832798645400
     TemplateId: 14767819289351633414
     WasRoot: true
-  }
-}
-Objects {
-  Id: 9904375601217783865
-  Name: "SLOT_DATABASE"
-  Transform {
-    Location {
-      X: 94
-      Y: -37150
-      Z: 476
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Slots"
-      ObjectReference {
-        SelfId: 688037899985773358
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "LOOT_DATABASE"
-  }
-  InstanceHistory {
-    SelfId: 2001868220419527220
-    SubobjectId: 11709161199393332712
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
   }
 }
 Objects {
