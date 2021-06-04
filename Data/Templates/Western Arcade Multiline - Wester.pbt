@@ -352,6 +352,12 @@ Assets {
               SubObjectId: 8813261356416286177
             }
           }
+          Overrides {
+            Name: "cs:LossAudio"
+            ObjectReference {
+              SubObjectId: 630347960283277743
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1087,6 +1093,7 @@ Assets {
           }
         }
         ParentId: 14669756790987276305
+        ChildIds: 630347960283277743
         ChildIds: 10236210887333142359
         ChildIds: 8732137718690606791
         ChildIds: 3069294940434499618
@@ -1106,6 +1113,43 @@ Assets {
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 630347960283277743
+        Name: "Creature Beast Snarl 01 SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.819941
+            Y: 0.819941
+            Z: 0.819941
+          }
+        }
+        ParentId: 12695320728626205914
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 2982046455873149876
+          }
+          Pitch: 700
+          Volume: 1
+          Falloff: 1000
+          Radius: 500
         }
       }
       Objects {
@@ -32038,6 +32082,15 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "fxma_opaque_emissive"
+      }
+    }
+    Assets {
+      Id: 2982046455873149876
+      Name: "Creature Beast Snarl 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_creature_beast_snarl_01_Cue_ref"
       }
     }
     Assets {

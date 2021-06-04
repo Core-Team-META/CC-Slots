@@ -26,6 +26,7 @@ local SLOT_SOUND_BONUS = script:GetCustomProperty("CollectAllCoinsMarimba01SFX")
 local WINNING_LINES_AUDIO = script:GetCustomProperty("WinningLinesAudio"):WaitForObject()
 local WIN_LINE_OBJECTS = script:GetCustomProperty("WinLinesObjects"):WaitForObject()
 local TRIGGER = script:GetCustomProperty("Trigger"):WaitForObject()
+local LOSS_SOUND = script:GetCustomProperty("LossAudio"):WaitForObject()
 
 local SETTINGS = script:GetCustomProperty("Settings"):WaitForObject()
 local SLOT_CAM = script:GetCustomProperty("SlotCam"):WaitForObject()
@@ -370,6 +371,11 @@ function OnNetworkObjectAdded(parentObject, childObject) --
                 end
                 Task.Wait()
                 lastTask = API.DisplayWinLines(winLines, winningPatterns, cardFrames, cancelAnimation, winningLineAudio)
+            else
+                local lossRand = math.random(5)
+                if lossRand == 1 then
+                    LOSS_SOUND:Play()
+                end
             end
         end,
         SPIN_DURATION

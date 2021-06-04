@@ -353,6 +353,12 @@ Assets {
               SubObjectId: 17230905071135125268
             }
           }
+          Overrides {
+            Name: "cs:LossAudio"
+            ObjectReference {
+              SubObjectId: 9927850264106210951
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1093,6 +1099,7 @@ Assets {
         ChildIds: 2065784908915576911
         ChildIds: 5700923727706977962
         ChildIds: 12285664267215493246
+        ChildIds: 9927850264106210951
         ChildIds: 17230905071135125268
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1267,6 +1274,44 @@ Assets {
           Falloff: 1000
           Radius: -1
           EnableOcclusion: true
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
+        }
+      }
+      Objects {
+        Id: 9927850264106210951
+        Name: "Sci-fi Gated Slow Power Down 01 SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.819941
+            Y: 0.819941
+            Z: 0.819941
+          }
+        }
+        ParentId: 15396463938736122450
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 6867265987523889158
+          }
+          Volume: 0.6
+          Falloff: 1000
+          Radius: 500
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
         }
@@ -48569,6 +48614,15 @@ Assets {
       PrimaryAsset {
         AssetType: "AudioAssetRef"
         AssetId: "sfx_collect_all_coins_marimba_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 6867265987523889158
+      Name: "Sci-fi Gated Slow Power Down 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_scifi_gated_slow_powerdown_01_Cue_ref"
       }
     }
     Assets {

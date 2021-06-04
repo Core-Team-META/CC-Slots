@@ -352,6 +352,12 @@ Assets {
               SubObjectId: 6895772480579366944
             }
           }
+          Overrides {
+            Name: "cs:LossAudio"
+            ObjectReference {
+              SubObjectId: 6964825889557130691
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1182,7 +1188,7 @@ Assets {
           AudioAsset {
             Id: 14288833496764834364
           }
-          Volume: 1
+          Volume: 1.2
           Falloff: 1000
           Radius: 500
           IsSpatializationEnabled: true
