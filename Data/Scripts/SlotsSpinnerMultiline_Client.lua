@@ -185,13 +185,15 @@ function Init()
 end
 
 function OnInteracted(trigger, object)
-    if object == LOCAL_PLAYER then
+
+    if trigger == TRIGGER and object == LOCAL_PLAYER then
         if playerSpamPrevent and playerSpamPrevent > time() then
             return
         end
-        playerSpamPrevent = time() + 0.5
+        playerSpamPrevent = time() + 2
         local slotId = object.clientUserData.slotId
         if not slotId or slotId == 0 or slotId ~= SLOT_ID then
+            warn("Sent")
             Events.BroadcastToServer(API.Broadcasts.playSlot, SLOT_ID)
         end
     end

@@ -28,10 +28,11 @@ local function OnEnable()
                     trigger.isInteractable = false
                 end
             end
+            Task.Wait()
         end
     end
 end
 
-Events.Connect(API.Broadcasts.disableTriggers, OnDisable)
+--Events.Connect(API.Broadcasts.disableTriggers, OnDisable)
 Events.Connect(API.Broadcasts.enableTriggers, OnEnable)
 OnEnable()

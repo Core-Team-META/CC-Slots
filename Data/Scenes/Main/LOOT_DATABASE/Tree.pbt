@@ -1513,7 +1513,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
-      String: "a955b0/imagescowboyslots"
+      String: "ca487d/stampedesaloonimages"
     }
     Overrides {
       Name: "cs:ScreenshotIndex"
@@ -1578,7 +1578,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
-      String: "a955b0/imagescowboyslots"
+      String: "ca487d/stampedesaloonimages"
     }
     Overrides {
       Name: "cs:ScreenshotIndex"
@@ -1643,7 +1643,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
-      String: "a955b0/imagescowboyslots"
+      String: "ca487d/stampedesaloonimages"
     }
     Overrides {
       Name: "cs:ScreenshotIndex"
@@ -1708,7 +1708,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
-      String: "a955b0/imagescowboyslots"
+      String: "ca487d/stampedesaloonimages"
     }
     Overrides {
       Name: "cs:ScreenshotIndex"
@@ -1773,7 +1773,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
-      String: "a955b0/imagescowboyslots"
+      String: "ca487d/stampedesaloonimages"
     }
     Overrides {
       Name: "cs:ScreenshotIndex"

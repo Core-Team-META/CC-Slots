@@ -96,36 +96,43 @@ function DestroyObject(player, objectId)
 end
 
 function OnInteracted(object, slotId)
-    if playerSpamPrevent[object] and playerSpamPrevent[object] > time() then
-        return
-    end
     if slotId ~= SLOT_ID then
         return
     end
-    playerSpamPrevent[object] = time() + 0.5
+    if playerSpamPrevent[object] and playerSpamPrevent[object] > time() then
+        return
+    end
+    playerSpamPrevent[object] = time() + 1
 
     local currentId = newData:GetCustomProperty("playerId")
     if currentId == "" and object and Object.IsValid(object) and object:IsA("Player") then
         newData:SetNetworkedCustomProperty("playerId", object.id)
 
-        -- Sit player down
-        object.movementControlMode = MovementControlMode.NONE
-        object:ResetVelocity()
-        object:SetWorldPosition(sitPosition)
-        object:SetWorldRotation(sitRotation)
-        object.animationStance = "unarmed_sit_chair_upright"
-        object.maxJumpCount = 0
+        Task.Wait()
+
+        if Object.IsValid(object) then
+            --object:SetWorldPosition(sitPosition)
+            --object:SetWorldRotation(sitRotation)
+            -- Sit player down
+            object.movementControlMode = MovementControlMode.NONE
+            object.animationStance = "unarmed_sit_chair_upright"
+            object.maxJumpCount = 0
+            object:ResetVelocity()
+            object:SetWorldTransform(Transform.New(sitRotation, sitPosition, Vector3.ONE))
+        else
+            newData:SetNetworkedCustomProperty("playerId", "")
+        end
     end
 end
 
 function OnPlayerQuit(player, slotId)
-    if playerSpamPrevent[player] and playerSpamPrevent[player] > time() then
-        return
-    end
     if slotId ~= SLOT_ID then
         return
     end
-    playerSpamPrevent[player] = time() + 0.5
+    if playerSpamPrevent[player] and playerSpamPrevent[player] > time() then
+        return
+    end
+    playerSpamPrevent[player] = time() + 1
 
     local playerId = newData:GetCustomProperty("playerId")
     if playerId == player.id then
@@ -134,13 +141,16 @@ function OnPlayerQuit(player, slotId)
         return
     end
 
-    player.movementControlMode = MovementControlMode.LOOK_RELATIVE
-    player.animationStance = "unarmed_stance"
-    player:SetWorldPosition(standPosition)
-    player.maxJumpCount = 1
-
-    --Wait 1 server frame to allow new network property to set
     Task.Wait()
+    if Object.IsValid(player) then
+        player.movementControlMode = MovementControlMode.LOOK_RELATIVE
+        player.animationStance = "unarmed_stance"
+        player.maxJumpCount = 1
+        Task.Wait()
+        if Object.IsValid(player) then
+            player:SetWorldPosition(standPosition)
+        end
+    end
 end
 
 function PickItemRandomly(player, betAmount, slotId)
@@ -148,7 +158,7 @@ function PickItemRandomly(player, betAmount, slotId)
         return
     end
     player:RemoveResource(RESOURCE_NAME, betAmount)
-    playerSpamPrevent[player] = time() + spinDuration + 0.1
+    playerSpamPrevent[player] = time() + spinDuration + 0.5
     local reelTotal = 0
     for _, item in ipairs(items) do
         reelTotal = reelTotal + item.chance
