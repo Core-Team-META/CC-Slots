@@ -90,6 +90,7 @@ local playSoundTime = 0
 local spinEndTime
 local winnerSoundHasPlayed = false
 local isWinner = false
+local isSoundPlaying = false
 local playerSpamPrevent
 local currentPlayerId, currentPlayer
 
@@ -350,7 +351,7 @@ function OnNetworkObjectAdded(parentObject, childObject) --
     winnerSoundHasPlayed = false
     slotSound = {false, false, false}
     BELL:Play()
-
+    isSoundPlaying = true
     local msg
     player.clientUserData.betAmount = results.b or MIN_BET
     local betAmount = player.clientUserData.betAmount
@@ -398,8 +399,11 @@ function Tick(dt)
         return
     end
     if time() > spinStartTime + SPIN_DURATION then
-        SLOT_SOUND:Stop()
-        BELL:Stop()
+        if isSoundPlaying then
+            SLOT_SOUND:Stop()
+            BELL:Stop()
+            isSoundPlaying = false
+        end
         return
     end
     for i = 1, 3 do
@@ -455,7 +459,7 @@ function OnNetworkChanged(object, string)
             currentPlayer.clientUserData.maxBet = MAX_BET
             Show()
         end
-      
+
         Events.Broadcast(API.Broadcasts.enableTriggers)
     elseif string == "data" then
         OnNetworkObjectAdded(_, object)
