@@ -97,7 +97,7 @@ function API.CheckWin(slot1, slot2, slot3, betAmount, items, odds)
     if slot1 == slot2 and slot2 == slot3 and not items[slot1].isWild then
         return true, CoreMath.Round(items[slot1].reward * betBonus)
     elseif items[slot1].isWild and slot1 == slot2 and slot2 == slot3 then
-        return true, CoreMath.Round(GetJackpotReward(odds) * betBonus)
+        return true, CoreMath.Round(items[slot1].reward * betBonus)
     elseif slot1 == slot2 and items[slot3].isWild then
         return true, CoreMath.Round(items[slot1].reward * betBonus)
     elseif slot2 == slot3 and items[slot1].isWild then
@@ -161,7 +161,7 @@ function API.CheckMultilineWin(vectorTable, betAmount, items, odds)
             if value then
                 reward = CoreMath.Round(reward + (betAmount * items[value].reward * pattern.multiplier))
             else -- 3 wilds; Jackpot!
-                reward = CoreMath.Round(reward + (GetJackpotReward(odds) * betAmount))
+                reward = CoreMath.Round(reward + (100 * pattern.multiplier * betAmount))
             end
             winningPatterns[index] = true
         end

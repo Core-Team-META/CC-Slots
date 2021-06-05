@@ -242,8 +242,9 @@ if IS_DEV_MODE then
     local totalSpins = 0
     local totalWins = 0
     local totalLoss = 0
-
-    for i = 1, 10000 do
+    local loopCount = 100000
+    local startTime = time()
+    for i = 1, loopCount do
         totalSpins = i
 
         local reelTotal = 0
@@ -266,6 +267,7 @@ if IS_DEV_MODE then
         if tempCount > 50 then
             Task.Wait()
             tempCount = 0
+            print(string.format("SLOT TESTING: = %.3f, Time Taken = %.1fs", CoreMath.Round(i/loopCount*100, 2), (time()-startTime)))
         end
     end
 

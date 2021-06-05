@@ -40,13 +40,6 @@ local UI_CONTAINER = script:GetCustomProperty("UIContainer"):WaitForObject()
 local LOOT_CARD_TEMPLATE = script:GetCustomProperty("LootCardTemplate")
 local SPIN_BUTTON = script:GetCustomProperty("SpinButton"):WaitForObject()
 local BACKGROUND = script:GetCustomProperty("Background"):WaitForObject()
-
-
---local SLOT_SOUND = script:GetCustomProperty("CashRegisterDrawerMechanismLockClose01SF"):WaitForObject()
---local WINNER_SOUND = script:GetCustomProperty("ChestCoinsOpening01SFX"):WaitForObject()
---local WINNING_LINES_AUDIO = script:GetCustomProperty("WinningLinesAudio"):WaitForObject() -- WIN_LINES_AUDIO
---local BELL = script:GetCustomProperty("DoorShopBellRing02SFX"):WaitForObject() -- SLOT_SPIN_SOUND
-
 local WIN_LINE_OBJECTS = script:GetCustomProperty("WinLinesObjects"):WaitForObject()
 local TRIGGER = script:GetCustomProperty("Trigger"):WaitForObject()
 
@@ -416,9 +409,9 @@ function OnSlotDataChanged(dataObject)
     isWinner, reward, winningPatterns = API.CheckMultilineWin(results, betAmount, items, ODDS)
 
     if isWinner then
-        msg = "Bet " .. tostring(betAmount) .. " and Won " .. tostring(reward)
+        msg = "Bet " .. API.FormatInt(betAmount) .. " and Won " .. API.FormatInt(reward)
     else
-        msg = "Bet " .. tostring(betAmount) .. " and Lost "
+        msg = "Bet " .. API.FormatInt(betAmount) .. " and Lost "
     end
 
     local animationCount = ROOT.clientUserData.animationCount
@@ -489,16 +482,14 @@ function Tick(dt)
 
     if time() > spinStartTime + SPIN_DURATION then
         if isSoundPlaying then
-            SLOT_SOUND:Stop()
             SLOT_SPIN_SOUND:Stop()
-            isSoundPlaying = false
         end
         return
     end
 
     for i = 1, 3 do
         local SPIN_DURATION = SPIN_DURATION - (3 - i + 0.5)
-        if not slotSound[i] then 
+        if time() > spinStartTime + SPIN_DURATION and not slotSound[i] then 
             SLOT_SOUND:Play()
             slotSound[i] = true
         end
@@ -515,6 +506,7 @@ function Tick(dt)
     if time() > playSoundTime then
         SLOT_SPIN_SOUND:Stop()
         SLOT_SOUND:Stop()
+        isSoundPlaying = false
         if not winnerSoundHasPlayed and isWinner then
             WINNER_SOUND:Play()
             isWinner = false

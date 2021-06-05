@@ -950,6 +950,10 @@ Objects {
           Rotator {
           }
         }
+        Overrides {
+          Name: "cs:IsDevMode"
+          Bool: false
+        }
       }
     }
     TemplateAsset {
@@ -1057,6 +1061,10 @@ Objects {
             Z: 1.2196
           }
         }
+        Overrides {
+          Name: "cs:IsDevMode"
+          Bool: false
+        }
       }
     }
     TemplateAsset {
@@ -1127,6 +1135,10 @@ Objects {
             Y: 1.2196
             Z: 1.2196
           }
+        }
+        Overrides {
+          Name: "cs:IsDevMode"
+          Bool: false
         }
       }
     }
@@ -1199,6 +1211,10 @@ Objects {
             Z: 1.2196
           }
         }
+        Overrides {
+          Name: "cs:IsDevMode"
+          Bool: false
+        }
       }
     }
     TemplateAsset {
@@ -1269,6 +1285,10 @@ Objects {
             Z: 1.2196
           }
         }
+        Overrides {
+          Name: "cs:IsDevMode"
+          Bool: false
+        }
       }
     }
     TemplateAsset {
@@ -1314,6 +1334,10 @@ Objects {
           Rotator {
             Yaw: 180
           }
+        }
+        Overrides {
+          Name: "cs:IsDevMode"
+          Bool: false
         }
       }
     }

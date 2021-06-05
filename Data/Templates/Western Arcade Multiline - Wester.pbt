@@ -51,6 +51,10 @@ Assets {
             Name: "cs:Odds"
             Float: 0.97
           }
+          Overrides {
+            Name: "cs:IsDevMode"
+            Bool: false
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
