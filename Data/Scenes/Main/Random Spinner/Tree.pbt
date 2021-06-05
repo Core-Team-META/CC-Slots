@@ -77,3 +77,125 @@ Objects {
     TemplateId: 14767819289351633414
   }
 }
+Objects {
+  Id: 8213634300051015868
+  Name: "SLOT_SETTINGS"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8453249901324603248
+  ChildIds: 15700233321063353003
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:EnableExitKeybind"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:ExitKeybind"
+      String: "ability_extra_12"
+    }
+    Overrides {
+      Name: "cs:isSpinBindEnabled"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:SpinKeybind"
+      String: "ability_extra_17"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 15700233321063353003
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8213634300051015868
+  ChildIds: 5182022870863701074
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 5182022870863701074
+  Name: "SlotKeybinds_Client"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15700233321063353003
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SLOT_SETTINGS"
+      ObjectReference {
+        SelfId: 8213634300051015868
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 1192095876455227119
+    }
+  }
+}
