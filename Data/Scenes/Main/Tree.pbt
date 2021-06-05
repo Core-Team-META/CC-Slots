@@ -15,9 +15,7 @@ Objects {
     }
   }
   ChildIds: 2016695731019551545
-  ChildIds: 17429109800966978246
-  ChildIds: 4752946518672690872
-  ChildIds: 11868088348151088341
+  ChildIds: 16394812562420525242
   ChildIds: 10029497814753878703
   ChildIds: 17390311630592559610
   ChildIds: 10615916000806978389
@@ -277,12 +275,12 @@ Objects {
   }
 }
 Objects {
-  Id: 11868088348151088341
-  Name: "Spawn Point"
+  Id: 16394812562420525242
+  Name: "Spawn Points"
   Transform {
     Location {
       X: -1078
-      Y: -729
+      Y: -717
       Z: 115
     }
     Rotation {
@@ -294,6 +292,41 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
+  ChildIds: 17429109800966978246
+  ChildIds: 4752946518672690872
+  ChildIds: 11868088348151088341
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 11868088348151088341
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      Y: -12
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16394812562420525242
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -315,9 +348,7 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      X: -1078
-      Y: -505
-      Z: 115
+      Y: 212
     }
     Rotation {
     }
@@ -327,7 +358,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4781671109827199097
+  ParentId: 16394812562420525242
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -349,9 +380,7 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      X: -1078
-      Y: -917
-      Z: 115
+      Y: -200
     }
     Rotation {
     }
@@ -361,7 +390,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4781671109827199097
+  ParentId: 16394812562420525242
   UnregisteredParameters {
   }
   Collidable_v2 {

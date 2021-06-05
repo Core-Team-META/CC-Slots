@@ -8,9 +8,8 @@
     This package is a work in progress.
 
        Description:
-    Meta Portal Slideshow is a simple component that allows creators to upload custom images that can
-    be used in their game to provide information to players, such as how to play, game updates, and item
-    showcasing. 
+    Meta Slots is a simple component that allows creators to add drag and drop Slot Machines to their projects.
+    Each Slot Machine probability can be tuned on a per Machine basis.
     
     
     Setup

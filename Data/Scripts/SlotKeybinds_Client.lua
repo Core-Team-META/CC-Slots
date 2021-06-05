@@ -52,6 +52,7 @@ function OnBindingPressed(player, keybind)
     local currentBet = player.clientUserData.betAmount
     local minBet = player.clientUserData.minBet
     local maxBet = player.clientUserData.maxBet
+    if not slotId then return end
     if keybind == exitKeybind and isExitBindEnabled then
         Events.BroadcastToServer(API.Broadcasts.quit, slotId)
     elseif keybind == spinKeybind and isSpinBindEnabled then
