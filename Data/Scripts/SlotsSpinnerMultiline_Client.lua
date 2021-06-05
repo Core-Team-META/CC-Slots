@@ -51,8 +51,6 @@ SLOT[1] = script:GetCustomProperty("Slot1"):WaitForObject()
 SLOT[2] = script:GetCustomProperty("Slot2"):WaitForObject()
 SLOT[3] = script:GetCustomProperty("Slot3"):WaitForObject()
 
-if not script:GetCustomProperty("Audio") then return end
-
 local AUDIO = script:GetCustomProperty("Audio"):WaitForObject()
 local SLOT_SOUND = AUDIO:GetCustomProperty("SlotSound"):WaitForObject()
 local WINNER_SOUND = AUDIO:GetCustomProperty("WinnerSound"):WaitForObject()
@@ -431,7 +429,7 @@ function OnSlotDataChanged(dataObject)
                 Task.Wait()
                 lastTask = API.DisplayWinLines(winLines, winningPatterns, cardFrames, cancelAnimation, winningLineAudio)
             else
-                local lossRand = 1--math.random(5)
+                local lossRand = math.random(5)
                 if lossRand == 1 then
                     LOSS_SOUND:Play()
                 end
