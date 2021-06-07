@@ -70,7 +70,7 @@ local SLOT_ID = SETTINGS.id
 local THEME_ID = SETTINGS:GetCustomProperty("Theme")
 local MIN_BET = SETTINGS:GetCustomProperty("MinBet") or 5
 local MAX_BET = SETTINGS:GetCustomProperty("MaxBet") or 100
-local ODDS = SETTINGS:GetCustomProperty("Odds")
+local ODDS = SETTINGS:GetCustomProperty("Efficiency")
 
 if not THEME_ID then
     warn("Theme refrence is missing")
@@ -427,6 +427,9 @@ function OnSlotDataChanged(dataObject)
                 end
                 Task.Wait()
                 lastTask = API.DisplayWinLines(winLines, winningPatterns, cardFrames, cancelAnimation, winningLineAudio)
+                if betAmount * 3 < reward then
+                    Chat.LocalMessage(player.name .. " Bet " .. API.FormatInt(betAmount) .. " and Won " .. API.FormatInt(reward))
+                end
             else
                 local lossRand = math.random(5)
                 if lossRand == 1 then

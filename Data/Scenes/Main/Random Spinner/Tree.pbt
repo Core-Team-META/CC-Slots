@@ -63,7 +63,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ExitKeybind"
-      String: "ability_feet"
+      String: "ability_extra_33"
     }
     Overrides {
       Name: "cs:isSpinBindEnabled"

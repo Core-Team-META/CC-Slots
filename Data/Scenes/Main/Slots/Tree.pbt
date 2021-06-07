@@ -209,18 +209,10 @@ Objects {
   Id: 12869286710620461237
   Name: "Slot_Example_FantasyTwo"
   Transform {
-    Location {
-      X: 1243
-      Y: -250
-      Z: -17
-    }
-    Rotation {
-      Yaw: 89.9999619
-    }
     Scale {
-      X: 1.2196
-      Y: 1.2196
-      Z: 1.2196
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 15934103657560976012
@@ -249,14 +241,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: 89.9999542
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.2196
-            Y: 1.2196
-            Z: 1.2196
           }
         }
       }
@@ -857,10 +841,6 @@ Objects {
             Yaw: -179.999969
           }
         }
-        Overrides {
-          Name: "cs:MaxBet"
-          Int: 500
-        }
       }
     }
     TemplateAsset {
@@ -1400,18 +1380,10 @@ Objects {
   Id: 12728168208728424995
   Name: "Slot_Example_Fantasy"
   Transform {
-    Location {
-      X: 250
-      Y: 286
-      Z: -17
-    }
-    Rotation {
-      Yaw: -179.999969
-    }
     Scale {
-      X: 1.2196
-      Y: 1.2196
-      Z: 1.2196
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 17410893842474904431
@@ -1440,14 +1412,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: -179.999954
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.2196
-            Y: 1.2196
-            Z: 1.2196
           }
         }
       }

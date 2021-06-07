@@ -59,24 +59,58 @@
     Adjusting Slot Machine Settings
     ===============================
 
-    1) Each slot machine can be adjusted independently with the custom properties right on the machine.
+    1. Each slot machine can be adjusted independently with the custom properties right on the machine.
 
-        Name - The name of the slot machine. This name will show up on the interactable trigger label.
+        1) Name - The name of the slot machine. This name will show up on the interactable trigger label.
         SpinDuration - Time in seconds that each spin will take to complete. This value should always be higher than 2.
 
-        DefaultSpinSpeed - How quickly the reels spin once a slot is played. Default is 10000.
+        2)DefaultSpinSpeed - How quickly the reels spin once a slot is played. Default is 10000.
 
-        ResourceName - The resource name that this machine both takes to play and pays out winnings in.
+        3) ResourceName - The resource name that this machine both takes to play and pays out winnings in.
 
-        MinBet - The minimum bet amount of the machine.
+        4) MinBet - The minimum bet amount of the machine.
 
-        MaxBet - The maximum bet amount of the machine.
+        5) MaxBet - The maximum bet amount of the machine.
 
-        Theme - The theme to use for this machine, should match a theme name under your SLOT_DATABASE.
+        6) Theme - The theme to use for this machine, should match a theme name under your SLOT_DATABASE.
 
-        Odds - The higher this value the more a machine will pay. 0.95 is default and means that the machine on average will pay out 95% of the bet amount over 1 million spins. This should never be set lower than 0.85 but has no upper limit cap.
+        7) Odds - The higher this value the more a machine will pay. 0.95 is default and means that the machine on average will payout 95% of the bet amount over 1 million spins. This should never be set lower than 0.85 but has no upper limit cap.
 
-        isDevMode - Used to test the odds of a machine over 100k spins. Once completed you'll get a printout of the total bet amount and total return based on your odds value of the machine. This should be left unchecked when publishing a game live.
+        8) isDevMode - Used to test the odds of a machine over 100k spins. Once completed you'll get a printout of the total bet amount and total return based on your odds value of the machine. This should be left unchecked when publishing a game live.
+
+
+    Changing The Slot Cabinet Art
+    =============================
+
+    All of the outside art of a slot machine can be found in the GEO Group, which is a child of the slot machine root.
+
+    Under the GEO group, you'll notice a few other children groups:
+        1) Buttons - Everything in the button group must remain normal context. The objects in this group should remain invisible but can be scaled and repositioned to line up with the art locations of the buttons on the cabinet. These objects are used to determine which object a player is
+        clicking on to perform the correct functionality of that button.
+
+        2) Chair - The chair art group is all the objects that make up the art of where the player will sit when playing a machine.
+
+        3) Cabinet - Is the group of object which makes up the entire out part of the slot machine.
+        
+        4) ClientContext - By default there will be a group named Text. This is where all the world text objects for the display will be. These can be repositioned
+        and scaled based on your art changes, but all text objects should remain for the machine to work properly.
+
+       
+    Payouts & Odds
+    ==============
+    
+    These slot machines are setup to allow creators to easily adjust how "efficent" the machines are. The higher the odds, the higher the payout players
+    will get over time.
+
+    Here are the multipliers and chances at a 1 proability. Adjusting the odds will never
+    Card 1 - 2x multiplier ([5.6%] 7/125 chance)
+    Card 2 - 3x multiplier ([5.6%] 7/125 chance)
+    Card 3 - 4x multiplier ([5.6%] 7/125 chance)
+    Card 4 - 5x multiplier ([5.6%] 7/125 chance)
+    Card 5 - 125x multiplier ([0.8%] 1/125 chance)
+
+    The higher this value the more a machine will pay. 0.95 is default and means that the machine on average will payout 95% 
+    of the bet amount over 1 million spins. This should never be set lower than 0.85 but has no upper limit cap.
 
 
     ]]--

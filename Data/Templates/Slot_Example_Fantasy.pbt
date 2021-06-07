@@ -48,7 +48,7 @@ Assets {
             String: "Fantasy"
           }
           Overrides {
-            Name: "cs:Odds"
+            Name: "cs:Efficiency"
             Float: 0.95
           }
           Overrides {
@@ -84,7 +84,7 @@ Assets {
             String: "The theme to use for this machine, should match a theme name under your SLOT_DATABASE."
           }
           Overrides {
-            Name: "cs:Odds:tooltip"
+            Name: "cs:Efficiency:tooltip"
             String: "The higher this value the more a machine will pay. 0.95 is default and means that the machine on average will payout 95% of the bet amount over 1 million spins. This should never be set lower than 0.85 but has no upper limit cap."
           }
           Overrides {
