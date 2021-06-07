@@ -85,15 +85,17 @@
     All of the outside art of a slot machine can be found in the GEO Group, which is a child of the slot machine root.
 
     Under the GEO group, you'll notice a few other children groups:
-        1) Buttons - Everything in the button group must remain normal context. The objects in this group should remain invisible but can be scaled and repositioned to line up with the art locations of the buttons on the cabinet. These objects are used to determine which object a player is
-        clicking on to perform the correct functionality of that button.
+        1) Buttons - Everything in the button group must remain normal context. The players need an unobstructed view of these objects so they can click 
+        on them; any objects that are in the way (like text on a button) need to have collision forced OFF. The machine searches for buttons by name, so 
+        just replace the geometry but leave the names the same.
 
         2) Chair - The chair art group is all the objects that make up the art of where the player will sit when playing a machine.
 
-        3) Cabinet - Is the group of object which makes up the entire out part of the slot machine.
+        3) Cabinet - Is the group of objects which makes up the main body of the slot machine. Edit the geometry in this group to customize the sides, base, and top of your machine.
         
         4) ClientContext - By default there will be a group named Text. This is where all the world text objects for the display will be. These can be repositioned
-        and scaled based on your art changes, but all text objects should remain for the machine to work properly.
+        and scaled based on your art changes, but all text objects should remain for the machine to work properly. You'll also find an audio group where you can customize
+        the various sounds that will play.
 
        
     Payouts & Odds
