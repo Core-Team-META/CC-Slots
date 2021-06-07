@@ -15,7 +15,7 @@ Assets {
             Z: 1.2196
           }
         }
-        ParentId: 17884978274586394764
+        ParentId: 4781671109827199097
         ChildIds: 13623700822853511447
         ChildIds: 16060375140157873604
         UnregisteredParameters {
@@ -4516,6 +4516,7 @@ Assets {
         ChildIds: 5248807297334061951
         ChildIds: 7723064768069189630
         ChildIds: 13585530162291610568
+        ChildIds: 17268204517977628666
         UnregisteredParameters {
           Overrides {
             Name: "cs:BetAmount"
@@ -34786,6 +34787,183 @@ Assets {
           }
         }
       }
+      Objects {
+        Id: 17268204517977628666
+        Name: "Collision"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Yaw: 1.70754683e-05
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 16060375140157873604
+        ChildIds: 315095308816998446
+        ChildIds: 11502421878707326309
+        ChildIds: 2728841712571909899
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 315095308816998446
+        Name: "Cube"
+        Transform {
+          Location {
+            X: -60
+            Y: -14.3826246
+            Z: 129.318695
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.0624379
+            Y: 1.3782717
+            Z: 2.35651159
+          }
+        }
+        ParentId: 17268204517977628666
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12095835209017042614
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 11502421878707326309
+        Name: "Cube"
+        Transform {
+          Location {
+            X: 60
+            Y: -14.3829584
+            Z: 129.318695
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.0624379
+            Y: 1.3782717
+            Z: 2.35651159
+          }
+        }
+        ParentId: 17268204517977628666
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12095835209017042614
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 2728841712571909899
+        Name: "Cube"
+        Transform {
+          Location {
+            X: 8.62662759e-08
+            Y: 54.2366753
+            Z: 12.4024858
+          }
+          Rotation {
+            Yaw: -179.999985
+          }
+          Scale {
+            X: 1.26564312
+            Y: 1.48650801
+            Z: 2.34808207
+          }
+        }
+        ParentId: 17268204517977628666
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 11680007328831169905
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
     }
     Assets {
       Id: 5091479968500547028
@@ -35568,6 +35746,15 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_cone_convex_001"
+      }
+    }
+    Assets {
+      Id: 11680007328831169905
+      Name: "Pipe - Half Thin"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_half-pipe_002"
       }
     }
     PrimaryAssetId {
