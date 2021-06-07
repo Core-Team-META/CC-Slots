@@ -1,22 +1,14 @@
 Assets {
-  Id: 18180075767226306503
+  Id: 18172640689484238194
   Name: "Custom Plastic Shiny"
   PlatformAssetType: 13
   SerializationVersion: 87
   CustomMaterialAsset {
-    BaseMaterialId: 6999580355068914447
+    BaseMaterialId: 18003819444288756248
     ParameterOverrides {
-      Overrides {
-        Name: "roughness"
-        Float: 0.212972507
-      }
-      Overrides {
-        Name: "specular"
-        Float: 0.253511101
-      }
     }
     Assets {
-      Id: 6999580355068914447
+      Id: 18003819444288756248
       Name: "Plastic Shiny"
       PlatformAssetType: 2
       PrimaryAsset {

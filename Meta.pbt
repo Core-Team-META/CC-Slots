@@ -1,5 +1,5 @@
-GameId: "DD20A219449FB3115D5EE09EDD9B92E9"
-DisplayName: "META-CC-Slots"
+GameId: "D91A96954017933EC611C28869A92C25"
+DisplayName: "Just for Fun Slots"
 GameSerializationVersion: 87
 Framework: "Empty Project"
 StorageVersion: 2

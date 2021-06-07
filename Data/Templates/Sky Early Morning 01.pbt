@@ -1,5 +1,5 @@
 Assets {
-  Id: 1317540556436720764
+  Id: 12946152654871554980
   Name: "Sky Early Morning 01"
   PlatformAssetType: 5
   TemplateAsset {
@@ -445,8 +445,8 @@ Assets {
       }
     }
     PrimaryAssetId {
-      AssetType: "None"
-      AssetId: "None"
+      AssetType: "TemplateAssetRef"
+      AssetId: "Sky_Early_Morning_01"
     }
   }
   SerializationVersion: 87

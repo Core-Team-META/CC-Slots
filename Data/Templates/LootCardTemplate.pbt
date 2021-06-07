@@ -243,7 +243,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 16048367406070731799
+            Id: 11727614885534704179
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -284,7 +284,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 13579516328657121992
+              Id: 12827530473249900764
             }
           }
           Overrides {
@@ -306,7 +306,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 16048367406070731799
+            Id: 11727614885534704179
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -347,7 +347,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 13579516328657121992
+              Id: 12827530473249900764
             }
           }
           Overrides {
@@ -368,7 +368,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 16048367406070731799
+            Id: 11727614885534704179
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -457,7 +457,7 @@ Assets {
       }
     }
     Assets {
-      Id: 16048367406070731799
+      Id: 11727614885534704179
       Name: "Plane 1m - One Sided"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -466,7 +466,7 @@ Assets {
       }
     }
     Assets {
-      Id: 13579516328657121992
+      Id: 12827530473249900764
       Name: "Emissive Glow Opaque"
       PlatformAssetType: 2
       PrimaryAsset {
@@ -481,15 +481,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_container_rectangle_thin_ref"
-      }
-    }
-    Assets {
-      Id: 12827530473249900764
-      Name: "Emissive Glow Opaque"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "fxma_opaque_emissive"
       }
     }
     PrimaryAssetId {

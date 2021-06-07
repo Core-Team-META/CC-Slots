@@ -1,7 +1,7 @@
 Name: "LOOT_DATABASE"
-RootId: 15731411049758782096
+RootId: 13519767694741241022
 Objects {
-  Id: 8365047624407704376
+  Id: 5471302908209041525
   Name: "Buck-Fantasy"
   Transform {
     Location {
@@ -14,12 +14,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15731411049758782096
-  ChildIds: 8376971376309966603
-  ChildIds: 1661259714931865609
-  ChildIds: 10152256625515492291
-  ChildIds: 15271009986669024193
-  ChildIds: 7793863567081363629
+  ParentId: 13519767694741241022
+  ChildIds: 16376442030349775430
+  ChildIds: 7963174960840134941
+  ChildIds: 4871301254613895185
+  ChildIds: 14312299998828097535
+  ChildIds: 14602672980412455597
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -40,7 +40,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7793863567081363629
+  Id: 14602672980412455597
   Name: "Wild"
   Transform {
     Location {
@@ -53,7 +53,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8365047624407704376
+  ParentId: 5471302908209041525
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -93,7 +93,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15271009986669024193
+  Id: 14312299998828097535
   Name: "Queen"
   Transform {
     Location {
@@ -106,7 +106,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8365047624407704376
+  ParentId: 5471302908209041525
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -146,7 +146,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10152256625515492291
+  Id: 4871301254613895185
   Name: "King"
   Transform {
     Location {
@@ -159,7 +159,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8365047624407704376
+  ParentId: 5471302908209041525
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -199,7 +199,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1661259714931865609
+  Id: 7963174960840134941
   Name: "Gem"
   Transform {
     Location {
@@ -212,7 +212,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8365047624407704376
+  ParentId: 5471302908209041525
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -252,7 +252,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8376971376309966603
+  Id: 16376442030349775430
   Name: "Chest"
   Transform {
     Location {
@@ -265,7 +265,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8365047624407704376
+  ParentId: 5471302908209041525
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -305,7 +305,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7647335739835841594
+  Id: 16121364927538973624
   Name: "Zombie"
   Transform {
     Location {
@@ -318,12 +318,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15731411049758782096
-  ChildIds: 6686724119974934669
-  ChildIds: 3073856546085083686
-  ChildIds: 15145024720497752356
-  ChildIds: 11044058015976579106
-  ChildIds: 7161508860517814270
+  ParentId: 13519767694741241022
+  ChildIds: 7475167939196949894
+  ChildIds: 6623617887572395905
+  ChildIds: 17710334152869806045
+  ChildIds: 10717129138232004811
+  ChildIds: 2429057508614817721
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -344,7 +344,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7161508860517814270
+  Id: 2429057508614817721
   Name: "Wild"
   Transform {
     Location {
@@ -357,7 +357,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7647335739835841594
+  ParentId: 16121364927538973624
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -397,7 +397,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11044058015976579106
+  Id: 10717129138232004811
   Name: "Tombstone"
   Transform {
     Location {
@@ -410,7 +410,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7647335739835841594
+  ParentId: 16121364927538973624
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -450,7 +450,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15145024720497752356
+  Id: 17710334152869806045
   Name: "Skull"
   Transform {
     Location {
@@ -463,7 +463,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7647335739835841594
+  ParentId: 16121364927538973624
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -503,7 +503,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3073856546085083686
+  Id: 6623617887572395905
   Name: "Zombie"
   Transform {
     Location {
@@ -516,7 +516,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7647335739835841594
+  ParentId: 16121364927538973624
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -556,7 +556,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6686724119974934669
+  Id: 7475167939196949894
   Name: "Eye"
   Transform {
     Location {
@@ -569,7 +569,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7647335739835841594
+  ParentId: 16121364927538973624
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -609,7 +609,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6621354674108294387
+  Id: 1060410729774232003
   Name: "Mecha"
   Transform {
     Location {
@@ -622,12 +622,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15731411049758782096
-  ChildIds: 3303426073850194395
-  ChildIds: 11873964395042596340
-  ChildIds: 5471979388919913813
-  ChildIds: 12268506455633087668
-  ChildIds: 3976492022520028336
+  ParentId: 13519767694741241022
+  ChildIds: 12328383309112001572
+  ChildIds: 1120673940908096756
+  ChildIds: 7717098950487941131
+  ChildIds: 12409516255920457286
+  ChildIds: 4911037977991791894
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -648,7 +648,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3976492022520028336
+  Id: 4911037977991791894
   Name: "Wild"
   Transform {
     Location {
@@ -661,7 +661,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6621354674108294387
+  ParentId: 1060410729774232003
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -701,7 +701,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12268506455633087668
+  Id: 12409516255920457286
   Name: "Yellow"
   Transform {
     Location {
@@ -714,7 +714,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6621354674108294387
+  ParentId: 1060410729774232003
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -754,7 +754,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5471979388919913813
+  Id: 7717098950487941131
   Name: "Red"
   Transform {
     Location {
@@ -767,7 +767,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6621354674108294387
+  ParentId: 1060410729774232003
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -807,7 +807,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11873964395042596340
+  Id: 1120673940908096756
   Name: "Green"
   Transform {
     Location {
@@ -820,7 +820,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6621354674108294387
+  ParentId: 1060410729774232003
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -860,7 +860,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3303426073850194395
+  Id: 12328383309112001572
   Name: "Blue"
   Transform {
     Location {
@@ -873,7 +873,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6621354674108294387
+  ParentId: 1060410729774232003
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -913,7 +913,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13369307155453144019
+  Id: 17892716254540177506
   Name: "Western"
   Transform {
     Location {
@@ -926,12 +926,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15731411049758782096
-  ChildIds: 6542199558000776882
-  ChildIds: 10663232824147714583
-  ChildIds: 12651687459304050248
-  ChildIds: 15330714015554345901
-  ChildIds: 6997638639913758533
+  ParentId: 13519767694741241022
+  ChildIds: 6612227787312034379
+  ChildIds: 4732928245043362713
+  ChildIds: 17120426344591845170
+  ChildIds: 5151073142894910404
+  ChildIds: 11630287552686692095
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -952,7 +952,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6997638639913758533
+  Id: 11630287552686692095
   Name: "Wild Sheriff"
   Transform {
     Location {
@@ -965,7 +965,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13369307155453144019
+  ParentId: 17892716254540177506
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -1005,7 +1005,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15330714015554345901
+  Id: 5151073142894910404
   Name: "Guns"
   Transform {
     Location {
@@ -1018,7 +1018,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13369307155453144019
+  ParentId: 17892716254540177506
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -1058,7 +1058,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12651687459304050248
+  Id: 17120426344591845170
   Name: "Canteen"
   Transform {
     Location {
@@ -1071,7 +1071,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13369307155453144019
+  ParentId: 17892716254540177506
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -1111,7 +1111,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10663232824147714583
+  Id: 4732928245043362713
   Name: "Cactus"
   Transform {
     Location {
@@ -1124,7 +1124,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13369307155453144019
+  ParentId: 17892716254540177506
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -1164,7 +1164,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6542199558000776882
+  Id: 6612227787312034379
   Name: "Boot"
   Transform {
     Location {
@@ -1177,7 +1177,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13369307155453144019
+  ParentId: 17892716254540177506
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -1217,7 +1217,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7473400578529862095
+  Id: 7049399187342158459
   Name: "Fantasy"
   Transform {
     Location {
@@ -1230,12 +1230,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15731411049758782096
-  ChildIds: 8410202557342804492
-  ChildIds: 10448147829685158695
-  ChildIds: 488921751199016233
-  ChildIds: 16818770501762086399
-  ChildIds: 1368976056536936589
+  ParentId: 13519767694741241022
+  ChildIds: 5876864608569645151
+  ChildIds: 12489588213352118665
+  ChildIds: 3874713096382423117
+  ChildIds: 11837221837337646705
+  ChildIds: 7827600151697152410
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1256,7 +1256,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1368976056536936589
+  Id: 7827600151697152410
   Name: "Wild"
   Transform {
     Location {
@@ -1269,7 +1269,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7473400578529862095
+  ParentId: 7049399187342158459
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -1309,7 +1309,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16818770501762086399
+  Id: 11837221837337646705
   Name: "Yellow Gem"
   Transform {
     Location {
@@ -1322,7 +1322,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7473400578529862095
+  ParentId: 7049399187342158459
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -1362,7 +1362,7 @@ Objects {
   }
 }
 Objects {
-  Id: 488921751199016233
+  Id: 3874713096382423117
   Name: "Purple Gem"
   Transform {
     Location {
@@ -1375,7 +1375,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7473400578529862095
+  ParentId: 7049399187342158459
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -1415,7 +1415,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10448147829685158695
+  Id: 12489588213352118665
   Name: "Green Gem"
   Transform {
     Location {
@@ -1428,7 +1428,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7473400578529862095
+  ParentId: 7049399187342158459
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -1468,7 +1468,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8410202557342804492
+  Id: 5876864608569645151
   Name: "Blue Gem"
   Transform {
     Location {
@@ -1481,7 +1481,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7473400578529862095
+  ParentId: 7049399187342158459
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"

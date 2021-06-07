@@ -1,10 +1,12 @@
 Name: "Slots"
-RootId: 3877198441100997701
+RootId: 11015758868250873186
 Objects {
-  Id: 15934103657560976012
+  Id: 8283137827890075678
   Name: "Buck Fantasy"
   Transform {
     Location {
+      X: 155.094681
+      Y: 47.2167435
     }
     Rotation {
     }
@@ -14,11 +16,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3877198441100997701
-  ChildIds: 12869286710620461237
-  ChildIds: 17712757986320255644
-  ChildIds: 11069690143478341463
-  ChildIds: 15856415595670808555
+  ParentId: 11015758868250873186
+  ChildIds: 10233064154535263464
+  ChildIds: 12661043280865044973
+  ChildIds: 15340056498370645956
+  ChildIds: 8315798397155192426
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -36,7 +38,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15856415595670808555
+  Id: 8315798397155192426
   Name: "Slot_Example_FantasyTwo"
   Transform {
     Location {
@@ -53,7 +55,7 @@ Objects {
       Z: 1.2196
     }
   }
-  ParentId: 15934103657560976012
+  ParentId: 8283137827890075678
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -98,7 +100,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11069690143478341463
+  Id: 15340056498370645956
   Name: "Slot_Example_FantasyTwo"
   Transform {
     Location {
@@ -115,7 +117,7 @@ Objects {
       Z: 1.2196
     }
   }
-  ParentId: 15934103657560976012
+  ParentId: 8283137827890075678
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -160,7 +162,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17712757986320255644
+  Id: 12661043280865044973
   Name: "Slot_Example_FantasyTwo"
   Transform {
     Scale {
@@ -169,7 +171,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15934103657560976012
+  ParentId: 8283137827890075678
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -206,7 +208,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12869286710620461237
+  Id: 10233064154535263464
   Name: "Slot_Example_FantasyTwo"
   Transform {
     Scale {
@@ -215,7 +217,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15934103657560976012
+  ParentId: 8283137827890075678
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -251,10 +253,12 @@ Objects {
   }
 }
 Objects {
-  Id: 17884978274586394764
+  Id: 5113923728842276450
   Name: "Western"
   Transform {
     Location {
+      X: -1.20215682e-05
+      Y: -50.4220886
     }
     Rotation {
     }
@@ -264,12 +268,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3877198441100997701
-  ChildIds: 3716852925833434893
-  ChildIds: 302470114529794884
-  ChildIds: 7740611319307120945
-  ChildIds: 14406190756754920308
-  ChildIds: 14532999005600221318
+  ParentId: 11015758868250873186
+  ChildIds: 4331037309206921444
+  ChildIds: 11545912015487306971
+  ChildIds: 4109079038710358561
+  ChildIds: 15776842722677941353
+  ChildIds: 9609480109070572853
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -287,7 +291,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14532999005600221318
+  Id: 9609480109070572853
   Name: "Slot_Example_Western"
   Transform {
     Location {
@@ -303,7 +307,7 @@ Objects {
       Z: 1.2196
     }
   }
-  ParentId: 17884978274586394764
+  ParentId: 5113923728842276450
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -347,7 +351,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14406190756754920308
+  Id: 15776842722677941353
   Name: "Slot_Example_Western"
   Transform {
     Location {
@@ -363,7 +367,7 @@ Objects {
       Z: 1.2196
     }
   }
-  ParentId: 17884978274586394764
+  ParentId: 5113923728842276450
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -407,7 +411,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7740611319307120945
+  Id: 4109079038710358561
   Name: "Slot_Example_Western"
   Transform {
     Location {
@@ -423,7 +427,7 @@ Objects {
       Z: 1.2196
     }
   }
-  ParentId: 17884978274586394764
+  ParentId: 5113923728842276450
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -467,7 +471,7 @@ Objects {
   }
 }
 Objects {
-  Id: 302470114529794884
+  Id: 11545912015487306971
   Name: "Slot_Example_Western"
   Transform {
     Location {
@@ -482,7 +486,7 @@ Objects {
       Z: 1.2196
     }
   }
-  ParentId: 17884978274586394764
+  ParentId: 5113923728842276450
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -526,7 +530,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3716852925833434893
+  Id: 4331037309206921444
   Name: "Slot_Example_Western"
   Transform {
     Scale {
@@ -535,7 +539,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17884978274586394764
+  ParentId: 5113923728842276450
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -570,7 +574,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8704132432388920203
+  Id: 6646168769655555710
   Name: "Zombie"
   Transform {
     Location {
@@ -583,11 +587,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3877198441100997701
-  ChildIds: 17950749890420406932
-  ChildIds: 14438516007720439653
-  ChildIds: 13822518499740911800
-  ChildIds: 16861507344506140443
+  ParentId: 11015758868250873186
+  ChildIds: 17012203387898888055
+  ChildIds: 17096669054017545036
+  ChildIds: 5687939177770764797
+  ChildIds: 3889430760348668065
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -605,7 +609,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16861507344506140443
+  Id: 3889430760348668065
   Name: "Slot_Example_Zombie"
   Transform {
     Location {
@@ -622,7 +626,7 @@ Objects {
       Z: 1.2196
     }
   }
-  ParentId: 8704132432388920203
+  ParentId: 6646168769655555710
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -671,7 +675,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13822518499740911800
+  Id: 5687939177770764797
   Name: "Slot_Example_Zombie"
   Transform {
     Location {
@@ -688,7 +692,7 @@ Objects {
       Z: 1.2196
     }
   }
-  ParentId: 8704132432388920203
+  ParentId: 6646168769655555710
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -737,7 +741,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14438516007720439653
+  Id: 17096669054017545036
   Name: "Slot_Example_Zombie"
   Transform {
     Location {
@@ -754,7 +758,7 @@ Objects {
       Z: 1.2196
     }
   }
-  ParentId: 8704132432388920203
+  ParentId: 6646168769655555710
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -803,7 +807,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17950749890420406932
+  Id: 17012203387898888055
   Name: "Slot_Example_Zombie"
   Transform {
     Scale {
@@ -812,7 +816,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8704132432388920203
+  ParentId: 6646168769655555710
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -849,7 +853,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11546936440891399579
+  Id: 7139027865005868317
   Name: "Mecha"
   Transform {
     Location {
@@ -862,11 +866,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3877198441100997701
-  ChildIds: 952876764608589421
-  ChildIds: 5608105679873340946
-  ChildIds: 12770848679975419308
-  ChildIds: 9167091273643547888
+  ParentId: 11015758868250873186
+  ChildIds: 16725370796367225901
+  ChildIds: 11866458498331876039
+  ChildIds: 1197164006411042638
+  ChildIds: 15126340750978013081
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -884,7 +888,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9167091273643547888
+  Id: 15126340750978013081
   Name: "Slot_Example_Mecha"
   Transform {
     Location {
@@ -900,7 +904,7 @@ Objects {
       Z: 1.2196
     }
   }
-  ParentId: 11546936440891399579
+  ParentId: 7139027865005868317
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -944,7 +948,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12770848679975419308
+  Id: 1197164006411042638
   Name: "Slot_Example_Mecha"
   Transform {
     Scale {
@@ -953,7 +957,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11546936440891399579
+  ParentId: 7139027865005868317
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -989,7 +993,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5608105679873340946
+  Id: 11866458498331876039
   Name: "Slot_Example_Mecha"
   Transform {
     Location {
@@ -1005,7 +1009,7 @@ Objects {
       Z: 1.2196
     }
   }
-  ParentId: 11546936440891399579
+  ParentId: 7139027865005868317
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1041,7 +1045,7 @@ Objects {
   }
 }
 Objects {
-  Id: 952876764608589421
+  Id: 16725370796367225901
   Name: "Slot_Example_Mecha"
   Transform {
     Scale {
@@ -1050,7 +1054,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11546936440891399579
+  ParentId: 7139027865005868317
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1086,10 +1090,12 @@ Objects {
   }
 }
 Objects {
-  Id: 17410893842474904431
+  Id: 1173775633743769260
   Name: "Fantasy"
   Transform {
     Location {
+      X: 2.57885222e-05
+      Y: 108.164856
     }
     Rotation {
     }
@@ -1099,12 +1105,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3877198441100997701
-  ChildIds: 12728168208728424995
-  ChildIds: 8184748237123411684
-  ChildIds: 2156259878144196160
-  ChildIds: 3536269773774991252
-  ChildIds: 7160508178915070388
+  ParentId: 11015758868250873186
+  ChildIds: 17377518660657647967
+  ChildIds: 14626834470818250967
+  ChildIds: 7294293114322185531
+  ChildIds: 13187319183457016603
+  ChildIds: 7056623881494744330
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1122,7 +1128,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7160508178915070388
+  Id: 7056623881494744330
   Name: "Slot_Example_Fantasy"
   Transform {
     Location {
@@ -1139,7 +1145,7 @@ Objects {
       Z: 1.2196
     }
   }
-  ParentId: 17410893842474904431
+  ParentId: 1173775633743769260
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1176,7 +1182,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3536269773774991252
+  Id: 13187319183457016603
   Name: "Slot_Example_Fantasy"
   Transform {
     Location {
@@ -1193,7 +1199,7 @@ Objects {
       Z: 1.2196
     }
   }
-  ParentId: 17410893842474904431
+  ParentId: 1173775633743769260
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1230,7 +1236,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2156259878144196160
+  Id: 7294293114322185531
   Name: "Slot_Example_Fantasy"
   Transform {
     Location {
@@ -1247,7 +1253,7 @@ Objects {
       Z: 1.2196
     }
   }
-  ParentId: 17410893842474904431
+  ParentId: 1173775633743769260
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1284,7 +1290,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8184748237123411684
+  Id: 14626834470818250967
   Name: "Slot_Example_Fantasy"
   Transform {
     Scale {
@@ -1293,7 +1299,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17410893842474904431
+  ParentId: 1173775633743769260
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1330,7 +1336,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12728168208728424995
+  Id: 17377518660657647967
   Name: "Slot_Example_Fantasy"
   Transform {
     Scale {
@@ -1339,7 +1345,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17410893842474904431
+  ParentId: 1173775633743769260
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

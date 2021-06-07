@@ -4,7 +4,7 @@ Assets {
   PlatformAssetType: 13
   SerializationVersion: 87
   CustomMaterialAsset {
-    BaseMaterialId: 3303642670326605352
+    BaseMaterialId: 17495849712821189076
     ParameterOverrides {
       Overrides {
         Name: "color"
@@ -45,7 +45,7 @@ Assets {
       }
     }
     Assets {
-      Id: 3303642670326605352
+      Id: 17495849712821189076
       Name: "Bark Dead 01"
       PlatformAssetType: 2
       PrimaryAsset {

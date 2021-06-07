@@ -1,7 +1,7 @@
 Name: "Random Spinner"
-RootId: 2357391506206219164
+RootId: 9520895537555292491
 Objects {
-  Id: 13505434300183323837
+  Id: 12441866892890682402
   Name: "SLOT_NETWORKING"
   Transform {
     Location {
@@ -17,7 +17,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2357391506206219164
+  ParentId: 9520895537555292491
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -41,7 +41,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12363205181505265280
+  Id: 2701740524036946921
   Name: "SLOT_SETTINGS"
   Transform {
     Location {
@@ -54,8 +54,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2357391506206219164
-  ChildIds: 2196935556974636016
+  ParentId: 9520895537555292491
+  ChildIds: 8957884646113244895
   UnregisteredParameters {
     Overrides {
       Name: "cs:EnableExitKeybind"
@@ -97,7 +97,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2196935556974636016
+  Id: 8957884646113244895
   Name: "ClientContext"
   Transform {
     Location {
@@ -110,8 +110,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12363205181505265280
-  ChildIds: 11623442232203376204
+  ParentId: 2701740524036946921
+  ChildIds: 3778618165365478427
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -134,7 +134,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11623442232203376204
+  Id: 3778618165365478427
   Name: "SlotKeybinds_Client"
   Transform {
     Location {
@@ -147,12 +147,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2196935556974636016
+  ParentId: 8957884646113244895
   UnregisteredParameters {
     Overrides {
       Name: "cs:SLOT_SETTINGS"
       ObjectReference {
-        SelfId: 12363205181505265280
+        SelfId: 2701740524036946921
       }
     }
   }
@@ -181,7 +181,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15731411049758782096
+  Id: 13519767694741241022
   Name: "SLOT_DATABASE"
   Transform {
     Location {
@@ -194,7 +194,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2357391506206219164
+  ParentId: 9520895537555292491
   UnregisteredParameters {
   }
   Collidable_v2 {

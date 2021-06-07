@@ -1,7 +1,7 @@
 Name: "Bens"
-RootId: 2669417942466758110
+RootId: 1112741518303356345
 Objects {
-  Id: 14428244499954927343
+  Id: 159337430982797704
   Name: "Audio"
   Transform {
     Location {
@@ -14,15 +14,15 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2669417942466758110
-  ChildIds: 7091927795600661269
-  ChildIds: 7139255667491452563
-  ChildIds: 8488943015675408838
-  ChildIds: 1977088044939697698
-  ChildIds: 5291635600436413331
-  ChildIds: 9146863772229897293
-  ChildIds: 2244921487039929985
-  ChildIds: 12280786718736551635
+  ParentId: 1112741518303356345
+  ChildIds: 13647136961547702591
+  ChildIds: 16404487036691811157
+  ChildIds: 17210998720109422134
+  ChildIds: 14054810629397884341
+  ChildIds: 11992317047792255492
+  ChildIds: 14505846388523122675
+  ChildIds: 11492959217776003350
+  ChildIds: 10761063550485395976
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -40,7 +40,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12280786718736551635
+  Id: 10761063550485395976
   Name: "Creature Beast Snarl 01 SFX"
   Transform {
     Location {
@@ -56,7 +56,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14428244499954927343
+  ParentId: 159337430982797704
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -80,7 +80,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2244921487039929985
+  Id: 11492959217776003350
   Name: "Sci-fi Gated Slow Power Down 01 SFX"
   Transform {
     Location {
@@ -97,7 +97,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14428244499954927343
+  ParentId: 159337430982797704
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -122,7 +122,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9146863772229897293
+  Id: 14505846388523122675
   Name: "Combo Achievement Bright Happy Shine Stingers Set 01 SFX"
   Transform {
     Location {
@@ -135,7 +135,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14428244499954927343
+  ParentId: 159337430982797704
   UnregisteredParameters {
     Overrides {
       Name: "bp:Type"
@@ -172,7 +172,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5291635600436413331
+  Id: 11992317047792255492
   Name: "Win Positive Coins 01 SFX"
   Transform {
     Location {
@@ -185,7 +185,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14428244499954927343
+  ParentId: 159337430982797704
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -210,7 +210,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1977088044939697698
+  Id: 14054810629397884341
   Name: "Meta Fantasy Treasure 01 SFX"
   Transform {
     Location {
@@ -223,7 +223,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14428244499954927343
+  ParentId: 159337430982797704
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -248,7 +248,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8488943015675408838
+  Id: 17210998720109422134
   Name: "Game Coin Win 02 SFX"
   Transform {
     Location {
@@ -261,7 +261,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14428244499954927343
+  ParentId: 159337430982797704
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -286,7 +286,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7139255667491452563
+  Id: 16404487036691811157
   Name: "Game Coin Win 01 SFX"
   Transform {
     Location {
@@ -299,7 +299,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14428244499954927343
+  ParentId: 159337430982797704
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -324,7 +324,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7091927795600661269
+  Id: 13647136961547702591
   Name: "Cash Register Purchase Deep Boomy 01 SFX"
   Transform {
     Location {
@@ -337,7 +337,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14428244499954927343
+  ParentId: 159337430982797704
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -362,7 +362,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17584980194838302842
+  Id: 4139260569799571644
   Name: "WinLinesTest"
   Transform {
     Location {
@@ -375,7 +375,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2669417942466758110
+  ParentId: 1112741518303356345
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

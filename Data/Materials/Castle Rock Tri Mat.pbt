@@ -9,7 +9,7 @@ Assets {
       Overrides {
         Name: "cmp:Top"
         AssetReference {
-          Id: 8529631197165445519
+          Id: 15306341340739034482
         }
       }
       Overrides {
@@ -27,7 +27,7 @@ Assets {
       }
     }
     Assets {
-      Id: 8529631197165445519
+      Id: 15306341340739034482
       Name: "Moss 01"
       PlatformAssetType: 2
       PrimaryAsset {

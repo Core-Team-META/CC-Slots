@@ -4,7 +4,7 @@ Assets {
   PlatformAssetType: 13
   SerializationVersion: 87
   CustomMaterialAsset {
-    BaseMaterialId: 14231809728886464860
+    BaseMaterialId: 7034271320763119631
     ParameterOverrides {
       Overrides {
         Name: "material_scale"
@@ -29,7 +29,7 @@ Assets {
       }
     }
     Assets {
-      Id: 14231809728886464860
+      Id: 7034271320763119631
       Name: "Wood Raw White"
       PlatformAssetType: 2
       PrimaryAsset {

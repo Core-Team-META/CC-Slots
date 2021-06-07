@@ -1,7 +1,7 @@
 Name: "Brents"
-RootId: 4675025735314061901
+RootId: 7337720340771964563
 Objects {
-  Id: 4839566590110050637
+  Id: 3323974609073615372
   Name: "Mount "
   Transform {
     Location {
@@ -14,8 +14,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4675025735314061901
-  ChildIds: 3713550051729585747
+  ParentId: 7337720340771964563
+  ChildIds: 10211648021867234568
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -33,7 +33,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3713550051729585747
+  Id: 10211648021867234568
   Name: "MountTrigger"
   Transform {
     Location {
@@ -49,8 +49,8 @@ Objects {
       Z: 14
     }
   }
-  ParentId: 4839566590110050637
-  ChildIds: 16006975102621760708
+  ParentId: 3323974609073615372
+  ChildIds: 8540667704996498538
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -74,7 +74,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16006975102621760708
+  Id: 8540667704996498538
   Name: "MountStopper"
   Transform {
     Location {
@@ -87,7 +87,7 @@ Objects {
       Z: 0.0714285746
     }
   }
-  ParentId: 3713550051729585747
+  ParentId: 10211648021867234568
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -107,7 +107,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15254095453415006981
+  Id: 13148650437758193700
   Name: "ClientContext"
   Transform {
     Location {
@@ -120,10 +120,10 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4675025735314061901
-  ChildIds: 12763635413446526155
-  ChildIds: 3995736805583456395
-  ChildIds: 11420464408199061256
+  ParentId: 7337720340771964563
+  ChildIds: 8064372967586224493
+  ChildIds: 2663610794903378448
+  ChildIds: 181907543588742133
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -140,7 +140,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11420464408199061256
+  Id: 181907543588742133
   Name: "Slot_Currency_Client"
   Transform {
     Location {
@@ -153,12 +153,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15254095453415006981
+  ParentId: 13148650437758193700
   UnregisteredParameters {
     Overrides {
       Name: "cs:CurrencyText"
       ObjectReference {
-        SelfId: 18351987879084397239
+        SelfId: 9101574194077978483
       }
     }
     Overrides {
@@ -187,7 +187,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3995736805583456395
+  Id: 2663610794903378448
   Name: "UI Container"
   Transform {
     Location {
@@ -200,9 +200,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15254095453415006981
-  ChildIds: 10647283777647323697
-  ChildIds: 999369360578734033
+  ParentId: 13148650437758193700
+  ChildIds: 13447980642759333199
+  ChildIds: 11480273833919225798
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -242,7 +242,7 @@ Objects {
   }
 }
 Objects {
-  Id: 999369360578734033
+  Id: 11480273833919225798
   Name: "Tutorial"
   Transform {
     Location {
@@ -255,12 +255,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3995736805583456395
-  ChildIds: 15458835040582070438
-  ChildIds: 2884573074155163926
-  ChildIds: 17212618560504958036
-  ChildIds: 5487949017941776855
-  ChildIds: 9745898323553016396
+  ParentId: 2663610794903378448
+  ChildIds: 5286785431577533180
+  ChildIds: 3189042939307775380
+  ChildIds: 15045999157886040888
+  ChildIds: 14700053486878727195
+  ChildIds: 17233618799023401213
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -299,7 +299,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9745898323553016396
+  Id: 17233618799023401213
   Name: "Machine buttons"
   Transform {
     Location {
@@ -312,7 +312,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 999369360578734033
+  ParentId: 11480273833919225798
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -376,7 +376,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5487949017941776855
+  Id: 14700053486878727195
   Name: "Toggle payout info"
   Transform {
     Location {
@@ -389,7 +389,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 999369360578734033
+  ParentId: 11480273833919225798
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -453,7 +453,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17212618560504958036
+  Id: 15045999157886040888
   Name: "Spin Text"
   Transform {
     Location {
@@ -466,7 +466,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 999369360578734033
+  ParentId: 11480273833919225798
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -530,7 +530,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2884573074155163926
+  Id: 3189042939307775380
   Name: "Enter Machine Text"
   Transform {
     Location {
@@ -543,7 +543,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 999369360578734033
+  ParentId: 11480273833919225798
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -607,7 +607,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15458835040582070438
+  Id: 5286785431577533180
   Name: "Background"
   Transform {
     Location {
@@ -620,7 +620,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 999369360578734033
+  ParentId: 11480273833919225798
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -672,7 +672,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10647283777647323697
+  Id: 13447980642759333199
   Name: "Currency Panel"
   Transform {
     Location {
@@ -685,10 +685,10 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3995736805583456395
-  ChildIds: 16613958894533793339
-  ChildIds: 4924663426914347460
-  ChildIds: 18351987879084397239
+  ParentId: 2663610794903378448
+  ChildIds: 4175747447027970102
+  ChildIds: 17104132677490374863
+  ChildIds: 9101574194077978483
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -727,7 +727,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18351987879084397239
+  Id: 9101574194077978483
   Name: "Currency Text"
   Transform {
     Location {
@@ -740,7 +740,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10647283777647323697
+  ParentId: 13447980642759333199
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -803,7 +803,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4924663426914347460
+  Id: 17104132677490374863
   Name: "UI Image"
   Transform {
     Location {
@@ -816,7 +816,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10647283777647323697
+  ParentId: 13447980642759333199
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -871,7 +871,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16613958894533793339
+  Id: 4175747447027970102
   Name: "UI Image"
   Transform {
     Location {
@@ -884,7 +884,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10647283777647323697
+  ParentId: 13447980642759333199
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -936,7 +936,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12763635413446526155
+  Id: 8064372967586224493
   Name: "SlotTriggerManager_Client"
   Transform {
     Location {
@@ -949,15 +949,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15254095453415006981
+  ParentId: 13148650437758193700
   UnregisteredParameters {
     Overrides {
       Name: "cs:Networking"
       ObjectReference {
-        SelfId: 13505434300183323837
-        SubObjectId: 6296637947646741831
-        InstanceId: 15814154774213744170
-        TemplateId: 6894717358296652576
+        SelfId: 12441866892890682402
       }
     }
     Overrides {
@@ -986,7 +983,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7152836542363496704
+  Id: 9517345123198913917
   Name: "SlotsPlayerManagerMultiline_Server"
   Transform {
     Location {
@@ -1003,7 +1000,7 @@ Objects {
       Z: 1.2196
     }
   }
-  ParentId: 4675025735314061901
+  ParentId: 7337720340771964563
   UnregisteredParameters {
   }
   Collidable_v2 {
