@@ -20,7 +20,7 @@ Assets {
       }
       Overrides {
         Name: "glow intensity"
-        Float: 20.2495785
+        Float: 4.6776886
       }
       Overrides {
         Name: "specular rolloff"

@@ -31,7 +31,8 @@ API.Broadcasts = {
     disableSlotButton = "RSS_DisableSlot",
     playSlot = "RSS_Sit",
     disableTriggers = "RSS_DisableTrigger",
-    enableTriggers = "RSS_EnableTrigger"
+    enableTriggers = "RSS_EnableTrigger",
+    enableGameInfo = "RSS_GameInfo"
 }
 
 --[[

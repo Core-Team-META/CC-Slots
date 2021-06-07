@@ -14,7 +14,6 @@ WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEM
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
 OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 --]]
-
 ------------------------------------------------------------------------------------------------------------------------
 -- Slots Spinner Client
 -- Author Morticai (META) - (https://www.coregames.com/user/d1073dbcc404405cbef8ce728e53d380)
@@ -41,6 +40,7 @@ local SPIN_BUTTON = script:GetCustomProperty("SpinButton"):WaitForObject()
 local BACKGROUND = script:GetCustomProperty("Background"):WaitForObject()
 local WIN_LINE_OBJECTS = script:GetCustomProperty("WinLinesObjects"):WaitForObject()
 local TRIGGER = script:GetCustomProperty("Trigger"):WaitForObject()
+local GAME_INFO = script:GetCustomProperty("GameInfo"):WaitForObject()
 
 local SETTINGS = script:GetCustomProperty("Settings"):WaitForObject()
 local SLOT_CAM = script:GetCustomProperty("SlotCam"):WaitForObject()
@@ -56,6 +56,8 @@ local WINNER_SOUND = AUDIO:GetCustomProperty("WinnerSound"):WaitForObject()
 local WIN_LINES_AUDIO = AUDIO:GetCustomProperty("WinLinesAudio"):WaitForObject()
 local SLOT_SPIN_SOUND = AUDIO:GetCustomProperty("SlotSpinSound"):WaitForObject()
 local LOSS_SOUND = AUDIO:GetCustomProperty("LossSound"):WaitForObject()
+local INFO_CARDS = GAME_INFO:GetCustomProperty("Cards"):WaitForObject()
+
 local NETWORKING = World.FindObjectByName("SLOT_NETWORKING")
 ------------------------------------------------------------------------------------------------------------------------
 -- CUSTOM PROPERTIES
@@ -186,6 +188,14 @@ local function CreateClientUserData()
     LOCAL_PLAYER.clientUserData.SlotTriggers[SLOT_ID] = TRIGGER
 end
 
+local function OnEnableGameInfo(slotId)
+    if SLOT_ID == slotId and GAME_INFO.visibility == Visibility.FORCE_OFF then
+        GAME_INFO.visibility = Visibility.FORCE_ON
+    elseif SLOT_ID == slotId and GAME_INFO.visibility == Visibility.FORCE_ON then
+        GAME_INFO.visibility = Visibility.FORCE_OFF
+    end
+end
+
 ------------------------------------------------------------------------------------------------------------------------
 -- GLOBAL FUNCTIONS
 ------------------------------------------------------------------------------------------------------------------------
@@ -220,7 +230,6 @@ function OnInteracted(trigger, player)
 end
 
 function Activate()
-
     local position = Vector3.ZERO
     local count = 1
 
@@ -276,6 +285,21 @@ end
 -- @params table item
 -- @params int slot
 function InitializeLootCard(lootCard, item, slot)
+    --info cards
+    local infoCard = INFO_CARDS:GetChildren()[item.id]
+    if infoCard then
+        local infoCardGamePortal = infoCard:GetCustomProperty("GamePortal"):WaitForObject()
+        infoCardGamePortal:SetSmartProperty("Game ID", item.gamePortal)
+        infoCardGamePortal:SetSmartProperty("Screenshot Index", item.screenshotIndex)
+        local payOutText = infoCard:GetCustomProperty("Payout"):WaitForObject()
+        local reward = item.reward
+        if item.isWild then
+            reward = 125
+        end
+        local payout = (reward + 1) * ODDS
+        payOutText.text = tostring(CoreMath.Round(payout, 2)) .. "x Payout Per Line"
+    end
+
     local itemId = item.id
     if slot == 1 and item.id == 1 then
         item = API.GetSlotById(THEME_ID, results[1])
@@ -350,6 +374,7 @@ end
 
 -- @params object slotDataObject
 function OnSlotDataChanged(dataObject)
+    GAME_INFO.visibility = Visibility.FORCE_OFF
     local player, playerId
 
     local dataStr = dataObject:GetCustomProperty("data")
@@ -428,7 +453,9 @@ function OnSlotDataChanged(dataObject)
                 Task.Wait()
                 lastTask = API.DisplayWinLines(winLines, winningPatterns, cardFrames, cancelAnimation, winningLineAudio)
                 if betAmount * 3 < reward then
-                    Chat.LocalMessage(player.name .. " Bet " .. API.FormatInt(betAmount) .. " and Won " .. API.FormatInt(reward))
+                    Chat.LocalMessage(
+                        player.name .. " Bet " .. API.FormatInt(betAmount) .. " and Won " .. API.FormatInt(reward)
+                    )
                 end
             else
                 local lossRand = math.random(5)
@@ -489,7 +516,7 @@ function Tick(dt)
 
     for i = 1, 3 do
         local SPIN_DURATION = SPIN_DURATION - (3 - i + 0.5)
-        if time() > spinStartTime + SPIN_DURATION and not slotSound[i] then 
+        if time() > spinStartTime + SPIN_DURATION and not slotSound[i] then
             SLOT_SOUND:Play()
             slotSound[i] = true
         end
@@ -524,3 +551,4 @@ end
 -- LISTENERS
 ------------------------------------------------------------------------------------------------------------------------
 Init()
+Events.Connect(API.Broadcasts.enableGameInfo, OnEnableGameInfo)

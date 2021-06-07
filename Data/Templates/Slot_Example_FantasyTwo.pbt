@@ -403,6 +403,12 @@ Assets {
               SubObjectId: 12635454918635283386
             }
           }
+          Overrides {
+            Name: "cs:GameInfo"
+            ObjectReference {
+              SubObjectId: 12615968378891052916
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -444,6 +450,7 @@ Assets {
         ChildIds: 1588782083576741949
         ChildIds: 6885590782728997992
         ChildIds: 2455284880191028303
+        ChildIds: 12615968378891052916
         ChildIds: 6204526723941153261
         ChildIds: 813381802355594595
         ChildIds: 15533282555270596149
@@ -553,6 +560,2360 @@ Assets {
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 12615968378891052916
+        Name: "GameInfo"
+        Transform {
+          Location {
+            X: 2892.67749
+            Y: 7.82688856
+            Z: 107.248375
+          }
+          Rotation {
+            Pitch: 2.00851274
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1386036961630417195
+        ChildIds: 16917946512948863544
+        ChildIds: 15072052366876276584
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Cards"
+            ObjectReference {
+              SubObjectId: 15072052366876276584
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceon"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 16917946512948863544
+        Name: "Cube"
+        Transform {
+          Location {
+            X: 0.000977544696
+            Y: 0.000275407452
+            Z: 0.000129430293
+          }
+          Rotation {
+            Roll: 4.26886743e-07
+          }
+          Scale {
+            X: 1.06731582
+            Y: 34.4868279
+            Z: 34.3342972
+          }
+        }
+        ParentId: 12615968378891052916
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 9904895682715922322
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12095835209017042614
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 15072052366876276584
+        Name: "Cards"
+        Transform {
+          Location {
+            X: -56.2932
+            Y: 6.16297548e-05
+            Z: -11.36
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12615968378891052916
+        ChildIds: 16809586744248790590
+        ChildIds: 8170580763166287105
+        ChildIds: 14836664575147995221
+        ChildIds: 2242095278929850190
+        ChildIds: 15577957777511928310
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 16809586744248790590
+        Name: "DemoCard_Template"
+        Transform {
+          Location {
+            X: -11.6841383
+            Y: -1068.71399
+            Z: 729.244873
+          }
+          Rotation {
+            Yaw: 4.2912518e-10
+            Roll: 0.115192413
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15072052366876276584
+        ChildIds: 1370051535757411407
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:GamePortal"
+            ObjectReference {
+              SubObjectId: 979915659324693232
+            }
+          }
+          Overrides {
+            Name: "cs:Gradient"
+            ObjectReference {
+              SubObjectId: 2131780954724123851
+            }
+          }
+          Overrides {
+            Name: "cs:Bar"
+            ObjectReference {
+              SubObjectId: 13899037688973074197
+            }
+          }
+          Overrides {
+            Name: "cs:Border"
+            ObjectReference {
+            }
+          }
+          Overrides {
+            Name: "cs:Frame"
+            ObjectReference {
+            }
+          }
+          Overrides {
+            Name: "cs:Payout"
+            ObjectReference {
+              SubObjectId: 18003415514890322585
+            }
+          }
+          Overrides {
+            Name: "cs:Payout2"
+            ObjectReference {
+              SubObjectId: 13380190391878709555
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 1370051535757411407
+        Name: "Group"
+        Transform {
+          Location {
+            X: -0.250015259
+            Z: -320.78125
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.936422884
+            Y: 0.936422884
+            Z: 0.936422884
+          }
+        }
+        ParentId: 16809586744248790590
+        ChildIds: 979915659324693232
+        ChildIds: 2131780954724123851
+        ChildIds: 13899037688973074197
+        ChildIds: 18003415514890322585
+        ChildIds: 13380190391878709555
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 979915659324693232
+        Name: "Game Portal"
+        Transform {
+          Location {
+            X: 0.249977112
+            Z: 320.78125
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 0.5625
+          }
+        }
+        ParentId: 1370051535757411407
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Game ID"
+            String: "a955b0/imagescowboyslots"
+          }
+          Overrides {
+            Name: "bp:Screenshot Index"
+            Int: 1
+          }
+          Overrides {
+            Name: "bp:View Distortion Amount"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Use World Capture"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Disable Swirl and Edge"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Unlit"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Cast Shadows"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Use Radial Mask"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Mask Hardness"
+            Float: 1
+          }
+          Overrides {
+            Name: "bp:Bend Distance"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Intersection Distance"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Edge Distortion"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Swirl Element Distance"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Rotation"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Portal Shape"
+            Int: 2
+          }
+          Overrides {
+            Name: "bp:Portal Spread"
+            Float: 9.10172653
+          }
+          Overrides {
+            Name: "bp:Edge Distance"
+            Float: 1.26316249
+          }
+          Overrides {
+            Name: "bp:Mask Range"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 17413793273080869839
+          }
+          TeamSettings {
+          }
+        }
+      }
+      Objects {
+        Id: 2131780954724123851
+        Name: "Gradient"
+        Transform {
+          Location {
+            X: -0.750007629
+            Z: 320.78125
+          }
+          Rotation {
+            Yaw: -89.9999847
+            Roll: -89.9999847
+          }
+          Scale {
+            X: 10
+            Y: 5.62
+            Z: 10
+          }
+        }
+        ParentId: 1370051535757411407
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11214458359331033735
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16048367406070731799
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableDistanceFieldLighting: true
+          DisableCastShadows: true
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 13899037688973074197
+        Name: "Bar"
+        Transform {
+          Location {
+            X: -1.61568832
+            Z: 79.2949677
+          }
+          Rotation {
+            Pitch: 6.83018879e-06
+            Yaw: -89.9999695
+            Roll: -89.9999695
+          }
+          Scale {
+            X: 10
+            Y: 0.999998808
+            Z: 10
+          }
+        }
+        ParentId: 1370051535757411407
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 13579516328657121992
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.99
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16048367406070731799
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableDistanceFieldLighting: true
+          DisableCastShadows: true
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 18003415514890322585
+        Name: "Payout"
+        Transform {
+          Location {
+            X: -42.5563965
+            Y: 543.724731
+            Z: 425.250305
+          }
+          Rotation {
+            Yaw: 180
+          }
+          Scale {
+            X: 0.718690217
+            Y: 5.58386803
+            Z: 7.07928324
+          }
+        }
+        ParentId: 1370051535757411407
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Text {
+          Text: "2x Payout Per Line"
+          FontAsset {
+            Id: 11505999261835647653
+          }
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+          HorizontalSize: 1
+          VerticalSize: 1
+          HorizontalAlignment {
+            Value: "mc:ecoretexthorizontalalign:left"
+          }
+          VerticalAlignment {
+            Value: "mc:ecoretextverticalalign:center"
+          }
+        }
+      }
+      Objects {
+        Id: 13380190391878709555
+        Name: "Payout2"
+        Transform {
+          Location {
+            X: -24.2059689
+            Y: 544.09021
+            Z: 242.358292
+          }
+          Rotation {
+            Yaw: 179.999985
+            Roll: 2.34787785e-06
+          }
+          Scale {
+            X: 0.718690217
+            Y: 5.58386803
+            Z: 7.07928324
+          }
+        }
+        ParentId: 1370051535757411407
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Text {
+          Text: "Get 3x or Wilds "
+          FontAsset {
+            Id: 11505999261835647653
+          }
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+          HorizontalSize: 1
+          VerticalSize: 1
+          HorizontalAlignment {
+            Value: "mc:ecoretexthorizontalalign:left"
+          }
+          VerticalAlignment {
+            Value: "mc:ecoretextverticalalign:center"
+          }
+        }
+      }
+      Objects {
+        Id: 8170580763166287105
+        Name: "DemoCard_Template"
+        Transform {
+          Location {
+            X: -7.06671429
+            Y: -1068.71399
+            Z: 207.469559
+          }
+          Rotation {
+            Pitch: 6.83018879e-06
+            Yaw: 6.83640792e-06
+            Roll: 0.115193479
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15072052366876276584
+        ChildIds: 8499598840350699067
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:GamePortal"
+            ObjectReference {
+              SubObjectId: 4902164081872885503
+            }
+          }
+          Overrides {
+            Name: "cs:Gradient"
+            ObjectReference {
+              SubObjectId: 15263770331889357786
+            }
+          }
+          Overrides {
+            Name: "cs:Bar"
+            ObjectReference {
+              SubObjectId: 12319351738883147163
+            }
+          }
+          Overrides {
+            Name: "cs:Border"
+            ObjectReference {
+            }
+          }
+          Overrides {
+            Name: "cs:Frame"
+            ObjectReference {
+            }
+          }
+          Overrides {
+            Name: "cs:Payout"
+            ObjectReference {
+              SubObjectId: 10225440412301316025
+            }
+          }
+          Overrides {
+            Name: "cs:Payout2"
+            ObjectReference {
+              SubObjectId: 12345913325195981527
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 8499598840350699067
+        Name: "Group"
+        Transform {
+          Location {
+            X: -0.250015259
+            Z: -320.78125
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.936422884
+            Y: 0.936422884
+            Z: 0.936422884
+          }
+        }
+        ParentId: 8170580763166287105
+        ChildIds: 4902164081872885503
+        ChildIds: 15263770331889357786
+        ChildIds: 12319351738883147163
+        ChildIds: 10225440412301316025
+        ChildIds: 12345913325195981527
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 4902164081872885503
+        Name: "Game Portal"
+        Transform {
+          Location {
+            X: 0.249977112
+            Z: 320.78125
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 0.5625
+          }
+        }
+        ParentId: 8499598840350699067
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Game ID"
+            String: "a955b0/imagescowboyslots"
+          }
+          Overrides {
+            Name: "bp:Screenshot Index"
+            Int: 1
+          }
+          Overrides {
+            Name: "bp:View Distortion Amount"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Use World Capture"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Disable Swirl and Edge"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Unlit"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Cast Shadows"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Use Radial Mask"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Mask Hardness"
+            Float: 1
+          }
+          Overrides {
+            Name: "bp:Bend Distance"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Intersection Distance"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Edge Distortion"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Swirl Element Distance"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Rotation"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Portal Shape"
+            Int: 2
+          }
+          Overrides {
+            Name: "bp:Portal Spread"
+            Float: 9.10172653
+          }
+          Overrides {
+            Name: "bp:Edge Distance"
+            Float: 1.26316249
+          }
+          Overrides {
+            Name: "bp:Mask Range"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 17413793273080869839
+          }
+          TeamSettings {
+          }
+        }
+      }
+      Objects {
+        Id: 15263770331889357786
+        Name: "Gradient"
+        Transform {
+          Location {
+            X: -0.750007629
+            Z: 320.78125
+          }
+          Rotation {
+            Yaw: -89.9999847
+            Roll: -89.9999847
+          }
+          Scale {
+            X: 10
+            Y: 5.62
+            Z: 10
+          }
+        }
+        ParentId: 8499598840350699067
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11214458359331033735
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16048367406070731799
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableDistanceFieldLighting: true
+          DisableCastShadows: true
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 12319351738883147163
+        Name: "Bar"
+        Transform {
+          Location {
+            X: -1.61568832
+            Z: 79.2949677
+          }
+          Rotation {
+            Pitch: 6.83018879e-06
+            Yaw: -89.9999695
+            Roll: -89.9999695
+          }
+          Scale {
+            X: 10
+            Y: 0.999998808
+            Z: 10
+          }
+        }
+        ParentId: 8499598840350699067
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 13579516328657121992
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.99
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16048367406070731799
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableDistanceFieldLighting: true
+          DisableCastShadows: true
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 10225440412301316025
+        Name: "Payout"
+        Transform {
+          Location {
+            X: -42.5563965
+            Y: 543.724731
+            Z: 425.250305
+          }
+          Rotation {
+            Yaw: 180
+          }
+          Scale {
+            X: 0.718690217
+            Y: 5.58386803
+            Z: 7.07928324
+          }
+        }
+        ParentId: 8499598840350699067
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Text {
+          Text: "2x Payout Per Line"
+          FontAsset {
+            Id: 11505999261835647653
+          }
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+          HorizontalSize: 1
+          VerticalSize: 1
+          HorizontalAlignment {
+            Value: "mc:ecoretexthorizontalalign:left"
+          }
+          VerticalAlignment {
+            Value: "mc:ecoretextverticalalign:center"
+          }
+        }
+      }
+      Objects {
+        Id: 12345913325195981527
+        Name: "Payout2"
+        Transform {
+          Location {
+            X: -24.2059689
+            Y: 544.09021
+            Z: 242.358292
+          }
+          Rotation {
+            Yaw: 179.999985
+            Roll: 2.34787785e-06
+          }
+          Scale {
+            X: 0.718690217
+            Y: 5.58386803
+            Z: 7.07928324
+          }
+        }
+        ParentId: 8499598840350699067
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Text {
+          Text: "Get 3x or Wilds "
+          FontAsset {
+            Id: 11505999261835647653
+          }
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+          HorizontalSize: 1
+          VerticalSize: 1
+          HorizontalAlignment {
+            Value: "mc:ecoretexthorizontalalign:left"
+          }
+          VerticalAlignment {
+            Value: "mc:ecoretextverticalalign:center"
+          }
+        }
+      }
+      Objects {
+        Id: 14836664575147995221
+        Name: "DemoCard_Template"
+        Transform {
+          Location {
+            X: -6.84435415
+            Y: -1068.70081
+            Z: -316.029053
+          }
+          Rotation {
+            Pitch: 1.36603776e-05
+            Yaw: 2.05038577e-05
+            Roll: 0.11519412
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15072052366876276584
+        ChildIds: 8046298437002995223
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:GamePortal"
+            ObjectReference {
+              SubObjectId: 8872542057599044634
+            }
+          }
+          Overrides {
+            Name: "cs:Gradient"
+            ObjectReference {
+              SubObjectId: 13591074443278396488
+            }
+          }
+          Overrides {
+            Name: "cs:Bar"
+            ObjectReference {
+              SubObjectId: 15098991037929773665
+            }
+          }
+          Overrides {
+            Name: "cs:Border"
+            ObjectReference {
+            }
+          }
+          Overrides {
+            Name: "cs:Frame"
+            ObjectReference {
+            }
+          }
+          Overrides {
+            Name: "cs:Payout"
+            ObjectReference {
+              SubObjectId: 3495230483046168059
+            }
+          }
+          Overrides {
+            Name: "cs:Payout2"
+            ObjectReference {
+              SubObjectId: 2052781254252920554
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 8046298437002995223
+        Name: "Group"
+        Transform {
+          Location {
+            X: -0.250015259
+            Z: -320.78125
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.936422884
+            Y: 0.936422884
+            Z: 0.936422884
+          }
+        }
+        ParentId: 14836664575147995221
+        ChildIds: 8872542057599044634
+        ChildIds: 13591074443278396488
+        ChildIds: 15098991037929773665
+        ChildIds: 3495230483046168059
+        ChildIds: 2052781254252920554
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 8872542057599044634
+        Name: "Game Portal"
+        Transform {
+          Location {
+            X: 0.249977112
+            Z: 320.78125
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 0.5625
+          }
+        }
+        ParentId: 8046298437002995223
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Game ID"
+            String: "a955b0/imagescowboyslots"
+          }
+          Overrides {
+            Name: "bp:Screenshot Index"
+            Int: 1
+          }
+          Overrides {
+            Name: "bp:View Distortion Amount"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Use World Capture"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Disable Swirl and Edge"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Unlit"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Cast Shadows"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Use Radial Mask"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Mask Hardness"
+            Float: 1
+          }
+          Overrides {
+            Name: "bp:Bend Distance"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Intersection Distance"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Edge Distortion"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Swirl Element Distance"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Rotation"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Portal Shape"
+            Int: 2
+          }
+          Overrides {
+            Name: "bp:Portal Spread"
+            Float: 9.10172653
+          }
+          Overrides {
+            Name: "bp:Edge Distance"
+            Float: 1.26316249
+          }
+          Overrides {
+            Name: "bp:Mask Range"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 17413793273080869839
+          }
+          TeamSettings {
+          }
+        }
+      }
+      Objects {
+        Id: 13591074443278396488
+        Name: "Gradient"
+        Transform {
+          Location {
+            X: -0.750007629
+            Z: 320.78125
+          }
+          Rotation {
+            Yaw: -89.9999847
+            Roll: -89.9999847
+          }
+          Scale {
+            X: 10
+            Y: 5.62
+            Z: 10
+          }
+        }
+        ParentId: 8046298437002995223
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11214458359331033735
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16048367406070731799
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableDistanceFieldLighting: true
+          DisableCastShadows: true
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 15098991037929773665
+        Name: "Bar"
+        Transform {
+          Location {
+            X: -1.61568832
+            Z: 79.2949677
+          }
+          Rotation {
+            Pitch: 6.83018879e-06
+            Yaw: -89.9999695
+            Roll: -89.9999695
+          }
+          Scale {
+            X: 10
+            Y: 0.999998808
+            Z: 10
+          }
+        }
+        ParentId: 8046298437002995223
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 13579516328657121992
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.99
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16048367406070731799
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableDistanceFieldLighting: true
+          DisableCastShadows: true
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 3495230483046168059
+        Name: "Payout"
+        Transform {
+          Location {
+            X: -42.5563965
+            Y: 543.724731
+            Z: 425.250305
+          }
+          Rotation {
+            Yaw: 180
+          }
+          Scale {
+            X: 0.718690217
+            Y: 5.58386803
+            Z: 7.07928324
+          }
+        }
+        ParentId: 8046298437002995223
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Text {
+          Text: "2x Payout Per Line"
+          FontAsset {
+            Id: 11505999261835647653
+          }
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+          HorizontalSize: 1
+          VerticalSize: 1
+          HorizontalAlignment {
+            Value: "mc:ecoretexthorizontalalign:left"
+          }
+          VerticalAlignment {
+            Value: "mc:ecoretextverticalalign:center"
+          }
+        }
+      }
+      Objects {
+        Id: 2052781254252920554
+        Name: "Payout2"
+        Transform {
+          Location {
+            X: -24.2059689
+            Y: 544.09021
+            Z: 242.358292
+          }
+          Rotation {
+            Yaw: 179.999985
+            Roll: 2.34787785e-06
+          }
+          Scale {
+            X: 0.718690217
+            Y: 5.58386803
+            Z: 7.07928324
+          }
+        }
+        ParentId: 8046298437002995223
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Text {
+          Text: "Get 3x or Wilds "
+          FontAsset {
+            Id: 11505999261835647653
+          }
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+          HorizontalSize: 1
+          VerticalSize: 1
+          HorizontalAlignment {
+            Value: "mc:ecoretexthorizontalalign:left"
+          }
+          VerticalAlignment {
+            Value: "mc:ecoretextverticalalign:center"
+          }
+        }
+      }
+      Objects {
+        Id: 2242095278929850190
+        Name: "DemoCard_Template"
+        Transform {
+          Location {
+            X: -4.01197386
+            Y: -1068.70105
+            Z: -838.535156
+          }
+          Rotation {
+            Pitch: 2.04905664e-05
+            Yaw: 2.73406931e-05
+            Roll: 0.115195192
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15072052366876276584
+        ChildIds: 10846327282232081890
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:GamePortal"
+            ObjectReference {
+              SubObjectId: 7823067705913561406
+            }
+          }
+          Overrides {
+            Name: "cs:Gradient"
+            ObjectReference {
+              SubObjectId: 17328877505358520794
+            }
+          }
+          Overrides {
+            Name: "cs:Bar"
+            ObjectReference {
+              SubObjectId: 15912996039478227544
+            }
+          }
+          Overrides {
+            Name: "cs:Border"
+            ObjectReference {
+            }
+          }
+          Overrides {
+            Name: "cs:Frame"
+            ObjectReference {
+            }
+          }
+          Overrides {
+            Name: "cs:Payout"
+            ObjectReference {
+              SubObjectId: 4838601268492699150
+            }
+          }
+          Overrides {
+            Name: "cs:Payout2"
+            ObjectReference {
+              SubObjectId: 16624651110766909743
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 10846327282232081890
+        Name: "Group"
+        Transform {
+          Location {
+            X: -0.250015259
+            Z: -320.78125
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.936422884
+            Y: 0.936422884
+            Z: 0.936422884
+          }
+        }
+        ParentId: 2242095278929850190
+        ChildIds: 7823067705913561406
+        ChildIds: 17328877505358520794
+        ChildIds: 15912996039478227544
+        ChildIds: 4838601268492699150
+        ChildIds: 16624651110766909743
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 7823067705913561406
+        Name: "Game Portal"
+        Transform {
+          Location {
+            X: 0.249977112
+            Z: 320.78125
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 0.5625
+          }
+        }
+        ParentId: 10846327282232081890
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Game ID"
+            String: "a955b0/imagescowboyslots"
+          }
+          Overrides {
+            Name: "bp:Screenshot Index"
+            Int: 1
+          }
+          Overrides {
+            Name: "bp:View Distortion Amount"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Use World Capture"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Disable Swirl and Edge"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Unlit"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Cast Shadows"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Use Radial Mask"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Mask Hardness"
+            Float: 1
+          }
+          Overrides {
+            Name: "bp:Bend Distance"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Intersection Distance"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Edge Distortion"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Swirl Element Distance"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Rotation"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Portal Shape"
+            Int: 2
+          }
+          Overrides {
+            Name: "bp:Portal Spread"
+            Float: 9.10172653
+          }
+          Overrides {
+            Name: "bp:Edge Distance"
+            Float: 1.26316249
+          }
+          Overrides {
+            Name: "bp:Mask Range"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 17413793273080869839
+          }
+          TeamSettings {
+          }
+        }
+      }
+      Objects {
+        Id: 17328877505358520794
+        Name: "Gradient"
+        Transform {
+          Location {
+            X: -0.750007629
+            Z: 320.78125
+          }
+          Rotation {
+            Yaw: -89.9999847
+            Roll: -89.9999847
+          }
+          Scale {
+            X: 10
+            Y: 5.62
+            Z: 10
+          }
+        }
+        ParentId: 10846327282232081890
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11214458359331033735
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16048367406070731799
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableDistanceFieldLighting: true
+          DisableCastShadows: true
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 15912996039478227544
+        Name: "Bar"
+        Transform {
+          Location {
+            X: -1.61568832
+            Z: 79.2949677
+          }
+          Rotation {
+            Pitch: 6.83018879e-06
+            Yaw: -89.9999695
+            Roll: -89.9999695
+          }
+          Scale {
+            X: 10
+            Y: 0.999998808
+            Z: 10
+          }
+        }
+        ParentId: 10846327282232081890
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 13579516328657121992
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.99
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16048367406070731799
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableDistanceFieldLighting: true
+          DisableCastShadows: true
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 4838601268492699150
+        Name: "Payout"
+        Transform {
+          Location {
+            X: -42.5563965
+            Y: 543.724731
+            Z: 425.250305
+          }
+          Rotation {
+            Yaw: 180
+          }
+          Scale {
+            X: 0.718690217
+            Y: 5.58386803
+            Z: 7.07928324
+          }
+        }
+        ParentId: 10846327282232081890
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Text {
+          Text: "2x Payout Per Line"
+          FontAsset {
+            Id: 11505999261835647653
+          }
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+          HorizontalSize: 1
+          VerticalSize: 1
+          HorizontalAlignment {
+            Value: "mc:ecoretexthorizontalalign:left"
+          }
+          VerticalAlignment {
+            Value: "mc:ecoretextverticalalign:center"
+          }
+        }
+      }
+      Objects {
+        Id: 16624651110766909743
+        Name: "Payout2"
+        Transform {
+          Location {
+            X: -24.2059689
+            Y: 544.09021
+            Z: 242.358292
+          }
+          Rotation {
+            Yaw: 179.999985
+            Roll: 2.34787785e-06
+          }
+          Scale {
+            X: 0.718690217
+            Y: 5.58386803
+            Z: 7.07928324
+          }
+        }
+        ParentId: 10846327282232081890
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Text {
+          Text: "Get 3x or Wilds "
+          FontAsset {
+            Id: 11505999261835647653
+          }
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+          HorizontalSize: 1
+          VerticalSize: 1
+          HorizontalAlignment {
+            Value: "mc:ecoretexthorizontalalign:left"
+          }
+          VerticalAlignment {
+            Value: "mc:ecoretextverticalalign:center"
+          }
+        }
+      }
+      Objects {
+        Id: 15577957777511928310
+        Name: "DemoCard_Template"
+        Transform {
+          Location {
+            X: -4.77593613
+            Y: 1049.02661
+            Z: 146.027786
+          }
+          Rotation {
+            Pitch: 2.04905664e-05
+            Yaw: 4.44165926e-05
+            Roll: 0.115197353
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15072052366876276584
+        ChildIds: 11843035166663649281
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:GamePortal"
+            ObjectReference {
+              SubObjectId: 5775560085355196082
+            }
+          }
+          Overrides {
+            Name: "cs:Gradient"
+            ObjectReference {
+              SubObjectId: 16930680564361281955
+            }
+          }
+          Overrides {
+            Name: "cs:Bar"
+            ObjectReference {
+              SubObjectId: 16383840331221939870
+            }
+          }
+          Overrides {
+            Name: "cs:Border"
+            ObjectReference {
+            }
+          }
+          Overrides {
+            Name: "cs:Frame"
+            ObjectReference {
+            }
+          }
+          Overrides {
+            Name: "cs:Payout"
+            ObjectReference {
+              SubObjectId: 16409074131216120126
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 11843035166663649281
+        Name: "Group"
+        Transform {
+          Location {
+            X: -0.250015259
+            Z: -320.78125
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.936422884
+            Y: 0.936422884
+            Z: 0.936422884
+          }
+        }
+        ParentId: 15577957777511928310
+        ChildIds: 5775560085355196082
+        ChildIds: 16930680564361281955
+        ChildIds: 16383840331221939870
+        ChildIds: 16409074131216120126
+        ChildIds: 10881952086387597080
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 5775560085355196082
+        Name: "Game Portal"
+        Transform {
+          Location {
+            X: 0.249977112
+            Z: 320.78125
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 0.5625
+          }
+        }
+        ParentId: 11843035166663649281
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Game ID"
+            String: "a955b0/imagescowboyslots"
+          }
+          Overrides {
+            Name: "bp:Screenshot Index"
+            Int: 1
+          }
+          Overrides {
+            Name: "bp:View Distortion Amount"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Use World Capture"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Disable Swirl and Edge"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Unlit"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Cast Shadows"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Use Radial Mask"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Mask Hardness"
+            Float: 1
+          }
+          Overrides {
+            Name: "bp:Bend Distance"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Intersection Distance"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Edge Distortion"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Swirl Element Distance"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Rotation"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Portal Shape"
+            Int: 2
+          }
+          Overrides {
+            Name: "bp:Portal Spread"
+            Float: 9.10172653
+          }
+          Overrides {
+            Name: "bp:Edge Distance"
+            Float: 1.26316249
+          }
+          Overrides {
+            Name: "bp:Mask Range"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 17413793273080869839
+          }
+          TeamSettings {
+          }
+        }
+      }
+      Objects {
+        Id: 16930680564361281955
+        Name: "Gradient"
+        Transform {
+          Location {
+            X: -0.750007629
+            Z: 320.78125
+          }
+          Rotation {
+            Yaw: -89.9999847
+            Roll: -89.9999847
+          }
+          Scale {
+            X: 10
+            Y: 5.62
+            Z: 10
+          }
+        }
+        ParentId: 11843035166663649281
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11214458359331033735
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16048367406070731799
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableDistanceFieldLighting: true
+          DisableCastShadows: true
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 16383840331221939870
+        Name: "Bar"
+        Transform {
+          Location {
+            X: -1.61568832
+            Z: 79.2949677
+          }
+          Rotation {
+            Pitch: 6.83018879e-06
+            Yaw: -89.9999695
+            Roll: -89.9999695
+          }
+          Scale {
+            X: 10
+            Y: 0.999998808
+            Z: 10
+          }
+        }
+        ParentId: 11843035166663649281
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 13579516328657121992
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.99
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16048367406070731799
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableDistanceFieldLighting: true
+          DisableCastShadows: true
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 16409074131216120126
+        Name: "Payout"
+        Transform {
+          Location {
+            X: -24.1126442
+            Y: 479.152161
+            Z: -35.9385033
+          }
+          Rotation {
+            Yaw: 180
+          }
+          Scale {
+            X: 0.614433169
+            Y: 4.77384233
+            Z: 6.0523243
+          }
+        }
+        ParentId: 11843035166663649281
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Text {
+          Text: "125x Payout Per Line"
+          FontAsset {
+            Id: 11505999261835647653
+          }
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+          HorizontalSize: 1
+          VerticalSize: 1
+          HorizontalAlignment {
+            Value: "mc:ecoretexthorizontalalign:right"
+          }
+          VerticalAlignment {
+            Value: "mc:ecoretextverticalalign:center"
+          }
+        }
+      }
+      Objects {
+        Id: 10881952086387597080
+        Name: "Payout"
+        Transform {
+          Location {
+            X: 2.60475445
+            Y: -423.110962
+            Z: 694.998413
+          }
+          Rotation {
+            Yaw: 179.999985
+            Roll: 2.7747642e-06
+          }
+          Scale {
+            X: 0.614433169
+            Y: 4.77384233
+            Z: 6.0523243
+          }
+        }
+        ParentId: 11843035166663649281
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Text {
+          Text: "Jackpot All Wilds"
+          FontAsset {
+            Id: 11505999261835647653
+          }
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+          HorizontalSize: 1
+          VerticalSize: 1
+          HorizontalAlignment {
+            Value: "mc:ecoretexthorizontalalign:left"
+          }
+          VerticalAlignment {
+            Value: "mc:ecoretextverticalalign:center"
+          }
         }
       }
       Objects {
@@ -16204,12 +18565,39 @@ Assets {
       }
     }
     Assets {
+      Id: 17413793273080869839
+      Name: "Game Portal"
+      PlatformAssetType: 6
+      PrimaryAsset {
+        AssetType: "BlueprintAssetRef"
+        AssetId: "fxbp_webportal"
+      }
+    }
+    Assets {
+      Id: 16048367406070731799
+      Name: "Plane 1m - One Sided"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_plane_1m_001"
+      }
+    }
+    Assets {
       Id: 13579516328657121992
       Name: "Emissive Glow Opaque"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "fxma_opaque_emissive"
+      }
+    }
+    Assets {
+      Id: 11505999261835647653
+      Name: "Play Bold"
+      PlatformAssetType: 28
+      PrimaryAsset {
+        AssetType: "FontAssetRef"
+        AssetId: "PlayBold_ref"
       }
     }
     Assets {
@@ -16300,15 +18688,6 @@ Assets {
       PrimaryAsset {
         AssetType: "VfxBlueprintAssetRef"
         AssetId: "fxbp_magic_circle_generator_all"
-      }
-    }
-    Assets {
-      Id: 16048367406070731799
-      Name: "Plane 1m - One Sided"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_plane_1m_001"
       }
     }
     Assets {

@@ -64,6 +64,8 @@ function OnBindingPressed(player, keybind)
             Events.BroadcastToServer(API.Broadcasts.quit, slotId)
         elseif keybind == spinKeybind and isSpinBindEnabled then
             Events.BroadcastToServer(API.Broadcasts.spin, currentBet or 1, slotId)
+        elseif keybind == "ability_feet" then
+            Events.Broadcast(API.Broadcasts.enableGameInfo, slotId)
         end
         spamPrevent = time() + 0.33
     end
