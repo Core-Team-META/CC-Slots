@@ -15,7 +15,7 @@ Assets {
             Z: 1.2196
           }
         }
-        ParentId: 11546936440891399579
+        ParentId: 4781671109827199097
         ChildIds: 1071834215039163835
         ChildIds: 18056387415649428826
         UnregisteredParameters {
@@ -51315,6 +51315,7 @@ Assets {
         Name: "Collision"
         Transform {
           Location {
+            Y: -25.6568985
           }
           Rotation {
           }
@@ -51328,11 +51329,12 @@ Assets {
         ChildIds: 9221981283860727049
         ChildIds: 16931238405942527503
         ChildIds: 970778213476818780
+        ChildIds: 891232371907846785
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -51349,8 +51351,8 @@ Assets {
         Name: "Cube"
         Transform {
           Location {
-            X: -60
-            Y: -14.3826246
+            X: -60.0000229
+            Y: 30.8417053
             Z: 129.318695
           }
           Rotation {
@@ -51366,7 +51368,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:forceoff"
@@ -51396,8 +51398,8 @@ Assets {
         Name: "Cube"
         Transform {
           Location {
-            X: 60
-            Y: -14.3829584
+            X: 60.0000229
+            Y: 30.8413658
             Z: 129.318695
           }
           Rotation {
@@ -51413,7 +51415,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:forceoff"
@@ -51443,8 +51445,7 @@ Assets {
         Name: "Cube"
         Transform {
           Location {
-            X: 8.62662759e-08
-            Y: 54.2366753
+            Y: 99.4609833
             Z: 12.4024858
           }
           Rotation {
@@ -51453,7 +51454,7 @@ Assets {
           Scale {
             X: 1.26564312
             Y: 1.48650801
-            Z: 2.34808207
+            Z: 1.08050668
           }
         }
         ParentId: 8165953128679061051
@@ -51461,7 +51462,54 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 11680007328831169905
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 891232371907846785
+        Name: "Cube"
+        Transform {
+          Location {
+            Y: 99.4609833
+            Z: 205.118423
+          }
+          Rotation {
+            Yaw: -179.999954
+          }
+          Scale {
+            X: 1.26564312
+            Y: 1.67380273
+            Z: 0.418880522
+          }
+        }
+        ParentId: 8165953128679061051
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:forceoff"

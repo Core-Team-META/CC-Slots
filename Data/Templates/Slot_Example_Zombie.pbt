@@ -15,7 +15,7 @@ Assets {
             Z: 1.2196
           }
         }
-        ParentId: 8704132432388920203
+        ParentId: 4781671109827199097
         ChildIds: 7474546557666041850
         ChildIds: 8026303566384208737
         UnregisteredParameters {
@@ -28334,9 +28334,10 @@ Assets {
         Name: "Collision"
         Transform {
           Location {
+            X: -4.58931663e-06
+            Y: -25.6653252
           }
           Rotation {
-            Yaw: -1.02452805e-05
           }
           Scale {
             X: 1
@@ -28348,11 +28349,12 @@ Assets {
         ChildIds: 1361285322039079194
         ChildIds: 12409909673117513633
         ChildIds: 10052245944477771093
+        ChildIds: 3351905643113733339
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -28369,8 +28371,8 @@ Assets {
         Name: "Cube"
         Transform {
           Location {
-            X: -60
-            Y: -14.3826246
+            X: -60.0000153
+            Y: 30.8416901
             Z: 129.318695
           }
           Rotation {
@@ -28386,7 +28388,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:forceoff"
@@ -28416,8 +28418,8 @@ Assets {
         Name: "Cube"
         Transform {
           Location {
-            X: 60
-            Y: -14.3829584
+            X: 60.0000267
+            Y: 30.8413658
             Z: 129.318695
           }
           Rotation {
@@ -28433,7 +28435,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:forceoff"
@@ -28463,8 +28465,8 @@ Assets {
         Name: "Cube"
         Transform {
           Location {
-            X: 8.62662759e-08
-            Y: 54.2366753
+            X: 1.77850052e-05
+            Y: 99.4609833
             Z: 12.4024858
           }
           Rotation {
@@ -28473,7 +28475,7 @@ Assets {
           Scale {
             X: 1.26564312
             Y: 1.48650801
-            Z: 2.34808207
+            Z: 1.08050668
           }
         }
         ParentId: 15103417728086472870
@@ -28481,7 +28483,55 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 11680007328831169905
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 3351905643113733339
+        Name: "Cube"
+        Transform {
+          Location {
+            X: 1.77850052e-05
+            Y: 99.4609833
+            Z: 205.118423
+          }
+          Rotation {
+            Yaw: -179.999969
+          }
+          Scale {
+            X: 1.26564312
+            Y: 1.67380273
+            Z: 0.418880522
+          }
+        }
+        ParentId: 15103417728086472870
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:forceoff"
