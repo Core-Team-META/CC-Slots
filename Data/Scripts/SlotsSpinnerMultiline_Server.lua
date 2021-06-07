@@ -14,7 +14,6 @@ WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEM
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
 OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 --]]
-
 ------------------------------------------------------------------------------------------------------------------------
 -- Slots Spinner Server
 -- Author Morticai (META) - (https://www.coregames.com/user/d1073dbcc404405cbef8ce728e53d380)
@@ -69,21 +68,6 @@ end
 -- LOCAL FUNCTIONS
 ------------------------------------------------------------------------------------------------------------------------
 
-
--- @param object player
--- @param string socket
-local function Unequip(player, socket)
-    for _, equipment in ipairs(player:GetEquipment()) do
-        if equipment.socket == socket then
-            equipment:Unequip()
-            if Object.IsValid(equipment) then
-                equipment:Destroy()
-            end
-        end
-    end
-end
-
-
 -- @param float reelTotal
 -- @return int item.id
 local function GetRandomSlot(reelTotal)
@@ -105,12 +89,10 @@ end
 -- GLOBAL FUNCTIONS
 ------------------------------------------------------------------------------------------------------------------------
 
-
 function Init()
     local directionVector = sitRotation * Vector3.FORWARD
     standPosition = sitPosition - (directionVector * 100)
 end
-
 
 -- @params object player
 -- @params string objectId
@@ -122,7 +104,6 @@ function DestroyObject(player, objectId)
     end
 end
 
-
 -- Called when a player interacts with slot machine trigger
 -- Changes players position / animation to the slot machine stool
 -- @params object object
@@ -131,16 +112,11 @@ function OnInteracted(object, slotId)
     if slotId ~= SLOT_ID then
         return
     end
-    --[[if playerSpamPrevent[object] and playerSpamPrevent[object] > time() then
-        return
-    end
-    playerSpamPrevent[object] = time() + 1]]
 
     local currentId = SlotData:GetCustomProperty("playerId")
 
     if currentId == "" and object and Object.IsValid(object) and object:IsA("Player") then
         if Object.IsValid(object) then
-
             --Sit player down & move to stool location
             object:AttachToCoreObject(PLAYER_POSITION)
             object.animationStance = "unarmed_sit_chair_upright"
@@ -155,7 +131,6 @@ function OnInteracted(object, slotId)
     end
 end
 
-
 -- Reset players animation & position, and nil out machines current player
 -- @params object player
 -- @params string slotId
@@ -163,11 +138,6 @@ function OnPlayerQuit(player, slotId)
     if slotId ~= SLOT_ID then
         return
     end
-    --[[if playerSpamPrevent[player] and playerSpamPrevent[player] > time() then
-        return
-    end
-    playerSpamPrevent[player] = time() + 1]]
-
     local playerId = SlotData:GetCustomProperty("playerId")
     if playerId == player.id then
         if Object.IsValid(player) then
@@ -180,7 +150,6 @@ function OnPlayerQuit(player, slotId)
         return
     end
 end
-
 
 -- @params object player
 -- @params int betAmount
@@ -224,6 +193,13 @@ function PickItemRandomly(player, betAmount, slotId)
     )
 end
 
+function OnPlayerLeft(player)
+    local playerId = SlotData:GetCustomProperty("playerId")
+    if playerId == player.id then
+        SlotData:SetNetworkedCustomProperty("playerId", "")
+    end
+end
+
 ------------------------------------------------------------------------------------------------------------------------
 -- LISTENERS
 ------------------------------------------------------------------------------------------------------------------------
@@ -231,6 +207,7 @@ Events.ConnectForPlayer(API.Broadcasts.spin, PickItemRandomly)
 Events.ConnectForPlayer(API.Broadcasts.destroy, DestroyObject)
 Events.ConnectForPlayer(API.Broadcasts.quit, OnPlayerQuit)
 Events.ConnectForPlayer(API.Broadcasts.playSlot, OnInteracted)
+Game.playerLeftEvent:Connect(OnPlayerLeft)
 
 Init()
 
@@ -267,7 +244,13 @@ if IS_DEV_MODE then
         if tempCount > 50 then
             Task.Wait()
             tempCount = 0
-            print(string.format("SLOT TESTING: = %.3f, Time Taken = %.1fs", CoreMath.Round(i/loopCount*100, 2), (time()-startTime)))
+            print(
+                string.format(
+                    "SLOT TESTING: = %.3f, Time Taken = %.1fs",
+                    CoreMath.Round(i / loopCount * 100, 2),
+                    (time() - startTime)
+                )
+            )
         end
     end
 
