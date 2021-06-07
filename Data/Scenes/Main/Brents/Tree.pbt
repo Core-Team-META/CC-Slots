@@ -259,6 +259,7 @@ Objects {
   ChildIds: 15458835040582070438
   ChildIds: 2884573074155163926
   ChildIds: 17212618560504958036
+  ChildIds: 5487949017941776855
   ChildIds: 9745898323553016396
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -274,7 +275,7 @@ Objects {
   }
   Control {
     Width: 324
-    Height: 111
+    Height: 150
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -299,7 +300,7 @@ Objects {
 }
 Objects {
   Id: 9745898323553016396
-  Name: "UI Text Box"
+  Name: "Machine buttons"
   Transform {
     Location {
     }
@@ -328,7 +329,7 @@ Objects {
     Width: 200
     Height: 60
     UIX: 5
-    UIY: 75
+    UIY: 110
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -375,8 +376,85 @@ Objects {
   }
 }
 Objects {
+  Id: 5487949017941776855
+  Name: "Toggle payout info"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 999369360578734033
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 200
+    Height: 60
+    UIX: 5
+    UIY: 75
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    Text {
+      Label: "(Shift) Toggles payout info"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 15
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+      Font {
+        Id: 16176852187066707974
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:top"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
   Id: 17212618560504958036
-  Name: "UI Text Box"
+  Name: "Spin Text"
   Transform {
     Location {
     }
@@ -413,7 +491,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "Press (Space) to spin"
+      Label: "(Space) to spin"
       Color {
         R: 1
         G: 1
@@ -453,7 +531,7 @@ Objects {
 }
 Objects {
   Id: 2884573074155163926
-  Name: "UI Text Box"
+  Name: "Enter Machine Text"
   Transform {
     Location {
     }
@@ -490,7 +568,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "Press  (F) to quit a machine"
+      Label: "(F) to enter / quit a machine"
       Color {
         R: 1
         G: 1
@@ -530,7 +608,7 @@ Objects {
 }
 Objects {
   Id: 15458835040582070438
-  Name: "UI Image"
+  Name: "Background"
   Transform {
     Location {
     }
