@@ -30,9 +30,9 @@ local API = require(script:GetCustomProperty("API"))
 -- OBJECTS
 ------------------------------------------------------------------------------------------------------------------------
 
-local NETWORKING = script:GetCustomProperty("Networking"):WaitForObject()
 local SETTINGS = script:GetCustomProperty("Settings"):WaitForObject()
 local PLAYER_POSITION = script:GetCustomProperty("PlayerPosition"):WaitForObject()
+local NETWORKING = World.FindObjectByName("SLOT_NETWORKING")
 
 ------------------------------------------------------------------------------------------------------------------------
 -- CUSTOM PROPERTIES

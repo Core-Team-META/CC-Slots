@@ -34,7 +34,6 @@ local NOTIFICATION = require(script:GetCustomProperty("NotificationAPI"))
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
 local ROOT = script:GetCustomProperty("ROOT"):WaitForObject()
-local NETWORKING = script:GetCustomProperty("Networking"):WaitForObject()
 local SCREEN_GROUP = script:GetCustomProperty("ScreenGroup"):WaitForObject()
 local UI_CONTAINER = script:GetCustomProperty("UIContainer"):WaitForObject()
 local LOOT_CARD_TEMPLATE = script:GetCustomProperty("LootCardTemplate")
@@ -57,7 +56,7 @@ local WINNER_SOUND = AUDIO:GetCustomProperty("WinnerSound"):WaitForObject()
 local WIN_LINES_AUDIO = AUDIO:GetCustomProperty("WinLinesAudio"):WaitForObject()
 local SLOT_SPIN_SOUND = AUDIO:GetCustomProperty("SlotSpinSound"):WaitForObject()
 local LOSS_SOUND = AUDIO:GetCustomProperty("LossSound"):WaitForObject()
-
+local NETWORKING = World.FindObjectByName("SLOT_NETWORKING")
 ------------------------------------------------------------------------------------------------------------------------
 -- CUSTOM PROPERTIES
 ------------------------------------------------------------------------------------------------------------------------

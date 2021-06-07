@@ -55,6 +55,42 @@ Assets {
             Name: "cs:IsDevMode"
             Bool: false
           }
+          Overrides {
+            Name: "cs:Name:tooltip"
+            String: "The name of the slot machine. This name will show up on the interactable trigger label."
+          }
+          Overrides {
+            Name: "cs:SpinDuration:tooltip"
+            String: "Time in seconds that each spin will take to complete. This value should always be higher than 2."
+          }
+          Overrides {
+            Name: "cs:DefaultSpinSpeed:tooltip"
+            String: "How quickly the reels spin once a slot is played. Default is 10000."
+          }
+          Overrides {
+            Name: "cs:ResourceName:tooltip"
+            String: "The resource name that this machine both takes to play and pays out winnings in."
+          }
+          Overrides {
+            Name: "cs:MinBet:tooltip"
+            String: "The minimum bet amount of the machine."
+          }
+          Overrides {
+            Name: "cs:MaxBet:tooltip"
+            String: "The maximum bet amount of the machine."
+          }
+          Overrides {
+            Name: "cs:Theme:tooltip"
+            String: "The theme to use for this machine, should match a theme name under your SLOT_DATABASE."
+          }
+          Overrides {
+            Name: "cs:Odds:tooltip"
+            String: "The higher this value the more a machine will pay. 0.95 is default and means that the machine on average will payout 95% of the bet amount over 1 million spins. This should never be set lower than 0.85 but has no upper limit cap."
+          }
+          Overrides {
+            Name: "cs:IsDevMode:tooltip"
+            String: "Used to test the odds of a machine over 100k spins. Once completed you\'ll get a print out of total bet amount and total return based on your odds value of the machine. This should be left unchecked when publishing a game live."
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -126,12 +162,6 @@ Assets {
         }
         ParentId: 15616733867502178517
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:Networking"
-            ObjectReference {
-              SelfId: 12280971450803704961
-            }
-          }
           Overrides {
             Name: "cs:RandomSpinner_Data"
             AssetReference {
@@ -311,12 +341,6 @@ Assets {
             Name: "cs:SpinButton"
             ObjectReference {
               SelfId: 17198093286223507946
-            }
-          }
-          Overrides {
-            Name: "cs:Networking"
-            ObjectReference {
-              SelfId: 12280971450803704961
             }
           }
           Overrides {

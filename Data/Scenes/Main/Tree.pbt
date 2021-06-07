@@ -19,7 +19,7 @@ Objects {
   ChildIds: 10029497814753878703
   ChildIds: 17390311630592559610
   ChildIds: 10615916000806978389
-  ChildIds: 8453249901324603248
+  ChildIds: 2357391506206219164
   ChildIds: 3877198441100997701
   ChildIds: 4675025735314061901
   ChildIds: 2669417942466758110
@@ -134,7 +134,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8453249901324603248
+  Id: 2357391506206219164
   Name: "Slot Primary Component"
   Transform {
     Location {
@@ -168,10 +168,10 @@ Objects {
     FilePartitionName: "Random Spinner"
   }
   InstanceHistory {
-    SelfId: 17797198791261122129
-    SubobjectId: 5713667807401402765
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
+    SelfId: 2357391506206219164
+    SubobjectId: 14752091706979971686
+    InstanceId: 15814154774213744170
+    TemplateId: 6894717358296652576
     WasRoot: true
   }
 }

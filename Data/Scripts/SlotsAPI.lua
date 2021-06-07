@@ -70,7 +70,7 @@ function Initialize()
             slotEntry.screenshotIndex = item:GetCustomProperty("ScreenshotIndex")
             slotEntry.id = index
             slotEntry.chance = 1
-            slotEntry.isWild = item:GetCustomProperty("isWild")
+            slotEntry.isWild = index == 5 and true or false
             slotEntry.reward = index + 1
             slotsDatabase[theme.name][index] = slotEntry
         end

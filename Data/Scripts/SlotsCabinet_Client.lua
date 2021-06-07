@@ -32,7 +32,7 @@ local NOTIFICATION = require(script:GetCustomProperty("NotificationAPI"))
 ------------------------------------------------------------------------------------------------------------------------
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
-local SETTINGS = script:GetCustomProperty("Settings"):WaitForObject()
+local ROOT = script:GetCustomProperty("ROOT"):WaitForObject()
 local GEO = script:GetCustomProperty("GEO"):WaitForObject()
 local BetAmount = GEO:GetCustomProperty("BetAmount"):WaitForObject()
 local PlayerWallet = GEO:GetCustomProperty("PlayerWallet"):WaitForObject()
@@ -42,8 +42,8 @@ local BetAmount = GEO:GetCustomProperty("BetAmount"):WaitForObject()
 -- CUSTOM PROPERTIES
 ------------------------------------------------------------------------------------------------------------------------
 
-local SLOT_ID = SETTINGS.id
-local RESOURCE_NAME = SETTINGS:GetCustomProperty("ResourceName") or "SlotCoin"
+local SLOT_ID = ROOT.id
+local RESOURCE_NAME = ROOT:GetCustomProperty("ResourceName") or "SlotCoin"
 
 ------------------------------------------------------------------------------------------------------------------------
 -- LOCAL VARIABLES
@@ -83,11 +83,11 @@ function OnBindingPressed(player, keybind)
                     Events.BroadcastToServer(API.Broadcasts.spin, currentBet or 1, slotId)
                 elseif buttonType == "LowerButton" then
                     if minBet < currentBet then
-                        player.clientUserData.betAmount = currentBet - 1
+                        player.clientUserData.betAmount = CoreMath.Round(currentBet - (maxBet/minBet))
                     end
                 elseif buttonType == "RaiseButton" then
                     if maxBet > currentBet then
-                        player.clientUserData.betAmount = currentBet + 1
+                        player.clientUserData.betAmount = CoreMath.Round(currentBet + (maxBet/minBet))
                     end
                 elseif buttonType == "MaxButton" then
                     player.clientUserData.betAmount = maxBet

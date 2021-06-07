@@ -62,15 +62,6 @@ Assets {
   }
 }
 Assets {
-  Id: 3547494299462493723
-  Name: "\"Digital Horizons\" Music Construction Kit (Layers) 01"
-  PlatformAssetType: 10
-  PrimaryAsset {
-    AssetType: "AudioBlueprintAssetRef"
-    AssetId: "abp_digital_horizons_LayersKit_ref"
-  }
-}
-Assets {
   Id: 1468624843644286698
   Name: "Teko Bold"
   PlatformAssetType: 28

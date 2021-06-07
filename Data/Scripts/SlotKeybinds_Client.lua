@@ -14,11 +14,10 @@ WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEM
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
 OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 --]]
-
 ------------------------------------------------------------------------------------------------------------------------
 -- Slots Keybinds Client
 -- Author Morticai (META) - (https://www.coregames.com/user/d1073dbcc404405cbef8ce728e53d380)
--- Date: 2021/5/20
+-- Date: 2021/6/07
 -- Version 0.0.1
 ------------------------------------------------------------------------------------------------------------------------
 -- REQUIRES
@@ -38,25 +37,35 @@ local SLOT_SETTINGS = script:GetCustomProperty("SLOT_SETTINGS"):WaitForObject()
 ------------------------------------------------------------------------------------------------------------------------
 
 local isExitBindEnabled = SLOT_SETTINGS:GetCustomProperty("EnableExitKeybind")
-local exitKeybind = SLOT_SETTINGS:GetCustomProperty("ExitKeybind") or "ability_extra_12"
+local exitKeybind = SLOT_SETTINGS:GetCustomProperty("ExitKeybind") or "ability_feet"
 local isSpinBindEnabled = SLOT_SETTINGS:GetCustomProperty("isSpinBindEnabled")
 local spinKeybind = SLOT_SETTINGS:GetCustomProperty("SpinKeybind") or "ability_extra_17"
 
 ------------------------------------------------------------------------------------------------------------------------
--- GLOBAL FUNCTIONS
+-- LOCAL VARIABLES
 ------------------------------------------------------------------------------------------------------------------------
 
+local spamPrevent = time()
+
+------------------------------------------------------------------------------------------------------------------------
+-- GLOBAL FUNCTIONS
+------------------------------------------------------------------------------------------------------------------------
 
 function OnBindingPressed(player, keybind)
     local slotId = player.clientUserData.slotId
     local currentBet = player.clientUserData.betAmount
     local minBet = player.clientUserData.minBet
     local maxBet = player.clientUserData.maxBet
-    if not slotId then return end
-    if keybind == exitKeybind and isExitBindEnabled then
-        Events.BroadcastToServer(API.Broadcasts.quit, slotId)
-    elseif keybind == spinKeybind and isSpinBindEnabled then
-        Events.BroadcastToServer(API.Broadcasts.spin, currentBet or 1, slotId)
+    if not slotId then
+        return
+    end
+    if spamPrevent < time() then
+        if keybind == exitKeybind and isExitBindEnabled then
+            Events.BroadcastToServer(API.Broadcasts.quit, slotId)
+        elseif keybind == spinKeybind and isSpinBindEnabled then
+            Events.BroadcastToServer(API.Broadcasts.spin, currentBet or 1, slotId)
+        end
+        spamPrevent = time() + 0.33
     end
 end
 

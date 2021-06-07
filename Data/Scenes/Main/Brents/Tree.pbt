@@ -156,7 +156,10 @@ Objects {
     Overrides {
       Name: "cs:Networking"
       ObjectReference {
-        SelfId: 12280971450803704961
+        SelfId: 13505434300183323837
+        SubObjectId: 6296637947646741831
+        InstanceId: 15814154774213744170
+        TemplateId: 6894717358296652576
       }
     }
     Overrides {

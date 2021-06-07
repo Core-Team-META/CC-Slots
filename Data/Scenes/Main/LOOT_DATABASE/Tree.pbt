@@ -1,7 +1,7 @@
 Name: "LOOT_DATABASE"
-RootId: 9904375601217783865
+RootId: 15731411049758782096
 Objects {
-  Id: 6016821252793165755
+  Id: 8365047624407704376
   Name: "Buck-Fantasy"
   Transform {
     Location {
@@ -14,12 +14,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9904375601217783865
-  ChildIds: 13960875283633358403
-  ChildIds: 909672242244122107
-  ChildIds: 6864184102991747685
-  ChildIds: 3946639996869993481
-  ChildIds: 6833463235680243490
+  ParentId: 15731411049758782096
+  ChildIds: 8376971376309966603
+  ChildIds: 1661259714931865609
+  ChildIds: 10152256625515492291
+  ChildIds: 15271009986669024193
+  ChildIds: 7793863567081363629
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -33,14 +33,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 9169683292736877109
-    SubobjectId: 14336680307333660137
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
+    SelfId: 8365047624407704376
+    SubobjectId: 10959589220120578754
+    InstanceId: 15814154774213744170
+    TemplateId: 6894717358296652576
   }
 }
 Objects {
-  Id: 6833463235680243490
+  Id: 7793863567081363629
   Name: "Wild"
   Transform {
     Location {
@@ -53,7 +53,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6016821252793165755
+  ParentId: 8365047624407704376
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -64,24 +64,12 @@ Objects {
       Int: 5
     }
     Overrides {
-      Name: "cs:Reward"
-      Int: 250
+      Name: "cs:GamePortal:tooltip"
+      String: "GameID of a published game with the screenshots for this theme."
     }
     Overrides {
-      Name: "cs:isWild"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:Match2SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:Match3SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
+      Name: "cs:ScreenshotIndex:tooltip"
+      String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
     }
   }
   Collidable_v2 {
@@ -98,14 +86,14 @@ Objects {
     FilePartitionName: "Basic Sniper_1"
   }
   InstanceHistory {
-    SelfId: 1701057616709612719
-    SubobjectId: 12550408989901159283
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
+    SelfId: 7793863567081363629
+    SubobjectId: 9234503166237176151
+    InstanceId: 15814154774213744170
+    TemplateId: 6894717358296652576
   }
 }
 Objects {
-  Id: 3946639996869993481
+  Id: 15271009986669024193
   Name: "Queen"
   Transform {
     Location {
@@ -118,7 +106,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6016821252793165755
+  ParentId: 8365047624407704376
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -129,24 +117,12 @@ Objects {
       Int: 4
     }
     Overrides {
-      Name: "cs:Reward"
-      Int: 100
+      Name: "cs:GamePortal:tooltip"
+      String: "GameID of a published game with the screenshots for this theme."
     }
     Overrides {
-      Name: "cs:isWild"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Match2SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:Match3SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
+      Name: "cs:ScreenshotIndex:tooltip"
+      String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
     }
   }
   Collidable_v2 {
@@ -163,14 +139,14 @@ Objects {
     FilePartitionName: "Basic Sniper_2"
   }
   InstanceHistory {
-    SelfId: 1701057616709612719
-    SubobjectId: 12550408989901159283
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
+    SelfId: 15271009986669024193
+    SubobjectId: 4603611783438973499
+    InstanceId: 15814154774213744170
+    TemplateId: 6894717358296652576
   }
 }
 Objects {
-  Id: 6864184102991747685
+  Id: 10152256625515492291
   Name: "King"
   Transform {
     Location {
@@ -183,7 +159,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6016821252793165755
+  ParentId: 8365047624407704376
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -194,24 +170,12 @@ Objects {
       Int: 3
     }
     Overrides {
-      Name: "cs:Reward"
-      Int: 50
+      Name: "cs:GamePortal:tooltip"
+      String: "GameID of a published game with the screenshots for this theme."
     }
     Overrides {
-      Name: "cs:isWild"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Match2SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:Match3SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
+      Name: "cs:ScreenshotIndex:tooltip"
+      String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
     }
   }
   Collidable_v2 {
@@ -228,14 +192,14 @@ Objects {
     FilePartitionName: "Even Cooler Gun_1"
   }
   InstanceHistory {
-    SelfId: 18043899592095658405
-    SubobjectId: 4890789954066775673
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
+    SelfId: 10152256625515492291
+    SubobjectId: 6983633549828282937
+    InstanceId: 15814154774213744170
+    TemplateId: 6894717358296652576
   }
 }
 Objects {
-  Id: 909672242244122107
+  Id: 1661259714931865609
   Name: "Gem"
   Transform {
     Location {
@@ -248,7 +212,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6016821252793165755
+  ParentId: 8365047624407704376
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -259,24 +223,12 @@ Objects {
       Int: 2
     }
     Overrides {
-      Name: "cs:Reward"
-      Int: 25
+      Name: "cs:GamePortal:tooltip"
+      String: "GameID of a published game with the screenshots for this theme."
     }
     Overrides {
-      Name: "cs:isWild"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Match2SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:Match3SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
+      Name: "cs:ScreenshotIndex:tooltip"
+      String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
     }
   }
   Collidable_v2 {
@@ -293,14 +245,14 @@ Objects {
     FilePartitionName: "Another Cool Gun_1"
   }
   InstanceHistory {
-    SelfId: 16490284211346344671
-    SubobjectId: 6732352053841462531
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
+    SelfId: 1661259714931865609
+    SubobjectId: 18087349742053429747
+    InstanceId: 15814154774213744170
+    TemplateId: 6894717358296652576
   }
 }
 Objects {
-  Id: 13960875283633358403
+  Id: 8376971376309966603
   Name: "Chest"
   Transform {
     Location {
@@ -313,7 +265,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6016821252793165755
+  ParentId: 8365047624407704376
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -324,24 +276,12 @@ Objects {
       Int: 1
     }
     Overrides {
-      Name: "cs:Reward"
-      Int: 15
+      Name: "cs:GamePortal:tooltip"
+      String: "GameID of a published game with the screenshots for this theme."
     }
     Overrides {
-      Name: "cs:isWild"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Match2SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:Match3SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
+      Name: "cs:ScreenshotIndex:tooltip"
+      String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
     }
   }
   Collidable_v2 {
@@ -358,14 +298,14 @@ Objects {
     FilePartitionName: "Cool Gun_1"
   }
   InstanceHistory {
-    SelfId: 8219657377845172806
-    SubobjectId: 14674216655756645786
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
+    SelfId: 8376971376309966603
+    SubobjectId: 10974759093539258097
+    InstanceId: 15814154774213744170
+    TemplateId: 6894717358296652576
   }
 }
 Objects {
-  Id: 2947259548664089341
+  Id: 7647335739835841594
   Name: "Zombie"
   Transform {
     Location {
@@ -378,12 +318,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9904375601217783865
-  ChildIds: 8562489422046518985
-  ChildIds: 3180494569223374995
-  ChildIds: 7028675261943469158
-  ChildIds: 10803184854321673635
-  ChildIds: 11974011216786590563
+  ParentId: 15731411049758782096
+  ChildIds: 6686724119974934669
+  ChildIds: 3073856546085083686
+  ChildIds: 15145024720497752356
+  ChildIds: 11044058015976579106
+  ChildIds: 7161508860517814270
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -397,14 +337,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 9169683292736877109
-    SubobjectId: 14336680307333660137
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
+    SelfId: 7647335739835841594
+    SubobjectId: 9668697869773133248
+    InstanceId: 15814154774213744170
+    TemplateId: 6894717358296652576
   }
 }
 Objects {
-  Id: 11974011216786590563
+  Id: 7161508860517814270
   Name: "Wild"
   Transform {
     Location {
@@ -417,7 +357,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2947259548664089341
+  ParentId: 7647335739835841594
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -428,24 +368,12 @@ Objects {
       Int: 5
     }
     Overrides {
-      Name: "cs:Reward"
-      Int: 250
+      Name: "cs:GamePortal:tooltip"
+      String: "GameID of a published game with the screenshots for this theme."
     }
     Overrides {
-      Name: "cs:isWild"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:Match2SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:Match3SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
+      Name: "cs:ScreenshotIndex:tooltip"
+      String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
     }
   }
   Collidable_v2 {
@@ -462,14 +390,14 @@ Objects {
     FilePartitionName: "Wild Sheriff"
   }
   InstanceHistory {
-    SelfId: 1701057616709612719
-    SubobjectId: 12550408989901159283
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
+    SelfId: 7161508860517814270
+    SubobjectId: 10334666543904663044
+    InstanceId: 15814154774213744170
+    TemplateId: 6894717358296652576
   }
 }
 Objects {
-  Id: 10803184854321673635
+  Id: 11044058015976579106
   Name: "Tombstone"
   Transform {
     Location {
@@ -482,7 +410,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2947259548664089341
+  ParentId: 7647335739835841594
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -493,24 +421,12 @@ Objects {
       Int: 4
     }
     Overrides {
-      Name: "cs:Reward"
-      Int: 100
+      Name: "cs:GamePortal:tooltip"
+      String: "GameID of a published game with the screenshots for this theme."
     }
     Overrides {
-      Name: "cs:isWild"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Match2SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:Match3SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
+      Name: "cs:ScreenshotIndex:tooltip"
+      String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
     }
   }
   Collidable_v2 {
@@ -527,14 +443,14 @@ Objects {
     FilePartitionName: "Guns"
   }
   InstanceHistory {
-    SelfId: 1701057616709612719
-    SubobjectId: 12550408989901159283
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
+    SelfId: 11044058015976579106
+    SubobjectId: 8451768220089698776
+    InstanceId: 15814154774213744170
+    TemplateId: 6894717358296652576
   }
 }
 Objects {
-  Id: 7028675261943469158
+  Id: 15145024720497752356
   Name: "Skull"
   Transform {
     Location {
@@ -547,7 +463,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2947259548664089341
+  ParentId: 7647335739835841594
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -558,24 +474,12 @@ Objects {
       Int: 3
     }
     Overrides {
-      Name: "cs:Reward"
-      Int: 50
+      Name: "cs:GamePortal:tooltip"
+      String: "GameID of a published game with the screenshots for this theme."
     }
     Overrides {
-      Name: "cs:isWild"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Match2SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:Match3SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
+      Name: "cs:ScreenshotIndex:tooltip"
+      String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
     }
   }
   Collidable_v2 {
@@ -592,14 +496,14 @@ Objects {
     FilePartitionName: "Canteen"
   }
   InstanceHistory {
-    SelfId: 18043899592095658405
-    SubobjectId: 4890789954066775673
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
+    SelfId: 15145024720497752356
+    SubobjectId: 4477485775385006302
+    InstanceId: 15814154774213744170
+    TemplateId: 6894717358296652576
   }
 }
 Objects {
-  Id: 3180494569223374995
+  Id: 3073856546085083686
   Name: "Zombie"
   Transform {
     Location {
@@ -612,7 +516,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2947259548664089341
+  ParentId: 7647335739835841594
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -623,24 +527,12 @@ Objects {
       Int: 2
     }
     Overrides {
-      Name: "cs:Reward"
-      Int: 25
+      Name: "cs:GamePortal:tooltip"
+      String: "GameID of a published game with the screenshots for this theme."
     }
     Overrides {
-      Name: "cs:isWild"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Match2SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:Match3SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
+      Name: "cs:ScreenshotIndex:tooltip"
+      String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
     }
   }
   Collidable_v2 {
@@ -657,14 +549,14 @@ Objects {
     FilePartitionName: "Cactus"
   }
   InstanceHistory {
-    SelfId: 16490284211346344671
-    SubobjectId: 6732352053841462531
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
+    SelfId: 3073856546085083686
+    SubobjectId: 14314231908934759388
+    InstanceId: 15814154774213744170
+    TemplateId: 6894717358296652576
   }
 }
 Objects {
-  Id: 8562489422046518985
+  Id: 6686724119974934669
   Name: "Eye"
   Transform {
     Location {
@@ -677,7 +569,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2947259548664089341
+  ParentId: 7647335739835841594
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -688,24 +580,12 @@ Objects {
       Int: 1
     }
     Overrides {
-      Name: "cs:Reward"
-      Int: 15
+      Name: "cs:GamePortal:tooltip"
+      String: "GameID of a published game with the screenshots for this theme."
     }
     Overrides {
-      Name: "cs:isWild"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Match2SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:Match3SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
+      Name: "cs:ScreenshotIndex:tooltip"
+      String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
     }
   }
   Collidable_v2 {
@@ -722,14 +602,14 @@ Objects {
     FilePartitionName: "Boot"
   }
   InstanceHistory {
-    SelfId: 8219657377845172806
-    SubobjectId: 14674216655756645786
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
+    SelfId: 6686724119974934669
+    SubobjectId: 12736973602479624567
+    InstanceId: 15814154774213744170
+    TemplateId: 6894717358296652576
   }
 }
 Objects {
-  Id: 11641541088542490757
+  Id: 6621354674108294387
   Name: "Mecha"
   Transform {
     Location {
@@ -742,12 +622,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9904375601217783865
-  ChildIds: 11217077053663374695
-  ChildIds: 778882865042561290
-  ChildIds: 16181728115989129310
-  ChildIds: 13287426585902132197
-  ChildIds: 7846809714333166258
+  ParentId: 15731411049758782096
+  ChildIds: 3303426073850194395
+  ChildIds: 11873964395042596340
+  ChildIds: 5471979388919913813
+  ChildIds: 12268506455633087668
+  ChildIds: 3976492022520028336
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -761,14 +641,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 9169683292736877109
-    SubobjectId: 14336680307333660137
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
+    SelfId: 6621354674108294387
+    SubobjectId: 13253267783177719049
+    InstanceId: 15814154774213744170
+    TemplateId: 6894717358296652576
   }
 }
 Objects {
-  Id: 7846809714333166258
+  Id: 3976492022520028336
   Name: "Wild"
   Transform {
     Location {
@@ -781,7 +661,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11641541088542490757
+  ParentId: 6621354674108294387
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -792,24 +672,12 @@ Objects {
       Int: 5
     }
     Overrides {
-      Name: "cs:Reward"
-      Int: 250
+      Name: "cs:GamePortal:tooltip"
+      String: "GameID of a published game with the screenshots for this theme."
     }
     Overrides {
-      Name: "cs:isWild"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:Match2SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:Match3SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
+      Name: "cs:ScreenshotIndex:tooltip"
+      String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
     }
   }
   Collidable_v2 {
@@ -826,14 +694,14 @@ Objects {
     FilePartitionName: "Wild Sheriff_1"
   }
   InstanceHistory {
-    SelfId: 1701057616709612719
-    SubobjectId: 12550408989901159283
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
+    SelfId: 3976492022520028336
+    SubobjectId: 15790042814408832330
+    InstanceId: 15814154774213744170
+    TemplateId: 6894717358296652576
   }
 }
 Objects {
-  Id: 13287426585902132197
+  Id: 12268506455633087668
   Name: "Yellow"
   Transform {
     Location {
@@ -846,7 +714,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11641541088542490757
+  ParentId: 6621354674108294387
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -857,24 +725,12 @@ Objects {
       Int: 4
     }
     Overrides {
-      Name: "cs:Reward"
-      Int: 100
+      Name: "cs:GamePortal:tooltip"
+      String: "GameID of a published game with the screenshots for this theme."
     }
     Overrides {
-      Name: "cs:isWild"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Match2SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:Match3SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
+      Name: "cs:ScreenshotIndex:tooltip"
+      String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
     }
   }
   Collidable_v2 {
@@ -891,14 +747,14 @@ Objects {
     FilePartitionName: "Guns_1"
   }
   InstanceHistory {
-    SelfId: 1701057616709612719
-    SubobjectId: 12550408989901159283
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
+    SelfId: 12268506455633087668
+    SubobjectId: 5065612472211203406
+    InstanceId: 15814154774213744170
+    TemplateId: 6894717358296652576
   }
 }
 Objects {
-  Id: 16181728115989129310
+  Id: 5471979388919913813
   Name: "Red"
   Transform {
     Location {
@@ -911,7 +767,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11641541088542490757
+  ParentId: 6621354674108294387
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -922,24 +778,12 @@ Objects {
       Int: 3
     }
     Overrides {
-      Name: "cs:Reward"
-      Int: 50
+      Name: "cs:GamePortal:tooltip"
+      String: "GameID of a published game with the screenshots for this theme."
     }
     Overrides {
-      Name: "cs:isWild"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Match2SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:Match3SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
+      Name: "cs:ScreenshotIndex:tooltip"
+      String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
     }
   }
   Collidable_v2 {
@@ -956,14 +800,14 @@ Objects {
     FilePartitionName: "Canteen_1"
   }
   InstanceHistory {
-    SelfId: 18043899592095658405
-    SubobjectId: 4890789954066775673
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
+    SelfId: 5471979388919913813
+    SubobjectId: 12105313414627439791
+    InstanceId: 15814154774213744170
+    TemplateId: 6894717358296652576
   }
 }
 Objects {
-  Id: 778882865042561290
+  Id: 11873964395042596340
   Name: "Green"
   Transform {
     Location {
@@ -976,7 +820,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11641541088542490757
+  ParentId: 6621354674108294387
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -987,24 +831,12 @@ Objects {
       Int: 2
     }
     Overrides {
-      Name: "cs:Reward"
-      Int: 25
+      Name: "cs:GamePortal:tooltip"
+      String: "GameID of a published game with the screenshots for this theme."
     }
     Overrides {
-      Name: "cs:isWild"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Match2SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:Match3SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
+      Name: "cs:ScreenshotIndex:tooltip"
+      String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
     }
   }
   Collidable_v2 {
@@ -1021,14 +853,14 @@ Objects {
     FilePartitionName: "Cactus_1"
   }
   InstanceHistory {
-    SelfId: 16490284211346344671
-    SubobjectId: 6732352053841462531
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
+    SelfId: 11873964395042596340
+    SubobjectId: 5243911380717882382
+    InstanceId: 15814154774213744170
+    TemplateId: 6894717358296652576
   }
 }
 Objects {
-  Id: 11217077053663374695
+  Id: 3303426073850194395
   Name: "Blue"
   Transform {
     Location {
@@ -1041,7 +873,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11641541088542490757
+  ParentId: 6621354674108294387
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -1052,24 +884,12 @@ Objects {
       Int: 1
     }
     Overrides {
-      Name: "cs:Reward"
-      Int: 15
+      Name: "cs:GamePortal:tooltip"
+      String: "GameID of a published game with the screenshots for this theme."
     }
     Overrides {
-      Name: "cs:isWild"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Match2SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:Match3SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
+      Name: "cs:ScreenshotIndex:tooltip"
+      String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
     }
   }
   Collidable_v2 {
@@ -1086,14 +906,14 @@ Objects {
     FilePartitionName: "Boot_1"
   }
   InstanceHistory {
-    SelfId: 8219657377845172806
-    SubobjectId: 14674216655756645786
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
+    SelfId: 3303426073850194395
+    SubobjectId: 13967622503584858145
+    InstanceId: 15814154774213744170
+    TemplateId: 6894717358296652576
   }
 }
 Objects {
-  Id: 11122983215502595586
+  Id: 13369307155453144019
   Name: "Western"
   Transform {
     Location {
@@ -1106,12 +926,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9904375601217783865
-  ChildIds: 16906953365676031498
-  ChildIds: 7078914735219292397
-  ChildIds: 2050290031838906093
-  ChildIds: 16144456119984321757
-  ChildIds: 14935117657472495938
+  ParentId: 15731411049758782096
+  ChildIds: 6542199558000776882
+  ChildIds: 10663232824147714583
+  ChildIds: 12651687459304050248
+  ChildIds: 15330714015554345901
+  ChildIds: 6997638639913758533
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1125,14 +945,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 9169683292736877109
-    SubobjectId: 14336680307333660137
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
+    SelfId: 13369307155453144019
+    SubobjectId: 6163039943597244969
+    InstanceId: 15814154774213744170
+    TemplateId: 6894717358296652576
   }
 }
 Objects {
-  Id: 14935117657472495938
+  Id: 6997638639913758533
   Name: "Wild Sheriff"
   Transform {
     Location {
@@ -1145,7 +965,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11122983215502595586
+  ParentId: 13369307155453144019
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -1156,24 +976,12 @@ Objects {
       Int: 5
     }
     Overrides {
-      Name: "cs:Reward"
-      Int: 250
+      Name: "cs:GamePortal:tooltip"
+      String: "GameID of a published game with the screenshots for this theme."
     }
     Overrides {
-      Name: "cs:isWild"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:Match2SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:Match3SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
+      Name: "cs:ScreenshotIndex:tooltip"
+      String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
     }
   }
   Collidable_v2 {
@@ -1190,14 +998,14 @@ Objects {
     FilePartitionName: "Wild Sheriff_4"
   }
   InstanceHistory {
-    SelfId: 1701057616709612719
-    SubobjectId: 12550408989901159283
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
+    SelfId: 6997638639913758533
+    SubobjectId: 10165272445077702335
+    InstanceId: 15814154774213744170
+    TemplateId: 6894717358296652576
   }
 }
 Objects {
-  Id: 16144456119984321757
+  Id: 15330714015554345901
   Name: "Guns"
   Transform {
     Location {
@@ -1210,7 +1018,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11122983215502595586
+  ParentId: 13369307155453144019
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -1221,24 +1029,12 @@ Objects {
       Int: 4
     }
     Overrides {
-      Name: "cs:Reward"
-      Int: 100
+      Name: "cs:GamePortal:tooltip"
+      String: "GameID of a published game with the screenshots for this theme."
     }
     Overrides {
-      Name: "cs:isWild"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Match2SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:Match3SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
+      Name: "cs:ScreenshotIndex:tooltip"
+      String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
     }
   }
   Collidable_v2 {
@@ -1255,14 +1051,14 @@ Objects {
     FilePartitionName: "Guns_4"
   }
   InstanceHistory {
-    SelfId: 1701057616709612719
-    SubobjectId: 12550408989901159283
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
+    SelfId: 15330714015554345901
+    SubobjectId: 4093619234285761111
+    InstanceId: 15814154774213744170
+    TemplateId: 6894717358296652576
   }
 }
 Objects {
-  Id: 2050290031838906093
+  Id: 12651687459304050248
   Name: "Canteen"
   Transform {
     Location {
@@ -1275,7 +1071,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11122983215502595586
+  ParentId: 13369307155453144019
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -1286,24 +1082,12 @@ Objects {
       Int: 3
     }
     Overrides {
-      Name: "cs:Reward"
-      Int: 50
+      Name: "cs:GamePortal:tooltip"
+      String: "GameID of a published game with the screenshots for this theme."
     }
     Overrides {
-      Name: "cs:isWild"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Match2SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:Match3SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
+      Name: "cs:ScreenshotIndex:tooltip"
+      String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
     }
   }
   Collidable_v2 {
@@ -1320,14 +1104,14 @@ Objects {
     FilePartitionName: "Canteen_4"
   }
   InstanceHistory {
-    SelfId: 18043899592095658405
-    SubobjectId: 4890789954066775673
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
+    SelfId: 12651687459304050248
+    SubobjectId: 4872055442871822258
+    InstanceId: 15814154774213744170
+    TemplateId: 6894717358296652576
   }
 }
 Objects {
-  Id: 7078914735219292397
+  Id: 10663232824147714583
   Name: "Cactus"
   Transform {
     Location {
@@ -1340,7 +1124,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11122983215502595586
+  ParentId: 13369307155453144019
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -1351,24 +1135,12 @@ Objects {
       Int: 2
     }
     Overrides {
-      Name: "cs:Reward"
-      Int: 25
+      Name: "cs:GamePortal:tooltip"
+      String: "GameID of a published game with the screenshots for this theme."
     }
     Overrides {
-      Name: "cs:isWild"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Match2SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:Match3SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
+      Name: "cs:ScreenshotIndex:tooltip"
+      String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
     }
   }
   Collidable_v2 {
@@ -1385,14 +1157,14 @@ Objects {
     FilePartitionName: "Cactus_4"
   }
   InstanceHistory {
-    SelfId: 16490284211346344671
-    SubobjectId: 6732352053841462531
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
+    SelfId: 10663232824147714583
+    SubobjectId: 9220486829154438125
+    InstanceId: 15814154774213744170
+    TemplateId: 6894717358296652576
   }
 }
 Objects {
-  Id: 16906953365676031498
+  Id: 6542199558000776882
   Name: "Boot"
   Transform {
     Location {
@@ -1405,7 +1177,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11122983215502595586
+  ParentId: 13369307155453144019
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -1416,24 +1188,12 @@ Objects {
       Int: 1
     }
     Overrides {
-      Name: "cs:Reward"
-      Int: 15
+      Name: "cs:GamePortal:tooltip"
+      String: "GameID of a published game with the screenshots for this theme."
     }
     Overrides {
-      Name: "cs:isWild"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Match2SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:Match3SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
+      Name: "cs:ScreenshotIndex:tooltip"
+      String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
     }
   }
   Collidable_v2 {
@@ -1450,14 +1210,14 @@ Objects {
     FilePartitionName: "Boot_4"
   }
   InstanceHistory {
-    SelfId: 8219657377845172806
-    SubobjectId: 14674216655756645786
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
+    SelfId: 6542199558000776882
+    SubobjectId: 13169750152882011976
+    InstanceId: 15814154774213744170
+    TemplateId: 6894717358296652576
   }
 }
 Objects {
-  Id: 688037899985773358
+  Id: 7473400578529862095
   Name: "Fantasy"
   Transform {
     Location {
@@ -1470,12 +1230,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9904375601217783865
-  ChildIds: 16725416025905319276
-  ChildIds: 3986427747023420279
-  ChildIds: 5427156116446764528
-  ChildIds: 8681768049265087831
-  ChildIds: 15650504129153391831
+  ParentId: 15731411049758782096
+  ChildIds: 8410202557342804492
+  ChildIds: 10448147829685158695
+  ChildIds: 488921751199016233
+  ChildIds: 16818770501762086399
+  ChildIds: 1368976056536936589
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1489,14 +1249,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 9169683292736877109
-    SubobjectId: 14336680307333660137
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
+    SelfId: 7473400578529862095
+    SubobjectId: 10067810230383642677
+    InstanceId: 15814154774213744170
+    TemplateId: 6894717358296652576
   }
 }
 Objects {
-  Id: 15650504129153391831
+  Id: 1368976056536936589
   Name: "Wild"
   Transform {
     Location {
@@ -1509,7 +1269,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 688037899985773358
+  ParentId: 7473400578529862095
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -1520,24 +1280,12 @@ Objects {
       Int: 5
     }
     Overrides {
-      Name: "cs:Reward"
-      Int: 20
+      Name: "cs:GamePortal:tooltip"
+      String: "GameID of a published game with the screenshots for this theme."
     }
     Overrides {
-      Name: "cs:isWild"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:Match2SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:Match3SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
+      Name: "cs:ScreenshotIndex:tooltip"
+      String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
     }
   }
   Collidable_v2 {
@@ -1554,14 +1302,14 @@ Objects {
     FilePartitionName: "Wild_1"
   }
   InstanceHistory {
-    SelfId: 1701057616709612719
-    SubobjectId: 12550408989901159283
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
+    SelfId: 1368976056536936589
+    SubobjectId: 18370537278072232311
+    InstanceId: 15814154774213744170
+    TemplateId: 6894717358296652576
   }
 }
 Objects {
-  Id: 8681768049265087831
+  Id: 16818770501762086399
   Name: "Yellow Gem"
   Transform {
     Location {
@@ -1574,7 +1322,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 688037899985773358
+  ParentId: 7473400578529862095
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -1585,24 +1333,12 @@ Objects {
       Int: 4
     }
     Overrides {
-      Name: "cs:Reward"
-      Int: 5
+      Name: "cs:GamePortal:tooltip"
+      String: "GameID of a published game with the screenshots for this theme."
     }
     Overrides {
-      Name: "cs:isWild"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Match2SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:Match3SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
+      Name: "cs:ScreenshotIndex:tooltip"
+      String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
     }
   }
   Collidable_v2 {
@@ -1619,14 +1355,14 @@ Objects {
     FilePartitionName: "Rabbit_1"
   }
   InstanceHistory {
-    SelfId: 1701057616709612719
-    SubobjectId: 12550408989901159283
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
+    SelfId: 16818770501762086399
+    SubobjectId: 389157313336826885
+    InstanceId: 15814154774213744170
+    TemplateId: 6894717358296652576
   }
 }
 Objects {
-  Id: 5427156116446764528
+  Id: 488921751199016233
   Name: "Purple Gem"
   Transform {
     Location {
@@ -1639,7 +1375,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 688037899985773358
+  ParentId: 7473400578529862095
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -1650,24 +1386,12 @@ Objects {
       Int: 3
     }
     Overrides {
-      Name: "cs:Reward"
-      Int: 4
+      Name: "cs:GamePortal:tooltip"
+      String: "GameID of a published game with the screenshots for this theme."
     }
     Overrides {
-      Name: "cs:isWild"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Match2SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:Match3SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
+      Name: "cs:ScreenshotIndex:tooltip"
+      String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
     }
   }
   Collidable_v2 {
@@ -1684,14 +1408,14 @@ Objects {
     FilePartitionName: "Gnome_1"
   }
   InstanceHistory {
-    SelfId: 18043899592095658405
-    SubobjectId: 4890789954066775673
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
+    SelfId: 488921751199016233
+    SubobjectId: 16917254769592683731
+    InstanceId: 15814154774213744170
+    TemplateId: 6894717358296652576
   }
 }
 Objects {
-  Id: 3986427747023420279
+  Id: 10448147829685158695
   Name: "Green Gem"
   Transform {
     Location {
@@ -1704,7 +1428,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 688037899985773358
+  ParentId: 7473400578529862095
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -1715,24 +1439,12 @@ Objects {
       Int: 2
     }
     Overrides {
-      Name: "cs:Reward"
-      Int: 3
+      Name: "cs:GamePortal:tooltip"
+      String: "GameID of a published game with the screenshots for this theme."
     }
     Overrides {
-      Name: "cs:isWild"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Match2SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:Match3SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
+      Name: "cs:ScreenshotIndex:tooltip"
+      String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
     }
   }
   Collidable_v2 {
@@ -1749,14 +1461,14 @@ Objects {
     FilePartitionName: "Elf_1"
   }
   InstanceHistory {
-    SelfId: 16490284211346344671
-    SubobjectId: 6732352053841462531
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
+    SelfId: 10448147829685158695
+    SubobjectId: 9003136778157173469
+    InstanceId: 15814154774213744170
+    TemplateId: 6894717358296652576
   }
 }
 Objects {
-  Id: 16725416025905319276
+  Id: 8410202557342804492
   Name: "Blue Gem"
   Transform {
     Location {
@@ -1769,7 +1481,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 688037899985773358
+  ParentId: 7473400578529862095
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortal"
@@ -1780,24 +1492,12 @@ Objects {
       Int: 1
     }
     Overrides {
-      Name: "cs:Reward"
-      Int: 2
+      Name: "cs:GamePortal:tooltip"
+      String: "GameID of a published game with the screenshots for this theme."
     }
     Overrides {
-      Name: "cs:isWild"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Match2SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:Match3SFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
+      Name: "cs:ScreenshotIndex:tooltip"
+      String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
     }
   }
   Collidable_v2 {
@@ -1814,9 +1514,9 @@ Objects {
     FilePartitionName: "Dragon_1"
   }
   InstanceHistory {
-    SelfId: 8219657377845172806
-    SubobjectId: 14674216655756645786
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
+    SelfId: 8410202557342804492
+    SubobjectId: 11005069608717173750
+    InstanceId: 15814154774213744170
+    TemplateId: 6894717358296652576
   }
 }

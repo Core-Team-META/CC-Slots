@@ -1,13 +1,13 @@
 Assets {
-  Id: 7352794389691591513
-  Name: "MechaArcadeMachine"
+  Id: 652498589221498682
+  Name: "Slot_Example_Mecha"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 8019821520510676024
+      RootId: 16527933051090480381
       Objects {
-        Id: 8019821520510676024
-        Name: "MechaArcadeMachine"
+        Id: 16527933051090480381
+        Name: "Slot_Example_Mecha"
         Transform {
           Scale {
             X: 1.2196
@@ -16,8 +16,8 @@ Assets {
           }
         }
         ParentId: 11546936440891399579
-        ChildIds: 16460223943244810137
-        ChildIds: 18035254857092324981
+        ChildIds: 1071834215039163835
+        ChildIds: 18056387415649428826
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -106,7 +106,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16460223943244810137
+        Id: 1071834215039163835
         Name: "Settings"
         Transform {
           Location {
@@ -120,10 +120,10 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 8019821520510676024
-        ChildIds: 10040235265298899998
-        ChildIds: 3580537202393740168
-        ChildIds: 12542699250359385753
+        ParentId: 16527933051090480381
+        ChildIds: 3130688824218966937
+        ChildIds: 7411820085472215861
+        ChildIds: 2399118172480245251
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -143,7 +143,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10040235265298899998
+        Id: 3130688824218966937
         Name: "SlotsSpinnerMultiline_Server"
         Transform {
           Location {
@@ -156,7 +156,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16460223943244810137
+        ParentId: 1071834215039163835
         UnregisteredParameters {
           Overrides {
             Name: "cs:RandomSpinner_Data"
@@ -167,19 +167,19 @@ Assets {
           Overrides {
             Name: "cs:Settings"
             ObjectReference {
-              SubObjectId: 8019821520510676024
+              SubObjectId: 16527933051090480381
             }
           }
           Overrides {
             Name: "cs:Trigger"
             ObjectReference {
-              SubObjectId: 12227192544232325397
+              SubObjectId: 11569036183375129792
             }
           }
           Overrides {
             Name: "cs:PlayerPosition"
             ObjectReference {
-              SubObjectId: 3580537202393740168
+              SubObjectId: 7411820085472215861
             }
           }
           Overrides {
@@ -208,7 +208,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3580537202393740168
+        Id: 7411820085472215861
         Name: "Player Position"
         Transform {
           Location {
@@ -225,7 +225,7 @@ Assets {
             Z: 0.82021
           }
         }
-        ParentId: 16460223943244810137
+        ParentId: 1071834215039163835
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -247,7 +247,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12542699250359385753
+        Id: 2399118172480245251
         Name: "ClientContext"
         Transform {
           Location {
@@ -260,13 +260,13 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16460223943244810137
-        ChildIds: 14570674419111689573
-        ChildIds: 18386286007147709238
-        ChildIds: 15396463938736122450
-        ChildIds: 6887363701579149710
-        ChildIds: 3009318347596777875
-        ChildIds: 12227192544232325397
+        ParentId: 1071834215039163835
+        ChildIds: 17236705642824152662
+        ChildIds: 2144018041313638500
+        ChildIds: 13866271136130161716
+        ChildIds: 13492721207407530333
+        ChildIds: 1383839895803256
+        ChildIds: 11569036183375129792
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -282,7 +282,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14570674419111689573
+        Id: 17236705642824152662
         Name: "SlotsSpinnerMultiline_Client"
         Transform {
           Location {
@@ -295,36 +295,36 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 12542699250359385753
+        ParentId: 2399118172480245251
         UnregisteredParameters {
           Overrides {
             Name: "cs:ROOT"
             ObjectReference {
-              SubObjectId: 12542699250359385753
+              SubObjectId: 2399118172480245251
             }
           }
           Overrides {
             Name: "cs:ScreenGroup"
             ObjectReference {
-              SubObjectId: 18386286007147709238
+              SubObjectId: 2144018041313638500
             }
           }
           Overrides {
             Name: "cs:Slot1"
             ObjectReference {
-              SubObjectId: 11780294681972350519
+              SubObjectId: 13027569226363586156
             }
           }
           Overrides {
             Name: "cs:Slot2"
             ObjectReference {
-              SubObjectId: 3164242371514934526
+              SubObjectId: 7958233758925070935
             }
           }
           Overrides {
             Name: "cs:Slot3"
             ObjectReference {
-              SubObjectId: 12948863942702522885
+              SubObjectId: 16825135089566017098
             }
           }
           Overrides {
@@ -342,25 +342,25 @@ Assets {
           Overrides {
             Name: "cs:Settings"
             ObjectReference {
-              SubObjectId: 8019821520510676024
+              SubObjectId: 16527933051090480381
             }
           }
           Overrides {
             Name: "cs:Background"
             ObjectReference {
-              SubObjectId: 3135080119565334078
+              SubObjectId: 1401833871449982197
             }
           }
           Overrides {
             Name: "cs:SlotCam"
             ObjectReference {
-              SubObjectId: 6887363701579149710
+              SubObjectId: 13492721207407530333
             }
           }
           Overrides {
             Name: "cs:WinLine"
             ObjectReference {
-              SubObjectId: 15287665891553958979
+              SubObjectId: 9707657401528900677
             }
           }
           Overrides {
@@ -384,19 +384,19 @@ Assets {
           Overrides {
             Name: "cs:WinLinesObjects"
             ObjectReference {
-              SubObjectId: 7999689220648022994
+              SubObjectId: 2864450088931087968
             }
           }
           Overrides {
             Name: "cs:Trigger"
             ObjectReference {
-              SubObjectId: 12227192544232325397
+              SubObjectId: 11569036183375129792
             }
           }
           Overrides {
             Name: "cs:Audio"
             ObjectReference {
-              SubObjectId: 15396463938736122450
+              SubObjectId: 13866271136130161716
             }
           }
         }
@@ -419,7 +419,7 @@ Assets {
         }
       }
       Objects {
-        Id: 18386286007147709238
+        Id: 2144018041313638500
         Name: "ScreenGroup"
         Transform {
           Location {
@@ -437,13 +437,13 @@ Assets {
             Z: 0.0253759455
           }
         }
-        ParentId: 12542699250359385753
-        ChildIds: 11780294681972350519
-        ChildIds: 3164242371514934526
-        ChildIds: 12948863942702522885
-        ChildIds: 3135080119565334078
-        ChildIds: 15287665891553958979
-        ChildIds: 7999689220648022994
+        ParentId: 2399118172480245251
+        ChildIds: 13027569226363586156
+        ChildIds: 7958233758925070935
+        ChildIds: 16825135089566017098
+        ChildIds: 1401833871449982197
+        ChildIds: 9707657401528900677
+        ChildIds: 2864450088931087968
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -458,7 +458,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11780294681972350519
+        Id: 13027569226363586156
         Name: "Slot1"
         Transform {
           Location {
@@ -473,7 +473,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18386286007147709238
+        ParentId: 2144018041313638500
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -490,7 +490,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3164242371514934526
+        Id: 7958233758925070935
         Name: "Slot2"
         Transform {
           Location {
@@ -504,7 +504,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18386286007147709238
+        ParentId: 2144018041313638500
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -521,7 +521,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12948863942702522885
+        Id: 16825135089566017098
         Name: "Slot3"
         Transform {
           Location {
@@ -536,7 +536,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18386286007147709238
+        ParentId: 2144018041313638500
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -553,7 +553,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3135080119565334078
+        Id: 1401833871449982197
         Name: "Background"
         Transform {
           Location {
@@ -569,7 +569,7 @@ Assets {
             Z: 100
           }
         }
-        ParentId: 18386286007147709238
+        ParentId: 2144018041313638500
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -611,7 +611,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15287665891553958979
+        Id: 9707657401528900677
         Name: "Screen Center"
         Transform {
           Location {
@@ -626,7 +626,7 @@ Assets {
             Z: 0.143468633
           }
         }
-        ParentId: 18386286007147709238
+        ParentId: 2144018041313638500
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -676,7 +676,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7999689220648022994
+        Id: 2864450088931087968
         Name: "Win Lines"
         Transform {
           Location {
@@ -692,12 +692,12 @@ Assets {
             Z: 39.4074
           }
         }
-        ParentId: 18386286007147709238
-        ChildIds: 18152948266934333142
-        ChildIds: 6322417337452363878
-        ChildIds: 15617480197435437894
-        ChildIds: 7334988307875905127
-        ChildIds: 12738464803010516590
+        ParentId: 2144018041313638500
+        ChildIds: 12861235526148097164
+        ChildIds: 2213888253677057940
+        ChildIds: 17483978502191186357
+        ChildIds: 6087242738986276413
+        ChildIds: 2641341616890060678
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -715,7 +715,7 @@ Assets {
         }
       }
       Objects {
-        Id: 18152948266934333142
+        Id: 12861235526148097164
         Name: "Straight_Top"
         Transform {
           Location {
@@ -733,7 +733,7 @@ Assets {
             Z: 0.0036406524
           }
         }
-        ParentId: 7999689220648022994
+        ParentId: 2864450088931087968
         UnregisteredParameters {
           Overrides {
             Name: "cs:ID"
@@ -795,7 +795,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6322417337452363878
+        Id: 2213888253677057940
         Name: "Straight_Middle"
         Transform {
           Location {
@@ -808,7 +808,7 @@ Assets {
             Z: 0.0036406524
           }
         }
-        ParentId: 7999689220648022994
+        ParentId: 2864450088931087968
         UnregisteredParameters {
           Overrides {
             Name: "cs:ID"
@@ -870,7 +870,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15617480197435437894
+        Id: 17483978502191186357
         Name: "Straight_Bottom"
         Transform {
           Location {
@@ -889,7 +889,7 @@ Assets {
             Z: 0.0036406524
           }
         }
-        ParentId: 7999689220648022994
+        ParentId: 2864450088931087968
         UnregisteredParameters {
           Overrides {
             Name: "cs:ID"
@@ -953,7 +953,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7334988307875905127
+        Id: 6087242738986276413
         Name: "Diagonal_Top"
         Transform {
           Location {
@@ -969,10 +969,10 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 7999689220648022994
-        ChildIds: 8293109560445959573
-        ChildIds: 14417395490139396052
-        ChildIds: 16846971156948846252
+        ParentId: 2864450088931087968
+        ChildIds: 4978237407530798717
+        ChildIds: 14606474358584482335
+        ChildIds: 3173728859800433498
         UnregisteredParameters {
           Overrides {
             Name: "cs:ID"
@@ -1004,7 +1004,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8293109560445959573
+        Id: 4978237407530798717
         Name: "Diagonal_Top"
         Transform {
           Location {
@@ -1021,7 +1021,7 @@ Assets {
             Z: 0.0036406524
           }
         }
-        ParentId: 7334988307875905127
+        ParentId: 6087242738986276413
         UnregisteredParameters {
           Overrides {
             Name: "cs:ID"
@@ -1083,7 +1083,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14417395490139396052
+        Id: 14606474358584482335
         Name: "Straight_Top"
         Transform {
           Location {
@@ -1102,7 +1102,7 @@ Assets {
             Z: 0.00364065077
           }
         }
-        ParentId: 7334988307875905127
+        ParentId: 6087242738986276413
         UnregisteredParameters {
           Overrides {
             Name: "cs:ID"
@@ -1164,7 +1164,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16846971156948846252
+        Id: 3173728859800433498
         Name: "Straight_Top"
         Transform {
           Location {
@@ -1183,7 +1183,7 @@ Assets {
             Z: 0.00364065077
           }
         }
-        ParentId: 7334988307875905127
+        ParentId: 6087242738986276413
         UnregisteredParameters {
           Overrides {
             Name: "cs:ID"
@@ -1245,7 +1245,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12738464803010516590
+        Id: 2641341616890060678
         Name: "Diagonal_Bottom"
         Transform {
           Location {
@@ -1261,10 +1261,10 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 7999689220648022994
-        ChildIds: 7539460157712045231
-        ChildIds: 17778002483264550511
-        ChildIds: 1447692077230356750
+        ParentId: 2864450088931087968
+        ChildIds: 10299982446751589985
+        ChildIds: 15452560648001373962
+        ChildIds: 16704025876326638080
         UnregisteredParameters {
           Overrides {
             Name: "cs:ID"
@@ -1297,7 +1297,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7539460157712045231
+        Id: 10299982446751589985
         Name: "Diagonal_Bottom"
         Transform {
           Location {
@@ -1315,7 +1315,7 @@ Assets {
             Z: 0.0036406524
           }
         }
-        ParentId: 12738464803010516590
+        ParentId: 2641341616890060678
         UnregisteredParameters {
           Overrides {
             Name: "cs:ID"
@@ -1379,7 +1379,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17778002483264550511
+        Id: 15452560648001373962
         Name: "Straight_Top"
         Transform {
           Location {
@@ -1398,7 +1398,7 @@ Assets {
             Z: 0.00364065077
           }
         }
-        ParentId: 12738464803010516590
+        ParentId: 2641341616890060678
         UnregisteredParameters {
           Overrides {
             Name: "cs:ID"
@@ -1461,7 +1461,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1447692077230356750
+        Id: 16704025876326638080
         Name: "Straight_Top"
         Transform {
           Location {
@@ -1480,7 +1480,7 @@ Assets {
             Z: 0.00364065077
           }
         }
-        ParentId: 12738464803010516590
+        ParentId: 2641341616890060678
         UnregisteredParameters {
           Overrides {
             Name: "cs:ID"
@@ -1543,7 +1543,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15396463938736122450
+        Id: 13866271136130161716
         Name: "Audio"
         Transform {
           Location {
@@ -1558,41 +1558,41 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 12542699250359385753
-        ChildIds: 16972869631749071327
-        ChildIds: 2065784908915576911
-        ChildIds: 5700923727706977962
-        ChildIds: 9927850264106210951
-        ChildIds: 17230905071135125268
+        ParentId: 2399118172480245251
+        ChildIds: 10728029713943507580
+        ChildIds: 6998720060809855829
+        ChildIds: 4436830803726966469
+        ChildIds: 4781664176200698456
+        ChildIds: 6608406757121002180
         UnregisteredParameters {
           Overrides {
             Name: "cs:SlotSound"
             ObjectReference {
-              SubObjectId: 5700923727706977962
+              SubObjectId: 4436830803726966469
             }
           }
           Overrides {
             Name: "cs:WinnerSound"
             ObjectReference {
-              SubObjectId: 16972869631749071327
+              SubObjectId: 10728029713943507580
             }
           }
           Overrides {
             Name: "cs:WinLinesAudio"
             ObjectReference {
-              SubObjectId: 17230905071135125268
+              SubObjectId: 6608406757121002180
             }
           }
           Overrides {
             Name: "cs:SlotSpinSound"
             ObjectReference {
-              SubObjectId: 2065784908915576911
+              SubObjectId: 6998720060809855829
             }
           }
           Overrides {
             Name: "cs:LossSound"
             ObjectReference {
-              SubObjectId: 9927850264106210951
+              SubObjectId: 4781664176200698456
             }
           }
         }
@@ -1613,7 +1613,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16972869631749071327
+        Id: 10728029713943507580
         Name: "Chest Coins Opening 01 SFX"
         Transform {
           Location {
@@ -1628,7 +1628,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15396463938736122450
+        ParentId: 13866271136130161716
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1653,7 +1653,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2065784908915576911
+        Id: 6998720060809855829
         Name: "Coins Win Loop 03 SFX"
         Transform {
           Location {
@@ -1668,7 +1668,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15396463938736122450
+        ParentId: 13866271136130161716
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1693,7 +1693,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5700923727706977962
+        Id: 4436830803726966469
         Name: "Cash Register Drawer Mechanism Lock Close 01 SFX"
         Transform {
           Location {
@@ -1708,7 +1708,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15396463938736122450
+        ParentId: 13866271136130161716
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1733,7 +1733,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9927850264106210951
+        Id: 4781664176200698456
         Name: "Sci-fi Gated Slow Power Down 01 SFX"
         Transform {
           Location {
@@ -1746,7 +1746,7 @@ Assets {
             Z: 0.819941
           }
         }
-        ParentId: 15396463938736122450
+        ParentId: 13866271136130161716
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1771,7 +1771,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17230905071135125268
+        Id: 6608406757121002180
         Name: "WinningLinesAudio"
         Transform {
           Location {
@@ -1785,12 +1785,12 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15396463938736122450
-        ChildIds: 17172098513656057448
-        ChildIds: 15935568574950402414
-        ChildIds: 9886202893397085582
-        ChildIds: 366751580909699062
-        ChildIds: 8321435152527391070
+        ParentId: 13866271136130161716
+        ChildIds: 16134758226006443825
+        ChildIds: 6597596821212904707
+        ChildIds: 13489689484840895656
+        ChildIds: 4928264770496644243
+        ChildIds: 12446359057532844243
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1808,7 +1808,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17172098513656057448
+        Id: 16134758226006443825
         Name: "Game Coin Win 05 SFX"
         Transform {
           Location {
@@ -1821,7 +1821,7 @@ Assets {
             Z: 0.819941
           }
         }
-        ParentId: 17230905071135125268
+        ParentId: 6608406757121002180
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1844,7 +1844,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15935568574950402414
+        Id: 6597596821212904707
         Name: "Game Coin Win 04 SFX"
         Transform {
           Location {
@@ -1857,7 +1857,7 @@ Assets {
             Z: 0.819941
           }
         }
-        ParentId: 17230905071135125268
+        ParentId: 6608406757121002180
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1880,7 +1880,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9886202893397085582
+        Id: 13489689484840895656
         Name: "Game Coin Win 03 SFX"
         Transform {
           Location {
@@ -1893,7 +1893,7 @@ Assets {
             Z: 0.819941
           }
         }
-        ParentId: 17230905071135125268
+        ParentId: 6608406757121002180
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1916,7 +1916,7 @@ Assets {
         }
       }
       Objects {
-        Id: 366751580909699062
+        Id: 4928264770496644243
         Name: "Game Coin Win 02 SFX"
         Transform {
           Location {
@@ -1929,7 +1929,7 @@ Assets {
             Z: 0.819941
           }
         }
-        ParentId: 17230905071135125268
+        ParentId: 6608406757121002180
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1952,7 +1952,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8321435152527391070
+        Id: 12446359057532844243
         Name: "Game Coin Win 01 SFX"
         Transform {
           Location {
@@ -1965,7 +1965,7 @@ Assets {
             Z: 0.819941
           }
         }
-        ParentId: 17230905071135125268
+        ParentId: 6608406757121002180
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1988,7 +1988,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6887363701579149710
+        Id: 13492721207407530333
         Name: "Slot Cam"
         Transform {
           Location {
@@ -2006,7 +2006,7 @@ Assets {
             Z: 0.819941
           }
         }
-        ParentId: 12542699250359385753
+        ParentId: 2399118172480245251
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -2038,7 +2038,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3009318347596777875
+        Id: 1383839895803256
         Name: "SlotsCabinet_Client"
         Transform {
           Location {
@@ -2055,18 +2055,18 @@ Assets {
             Z: 0.819941
           }
         }
-        ParentId: 12542699250359385753
+        ParentId: 2399118172480245251
         UnregisteredParameters {
           Overrides {
             Name: "cs:GEO"
             ObjectReference {
-              SubObjectId: 18035254857092324981
+              SubObjectId: 18056387415649428826
             }
           }
           Overrides {
-            Name: "cs:Settings"
+            Name: "cs:ROOT"
             ObjectReference {
-              SubObjectId: 8019821520510676024
+              SubObjectId: 16527933051090480381
             }
           }
         }
@@ -2089,7 +2089,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12227192544232325397
+        Id: 11569036183375129792
         Name: "Trigger"
         Transform {
           Location {
@@ -2105,7 +2105,7 @@ Assets {
             Z: 2.5
           }
         }
-        ParentId: 12542699250359385753
+        ParentId: 2399118172480245251
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -2131,7 +2131,7 @@ Assets {
         }
       }
       Objects {
-        Id: 18035254857092324981
+        Id: 18056387415649428826
         Name: "GEO"
         Transform {
           Location {
@@ -2144,52 +2144,52 @@ Assets {
             Z: 1.00032806
           }
         }
-        ParentId: 8019821520510676024
-        ChildIds: 5095641421487067221
-        ChildIds: 122022105717807445
-        ChildIds: 5118725230034109434
-        ChildIds: 10058346830389356160
+        ParentId: 16527933051090480381
+        ChildIds: 8902014197777283721
+        ChildIds: 10302832280352751081
+        ChildIds: 6562529836188043797
+        ChildIds: 13974284888082554666
         UnregisteredParameters {
           Overrides {
             Name: "cs:BetAmount"
             ObjectReference {
-              SubObjectId: 4801514519900023255
+              SubObjectId: 12608653836057667075
             }
           }
           Overrides {
             Name: "cs:PlayerWallet"
             ObjectReference {
-              SubObjectId: 16439501239442106095
+              SubObjectId: 6120975922240090740
             }
           }
           Overrides {
             Name: "cs:RecentActivity1"
             ObjectReference {
-              SubObjectId: 5858942238414124749
+              SubObjectId: 5521498844960193406
             }
           }
           Overrides {
             Name: "cs:RecentActivity2"
             ObjectReference {
-              SubObjectId: 2499262719443294300
+              SubObjectId: 11265433815580626235
             }
           }
           Overrides {
             Name: "cs:RecentActivity3"
             ObjectReference {
-              SubObjectId: 17128151922108687020
+              SubObjectId: 11330936352837734173
             }
           }
           Overrides {
             Name: "cs:RecentActivity4"
             ObjectReference {
-              SubObjectId: 384278207375666523
+              SubObjectId: 8331034442943898348
             }
           }
           Overrides {
             Name: "cs:RecentActivity5"
             ObjectReference {
-              SubObjectId: 14849670546813434296
+              SubObjectId: 6596193114051241482
             }
           }
         }
@@ -2210,7 +2210,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5095641421487067221
+        Id: 8902014197777283721
         Name: "Buttons"
         Transform {
           Location {
@@ -2226,13 +2226,13 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18035254857092324981
-        ChildIds: 10130030867049393583
-        ChildIds: 15395917367991955039
-        ChildIds: 1190041920510796905
-        ChildIds: 1497739991443212344
-        ChildIds: 8030904137641736019
-        ChildIds: 12627799022557844509
+        ParentId: 18056387415649428826
+        ChildIds: 8301559218581280922
+        ChildIds: 5193651987010995889
+        ChildIds: 112317302414320229
+        ChildIds: 4552234236098326321
+        ChildIds: 12732042083074113114
+        ChildIds: 15817897296142202657
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -2250,7 +2250,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10130030867049393583
+        Id: 8301559218581280922
         Name: "MinButton"
         Transform {
           Location {
@@ -2268,7 +2268,7 @@ Assets {
             Z: 0.0362125412
           }
         }
-        ParentId: 5095641421487067221
+        ParentId: 8902014197777283721
         UnregisteredParameters {
           Overrides {
             Name: "cs:isButton"
@@ -2354,7 +2354,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15395917367991955039
+        Id: 5193651987010995889
         Name: "MaxButton"
         Transform {
           Location {
@@ -2373,7 +2373,7 @@ Assets {
             Z: 0.0362125412
           }
         }
-        ParentId: 5095641421487067221
+        ParentId: 8902014197777283721
         UnregisteredParameters {
           Overrides {
             Name: "cs:isButton"
@@ -2459,7 +2459,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1190041920510796905
+        Id: 112317302414320229
         Name: "SpinButton"
         Transform {
           Location {
@@ -2476,7 +2476,7 @@ Assets {
             Z: 0.106431611
           }
         }
-        ParentId: 5095641421487067221
+        ParentId: 8902014197777283721
         UnregisteredParameters {
           Overrides {
             Name: "cs:isButton"
@@ -2539,7 +2539,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1497739991443212344
+        Id: 4552234236098326321
         Name: "LowerButton"
         Transform {
           Location {
@@ -2558,7 +2558,7 @@ Assets {
             Z: 0.00334954401
           }
         }
-        ParentId: 5095641421487067221
+        ParentId: 8902014197777283721
         UnregisteredParameters {
           Overrides {
             Name: "cs:isButton"
@@ -2644,7 +2644,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8030904137641736019
+        Id: 12732042083074113114
         Name: "RaiseButton"
         Transform {
           Location {
@@ -2663,7 +2663,7 @@ Assets {
             Z: 0.00334954401
           }
         }
-        ParentId: 5095641421487067221
+        ParentId: 8902014197777283721
         UnregisteredParameters {
           Overrides {
             Name: "cs:isButton"
@@ -2749,7 +2749,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12627799022557844509
+        Id: 15817897296142202657
         Name: "ExitButton"
         Transform {
           Location {
@@ -2767,7 +2767,7 @@ Assets {
             Z: 0.993105
           }
         }
-        ParentId: 5095641421487067221
+        ParentId: 8902014197777283721
         UnregisteredParameters {
           Overrides {
             Name: "cs:isButton"
@@ -2845,7 +2845,7 @@ Assets {
         }
       }
       Objects {
-        Id: 122022105717807445
+        Id: 10302832280352751081
         Name: "ClientContext"
         Transform {
           Location {
@@ -2858,8 +2858,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18035254857092324981
-        ChildIds: 3169013060607268521
+        ParentId: 18056387415649428826
+        ChildIds: 11364473284873080167
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -2876,7 +2876,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3169013060607268521
+        Id: 11364473284873080167
         Name: "Text"
         Transform {
           Location {
@@ -2892,14 +2892,14 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 122022105717807445
-        ChildIds: 4801514519900023255
-        ChildIds: 16439501239442106095
-        ChildIds: 5858942238414124749
-        ChildIds: 2499262719443294300
-        ChildIds: 17128151922108687020
-        ChildIds: 384278207375666523
-        ChildIds: 14849670546813434296
+        ParentId: 10302832280352751081
+        ChildIds: 12608653836057667075
+        ChildIds: 6120975922240090740
+        ChildIds: 5521498844960193406
+        ChildIds: 11265433815580626235
+        ChildIds: 11330936352837734173
+        ChildIds: 8331034442943898348
+        ChildIds: 6596193114051241482
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -2917,7 +2917,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4801514519900023255
+        Id: 12608653836057667075
         Name: "Bet Amount"
         Transform {
           Location {
@@ -2934,7 +2934,7 @@ Assets {
             Z: 0.230536327
           }
         }
-        ParentId: 3169013060607268521
+        ParentId: 11364473284873080167
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -2969,7 +2969,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16439501239442106095
+        Id: 6120975922240090740
         Name: "Player Wallet"
         Transform {
           Location {
@@ -2985,7 +2985,7 @@ Assets {
             Z: 0.33882
           }
         }
-        ParentId: 3169013060607268521
+        ParentId: 11364473284873080167
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3020,7 +3020,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5858942238414124749
+        Id: 5521498844960193406
         Name: "Recent Activity 1"
         Transform {
           Location {
@@ -3037,7 +3037,7 @@ Assets {
             Z: 0.154270142
           }
         }
-        ParentId: 3169013060607268521
+        ParentId: 11364473284873080167
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3071,7 +3071,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2499262719443294300
+        Id: 11265433815580626235
         Name: "Recent Activity 2"
         Transform {
           Location {
@@ -3087,7 +3087,7 @@ Assets {
             Z: 0.154270142
           }
         }
-        ParentId: 3169013060607268521
+        ParentId: 11364473284873080167
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3121,7 +3121,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17128151922108687020
+        Id: 11330936352837734173
         Name: "Recent Activity 3"
         Transform {
           Location {
@@ -3139,7 +3139,7 @@ Assets {
             Z: 0.154270142
           }
         }
-        ParentId: 3169013060607268521
+        ParentId: 11364473284873080167
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3173,7 +3173,7 @@ Assets {
         }
       }
       Objects {
-        Id: 384278207375666523
+        Id: 8331034442943898348
         Name: "Recent Activity 4"
         Transform {
           Location {
@@ -3191,7 +3191,7 @@ Assets {
             Z: 0.154270142
           }
         }
-        ParentId: 3169013060607268521
+        ParentId: 11364473284873080167
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3225,7 +3225,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14849670546813434296
+        Id: 6596193114051241482
         Name: "Recent Activity 5"
         Transform {
           Location {
@@ -3243,7 +3243,7 @@ Assets {
             Z: 0.154270142
           }
         }
-        ParentId: 3169013060607268521
+        ParentId: 11364473284873080167
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3277,7 +3277,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5118725230034109434
+        Id: 6562529836188043797
         Name: "Chair"
         Transform {
           Location {
@@ -3292,11 +3292,11 @@ Assets {
             Z: 0.819941
           }
         }
-        ParentId: 18035254857092324981
-        ChildIds: 14324709700601985570
-        ChildIds: 12112348475415955475
-        ChildIds: 17491479061383358557
-        ChildIds: 10404415391816590850
+        ParentId: 18056387415649428826
+        ChildIds: 2381868792578193672
+        ChildIds: 4837607666893288323
+        ChildIds: 1019960673744789352
+        ChildIds: 10301730467082466497
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -3311,7 +3311,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14324709700601985570
+        Id: 2381868792578193672
         Name: "Cone - Truncated Concave"
         Transform {
           Location {
@@ -3326,7 +3326,7 @@ Assets {
             Z: 0.269059628
           }
         }
-        ParentId: 5118725230034109434
+        ParentId: 6562529836188043797
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3364,7 +3364,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12112348475415955475
+        Id: 4837607666893288323
         Name: "Pipe"
         Transform {
           Location {
@@ -3379,7 +3379,7 @@ Assets {
             Z: 0.55
           }
         }
-        ParentId: 5118725230034109434
+        ParentId: 6562529836188043797
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3417,7 +3417,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17491479061383358557
+        Id: 1019960673744789352
         Name: "Group"
         Transform {
           Location {
@@ -3433,9 +3433,9 @@ Assets {
             Z: 0.620128334
           }
         }
-        ParentId: 5118725230034109434
-        ChildIds: 15742071978043924593
-        ChildIds: 274366279890164085
+        ParentId: 6562529836188043797
+        ChildIds: 18026532743664129631
+        ChildIds: 16965711828007592226
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3453,7 +3453,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15742071978043924593
+        Id: 18026532743664129631
         Name: "Urban Vehicle Car - Front Seat Bottom 01"
         Transform {
           Location {
@@ -3469,7 +3469,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17491479061383358557
+        ParentId: 1019960673744789352
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail1:color"
@@ -3514,7 +3514,7 @@ Assets {
         }
       }
       Objects {
-        Id: 274366279890164085
+        Id: 16965711828007592226
         Name: "Urban Vehicle Car - Front Seat Top 01"
         Transform {
           Location {
@@ -3532,7 +3532,7 @@ Assets {
             Z: 0.612495661
           }
         }
-        ParentId: 17491479061383358557
+        ParentId: 1019960673744789352
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail1:color"
@@ -3571,7 +3571,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10404415391816590850
+        Id: 10301730467082466497
         Name: "Military Tank Historic Hull 01 - Mid"
         Transform {
           Location {
@@ -3587,7 +3587,7 @@ Assets {
             Z: 0.0638666525
           }
         }
-        ParentId: 5118725230034109434
+        ParentId: 6562529836188043797
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -3642,7 +3642,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10058346830389356160
+        Id: 13974284888082554666
         Name: "Cabinet"
         Transform {
           Location {
@@ -3655,11 +3655,11 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18035254857092324981
-        ChildIds: 6016212787217245530
-        ChildIds: 4664421298776084731
-        ChildIds: 17897823281697368323
-        ChildIds: 14903061933059457853
+        ParentId: 18056387415649428826
+        ChildIds: 18140035194010887242
+        ChildIds: 288027849228709264
+        ChildIds: 15496597162319311096
+        ChildIds: 14779122723973690357
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3677,7 +3677,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6016212787217245530
+        Id: 18140035194010887242
         Name: "Body"
         Transform {
           Location {
@@ -3690,114 +3690,114 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 10058346830389356160
-        ChildIds: 1898198199947477009
-        ChildIds: 14610595287499022435
-        ChildIds: 12146945430955252912
-        ChildIds: 2481696322437338645
-        ChildIds: 13075986897090488885
-        ChildIds: 4980182334998117855
-        ChildIds: 11328694295944578865
-        ChildIds: 2353016651770203744
-        ChildIds: 7031253063407638661
-        ChildIds: 14931351557291019929
-        ChildIds: 13989296511140440054
-        ChildIds: 14506335778075226118
-        ChildIds: 3290258964489538625
-        ChildIds: 12557839154007163905
-        ChildIds: 115864659630011856
-        ChildIds: 15668983742632193479
-        ChildIds: 12903118036034528470
-        ChildIds: 1741804012816657508
-        ChildIds: 15582585504939194877
-        ChildIds: 7830543488308712077
-        ChildIds: 14367519731790813984
-        ChildIds: 14755262220448172921
-        ChildIds: 14572932211716876764
-        ChildIds: 17901570832182137023
-        ChildIds: 10949859569404192857
-        ChildIds: 9714984777858310468
-        ChildIds: 16056844695530241824
-        ChildIds: 837706497444516965
-        ChildIds: 3537469954739482459
-        ChildIds: 14547236512260459381
-        ChildIds: 1516525923652562357
-        ChildIds: 6912907247956784539
-        ChildIds: 1378809228912231112
-        ChildIds: 975025167734769902
-        ChildIds: 8693652314735550085
-        ChildIds: 8833036836463338974
-        ChildIds: 4045674911718927556
-        ChildIds: 11437433206420291684
-        ChildIds: 215330038893408352
-        ChildIds: 15214228988935118725
-        ChildIds: 16555775186093072218
-        ChildIds: 339050150916375808
-        ChildIds: 6618600810818102192
-        ChildIds: 16070038057252196631
-        ChildIds: 9389844127743208071
-        ChildIds: 10754317407972988855
-        ChildIds: 4522560429445766144
-        ChildIds: 13525806390115987547
-        ChildIds: 1255739602415364291
-        ChildIds: 16636266035826633112
-        ChildIds: 13015340765908401647
-        ChildIds: 12157131876767743327
-        ChildIds: 12780853370043804352
-        ChildIds: 4176162613952605079
-        ChildIds: 12426100062252678668
-        ChildIds: 464641856139041771
-        ChildIds: 5993134618585491271
-        ChildIds: 7202558750681752229
-        ChildIds: 6095418905137520115
-        ChildIds: 6005970015922208801
-        ChildIds: 8106546752954555781
-        ChildIds: 249592157401245647
-        ChildIds: 2041288801049751507
-        ChildIds: 13479915480237286004
-        ChildIds: 17603839366275263023
-        ChildIds: 3103434412839850820
-        ChildIds: 6016350853718058363
-        ChildIds: 7449219765695034088
-        ChildIds: 11522699077758039457
-        ChildIds: 6978120937871418747
-        ChildIds: 6907987913803550994
-        ChildIds: 12640035749154692222
-        ChildIds: 8486567423902584932
-        ChildIds: 5337572081841086170
-        ChildIds: 18408619367976705839
-        ChildIds: 14814787725666191066
-        ChildIds: 11629282263161834880
-        ChildIds: 11803102952468664375
-        ChildIds: 4751289133378768371
-        ChildIds: 329425212602028952
-        ChildIds: 1973976099762624594
-        ChildIds: 5301667859377739472
-        ChildIds: 13682950237171084908
-        ChildIds: 17930721868570805904
-        ChildIds: 8401333543465280772
-        ChildIds: 2960383216958183049
-        ChildIds: 913214820398440170
-        ChildIds: 1957664980340005819
-        ChildIds: 14256400798323157223
-        ChildIds: 1285737432017013116
-        ChildIds: 9507904870039377325
-        ChildIds: 14932005219859465488
-        ChildIds: 18072710370974560459
-        ChildIds: 10470474622246962763
-        ChildIds: 14873032810498285042
-        ChildIds: 8115447988866373774
-        ChildIds: 11738929025531949100
-        ChildIds: 10420126272422264910
-        ChildIds: 17245043944592944749
-        ChildIds: 1447532213051852094
-        ChildIds: 11075575294652759315
-        ChildIds: 13652728224512761700
-        ChildIds: 10678449415781994881
-        ChildIds: 14858214847682098884
-        ChildIds: 16801499673646492341
-        ChildIds: 2923278708610734247
-        ChildIds: 5892907538412886896
+        ParentId: 13974284888082554666
+        ChildIds: 8029417391273980283
+        ChildIds: 6269247125246565751
+        ChildIds: 4892379837451523057
+        ChildIds: 13947830435514465377
+        ChildIds: 1557326703198258754
+        ChildIds: 3379973769691579285
+        ChildIds: 9217854124218833200
+        ChildIds: 11912640523467012891
+        ChildIds: 2931673023270996024
+        ChildIds: 4006818205945487013
+        ChildIds: 15419068661566194586
+        ChildIds: 12061086438492529655
+        ChildIds: 8521682923479493280
+        ChildIds: 3897240475928900626
+        ChildIds: 6830898540339748587
+        ChildIds: 7962336462230398734
+        ChildIds: 4852787101481184836
+        ChildIds: 16139313679822532421
+        ChildIds: 1437134996913899692
+        ChildIds: 15818522400340130533
+        ChildIds: 10566189588133138249
+        ChildIds: 1538433740975224478
+        ChildIds: 7467790795450561213
+        ChildIds: 10062313823580567746
+        ChildIds: 6071995296353839789
+        ChildIds: 15495044079852643509
+        ChildIds: 18272105046488435850
+        ChildIds: 8607616900636841900
+        ChildIds: 8619698760139166950
+        ChildIds: 3070382036169691722
+        ChildIds: 6089270181129994525
+        ChildIds: 9789626407563091471
+        ChildIds: 8529109047351985712
+        ChildIds: 10175303182545570703
+        ChildIds: 8315958803553344229
+        ChildIds: 1399012630461756217
+        ChildIds: 4293597708637462120
+        ChildIds: 15087132751295887789
+        ChildIds: 9615605915489645048
+        ChildIds: 6353827220829307004
+        ChildIds: 12197916935977721675
+        ChildIds: 12271438039180500566
+        ChildIds: 17473437812284980124
+        ChildIds: 27636743784962497
+        ChildIds: 4194267803773328765
+        ChildIds: 12614740206372437233
+        ChildIds: 15747822437082959740
+        ChildIds: 6514788327705659927
+        ChildIds: 10060443614737215231
+        ChildIds: 7514917216594290236
+        ChildIds: 6534213367104979901
+        ChildIds: 2453865133066420517
+        ChildIds: 8843179180869250721
+        ChildIds: 11831192168078091220
+        ChildIds: 6772227846936119463
+        ChildIds: 17526533208366904616
+        ChildIds: 13336435277451891800
+        ChildIds: 15584295438469911717
+        ChildIds: 16792922721304667126
+        ChildIds: 13179029968545059782
+        ChildIds: 2531956254494711495
+        ChildIds: 6959328481820665342
+        ChildIds: 6213275690733945632
+        ChildIds: 9925322524536463283
+        ChildIds: 1776579057721285645
+        ChildIds: 3247805738975118576
+        ChildIds: 10331162639786329507
+        ChildIds: 8824156664612187277
+        ChildIds: 12148353807963768373
+        ChildIds: 1783730077356321324
+        ChildIds: 1692087416322578423
+        ChildIds: 7219677145741407482
+        ChildIds: 7989651722678263864
+        ChildIds: 8804759809474010734
+        ChildIds: 10562499653248997339
+        ChildIds: 11898323363179250553
+        ChildIds: 1789294947202706983
+        ChildIds: 6828055952874841827
+        ChildIds: 12416958734942682339
+        ChildIds: 1774646795631959983
+        ChildIds: 8058739961500471863
+        ChildIds: 1970329610404748579
+        ChildIds: 14229678842316480789
+        ChildIds: 7775009285655322077
+        ChildIds: 961185100957435542
+        ChildIds: 2619842340346876598
+        ChildIds: 12861996826042925023
+        ChildIds: 15322697352831342538
+        ChildIds: 16739102510927815301
+        ChildIds: 2801388205387985203
+        ChildIds: 6949695553451120321
+        ChildIds: 15103378948039892729
+        ChildIds: 10702416877959814190
+        ChildIds: 14023518779543396489
+        ChildIds: 2818311169996445507
+        ChildIds: 3260219073129720492
+        ChildIds: 16570544287772940717
+        ChildIds: 7665549024370996027
+        ChildIds: 16809781160592992141
+        ChildIds: 1289144142025238279
+        ChildIds: 11014270342002169383
+        ChildIds: 13415984510352158314
+        ChildIds: 8623553033673218905
+        ChildIds: 12252888953572590939
+        ChildIds: 7936902200923980533
+        ChildIds: 10474092604982728443
+        ChildIds: 6922319073045187001
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3815,7 +3815,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1898198199947477009
+        Id: 8029417391273980283
         Name: "Cube - Polished"
         Transform {
           Location {
@@ -3831,7 +3831,7 @@ Assets {
             Z: 0.195636451
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3874,7 +3874,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14610595287499022435
+        Id: 6269247125246565751
         Name: "Cube - Polished"
         Transform {
           Location {
@@ -3889,7 +3889,7 @@ Assets {
             Z: 0.195636511
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3949,7 +3949,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12146945430955252912
+        Id: 4892379837451523057
         Name: "Cube - Polished"
         Transform {
           Location {
@@ -3964,7 +3964,7 @@ Assets {
             Z: 1.70024276
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4012,7 +4012,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2481696322437338645
+        Id: 13947830435514465377
         Name: "Prism - 4-Sided Trapezoid Right"
         Transform {
           Location {
@@ -4031,7 +4031,7 @@ Assets {
             Z: -0.9
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4091,7 +4091,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13075986897090488885
+        Id: 1557326703198258754
         Name: "Prism - 4-Sided Trapezoid Right"
         Transform {
           Location {
@@ -4110,7 +4110,7 @@ Assets {
             Z: -0.9
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4161,7 +4161,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4980182334998117855
+        Id: 3379973769691579285
         Name: "Prism - 4-Sided Trapezoid Right"
         Transform {
           Location {
@@ -4180,7 +4180,7 @@ Assets {
             Z: 0.060240861
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4237,7 +4237,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11328694295944578865
+        Id: 9217854124218833200
         Name: "Prism - 4-Sided Trapezoid Right"
         Transform {
           Location {
@@ -4256,7 +4256,7 @@ Assets {
             Z: -0.0602202155
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4313,7 +4313,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2353016651770203744
+        Id: 11912640523467012891
         Name: "Prism - 4-Sided Trapezoid Right"
         Transform {
           Location {
@@ -4332,7 +4332,7 @@ Assets {
             Z: -0.9
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4371,7 +4371,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7031253063407638661
+        Id: 2931673023270996024
         Name: "Office Magazine Holder"
         Transform {
           Location {
@@ -4388,7 +4388,7 @@ Assets {
             Z: 0.150169387
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4455,7 +4455,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14931351557291019929
+        Id: 4006818205945487013
         Name: "Mecha - Armor - Shoulder Thruster 02"
         Transform {
           Location {
@@ -4473,7 +4473,7 @@ Assets {
             Z: 0.173691452
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -4523,7 +4523,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13989296511140440054
+        Id: 15419068661566194586
         Name: "Mecha - Armor - Wing 02"
         Transform {
           Location {
@@ -4542,7 +4542,7 @@ Assets {
             Z: -0.078
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4593,7 +4593,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14506335778075226118
+        Id: 12061086438492529655
         Name: "Mecha - Armor - Wing 02"
         Transform {
           Location {
@@ -4612,7 +4612,7 @@ Assets {
             Z: 0.0782951936
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4663,7 +4663,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3290258964489538625
+        Id: 8521682923479493280
         Name: "Sci-fi Console Screen 02"
         Transform {
           Location {
@@ -4680,7 +4680,7 @@ Assets {
             Z: -0.174201027
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -4761,7 +4761,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12557839154007163905
+        Id: 3897240475928900626
         Name: "Sci-fi Console Screen 02"
         Transform {
           Location {
@@ -4779,7 +4779,7 @@ Assets {
             Z: -0.180019885
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -4860,7 +4860,7 @@ Assets {
         }
       }
       Objects {
-        Id: 115864659630011856
+        Id: 6830898540339748587
         Name: "Capsule"
         Transform {
           Location {
@@ -4877,7 +4877,7 @@ Assets {
             Z: 0.0833471641
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4972,7 +4972,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15668983742632193479
+        Id: 7962336462230398734
         Name: "Capsule"
         Transform {
           Location {
@@ -4989,7 +4989,7 @@ Assets {
             Z: 0.0833471641
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -5084,7 +5084,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12903118036034528470
+        Id: 4852787101481184836
         Name: "Capsule"
         Transform {
           Location {
@@ -5101,7 +5101,7 @@ Assets {
             Z: 0.0833471641
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -5196,7 +5196,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1741804012816657508
+        Id: 16139313679822532421
         Name: "Capsule"
         Transform {
           Location {
@@ -5213,7 +5213,7 @@ Assets {
             Z: 0.073463738
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -5308,7 +5308,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15582585504939194877
+        Id: 1437134996913899692
         Name: "Capsule"
         Transform {
           Location {
@@ -5325,7 +5325,7 @@ Assets {
             Z: 0.073463738
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -5420,7 +5420,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7830543488308712077
+        Id: 15818522400340130533
         Name: "Capsule"
         Transform {
           Location {
@@ -5437,7 +5437,7 @@ Assets {
             Z: 0.073463738
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -5532,7 +5532,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14367519731790813984
+        Id: 10566189588133138249
         Name: "Capsule"
         Transform {
           Location {
@@ -5549,7 +5549,7 @@ Assets {
             Z: 0.073463738
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -5644,7 +5644,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14755262220448172921
+        Id: 1538433740975224478
         Name: "Capsule"
         Transform {
           Location {
@@ -5661,7 +5661,7 @@ Assets {
             Z: 0.0833471641
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -5756,7 +5756,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14572932211716876764
+        Id: 7467790795450561213
         Name: "Capsule"
         Transform {
           Location {
@@ -5773,7 +5773,7 @@ Assets {
             Z: 0.0833471641
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -5868,7 +5868,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17901570832182137023
+        Id: 10062313823580567746
         Name: "Capsule"
         Transform {
           Location {
@@ -5885,7 +5885,7 @@ Assets {
             Z: 0.0833471641
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -5980,7 +5980,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10949859569404192857
+        Id: 6071995296353839789
         Name: "Capsule"
         Transform {
           Location {
@@ -5997,7 +5997,7 @@ Assets {
             Z: 0.0833471641
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -6092,7 +6092,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9714984777858310468
+        Id: 15495044079852643509
         Name: "Capsule"
         Transform {
           Location {
@@ -6109,7 +6109,7 @@ Assets {
             Z: 0.0833471641
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -6204,7 +6204,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16056844695530241824
+        Id: 18272105046488435850
         Name: "Capsule"
         Transform {
           Location {
@@ -6221,7 +6221,7 @@ Assets {
             Z: 0.0833471641
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -6316,7 +6316,7 @@ Assets {
         }
       }
       Objects {
-        Id: 837706497444516965
+        Id: 8607616900636841900
         Name: "Capsule"
         Transform {
           Location {
@@ -6333,7 +6333,7 @@ Assets {
             Z: 0.0833471641
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -6428,7 +6428,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3537469954739482459
+        Id: 8619698760139166950
         Name: "Capsule"
         Transform {
           Location {
@@ -6445,7 +6445,7 @@ Assets {
             Z: 0.0528256185
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -6540,7 +6540,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14547236512260459381
+        Id: 3070382036169691722
         Name: "Capsule"
         Transform {
           Location {
@@ -6557,7 +6557,7 @@ Assets {
             Z: 0.0528256185
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -6652,7 +6652,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1516525923652562357
+        Id: 6089270181129994525
         Name: "Capsule"
         Transform {
           Location {
@@ -6669,7 +6669,7 @@ Assets {
             Z: 0.0528256185
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -6764,7 +6764,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6912907247956784539
+        Id: 9789626407563091471
         Name: "Capsule"
         Transform {
           Location {
@@ -6783,7 +6783,7 @@ Assets {
             Z: 0.0390648358
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -6878,7 +6878,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1378809228912231112
+        Id: 8529109047351985712
         Name: "Capsule"
         Transform {
           Location {
@@ -6897,7 +6897,7 @@ Assets {
             Z: 0.0390648358
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -6992,7 +6992,7 @@ Assets {
         }
       }
       Objects {
-        Id: 975025167734769902
+        Id: 10175303182545570703
         Name: "Capsule"
         Transform {
           Location {
@@ -7011,7 +7011,7 @@ Assets {
             Z: 0.0390648358
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -7106,7 +7106,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8693652314735550085
+        Id: 8315958803553344229
         Name: "Capsule"
         Transform {
           Location {
@@ -7125,7 +7125,7 @@ Assets {
             Z: 0.0326942354
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -7220,7 +7220,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8833036836463338974
+        Id: 1399012630461756217
         Name: "Capsule"
         Transform {
           Location {
@@ -7238,7 +7238,7 @@ Assets {
             Z: 0.0501336232
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -7333,7 +7333,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4045674911718927556
+        Id: 4293597708637462120
         Name: "Capsule"
         Transform {
           Location {
@@ -7351,7 +7351,7 @@ Assets {
             Z: 0.0501336232
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -7446,7 +7446,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11437433206420291684
+        Id: 15087132751295887789
         Name: "Capsule"
         Transform {
           Location {
@@ -7464,7 +7464,7 @@ Assets {
             Z: 0.0501336232
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -7559,7 +7559,7 @@ Assets {
         }
       }
       Objects {
-        Id: 215330038893408352
+        Id: 9615605915489645048
         Name: "Capsule"
         Transform {
           Location {
@@ -7578,7 +7578,7 @@ Assets {
             Z: 0.0274169296
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -7673,7 +7673,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15214228988935118725
+        Id: 6353827220829307004
         Name: "Capsule"
         Transform {
           Location {
@@ -7691,7 +7691,7 @@ Assets {
             Z: 0.0501336232
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -7786,7 +7786,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16555775186093072218
+        Id: 12197916935977721675
         Name: "Capsule"
         Transform {
           Location {
@@ -7805,7 +7805,7 @@ Assets {
             Z: 0.0284464881
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -7900,7 +7900,7 @@ Assets {
         }
       }
       Objects {
-        Id: 339050150916375808
+        Id: 12271438039180500566
         Name: "Capsule"
         Transform {
           Location {
@@ -7919,7 +7919,7 @@ Assets {
             Z: 0.0284464881
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -8014,7 +8014,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6618600810818102192
+        Id: 17473437812284980124
         Name: "Capsule"
         Transform {
           Location {
@@ -8031,7 +8031,7 @@ Assets {
             Z: 0.0351056568
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -8126,7 +8126,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16070038057252196631
+        Id: 27636743784962497
         Name: "Capsule"
         Transform {
           Location {
@@ -8145,7 +8145,7 @@ Assets {
             Z: 0.0253224093
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -8240,7 +8240,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9389844127743208071
+        Id: 4194267803773328765
         Name: "Capsule"
         Transform {
           Location {
@@ -8259,7 +8259,7 @@ Assets {
             Z: 0.0254214332
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -8354,7 +8354,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10754317407972988855
+        Id: 12614740206372437233
         Name: "Capsule"
         Transform {
           Location {
@@ -8373,7 +8373,7 @@ Assets {
             Z: 0.0133735556
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -8468,7 +8468,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4522560429445766144
+        Id: 15747822437082959740
         Name: "Capsule"
         Transform {
           Location {
@@ -8487,7 +8487,7 @@ Assets {
             Z: 0.0838461518
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -8582,7 +8582,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13525806390115987547
+        Id: 6514788327705659927
         Name: "Capsule"
         Transform {
           Location {
@@ -8601,7 +8601,7 @@ Assets {
             Z: 0.0238308404
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -8696,7 +8696,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1255739602415364291
+        Id: 10060443614737215231
         Name: "Capsule"
         Transform {
           Location {
@@ -8714,7 +8714,7 @@ Assets {
             Z: 0.0427185
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -8809,7 +8809,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16636266035826633112
+        Id: 7514917216594290236
         Name: "Capsule"
         Transform {
           Location {
@@ -8828,7 +8828,7 @@ Assets {
             Z: 0.047220286
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -8923,7 +8923,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13015340765908401647
+        Id: 6534213367104979901
         Name: "Capsule"
         Transform {
           Location {
@@ -8942,7 +8942,7 @@ Assets {
             Z: 0.047220286
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -9037,7 +9037,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12157131876767743327
+        Id: 2453865133066420517
         Name: "Capsule"
         Transform {
           Location {
@@ -9056,7 +9056,7 @@ Assets {
             Z: 0.0262949988
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -9151,7 +9151,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12780853370043804352
+        Id: 8843179180869250721
         Name: "Capsule"
         Transform {
           Location {
@@ -9170,7 +9170,7 @@ Assets {
             Z: 0.0306438133
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -9265,7 +9265,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4176162613952605079
+        Id: 11831192168078091220
         Name: "Capsule"
         Transform {
           Location {
@@ -9284,7 +9284,7 @@ Assets {
             Z: 0.0284464881
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -9379,7 +9379,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12426100062252678668
+        Id: 6772227846936119463
         Name: "Capsule"
         Transform {
           Location {
@@ -9398,7 +9398,7 @@ Assets {
             Z: 0.0284464862
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -9493,7 +9493,7 @@ Assets {
         }
       }
       Objects {
-        Id: 464641856139041771
+        Id: 17526533208366904616
         Name: "Capsule"
         Transform {
           Location {
@@ -9512,7 +9512,7 @@ Assets {
             Z: 0.0161089581
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -9607,7 +9607,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5993134618585491271
+        Id: 13336435277451891800
         Name: "Capsule"
         Transform {
           Location {
@@ -9626,7 +9626,7 @@ Assets {
             Z: 0.0161089581
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -9721,7 +9721,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7202558750681752229
+        Id: 15584295438469911717
         Name: "Capsule"
         Transform {
           Location {
@@ -9740,7 +9740,7 @@ Assets {
             Z: 0.0478948466
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -9835,7 +9835,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6095418905137520115
+        Id: 16792922721304667126
         Name: "Lens - Half"
         Transform {
           Location {
@@ -9852,7 +9852,7 @@ Assets {
             Z: 0.507203
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -9900,7 +9900,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6005970015922208801
+        Id: 13179029968545059782
         Name: "Lens - Half"
         Transform {
           Location {
@@ -9917,7 +9917,7 @@ Assets {
             Z: 0.413825095
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -9965,7 +9965,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8106546752954555781
+        Id: 2531956254494711495
         Name: "Lens - Half"
         Transform {
           Location {
@@ -9982,7 +9982,7 @@ Assets {
             Z: 0.413825095
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -10030,7 +10030,7 @@ Assets {
         }
       }
       Objects {
-        Id: 249592157401245647
+        Id: 6959328481820665342
         Name: "Lens - Half"
         Transform {
           Location {
@@ -10047,7 +10047,7 @@ Assets {
             Z: 0.303241044
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -10095,7 +10095,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2041288801049751507
+        Id: 6213275690733945632
         Name: "Barrier Caution Light 2"
         Transform {
           Location {
@@ -10114,7 +10114,7 @@ Assets {
             Z: 0.193024367
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -10169,7 +10169,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13479915480237286004
+        Id: 9925322524536463283
         Name: "Barrier Caution Light 2"
         Transform {
           Location {
@@ -10188,7 +10188,7 @@ Assets {
             Z: 0.297747672
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -10249,7 +10249,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17603839366275263023
+        Id: 1776579057721285645
         Name: "Barrier Caution Light 2"
         Transform {
           Location {
@@ -10266,7 +10266,7 @@ Assets {
             Z: 0.230846539
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -10327,7 +10327,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3103434412839850820
+        Id: 3247805738975118576
         Name: "CashOut"
         Transform {
           Location {
@@ -10343,14 +10343,14 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 6016212787217245530
-        ChildIds: 4282194437850044900
-        ChildIds: 16696306181704266289
-        ChildIds: 15211955979673433262
-        ChildIds: 17164378254040089632
-        ChildIds: 2660947346517536717
-        ChildIds: 8432315954767525620
-        ChildIds: 12801714213497413995
+        ParentId: 18140035194010887242
+        ChildIds: 12340796630037953451
+        ChildIds: 570436131772317508
+        ChildIds: 14290915199594985709
+        ChildIds: 14374531791475669805
+        ChildIds: 16915691035483431578
+        ChildIds: 5659038056036449524
+        ChildIds: 17319379214883322039
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -10368,7 +10368,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4282194437850044900
+        Id: 12340796630037953451
         Name: "Text 01: C"
         Transform {
           Location {
@@ -10384,7 +10384,7 @@ Assets {
             Z: 0.0424224399
           }
         }
-        ParentId: 3103434412839850820
+        ParentId: 3247805738975118576
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -10505,7 +10505,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16696306181704266289
+        Id: 570436131772317508
         Name: "Text 01: A"
         Transform {
           Location {
@@ -10524,7 +10524,7 @@ Assets {
             Z: 0.0424224399
           }
         }
-        ParentId: 3103434412839850820
+        ParentId: 3247805738975118576
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -10645,7 +10645,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15211955979673433262
+        Id: 14290915199594985709
         Name: "Text 01: S"
         Transform {
           Location {
@@ -10664,7 +10664,7 @@ Assets {
             Z: 0.0424224399
           }
         }
-        ParentId: 3103434412839850820
+        ParentId: 3247805738975118576
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -10785,7 +10785,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17164378254040089632
+        Id: 14374531791475669805
         Name: "Text 01: H"
         Transform {
           Location {
@@ -10804,7 +10804,7 @@ Assets {
             Z: 0.0424224399
           }
         }
-        ParentId: 3103434412839850820
+        ParentId: 3247805738975118576
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -10925,7 +10925,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2660947346517536717
+        Id: 16915691035483431578
         Name: "Text 01: O"
         Transform {
           Location {
@@ -10944,7 +10944,7 @@ Assets {
             Z: 0.0424224399
           }
         }
-        ParentId: 3103434412839850820
+        ParentId: 3247805738975118576
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -11065,7 +11065,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8432315954767525620
+        Id: 5659038056036449524
         Name: "Text 01: U"
         Transform {
           Location {
@@ -11084,7 +11084,7 @@ Assets {
             Z: 0.0424224399
           }
         }
-        ParentId: 3103434412839850820
+        ParentId: 3247805738975118576
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -11205,7 +11205,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12801714213497413995
+        Id: 17319379214883322039
         Name: "Text 01: T"
         Transform {
           Location {
@@ -11224,7 +11224,7 @@ Assets {
             Z: 0.0424224399
           }
         }
-        ParentId: 3103434412839850820
+        ParentId: 3247805738975118576
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -11345,7 +11345,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6016350853718058363
+        Id: 10331162639786329507
         Name: "Barrier Caution Light 2"
         Transform {
           Location {
@@ -11362,7 +11362,7 @@ Assets {
             Z: 0.993102849
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -11423,7 +11423,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7449219765695034088
+        Id: 8824156664612187277
         Name: "Group"
         Transform {
           Location {
@@ -11440,11 +11440,11 @@ Assets {
             Z: 0.826722383
           }
         }
-        ParentId: 6016212787217245530
-        ChildIds: 14491197318679574867
-        ChildIds: 12162959465952254829
-        ChildIds: 7559044019758902700
-        ChildIds: 7577229617926205640
+        ParentId: 18140035194010887242
+        ChildIds: 17750336034190825118
+        ChildIds: 13224042903342836125
+        ChildIds: 522567788131665801
+        ChildIds: 3944031002256486949
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -11462,7 +11462,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14491197318679574867
+        Id: 17750336034190825118
         Name: "Text 01: S"
         Transform {
           Location {
@@ -11481,7 +11481,7 @@ Assets {
             Z: 0.0898359418
           }
         }
-        ParentId: 7449219765695034088
+        ParentId: 8824156664612187277
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -11592,7 +11592,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12162959465952254829
+        Id: 13224042903342836125
         Name: "Text 01: P"
         Transform {
           Location {
@@ -11611,7 +11611,7 @@ Assets {
             Z: 0.0898359418
           }
         }
-        ParentId: 7449219765695034088
+        ParentId: 8824156664612187277
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -11722,7 +11722,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7559044019758902700
+        Id: 522567788131665801
         Name: "Text 01: I"
         Transform {
           Location {
@@ -11741,7 +11741,7 @@ Assets {
             Z: 0.0898359418
           }
         }
-        ParentId: 7449219765695034088
+        ParentId: 8824156664612187277
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -11852,7 +11852,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7577229617926205640
+        Id: 3944031002256486949
         Name: "Text 01: N"
         Transform {
           Location {
@@ -11871,7 +11871,7 @@ Assets {
             Z: 0.0898359418
           }
         }
-        ParentId: 7449219765695034088
+        ParentId: 8824156664612187277
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -11982,7 +11982,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11522699077758039457
+        Id: 12148353807963768373
         Name: "Barrier Caution Light 2"
         Transform {
           Location {
@@ -12001,7 +12001,7 @@ Assets {
             Z: 0.00214870856
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -12071,7 +12071,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6978120937871418747
+        Id: 1783730077356321324
         Name: "Barrier Caution Light 2"
         Transform {
           Location {
@@ -12090,7 +12090,7 @@ Assets {
             Z: 0.00214870856
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -12168,7 +12168,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6907987913803550994
+        Id: 1692087416322578423
         Name: "Mecha - Armor - Wing 02"
         Transform {
           Location {
@@ -12187,7 +12187,7 @@ Assets {
             Z: 0.0493636765
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -12238,7 +12238,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12640035749154692222
+        Id: 7219677145741407482
         Name: "Corner - Smoothed - 01"
         Transform {
           Location {
@@ -12257,7 +12257,7 @@ Assets {
             Z: 0.0111220563
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -12308,7 +12308,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8486567423902584932
+        Id: 7989651722678263864
         Name: "Text 01: +"
         Transform {
           Location {
@@ -12327,7 +12327,7 @@ Assets {
             Z: 0.0348908082
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -12445,7 +12445,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5337572081841086170
+        Id: 8804759809474010734
         Name: "Text 01: +"
         Transform {
           Location {
@@ -12464,7 +12464,7 @@ Assets {
             Z: 0.0568913668
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -12580,7 +12580,7 @@ Assets {
         }
       }
       Objects {
-        Id: 18408619367976705839
+        Id: 10562499653248997339
         Name: "Barrier Caution Light 2"
         Transform {
           Location {
@@ -12598,7 +12598,7 @@ Assets {
             Z: 0.0406887345
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -12665,7 +12665,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14814787725666191066
+        Id: 11898323363179250553
         Name: "Mecha - Armor - Wing 02"
         Transform {
           Location {
@@ -12683,7 +12683,7 @@ Assets {
             Z: 0.03143204
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -12734,7 +12734,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11629282263161834880
+        Id: 1789294947202706983
         Name: "Bet Min"
         Transform {
           Location {
@@ -12750,13 +12750,13 @@ Assets {
             Z: 0.91857934
           }
         }
-        ParentId: 6016212787217245530
-        ChildIds: 2215459810352425368
-        ChildIds: 6178613416255028029
-        ChildIds: 5453058869934465221
-        ChildIds: 10092739693484592354
-        ChildIds: 15103855837514055943
-        ChildIds: 10331186307738438359
+        ParentId: 18140035194010887242
+        ChildIds: 11206269586990114551
+        ChildIds: 763568867313828006
+        ChildIds: 17149539683587898269
+        ChildIds: 9206447953919875613
+        ChildIds: 6273217924437451417
+        ChildIds: 14718381296725527918
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -12774,7 +12774,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2215459810352425368
+        Id: 11206269586990114551
         Name: "Text 01: B"
         Transform {
           Location {
@@ -12792,7 +12792,7 @@ Assets {
             Z: 0.0424224325
           }
         }
-        ParentId: 11629282263161834880
+        ParentId: 1789294947202706983
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -12910,7 +12910,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6178613416255028029
+        Id: 763568867313828006
         Name: "Text 01: E"
         Transform {
           Location {
@@ -12929,7 +12929,7 @@ Assets {
             Z: 0.0424224325
           }
         }
-        ParentId: 11629282263161834880
+        ParentId: 1789294947202706983
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -13047,7 +13047,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5453058869934465221
+        Id: 17149539683587898269
         Name: "Text 01: T"
         Transform {
           Location {
@@ -13066,7 +13066,7 @@ Assets {
             Z: 0.0424224325
           }
         }
-        ParentId: 11629282263161834880
+        ParentId: 1789294947202706983
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -13184,7 +13184,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10092739693484592354
+        Id: 9206447953919875613
         Name: "Text 01: M"
         Transform {
           Location {
@@ -13203,7 +13203,7 @@ Assets {
             Z: 0.0424224325
           }
         }
-        ParentId: 11629282263161834880
+        ParentId: 1789294947202706983
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -13321,7 +13321,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15103855837514055943
+        Id: 6273217924437451417
         Name: "Text 01: I"
         Transform {
           Location {
@@ -13340,7 +13340,7 @@ Assets {
             Z: 0.0424224325
           }
         }
-        ParentId: 11629282263161834880
+        ParentId: 1789294947202706983
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -13458,7 +13458,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10331186307738438359
+        Id: 14718381296725527918
         Name: "Text 01: N"
         Transform {
           Location {
@@ -13477,7 +13477,7 @@ Assets {
             Z: 0.0424224325
           }
         }
-        ParentId: 11629282263161834880
+        ParentId: 1789294947202706983
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -13595,7 +13595,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11803102952468664375
+        Id: 6828055952874841827
         Name: "Group"
         Transform {
           Location {
@@ -13611,7 +13611,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -13629,7 +13629,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4751289133378768371
+        Id: 12416958734942682339
         Name: "Group"
         Transform {
           Location {
@@ -13645,7 +13645,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -13663,7 +13663,7 @@ Assets {
         }
       }
       Objects {
-        Id: 329425212602028952
+        Id: 1774646795631959983
         Name: "Bet Max"
         Transform {
           Location {
@@ -13679,13 +13679,13 @@ Assets {
             Z: 0.91857934
           }
         }
-        ParentId: 6016212787217245530
-        ChildIds: 14442699077357396208
-        ChildIds: 427129199540609649
-        ChildIds: 6700276195846880082
-        ChildIds: 10441385463466927854
-        ChildIds: 4321300735185991169
-        ChildIds: 12809421280369858766
+        ParentId: 18140035194010887242
+        ChildIds: 3670818609047881088
+        ChildIds: 14699917388905239397
+        ChildIds: 7689325888401791223
+        ChildIds: 8954205252561394581
+        ChildIds: 14369353978890947319
+        ChildIds: 11687031042889345685
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -13703,7 +13703,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14442699077357396208
+        Id: 3670818609047881088
         Name: "Text 01: B"
         Transform {
           Location {
@@ -13722,7 +13722,7 @@ Assets {
             Z: 0.0424224325
           }
         }
-        ParentId: 329425212602028952
+        ParentId: 1774646795631959983
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -13841,7 +13841,7 @@ Assets {
         }
       }
       Objects {
-        Id: 427129199540609649
+        Id: 14699917388905239397
         Name: "Text 01: E"
         Transform {
           Location {
@@ -13860,7 +13860,7 @@ Assets {
             Z: 0.0424224325
           }
         }
-        ParentId: 329425212602028952
+        ParentId: 1774646795631959983
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -13979,7 +13979,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6700276195846880082
+        Id: 7689325888401791223
         Name: "Text 01: T"
         Transform {
           Location {
@@ -13998,7 +13998,7 @@ Assets {
             Z: 0.0424224325
           }
         }
-        ParentId: 329425212602028952
+        ParentId: 1774646795631959983
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -14117,7 +14117,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10441385463466927854
+        Id: 8954205252561394581
         Name: "Text 01: M"
         Transform {
           Location {
@@ -14136,7 +14136,7 @@ Assets {
             Z: 0.0424224325
           }
         }
-        ParentId: 329425212602028952
+        ParentId: 1774646795631959983
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -14255,7 +14255,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4321300735185991169
+        Id: 14369353978890947319
         Name: "Text 01: A"
         Transform {
           Location {
@@ -14274,7 +14274,7 @@ Assets {
             Z: 0.0424224325
           }
         }
-        ParentId: 329425212602028952
+        ParentId: 1774646795631959983
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -14393,7 +14393,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12809421280369858766
+        Id: 11687031042889345685
         Name: "Text 01: X"
         Transform {
           Location {
@@ -14412,7 +14412,7 @@ Assets {
             Z: 0.0424224325
           }
         }
-        ParentId: 329425212602028952
+        ParentId: 1774646795631959983
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -14531,7 +14531,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1973976099762624594
+        Id: 8058739961500471863
         Name: "Mecha - Armor - Wing 02"
         Transform {
           Location {
@@ -14550,7 +14550,7 @@ Assets {
             Z: -0.0471384972
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -14601,7 +14601,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5301667859377739472
+        Id: 1970329610404748579
         Name: "Plane 1m - One Sided"
         Transform {
           Location {
@@ -14618,7 +14618,7 @@ Assets {
             Z: 0.9931041
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -14688,7 +14688,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13682950237171084908
+        Id: 14229678842316480789
         Name: "Plane 1m - One Sided"
         Transform {
           Location {
@@ -14705,7 +14705,7 @@ Assets {
             Z: 0.99310559
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -14775,7 +14775,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17930721868570805904
+        Id: 7775009285655322077
         Name: "Plane 1m - One Sided"
         Transform {
           Location {
@@ -14792,7 +14792,7 @@ Assets {
             Z: 0.993106
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -14862,7 +14862,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8401333543465280772
+        Id: 961185100957435542
         Name: "Plane 1m - One Sided"
         Transform {
           Location {
@@ -14879,7 +14879,7 @@ Assets {
             Z: 0.796149
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -14949,7 +14949,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2960383216958183049
+        Id: 2619842340346876598
         Name: "Barrier Caution Light 2"
         Transform {
           Location {
@@ -14966,7 +14966,7 @@ Assets {
             Z: 0.29410252
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -15027,7 +15027,7 @@ Assets {
         }
       }
       Objects {
-        Id: 913214820398440170
+        Id: 12861996826042925023
         Name: "RecentActivity"
         Transform {
           Location {
@@ -15044,21 +15044,21 @@ Assets {
             Z: 0.962424278
           }
         }
-        ParentId: 6016212787217245530
-        ChildIds: 12107773901077504028
-        ChildIds: 1912166813589943078
-        ChildIds: 6201602569928131241
-        ChildIds: 14686401236001063060
-        ChildIds: 8479018971777058801
-        ChildIds: 16486633816107160889
-        ChildIds: 16893026861777664783
-        ChildIds: 18196975200651679665
-        ChildIds: 2819476272676764615
-        ChildIds: 10913238326514888475
-        ChildIds: 12954530740960085454
-        ChildIds: 9725551979481748475
-        ChildIds: 11446801041812982597
-        ChildIds: 7714420025117905285
+        ParentId: 18140035194010887242
+        ChildIds: 15004262877952028633
+        ChildIds: 10924968748685917591
+        ChildIds: 17059544175463107205
+        ChildIds: 1501030440200049142
+        ChildIds: 7583729367407953126
+        ChildIds: 2873556853509781067
+        ChildIds: 4061531897822831067
+        ChildIds: 17032444608070448758
+        ChildIds: 17255162861138837576
+        ChildIds: 9584287481424998704
+        ChildIds: 14207966242199781472
+        ChildIds: 9744330437366641302
+        ChildIds: 1195101547935303998
+        ChildIds: 1576314983704613420
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -15076,7 +15076,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12107773901077504028
+        Id: 15004262877952028633
         Name: "Text 01: R"
         Transform {
           Location {
@@ -15092,7 +15092,7 @@ Assets {
             Z: 0.0424224399
           }
         }
-        ParentId: 913214820398440170
+        ParentId: 12861996826042925023
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -15213,7 +15213,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1912166813589943078
+        Id: 10924968748685917591
         Name: "Text 01: E"
         Transform {
           Location {
@@ -15232,7 +15232,7 @@ Assets {
             Z: 0.0424224399
           }
         }
-        ParentId: 913214820398440170
+        ParentId: 12861996826042925023
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -15353,7 +15353,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6201602569928131241
+        Id: 17059544175463107205
         Name: "Text 01: C"
         Transform {
           Location {
@@ -15372,7 +15372,7 @@ Assets {
             Z: 0.0424224399
           }
         }
-        ParentId: 913214820398440170
+        ParentId: 12861996826042925023
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -15493,7 +15493,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14686401236001063060
+        Id: 1501030440200049142
         Name: "Text 01: E"
         Transform {
           Location {
@@ -15512,7 +15512,7 @@ Assets {
             Z: 0.0424224399
           }
         }
-        ParentId: 913214820398440170
+        ParentId: 12861996826042925023
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -15633,7 +15633,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8479018971777058801
+        Id: 7583729367407953126
         Name: "Text 01: N"
         Transform {
           Location {
@@ -15652,7 +15652,7 @@ Assets {
             Z: 0.0424224399
           }
         }
-        ParentId: 913214820398440170
+        ParentId: 12861996826042925023
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -15773,7 +15773,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16486633816107160889
+        Id: 2873556853509781067
         Name: "Text 01: T"
         Transform {
           Location {
@@ -15792,7 +15792,7 @@ Assets {
             Z: 0.0424224399
           }
         }
-        ParentId: 913214820398440170
+        ParentId: 12861996826042925023
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -15913,7 +15913,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16893026861777664783
+        Id: 4061531897822831067
         Name: "Text 01: A"
         Transform {
           Location {
@@ -15932,7 +15932,7 @@ Assets {
             Z: 0.0424224399
           }
         }
-        ParentId: 913214820398440170
+        ParentId: 12861996826042925023
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -16053,7 +16053,7 @@ Assets {
         }
       }
       Objects {
-        Id: 18196975200651679665
+        Id: 17032444608070448758
         Name: "Text 01: C"
         Transform {
           Location {
@@ -16072,7 +16072,7 @@ Assets {
             Z: 0.0424224399
           }
         }
-        ParentId: 913214820398440170
+        ParentId: 12861996826042925023
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -16193,7 +16193,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2819476272676764615
+        Id: 17255162861138837576
         Name: "Text 01: T"
         Transform {
           Location {
@@ -16212,7 +16212,7 @@ Assets {
             Z: 0.0424224399
           }
         }
-        ParentId: 913214820398440170
+        ParentId: 12861996826042925023
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -16333,7 +16333,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10913238326514888475
+        Id: 9584287481424998704
         Name: "Text 01: I"
         Transform {
           Location {
@@ -16352,7 +16352,7 @@ Assets {
             Z: 0.0424224399
           }
         }
-        ParentId: 913214820398440170
+        ParentId: 12861996826042925023
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -16473,7 +16473,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12954530740960085454
+        Id: 14207966242199781472
         Name: "Text 01: V"
         Transform {
           Location {
@@ -16492,7 +16492,7 @@ Assets {
             Z: 0.0424224399
           }
         }
-        ParentId: 913214820398440170
+        ParentId: 12861996826042925023
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -16613,7 +16613,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9725551979481748475
+        Id: 9744330437366641302
         Name: "Text 01: I"
         Transform {
           Location {
@@ -16632,7 +16632,7 @@ Assets {
             Z: 0.0424224399
           }
         }
-        ParentId: 913214820398440170
+        ParentId: 12861996826042925023
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -16753,7 +16753,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11446801041812982597
+        Id: 1195101547935303998
         Name: "Text 01: T"
         Transform {
           Location {
@@ -16772,7 +16772,7 @@ Assets {
             Z: 0.0424224399
           }
         }
-        ParentId: 913214820398440170
+        ParentId: 12861996826042925023
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -16893,7 +16893,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7714420025117905285
+        Id: 1576314983704613420
         Name: "Text 01: Y"
         Transform {
           Location {
@@ -16912,7 +16912,7 @@ Assets {
             Z: 0.0424224399
           }
         }
-        ParentId: 913214820398440170
+        ParentId: 12861996826042925023
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -17033,7 +17033,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1957664980340005819
+        Id: 15322697352831342538
         Name: "Plane 1m - One Sided"
         Transform {
           Location {
@@ -17050,7 +17050,7 @@ Assets {
             Z: 0.993105
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -17120,7 +17120,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14256400798323157223
+        Id: 16739102510927815301
         Name: "Office Magazine Holder"
         Transform {
           Location {
@@ -17138,7 +17138,7 @@ Assets {
             Z: -0.144101322
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -17205,7 +17205,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1285737432017013116
+        Id: 2801388205387985203
         Name: "Gear - generic small hollow"
         Transform {
           Location {
@@ -17221,7 +17221,7 @@ Assets {
             Z: 0.241221577
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -17276,7 +17276,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9507904870039377325
+        Id: 6949695553451120321
         Name: "Cube - Polished"
         Transform {
           Location {
@@ -17295,7 +17295,7 @@ Assets {
             Z: 0.0390837938
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -17373,7 +17373,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14932005219859465488
+        Id: 15103378948039892729
         Name: "Cube - Polished"
         Transform {
           Location {
@@ -17392,7 +17392,7 @@ Assets {
             Z: 0.0390837938
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -17470,7 +17470,7 @@ Assets {
         }
       }
       Objects {
-        Id: 18072710370974560459
+        Id: 10702416877959814190
         Name: "Barrier Caution Light 2"
         Transform {
           Location {
@@ -17489,7 +17489,7 @@ Assets {
             Z: 0.160026357
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -17549,7 +17549,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10470474622246962763
+        Id: 14023518779543396489
         Name: "Barrier Caution Light 2"
         Transform {
           Location {
@@ -17567,7 +17567,7 @@ Assets {
             Z: 0.645427763
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -17644,7 +17644,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14873032810498285042
+        Id: 2818311169996445507
         Name: "Barrier Caution Light 2"
         Transform {
           Location {
@@ -17663,7 +17663,7 @@ Assets {
             Z: 0.0718440786
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -17726,7 +17726,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8115447988866373774
+        Id: 3260219073129720492
         Name: "Prism - 4-Sided Trapezoid Right"
         Transform {
           Location {
@@ -17743,7 +17743,7 @@ Assets {
             Z: 0.118264407
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -17800,7 +17800,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11738929025531949100
+        Id: 16570544287772940717
         Name: "Prism - 4-Sided Trapezoid Right"
         Transform {
           Location {
@@ -17818,7 +17818,7 @@ Assets {
             Z: 0.037668284
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -17875,7 +17875,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10420126272422264910
+        Id: 7665549024370996027
         Name: "Prism - 4-Sided Trapezoid Right"
         Transform {
           Location {
@@ -17893,7 +17893,7 @@ Assets {
             Z: 0.037668284
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -17950,7 +17950,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17245043944592944749
+        Id: 16809781160592992141
         Name: "Prism - 4-Sided Trapezoid Right"
         Transform {
           Location {
@@ -17968,7 +17968,7 @@ Assets {
             Z: 0.0376682132
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -18025,7 +18025,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1447532213051852094
+        Id: 1289144142025238279
         Name: "Prism - 4-Sided Trapezoid Right"
         Transform {
           Location {
@@ -18043,7 +18043,7 @@ Assets {
             Z: 0.0376682132
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -18100,7 +18100,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11075575294652759315
+        Id: 11014270342002169383
         Name: "Prism - 4-Sided Trapezoid Right"
         Transform {
           Location {
@@ -18118,7 +18118,7 @@ Assets {
             Z: 0.0376682132
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -18175,7 +18175,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13652728224512761700
+        Id: 13415984510352158314
         Name: "Prism - 4-Sided Trapezoid Right"
         Transform {
           Location {
@@ -18193,7 +18193,7 @@ Assets {
             Z: 0.0376682132
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -18250,7 +18250,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10678449415781994881
+        Id: 8623553033673218905
         Name: "Prism - 4-Sided Trapezoid Right"
         Transform {
           Location {
@@ -18269,7 +18269,7 @@ Assets {
             Z: 0.0376683772
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -18326,7 +18326,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14858214847682098884
+        Id: 12252888953572590939
         Name: "Prism - 4-Sided Trapezoid Right"
         Transform {
           Location {
@@ -18345,7 +18345,7 @@ Assets {
             Z: 0.0376683772
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -18402,7 +18402,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16801499673646492341
+        Id: 7936902200923980533
         Name: "Prism - 4-Sided Trapezoid Right"
         Transform {
           Location {
@@ -18420,7 +18420,7 @@ Assets {
             Z: 0.118264407
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -18477,7 +18477,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2923278708610734247
+        Id: 10474092604982728443
         Name: "Cube - Polished"
         Transform {
           Location {
@@ -18494,7 +18494,7 @@ Assets {
             Z: 1.70024276
           }
         }
-        ParentId: 6016212787217245530
+        ParentId: 18140035194010887242
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -18542,7 +18542,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5892907538412886896
+        Id: 6922319073045187001
         Name: "Group"
         Transform {
           Location {
@@ -18555,10 +18555,10 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 6016212787217245530
-        ChildIds: 10366543261451937399
-        ChildIds: 13164112899771194539
-        ChildIds: 12721222702412019757
+        ParentId: 18140035194010887242
+        ChildIds: 1855327580252946849
+        ChildIds: 18315608961039641591
+        ChildIds: 5154274982533033017
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -18576,7 +18576,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10366543261451937399
+        Id: 1855327580252946849
         Name: "Cube"
         Transform {
           Location {
@@ -18592,7 +18592,7 @@ Assets {
             Z: 1.00000155
           }
         }
-        ParentId: 5892907538412886896
+        ParentId: 6922319073045187001
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -18636,7 +18636,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13164112899771194539
+        Id: 18315608961039641591
         Name: "Cube"
         Transform {
           Location {
@@ -18652,7 +18652,7 @@ Assets {
             Z: 0.177581906
           }
         }
-        ParentId: 5892907538412886896
+        ParentId: 6922319073045187001
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -18692,7 +18692,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12721222702412019757
+        Id: 5154274982533033017
         Name: "Cube"
         Transform {
           Location {
@@ -18708,7 +18708,7 @@ Assets {
             Z: 1.00000155
           }
         }
-        ParentId: 5892907538412886896
+        ParentId: 6922319073045187001
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -18749,7 +18749,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4664421298776084731
+        Id: 288027849228709264
         Name: "Side"
         Transform {
           Location {
@@ -18763,18 +18763,18 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 10058346830389356160
-        ChildIds: 15583433835600350781
-        ChildIds: 8883737993897779876
-        ChildIds: 7262357303650759588
-        ChildIds: 16192869014310212054
-        ChildIds: 5587786595826023413
-        ChildIds: 13279537277283392814
-        ChildIds: 15655676080703814502
-        ChildIds: 17172668057185431522
-        ChildIds: 9976306985298705560
-        ChildIds: 17883900857341482496
-        ChildIds: 8560740559906771803
+        ParentId: 13974284888082554666
+        ChildIds: 7663321669471566473
+        ChildIds: 16174949487520800586
+        ChildIds: 11608087334061673107
+        ChildIds: 17930383025575517394
+        ChildIds: 14014555399958790254
+        ChildIds: 16870318918932295793
+        ChildIds: 5774992518210582114
+        ChildIds: 15674094008181718182
+        ChildIds: 385271551784156291
+        ChildIds: 15281026591699988792
+        ChildIds: 4004093817695163417
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -18792,7 +18792,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15583433835600350781
+        Id: 7663321669471566473
         Name: "Prism - 4-Sided Trapezoid Right"
         Transform {
           Location {
@@ -18810,7 +18810,7 @@ Assets {
             Z: 0.051915057
           }
         }
-        ParentId: 4664421298776084731
+        ParentId: 288027849228709264
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -18870,7 +18870,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8883737993897779876
+        Id: 16174949487520800586
         Name: "Prism - 4-Sided Trapezoid Right"
         Transform {
           Location {
@@ -18889,7 +18889,7 @@ Assets {
             Z: 0.0519115478
           }
         }
-        ParentId: 4664421298776084731
+        ParentId: 288027849228709264
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -18946,7 +18946,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7262357303650759588
+        Id: 11608087334061673107
         Name: "Prism - 4-Sided Trapezoid Right"
         Transform {
           Location {
@@ -18965,7 +18965,7 @@ Assets {
             Z: 0.051915057
           }
         }
-        ParentId: 4664421298776084731
+        ParentId: 288027849228709264
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -19025,7 +19025,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16192869014310212054
+        Id: 17930383025575517394
         Name: "Urban Floor Grate Fire Escape - 2m x 2m"
         Transform {
           Location {
@@ -19042,7 +19042,7 @@ Assets {
             Z: 0.078158237
           }
         }
-        ParentId: 4664421298776084731
+        ParentId: 288027849228709264
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -19071,7 +19071,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5587786595826023413
+        Id: 14014555399958790254
         Name: "Urban Fire Escape Template"
         Transform {
           Location {
@@ -19088,11 +19088,11 @@ Assets {
             Z: 0.0708513707
           }
         }
-        ParentId: 4664421298776084731
-        ChildIds: 13320826881060017806
-        ChildIds: 11543682569236268696
-        ChildIds: 18214495411873545724
-        ChildIds: 15800278036380912122
+        ParentId: 288027849228709264
+        ChildIds: 16934507957176354540
+        ChildIds: 11768187008838249561
+        ChildIds: 18342178132509375545
+        ChildIds: 2578094121147325702
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -19107,7 +19107,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13320826881060017806
+        Id: 16934507957176354540
         Name: "Supports"
         Transform {
           Location {
@@ -19122,11 +19122,11 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 5587786595826023413
-        ChildIds: 8728579500706380492
-        ChildIds: 15452258993559385104
-        ChildIds: 17173511416196288871
-        ChildIds: 10906054283070004500
+        ParentId: 14014555399958790254
+        ChildIds: 5564144609491794572
+        ChildIds: 4081131714968728330
+        ChildIds: 9327913723407025739
+        ChildIds: 15535830041668528319
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -19141,7 +19141,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8728579500706380492
+        Id: 5564144609491794572
         Name: "Girder Medium Angled"
         Transform {
           Location {
@@ -19156,7 +19156,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13320826881060017806
+        ParentId: 16934507957176354540
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -19191,7 +19191,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15452258993559385104
+        Id: 4081131714968728330
         Name: "Girder Medium Angled"
         Transform {
           Location {
@@ -19206,7 +19206,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13320826881060017806
+        ParentId: 16934507957176354540
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -19241,7 +19241,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17173511416196288871
+        Id: 9327913723407025739
         Name: "Girder Medium Angled"
         Transform {
           Location {
@@ -19256,7 +19256,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13320826881060017806
+        ParentId: 16934507957176354540
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -19291,7 +19291,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10906054283070004500
+        Id: 15535830041668528319
         Name: "Girder Medium Angled"
         Transform {
           Location {
@@ -19307,7 +19307,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13320826881060017806
+        ParentId: 16934507957176354540
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -19342,7 +19342,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11543682569236268696
+        Id: 11768187008838249561
         Name: "Stairs Fire Escape 6m 01"
         Transform {
           Location {
@@ -19359,7 +19359,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 5587786595826023413
+        ParentId: 14014555399958790254
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -19383,7 +19383,7 @@ Assets {
         }
       }
       Objects {
-        Id: 18214495411873545724
+        Id: 18342178132509375545
         Name: "Railing"
         Transform {
           Location {
@@ -19400,31 +19400,31 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 5587786595826023413
-        ChildIds: 12664949921309033318
-        ChildIds: 6815324378410676422
-        ChildIds: 5691113376478396432
-        ChildIds: 5597397331429638824
-        ChildIds: 3932848277551815766
-        ChildIds: 13623163933785842137
-        ChildIds: 4605711873426975222
-        ChildIds: 8787902047877230252
-        ChildIds: 6844781286825548812
-        ChildIds: 7046461801459502331
-        ChildIds: 1826076066956612152
-        ChildIds: 7668295138944939036
-        ChildIds: 5062025882417963117
-        ChildIds: 4857382309107381167
-        ChildIds: 5979641087194325527
-        ChildIds: 245233685765142539
-        ChildIds: 9629410383728988319
-        ChildIds: 9891398901030763533
-        ChildIds: 11461704383925124893
-        ChildIds: 3060869314898973206
-        ChildIds: 5294796810539085491
-        ChildIds: 6921812320938182193
-        ChildIds: 4900840359227188709
-        ChildIds: 16051358759600132627
+        ParentId: 14014555399958790254
+        ChildIds: 2395301987014566186
+        ChildIds: 14968400250854192671
+        ChildIds: 5003873793372536493
+        ChildIds: 13156097223826422159
+        ChildIds: 10480227811041967853
+        ChildIds: 9506128933589524582
+        ChildIds: 4021673328496800440
+        ChildIds: 5270558843200159383
+        ChildIds: 12054002978708462942
+        ChildIds: 7305020173591309025
+        ChildIds: 2876386957210809622
+        ChildIds: 14231233531977052424
+        ChildIds: 8095998324699107563
+        ChildIds: 8084742043493367457
+        ChildIds: 4067841308672517335
+        ChildIds: 2706615206127822091
+        ChildIds: 8666160556616253733
+        ChildIds: 13272293865149671901
+        ChildIds: 3529413004006694921
+        ChildIds: 15046002137523117666
+        ChildIds: 11633582362538429811
+        ChildIds: 14728831269198598091
+        ChildIds: 7428680882079260011
+        ChildIds: 12556714869950051046
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -19439,7 +19439,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12664949921309033318
+        Id: 2395301987014566186
         Name: "Railing 01 2m Mainstreet"
         Transform {
           Location {
@@ -19455,7 +19455,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18214495411873545724
+        ParentId: 18342178132509375545
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -19479,7 +19479,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6815324378410676422
+        Id: 14968400250854192671
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
@@ -19495,7 +19495,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18214495411873545724
+        ParentId: 18342178132509375545
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -19519,7 +19519,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5691113376478396432
+        Id: 5003873793372536493
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
@@ -19535,7 +19535,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18214495411873545724
+        ParentId: 18342178132509375545
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -19559,7 +19559,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5597397331429638824
+        Id: 13156097223826422159
         Name: "Railing 01 2m Mainstreet"
         Transform {
           Location {
@@ -19575,7 +19575,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18214495411873545724
+        ParentId: 18342178132509375545
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -19599,7 +19599,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3932848277551815766
+        Id: 10480227811041967853
         Name: "Railing 01 2m Mainstreet"
         Transform {
           Location {
@@ -19615,7 +19615,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18214495411873545724
+        ParentId: 18342178132509375545
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -19639,7 +19639,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13623163933785842137
+        Id: 9506128933589524582
         Name: "Railing 01 2m Mainstreet"
         Transform {
           Location {
@@ -19655,7 +19655,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18214495411873545724
+        ParentId: 18342178132509375545
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -19679,7 +19679,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4605711873426975222
+        Id: 4021673328496800440
         Name: "Railing 01 2m Mainstreet"
         Transform {
           Location {
@@ -19695,7 +19695,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18214495411873545724
+        ParentId: 18342178132509375545
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -19719,7 +19719,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8787902047877230252
+        Id: 5270558843200159383
         Name: "Railing 01 2m Mainstreet"
         Transform {
           Location {
@@ -19736,7 +19736,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18214495411873545724
+        ParentId: 18342178132509375545
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -19760,7 +19760,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6844781286825548812
+        Id: 12054002978708462942
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
@@ -19776,7 +19776,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18214495411873545724
+        ParentId: 18342178132509375545
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -19800,7 +19800,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7046461801459502331
+        Id: 7305020173591309025
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
@@ -19816,7 +19816,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18214495411873545724
+        ParentId: 18342178132509375545
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -19840,7 +19840,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1826076066956612152
+        Id: 2876386957210809622
         Name: "Railing 01 2m Mainstreet"
         Transform {
           Location {
@@ -19857,7 +19857,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18214495411873545724
+        ParentId: 18342178132509375545
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -19881,7 +19881,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7668295138944939036
+        Id: 14231233531977052424
         Name: "Railing 01 2m Mainstreet"
         Transform {
           Location {
@@ -19898,7 +19898,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18214495411873545724
+        ParentId: 18342178132509375545
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -19922,7 +19922,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5062025882417963117
+        Id: 8095998324699107563
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
@@ -19938,7 +19938,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18214495411873545724
+        ParentId: 18342178132509375545
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -19962,7 +19962,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4857382309107381167
+        Id: 8084742043493367457
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
@@ -19978,7 +19978,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18214495411873545724
+        ParentId: 18342178132509375545
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -20002,7 +20002,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5979641087194325527
+        Id: 4067841308672517335
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
@@ -20018,7 +20018,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18214495411873545724
+        ParentId: 18342178132509375545
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -20042,7 +20042,7 @@ Assets {
         }
       }
       Objects {
-        Id: 245233685765142539
+        Id: 2706615206127822091
         Name: "Railing 01 2m Mainstreet"
         Transform {
           Location {
@@ -20059,7 +20059,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18214495411873545724
+        ParentId: 18342178132509375545
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -20083,7 +20083,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9629410383728988319
+        Id: 8666160556616253733
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
@@ -20099,7 +20099,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18214495411873545724
+        ParentId: 18342178132509375545
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -20123,7 +20123,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9891398901030763533
+        Id: 13272293865149671901
         Name: "Railing 01 2m Mainstreet"
         Transform {
           Location {
@@ -20139,7 +20139,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18214495411873545724
+        ParentId: 18342178132509375545
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -20163,7 +20163,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11461704383925124893
+        Id: 3529413004006694921
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
@@ -20179,7 +20179,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18214495411873545724
+        ParentId: 18342178132509375545
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -20203,7 +20203,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3060869314898973206
+        Id: 15046002137523117666
         Name: "Railing 01 2m Mainstreet"
         Transform {
           Location {
@@ -20219,7 +20219,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18214495411873545724
+        ParentId: 18342178132509375545
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -20243,7 +20243,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5294796810539085491
+        Id: 11633582362538429811
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
@@ -20259,7 +20259,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18214495411873545724
+        ParentId: 18342178132509375545
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -20283,7 +20283,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6921812320938182193
+        Id: 14728831269198598091
         Name: "Railing 01 2m Mainstreet"
         Transform {
           Location {
@@ -20299,7 +20299,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18214495411873545724
+        ParentId: 18342178132509375545
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -20323,7 +20323,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4900840359227188709
+        Id: 7428680882079260011
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
@@ -20339,7 +20339,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18214495411873545724
+        ParentId: 18342178132509375545
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -20363,7 +20363,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16051358759600132627
+        Id: 12556714869950051046
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
@@ -20379,7 +20379,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18214495411873545724
+        ParentId: 18342178132509375545
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -20403,7 +20403,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15800278036380912122
+        Id: 2578094121147325702
         Name: "Floors"
         Transform {
           Location {
@@ -20416,14 +20416,14 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 5587786595826023413
-        ChildIds: 16374184924044590679
-        ChildIds: 16209921242461503769
-        ChildIds: 4380360195482920428
-        ChildIds: 4005609392801440830
-        ChildIds: 8723271770437717963
-        ChildIds: 12729726020445726888
-        ChildIds: 17735113319473616433
+        ParentId: 14014555399958790254
+        ChildIds: 15090799361894020755
+        ChildIds: 15204903495322721015
+        ChildIds: 1246763697394016730
+        ChildIds: 5887103368223029482
+        ChildIds: 13422401455607897746
+        ChildIds: 1597773785696110640
+        ChildIds: 10760338269368529725
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -20438,7 +20438,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16374184924044590679
+        Id: 15090799361894020755
         Name: "Floor Grate Fire Escape 2m x 2m"
         Transform {
           Location {
@@ -20451,7 +20451,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15800278036380912122
+        ParentId: 2578094121147325702
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -20475,7 +20475,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16209921242461503769
+        Id: 15204903495322721015
         Name: "Floor Grate Fire Escape 2m x 2m"
         Transform {
           Location {
@@ -20490,7 +20490,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15800278036380912122
+        ParentId: 2578094121147325702
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -20514,7 +20514,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4380360195482920428
+        Id: 1246763697394016730
         Name: "Floor Grate Fire Escape 2m x 2m"
         Transform {
           Location {
@@ -20529,7 +20529,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15800278036380912122
+        ParentId: 2578094121147325702
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -20553,7 +20553,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4005609392801440830
+        Id: 5887103368223029482
         Name: "Floor Grate Fire Escape 2m x 2m"
         Transform {
           Location {
@@ -20568,7 +20568,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15800278036380912122
+        ParentId: 2578094121147325702
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -20592,7 +20592,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8723271770437717963
+        Id: 13422401455607897746
         Name: "Floor Grate Fire Escape 2m x 2m"
         Transform {
           Location {
@@ -20607,7 +20607,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15800278036380912122
+        ParentId: 2578094121147325702
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -20631,7 +20631,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12729726020445726888
+        Id: 1597773785696110640
         Name: "Floor Grate Fire Escape 2m x 2m"
         Transform {
           Location {
@@ -20646,7 +20646,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15800278036380912122
+        ParentId: 2578094121147325702
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -20670,7 +20670,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17735113319473616433
+        Id: 10760338269368529725
         Name: "Floor Grate Fire Escape 2m x 2m"
         Transform {
           Location {
@@ -20685,7 +20685,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15800278036380912122
+        ParentId: 2578094121147325702
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -20709,7 +20709,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13279537277283392814
+        Id: 16870318918932295793
         Name: "Urban Floor Grate Fire Escape - 2m x 2m"
         Transform {
           Location {
@@ -20726,7 +20726,7 @@ Assets {
             Z: 0.078158237
           }
         }
-        ParentId: 4664421298776084731
+        ParentId: 288027849228709264
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -20755,7 +20755,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15655676080703814502
+        Id: 5774992518210582114
         Name: "Main Street Wall 03 - Window 01"
         Transform {
           Location {
@@ -20772,7 +20772,7 @@ Assets {
             Z: 0.0551807471
           }
         }
-        ParentId: 4664421298776084731
+        ParentId: 288027849228709264
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -20803,7 +20803,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17172668057185431522
+        Id: 15674094008181718182
         Name: "Plane 1m - One Sided"
         Transform {
           Location {
@@ -20820,7 +20820,7 @@ Assets {
             Z: 0.372262418
           }
         }
-        ParentId: 4664421298776084731
+        ParentId: 288027849228709264
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -20868,7 +20868,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9976306985298705560
+        Id: 385271551784156291
         Name: "Main Street Wall 03 - Window 01"
         Transform {
           Location {
@@ -20885,7 +20885,7 @@ Assets {
             Z: 0.0551807471
           }
         }
-        ParentId: 4664421298776084731
+        ParentId: 288027849228709264
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_WallOuter:color"
@@ -20927,7 +20927,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17883900857341482496
+        Id: 15281026591699988792
         Name: "Urban Fire Escape Template"
         Transform {
           Location {
@@ -20944,11 +20944,11 @@ Assets {
             Z: 0.0708513707
           }
         }
-        ParentId: 4664421298776084731
-        ChildIds: 14660367580489246577
-        ChildIds: 16735851757939454634
-        ChildIds: 4227250830370621732
-        ChildIds: 11265021237079438146
+        ParentId: 288027849228709264
+        ChildIds: 1552036344985482433
+        ChildIds: 11902308326441787803
+        ChildIds: 12370281380042123396
+        ChildIds: 12296235595973251950
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -20963,7 +20963,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14660367580489246577
+        Id: 1552036344985482433
         Name: "Supports"
         Transform {
           Location {
@@ -20978,11 +20978,11 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17883900857341482496
-        ChildIds: 11967170627500704020
-        ChildIds: 9865587486572508096
-        ChildIds: 9604874878516276770
-        ChildIds: 14638485254536738199
+        ParentId: 15281026591699988792
+        ChildIds: 4674824063158618676
+        ChildIds: 9216021530921132937
+        ChildIds: 9751567798206451812
+        ChildIds: 8698980167912370901
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -20997,7 +20997,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11967170627500704020
+        Id: 4674824063158618676
         Name: "Girder Medium Angled"
         Transform {
           Location {
@@ -21012,7 +21012,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14660367580489246577
+        ParentId: 1552036344985482433
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -21047,7 +21047,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9865587486572508096
+        Id: 9216021530921132937
         Name: "Girder Medium Angled"
         Transform {
           Location {
@@ -21062,7 +21062,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14660367580489246577
+        ParentId: 1552036344985482433
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -21097,7 +21097,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9604874878516276770
+        Id: 9751567798206451812
         Name: "Girder Medium Angled"
         Transform {
           Location {
@@ -21112,7 +21112,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14660367580489246577
+        ParentId: 1552036344985482433
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -21147,7 +21147,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14638485254536738199
+        Id: 8698980167912370901
         Name: "Girder Medium Angled"
         Transform {
           Location {
@@ -21163,7 +21163,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14660367580489246577
+        ParentId: 1552036344985482433
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -21198,7 +21198,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16735851757939454634
+        Id: 11902308326441787803
         Name: "Stairs Fire Escape 6m 01"
         Transform {
           Location {
@@ -21215,7 +21215,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17883900857341482496
+        ParentId: 15281026591699988792
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -21239,7 +21239,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4227250830370621732
+        Id: 12370281380042123396
         Name: "Railing"
         Transform {
           Location {
@@ -21256,31 +21256,31 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17883900857341482496
-        ChildIds: 4733979058764767649
-        ChildIds: 10618812739361044997
-        ChildIds: 2641110190438125158
-        ChildIds: 3152104229877078734
-        ChildIds: 8585759023726421554
-        ChildIds: 14208724513795099986
-        ChildIds: 13471014938601169713
-        ChildIds: 11162100355546268491
-        ChildIds: 1658701826601639453
-        ChildIds: 15871056544785108633
-        ChildIds: 14854539270657928757
-        ChildIds: 16133886140891281354
-        ChildIds: 2352904042661726187
-        ChildIds: 9095121732627775308
-        ChildIds: 10906069015220755943
-        ChildIds: 8421782667422922177
-        ChildIds: 1895492279254023906
-        ChildIds: 10306931463550966604
-        ChildIds: 11017779239571656322
-        ChildIds: 4602989735591490024
-        ChildIds: 9511693186801639223
-        ChildIds: 12321173585737590868
-        ChildIds: 15591303947288101519
-        ChildIds: 5327570978835092806
+        ParentId: 15281026591699988792
+        ChildIds: 17602523386682354511
+        ChildIds: 16361073544783856348
+        ChildIds: 14906167238561717273
+        ChildIds: 7387718215836908584
+        ChildIds: 16413291336792630272
+        ChildIds: 16040232253116463558
+        ChildIds: 11166714881599870619
+        ChildIds: 6842249378202311012
+        ChildIds: 9711033021155344877
+        ChildIds: 9727978003156708110
+        ChildIds: 11701697711073703917
+        ChildIds: 12036270244468868959
+        ChildIds: 13926722373822205876
+        ChildIds: 3949504313447142568
+        ChildIds: 16795649892443438625
+        ChildIds: 9160736646679098516
+        ChildIds: 8015069159038163697
+        ChildIds: 10291221402000576302
+        ChildIds: 11928164144601533953
+        ChildIds: 1195822017023642232
+        ChildIds: 8045246250862743980
+        ChildIds: 11175876877830327597
+        ChildIds: 11375586959807739426
+        ChildIds: 3042535459244232339
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -21295,7 +21295,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4733979058764767649
+        Id: 17602523386682354511
         Name: "Railing 01 2m Mainstreet"
         Transform {
           Location {
@@ -21311,7 +21311,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4227250830370621732
+        ParentId: 12370281380042123396
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -21335,7 +21335,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10618812739361044997
+        Id: 16361073544783856348
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
@@ -21351,7 +21351,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4227250830370621732
+        ParentId: 12370281380042123396
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -21375,7 +21375,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2641110190438125158
+        Id: 14906167238561717273
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
@@ -21391,7 +21391,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4227250830370621732
+        ParentId: 12370281380042123396
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -21415,7 +21415,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3152104229877078734
+        Id: 7387718215836908584
         Name: "Railing 01 2m Mainstreet"
         Transform {
           Location {
@@ -21431,7 +21431,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4227250830370621732
+        ParentId: 12370281380042123396
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -21455,7 +21455,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8585759023726421554
+        Id: 16413291336792630272
         Name: "Railing 01 2m Mainstreet"
         Transform {
           Location {
@@ -21471,7 +21471,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4227250830370621732
+        ParentId: 12370281380042123396
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -21495,7 +21495,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14208724513795099986
+        Id: 16040232253116463558
         Name: "Railing 01 2m Mainstreet"
         Transform {
           Location {
@@ -21511,7 +21511,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4227250830370621732
+        ParentId: 12370281380042123396
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -21535,7 +21535,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13471014938601169713
+        Id: 11166714881599870619
         Name: "Railing 01 2m Mainstreet"
         Transform {
           Location {
@@ -21551,7 +21551,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4227250830370621732
+        ParentId: 12370281380042123396
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -21575,7 +21575,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11162100355546268491
+        Id: 6842249378202311012
         Name: "Railing 01 2m Mainstreet"
         Transform {
           Location {
@@ -21592,7 +21592,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4227250830370621732
+        ParentId: 12370281380042123396
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -21616,7 +21616,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1658701826601639453
+        Id: 9711033021155344877
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
@@ -21632,7 +21632,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4227250830370621732
+        ParentId: 12370281380042123396
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -21656,7 +21656,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15871056544785108633
+        Id: 9727978003156708110
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
@@ -21672,7 +21672,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4227250830370621732
+        ParentId: 12370281380042123396
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -21696,7 +21696,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14854539270657928757
+        Id: 11701697711073703917
         Name: "Railing 01 2m Mainstreet"
         Transform {
           Location {
@@ -21713,7 +21713,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4227250830370621732
+        ParentId: 12370281380042123396
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -21737,7 +21737,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16133886140891281354
+        Id: 12036270244468868959
         Name: "Railing 01 2m Mainstreet"
         Transform {
           Location {
@@ -21754,7 +21754,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4227250830370621732
+        ParentId: 12370281380042123396
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -21778,7 +21778,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2352904042661726187
+        Id: 13926722373822205876
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
@@ -21794,7 +21794,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4227250830370621732
+        ParentId: 12370281380042123396
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -21818,7 +21818,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9095121732627775308
+        Id: 3949504313447142568
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
@@ -21834,7 +21834,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4227250830370621732
+        ParentId: 12370281380042123396
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -21858,7 +21858,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10906069015220755943
+        Id: 16795649892443438625
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
@@ -21874,7 +21874,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4227250830370621732
+        ParentId: 12370281380042123396
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -21898,7 +21898,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8421782667422922177
+        Id: 9160736646679098516
         Name: "Railing 01 2m Mainstreet"
         Transform {
           Location {
@@ -21915,7 +21915,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4227250830370621732
+        ParentId: 12370281380042123396
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -21939,7 +21939,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1895492279254023906
+        Id: 8015069159038163697
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
@@ -21955,7 +21955,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4227250830370621732
+        ParentId: 12370281380042123396
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -21979,7 +21979,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10306931463550966604
+        Id: 10291221402000576302
         Name: "Railing 01 2m Mainstreet"
         Transform {
           Location {
@@ -21995,7 +21995,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4227250830370621732
+        ParentId: 12370281380042123396
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -22019,7 +22019,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11017779239571656322
+        Id: 11928164144601533953
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
@@ -22035,7 +22035,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4227250830370621732
+        ParentId: 12370281380042123396
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -22059,7 +22059,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4602989735591490024
+        Id: 1195822017023642232
         Name: "Railing 01 2m Mainstreet"
         Transform {
           Location {
@@ -22075,7 +22075,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4227250830370621732
+        ParentId: 12370281380042123396
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -22099,7 +22099,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9511693186801639223
+        Id: 8045246250862743980
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
@@ -22115,7 +22115,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4227250830370621732
+        ParentId: 12370281380042123396
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -22139,7 +22139,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12321173585737590868
+        Id: 11175876877830327597
         Name: "Railing 01 2m Mainstreet"
         Transform {
           Location {
@@ -22155,7 +22155,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4227250830370621732
+        ParentId: 12370281380042123396
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -22179,7 +22179,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15591303947288101519
+        Id: 11375586959807739426
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
@@ -22195,7 +22195,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4227250830370621732
+        ParentId: 12370281380042123396
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -22219,7 +22219,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5327570978835092806
+        Id: 3042535459244232339
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
@@ -22235,7 +22235,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4227250830370621732
+        ParentId: 12370281380042123396
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -22259,7 +22259,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11265021237079438146
+        Id: 12296235595973251950
         Name: "Floors"
         Transform {
           Location {
@@ -22272,14 +22272,14 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17883900857341482496
-        ChildIds: 1861321245333745754
-        ChildIds: 12959767607445604063
-        ChildIds: 234208262669793104
-        ChildIds: 17803254408765122047
-        ChildIds: 18391470518305199181
-        ChildIds: 2967368596675511027
-        ChildIds: 7043487647524357729
+        ParentId: 15281026591699988792
+        ChildIds: 15268158269007254207
+        ChildIds: 15614679874096448891
+        ChildIds: 3909323880601945467
+        ChildIds: 13289114599746875334
+        ChildIds: 18139071653760149015
+        ChildIds: 13015873573990345998
+        ChildIds: 418427973179534789
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -22294,7 +22294,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1861321245333745754
+        Id: 15268158269007254207
         Name: "Floor Grate Fire Escape 2m x 2m"
         Transform {
           Location {
@@ -22307,7 +22307,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11265021237079438146
+        ParentId: 12296235595973251950
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -22331,7 +22331,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12959767607445604063
+        Id: 15614679874096448891
         Name: "Floor Grate Fire Escape 2m x 2m"
         Transform {
           Location {
@@ -22346,7 +22346,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11265021237079438146
+        ParentId: 12296235595973251950
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -22370,7 +22370,7 @@ Assets {
         }
       }
       Objects {
-        Id: 234208262669793104
+        Id: 3909323880601945467
         Name: "Floor Grate Fire Escape 2m x 2m"
         Transform {
           Location {
@@ -22385,7 +22385,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11265021237079438146
+        ParentId: 12296235595973251950
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -22409,7 +22409,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17803254408765122047
+        Id: 13289114599746875334
         Name: "Floor Grate Fire Escape 2m x 2m"
         Transform {
           Location {
@@ -22424,7 +22424,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11265021237079438146
+        ParentId: 12296235595973251950
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -22448,7 +22448,7 @@ Assets {
         }
       }
       Objects {
-        Id: 18391470518305199181
+        Id: 18139071653760149015
         Name: "Floor Grate Fire Escape 2m x 2m"
         Transform {
           Location {
@@ -22463,7 +22463,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11265021237079438146
+        ParentId: 12296235595973251950
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -22487,7 +22487,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2967368596675511027
+        Id: 13015873573990345998
         Name: "Floor Grate Fire Escape 2m x 2m"
         Transform {
           Location {
@@ -22502,7 +22502,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11265021237079438146
+        ParentId: 12296235595973251950
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -22526,7 +22526,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7043487647524357729
+        Id: 418427973179534789
         Name: "Floor Grate Fire Escape 2m x 2m"
         Transform {
           Location {
@@ -22541,7 +22541,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11265021237079438146
+        ParentId: 12296235595973251950
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -22565,7 +22565,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8560740559906771803
+        Id: 4004093817695163417
         Name: "Plane 1m - One Sided"
         Transform {
           Location {
@@ -22582,7 +22582,7 @@ Assets {
             Z: 0.372262418
           }
         }
-        ParentId: 4664421298776084731
+        ParentId: 288027849228709264
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -22628,7 +22628,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17897823281697368323
+        Id: 15496597162319311096
         Name: "Side"
         Transform {
           Location {
@@ -22642,11 +22642,11 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 10058346830389356160
-        ChildIds: 6468679905118611235
-        ChildIds: 5964503110974388666
-        ChildIds: 18275004287078278064
-        ChildIds: 17025889892273789659
+        ParentId: 13974284888082554666
+        ChildIds: 9793161221601916313
+        ChildIds: 3202955579474439164
+        ChildIds: 14171007299968864415
+        ChildIds: 9631543311161828585
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -22664,7 +22664,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6468679905118611235
+        Id: 9793161221601916313
         Name: "Prism - 4-Sided Trapezoid Right"
         Transform {
           Location {
@@ -22682,7 +22682,7 @@ Assets {
             Z: -0.051915057
           }
         }
-        ParentId: 17897823281697368323
+        ParentId: 15496597162319311096
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -22742,7 +22742,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5964503110974388666
+        Id: 3202955579474439164
         Name: "Prism - 4-Sided Trapezoid Right"
         Transform {
           Location {
@@ -22761,7 +22761,7 @@ Assets {
             Z: -0.0519115478
           }
         }
-        ParentId: 17897823281697368323
+        ParentId: 15496597162319311096
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -22818,7 +22818,7 @@ Assets {
         }
       }
       Objects {
-        Id: 18275004287078278064
+        Id: 14171007299968864415
         Name: "Prism - 4-Sided Trapezoid Right"
         Transform {
           Location {
@@ -22837,7 +22837,7 @@ Assets {
             Z: -0.051915057
           }
         }
-        ParentId: 17897823281697368323
+        ParentId: 15496597162319311096
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -22897,7 +22897,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17025889892273789659
+        Id: 9631543311161828585
         Name: "Group"
         Transform {
           Location {
@@ -22910,62 +22910,62 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17897823281697368323
-        ChildIds: 15443629467496616482
-        ChildIds: 731375233700080270
-        ChildIds: 1707814189585170991
-        ChildIds: 3243418993269045293
-        ChildIds: 17798828740774519676
-        ChildIds: 17108277871400145583
-        ChildIds: 1205920977531102380
-        ChildIds: 220182318684257649
-        ChildIds: 10395670345291664026
-        ChildIds: 1188536536066935346
-        ChildIds: 9376384659487641864
-        ChildIds: 6689709525469090882
-        ChildIds: 5462712749049419831
-        ChildIds: 3072072893229720406
-        ChildIds: 6163902702261066737
-        ChildIds: 15933901039749384079
-        ChildIds: 6187845994157150654
-        ChildIds: 16807867097900438522
-        ChildIds: 7959224077436918651
-        ChildIds: 9015511034197072038
-        ChildIds: 17684486718932039991
-        ChildIds: 15349527910333293493
-        ChildIds: 11327611081212228391
-        ChildIds: 15968488400504859848
-        ChildIds: 5960333180142486581
-        ChildIds: 2525431277614226084
-        ChildIds: 9765481843656841768
-        ChildIds: 8334436051222037813
-        ChildIds: 1528560239396081216
-        ChildIds: 9669838422179603873
-        ChildIds: 11962938308690756113
-        ChildIds: 1435879885447475093
-        ChildIds: 3043989414767231021
-        ChildIds: 9426980233965435048
-        ChildIds: 5370997520423594952
-        ChildIds: 7835389928704491
-        ChildIds: 9557455133711109554
-        ChildIds: 15046592904651849503
-        ChildIds: 14276069547156971672
-        ChildIds: 6784380914075943848
-        ChildIds: 10101959821555662225
-        ChildIds: 8529447933650702718
-        ChildIds: 7577950075967487804
-        ChildIds: 9581533931428708240
-        ChildIds: 17066960969812768022
-        ChildIds: 1829294648437086096
-        ChildIds: 15276378532285897981
-        ChildIds: 16925256107755819348
-        ChildIds: 14716339258807051004
-        ChildIds: 2260585507261206093
-        ChildIds: 16189233845903257075
-        ChildIds: 7426526077297125976
-        ChildIds: 7656733094505588370
-        ChildIds: 13999075790219627273
-        ChildIds: 16646824549105492266
+        ParentId: 15496597162319311096
+        ChildIds: 4348993866541718490
+        ChildIds: 2687408906348859124
+        ChildIds: 14160189134376065684
+        ChildIds: 4976979924651513140
+        ChildIds: 14631426689076671016
+        ChildIds: 8010567162403361886
+        ChildIds: 10866064915232411769
+        ChildIds: 3715857816209384050
+        ChildIds: 12135098496585618840
+        ChildIds: 1721889324529426717
+        ChildIds: 14375769708433730573
+        ChildIds: 8006490207327554103
+        ChildIds: 12656638558284043472
+        ChildIds: 594727293037253636
+        ChildIds: 11239631569948324809
+        ChildIds: 2443013261672486796
+        ChildIds: 5735767970235072634
+        ChildIds: 13594329303593873172
+        ChildIds: 3783350585251914540
+        ChildIds: 17283789533762881444
+        ChildIds: 7788677761915562011
+        ChildIds: 5515550414208689760
+        ChildIds: 5509721376370943594
+        ChildIds: 18292702443009713378
+        ChildIds: 12986303244667284358
+        ChildIds: 18232601330869599070
+        ChildIds: 8387544831066900990
+        ChildIds: 12877117411270630064
+        ChildIds: 11751147679169841727
+        ChildIds: 5220109412908069830
+        ChildIds: 3795422853560741070
+        ChildIds: 2760857153400031626
+        ChildIds: 17806133037030695171
+        ChildIds: 1950664181169077390
+        ChildIds: 8413618320488346885
+        ChildIds: 13431670748849840550
+        ChildIds: 1569511204106256655
+        ChildIds: 6878273881993776789
+        ChildIds: 16407654363961058507
+        ChildIds: 9965894023680969580
+        ChildIds: 7824598136385319016
+        ChildIds: 2224889822423974017
+        ChildIds: 2486139651262078201
+        ChildIds: 15470751595262862616
+        ChildIds: 15919815462125497034
+        ChildIds: 6547853450855592937
+        ChildIds: 18120663829209657533
+        ChildIds: 17043471417252712202
+        ChildIds: 9383489055094001354
+        ChildIds: 2207655777075525497
+        ChildIds: 8038596409382826287
+        ChildIds: 18286335280356973305
+        ChildIds: 5846558299192082751
+        ChildIds: 15737295679294170744
+        ChildIds: 14170953536082505315
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -22983,7 +22983,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15443629467496616482
+        Id: 4348993866541718490
         Name: "Urban Damaged Wall 01"
         Transform {
           Location {
@@ -23000,7 +23000,7 @@ Assets {
             Z: 0.1387
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_WallInner:id"
@@ -23055,7 +23055,7 @@ Assets {
         }
       }
       Objects {
-        Id: 731375233700080270
+        Id: 2687408906348859124
         Name: "Main Street Wall 02"
         Transform {
           Location {
@@ -23072,7 +23072,7 @@ Assets {
             Z: -0.141629726
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -23136,7 +23136,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1707814189585170991
+        Id: 14160189134376065684
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -23154,7 +23154,7 @@ Assets {
             Z: -0.115905561
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -23235,7 +23235,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3243418993269045293
+        Id: 4976979924651513140
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -23254,7 +23254,7 @@ Assets {
             Z: -0.115905561
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -23335,7 +23335,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17798828740774519676
+        Id: 14631426689076671016
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -23354,7 +23354,7 @@ Assets {
             Z: -0.115905561
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -23435,7 +23435,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17108277871400145583
+        Id: 8010567162403361886
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -23454,7 +23454,7 @@ Assets {
             Z: -0.115905561
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -23535,7 +23535,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1205920977531102380
+        Id: 10866064915232411769
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -23554,7 +23554,7 @@ Assets {
             Z: -0.115905561
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -23635,7 +23635,7 @@ Assets {
         }
       }
       Objects {
-        Id: 220182318684257649
+        Id: 3715857816209384050
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -23654,7 +23654,7 @@ Assets {
             Z: -0.115905561
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -23735,7 +23735,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10395670345291664026
+        Id: 12135098496585618840
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -23754,7 +23754,7 @@ Assets {
             Z: -0.115905561
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -23835,7 +23835,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1188536536066935346
+        Id: 1721889324529426717
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -23854,7 +23854,7 @@ Assets {
             Z: -0.115905561
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -23935,7 +23935,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9376384659487641864
+        Id: 14375769708433730573
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -23954,7 +23954,7 @@ Assets {
             Z: -0.115905561
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -24035,7 +24035,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6689709525469090882
+        Id: 8006490207327554103
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -24054,7 +24054,7 @@ Assets {
             Z: -0.115905561
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -24135,7 +24135,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5462712749049419831
+        Id: 12656638558284043472
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -24154,7 +24154,7 @@ Assets {
             Z: -0.115905561
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -24235,7 +24235,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3072072893229720406
+        Id: 594727293037253636
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -24254,7 +24254,7 @@ Assets {
             Z: -0.115905561
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -24335,7 +24335,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6163902702261066737
+        Id: 11239631569948324809
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -24354,7 +24354,7 @@ Assets {
             Z: -0.115905561
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -24435,7 +24435,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15933901039749384079
+        Id: 2443013261672486796
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -24454,7 +24454,7 @@ Assets {
             Z: -0.115905561
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -24535,7 +24535,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6187845994157150654
+        Id: 5735767970235072634
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -24554,7 +24554,7 @@ Assets {
             Z: -0.115905561
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -24635,7 +24635,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16807867097900438522
+        Id: 13594329303593873172
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -24654,7 +24654,7 @@ Assets {
             Z: -0.115905561
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -24735,7 +24735,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7959224077436918651
+        Id: 3783350585251914540
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -24754,7 +24754,7 @@ Assets {
             Z: -0.115905561
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -24835,7 +24835,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9015511034197072038
+        Id: 17283789533762881444
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -24854,7 +24854,7 @@ Assets {
             Z: -0.115905561
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -24935,7 +24935,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17684486718932039991
+        Id: 7788677761915562011
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -24954,7 +24954,7 @@ Assets {
             Z: -0.115905561
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -25035,7 +25035,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15349527910333293493
+        Id: 5515550414208689760
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -25054,7 +25054,7 @@ Assets {
             Z: -0.115905561
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -25135,7 +25135,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11327611081212228391
+        Id: 5509721376370943594
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -25154,7 +25154,7 @@ Assets {
             Z: -0.115905561
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -25235,7 +25235,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15968488400504859848
+        Id: 18292702443009713378
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -25254,7 +25254,7 @@ Assets {
             Z: -0.115905561
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -25335,7 +25335,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5960333180142486581
+        Id: 12986303244667284358
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -25351,7 +25351,7 @@ Assets {
             Z: -0.150283009
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -25432,7 +25432,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2525431277614226084
+        Id: 18232601330869599070
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -25448,7 +25448,7 @@ Assets {
             Z: -0.150283009
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -25529,7 +25529,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9765481843656841768
+        Id: 8387544831066900990
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -25545,7 +25545,7 @@ Assets {
             Z: -0.150283009
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -25626,7 +25626,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8334436051222037813
+        Id: 12877117411270630064
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -25642,7 +25642,7 @@ Assets {
             Z: -0.150283009
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -25723,7 +25723,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1528560239396081216
+        Id: 11751147679169841727
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -25739,7 +25739,7 @@ Assets {
             Z: -0.150283009
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -25820,7 +25820,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9669838422179603873
+        Id: 5220109412908069830
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -25837,7 +25837,7 @@ Assets {
             Z: -0.103440709
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -25918,7 +25918,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11962938308690756113
+        Id: 3795422853560741070
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -25935,7 +25935,7 @@ Assets {
             Z: -0.103440695
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -26016,7 +26016,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1435879885447475093
+        Id: 2760857153400031626
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -26033,7 +26033,7 @@ Assets {
             Z: -0.103440695
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -26114,7 +26114,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3043989414767231021
+        Id: 17806133037030695171
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -26131,7 +26131,7 @@ Assets {
             Z: -0.103440695
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -26212,7 +26212,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9426980233965435048
+        Id: 1950664181169077390
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -26231,7 +26231,7 @@ Assets {
             Z: -0.115905561
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -26312,7 +26312,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5370997520423594952
+        Id: 8413618320488346885
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -26331,7 +26331,7 @@ Assets {
             Z: -0.115905561
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -26412,7 +26412,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7835389928704491
+        Id: 13431670748849840550
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -26431,7 +26431,7 @@ Assets {
             Z: -0.115905561
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -26512,7 +26512,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9557455133711109554
+        Id: 1569511204106256655
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -26531,7 +26531,7 @@ Assets {
             Z: -0.115905561
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -26612,7 +26612,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15046592904651849503
+        Id: 6878273881993776789
         Name: "Main Street Wall 02"
         Transform {
           Location {
@@ -26629,7 +26629,7 @@ Assets {
             Z: -0.141629726
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -26693,7 +26693,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14276069547156971672
+        Id: 16407654363961058507
         Name: "Main Street Wall 02"
         Transform {
           Location {
@@ -26710,7 +26710,7 @@ Assets {
             Z: -0.141629726
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -26774,7 +26774,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6784380914075943848
+        Id: 9965894023680969580
         Name: "Urban Damaged Interior Trim Board 01 - Mid 02"
         Transform {
           Location {
@@ -26791,7 +26791,7 @@ Assets {
             Z: -0.141629726
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -26861,7 +26861,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10101959821555662225
+        Id: 7824598136385319016
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -26880,7 +26880,7 @@ Assets {
             Z: -0.115905561
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -26961,7 +26961,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8529447933650702718
+        Id: 2224889822423974017
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -26980,7 +26980,7 @@ Assets {
             Z: -0.115905561
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -27061,7 +27061,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7577950075967487804
+        Id: 2486139651262078201
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -27080,7 +27080,7 @@ Assets {
             Z: -0.115905561
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -27161,7 +27161,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9581533931428708240
+        Id: 15470751595262862616
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -27180,7 +27180,7 @@ Assets {
             Z: -0.115905561
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -27261,7 +27261,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17066960969812768022
+        Id: 15919815462125497034
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -27280,7 +27280,7 @@ Assets {
             Z: -0.115905561
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -27361,7 +27361,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1829294648437086096
+        Id: 6547853450855592937
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -27377,7 +27377,7 @@ Assets {
             Z: -0.150283009
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -27458,7 +27458,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15276378532285897981
+        Id: 18120663829209657533
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -27474,7 +27474,7 @@ Assets {
             Z: -0.150283009
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -27555,7 +27555,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16925256107755819348
+        Id: 17043471417252712202
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -27571,7 +27571,7 @@ Assets {
             Z: -0.150283009
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -27652,7 +27652,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14716339258807051004
+        Id: 9383489055094001354
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -27668,7 +27668,7 @@ Assets {
             Z: -0.150283009
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -27749,7 +27749,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2260585507261206093
+        Id: 2207655777075525497
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -27766,7 +27766,7 @@ Assets {
             Z: -0.103440709
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -27847,7 +27847,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16189233845903257075
+        Id: 8038596409382826287
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -27864,7 +27864,7 @@ Assets {
             Z: -0.103440695
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -27945,7 +27945,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7426526077297125976
+        Id: 18286335280356973305
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -27962,7 +27962,7 @@ Assets {
             Z: -0.103440695
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -28043,7 +28043,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7656733094505588370
+        Id: 5846558299192082751
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -28060,7 +28060,7 @@ Assets {
             Z: -0.103440695
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -28141,7 +28141,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13999075790219627273
+        Id: 15737295679294170744
         Name: "Stone Block Long"
         Transform {
           Location {
@@ -28157,7 +28157,7 @@ Assets {
             Z: -0.150283009
           }
         }
-        ParentId: 17025889892273789659
+        ParentId: 9631543311161828585
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_TrimInner:id"
@@ -28238,7 +28238,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16646824549105492266
+        Id: 14170953536082505315
         Name: "Urban Dumpster - Full Template"
         Transform {
           Location {
@@ -28255,11 +28255,11 @@ Assets {
             Z: 0.135699838
           }
         }
-        ParentId: 17025889892273789659
-        ChildIds: 11650468693331920012
-        ChildIds: 9727216000332529253
-        ChildIds: 3817501309451590827
-        ChildIds: 630542869851878328
+        ParentId: 9631543311161828585
+        ChildIds: 3589524664607744656
+        ChildIds: 9043317333345495358
+        ChildIds: 15756889550454800099
+        ChildIds: 14738919950468920831
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -28274,7 +28274,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11650468693331920012
+        Id: 3589524664607744656
         Name: "Garbage Pile"
         Transform {
           Location {
@@ -28290,33 +28290,33 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16646824549105492266
-        ChildIds: 13454178470309558169
-        ChildIds: 3237928898227679055
-        ChildIds: 12591870419715897753
-        ChildIds: 9462098370895405133
-        ChildIds: 11639459385908255404
-        ChildIds: 4156766737305704905
-        ChildIds: 13052958626485992328
-        ChildIds: 9336261735490687738
-        ChildIds: 18188473507898029589
-        ChildIds: 7099338000176415380
-        ChildIds: 13514297985054511863
-        ChildIds: 2016328058039114578
-        ChildIds: 15052968884453830264
-        ChildIds: 1680408601193982086
-        ChildIds: 7369710146157804071
-        ChildIds: 3616166309215728671
-        ChildIds: 8245382811954571063
-        ChildIds: 16825205926182691628
-        ChildIds: 14877572699768197698
-        ChildIds: 16791212720200707095
-        ChildIds: 12036856595845072898
-        ChildIds: 9385772670619651345
-        ChildIds: 2582710864636400263
-        ChildIds: 3943786976300979504
-        ChildIds: 1110367593343669313
-        ChildIds: 13983061412064297964
+        ParentId: 14170953536082505315
+        ChildIds: 9888874026497971924
+        ChildIds: 8465695298997571557
+        ChildIds: 3967545918697812852
+        ChildIds: 13085971319734672396
+        ChildIds: 14451582890491787564
+        ChildIds: 7437144146407815644
+        ChildIds: 2015363800885729222
+        ChildIds: 1066261842235596651
+        ChildIds: 6052397939632795109
+        ChildIds: 18241264272254221685
+        ChildIds: 8370931936935130257
+        ChildIds: 11754096292506376379
+        ChildIds: 2612685838255098488
+        ChildIds: 2450080968048422025
+        ChildIds: 9762730349868171512
+        ChildIds: 6890053539910712936
+        ChildIds: 13836913087543070201
+        ChildIds: 719262718841276473
+        ChildIds: 17235240889888271071
+        ChildIds: 1064062003823679272
+        ChildIds: 13063762203758223166
+        ChildIds: 2489772965027581840
+        ChildIds: 2284466278482060815
+        ChildIds: 12109879493760241516
+        ChildIds: 9366742371519883760
+        ChildIds: 11609866018382112890
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -28331,7 +28331,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13454178470309558169
+        Id: 9888874026497971924
         Name: "Fantasy Chest Treasure Pile 01"
         Transform {
           Location {
@@ -28345,7 +28345,7 @@ Assets {
             Z: 2.01980591
           }
         }
-        ParentId: 11650468693331920012
+        ParentId: 3589524664607744656
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -28388,7 +28388,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3237928898227679055
+        Id: 8465695298997571557
         Name: "Fantasy Sack Tied"
         Transform {
           Location {
@@ -28407,7 +28407,7 @@ Assets {
             Z: 0.999999881
           }
         }
-        ParentId: 11650468693331920012
+        ParentId: 3589524664607744656
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -28464,7 +28464,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12591870419715897753
+        Id: 3967545918697812852
         Name: "Fantasy Sack Tied"
         Transform {
           Location {
@@ -28483,7 +28483,7 @@ Assets {
             Z: 0.819669604
           }
         }
-        ParentId: 11650468693331920012
+        ParentId: 3589524664607744656
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -28540,7 +28540,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9462098370895405133
+        Id: 13085971319734672396
         Name: "Fantasy Sack Tied"
         Transform {
           Location {
@@ -28559,7 +28559,7 @@ Assets {
             Z: 0.881967306
           }
         }
-        ParentId: 11650468693331920012
+        ParentId: 3589524664607744656
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -28616,7 +28616,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11639459385908255404
+        Id: 14451582890491787564
         Name: "Urban Damaged Interior Trim Board 01 - Mid 02"
         Transform {
           Location {
@@ -28635,7 +28635,7 @@ Assets {
             Z: 0.413109899
           }
         }
-        ParentId: 11650468693331920012
+        ParentId: 3589524664607744656
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -28661,7 +28661,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4156766737305704905
+        Id: 7437144146407815644
         Name: "Tire Worn - Small"
         Transform {
           Location {
@@ -28680,7 +28680,7 @@ Assets {
             Z: 1.00000024
           }
         }
-        ParentId: 11650468693331920012
+        ParentId: 3589524664607744656
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -28706,7 +28706,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13052958626485992328
+        Id: 2015363800885729222
         Name: "Military Tank Historic Container 01"
         Transform {
           Location {
@@ -28725,7 +28725,7 @@ Assets {
             Z: 0.83934474
           }
         }
-        ParentId: 11650468693331920012
+        ParentId: 3589524664607744656
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -28760,7 +28760,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9336261735490687738
+        Id: 1066261842235596651
         Name: "Military Tank Historic Hatch Lid 01"
         Transform {
           Location {
@@ -28779,7 +28779,7 @@ Assets {
             Z: 0.537746727
           }
         }
-        ParentId: 11650468693331920012
+        ParentId: 3589524664607744656
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail3:id"
@@ -28831,7 +28831,7 @@ Assets {
         }
       }
       Objects {
-        Id: 18188473507898029589
+        Id: 6052397939632795109
         Name: "Bottle 01"
         Transform {
           Location {
@@ -28850,7 +28850,7 @@ Assets {
             Z: 0.822946846
           }
         }
-        ParentId: 11650468693331920012
+        ParentId: 3589524664607744656
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -28904,7 +28904,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7099338000176415380
+        Id: 18241264272254221685
         Name: "Military Sandbag 01"
         Transform {
           Location {
@@ -28922,7 +28922,7 @@ Assets {
             Z: 0.730871797
           }
         }
-        ParentId: 11650468693331920012
+        ParentId: 3589524664607744656
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -28965,7 +28965,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13514297985054511863
+        Id: 8370931936935130257
         Name: "Small Open Crate"
         Transform {
           Location {
@@ -28982,7 +28982,7 @@ Assets {
             Z: 0.79884243
           }
         }
-        ParentId: 11650468693331920012
+        ParentId: 3589524664607744656
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -29025,7 +29025,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2016328058039114578
+        Id: 11754096292506376379
         Name: "Cylinder - Rounded"
         Transform {
           Location {
@@ -29042,7 +29042,7 @@ Assets {
             Z: 0.268167377
           }
         }
-        ParentId: 11650468693331920012
+        ParentId: 3589524664607744656
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -29084,7 +29084,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15052968884453830264
+        Id: 2612685838255098488
         Name: "Cylinder - Rounded"
         Transform {
           Location {
@@ -29103,7 +29103,7 @@ Assets {
             Z: 0.268167377
           }
         }
-        ParentId: 11650468693331920012
+        ParentId: 3589524664607744656
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -29145,7 +29145,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1680408601193982086
+        Id: 2450080968048422025
         Name: "Bottle 01"
         Transform {
           Location {
@@ -29164,7 +29164,7 @@ Assets {
             Z: 0.822946846
           }
         }
-        ParentId: 11650468693331920012
+        ParentId: 3589524664607744656
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -29212,7 +29212,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7369710146157804071
+        Id: 9762730349868171512
         Name: "Bottle 01"
         Transform {
           Location {
@@ -29231,7 +29231,7 @@ Assets {
             Z: 0.822946846
           }
         }
-        ParentId: 11650468693331920012
+        ParentId: 3589524664607744656
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -29279,7 +29279,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3616166309215728671
+        Id: 6890053539910712936
         Name: "Bottle 01"
         Transform {
           Location {
@@ -29298,7 +29298,7 @@ Assets {
             Z: 0.822946846
           }
         }
-        ParentId: 11650468693331920012
+        ParentId: 3589524664607744656
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -29346,7 +29346,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8245382811954571063
+        Id: 13836913087543070201
         Name: "Military Sandbag 03"
         Transform {
           Location {
@@ -29365,7 +29365,7 @@ Assets {
             Z: 0.675407052
           }
         }
-        ParentId: 11650468693331920012
+        ParentId: 3589524664607744656
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -29408,7 +29408,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16825205926182691628
+        Id: 719262718841276473
         Name: "Urban Plank Debris 03"
         Transform {
           Location {
@@ -29427,7 +29427,7 @@ Assets {
             Z: 0.698358536
           }
         }
-        ParentId: 11650468693331920012
+        ParentId: 3589524664607744656
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -29453,7 +29453,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14877572699768197698
+        Id: 17235240889888271071
         Name: "Fantasy Sack Tied"
         Transform {
           Location {
@@ -29472,7 +29472,7 @@ Assets {
             Z: 0.71289444
           }
         }
-        ParentId: 11650468693331920012
+        ParentId: 3589524664607744656
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -29529,7 +29529,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16791212720200707095
+        Id: 1064062003823679272
         Name: "Fantasy Sack Tied"
         Transform {
           Location {
@@ -29548,7 +29548,7 @@ Assets {
             Z: 0.819669604
           }
         }
-        ParentId: 11650468693331920012
+        ParentId: 3589524664607744656
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -29605,7 +29605,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12036856595845072898
+        Id: 13063762203758223166
         Name: "Fantasy Sack Tied"
         Transform {
           Location {
@@ -29624,7 +29624,7 @@ Assets {
             Z: 0.725616217
           }
         }
-        ParentId: 11650468693331920012
+        ParentId: 3589524664607744656
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -29681,7 +29681,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9385772670619651345
+        Id: 2489772965027581840
         Name: "Fantasy Sack Tied"
         Transform {
           Location {
@@ -29700,7 +29700,7 @@ Assets {
             Z: 0.881967366
           }
         }
-        ParentId: 11650468693331920012
+        ParentId: 3589524664607744656
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -29757,7 +29757,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2582710864636400263
+        Id: 2284466278482060815
         Name: "Fantasy Sack Tied"
         Transform {
           Location {
@@ -29776,7 +29776,7 @@ Assets {
             Z: 0.865355492
           }
         }
-        ParentId: 11650468693331920012
+        ParentId: 3589524664607744656
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -29833,7 +29833,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3943786976300979504
+        Id: 12109879493760241516
         Name: "Fantasy Sack Tied"
         Transform {
           Location {
@@ -29852,7 +29852,7 @@ Assets {
             Z: 0.865355492
           }
         }
-        ParentId: 11650468693331920012
+        ParentId: 3589524664607744656
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -29909,7 +29909,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1110367593343669313
+        Id: 9366742371519883760
         Name: "Fantasy Sack Tied"
         Transform {
           Location {
@@ -29928,7 +29928,7 @@ Assets {
             Z: 0.725685835
           }
         }
-        ParentId: 11650468693331920012
+        ParentId: 3589524664607744656
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -29985,7 +29985,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13983061412064297964
+        Id: 11609866018382112890
         Name: "Military Sandbag 03"
         Transform {
           Location {
@@ -30004,7 +30004,7 @@ Assets {
             Z: 0.675406754
           }
         }
-        ParentId: 11650468693331920012
+        ParentId: 3589524664607744656
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -30047,7 +30047,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9727216000332529253
+        Id: 9043317333345495358
         Name: "Urban Dumpster 01 - Base"
         Transform {
           Location {
@@ -30060,7 +30060,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16646824549105492266
+        ParentId: 14170953536082505315
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -30086,7 +30086,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3817501309451590827
+        Id: 15756889550454800099
         Name: "Urban Dumpster 01 - Lid"
         Transform {
           Location {
@@ -30103,7 +30103,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16646824549105492266
+        ParentId: 14170953536082505315
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -30129,7 +30129,7 @@ Assets {
         }
       }
       Objects {
-        Id: 630542869851878328
+        Id: 14738919950468920831
         Name: "Urban Dumpster 01 - Lid"
         Transform {
           Location {
@@ -30146,7 +30146,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16646824549105492266
+        ParentId: 14170953536082505315
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -30172,7 +30172,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14903061933059457853
+        Id: 14779122723973690357
         Name: "Topper"
         Transform {
           Location {
@@ -30187,9 +30187,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 10058346830389356160
-        ChildIds: 4636577528340800789
-        ChildIds: 16673757028751392825
+        ParentId: 13974284888082554666
+        ChildIds: 6991082767180121824
+        ChildIds: 11165898901097002689
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -30207,7 +30207,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4636577528340800789
+        Id: 6991082767180121824
         Name: "Group"
         Transform {
           Location {
@@ -30223,19 +30223,19 @@ Assets {
             Z: 0.716075957
           }
         }
-        ParentId: 14903061933059457853
-        ChildIds: 12412854078041094154
-        ChildIds: 8509936569538204563
-        ChildIds: 3922128110986861947
-        ChildIds: 10554519945464381416
-        ChildIds: 3127728259731423042
-        ChildIds: 11538480002869717437
-        ChildIds: 955381160393453579
-        ChildIds: 1736500408272002449
-        ChildIds: 430895250636202610
-        ChildIds: 17445047300842666516
-        ChildIds: 8804378986983812169
-        ChildIds: 2511902202681928768
+        ParentId: 14779122723973690357
+        ChildIds: 5306309539356264056
+        ChildIds: 13076359402721184388
+        ChildIds: 1275123232861401384
+        ChildIds: 13723237835209614373
+        ChildIds: 6553683842549822798
+        ChildIds: 7782345255014031418
+        ChildIds: 18018868186138740515
+        ChildIds: 2513856460675813617
+        ChildIds: 13692283874171116381
+        ChildIds: 5018152272796648459
+        ChildIds: 11076169123472268182
+        ChildIds: 6711342514621310521
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -30253,7 +30253,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12412854078041094154
+        Id: 5306309539356264056
         Name: "Sign Font 2 Neon Outline: M"
         Transform {
           Location {
@@ -30269,7 +30269,7 @@ Assets {
             Z: 0.102975398
           }
         }
-        ParentId: 4636577528340800789
+        ParentId: 6991082767180121824
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font_Sides:smart"
@@ -30346,7 +30346,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8509936569538204563
+        Id: 13076359402721184388
         Name: "Sign Font 2 Neon Outline: E"
         Transform {
           Location {
@@ -30362,7 +30362,7 @@ Assets {
             Z: 0.102975398
           }
         }
-        ParentId: 4636577528340800789
+        ParentId: 6991082767180121824
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font_Sides:smart"
@@ -30439,7 +30439,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3922128110986861947
+        Id: 1275123232861401384
         Name: "Sign Font 2 Neon Outline: C"
         Transform {
           Location {
@@ -30455,7 +30455,7 @@ Assets {
             Z: 0.102975398
           }
         }
-        ParentId: 4636577528340800789
+        ParentId: 6991082767180121824
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font_Sides:smart"
@@ -30532,7 +30532,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10554519945464381416
+        Id: 13723237835209614373
         Name: "Sign Font 2 Neon Outline: H"
         Transform {
           Location {
@@ -30548,7 +30548,7 @@ Assets {
             Z: 0.102975398
           }
         }
-        ParentId: 4636577528340800789
+        ParentId: 6991082767180121824
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font_Sides:smart"
@@ -30625,7 +30625,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3127728259731423042
+        Id: 6553683842549822798
         Name: "Sign Font 2 Neon Outline: A"
         Transform {
           Location {
@@ -30641,7 +30641,7 @@ Assets {
             Z: 0.102975398
           }
         }
-        ParentId: 4636577528340800789
+        ParentId: 6991082767180121824
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font_Sides:smart"
@@ -30718,7 +30718,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11538480002869717437
+        Id: 7782345255014031418
         Name: "Sign Font 2 Neon Outline: T"
         Transform {
           Location {
@@ -30734,7 +30734,7 @@ Assets {
             Z: 0.102975398
           }
         }
-        ParentId: 4636577528340800789
+        ParentId: 6991082767180121824
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font_Sides:smart"
@@ -30811,7 +30811,7 @@ Assets {
         }
       }
       Objects {
-        Id: 955381160393453579
+        Id: 18018868186138740515
         Name: "Sign Font 2 Neon Outline: H"
         Transform {
           Location {
@@ -30827,7 +30827,7 @@ Assets {
             Z: 0.102975398
           }
         }
-        ParentId: 4636577528340800789
+        ParentId: 6991082767180121824
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font_Sides:smart"
@@ -30904,7 +30904,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1736500408272002449
+        Id: 2513856460675813617
         Name: "Sign Font 2 Neon Outline: U"
         Transform {
           Location {
@@ -30920,7 +30920,7 @@ Assets {
             Z: 0.102975398
           }
         }
-        ParentId: 4636577528340800789
+        ParentId: 6991082767180121824
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font_Sides:smart"
@@ -30997,7 +30997,7 @@ Assets {
         }
       }
       Objects {
-        Id: 430895250636202610
+        Id: 13692283874171116381
         Name: "Sign Font 2 Neon Outline: N"
         Transform {
           Location {
@@ -31013,7 +31013,7 @@ Assets {
             Z: 0.102975398
           }
         }
-        ParentId: 4636577528340800789
+        ParentId: 6991082767180121824
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font_Sides:smart"
@@ -31090,7 +31090,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17445047300842666516
+        Id: 5018152272796648459
         Name: "Sign Font 2 Neon Outline: D"
         Transform {
           Location {
@@ -31106,7 +31106,7 @@ Assets {
             Z: 0.102975398
           }
         }
-        ParentId: 4636577528340800789
+        ParentId: 6991082767180121824
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font_Sides:smart"
@@ -31183,7 +31183,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8804378986983812169
+        Id: 11076169123472268182
         Name: "Sign Font 2 Neon Outline: E"
         Transform {
           Location {
@@ -31199,7 +31199,7 @@ Assets {
             Z: 0.102975398
           }
         }
-        ParentId: 4636577528340800789
+        ParentId: 6991082767180121824
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font_Sides:smart"
@@ -31276,7 +31276,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2511902202681928768
+        Id: 6711342514621310521
         Name: "Sign Font 2 Neon Outline: R"
         Transform {
           Location {
@@ -31292,7 +31292,7 @@ Assets {
             Z: 0.102975398
           }
         }
-        ParentId: 4636577528340800789
+        ParentId: 6991082767180121824
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font_Sides:smart"
@@ -31369,7 +31369,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16673757028751392825
+        Id: 11165898901097002689
         Name: "Mecha_Variant_3(Poseable)"
         Transform {
           Location {
@@ -31386,8 +31386,8 @@ Assets {
             Z: 0.154252574
           }
         }
-        ParentId: 14903061933059457853
-        ChildIds: 3747767944504616411
+        ParentId: 14779122723973690357
+        ChildIds: 4965128801524460024
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -31405,7 +31405,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3747767944504616411
+        Id: 4965128801524460024
         Name: "Root"
         Transform {
           Location {
@@ -31424,8 +31424,8 @@ Assets {
             Z: 0.99999994
           }
         }
-        ParentId: 16673757028751392825
-        ChildIds: 7625343217868829520
+        ParentId: 11165898901097002689
+        ChildIds: 12953633019121158980
         UnregisteredParameters {
           Overrides {
             Name: "bp:Type"
@@ -31473,7 +31473,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7625343217868829520
+        Id: 12953633019121158980
         Name: "Pelvis"
         Transform {
           Location {
@@ -31492,11 +31492,11 @@ Assets {
             Z: 0.921888649
           }
         }
-        ParentId: 3747767944504616411
-        ChildIds: 1294077676051262045
-        ChildIds: 16129077622105365159
-        ChildIds: 5568197516605621173
-        ChildIds: 17489777296995900333
+        ParentId: 4965128801524460024
+        ChildIds: 5351622293202245958
+        ChildIds: 1380690515851129240
+        ChildIds: 6485385812428688837
+        ChildIds: 10040656097554562888
         UnregisteredParameters {
           Overrides {
             Name: "bp:Type"
@@ -31544,7 +31544,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1294077676051262045
+        Id: 5351622293202245958
         Name: "Pelvis_GEO"
         Transform {
           Location {
@@ -31560,13 +31560,13 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 7625343217868829520
-        ChildIds: 1846501674898945860
-        ChildIds: 9568609719891725722
-        ChildIds: 13400540490573326342
-        ChildIds: 7023690895880019962
-        ChildIds: 35670773984461325
-        ChildIds: 11353522161640408546
+        ParentId: 12953633019121158980
+        ChildIds: 9765809592184596691
+        ChildIds: 16201854725701814579
+        ChildIds: 17189969863763443571
+        ChildIds: 6622833904455372702
+        ChildIds: 2852918096878278794
+        ChildIds: 8627430222483434270
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -31584,7 +31584,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1846501674898945860
+        Id: 9765809592184596691
         Name: "Mecha - Armor - Thruster Flap 01"
         Transform {
           Location {
@@ -31603,7 +31603,7 @@ Assets {
             Z: 2.17838907
           }
         }
-        ParentId: 1294077676051262045
+        ParentId: 5351622293202245958
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -31648,7 +31648,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9568609719891725722
+        Id: 16201854725701814579
         Name: "Mecha - Armor - Ankle 02"
         Transform {
           Location {
@@ -31667,7 +31667,7 @@ Assets {
             Z: 1.23480523
           }
         }
-        ParentId: 1294077676051262045
+        ParentId: 5351622293202245958
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -31706,7 +31706,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13400540490573326342
+        Id: 17189969863763443571
         Name: "Military Tank Modern Hull 01 - Front"
         Transform {
           Location {
@@ -31725,7 +31725,7 @@ Assets {
             Z: 0.259310037
           }
         }
-        ParentId: 1294077676051262045
+        ParentId: 5351622293202245958
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -31776,7 +31776,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7023690895880019962
+        Id: 6622833904455372702
         Name: "Mecha - Armor - Pelvis 01"
         Transform {
           Location {
@@ -31795,7 +31795,7 @@ Assets {
             Z: 1.23480594
           }
         }
-        ParentId: 1294077676051262045
+        ParentId: 5351622293202245958
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -31846,7 +31846,7 @@ Assets {
         }
       }
       Objects {
-        Id: 35670773984461325
+        Id: 2852918096878278794
         Name: "Mecha - Frame - Pelvis 01"
         Transform {
           Location {
@@ -31865,7 +31865,7 @@ Assets {
             Z: 1.12528014
           }
         }
-        ParentId: 1294077676051262045
+        ParentId: 5351622293202245958
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -31934,7 +31934,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11353522161640408546
+        Id: 8627430222483434270
         Name: "Mecha - Armor - Forearm 02"
         Transform {
           Location {
@@ -31953,7 +31953,7 @@ Assets {
             Z: 1.04842412
           }
         }
-        ParentId: 1294077676051262045
+        ParentId: 5351622293202245958
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -32004,7 +32004,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16129077622105365159
+        Id: 1380690515851129240
         Name: "Thigh_L"
         Transform {
           Location {
@@ -32023,9 +32023,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 7625343217868829520
-        ChildIds: 10197317881580926867
-        ChildIds: 6453981422871548579
+        ParentId: 12953633019121158980
+        ChildIds: 16686759951220657431
+        ChildIds: 10662583223860191537
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -32071,7 +32071,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10197317881580926867
+        Id: 16686759951220657431
         Name: "Thigh_L_GEO"
         Transform {
           Location {
@@ -32087,11 +32087,11 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16129077622105365159
-        ChildIds: 15909802666677874489
-        ChildIds: 16363523517097616788
-        ChildIds: 9373510410998155595
-        ChildIds: 14649073534645997976
+        ParentId: 1380690515851129240
+        ChildIds: 7457997696893849847
+        ChildIds: 3190062939713847072
+        ChildIds: 15267415495370628074
+        ChildIds: 8269009402853114989
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -32109,7 +32109,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15909802666677874489
+        Id: 7457997696893849847
         Name: "Mecha - Armor - Forearm 01"
         Transform {
           Location {
@@ -32128,7 +32128,7 @@ Assets {
             Z: 1.19999981
           }
         }
-        ParentId: 10197317881580926867
+        ParentId: 16686759951220657431
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -32173,7 +32173,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16363523517097616788
+        Id: 3190062939713847072
         Name: "Sci-fi Ship Fuselage 01"
         Transform {
           Location {
@@ -32192,7 +32192,7 @@ Assets {
             Z: 0.200002447
           }
         }
-        ParentId: 10197317881580926867
+        ParentId: 16686759951220657431
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -32244,7 +32244,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9373510410998155595
+        Id: 15267415495370628074
         Name: "Sci-fi Ship Engine 02"
         Transform {
           Location {
@@ -32263,7 +32263,7 @@ Assets {
             Z: 0.400000393
           }
         }
-        ParentId: 10197317881580926867
+        ParentId: 16686759951220657431
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Trim:id"
@@ -32308,7 +32308,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14649073534645997976
+        Id: 8269009402853114989
         Name: "Mecha - Armor - Thigh 01"
         Transform {
           Location {
@@ -32327,7 +32327,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 10197317881580926867
+        ParentId: 16686759951220657431
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -32384,7 +32384,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6453981422871548579
+        Id: 10662583223860191537
         Name: "Knee_01_L"
         Transform {
           Location {
@@ -32403,9 +32403,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16129077622105365159
-        ChildIds: 8575250299468246640
-        ChildIds: 5537929392007146536
+        ParentId: 1380690515851129240
+        ChildIds: 7833712654595610573
+        ChildIds: 11133030719235933910
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -32465,7 +32465,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8575250299468246640
+        Id: 7833712654595610573
         Name: "Knee_01_L_GEO"
         Transform {
           Location {
@@ -32481,10 +32481,10 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 6453981422871548579
-        ChildIds: 4486176632806633079
-        ChildIds: 3423468668043474589
-        ChildIds: 1323119369149159786
+        ParentId: 10662583223860191537
+        ChildIds: 8099775899890795813
+        ChildIds: 2293667838559687000
+        ChildIds: 13326805899227986213
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -32502,7 +32502,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4486176632806633079
+        Id: 8099775899890795813
         Name: "Sci-fi Ship Cockpit Back 02"
         Transform {
           Location {
@@ -32521,7 +32521,7 @@ Assets {
             Z: 0.599999845
           }
         }
-        ParentId: 8575250299468246640
+        ParentId: 7833712654595610573
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -32560,7 +32560,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3423468668043474589
+        Id: 2293667838559687000
         Name: "Mecha - Frame - Knee Joint 01"
         Transform {
           Location {
@@ -32579,7 +32579,7 @@ Assets {
             Z: 0.767012596
           }
         }
-        ParentId: 8575250299468246640
+        ParentId: 7833712654595610573
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -32610,7 +32610,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1323119369149159786
+        Id: 13326805899227986213
         Name: "Mecha - Frame - Knee Joint 01"
         Transform {
           Location {
@@ -32629,7 +32629,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 8575250299468246640
+        ParentId: 7833712654595610573
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -32668,7 +32668,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5537929392007146536
+        Id: 11133030719235933910
         Name: "Knee_02_L"
         Transform {
           Location {
@@ -32687,9 +32687,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 6453981422871548579
-        ChildIds: 1593278368919013479
-        ChildIds: 12042376936294601321
+        ParentId: 10662583223860191537
+        ChildIds: 2324664217879905678
+        ChildIds: 11447704468665457581
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -32749,7 +32749,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1593278368919013479
+        Id: 2324664217879905678
         Name: "Knee_02_L_GEO"
         Transform {
           Location {
@@ -32765,23 +32765,23 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 5537929392007146536
-        ChildIds: 13694171378792152707
-        ChildIds: 9706109947655379287
-        ChildIds: 12081856366881038997
-        ChildIds: 14845983621587910104
-        ChildIds: 5976707211486761256
-        ChildIds: 4985798754588465221
-        ChildIds: 10096432460032480303
-        ChildIds: 12671308367164729431
-        ChildIds: 7805850302306293304
-        ChildIds: 7466060438647963047
-        ChildIds: 2471294849174405540
-        ChildIds: 6035265290572913149
-        ChildIds: 17384929989272393103
-        ChildIds: 9463114711251216164
-        ChildIds: 8051221999647555197
-        ChildIds: 7157937123124185325
+        ParentId: 11133030719235933910
+        ChildIds: 2423536021643558751
+        ChildIds: 4205033383574516142
+        ChildIds: 6386221643633912332
+        ChildIds: 11646052545285397269
+        ChildIds: 5371274597595191628
+        ChildIds: 10645470756016514870
+        ChildIds: 6458527561686172269
+        ChildIds: 6521359551097758201
+        ChildIds: 2353988689625859731
+        ChildIds: 834203880101884171
+        ChildIds: 63692941673860237
+        ChildIds: 15192261010824519125
+        ChildIds: 18313199660485066535
+        ChildIds: 4187128377870157772
+        ChildIds: 16421362225556354400
+        ChildIds: 6786948071948314173
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -32799,7 +32799,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13694171378792152707
+        Id: 2423536021643558751
         Name: "Mecha - Armor - Calf 01"
         Transform {
           Location {
@@ -32818,7 +32818,7 @@ Assets {
             Z: 1.0999999
           }
         }
-        ParentId: 1593278368919013479
+        ParentId: 2324664217879905678
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail1:id"
@@ -32857,7 +32857,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9706109947655379287
+        Id: 4205033383574516142
         Name: "Mecha - Armor - Shin 01"
         Transform {
           Location {
@@ -32876,7 +32876,7 @@ Assets {
             Z: 0.983813047
           }
         }
-        ParentId: 1593278368919013479
+        ParentId: 2324664217879905678
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -32921,7 +32921,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12081856366881038997
+        Id: 6386221643633912332
         Name: "Mecha - Armor - Ankle 02"
         Transform {
           Location {
@@ -32939,7 +32939,7 @@ Assets {
             Z: 1.35200965
           }
         }
-        ParentId: 1593278368919013479
+        ParentId: 2324664217879905678
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -32970,7 +32970,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14845983621587910104
+        Id: 11646052545285397269
         Name: "Mecha - Armor - Ankle 01"
         Transform {
           Location {
@@ -32989,7 +32989,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 1593278368919013479
+        ParentId: 2324664217879905678
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail1:id"
@@ -33028,7 +33028,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5976707211486761256
+        Id: 5371274597595191628
         Name: "Military Tank Historic Hatch Lid 01"
         Transform {
           Location {
@@ -33047,7 +33047,7 @@ Assets {
             Z: 1.19999993
           }
         }
-        ParentId: 1593278368919013479
+        ParentId: 2324664217879905678
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail3:id"
@@ -33092,7 +33092,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4985798754588465221
+        Id: 10645470756016514870
         Name: "Military Tank Historic Hatch Lid 01"
         Transform {
           Location {
@@ -33111,7 +33111,7 @@ Assets {
             Z: 1.19999993
           }
         }
-        ParentId: 1593278368919013479
+        ParentId: 2324664217879905678
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail3:id"
@@ -33156,7 +33156,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10096432460032480303
+        Id: 6458527561686172269
         Name: "Military Tank Modern Armorplate 01"
         Transform {
           Location {
@@ -33175,7 +33175,7 @@ Assets {
             Z: 0.699999928
           }
         }
-        ParentId: 1593278368919013479
+        ParentId: 2324664217879905678
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -33220,7 +33220,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12671308367164729431
+        Id: 6521359551097758201
         Name: "Urban Water Tank 01"
         Transform {
           Location {
@@ -33239,7 +33239,7 @@ Assets {
             Z: 0.0740948319
           }
         }
-        ParentId: 1593278368919013479
+        ParentId: 2324664217879905678
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail1:id"
@@ -33284,7 +33284,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7805850302306293304
+        Id: 2353988689625859731
         Name: "Urban Water Tank 01"
         Transform {
           Location {
@@ -33303,7 +33303,7 @@ Assets {
             Z: 0.074094519
           }
         }
-        ParentId: 1593278368919013479
+        ParentId: 2324664217879905678
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -33348,7 +33348,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7466060438647963047
+        Id: 834203880101884171
         Name: "Mecha - Armor - Forearm 02"
         Transform {
           Location {
@@ -33367,7 +33367,7 @@ Assets {
             Z: 0.699999928
           }
         }
-        ParentId: 1593278368919013479
+        ParentId: 2324664217879905678
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -33418,7 +33418,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2471294849174405540
+        Id: 63692941673860237
         Name: "Mecha - Armor - Thruster 01"
         Transform {
           Location {
@@ -33437,7 +33437,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 1593278368919013479
+        ParentId: 2324664217879905678
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -33488,7 +33488,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6035265290572913149
+        Id: 15192261010824519125
         Name: "Mecha - Frame - Thruster 01"
         Transform {
           Location {
@@ -33507,7 +33507,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 1593278368919013479
+        ParentId: 2324664217879905678
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -33538,7 +33538,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17384929989272393103
+        Id: 18313199660485066535
         Name: "Mecha - Armor - Forearm 01"
         Transform {
           Location {
@@ -33557,7 +33557,7 @@ Assets {
             Z: 1.49999964
           }
         }
-        ParentId: 1593278368919013479
+        ParentId: 2324664217879905678
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -33602,7 +33602,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9463114711251216164
+        Id: 4187128377870157772
         Name: "Mecha - Armor - Thruster Flap 01"
         Transform {
           Location {
@@ -33621,7 +33621,7 @@ Assets {
             Z: 1.36687863
           }
         }
-        ParentId: 1593278368919013479
+        ParentId: 2324664217879905678
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -33666,7 +33666,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8051221999647555197
+        Id: 16421362225556354400
         Name: "Military Tank Modern Mantlet 01"
         Transform {
           Location {
@@ -33685,7 +33685,7 @@ Assets {
             Z: 0.299999982
           }
         }
-        ParentId: 1593278368919013479
+        ParentId: 2324664217879905678
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -33724,7 +33724,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7157937123124185325
+        Id: 6786948071948314173
         Name: "Military Tank Modern Mantlet 01"
         Transform {
           Location {
@@ -33743,7 +33743,7 @@ Assets {
             Z: 0.299999982
           }
         }
-        ParentId: 1593278368919013479
+        ParentId: 2324664217879905678
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -33782,7 +33782,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12042376936294601321
+        Id: 11447704468665457581
         Name: "Ankle_L"
         Transform {
           Location {
@@ -33801,9 +33801,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 5537929392007146536
-        ChildIds: 2260955406416316215
-        ChildIds: 1033452268583489564
+        ParentId: 11133030719235933910
+        ChildIds: 15780383725123355852
+        ChildIds: 12823896763716549700
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -33841,7 +33841,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2260955406416316215
+        Id: 15780383725123355852
         Name: "Ankle_L_GEO"
         Transform {
           Location {
@@ -33857,9 +33857,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 12042376936294601321
-        ChildIds: 2192060794065332788
-        ChildIds: 15150864054578244713
+        ParentId: 11447704468665457581
+        ChildIds: 16779491854225960701
+        ChildIds: 1025954454626813018
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -33877,7 +33877,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2192060794065332788
+        Id: 16779491854225960701
         Name: "Mecha - Armor - Heel 01"
         Transform {
           Location {
@@ -33896,7 +33896,7 @@ Assets {
             Z: 0.999999881
           }
         }
-        ParentId: 2260955406416316215
+        ParentId: 15780383725123355852
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail1:id"
@@ -33941,7 +33941,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15150864054578244713
+        Id: 1025954454626813018
         Name: "Military Tank Modern Skirt 01 - Rear"
         Transform {
           Location {
@@ -33960,7 +33960,7 @@ Assets {
             Z: 0.400001407
           }
         }
-        ParentId: 2260955406416316215
+        ParentId: 15780383725123355852
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -34011,7 +34011,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1033452268583489564
+        Id: 12823896763716549700
         Name: "Toe_L"
         Transform {
           Location {
@@ -34030,8 +34030,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 12042376936294601321
-        ChildIds: 624813481899124728
+        ParentId: 11447704468665457581
+        ChildIds: 14596289242008366964
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -34087,7 +34087,7 @@ Assets {
         }
       }
       Objects {
-        Id: 624813481899124728
+        Id: 14596289242008366964
         Name: "Toe_L_GEO"
         Transform {
           Location {
@@ -34102,8 +34102,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 1033452268583489564
-        ChildIds: 13300945027280746940
+        ParentId: 12823896763716549700
+        ChildIds: 9402731410053579088
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -34121,7 +34121,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13300945027280746940
+        Id: 9402731410053579088
         Name: "Mecha - Armor - Toe 01"
         Transform {
           Location {
@@ -34139,7 +34139,7 @@ Assets {
             Z: 0.999999881
           }
         }
-        ParentId: 624813481899124728
+        ParentId: 14596289242008366964
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -34190,7 +34190,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5568197516605621173
+        Id: 6485385812428688837
         Name: "Thigh_R"
         Transform {
           Location {
@@ -34209,9 +34209,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 7625343217868829520
-        ChildIds: 14402522599653358806
-        ChildIds: 10191865955927165021
+        ParentId: 12953633019121158980
+        ChildIds: 3938953093598874360
+        ChildIds: 254274365614517305
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -34257,7 +34257,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14402522599653358806
+        Id: 3938953093598874360
         Name: "Thigh_R_GEO"
         Transform {
           Location {
@@ -34273,11 +34273,11 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 5568197516605621173
-        ChildIds: 4606917723394690875
-        ChildIds: 2881624934380423427
-        ChildIds: 11033969064816983605
-        ChildIds: 610567665636665804
+        ParentId: 6485385812428688837
+        ChildIds: 5704636641480727034
+        ChildIds: 6820403316834639669
+        ChildIds: 1308090690763469633
+        ChildIds: 995269706517699730
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -34295,7 +34295,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4606917723394690875
+        Id: 5704636641480727034
         Name: "Mecha - Armor - Forearm 01"
         Transform {
           Location {
@@ -34314,7 +34314,7 @@ Assets {
             Z: 1.19999981
           }
         }
-        ParentId: 14402522599653358806
+        ParentId: 3938953093598874360
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -34359,7 +34359,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2881624934380423427
+        Id: 6820403316834639669
         Name: "Sci-fi Ship Fuselage 01"
         Transform {
           Location {
@@ -34378,7 +34378,7 @@ Assets {
             Z: 0.200002447
           }
         }
-        ParentId: 14402522599653358806
+        ParentId: 3938953093598874360
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -34430,7 +34430,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11033969064816983605
+        Id: 1308090690763469633
         Name: "Sci-fi Ship Engine 02"
         Transform {
           Location {
@@ -34449,7 +34449,7 @@ Assets {
             Z: 0.400000393
           }
         }
-        ParentId: 14402522599653358806
+        ParentId: 3938953093598874360
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Trim:id"
@@ -34494,7 +34494,7 @@ Assets {
         }
       }
       Objects {
-        Id: 610567665636665804
+        Id: 995269706517699730
         Name: "Mecha - Armor - Thigh 01"
         Transform {
           Location {
@@ -34513,7 +34513,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14402522599653358806
+        ParentId: 3938953093598874360
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -34570,7 +34570,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10191865955927165021
+        Id: 254274365614517305
         Name: "Knee_01_R"
         Transform {
           Location {
@@ -34589,9 +34589,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 5568197516605621173
-        ChildIds: 7745375095051866711
-        ChildIds: 13267451574850454031
+        ParentId: 6485385812428688837
+        ChildIds: 16534448231326593587
+        ChildIds: 4184452429703352459
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -34651,7 +34651,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7745375095051866711
+        Id: 16534448231326593587
         Name: "Knee_01_R_GEO"
         Transform {
           Location {
@@ -34667,10 +34667,10 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 10191865955927165021
-        ChildIds: 6386157429061998481
-        ChildIds: 7198123030128471875
-        ChildIds: 4578841025705220653
+        ParentId: 254274365614517305
+        ChildIds: 5505275597956421695
+        ChildIds: 18163236559192731896
+        ChildIds: 10710931611605060739
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -34688,7 +34688,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6386157429061998481
+        Id: 5505275597956421695
         Name: "Sci-fi Ship Cockpit Back 02"
         Transform {
           Location {
@@ -34707,7 +34707,7 @@ Assets {
             Z: 0.599999845
           }
         }
-        ParentId: 7745375095051866711
+        ParentId: 16534448231326593587
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -34746,7 +34746,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7198123030128471875
+        Id: 18163236559192731896
         Name: "Mecha - Frame - Knee Joint 01"
         Transform {
           Location {
@@ -34765,7 +34765,7 @@ Assets {
             Z: 0.767012596
           }
         }
-        ParentId: 7745375095051866711
+        ParentId: 16534448231326593587
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -34796,7 +34796,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4578841025705220653
+        Id: 10710931611605060739
         Name: "Mecha - Frame - Knee Joint 01"
         Transform {
           Location {
@@ -34815,7 +34815,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 7745375095051866711
+        ParentId: 16534448231326593587
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -34854,7 +34854,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13267451574850454031
+        Id: 4184452429703352459
         Name: "Knee_02_R"
         Transform {
           Location {
@@ -34873,9 +34873,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 10191865955927165021
-        ChildIds: 2138155533029030630
-        ChildIds: 1732873221341946405
+        ParentId: 254274365614517305
+        ChildIds: 9585784724570566018
+        ChildIds: 5687518826523107173
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -34935,7 +34935,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2138155533029030630
+        Id: 9585784724570566018
         Name: "Knee_02_R_GEO"
         Transform {
           Location {
@@ -34951,23 +34951,23 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13267451574850454031
-        ChildIds: 18393142561682945770
-        ChildIds: 4654687674700506762
-        ChildIds: 3411724935560862295
-        ChildIds: 15861063474209383050
-        ChildIds: 15219498839985439104
-        ChildIds: 11641476264065953811
-        ChildIds: 4679092627372103480
-        ChildIds: 294469834456802871
-        ChildIds: 220539988060422446
-        ChildIds: 17139233260004593626
-        ChildIds: 7465528601209239972
-        ChildIds: 9342004743593703183
-        ChildIds: 56454497498167714
-        ChildIds: 9299420366062179605
-        ChildIds: 10200105860472522478
-        ChildIds: 11431198903911370258
+        ParentId: 4184452429703352459
+        ChildIds: 2931951120281095592
+        ChildIds: 17246249988138391528
+        ChildIds: 14082880233054562548
+        ChildIds: 17400330323377811471
+        ChildIds: 914601129801760337
+        ChildIds: 2452498294867874402
+        ChildIds: 16299544988731085140
+        ChildIds: 12450235010084826095
+        ChildIds: 17219316421926640275
+        ChildIds: 1828728241555642353
+        ChildIds: 9133652742999976110
+        ChildIds: 12190680195079510685
+        ChildIds: 8635256202101701973
+        ChildIds: 10088001945085692711
+        ChildIds: 5171248378892285078
+        ChildIds: 7157987053876646464
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -34985,7 +34985,7 @@ Assets {
         }
       }
       Objects {
-        Id: 18393142561682945770
+        Id: 2931951120281095592
         Name: "Mecha - Armor - Calf 01"
         Transform {
           Location {
@@ -35004,7 +35004,7 @@ Assets {
             Z: 1.0999999
           }
         }
-        ParentId: 2138155533029030630
+        ParentId: 9585784724570566018
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail1:id"
@@ -35043,7 +35043,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4654687674700506762
+        Id: 17246249988138391528
         Name: "Mecha - Armor - Shin 01"
         Transform {
           Location {
@@ -35062,7 +35062,7 @@ Assets {
             Z: 0.983813047
           }
         }
-        ParentId: 2138155533029030630
+        ParentId: 9585784724570566018
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -35107,7 +35107,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3411724935560862295
+        Id: 14082880233054562548
         Name: "Mecha - Armor - Ankle 02"
         Transform {
           Location {
@@ -35125,7 +35125,7 @@ Assets {
             Z: 1.35200965
           }
         }
-        ParentId: 2138155533029030630
+        ParentId: 9585784724570566018
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -35156,7 +35156,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15861063474209383050
+        Id: 17400330323377811471
         Name: "Mecha - Armor - Ankle 01"
         Transform {
           Location {
@@ -35175,7 +35175,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2138155533029030630
+        ParentId: 9585784724570566018
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail1:id"
@@ -35214,7 +35214,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15219498839985439104
+        Id: 914601129801760337
         Name: "Military Tank Historic Hatch Lid 01"
         Transform {
           Location {
@@ -35233,7 +35233,7 @@ Assets {
             Z: 1.19999993
           }
         }
-        ParentId: 2138155533029030630
+        ParentId: 9585784724570566018
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail3:id"
@@ -35278,7 +35278,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11641476264065953811
+        Id: 2452498294867874402
         Name: "Military Tank Historic Hatch Lid 01"
         Transform {
           Location {
@@ -35297,7 +35297,7 @@ Assets {
             Z: 1.19999993
           }
         }
-        ParentId: 2138155533029030630
+        ParentId: 9585784724570566018
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail3:id"
@@ -35342,7 +35342,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4679092627372103480
+        Id: 16299544988731085140
         Name: "Military Tank Modern Armorplate 01"
         Transform {
           Location {
@@ -35361,7 +35361,7 @@ Assets {
             Z: 0.699999928
           }
         }
-        ParentId: 2138155533029030630
+        ParentId: 9585784724570566018
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -35406,7 +35406,7 @@ Assets {
         }
       }
       Objects {
-        Id: 294469834456802871
+        Id: 12450235010084826095
         Name: "Urban Water Tank 01"
         Transform {
           Location {
@@ -35425,7 +35425,7 @@ Assets {
             Z: 0.0740948319
           }
         }
-        ParentId: 2138155533029030630
+        ParentId: 9585784724570566018
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail1:id"
@@ -35470,7 +35470,7 @@ Assets {
         }
       }
       Objects {
-        Id: 220539988060422446
+        Id: 17219316421926640275
         Name: "Urban Water Tank 01"
         Transform {
           Location {
@@ -35489,7 +35489,7 @@ Assets {
             Z: 0.074094519
           }
         }
-        ParentId: 2138155533029030630
+        ParentId: 9585784724570566018
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -35534,7 +35534,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17139233260004593626
+        Id: 1828728241555642353
         Name: "Mecha - Armor - Forearm 02"
         Transform {
           Location {
@@ -35553,7 +35553,7 @@ Assets {
             Z: 0.699999928
           }
         }
-        ParentId: 2138155533029030630
+        ParentId: 9585784724570566018
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -35604,7 +35604,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7465528601209239972
+        Id: 9133652742999976110
         Name: "Mecha - Armor - Thruster 01"
         Transform {
           Location {
@@ -35623,7 +35623,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2138155533029030630
+        ParentId: 9585784724570566018
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -35674,7 +35674,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9342004743593703183
+        Id: 12190680195079510685
         Name: "Mecha - Frame - Thruster 01"
         Transform {
           Location {
@@ -35693,7 +35693,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2138155533029030630
+        ParentId: 9585784724570566018
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -35724,7 +35724,7 @@ Assets {
         }
       }
       Objects {
-        Id: 56454497498167714
+        Id: 8635256202101701973
         Name: "Mecha - Armor - Forearm 01"
         Transform {
           Location {
@@ -35743,7 +35743,7 @@ Assets {
             Z: 1.49999964
           }
         }
-        ParentId: 2138155533029030630
+        ParentId: 9585784724570566018
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -35788,7 +35788,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9299420366062179605
+        Id: 10088001945085692711
         Name: "Mecha - Armor - Thruster Flap 01"
         Transform {
           Location {
@@ -35807,7 +35807,7 @@ Assets {
             Z: 1.36687863
           }
         }
-        ParentId: 2138155533029030630
+        ParentId: 9585784724570566018
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -35852,7 +35852,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10200105860472522478
+        Id: 5171248378892285078
         Name: "Military Tank Modern Mantlet 01"
         Transform {
           Location {
@@ -35871,7 +35871,7 @@ Assets {
             Z: 0.299999982
           }
         }
-        ParentId: 2138155533029030630
+        ParentId: 9585784724570566018
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -35910,7 +35910,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11431198903911370258
+        Id: 7157987053876646464
         Name: "Military Tank Modern Mantlet 01"
         Transform {
           Location {
@@ -35929,7 +35929,7 @@ Assets {
             Z: 0.299999982
           }
         }
-        ParentId: 2138155533029030630
+        ParentId: 9585784724570566018
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -35968,7 +35968,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1732873221341946405
+        Id: 5687518826523107173
         Name: "Ankle_R"
         Transform {
           Location {
@@ -35987,9 +35987,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13267451574850454031
-        ChildIds: 16907395927928924078
-        ChildIds: 9190683051464516346
+        ParentId: 4184452429703352459
+        ChildIds: 15782849585617629309
+        ChildIds: 4554835020296181430
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -36027,7 +36027,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16907395927928924078
+        Id: 15782849585617629309
         Name: "Ankle_R_GEO"
         Transform {
           Location {
@@ -36043,9 +36043,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 1732873221341946405
-        ChildIds: 4267835629548261009
-        ChildIds: 14244786141986050193
+        ParentId: 5687518826523107173
+        ChildIds: 3272710222927139482
+        ChildIds: 3653902741263855452
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -36063,7 +36063,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4267835629548261009
+        Id: 3272710222927139482
         Name: "Mecha - Armor - Heel 01"
         Transform {
           Location {
@@ -36082,7 +36082,7 @@ Assets {
             Z: 0.999999881
           }
         }
-        ParentId: 16907395927928924078
+        ParentId: 15782849585617629309
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail1:id"
@@ -36127,7 +36127,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14244786141986050193
+        Id: 3653902741263855452
         Name: "Military Tank Modern Skirt 01 - Rear"
         Transform {
           Location {
@@ -36146,7 +36146,7 @@ Assets {
             Z: 0.400001407
           }
         }
-        ParentId: 16907395927928924078
+        ParentId: 15782849585617629309
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -36197,7 +36197,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9190683051464516346
+        Id: 4554835020296181430
         Name: "Toe_R"
         Transform {
           Location {
@@ -36216,8 +36216,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 1732873221341946405
-        ChildIds: 1272371896684621848
+        ParentId: 5687518826523107173
+        ChildIds: 2455462299276651624
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -36273,7 +36273,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1272371896684621848
+        Id: 2455462299276651624
         Name: "Toe_R_GEO"
         Transform {
           Location {
@@ -36288,8 +36288,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 9190683051464516346
-        ChildIds: 13499827041912316845
+        ParentId: 4554835020296181430
+        ChildIds: 16113567874083809164
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -36307,7 +36307,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13499827041912316845
+        Id: 16113567874083809164
         Name: "Mecha - Armor - Toe 01"
         Transform {
           Location {
@@ -36325,7 +36325,7 @@ Assets {
             Z: 0.999999881
           }
         }
-        ParentId: 1272371896684621848
+        ParentId: 2455462299276651624
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -36376,7 +36376,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17489777296995900333
+        Id: 10040656097554562888
         Name: "Spine_01"
         Transform {
           Location {
@@ -36395,9 +36395,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 7625343217868829520
-        ChildIds: 17617028007945621677
-        ChildIds: 1671348187634562842
+        ParentId: 12953633019121158980
+        ChildIds: 10134370490297448685
+        ChildIds: 10299532631583500137
         UnregisteredParameters {
           Overrides {
             Name: "bp:Type"
@@ -36453,7 +36453,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17617028007945621677
+        Id: 10134370490297448685
         Name: "Spine_01_GEO"
         Transform {
           Location {
@@ -36469,8 +36469,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17489777296995900333
-        ChildIds: 13242464424541006064
+        ParentId: 10040656097554562888
+        ChildIds: 2226797200004299086
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -36488,7 +36488,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13242464424541006064
+        Id: 2226797200004299086
         Name: "Mecha - Armor - Waist 01"
         Transform {
           Location {
@@ -36504,7 +36504,7 @@ Assets {
             Z: 1.00000012
           }
         }
-        ParentId: 17617028007945621677
+        ParentId: 10134370490297448685
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -36555,7 +36555,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1671348187634562842
+        Id: 10299532631583500137
         Name: "Spine_02"
         Transform {
           Location {
@@ -36574,12 +36574,12 @@ Assets {
             Z: 1.00000012
           }
         }
-        ParentId: 17489777296995900333
-        ChildIds: 12329562284548137090
-        ChildIds: 6492783373089263041
-        ChildIds: 13656071172426390159
-        ChildIds: 2438890643453184947
-        ChildIds: 5729314557870399992
+        ParentId: 10040656097554562888
+        ChildIds: 12534131959418327789
+        ChildIds: 2032301706165076963
+        ChildIds: 5382655395084255589
+        ChildIds: 8082315580570431250
+        ChildIds: 7389734172410465514
         UnregisteredParameters {
           Overrides {
             Name: "bp:Type"
@@ -36627,7 +36627,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12329562284548137090
+        Id: 12534131959418327789
         Name: "Spine_02_GEO"
         Transform {
           Location {
@@ -36643,22 +36643,22 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 1671348187634562842
-        ChildIds: 7192256095907753128
-        ChildIds: 5181639599651493578
-        ChildIds: 16694531285743477918
-        ChildIds: 18040670588279097114
-        ChildIds: 14052952038929503573
-        ChildIds: 16306265677783560701
-        ChildIds: 15729374975864086897
-        ChildIds: 13892499279402286376
-        ChildIds: 7261650359882779813
-        ChildIds: 18062103376354979873
-        ChildIds: 10331111520934056466
-        ChildIds: 13371773407277174520
-        ChildIds: 10935436985050878032
-        ChildIds: 10953063789975532397
-        ChildIds: 3019214706568227134
+        ParentId: 10299532631583500137
+        ChildIds: 8287599493378138682
+        ChildIds: 1934437313947007338
+        ChildIds: 6880052588284415430
+        ChildIds: 7251640515407229216
+        ChildIds: 6088527337248980572
+        ChildIds: 4075447685260621298
+        ChildIds: 9457461556007918589
+        ChildIds: 18043305720897583304
+        ChildIds: 11140306970139123997
+        ChildIds: 2250748963378358551
+        ChildIds: 2598683545158287448
+        ChildIds: 1072821639650714975
+        ChildIds: 15079843891674477241
+        ChildIds: 9187764155028094898
+        ChildIds: 16644059659148019033
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -36676,7 +36676,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7192256095907753128
+        Id: 8287599493378138682
         Name: "Mecha - Armor - Thruster 01"
         Transform {
           Location {
@@ -36695,7 +36695,7 @@ Assets {
             Z: 0.599999964
           }
         }
-        ParentId: 12329562284548137090
+        ParentId: 12534131959418327789
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -36746,7 +36746,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5181639599651493578
+        Id: 1934437313947007338
         Name: "Mecha - Armor - Thruster 01"
         Transform {
           Location {
@@ -36764,7 +36764,7 @@ Assets {
             Z: 0.599999964
           }
         }
-        ParentId: 12329562284548137090
+        ParentId: 12534131959418327789
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -36815,7 +36815,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16694531285743477918
+        Id: 6880052588284415430
         Name: "Mecha - Armor - Chest 01"
         Transform {
           Location {
@@ -36834,7 +36834,7 @@ Assets {
             Z: 0.999999881
           }
         }
-        ParentId: 12329562284548137090
+        ParentId: 12534131959418327789
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail1:id"
@@ -36879,7 +36879,7 @@ Assets {
         }
       }
       Objects {
-        Id: 18040670588279097114
+        Id: 7251640515407229216
         Name: "Mecha - Armor - Pelvis 01"
         Transform {
           Location {
@@ -36898,7 +36898,7 @@ Assets {
             Z: 0.590188384
           }
         }
-        ParentId: 12329562284548137090
+        ParentId: 12534131959418327789
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -36943,7 +36943,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14052952038929503573
+        Id: 6088527337248980572
         Name: "Mecha - Armor - Thigh 01"
         Transform {
           Location {
@@ -36962,7 +36962,7 @@ Assets {
             Z: 0.731255114
           }
         }
-        ParentId: 12329562284548137090
+        ParentId: 12534131959418327789
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -37007,7 +37007,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16306265677783560701
+        Id: 4075447685260621298
         Name: "Mecha - Armor - Pelvis 01"
         Transform {
           Location {
@@ -37026,7 +37026,7 @@ Assets {
             Z: 0.590188384
           }
         }
-        ParentId: 12329562284548137090
+        ParentId: 12534131959418327789
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -37071,7 +37071,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15729374975864086897
+        Id: 9457461556007918589
         Name: "Mecha - Armor - Thigh 01"
         Transform {
           Location {
@@ -37090,7 +37090,7 @@ Assets {
             Z: 0.731255114
           }
         }
-        ParentId: 12329562284548137090
+        ParentId: 12534131959418327789
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -37135,7 +37135,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13892499279402286376
+        Id: 18043305720897583304
         Name: "Military Tank Historic Track 01 - End"
         Transform {
           Location {
@@ -37154,7 +37154,7 @@ Assets {
             Z: 0.58079952
           }
         }
-        ParentId: 12329562284548137090
+        ParentId: 12534131959418327789
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -37193,7 +37193,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7261650359882779813
+        Id: 11140306970139123997
         Name: "Military Tank Historic Track 01 - End"
         Transform {
           Location {
@@ -37212,7 +37212,7 @@ Assets {
             Z: 0.58079952
           }
         }
-        ParentId: 12329562284548137090
+        ParentId: 12534131959418327789
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -37251,7 +37251,7 @@ Assets {
         }
       }
       Objects {
-        Id: 18062103376354979873
+        Id: 2250748963378358551
         Name: "Military Tank Modern Hull 01 - Rear"
         Transform {
           Location {
@@ -37270,7 +37270,7 @@ Assets {
             Z: 0.379999816
           }
         }
-        ParentId: 12329562284548137090
+        ParentId: 12534131959418327789
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -37315,7 +37315,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10331111520934056466
+        Id: 2598683545158287448
         Name: "Military Tank Modern Mudflap 01"
         Transform {
           Location {
@@ -37334,7 +37334,7 @@ Assets {
             Z: 0.999999762
           }
         }
-        ParentId: 12329562284548137090
+        ParentId: 12534131959418327789
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -37379,7 +37379,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13371773407277174520
+        Id: 1072821639650714975
         Name: "Military Tank Modern Hull 01 - Mid"
         Transform {
           Location {
@@ -37398,7 +37398,7 @@ Assets {
             Z: 0.199999973
           }
         }
-        ParentId: 12329562284548137090
+        ParentId: 12534131959418327789
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -37437,7 +37437,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10935436985050878032
+        Id: 15079843891674477241
         Name: "Mecha - Armor - Ankle 02"
         Transform {
           Location {
@@ -37456,7 +37456,7 @@ Assets {
             Z: 1.3
           }
         }
-        ParentId: 12329562284548137090
+        ParentId: 12534131959418327789
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -37495,7 +37495,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10953063789975532397
+        Id: 9187764155028094898
         Name: "Mecha - Frame - Arm Joint 01"
         Transform {
           Location {
@@ -37514,7 +37514,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 12329562284548137090
+        ParentId: 12534131959418327789
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -37559,7 +37559,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3019214706568227134
+        Id: 16644059659148019033
         Name: "Mecha - Frame - Arm Joint 01"
         Transform {
           Location {
@@ -37578,7 +37578,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 12329562284548137090
+        ParentId: 12534131959418327789
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -37623,7 +37623,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6492783373089263041
+        Id: 2032301706165076963
         Name: "Neck"
         Transform {
           Location {
@@ -37642,9 +37642,9 @@ Assets {
             Z: 0.99999994
           }
         }
-        ParentId: 1671348187634562842
-        ChildIds: 4109862989005226741
-        ChildIds: 10048378651312030070
+        ParentId: 10299532631583500137
+        ChildIds: 3317393016048416803
+        ChildIds: 1340834727216904223
         UnregisteredParameters {
           Overrides {
             Name: "bp:X Scale"
@@ -37686,7 +37686,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4109862989005226741
+        Id: 3317393016048416803
         Name: "Neck_GEO"
         Transform {
           Location {
@@ -37702,8 +37702,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 6492783373089263041
-        ChildIds: 4693312183974897543
+        ParentId: 2032301706165076963
+        ChildIds: 13993051630904048850
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -37721,7 +37721,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4693312183974897543
+        Id: 13993051630904048850
         Name: "Mecha - Frame - Neck 01"
         Transform {
           Location {
@@ -37740,7 +37740,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4109862989005226741
+        ParentId: 3317393016048416803
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -37785,7 +37785,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10048378651312030070
+        Id: 1340834727216904223
         Name: "Head"
         Transform {
           Location {
@@ -37804,8 +37804,8 @@ Assets {
             Z: 1.00000012
           }
         }
-        ParentId: 6492783373089263041
-        ChildIds: 15406558315651961457
+        ParentId: 2032301706165076963
+        ChildIds: 4646132331544031929
         UnregisteredParameters {
           Overrides {
             Name: "bp:Z Offset"
@@ -37847,7 +37847,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15406558315651961457
+        Id: 4646132331544031929
         Name: "Head_GEO"
         Transform {
           Location {
@@ -37863,9 +37863,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 10048378651312030070
-        ChildIds: 10229177309396378502
-        ChildIds: 9109071920882065249
+        ParentId: 1340834727216904223
+        ChildIds: 11062431089280045889
+        ChildIds: 9401538988732040477
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -37883,7 +37883,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10229177309396378502
+        Id: 11062431089280045889
         Name: "Mecha - Armor - Helm 02"
         Transform {
           Location {
@@ -37902,7 +37902,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15406558315651961457
+        ParentId: 4646132331544031929
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -37967,7 +37967,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9109071920882065249
+        Id: 9401538988732040477
         Name: "Mecha - Armor - Airfoil 02"
         Transform {
           Location {
@@ -37986,7 +37986,7 @@ Assets {
             Z: 0.999999881
           }
         }
-        ParentId: 15406558315651961457
+        ParentId: 4646132331544031929
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -38025,7 +38025,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13656071172426390159
+        Id: 5382655395084255589
         Name: "Clavicle_L"
         Transform {
           Location {
@@ -38044,9 +38044,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 1671348187634562842
-        ChildIds: 11022454622888920035
-        ChildIds: 9055892936051230504
+        ParentId: 10299532631583500137
+        ChildIds: 17828223016615025593
+        ChildIds: 4057063060818353790
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -38102,7 +38102,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11022454622888920035
+        Id: 17828223016615025593
         Name: "Clavicle_L_GEO"
         Transform {
           Location {
@@ -38118,11 +38118,11 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13656071172426390159
-        ChildIds: 17083808192012746742
-        ChildIds: 16713427426461376014
-        ChildIds: 7015014726947840416
-        ChildIds: 8087393023118195706
+        ParentId: 5382655395084255589
+        ChildIds: 12367469932858632430
+        ChildIds: 10191168525499907792
+        ChildIds: 15047289919500125936
+        ChildIds: 10842075632581743428
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -38140,7 +38140,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17083808192012746742
+        Id: 12367469932858632430
         Name: "Mecha - Armor - Shoulder Thruster 01"
         Transform {
           Location {
@@ -38159,7 +38159,7 @@ Assets {
             Z: 0.99999994
           }
         }
-        ParentId: 11022454622888920035
+        ParentId: 17828223016615025593
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail1:id"
@@ -38210,7 +38210,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16713427426461376014
+        Id: 10191168525499907792
         Name: "Sci-fi Ship Blaster 01"
         Transform {
           Location {
@@ -38229,7 +38229,7 @@ Assets {
             Z: 0.49999997
           }
         }
-        ParentId: 11022454622888920035
+        ParentId: 17828223016615025593
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -38274,7 +38274,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7015014726947840416
+        Id: 15047289919500125936
         Name: "Mecha - Armor - Wing 02"
         Transform {
           Location {
@@ -38292,7 +38292,7 @@ Assets {
             Z: 0.299999982
           }
         }
-        ParentId: 11022454622888920035
+        ParentId: 17828223016615025593
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -38337,7 +38337,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8087393023118195706
+        Id: 10842075632581743428
         Name: "Mecha - Armor - Wing 02"
         Transform {
           Location {
@@ -38356,7 +38356,7 @@ Assets {
             Z: 0.299999446
           }
         }
-        ParentId: 11022454622888920035
+        ParentId: 17828223016615025593
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -38401,7 +38401,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9055892936051230504
+        Id: 4057063060818353790
         Name: "Upperarm_L"
         Transform {
           Location {
@@ -38418,9 +38418,9 @@ Assets {
             Z: 0.99999994
           }
         }
-        ParentId: 13656071172426390159
-        ChildIds: 8324347002293325814
-        ChildIds: 7281840618463205345
+        ParentId: 5382655395084255589
+        ChildIds: 12888681411988433546
+        ChildIds: 14527906082638982237
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -38462,7 +38462,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8324347002293325814
+        Id: 12888681411988433546
         Name: "Upperarm_L_GEO"
         Transform {
           Location {
@@ -38478,13 +38478,13 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 9055892936051230504
-        ChildIds: 4096609916785529028
-        ChildIds: 6631274036514024275
-        ChildIds: 3811471552018666258
-        ChildIds: 2676622943148966820
-        ChildIds: 8427628737164144536
-        ChildIds: 3655490499140821399
+        ParentId: 4057063060818353790
+        ChildIds: 17153295909160209943
+        ChildIds: 9665646773049769118
+        ChildIds: 10182869266928378608
+        ChildIds: 12990265734732558706
+        ChildIds: 11594817492440340799
+        ChildIds: 16252691774046329172
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -38502,7 +38502,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4096609916785529028
+        Id: 17153295909160209943
         Name: "Mecha - Cannon 01"
         Transform {
           Location {
@@ -38521,7 +38521,7 @@ Assets {
             Z: 1.00000012
           }
         }
-        ParentId: 8324347002293325814
+        ParentId: 12888681411988433546
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -38552,7 +38552,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6631274036514024275
+        Id: 9665646773049769118
         Name: "Mecha - Cannon 01"
         Transform {
           Location {
@@ -38571,7 +38571,7 @@ Assets {
             Z: 1.00000012
           }
         }
-        ParentId: 8324347002293325814
+        ParentId: 12888681411988433546
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -38602,7 +38602,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3811471552018666258
+        Id: 10182869266928378608
         Name: "Mecha - Cannon 01"
         Transform {
           Location {
@@ -38621,7 +38621,7 @@ Assets {
             Z: 1.00000012
           }
         }
-        ParentId: 8324347002293325814
+        ParentId: 12888681411988433546
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -38652,7 +38652,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2676622943148966820
+        Id: 12990265734732558706
         Name: "Mecha - Armor - Chest 01"
         Transform {
           Location {
@@ -38671,7 +38671,7 @@ Assets {
             Z: 1.00000012
           }
         }
-        ParentId: 8324347002293325814
+        ParentId: 12888681411988433546
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -38716,7 +38716,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8427628737164144536
+        Id: 11594817492440340799
         Name: "Mecha - Armor - Shoulder Thruster 02"
         Transform {
           Location {
@@ -38734,7 +38734,7 @@ Assets {
             Z: 1.00000012
           }
         }
-        ParentId: 8324347002293325814
+        ParentId: 12888681411988433546
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -38773,7 +38773,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3655490499140821399
+        Id: 16252691774046329172
         Name: "Mecha - Cannon Socket 01"
         Transform {
           Location {
@@ -38792,7 +38792,7 @@ Assets {
             Z: 1.00000012
           }
         }
-        ParentId: 8324347002293325814
+        ParentId: 12888681411988433546
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -38823,7 +38823,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7281840618463205345
+        Id: 14527906082638982237
         Name: "Upperarm_Twist_L"
         Transform {
           Location {
@@ -38841,9 +38841,9 @@ Assets {
             Z: 1.00000012
           }
         }
-        ParentId: 9055892936051230504
-        ChildIds: 12540303352775993970
-        ChildIds: 16329522278176106403
+        ParentId: 4057063060818353790
+        ChildIds: 8718882348057047374
+        ChildIds: 3358055528880466106
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -38899,7 +38899,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12540303352775993970
+        Id: 8718882348057047374
         Name: "Upperarm_Twist_L_GEO"
         Transform {
           Location {
@@ -38915,8 +38915,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 7281840618463205345
-        ChildIds: 9972261477820202169
+        ParentId: 14527906082638982237
+        ChildIds: 13555579131954371572
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -38934,7 +38934,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9972261477820202169
+        Id: 13555579131954371572
         Name: "Mecha - Armor - Arm Socket 01"
         Transform {
           Location {
@@ -38950,7 +38950,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 12540303352775993970
+        ParentId: 8718882348057047374
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -38989,7 +38989,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16329522278176106403
+        Id: 3358055528880466106
         Name: "Elbow_01_L"
         Transform {
           Location {
@@ -39006,9 +39006,9 @@ Assets {
             Z: 0.99999994
           }
         }
-        ParentId: 7281840618463205345
-        ChildIds: 9977695733838279564
-        ChildIds: 27484410540914962
+        ParentId: 14527906082638982237
+        ChildIds: 1831723430299774559
+        ChildIds: 11955276805585665042
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -39060,7 +39060,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9977695733838279564
+        Id: 1831723430299774559
         Name: "Elbow_01_L_GEO"
         Transform {
           Location {
@@ -39076,10 +39076,10 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16329522278176106403
-        ChildIds: 3346223628678822101
-        ChildIds: 10049257845454515915
-        ChildIds: 4092603911960817330
+        ParentId: 3358055528880466106
+        ChildIds: 15776329926253691219
+        ChildIds: 4493763842536778698
+        ChildIds: 13421370154205934340
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -39097,7 +39097,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3346223628678822101
+        Id: 15776329926253691219
         Name: "Left_Forearm_Pivot"
         Transform {
           Location {
@@ -39116,7 +39116,7 @@ Assets {
             Z: 1.49999988
           }
         }
-        ParentId: 9977695733838279564
+        ParentId: 1831723430299774559
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -39155,7 +39155,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10049257845454515915
+        Id: 4493763842536778698
         Name: "Left_elbow_upper"
         Transform {
           Location {
@@ -39173,7 +39173,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 9977695733838279564
+        ParentId: 1831723430299774559
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -39188,7 +39188,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4092603911960817330
+        Id: 13421370154205934340
         Name: "Mecha - Frame - Arm Joint 01"
         Transform {
           Location {
@@ -39206,7 +39206,7 @@ Assets {
             Z: 1.00000012
           }
         }
-        ParentId: 9977695733838279564
+        ParentId: 1831723430299774559
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -39245,7 +39245,7 @@ Assets {
         }
       }
       Objects {
-        Id: 27484410540914962
+        Id: 11955276805585665042
         Name: "Elbow_02_L"
         Transform {
           Location {
@@ -39262,9 +39262,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16329522278176106403
-        ChildIds: 13905935977453109672
-        ChildIds: 7708309559306819847
+        ParentId: 3358055528880466106
+        ChildIds: 10879256379546900311
+        ChildIds: 16291711776717282250
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -39316,7 +39316,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13905935977453109672
+        Id: 10879256379546900311
         Name: "Elbow_02_L_GEO"
         Transform {
           Location {
@@ -39332,14 +39332,14 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 27484410540914962
-        ChildIds: 3397227389955172381
-        ChildIds: 11737728745060207078
-        ChildIds: 13320292760193345004
-        ChildIds: 2190257699704243856
-        ChildIds: 805738649555245286
-        ChildIds: 4702332708382737104
-        ChildIds: 13781736368745147977
+        ParentId: 11955276805585665042
+        ChildIds: 3478799450391178785
+        ChildIds: 11488740514860665053
+        ChildIds: 11415809895173372521
+        ChildIds: 3764513655689099953
+        ChildIds: 2891552260273638797
+        ChildIds: 4326018185408278626
+        ChildIds: 15854202453014225488
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -39357,7 +39357,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3397227389955172381
+        Id: 3478799450391178785
         Name: "Mecha - Frame - Forearm 01"
         Transform {
           Location {
@@ -39376,7 +39376,7 @@ Assets {
             Z: 1.00000012
           }
         }
-        ParentId: 13905935977453109672
+        ParentId: 10879256379546900311
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -39415,7 +39415,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11737728745060207078
+        Id: 11488740514860665053
         Name: "Mecha - Frame - Arm Joint 01"
         Transform {
           Location {
@@ -39434,7 +39434,7 @@ Assets {
             Z: 1.00000012
           }
         }
-        ParentId: 13905935977453109672
+        ParentId: 10879256379546900311
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -39465,7 +39465,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13320292760193345004
+        Id: 11415809895173372521
         Name: "Military Tank Modern Skirt 01 - Front"
         Transform {
           Location {
@@ -39484,7 +39484,7 @@ Assets {
             Z: 0.400000364
           }
         }
-        ParentId: 13905935977453109672
+        ParentId: 10879256379546900311
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -39529,7 +39529,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2190257699704243856
+        Id: 3764513655689099953
         Name: "Military Tank Historic Armor Skirt 01 - Front"
         Transform {
           Location {
@@ -39547,7 +39547,7 @@ Assets {
             Z: 0.560002565
           }
         }
-        ParentId: 13905935977453109672
+        ParentId: 10879256379546900311
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -39592,7 +39592,7 @@ Assets {
         }
       }
       Objects {
-        Id: 805738649555245286
+        Id: 2891552260273638797
         Name: "Military Tank Historic Armor Skirt 01 - Rear"
         Transform {
           Location {
@@ -39611,7 +39611,7 @@ Assets {
             Z: 0.7
           }
         }
-        ParentId: 13905935977453109672
+        ParentId: 10879256379546900311
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -39656,7 +39656,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4702332708382737104
+        Id: 4326018185408278626
         Name: "Sci-fi Ship Engine 02"
         Transform {
           Location {
@@ -39675,7 +39675,7 @@ Assets {
             Z: 0.40000546
           }
         }
-        ParentId: 13905935977453109672
+        ParentId: 10879256379546900311
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Trim:id"
@@ -39720,7 +39720,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13781736368745147977
+        Id: 15854202453014225488
         Name: "Mecha - Armor - Forearm 01"
         Transform {
           Location {
@@ -39739,7 +39739,7 @@ Assets {
             Z: 1.00000012
           }
         }
-        ParentId: 13905935977453109672
+        ParentId: 10879256379546900311
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -39790,7 +39790,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7708309559306819847
+        Id: 16291711776717282250
         Name: "Wrist_L"
         Transform {
           Location {
@@ -39807,8 +39807,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 27484410540914962
-        ChildIds: 16395555585590839880
+        ParentId: 11955276805585665042
+        ChildIds: 11653619593641761606
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -39858,7 +39858,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16395555585590839880
+        Id: 11653619593641761606
         Name: "Wrist_L_GEO"
         Transform {
           Location {
@@ -39874,8 +39874,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 7708309559306819847
-        ChildIds: 7949358520645867521
+        ParentId: 16291711776717282250
+        ChildIds: 7727098315061703540
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -39893,7 +39893,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7949358520645867521
+        Id: 7727098315061703540
         Name: "Mecha - Armor - Hand 01 - Posed Fist 01"
         Transform {
           Location {
@@ -39911,7 +39911,7 @@ Assets {
             Z: 1.00000024
           }
         }
-        ParentId: 16395555585590839880
+        ParentId: 11653619593641761606
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail3:id"
@@ -39968,7 +39968,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2438890643453184947
+        Id: 8082315580570431250
         Name: "BackPack_Root"
         Transform {
           Location {
@@ -39986,10 +39986,10 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 1671348187634562842
-        ChildIds: 4051878040534595443
-        ChildIds: 8317986516320507216
-        ChildIds: 15625771078233744891
+        ParentId: 10299532631583500137
+        ChildIds: 3347650738337535165
+        ChildIds: 7170285915509972938
+        ChildIds: 7294556549646715008
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -40052,7 +40052,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4051878040534595443
+        Id: 3347650738337535165
         Name: "JetPackConnector_GEO"
         Transform {
           Location {
@@ -40070,12 +40070,12 @@ Assets {
             Z: 0.637310803
           }
         }
-        ParentId: 2438890643453184947
-        ChildIds: 1029058342772300079
-        ChildIds: 697479352881736566
-        ChildIds: 2529562433807147363
-        ChildIds: 4482229478530703678
-        ChildIds: 13587366297132122660
+        ParentId: 8082315580570431250
+        ChildIds: 998580926553462773
+        ChildIds: 17870850185626397656
+        ChildIds: 3646486675559550911
+        ChildIds: 4576597700958502325
+        ChildIds: 15065236691956684059
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -40093,7 +40093,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1029058342772300079
+        Id: 998580926553462773
         Name: "Military Tank Historic Track 01 - End"
         Transform {
           Location {
@@ -40111,7 +40111,7 @@ Assets {
             Z: 0.99056536
           }
         }
-        ParentId: 4051878040534595443
+        ParentId: 3347650738337535165
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -40150,7 +40150,7 @@ Assets {
         }
       }
       Objects {
-        Id: 697479352881736566
+        Id: 17870850185626397656
         Name: "Military Tank Modern Mantlet 01"
         Transform {
           Location {
@@ -40169,7 +40169,7 @@ Assets {
             Z: 0.777174771
           }
         }
-        ParentId: 4051878040534595443
+        ParentId: 3347650738337535165
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -40208,7 +40208,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2529562433807147363
+        Id: 3646486675559550911
         Name: "Cylinder Chamfered Small - Large"
         Transform {
           Location {
@@ -40225,7 +40225,7 @@ Assets {
             Z: 0.140241355
           }
         }
-        ParentId: 4051878040534595443
+        ParentId: 3347650738337535165
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -40264,7 +40264,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4482229478530703678
+        Id: 4576597700958502325
         Name: "Mecha - Armor - Knee Spike 01"
         Transform {
           Location {
@@ -40283,7 +40283,7 @@ Assets {
             Z: 1.30319142
           }
         }
-        ParentId: 4051878040534595443
+        ParentId: 3347650738337535165
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -40314,7 +40314,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13587366297132122660
+        Id: 15065236691956684059
         Name: "Mecha - Armor - Wing 01"
         Transform {
           Location {
@@ -40333,7 +40333,7 @@ Assets {
             Z: 1.3031913
           }
         }
-        ParentId: 4051878040534595443
+        ParentId: 3347650738337535165
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -40372,7 +40372,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8317986516320507216
+        Id: 7170285915509972938
         Name: "Thruster_L"
         Transform {
           Location {
@@ -40391,9 +40391,9 @@ Assets {
             Z: 0.99999994
           }
         }
-        ParentId: 2438890643453184947
-        ChildIds: 9489669754660418718
-        ChildIds: 16398934131055305720
+        ParentId: 8082315580570431250
+        ChildIds: 12546903202869238535
+        ChildIds: 10872473003469940104
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Visibility"
@@ -40423,7 +40423,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9489669754660418718
+        Id: 12546903202869238535
         Name: "Thruster_L_GEO"
         Transform {
           Location {
@@ -40442,12 +40442,12 @@ Assets {
             Z: 0.796635
           }
         }
-        ParentId: 8317986516320507216
-        ChildIds: 5693447496765302976
-        ChildIds: 4620420485794374356
-        ChildIds: 10641949289947324387
-        ChildIds: 10867667912804459241
-        ChildIds: 15222393625466638882
+        ParentId: 7170285915509972938
+        ChildIds: 6773285064371061606
+        ChildIds: 7938785479732446631
+        ChildIds: 12846054250108934082
+        ChildIds: 9173475580111923641
+        ChildIds: 15495628397008881698
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -40465,7 +40465,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5693447496765302976
+        Id: 6773285064371061606
         Name: "ThrusterElement"
         Transform {
           Location {
@@ -40481,27 +40481,27 @@ Assets {
             Z: 1.04606712
           }
         }
-        ParentId: 9489669754660418718
-        ChildIds: 15740074301115683435
-        ChildIds: 18419308765047707875
-        ChildIds: 10003766985992014418
-        ChildIds: 5729601402388716463
-        ChildIds: 5971316219976502348
-        ChildIds: 1582204955732353731
-        ChildIds: 5246317239042012857
-        ChildIds: 7848978946374220073
-        ChildIds: 13546318183762010932
-        ChildIds: 8019555011699982073
-        ChildIds: 14489351716444103167
-        ChildIds: 16091558291581428301
-        ChildIds: 11631270923820128359
-        ChildIds: 3230938443473988957
-        ChildIds: 8726095807107558341
-        ChildIds: 11062878191479083607
-        ChildIds: 4206537740748778332
-        ChildIds: 2084314418356504275
-        ChildIds: 6178866432427164813
-        ChildIds: 9366743438869607184
+        ParentId: 12546903202869238535
+        ChildIds: 663159266049924406
+        ChildIds: 5006067677558343423
+        ChildIds: 7550294801730487595
+        ChildIds: 1157138291126795898
+        ChildIds: 13311201081491621472
+        ChildIds: 1852647246644500060
+        ChildIds: 14022712782250605084
+        ChildIds: 8012393122319917050
+        ChildIds: 418327955183612497
+        ChildIds: 8286953471830924235
+        ChildIds: 16617327735442645049
+        ChildIds: 362583923233869443
+        ChildIds: 15350768245195978357
+        ChildIds: 7095750390167875673
+        ChildIds: 16890481728413126470
+        ChildIds: 2520457996016492957
+        ChildIds: 6436847946617027745
+        ChildIds: 2231506150912924221
+        ChildIds: 5847321507844504360
+        ChildIds: 4534850702415647694
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -40519,7 +40519,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15740074301115683435
+        Id: 663159266049924406
         Name: "Mecha - Armor - Thruster 01"
         Transform {
           Location {
@@ -40534,7 +40534,7 @@ Assets {
             Z: 0.999999821
           }
         }
-        ParentId: 5693447496765302976
+        ParentId: 6773285064371061606
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -40579,7 +40579,7 @@ Assets {
         }
       }
       Objects {
-        Id: 18419308765047707875
+        Id: 5006067677558343423
         Name: "Mecha - Armor - Thruster Flap 01"
         Transform {
           Location {
@@ -40596,7 +40596,7 @@ Assets {
             Z: 0.999999821
           }
         }
-        ParentId: 5693447496765302976
+        ParentId: 6773285064371061606
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -40641,7 +40641,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10003766985992014418
+        Id: 7550294801730487595
         Name: "Mecha - Frame - Thruster 01"
         Transform {
           Location {
@@ -40656,7 +40656,7 @@ Assets {
             Z: 0.999999821
           }
         }
-        ParentId: 5693447496765302976
+        ParentId: 6773285064371061606
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -40687,7 +40687,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5729601402388716463
+        Id: 1157138291126795898
         Name: "Mecha - Frame - Thruster Limiter 01"
         Transform {
           Location {
@@ -40702,7 +40702,7 @@ Assets {
             Z: 0.999999821
           }
         }
-        ParentId: 5693447496765302976
+        ParentId: 6773285064371061606
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -40741,7 +40741,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5971316219976502348
+        Id: 13311201081491621472
         Name: "Mecha - Armor - Thruster 01"
         Transform {
           Location {
@@ -40756,7 +40756,7 @@ Assets {
             Z: 0.699999869
           }
         }
-        ParentId: 5693447496765302976
+        ParentId: 6773285064371061606
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -40801,7 +40801,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1582204955732353731
+        Id: 1852647246644500060
         Name: "Cone - Concave"
         Transform {
           Location {
@@ -40819,7 +40819,7 @@ Assets {
             Z: -2.3965919
           }
         }
-        ParentId: 5693447496765302976
+        ParentId: 6773285064371061606
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -40858,7 +40858,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5246317239042012857
+        Id: 14022712782250605084
         Name: "Sphere"
         Transform {
           Location {
@@ -40877,7 +40877,7 @@ Assets {
             Z: 0.251914263
           }
         }
-        ParentId: 5693447496765302976
+        ParentId: 6773285064371061606
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -40925,7 +40925,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7848978946374220073
+        Id: 8012393122319917050
         Name: "Sphere"
         Transform {
           Location {
@@ -40943,7 +40943,7 @@ Assets {
             Z: 0.264544666
           }
         }
-        ParentId: 5693447496765302976
+        ParentId: 6773285064371061606
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -40990,7 +40990,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13546318183762010932
+        Id: 418327955183612497
         Name: "Sphere"
         Transform {
           Location {
@@ -41008,7 +41008,7 @@ Assets {
             Z: 0.465024382
           }
         }
-        ParentId: 5693447496765302976
+        ParentId: 6773285064371061606
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -41055,7 +41055,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8019555011699982073
+        Id: 8286953471830924235
         Name: "Sphere"
         Transform {
           Location {
@@ -41073,7 +41073,7 @@ Assets {
             Z: 0.412572801
           }
         }
-        ParentId: 5693447496765302976
+        ParentId: 6773285064371061606
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -41121,7 +41121,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14489351716444103167
+        Id: 16617327735442645049
         Name: "Sphere"
         Transform {
           Location {
@@ -41139,7 +41139,7 @@ Assets {
             Z: 0.472003877
           }
         }
-        ParentId: 5693447496765302976
+        ParentId: 6773285064371061606
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -41186,7 +41186,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16091558291581428301
+        Id: 362583923233869443
         Name: "Sphere"
         Transform {
           Location {
@@ -41204,7 +41204,7 @@ Assets {
             Z: 0.585326791
           }
         }
-        ParentId: 5693447496765302976
+        ParentId: 6773285064371061606
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -41251,7 +41251,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11631270923820128359
+        Id: 15350768245195978357
         Name: "Sphere"
         Transform {
           Location {
@@ -41270,7 +41270,7 @@ Assets {
             Z: 0.698971212
           }
         }
-        ParentId: 5693447496765302976
+        ParentId: 6773285064371061606
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -41315,7 +41315,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3230938443473988957
+        Id: 7095750390167875673
         Name: "Sphere"
         Transform {
           Location {
@@ -41333,7 +41333,7 @@ Assets {
             Z: 0.802576661
           }
         }
-        ParentId: 5693447496765302976
+        ParentId: 6773285064371061606
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -41378,7 +41378,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8726095807107558341
+        Id: 16890481728413126470
         Name: "Sphere"
         Transform {
           Location {
@@ -41396,7 +41396,7 @@ Assets {
             Z: 0.921537638
           }
         }
-        ParentId: 5693447496765302976
+        ParentId: 6773285064371061606
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -41444,7 +41444,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11062878191479083607
+        Id: 2520457996016492957
         Name: "Sphere"
         Transform {
           Location {
@@ -41462,7 +41462,7 @@ Assets {
             Z: 0.638726652
           }
         }
-        ParentId: 5693447496765302976
+        ParentId: 6773285064371061606
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -41510,7 +41510,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4206537740748778332
+        Id: 6436847946617027745
         Name: "Sphere"
         Transform {
           Location {
@@ -41528,7 +41528,7 @@ Assets {
             Z: 0.561387122
           }
         }
-        ParentId: 5693447496765302976
+        ParentId: 6773285064371061606
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -41576,7 +41576,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2084314418356504275
+        Id: 2231506150912924221
         Name: "Sphere"
         Transform {
           Location {
@@ -41594,7 +41594,7 @@ Assets {
             Z: 0.411371917
           }
         }
-        ParentId: 5693447496765302976
+        ParentId: 6773285064371061606
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -41642,7 +41642,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6178866432427164813
+        Id: 5847321507844504360
         Name: "Sphere"
         Transform {
           Location {
@@ -41660,7 +41660,7 @@ Assets {
             Z: 0.411371946
           }
         }
-        ParentId: 5693447496765302976
+        ParentId: 6773285064371061606
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -41708,7 +41708,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9366743438869607184
+        Id: 4534850702415647694
         Name: "Sphere"
         Transform {
           Location {
@@ -41727,7 +41727,7 @@ Assets {
             Z: 0.892308116
           }
         }
-        ParentId: 5693447496765302976
+        ParentId: 6773285064371061606
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -41775,7 +41775,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4620420485794374356
+        Id: 7938785479732446631
         Name: "Mecha - Armor - Ankle 01"
         Transform {
           Location {
@@ -41794,7 +41794,7 @@ Assets {
             Z: 1.49999976
           }
         }
-        ParentId: 9489669754660418718
+        ParentId: 12546903202869238535
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -41825,7 +41825,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10641949289947324387
+        Id: 12846054250108934082
         Name: "ThrusterElement"
         Transform {
           Location {
@@ -41841,28 +41841,28 @@ Assets {
             Z: 1.04606712
           }
         }
-        ParentId: 9489669754660418718
-        ChildIds: 1027814437806795309
-        ChildIds: 4895530306291081249
-        ChildIds: 4324599257053283648
-        ChildIds: 61444135350411295
-        ChildIds: 16312659080895458499
-        ChildIds: 421736572409119035
-        ChildIds: 4967750974570734871
-        ChildIds: 11684351128582445804
-        ChildIds: 9171783011974531071
-        ChildIds: 833882178686309002
-        ChildIds: 13153227351925150554
-        ChildIds: 1018411920422172099
-        ChildIds: 500243814092035123
-        ChildIds: 6410646019076679002
-        ChildIds: 14524083268612151175
-        ChildIds: 2103402223180168358
-        ChildIds: 100511527174107912
-        ChildIds: 8439338512358364091
-        ChildIds: 17297405457072495001
-        ChildIds: 18124435494996665196
-        ChildIds: 17617086623174976589
+        ParentId: 12546903202869238535
+        ChildIds: 14436302065489435668
+        ChildIds: 15291485280470088537
+        ChildIds: 13089817612225768859
+        ChildIds: 11183460051746884679
+        ChildIds: 4173737865589266106
+        ChildIds: 15152790570329414582
+        ChildIds: 5024371625994425760
+        ChildIds: 11537552236129799559
+        ChildIds: 5508094657048823946
+        ChildIds: 2261878378497517292
+        ChildIds: 16373599558698275338
+        ChildIds: 5166943806410776714
+        ChildIds: 16752621889473493681
+        ChildIds: 4255563126836779694
+        ChildIds: 13161368588676820393
+        ChildIds: 2471665910419840167
+        ChildIds: 230011606983561233
+        ChildIds: 14334763758620570157
+        ChildIds: 17932881628899393736
+        ChildIds: 5877430868908573637
+        ChildIds: 17070168206853631437
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -41880,7 +41880,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1027814437806795309
+        Id: 14436302065489435668
         Name: "Mecha - Armor - Thruster 01"
         Transform {
           Location {
@@ -41895,7 +41895,7 @@ Assets {
             Z: 0.999999821
           }
         }
-        ParentId: 10641949289947324387
+        ParentId: 12846054250108934082
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -41940,7 +41940,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4895530306291081249
+        Id: 15291485280470088537
         Name: "Mecha - Armor - Thruster Flap 01"
         Transform {
           Location {
@@ -41957,7 +41957,7 @@ Assets {
             Z: 0.999999821
           }
         }
-        ParentId: 10641949289947324387
+        ParentId: 12846054250108934082
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -42002,7 +42002,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4324599257053283648
+        Id: 13089817612225768859
         Name: "Mecha - Frame - Thruster 01"
         Transform {
           Location {
@@ -42017,7 +42017,7 @@ Assets {
             Z: 0.999999821
           }
         }
-        ParentId: 10641949289947324387
+        ParentId: 12846054250108934082
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -42048,7 +42048,7 @@ Assets {
         }
       }
       Objects {
-        Id: 61444135350411295
+        Id: 11183460051746884679
         Name: "Mecha - Frame - Thruster Limiter 01"
         Transform {
           Location {
@@ -42063,7 +42063,7 @@ Assets {
             Z: 0.999999821
           }
         }
-        ParentId: 10641949289947324387
+        ParentId: 12846054250108934082
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -42102,7 +42102,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16312659080895458499
+        Id: 4173737865589266106
         Name: "Mecha - Armor - Thruster 01"
         Transform {
           Location {
@@ -42117,7 +42117,7 @@ Assets {
             Z: 0.699999869
           }
         }
-        ParentId: 10641949289947324387
+        ParentId: 12846054250108934082
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -42162,7 +42162,7 @@ Assets {
         }
       }
       Objects {
-        Id: 421736572409119035
+        Id: 15152790570329414582
         Name: "Cone - Concave"
         Transform {
           Location {
@@ -42180,7 +42180,7 @@ Assets {
             Z: -1.61456609
           }
         }
-        ParentId: 10641949289947324387
+        ParentId: 12846054250108934082
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -42219,7 +42219,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4967750974570734871
+        Id: 5024371625994425760
         Name: "Sphere"
         Transform {
           Location {
@@ -42238,7 +42238,7 @@ Assets {
             Z: 0.251914263
           }
         }
-        ParentId: 10641949289947324387
+        ParentId: 12846054250108934082
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -42286,7 +42286,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11684351128582445804
+        Id: 11537552236129799559
         Name: "Sphere"
         Transform {
           Location {
@@ -42304,7 +42304,7 @@ Assets {
             Z: 0.264544666
           }
         }
-        ParentId: 10641949289947324387
+        ParentId: 12846054250108934082
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -42351,7 +42351,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9171783011974531071
+        Id: 5508094657048823946
         Name: "Sphere"
         Transform {
           Location {
@@ -42369,7 +42369,7 @@ Assets {
             Z: 0.465024382
           }
         }
-        ParentId: 10641949289947324387
+        ParentId: 12846054250108934082
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -42416,7 +42416,7 @@ Assets {
         }
       }
       Objects {
-        Id: 833882178686309002
+        Id: 2261878378497517292
         Name: "Sphere"
         Transform {
           Location {
@@ -42434,7 +42434,7 @@ Assets {
             Z: 0.412572801
           }
         }
-        ParentId: 10641949289947324387
+        ParentId: 12846054250108934082
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -42482,7 +42482,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13153227351925150554
+        Id: 16373599558698275338
         Name: "Sphere"
         Transform {
           Location {
@@ -42500,7 +42500,7 @@ Assets {
             Z: 0.472003937
           }
         }
-        ParentId: 10641949289947324387
+        ParentId: 12846054250108934082
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -42547,7 +42547,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1018411920422172099
+        Id: 5166943806410776714
         Name: "Sphere"
         Transform {
           Location {
@@ -42565,7 +42565,7 @@ Assets {
             Z: 0.58532685
           }
         }
-        ParentId: 10641949289947324387
+        ParentId: 12846054250108934082
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -42612,7 +42612,7 @@ Assets {
         }
       }
       Objects {
-        Id: 500243814092035123
+        Id: 16752621889473493681
         Name: "Sphere"
         Transform {
           Location {
@@ -42631,7 +42631,7 @@ Assets {
             Z: 0.698971212
           }
         }
-        ParentId: 10641949289947324387
+        ParentId: 12846054250108934082
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -42676,7 +42676,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6410646019076679002
+        Id: 4255563126836779694
         Name: "Sphere"
         Transform {
           Location {
@@ -42694,7 +42694,7 @@ Assets {
             Z: 0.802576661
           }
         }
-        ParentId: 10641949289947324387
+        ParentId: 12846054250108934082
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -42739,7 +42739,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14524083268612151175
+        Id: 13161368588676820393
         Name: "Sphere"
         Transform {
           Location {
@@ -42757,7 +42757,7 @@ Assets {
             Z: 0.921537638
           }
         }
-        ParentId: 10641949289947324387
+        ParentId: 12846054250108934082
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -42805,7 +42805,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2103402223180168358
+        Id: 2471665910419840167
         Name: "Sphere"
         Transform {
           Location {
@@ -42823,7 +42823,7 @@ Assets {
             Z: 0.638726652
           }
         }
-        ParentId: 10641949289947324387
+        ParentId: 12846054250108934082
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -42871,7 +42871,7 @@ Assets {
         }
       }
       Objects {
-        Id: 100511527174107912
+        Id: 230011606983561233
         Name: "Sphere"
         Transform {
           Location {
@@ -42889,7 +42889,7 @@ Assets {
             Z: 0.561387122
           }
         }
-        ParentId: 10641949289947324387
+        ParentId: 12846054250108934082
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -42937,7 +42937,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8439338512358364091
+        Id: 14334763758620570157
         Name: "Sphere"
         Transform {
           Location {
@@ -42955,7 +42955,7 @@ Assets {
             Z: 0.411371917
           }
         }
-        ParentId: 10641949289947324387
+        ParentId: 12846054250108934082
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -43003,7 +43003,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17297405457072495001
+        Id: 17932881628899393736
         Name: "Sphere"
         Transform {
           Location {
@@ -43021,7 +43021,7 @@ Assets {
             Z: 0.411371946
           }
         }
-        ParentId: 10641949289947324387
+        ParentId: 12846054250108934082
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -43069,7 +43069,7 @@ Assets {
         }
       }
       Objects {
-        Id: 18124435494996665196
+        Id: 5877430868908573637
         Name: "Sphere"
         Transform {
           Location {
@@ -43088,7 +43088,7 @@ Assets {
             Z: 0.892308116
           }
         }
-        ParentId: 10641949289947324387
+        ParentId: 12846054250108934082
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -43136,7 +43136,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17617086623174976589
+        Id: 17070168206853631437
         Name: "Sphere"
         Transform {
           Location {
@@ -43155,7 +43155,7 @@ Assets {
             Z: 1.2183075
           }
         }
-        ParentId: 10641949289947324387
+        ParentId: 12846054250108934082
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -43203,7 +43203,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10867667912804459241
+        Id: 9173475580111923641
         Name: "Mecha - Armor - Shin 01"
         Transform {
           Location {
@@ -43222,7 +43222,7 @@ Assets {
             Z: 1.49999976
           }
         }
-        ParentId: 9489669754660418718
+        ParentId: 12546903202869238535
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -43261,7 +43261,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15222393625466638882
+        Id: 15495628397008881698
         Name: "Military Tank Modern Skirt 01 - Rear"
         Transform {
           Location {
@@ -43278,7 +43278,7 @@ Assets {
             Z: 0.627640307
           }
         }
-        ParentId: 9489669754660418718
+        ParentId: 12546903202869238535
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -43335,7 +43335,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16398934131055305720
+        Id: 10872473003469940104
         Name: "Wing_L"
         Transform {
           Location {
@@ -43353,8 +43353,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 8317986516320507216
-        ChildIds: 14436963488483459201
+        ParentId: 7170285915509972938
+        ChildIds: 17286776529857956338
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Visibility"
@@ -43384,7 +43384,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14436963488483459201
+        Id: 17286776529857956338
         Name: "Wing_L_GEO"
         Transform {
           Location {
@@ -43400,8 +43400,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16398934131055305720
-        ChildIds: 10979980887967143537
+        ParentId: 10872473003469940104
+        ChildIds: 10894427072827831623
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -43419,7 +43419,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10979980887967143537
+        Id: 10894427072827831623
         Name: "Mecha - Armor - Wing 02"
         Transform {
           Location {
@@ -43435,7 +43435,7 @@ Assets {
             Z: 1.00000024
           }
         }
-        ParentId: 14436963488483459201
+        ParentId: 17286776529857956338
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -43474,7 +43474,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15625771078233744891
+        Id: 7294556549646715008
         Name: "Thruster_R"
         Transform {
           Location {
@@ -43493,9 +43493,9 @@ Assets {
             Z: 0.99999994
           }
         }
-        ParentId: 2438890643453184947
-        ChildIds: 3028677762285761329
-        ChildIds: 14722273475878000685
+        ParentId: 8082315580570431250
+        ChildIds: 10176243035514568909
+        ChildIds: 5662467621607120714
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Visibility"
@@ -43525,7 +43525,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3028677762285761329
+        Id: 10176243035514568909
         Name: "Thruster_R_GEO"
         Transform {
           Location {
@@ -43544,12 +43544,12 @@ Assets {
             Z: 0.796635
           }
         }
-        ParentId: 15625771078233744891
-        ChildIds: 2673163052833115379
-        ChildIds: 1312253861040390184
-        ChildIds: 3026797307555464125
-        ChildIds: 15781443517503850715
-        ChildIds: 12156776164733115696
+        ParentId: 7294556549646715008
+        ChildIds: 1345921569435928785
+        ChildIds: 1278176304478274169
+        ChildIds: 5489956087750608673
+        ChildIds: 17751781522890190042
+        ChildIds: 1576006079421920392
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -43567,7 +43567,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2673163052833115379
+        Id: 1345921569435928785
         Name: "ThrusterElement"
         Transform {
           Location {
@@ -43583,35 +43583,35 @@ Assets {
             Z: 1.04606712
           }
         }
-        ParentId: 3028677762285761329
-        ChildIds: 2130825822935516087
-        ChildIds: 7408582739397968132
-        ChildIds: 12672037961051292824
-        ChildIds: 11045399554976588717
-        ChildIds: 13226527059096322564
-        ChildIds: 10174268139360505319
-        ChildIds: 7035832427378004386
-        ChildIds: 8171765862009993096
-        ChildIds: 2118298737414509882
-        ChildIds: 4421901473794155652
-        ChildIds: 11456206147398412151
-        ChildIds: 17150067874427202542
-        ChildIds: 17462532353121269763
-        ChildIds: 2506229576662740942
-        ChildIds: 7706332277531027730
-        ChildIds: 13545613245120873837
-        ChildIds: 17816701959782725764
-        ChildIds: 5197600561585609886
-        ChildIds: 9115564099364900246
-        ChildIds: 853516889152687461
-        ChildIds: 6400373797572611893
-        ChildIds: 12325952422288206325
-        ChildIds: 2896540321859370033
-        ChildIds: 7653122817590569157
-        ChildIds: 1168023351963226657
-        ChildIds: 7966629345642655881
-        ChildIds: 1337092566792510037
-        ChildIds: 4873498338267965533
+        ParentId: 10176243035514568909
+        ChildIds: 12683465810834660820
+        ChildIds: 10702788296492449845
+        ChildIds: 15304149220527332293
+        ChildIds: 10892091409465235648
+        ChildIds: 3737712981684766552
+        ChildIds: 2846071612120496001
+        ChildIds: 3245474016764314809
+        ChildIds: 1890109031532703687
+        ChildIds: 3330054039235876574
+        ChildIds: 2156362004186848140
+        ChildIds: 14328997681097593212
+        ChildIds: 12802386926141594748
+        ChildIds: 17776864514074991241
+        ChildIds: 16445396491499098406
+        ChildIds: 836956751565544168
+        ChildIds: 5082006861822511609
+        ChildIds: 1061109158873660649
+        ChildIds: 7841082868101506960
+        ChildIds: 2485493091683923478
+        ChildIds: 14980469558482263381
+        ChildIds: 15979354599257455579
+        ChildIds: 14426480410577422722
+        ChildIds: 5458856991189797813
+        ChildIds: 14234331408129605313
+        ChildIds: 842263593890152189
+        ChildIds: 15239540428520198021
+        ChildIds: 2946347465241719992
+        ChildIds: 17939901102078046661
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -43629,7 +43629,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2130825822935516087
+        Id: 12683465810834660820
         Name: "Mecha - Armor - Thruster 01"
         Transform {
           Location {
@@ -43644,7 +43644,7 @@ Assets {
             Z: 0.999999821
           }
         }
-        ParentId: 2673163052833115379
+        ParentId: 1345921569435928785
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -43689,7 +43689,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7408582739397968132
+        Id: 10702788296492449845
         Name: "Mecha - Armor - Thruster Flap 01"
         Transform {
           Location {
@@ -43706,7 +43706,7 @@ Assets {
             Z: 0.999999821
           }
         }
-        ParentId: 2673163052833115379
+        ParentId: 1345921569435928785
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -43751,7 +43751,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12672037961051292824
+        Id: 15304149220527332293
         Name: "Mecha - Frame - Thruster 01"
         Transform {
           Location {
@@ -43766,7 +43766,7 @@ Assets {
             Z: 0.999999821
           }
         }
-        ParentId: 2673163052833115379
+        ParentId: 1345921569435928785
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -43797,7 +43797,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11045399554976588717
+        Id: 10892091409465235648
         Name: "Mecha - Frame - Thruster Limiter 01"
         Transform {
           Location {
@@ -43812,7 +43812,7 @@ Assets {
             Z: 0.999999821
           }
         }
-        ParentId: 2673163052833115379
+        ParentId: 1345921569435928785
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -43851,7 +43851,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13226527059096322564
+        Id: 3737712981684766552
         Name: "Mecha - Armor - Thruster 01"
         Transform {
           Location {
@@ -43866,7 +43866,7 @@ Assets {
             Z: 0.699999869
           }
         }
-        ParentId: 2673163052833115379
+        ParentId: 1345921569435928785
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -43911,7 +43911,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10174268139360505319
+        Id: 2846071612120496001
         Name: "Cone - Concave"
         Transform {
           Location {
@@ -43928,7 +43928,7 @@ Assets {
             Z: -2.3965919
           }
         }
-        ParentId: 2673163052833115379
+        ParentId: 1345921569435928785
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -43967,7 +43967,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7035832427378004386
+        Id: 3245474016764314809
         Name: "Sphere"
         Transform {
           Location {
@@ -43986,7 +43986,7 @@ Assets {
             Z: 0.251914263
           }
         }
-        ParentId: 2673163052833115379
+        ParentId: 1345921569435928785
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -44034,7 +44034,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8171765862009993096
+        Id: 1890109031532703687
         Name: "Sphere"
         Transform {
           Location {
@@ -44052,7 +44052,7 @@ Assets {
             Z: 0.264544666
           }
         }
-        ParentId: 2673163052833115379
+        ParentId: 1345921569435928785
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -44099,7 +44099,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2118298737414509882
+        Id: 3330054039235876574
         Name: "Sphere"
         Transform {
           Location {
@@ -44118,7 +44118,7 @@ Assets {
             Z: 0.465024382
           }
         }
-        ParentId: 2673163052833115379
+        ParentId: 1345921569435928785
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -44165,7 +44165,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4421901473794155652
+        Id: 2156362004186848140
         Name: "Sphere"
         Transform {
           Location {
@@ -44184,7 +44184,7 @@ Assets {
             Z: 0.412572801
           }
         }
-        ParentId: 2673163052833115379
+        ParentId: 1345921569435928785
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -44232,7 +44232,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11456206147398412151
+        Id: 14328997681097593212
         Name: "Sphere"
         Transform {
           Location {
@@ -44251,7 +44251,7 @@ Assets {
             Z: 0.472003877
           }
         }
-        ParentId: 2673163052833115379
+        ParentId: 1345921569435928785
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -44298,7 +44298,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17150067874427202542
+        Id: 12802386926141594748
         Name: "Sphere"
         Transform {
           Location {
@@ -44317,7 +44317,7 @@ Assets {
             Z: 0.58532685
           }
         }
-        ParentId: 2673163052833115379
+        ParentId: 1345921569435928785
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -44364,7 +44364,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17462532353121269763
+        Id: 17776864514074991241
         Name: "Sphere"
         Transform {
           Location {
@@ -44383,7 +44383,7 @@ Assets {
             Z: 0.698971212
           }
         }
-        ParentId: 2673163052833115379
+        ParentId: 1345921569435928785
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -44428,7 +44428,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2506229576662740942
+        Id: 16445396491499098406
         Name: "Sphere"
         Transform {
           Location {
@@ -44447,7 +44447,7 @@ Assets {
             Z: 0.802576661
           }
         }
-        ParentId: 2673163052833115379
+        ParentId: 1345921569435928785
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -44492,7 +44492,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7706332277531027730
+        Id: 836956751565544168
         Name: "Sphere"
         Transform {
           Location {
@@ -44511,7 +44511,7 @@ Assets {
             Z: 0.921537638
           }
         }
-        ParentId: 2673163052833115379
+        ParentId: 1345921569435928785
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -44559,7 +44559,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13545613245120873837
+        Id: 5082006861822511609
         Name: "Sphere"
         Transform {
           Location {
@@ -44578,7 +44578,7 @@ Assets {
             Z: 0.638726652
           }
         }
-        ParentId: 2673163052833115379
+        ParentId: 1345921569435928785
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -44626,7 +44626,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17816701959782725764
+        Id: 1061109158873660649
         Name: "Sphere"
         Transform {
           Location {
@@ -44645,7 +44645,7 @@ Assets {
             Z: 0.561387122
           }
         }
-        ParentId: 2673163052833115379
+        ParentId: 1345921569435928785
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -44693,7 +44693,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5197600561585609886
+        Id: 7841082868101506960
         Name: "Sphere"
         Transform {
           Location {
@@ -44712,7 +44712,7 @@ Assets {
             Z: 0.411371917
           }
         }
-        ParentId: 2673163052833115379
+        ParentId: 1345921569435928785
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -44760,7 +44760,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9115564099364900246
+        Id: 2485493091683923478
         Name: "Sphere"
         Transform {
           Location {
@@ -44779,7 +44779,7 @@ Assets {
             Z: 0.411371946
           }
         }
-        ParentId: 2673163052833115379
+        ParentId: 1345921569435928785
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -44827,7 +44827,7 @@ Assets {
         }
       }
       Objects {
-        Id: 853516889152687461
+        Id: 14980469558482263381
         Name: "Sphere"
         Transform {
           Location {
@@ -44846,7 +44846,7 @@ Assets {
             Z: 0.892308116
           }
         }
-        ParentId: 2673163052833115379
+        ParentId: 1345921569435928785
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -44894,7 +44894,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6400373797572611893
+        Id: 15979354599257455579
         Name: "Sphere"
         Transform {
           Location {
@@ -44912,7 +44912,7 @@ Assets {
             Z: 1.47265077
           }
         }
-        ParentId: 2673163052833115379
+        ParentId: 1345921569435928785
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -44960,7 +44960,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12325952422288206325
+        Id: 14426480410577422722
         Name: "Sphere"
         Transform {
           Location {
@@ -44979,7 +44979,7 @@ Assets {
             Z: 1.81698477
           }
         }
-        ParentId: 2673163052833115379
+        ParentId: 1345921569435928785
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -45027,7 +45027,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2896540321859370033
+        Id: 5458856991189797813
         Name: "Sphere"
         Transform {
           Location {
@@ -45046,7 +45046,7 @@ Assets {
             Z: 1.53628099
           }
         }
-        ParentId: 2673163052833115379
+        ParentId: 1345921569435928785
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -45094,7 +45094,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7653122817590569157
+        Id: 14234331408129605313
         Name: "Sphere"
         Transform {
           Location {
@@ -45113,7 +45113,7 @@ Assets {
             Z: 1.38233161
           }
         }
-        ParentId: 2673163052833115379
+        ParentId: 1345921569435928785
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -45161,7 +45161,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1168023351963226657
+        Id: 842263593890152189
         Name: "Sphere"
         Transform {
           Location {
@@ -45180,7 +45180,7 @@ Assets {
             Z: 1.03274071
           }
         }
-        ParentId: 2673163052833115379
+        ParentId: 1345921569435928785
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -45228,7 +45228,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7966629345642655881
+        Id: 15239540428520198021
         Name: "Sphere"
         Transform {
           Location {
@@ -45247,7 +45247,7 @@ Assets {
             Z: 0.866727293
           }
         }
-        ParentId: 2673163052833115379
+        ParentId: 1345921569435928785
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -45295,7 +45295,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1337092566792510037
+        Id: 2946347465241719992
         Name: "Sphere"
         Transform {
           Location {
@@ -45314,7 +45314,7 @@ Assets {
             Z: 0.624261796
           }
         }
-        ParentId: 2673163052833115379
+        ParentId: 1345921569435928785
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -45362,7 +45362,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4873498338267965533
+        Id: 17939901102078046661
         Name: "Sphere"
         Transform {
           Location {
@@ -45381,7 +45381,7 @@ Assets {
             Z: 0.624261916
           }
         }
-        ParentId: 2673163052833115379
+        ParentId: 1345921569435928785
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -45429,7 +45429,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1312253861040390184
+        Id: 1278176304478274169
         Name: "Mecha - Armor - Ankle 01"
         Transform {
           Location {
@@ -45448,7 +45448,7 @@ Assets {
             Z: 1.49999976
           }
         }
-        ParentId: 3028677762285761329
+        ParentId: 10176243035514568909
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -45479,7 +45479,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3026797307555464125
+        Id: 5489956087750608673
         Name: "ThrusterElement"
         Transform {
           Location {
@@ -45495,26 +45495,26 @@ Assets {
             Z: 1.04606712
           }
         }
-        ParentId: 3028677762285761329
-        ChildIds: 8210570516877296882
-        ChildIds: 16774527972407242226
-        ChildIds: 9118048852365726728
-        ChildIds: 6622574229202888302
-        ChildIds: 3522628046363692437
-        ChildIds: 8109969049768375246
-        ChildIds: 10711384492376943130
-        ChildIds: 9935536947819129773
-        ChildIds: 1889540972729015724
-        ChildIds: 14069203493631062571
-        ChildIds: 17585686667914005204
-        ChildIds: 8586421748942044888
-        ChildIds: 396782260065009679
-        ChildIds: 3016462200698958967
-        ChildIds: 10150486287591414715
-        ChildIds: 15427389572929312577
-        ChildIds: 4358921141475713455
-        ChildIds: 6181119678665905028
-        ChildIds: 15716001138194796913
+        ParentId: 10176243035514568909
+        ChildIds: 3081075573419934837
+        ChildIds: 11673307397422343527
+        ChildIds: 15394465699764949621
+        ChildIds: 11369047506755775268
+        ChildIds: 193754996327589793
+        ChildIds: 9087107665347329516
+        ChildIds: 15262076199735094846
+        ChildIds: 5428013754831832922
+        ChildIds: 4899532134066349340
+        ChildIds: 9355027796608840474
+        ChildIds: 17832268350180935655
+        ChildIds: 15733176495380876335
+        ChildIds: 8097300117749553716
+        ChildIds: 3182102228715799194
+        ChildIds: 1738264745210784252
+        ChildIds: 8882968639896168789
+        ChildIds: 3597265564718722969
+        ChildIds: 12000315227023464826
+        ChildIds: 7193973606356320751
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -45532,7 +45532,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8210570516877296882
+        Id: 3081075573419934837
         Name: "Mecha - Armor - Thruster 01"
         Transform {
           Location {
@@ -45547,7 +45547,7 @@ Assets {
             Z: 0.999999821
           }
         }
-        ParentId: 3026797307555464125
+        ParentId: 5489956087750608673
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -45592,7 +45592,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16774527972407242226
+        Id: 11673307397422343527
         Name: "Mecha - Armor - Thruster Flap 01"
         Transform {
           Location {
@@ -45609,7 +45609,7 @@ Assets {
             Z: 0.999999821
           }
         }
-        ParentId: 3026797307555464125
+        ParentId: 5489956087750608673
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -45654,7 +45654,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9118048852365726728
+        Id: 15394465699764949621
         Name: "Mecha - Frame - Thruster 01"
         Transform {
           Location {
@@ -45669,7 +45669,7 @@ Assets {
             Z: 0.999999821
           }
         }
-        ParentId: 3026797307555464125
+        ParentId: 5489956087750608673
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -45700,7 +45700,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6622574229202888302
+        Id: 11369047506755775268
         Name: "Mecha - Frame - Thruster Limiter 01"
         Transform {
           Location {
@@ -45715,7 +45715,7 @@ Assets {
             Z: 0.999999821
           }
         }
-        ParentId: 3026797307555464125
+        ParentId: 5489956087750608673
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -45754,7 +45754,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3522628046363692437
+        Id: 193754996327589793
         Name: "Mecha - Armor - Thruster 01"
         Transform {
           Location {
@@ -45769,7 +45769,7 @@ Assets {
             Z: 0.699999869
           }
         }
-        ParentId: 3026797307555464125
+        ParentId: 5489956087750608673
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -45814,7 +45814,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8109969049768375246
+        Id: 9087107665347329516
         Name: "Cone - Concave"
         Transform {
           Location {
@@ -45832,7 +45832,7 @@ Assets {
             Z: -1.61456609
           }
         }
-        ParentId: 3026797307555464125
+        ParentId: 5489956087750608673
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -45871,7 +45871,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10711384492376943130
+        Id: 15262076199735094846
         Name: "Sphere"
         Transform {
           Location {
@@ -45890,7 +45890,7 @@ Assets {
             Z: 0.251914263
           }
         }
-        ParentId: 3026797307555464125
+        ParentId: 5489956087750608673
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -45938,7 +45938,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9935536947819129773
+        Id: 5428013754831832922
         Name: "Sphere"
         Transform {
           Location {
@@ -45956,7 +45956,7 @@ Assets {
             Z: 0.264544666
           }
         }
-        ParentId: 3026797307555464125
+        ParentId: 5489956087750608673
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -46003,7 +46003,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1889540972729015724
+        Id: 4899532134066349340
         Name: "Sphere"
         Transform {
           Location {
@@ -46022,7 +46022,7 @@ Assets {
             Z: 0.465024382
           }
         }
-        ParentId: 3026797307555464125
+        ParentId: 5489956087750608673
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -46069,7 +46069,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14069203493631062571
+        Id: 9355027796608840474
         Name: "Sphere"
         Transform {
           Location {
@@ -46088,7 +46088,7 @@ Assets {
             Z: 0.412572801
           }
         }
-        ParentId: 3026797307555464125
+        ParentId: 5489956087750608673
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -46136,7 +46136,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17585686667914005204
+        Id: 17832268350180935655
         Name: "Sphere"
         Transform {
           Location {
@@ -46155,7 +46155,7 @@ Assets {
             Z: 0.472003937
           }
         }
-        ParentId: 3026797307555464125
+        ParentId: 5489956087750608673
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -46202,7 +46202,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8586421748942044888
+        Id: 15733176495380876335
         Name: "Sphere"
         Transform {
           Location {
@@ -46221,7 +46221,7 @@ Assets {
             Z: 0.58532685
           }
         }
-        ParentId: 3026797307555464125
+        ParentId: 5489956087750608673
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -46268,7 +46268,7 @@ Assets {
         }
       }
       Objects {
-        Id: 396782260065009679
+        Id: 8097300117749553716
         Name: "Sphere"
         Transform {
           Location {
@@ -46287,7 +46287,7 @@ Assets {
             Z: 0.698971212
           }
         }
-        ParentId: 3026797307555464125
+        ParentId: 5489956087750608673
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -46332,7 +46332,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3016462200698958967
+        Id: 3182102228715799194
         Name: "Sphere"
         Transform {
           Location {
@@ -46351,7 +46351,7 @@ Assets {
             Z: 0.802576661
           }
         }
-        ParentId: 3026797307555464125
+        ParentId: 5489956087750608673
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -46396,7 +46396,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10150486287591414715
+        Id: 1738264745210784252
         Name: "Sphere"
         Transform {
           Location {
@@ -46415,7 +46415,7 @@ Assets {
             Z: 0.921537638
           }
         }
-        ParentId: 3026797307555464125
+        ParentId: 5489956087750608673
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -46463,7 +46463,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15427389572929312577
+        Id: 8882968639896168789
         Name: "Sphere"
         Transform {
           Location {
@@ -46482,7 +46482,7 @@ Assets {
             Z: 0.638726652
           }
         }
-        ParentId: 3026797307555464125
+        ParentId: 5489956087750608673
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -46530,7 +46530,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4358921141475713455
+        Id: 3597265564718722969
         Name: "Sphere"
         Transform {
           Location {
@@ -46549,7 +46549,7 @@ Assets {
             Z: 0.561387122
           }
         }
-        ParentId: 3026797307555464125
+        ParentId: 5489956087750608673
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -46597,7 +46597,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6181119678665905028
+        Id: 12000315227023464826
         Name: "Sphere"
         Transform {
           Location {
@@ -46616,7 +46616,7 @@ Assets {
             Z: 0.411371917
           }
         }
-        ParentId: 3026797307555464125
+        ParentId: 5489956087750608673
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -46664,7 +46664,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15716001138194796913
+        Id: 7193973606356320751
         Name: "Sphere"
         Transform {
           Location {
@@ -46683,7 +46683,7 @@ Assets {
             Z: 0.411371946
           }
         }
-        ParentId: 3026797307555464125
+        ParentId: 5489956087750608673
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -46731,7 +46731,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15781443517503850715
+        Id: 17751781522890190042
         Name: "Mecha - Armor - Shin 01"
         Transform {
           Location {
@@ -46750,7 +46750,7 @@ Assets {
             Z: 1.49999976
           }
         }
-        ParentId: 3028677762285761329
+        ParentId: 10176243035514568909
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -46789,7 +46789,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12156776164733115696
+        Id: 1576006079421920392
         Name: "Military Tank Modern Skirt 01 - Rear"
         Transform {
           Location {
@@ -46806,7 +46806,7 @@ Assets {
             Z: 0.627640307
           }
         }
-        ParentId: 3028677762285761329
+        ParentId: 10176243035514568909
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -46863,7 +46863,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14722273475878000685
+        Id: 5662467621607120714
         Name: "Wing_R"
         Transform {
           Location {
@@ -46879,8 +46879,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15625771078233744891
-        ChildIds: 10781787310219732168
+        ParentId: 7294556549646715008
+        ChildIds: 12698076252706357888
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Visibility"
@@ -46910,7 +46910,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10781787310219732168
+        Id: 12698076252706357888
         Name: "Wing_R_GEO"
         Transform {
           Location {
@@ -46926,8 +46926,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14722273475878000685
-        ChildIds: 6882877219325264183
+        ParentId: 5662467621607120714
+        ChildIds: 8575269975445687486
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -46945,7 +46945,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6882877219325264183
+        Id: 8575269975445687486
         Name: "Mecha - Armor - Wing 02"
         Transform {
           Location {
@@ -46963,7 +46963,7 @@ Assets {
             Z: 1.00000024
           }
         }
-        ParentId: 10781787310219732168
+        ParentId: 12698076252706357888
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -47002,7 +47002,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5729314557870399992
+        Id: 7389734172410465514
         Name: "Clavicle_R"
         Transform {
           Location {
@@ -47021,9 +47021,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 1671348187634562842
-        ChildIds: 14188031000111445842
-        ChildIds: 15469433217751120135
+        ParentId: 10299532631583500137
+        ChildIds: 12013291339248930001
+        ChildIds: 11770295928866035609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -47079,7 +47079,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14188031000111445842
+        Id: 12013291339248930001
         Name: "Clavicle_R_GEO"
         Transform {
           Location {
@@ -47095,11 +47095,11 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 5729314557870399992
-        ChildIds: 2464044700927556387
-        ChildIds: 12396201944266355662
-        ChildIds: 7005040777799793042
-        ChildIds: 14436879010520428614
+        ParentId: 7389734172410465514
+        ChildIds: 18355120671560657721
+        ChildIds: 712295232188158567
+        ChildIds: 14838376577233744795
+        ChildIds: 16475483197921782923
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -47117,7 +47117,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2464044700927556387
+        Id: 18355120671560657721
         Name: "Mecha - Armor - Shoulder Thruster 01"
         Transform {
           Location {
@@ -47136,7 +47136,7 @@ Assets {
             Z: 0.99999994
           }
         }
-        ParentId: 14188031000111445842
+        ParentId: 12013291339248930001
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail1:id"
@@ -47187,7 +47187,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12396201944266355662
+        Id: 712295232188158567
         Name: "Sci-fi Ship Blaster 01"
         Transform {
           Location {
@@ -47206,7 +47206,7 @@ Assets {
             Z: 0.49999997
           }
         }
-        ParentId: 14188031000111445842
+        ParentId: 12013291339248930001
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -47251,7 +47251,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7005040777799793042
+        Id: 14838376577233744795
         Name: "Mecha - Armor - Wing 02"
         Transform {
           Location {
@@ -47269,7 +47269,7 @@ Assets {
             Z: 0.299999982
           }
         }
-        ParentId: 14188031000111445842
+        ParentId: 12013291339248930001
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -47314,7 +47314,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14436879010520428614
+        Id: 16475483197921782923
         Name: "Mecha - Armor - Wing 02"
         Transform {
           Location {
@@ -47333,7 +47333,7 @@ Assets {
             Z: 0.299999446
           }
         }
-        ParentId: 14188031000111445842
+        ParentId: 12013291339248930001
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -47378,7 +47378,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15469433217751120135
+        Id: 11770295928866035609
         Name: "Upperarm_R"
         Transform {
           Location {
@@ -47397,9 +47397,9 @@ Assets {
             Z: 0.99999994
           }
         }
-        ParentId: 5729314557870399992
-        ChildIds: 13937747837946239680
-        ChildIds: 2225487631552504876
+        ParentId: 7389734172410465514
+        ChildIds: 8594139290291486264
+        ChildIds: 15565574344032399837
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -47441,7 +47441,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13937747837946239680
+        Id: 8594139290291486264
         Name: "Upperarm_R_GEO"
         Transform {
           Location {
@@ -47457,13 +47457,13 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15469433217751120135
-        ChildIds: 6904092420113712845
-        ChildIds: 3405204811190060941
-        ChildIds: 8039767177143833439
-        ChildIds: 13896674485291651
-        ChildIds: 10605767201529419778
-        ChildIds: 13926431952118159308
+        ParentId: 11770295928866035609
+        ChildIds: 289546994799327439
+        ChildIds: 18014493542963821611
+        ChildIds: 12869337087814467099
+        ChildIds: 16478548373744976430
+        ChildIds: 7435051252505280737
+        ChildIds: 4471281396205416269
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -47481,7 +47481,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6904092420113712845
+        Id: 289546994799327439
         Name: "Mecha - Cannon 01"
         Transform {
           Location {
@@ -47500,7 +47500,7 @@ Assets {
             Z: 1.00000012
           }
         }
-        ParentId: 13937747837946239680
+        ParentId: 8594139290291486264
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -47531,7 +47531,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3405204811190060941
+        Id: 18014493542963821611
         Name: "Mecha - Cannon 01"
         Transform {
           Location {
@@ -47550,7 +47550,7 @@ Assets {
             Z: 1.00000012
           }
         }
-        ParentId: 13937747837946239680
+        ParentId: 8594139290291486264
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -47581,7 +47581,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8039767177143833439
+        Id: 12869337087814467099
         Name: "Mecha - Cannon 01"
         Transform {
           Location {
@@ -47600,7 +47600,7 @@ Assets {
             Z: 1.00000012
           }
         }
-        ParentId: 13937747837946239680
+        ParentId: 8594139290291486264
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -47631,7 +47631,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13896674485291651
+        Id: 16478548373744976430
         Name: "Mecha - Armor - Chest 01"
         Transform {
           Location {
@@ -47650,7 +47650,7 @@ Assets {
             Z: 1.00000012
           }
         }
-        ParentId: 13937747837946239680
+        ParentId: 8594139290291486264
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -47695,7 +47695,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10605767201529419778
+        Id: 7435051252505280737
         Name: "Mecha - Armor - Shoulder Thruster 02"
         Transform {
           Location {
@@ -47713,7 +47713,7 @@ Assets {
             Z: 1.00000012
           }
         }
-        ParentId: 13937747837946239680
+        ParentId: 8594139290291486264
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -47752,7 +47752,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13926431952118159308
+        Id: 4471281396205416269
         Name: "Mecha - Cannon Socket 01"
         Transform {
           Location {
@@ -47771,7 +47771,7 @@ Assets {
             Z: 1.00000012
           }
         }
-        ParentId: 13937747837946239680
+        ParentId: 8594139290291486264
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -47802,7 +47802,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2225487631552504876
+        Id: 15565574344032399837
         Name: "Upperarm_Twist_R"
         Transform {
           Location {
@@ -47821,9 +47821,9 @@ Assets {
             Z: 1.00000012
           }
         }
-        ParentId: 15469433217751120135
-        ChildIds: 7187145604487724428
-        ChildIds: 927682790124355050
+        ParentId: 11770295928866035609
+        ChildIds: 9148106735048588479
+        ChildIds: 17162504455439470239
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -47879,7 +47879,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7187145604487724428
+        Id: 9148106735048588479
         Name: "Upperarm_Twist_R_GEO"
         Transform {
           Location {
@@ -47895,8 +47895,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2225487631552504876
-        ChildIds: 5124088102924539851
+        ParentId: 15565574344032399837
+        ChildIds: 1121391592979801070
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -47914,7 +47914,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5124088102924539851
+        Id: 1121391592979801070
         Name: "Mecha - Armor - Arm Socket 01"
         Transform {
           Location {
@@ -47930,7 +47930,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 7187145604487724428
+        ParentId: 9148106735048588479
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -47969,7 +47969,7 @@ Assets {
         }
       }
       Objects {
-        Id: 927682790124355050
+        Id: 17162504455439470239
         Name: "Elbow_01_R"
         Transform {
           Location {
@@ -47986,9 +47986,9 @@ Assets {
             Z: 0.99999994
           }
         }
-        ParentId: 2225487631552504876
-        ChildIds: 13741061437766722511
-        ChildIds: 16778195015621744788
+        ParentId: 15565574344032399837
+        ChildIds: 12081182822644983412
+        ChildIds: 6750443186683779921
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -48040,7 +48040,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13741061437766722511
+        Id: 12081182822644983412
         Name: "Elbow_01_R_GEO"
         Transform {
           Location {
@@ -48056,10 +48056,10 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 927682790124355050
-        ChildIds: 12781291642130035486
-        ChildIds: 8610534993847260142
-        ChildIds: 14588335430650199953
+        ParentId: 17162504455439470239
+        ChildIds: 1204227167979848307
+        ChildIds: 8036626549790539272
+        ChildIds: 4274611622570253305
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -48077,7 +48077,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12781291642130035486
+        Id: 1204227167979848307
         Name: "Left_Forearm_Pivot"
         Transform {
           Location {
@@ -48096,7 +48096,7 @@ Assets {
             Z: 1.49999988
           }
         }
-        ParentId: 13741061437766722511
+        ParentId: 12081182822644983412
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -48135,7 +48135,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8610534993847260142
+        Id: 8036626549790539272
         Name: "Left_elbow_upper"
         Transform {
           Location {
@@ -48153,7 +48153,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13741061437766722511
+        ParentId: 12081182822644983412
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -48168,7 +48168,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14588335430650199953
+        Id: 4274611622570253305
         Name: "Mecha - Frame - Arm Joint 01"
         Transform {
           Location {
@@ -48186,7 +48186,7 @@ Assets {
             Z: 1.00000012
           }
         }
-        ParentId: 13741061437766722511
+        ParentId: 12081182822644983412
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -48225,7 +48225,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16778195015621744788
+        Id: 6750443186683779921
         Name: "Elbow_02_R"
         Transform {
           Location {
@@ -48242,9 +48242,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 927682790124355050
-        ChildIds: 15088181464391647286
-        ChildIds: 7387815258785158563
+        ParentId: 17162504455439470239
+        ChildIds: 13263335414482376283
+        ChildIds: 14343346320717575310
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -48296,7 +48296,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15088181464391647286
+        Id: 13263335414482376283
         Name: "Elbow_02_R_GEO"
         Transform {
           Location {
@@ -48312,14 +48312,14 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16778195015621744788
-        ChildIds: 4739798556495397600
-        ChildIds: 17223251754146055358
-        ChildIds: 2526627272273997319
-        ChildIds: 16966104226006547663
-        ChildIds: 4124394882513956103
-        ChildIds: 11089004448333844684
-        ChildIds: 2964833234986919719
+        ParentId: 6750443186683779921
+        ChildIds: 942056698033619421
+        ChildIds: 747034771223790481
+        ChildIds: 9931439132609122376
+        ChildIds: 8092681427036473544
+        ChildIds: 1017223594909412066
+        ChildIds: 6853188226443949408
+        ChildIds: 766720770785659604
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -48337,7 +48337,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4739798556495397600
+        Id: 942056698033619421
         Name: "Mecha - Frame - Forearm 01"
         Transform {
           Location {
@@ -48356,7 +48356,7 @@ Assets {
             Z: 1.00000012
           }
         }
-        ParentId: 15088181464391647286
+        ParentId: 13263335414482376283
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -48395,7 +48395,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17223251754146055358
+        Id: 747034771223790481
         Name: "Mecha - Frame - Arm Joint 01"
         Transform {
           Location {
@@ -48414,7 +48414,7 @@ Assets {
             Z: 1.00000012
           }
         }
-        ParentId: 15088181464391647286
+        ParentId: 13263335414482376283
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -48445,7 +48445,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2526627272273997319
+        Id: 9931439132609122376
         Name: "Military Tank Modern Skirt 01 - Front"
         Transform {
           Location {
@@ -48464,7 +48464,7 @@ Assets {
             Z: 0.400000364
           }
         }
-        ParentId: 15088181464391647286
+        ParentId: 13263335414482376283
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -48509,7 +48509,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16966104226006547663
+        Id: 8092681427036473544
         Name: "Military Tank Historic Armor Skirt 01 - Front"
         Transform {
           Location {
@@ -48527,7 +48527,7 @@ Assets {
             Z: 0.560002565
           }
         }
-        ParentId: 15088181464391647286
+        ParentId: 13263335414482376283
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -48572,7 +48572,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4124394882513956103
+        Id: 1017223594909412066
         Name: "Military Tank Historic Armor Skirt 01 - Rear"
         Transform {
           Location {
@@ -48591,7 +48591,7 @@ Assets {
             Z: 0.7
           }
         }
-        ParentId: 15088181464391647286
+        ParentId: 13263335414482376283
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -48636,7 +48636,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11089004448333844684
+        Id: 6853188226443949408
         Name: "Sci-fi Ship Engine 02"
         Transform {
           Location {
@@ -48655,7 +48655,7 @@ Assets {
             Z: 0.40000546
           }
         }
-        ParentId: 15088181464391647286
+        ParentId: 13263335414482376283
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Trim:id"
@@ -48700,7 +48700,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2964833234986919719
+        Id: 766720770785659604
         Name: "Mecha - Armor - Forearm 01"
         Transform {
           Location {
@@ -48719,7 +48719,7 @@ Assets {
             Z: 1.00000012
           }
         }
-        ParentId: 15088181464391647286
+        ParentId: 13263335414482376283
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -48770,7 +48770,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7387815258785158563
+        Id: 14343346320717575310
         Name: "Wrist_R"
         Transform {
           Location {
@@ -48788,8 +48788,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16778195015621744788
-        ChildIds: 12803328538118879210
+        ParentId: 6750443186683779921
+        ChildIds: 9294644317267792708
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -48839,7 +48839,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12803328538118879210
+        Id: 9294644317267792708
         Name: "Wrist_R_GEO"
         Transform {
           Location {
@@ -48855,8 +48855,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 7387815258785158563
-        ChildIds: 14702307311257559538
+        ParentId: 14343346320717575310
+        ChildIds: 18328865044680514734
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -48874,7 +48874,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14702307311257559538
+        Id: 18328865044680514734
         Name: "Mecha - Armor - Hand 01 - Posed Fist 01"
         Transform {
           Location {
@@ -48892,7 +48892,7 @@ Assets {
             Z: 1.00000024
           }
         }
-        ParentId: 12803328538118879210
+        ParentId: 9294644317267792708
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail3:id"
