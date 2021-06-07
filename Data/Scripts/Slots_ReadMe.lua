@@ -102,12 +102,15 @@
     These slot machines are setup to allow creators to easily adjust how "efficent" the machines are. The higher the odds, the higher the payout players
     will get over time.
 
-    Here are the multipliers and chances at a 1 proability. Adjusting the odds will never
+    Here are the multipliers and chances at a 1 proability. Payouts are based per pay line and there are 5 line total.
     Card 1 - 2x multiplier ([5.6%] 7/125 chance)
     Card 2 - 3x multiplier ([5.6%] 7/125 chance)
     Card 3 - 4x multiplier ([5.6%] 7/125 chance)
     Card 4 - 5x multiplier ([5.6%] 7/125 chance)
     Card 5 - 125x multiplier ([0.8%] 1/125 chance)
+
+    Adjusting the efficeny will never change odds, just the payout.
+    For example a Card 1 2x multiplier win with 90% efficency will pay out 1.8x
 
     The higher this value the more a machine will pay. 0.95 is default and means that the machine on average will payout 95% 
     of the bet amount over 1 million spins. This should never be set lower than 0.85 but has no upper limit cap.
