@@ -296,7 +296,7 @@ function InitializeLootCard(lootCard, item, slot)
         if item.isWild then
             reward = 125
         end
-        local payout = (reward + 1) * ODDS
+        local payout = (reward) * ODDS * 0.65
         payOutText.text = tostring(CoreMath.Round(payout, 2)) .. "x Payout Per Line"
     end
 
