@@ -23,7 +23,7 @@
     Slot Primary Component
     ======================
 
-    Once the Slot Primary Component is in your hierarchy, there will be a few children folders and groups:
+    Once the Slot Primary Component is in your hierarchy, there will be a few child folders and groups:
         1) The first child you'll find is the "SLOT_DATABASE" which will be where you can set up the portal art
         that will be used for your various themes.
         2) SLOT_SETTINGS is where you can enable or change keybinds that players can use while at a slot machine.
@@ -51,7 +51,7 @@
     then simply rename it to your choosing.
 
     5. Expand the recently created Theme:
-    There will be five cards by default. Simply select all the cards and change the GamePortal custom property to the Game ID link you just copied. The value of the cards is based on their position in the theme. Jackpot / Wild cards should always be the 5th card.
+    There will be five cards by default. Simply select all the cards and change the GamePortal custom property to the Game ID link you just copied. The value of the cards is based on their position in the theme. Jackpot / Wild cards should ALWAYS be the 5th card.
 
     If your cards were uploaded out of order, the index can be changed using the ScreenshotIndex custom property.
 
@@ -64,7 +64,7 @@
         1) Name - The name of the slot machine. This name will show up on the interactable trigger label.
         SpinDuration - Time in seconds that each spin will take to complete. This value should always be higher than 2.
 
-        2)DefaultSpinSpeed - How quickly the reels spin once a slot is played. Default is 10000.
+        2) DefaultSpinSpeed - How quickly the reels spin once a slot is played. Default is 10000.
 
         3) ResourceName - The resource name that this machine both takes to play and pays out winnings in.
 
