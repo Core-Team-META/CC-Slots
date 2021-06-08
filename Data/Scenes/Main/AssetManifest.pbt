@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17643638392445498115
+  Name: "Skylight Adjustment Volume"
+  PlatformAssetType: 20
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_skylight_adjustment"
+  }
+}
+Assets {
   Id: 17045302299202821513
   Name: "Text 01: D"
   PlatformAssetType: 1
