@@ -104,7 +104,7 @@ function Tick(deltaTime)
             PlayerLine:GetCustomProperty("Profile"):WaitForObject():SetPlayerProfile(player)
             PlayerLine:GetCustomProperty("Name"):WaitForObject():SetColor(ColorObj)
             PlayerLine:GetCustomProperty("Name"):WaitForObject().text = player.name
-            PlayerLine:GetCustomProperty("TotalWon"):WaitForObject().text = format_int(player:GetResource("TOTAL_COINS"))
+            PlayerLine:GetCustomProperty("TotalWon"):WaitForObject().text = format_int(player:GetResource("Coins"))
         end
     else
         CONTAINER.isVisible = false
@@ -115,7 +115,7 @@ end
 local headerLine = World.SpawnAsset(LINE_TEMPLATE, {parent = PANEL})
 headerLine:GetCustomProperty("Profile"):WaitForObject().visibility = Visibility.FORCE_OFF
 headerLine:GetCustomProperty("Name"):WaitForObject().text = "Players"
-headerLine:GetCustomProperty("TotalWon"):WaitForObject().text = "Total Coins Won"
+headerLine:GetCustomProperty("TotalWon"):WaitForObject().text = "Total Coins"
 
 Game.playerLeftEvent:Connect(OnPlayerLeft)
 Game.playerJoinedEvent:Connect(OnPlayerJoined)

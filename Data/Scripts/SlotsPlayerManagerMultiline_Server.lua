@@ -1,6 +1,6 @@
 function OnPlayerJoined(player)
     local data = Storage.GetPlayerData(player)
-    if data then
+    if data.Coins and data.Coins ~= 0 then
         for key, value in pairs(data) do
             player:SetResource(key, value)
         end

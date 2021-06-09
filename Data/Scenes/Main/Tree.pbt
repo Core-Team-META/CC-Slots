@@ -55307,6 +55307,7 @@ Objects {
   ChildIds: 8047416685022007226
   ChildIds: 12733777794480801380
   ChildIds: 12430840541991694390
+  ChildIds: 10413093632445191417
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -55318,6 +55319,50 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 10413093632445191417
+  Name: "Spawn Settings"
+  Transform {
+    Location {
+      X: 4596.7959
+      Y: 1449.85547
+      Z: -620.911377
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8407869986318959359
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Settings {
+    IsDefault: true
+    RespawnSettings {
+      RespawnDelay: 1
+      RespawnMode_v2 {
+        Value: "mc:erespawnmode:random"
+      }
+      StartSpawned: true
+      SpawnMode {
+        Value: "mc:erespawnmode:none"
+      }
+    }
   }
 }
 Objects {

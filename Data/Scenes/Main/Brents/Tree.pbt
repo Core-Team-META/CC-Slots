@@ -1,6 +1,431 @@
 Name: "Brents"
 RootId: 7337720340771964563
 Objects {
+  Id: 13185867917628332181
+  Name: "Mounted Volume"
+  Transform {
+    Location {
+      X: -6802
+      Y: -1326
+      Z: 492
+    }
+    Rotation {
+    }
+    Scale {
+      X: 19
+      Y: 19.25
+      Z: 3.50000024
+    }
+  }
+  ParentId: 7337720340771964563
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+    MountedVolume {
+    }
+  }
+}
+Objects {
+  Id: 2582141013115670515
+  Name: "Kill Zone"
+  Transform {
+    Location {
+      X: -5022
+      Y: -5300
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7337720340771964563
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 13591331349196528036
+      value {
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 329.5
+            Y: 324.750061
+            Z: 17.5
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.IndicatorVisibility"
+          Enum {
+            Value: "mc:eindicatorvisibility:alwaysvisible"
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            Z: -1245
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13648825478633622894
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Kill Zone"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -5022
+            Y: -3291
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7014385962658210665
+    }
+  }
+}
+Objects {
+  Id: 14988402351842712053
+  Name: "Kill Zone"
+  Transform {
+    Location {
+      X: -5022
+      Y: 1753.62012
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7337720340771964563
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 13591331349196528036
+      value {
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 102.5
+            Y: 10.5
+            Z: 17.5
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.IndicatorVisibility"
+          Enum {
+            Value: "mc:eindicatorvisibility:alwaysvisible"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13648825478633622894
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Kill Zone"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -5022
+            Y: -5300
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7014385962658210665
+    }
+  }
+}
+Objects {
+  Id: 17671100472795692477
+  Name: "Kill Zone"
+  Transform {
+    Location {
+      X: -8851
+      Y: -920
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7337720340771964563
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 13591331349196528036
+      value {
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 80.0820465
+            Y: 10.4479523
+            Z: 17.4189796
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.IndicatorVisibility"
+          Enum {
+            Value: "mc:eindicatorvisibility:alwaysvisible"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13648825478633622894
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Kill Zone"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 40
+            Y: -920
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -90
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7014385962658210665
+    }
+  }
+}
+Objects {
+  Id: 14979111367147312484
+  Name: "Kill Zone"
+  Transform {
+    Location {
+      X: -4432.12891
+      Y: -4047.10352
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7337720340771964563
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 13591331349196528036
+      value {
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 80.0820465
+            Y: 10.4479523
+            Z: 17.4189796
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.IndicatorVisibility"
+          Enum {
+            Value: "mc:eindicatorvisibility:alwaysvisible"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13648825478633622894
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Kill Zone"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -10446
+            Y: -920
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -90
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7014385962658210665
+    }
+  }
+}
+Objects {
+  Id: 1428903117933529704
+  Name: "Kill Zone"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7337720340771964563
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 13591331349196528036
+      value {
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 102.5
+            Y: 10.5
+            Z: 17.5
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.IndicatorVisibility"
+          Enum {
+            Value: "mc:eindicatorvisibility:alwaysvisible"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13648825478633622894
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Kill Zone"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -5022
+            Y: 3218
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7014385962658210665
+    }
+  }
+}
+Objects {
   Id: 3477506213640164500
   Name: "Killboard"
   Transform {
