@@ -8162,7 +8162,6 @@ Objects {
   ChildIds: 12247068817699475076
   ChildIds: 14367303537963422761
   ChildIds: 14842813564141208655
-  ChildIds: 17249031402430203162
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8177,73 +8176,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-}
-Objects {
-  Id: 17249031402430203162
-  Name: "Skylight Adjustment Volume"
-  Transform {
-    Location {
-      X: 246.372803
-      Y: 407.791473
-      Z: -438.908813
-    }
-    Rotation {
-    }
-    Scale {
-      X: 16.7816296
-      Y: 18.2485771
-      Z: 8.90272236
-    }
-  }
-  ParentId: 1791106559391815162
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Skylight Object"
-      ObjectReference {
-        SelfId: 8290706107326139469
-      }
-    }
-    Overrides {
-      Name: "bp:Blend Duration"
-      Float: 1.5
-    }
-    Overrides {
-      Name: "bp:Blend Amount"
-      Float: 0
-    }
-    Overrides {
-      Name: "bp:Intensity"
-      Float: 1.79573417
-    }
-    Overrides {
-      Name: "bp:Tint Color"
-      Color {
-        R: 0.329999983
-        G: 0.880198658
-        B: 1
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 17643638392445498115
-    }
-    TeamSettings {
-    }
   }
 }
 Objects {
