@@ -595,7 +595,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceon"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:forceoff"
@@ -15204,8 +15204,8 @@ Assets {
         Name: "Cube"
         Transform {
           Location {
-            Y: -4.96428633
-            Z: 152.995605
+            Y: -4.96428585
+            Z: 155.903915
           }
           Rotation {
             Roll: -12.3264771

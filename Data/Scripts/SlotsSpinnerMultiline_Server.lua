@@ -186,6 +186,7 @@ function PickItemRandomly(player, betAmount, slotId)
             if isWinner then
                 if Object.IsValid(player) then
                     player:AddResource(RESOURCE_NAME, reward)
+                    player:AddResource("TOTAL_COINS", CoreMath.Round(reward - betAmount))
                 end
             end
         end,

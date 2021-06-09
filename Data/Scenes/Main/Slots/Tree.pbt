@@ -92,6 +92,14 @@ Objects {
             Z: 1.2196
           }
         }
+        Overrides {
+          Name: "cs:MinBet"
+          Int: 10
+        }
+        Overrides {
+          Name: "cs:MaxBet"
+          Int: 100
+        }
       }
     }
     TemplateAsset {
@@ -154,6 +162,14 @@ Objects {
             Z: 1.2196
           }
         }
+        Overrides {
+          Name: "cs:MinBet"
+          Int: 10
+        }
+        Overrides {
+          Name: "cs:MaxBet"
+          Int: 100
+        }
       }
     }
     TemplateAsset {
@@ -200,6 +216,14 @@ Objects {
             Yaw: 89.9999771
           }
         }
+        Overrides {
+          Name: "cs:MinBet"
+          Int: 10
+        }
+        Overrides {
+          Name: "cs:MaxBet"
+          Int: 100
+        }
       }
     }
     TemplateAsset {
@@ -245,17 +269,13 @@ Objects {
             Yaw: 89.9999542
           }
         }
-      }
-    }
-    ParameterOverrideMap {
-      key: 16089120083956081436
-      value {
         Overrides {
-          Name: "Position"
-          Vector {
-            Y: -4.96428585
-            Z: 155.903915
-          }
+          Name: "cs:MinBet"
+          Int: 10
+        }
+        Overrides {
+          Name: "cs:MaxBet"
+          Int: 100
         }
       }
     }
@@ -355,6 +375,14 @@ Objects {
             Z: 1.2196
           }
         }
+        Overrides {
+          Name: "cs:MinBet"
+          Int: 10
+        }
+        Overrides {
+          Name: "cs:MaxBet"
+          Int: 100
+        }
       }
     }
     TemplateAsset {
@@ -414,6 +442,14 @@ Objects {
             Y: 1.2196
             Z: 1.2196
           }
+        }
+        Overrides {
+          Name: "cs:MinBet"
+          Int: 10
+        }
+        Overrides {
+          Name: "cs:MaxBet"
+          Int: 100
         }
       }
     }
@@ -475,6 +511,14 @@ Objects {
             Z: 1.2196
           }
         }
+        Overrides {
+          Name: "cs:MinBet"
+          Int: 10
+        }
+        Overrides {
+          Name: "cs:MaxBet"
+          Int: 100
+        }
       }
     }
     TemplateAsset {
@@ -534,6 +578,14 @@ Objects {
             Z: 1.2196
           }
         }
+        Overrides {
+          Name: "cs:MinBet"
+          Int: 10
+        }
+        Overrides {
+          Name: "cs:MaxBet"
+          Int: 100
+        }
       }
     }
     TemplateAsset {
@@ -577,6 +629,14 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+        Overrides {
+          Name: "cs:MinBet"
+          Int: 10
+        }
+        Overrides {
+          Name: "cs:MaxBet"
+          Int: 100
         }
       }
     }
@@ -669,7 +729,7 @@ Objects {
         }
         Overrides {
           Name: "cs:MaxBet"
-          Int: 500
+          Int: 100
         }
         Overrides {
           Name: "Scale"
@@ -678,6 +738,10 @@ Objects {
             Y: 1.2196
             Z: 1.2196
           }
+        }
+        Overrides {
+          Name: "cs:MinBet"
+          Int: 10
         }
       }
     }
@@ -735,7 +799,7 @@ Objects {
         }
         Overrides {
           Name: "cs:MaxBet"
-          Int: 500
+          Int: 100
         }
         Overrides {
           Name: "Scale"
@@ -744,6 +808,10 @@ Objects {
             Y: 1.2196
             Z: 1.2196
           }
+        }
+        Overrides {
+          Name: "cs:MinBet"
+          Int: 10
         }
       }
     }
@@ -801,7 +869,7 @@ Objects {
         }
         Overrides {
           Name: "cs:MaxBet"
-          Int: 500
+          Int: 100
         }
         Overrides {
           Name: "Scale"
@@ -810,6 +878,10 @@ Objects {
             Y: 1.2196
             Z: 1.2196
           }
+        }
+        Overrides {
+          Name: "cs:MinBet"
+          Int: 10
         }
       }
     }
@@ -856,6 +928,14 @@ Objects {
           Rotator {
             Yaw: -179.999969
           }
+        }
+        Overrides {
+          Name: "cs:MinBet"
+          Int: 10
+        }
+        Overrides {
+          Name: "cs:MaxBet"
+          Int: 100
         }
       }
     }
@@ -952,6 +1032,14 @@ Objects {
             Z: 1.2196
           }
         }
+        Overrides {
+          Name: "cs:MinBet"
+          Int: 10
+        }
+        Overrides {
+          Name: "cs:MaxBet"
+          Int: 100
+        }
       }
     }
     TemplateAsset {
@@ -996,6 +1084,14 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+        Overrides {
+          Name: "cs:MinBet"
+          Int: 10
+        }
+        Overrides {
+          Name: "cs:MaxBet"
+          Int: 100
         }
       }
     }
@@ -1049,6 +1145,14 @@ Objects {
           Rotator {
           }
         }
+        Overrides {
+          Name: "cs:MinBet"
+          Int: 10
+        }
+        Overrides {
+          Name: "cs:MaxBet"
+          Int: 100
+        }
       }
     }
     TemplateAsset {
@@ -1093,6 +1197,14 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+        Overrides {
+          Name: "cs:MinBet"
+          Int: 10
+        }
+        Overrides {
+          Name: "cs:MaxBet"
+          Int: 100
         }
       }
     }
@@ -1186,6 +1298,14 @@ Objects {
             Yaw: -179.999954
           }
         }
+        Overrides {
+          Name: "cs:MinBet"
+          Int: 10
+        }
+        Overrides {
+          Name: "cs:MaxBet"
+          Int: 100
+        }
       }
     }
     TemplateAsset {
@@ -1239,6 +1359,14 @@ Objects {
           Rotator {
             Yaw: -179.999954
           }
+        }
+        Overrides {
+          Name: "cs:MinBet"
+          Int: 10
+        }
+        Overrides {
+          Name: "cs:MaxBet"
+          Int: 100
         }
       }
     }
@@ -1294,6 +1422,14 @@ Objects {
             Yaw: -179.999954
           }
         }
+        Overrides {
+          Name: "cs:MinBet"
+          Int: 10
+        }
+        Overrides {
+          Name: "cs:MaxBet"
+          Int: 100
+        }
       }
     }
     TemplateAsset {
@@ -1340,6 +1476,14 @@ Objects {
             Yaw: -179.999985
           }
         }
+        Overrides {
+          Name: "cs:MinBet"
+          Int: 10
+        }
+        Overrides {
+          Name: "cs:MaxBet"
+          Int: 100
+        }
       }
     }
     TemplateAsset {
@@ -1384,6 +1528,14 @@ Objects {
           Rotator {
             Yaw: -179.999954
           }
+        }
+        Overrides {
+          Name: "cs:MinBet"
+          Int: 10
+        }
+        Overrides {
+          Name: "cs:MaxBet"
+          Int: 100
         }
       }
     }

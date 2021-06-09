@@ -1,6 +1,330 @@
 Name: "Brents"
 RootId: 7337720340771964563
 Objects {
+  Id: 3477506213640164500
+  Name: "Killboard"
+  Transform {
+    Location {
+      X: -2425
+      Y: 300
+      Z: 925
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7337720340771964563
+  ChildIds: 18103319523498682634
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:HideAtRoundEnd"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:HideAtRoundEnd:tooltip"
+      String: "Whether to hide the killboard at the end of round."
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 3477506213640164500
+    SubobjectId: 14294627710056487706
+    InstanceId: 10260061482769329488
+    TemplateId: 11007164701436456783
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 18103319523498682634
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3477506213640164500
+  ChildIds: 8144497384116015242
+  ChildIds: 1456434849345660499
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+  InstanceHistory {
+    SelfId: 18103319523498682634
+    SubobjectId: 944001515183105668
+    InstanceId: 10260061482769329488
+    TemplateId: 11007164701436456783
+  }
+}
+Objects {
+  Id: 1456434849345660499
+  Name: "UI Container"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18103319523498682634
+  ChildIds: 8942593339784311437
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Control {
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Canvas {
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 1456434849345660499
+    SubobjectId: 16290758554722003421
+    InstanceId: 10260061482769329488
+    TemplateId: 11007164701436456783
+  }
+}
+Objects {
+  Id: 8942593339784311437
+  Name: "Panel"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1456434849345660499
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Control {
+    Width: 581
+    Height: 409
+    UIX: 40
+    UIY: 150
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 8942593339784311437
+    SubobjectId: 9959803019513904387
+    InstanceId: 10260061482769329488
+    TemplateId: 11007164701436456783
+  }
+}
+Objects {
+  Id: 8144497384116015242
+  Name: "KillboardControllerClient"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18103319523498682634
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ComponentRoot"
+      ObjectReference {
+        SelfId: 3477506213640164500
+      }
+    }
+    Overrides {
+      Name: "cs:Container"
+      ObjectReference {
+        SelfId: 1456434849345660499
+      }
+    }
+    Overrides {
+      Name: "cs:Panel"
+      ObjectReference {
+        SelfId: 8942593339784311437
+      }
+    }
+    Overrides {
+      Name: "cs:LineTemplate"
+      AssetReference {
+        Id: 14570663585074297580
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5031342220658564252
+    }
+  }
+  InstanceHistory {
+    SelfId: 8144497384116015242
+    SubobjectId: 9738256189320748804
+    InstanceId: 10260061482769329488
+    TemplateId: 11007164701436456783
+  }
+}
+Objects {
+  Id: 9783216851348210032
+  Name: "Nameplates"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7337720340771964563
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 15979967455835987047
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Nameplates"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -6784.91699
+            Y: -1745.70349
+            Z: 341.174316
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:ShowHealthbars"
+          Bool: false
+        }
+        Overrides {
+          Name: "cs:ShowOnSelf"
+          Bool: false
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9842776710027393021
+    }
+  }
+}
+Objects {
   Id: 3323974609073615372
   Name: "Mount "
   Transform {
