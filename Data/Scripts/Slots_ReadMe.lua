@@ -1,15 +1,20 @@
     --[[
     Meta Slots - README
     v0.1.0 - 2021/6/7
-    Developed by: Morticai (META) (https://www.coregames.com/user/d1073dbcc404405cbef8ce728e53d380)
-    Developed by: Ooccoo (META) (https://www.coregames.com/user/a136c0d1d9454d539c9932354198fc29)
+
+    Created By:
+    Lead of Team META: Buckmonster (MANTICORE) (https://www.coregames.com/user/901b7628983c4c8db4282f24afeda57a)
+    Developer: Morticai (META) (https://www.coregames.com/user/d1073dbcc404405cbef8ce728e53d380)
+    Developer: Ooccoo (META) (https://www.coregames.com/user/a136c0d1d9454d539c9932354198fc29)
+    Artist: WindfallDrifter (META) (https://www.coregames.com/user/e730c40ae54d4c588658667927acc6d8)
+    Artist: AwkwardGameDev (META) (https://www.coregames.com/user/557d4f1ae17646579646dfd20dcb7b66)
 
 
     This package is a work in progress.
 
        Description:
     Meta Slots is a simple component that allows creators to add drag and drop Slot Machines to their projects.
-    Each Slot Machine probability can be tuned on a per Machine basis. 
+    Each Slot Machine payout can be tuned on a per Machine basis. 
     
     
     Setup
@@ -36,28 +41,28 @@
     Adding or Changing Reel Images
     ==============================
 
-    1. To add images to your slot, you first must upload the images to a live Core Game. The game can be a blank 
-    unlisted project, to better organize your images. When publishing the game, simply add your images as screenshots.
+        1. To add images to your slot, you first must upload the images to a live Core Game. The game can be a blank 
+        unlisted project, to better organize your images. When publishing the game, simply add your images as screenshots.
 
-    2. Once published, save the link somewhere it's easily accessible on your computer.
+        2. Once published, save the link somewhere it's easily accessible on your computer.
 
-    You should have a link such as:
-    https://www.coregames.com/games/1b3aa6/meta-portal-image-examples
+        You should have a link such as:
+        https://www.coregames.com/games/1b3aa6/meta-portal-image-examples
 
 
-    3. Copy Game ID info in the link to your clipboard such as:
-    1b3aa6/meta-portal-image-examples
+        3. Copy Game ID info in the link to your clipboard such as:
+        1b3aa6/meta-portal-image-examples
 
-    4. Under the Slot Primary Component > SLOT_DATABSE, you'll notice a few children named Fantasy, Western, Mecha, 
-    and Zombie by default. These are the theme names that will be used for your slot machines later. To create a new
-    theme, simply copy and paste one of the themes then simply rename it to your choosing.
+        4. Under the Slot Primary Component > SLOT_DATABSE, you'll notice a few children named Fantasy, Western, Mecha, 
+        and Zombie by default. These are the theme names that will be used for your slot machines later. To create a new
+        theme, simply copy and paste one of the themes then simply rename it to your choosing.
 
-    5. Expand the recently created Theme:
-    There will be five cards by default. Simply select all the cards and change the GamePortal custom property to the 
-    Game ID link you just copied. The value of the cards is based on their position in the theme. Jackpot / Wild cards 
-    should ALWAYS be the 5th card.
+        5. Expand the recently created Theme:
+        There will be five cards by default. Simply select all the cards and change the GamePortal custom property to the 
+        Game ID link you just copied. The value of the cards is based on their position in the theme. Jackpot / Wild cards 
+        should ALWAYS be the 5th card.
 
-    If your cards were uploaded out of order, the index can be changed using the ScreenshotIndex custom property.
+        If your cards were uploaded out of order, the index can be changed using the ScreenshotIndex custom property.
 
         
     Adjusting Slot Machine Settings
@@ -113,21 +118,21 @@
     Payouts & Odds
     ==============
     
-    These slot machines are set up to allow creators to easily adjust how "efficient" the machines are. The higher the odds,
-    the higher the payout players will get overtime.
+        These slot machines are set up to allow creators to easily adjust how "efficient" the machines are. The higher the odds,
+        the higher the payout players will get overtime.
 
-    Here are the multipliers and chances at a 1 probability. Payouts are based per pay line and there is 5 line total.
-    Card 1 - 2x multiplier ([5.6%] 7/125 chance)
-    Card 2 - 3x multiplier ([5.6%] 7/125 chance)
-    Card 3 - 4x multiplier ([5.6%] 7/125 chance)
-    Card 4 - 5x multiplier ([5.6%] 7/125 chance)
-    Card 5 - 125x multiplier ([0.8%] 1/125 chance)
+        Here are the multipliers and chances at a 1 probability. Payouts are based per pay line and there is 5 line total.
+        Card 1 - 2x multiplier ([5.6%] 7/125 chance)
+        Card 2 - 3x multiplier ([5.6%] 7/125 chance)
+        Card 3 - 4x multiplier ([5.6%] 7/125 chance)
+        Card 4 - 5x multiplier ([5.6%] 7/125 chance)
+        Card 5 - 125x multiplier ([0.8%] 1/125 chance)
 
-    Adjusting the efficiency will never change odds, just the payout.
-    For example, a Card 1 2x multiplier win with 90% efficiency will pay out 1.8x
+        Adjusting the efficiency will never change odds, just the payout.
+        For example, a Card 1 2x multiplier win with 90% efficiency will pay out 1.8x
 
-    The higher this value the more a machine will pay. 0.95 is default and means that the machine on average will payout 
-    95% of the bet amount over 1 million spins. This should never be set lower than 0.85 but has no upper limit cap.
+        The higher this value the more a machine will pay. 0.95 is default and means that the machine on average will payout 
+        95% of the bet amount over 1 million spins. This should never be set lower than 0.85 but has no upper limit cap.
 
 
     ]]--
