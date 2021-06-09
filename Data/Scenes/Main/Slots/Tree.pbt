@@ -94,11 +94,11 @@ Objects {
         }
         Overrides {
           Name: "cs:MinBet"
-          Int: 10
+          Int: 50
         }
         Overrides {
           Name: "cs:MaxBet"
-          Int: 100
+          Int: 500
         }
       }
     }
@@ -164,11 +164,11 @@ Objects {
         }
         Overrides {
           Name: "cs:MinBet"
-          Int: 10
+          Int: 50
         }
         Overrides {
           Name: "cs:MaxBet"
-          Int: 100
+          Int: 500
         }
       }
     }
@@ -218,11 +218,11 @@ Objects {
         }
         Overrides {
           Name: "cs:MinBet"
-          Int: 10
+          Int: 50
         }
         Overrides {
           Name: "cs:MaxBet"
-          Int: 100
+          Int: 500
         }
       }
     }
@@ -270,12 +270,12 @@ Objects {
           }
         }
         Overrides {
-          Name: "cs:MinBet"
-          Int: 10
+          Name: "cs:MaxBet"
+          Int: 500
         }
         Overrides {
-          Name: "cs:MaxBet"
-          Int: 100
+          Name: "cs:MinBet"
+          Int: 50
         }
       }
     }
@@ -377,11 +377,11 @@ Objects {
         }
         Overrides {
           Name: "cs:MinBet"
-          Int: 10
+          Int: 50
         }
         Overrides {
           Name: "cs:MaxBet"
-          Int: 100
+          Int: 500
         }
       }
     }
@@ -445,11 +445,11 @@ Objects {
         }
         Overrides {
           Name: "cs:MinBet"
-          Int: 10
+          Int: 50
         }
         Overrides {
           Name: "cs:MaxBet"
-          Int: 100
+          Int: 500
         }
       }
     }
@@ -513,11 +513,11 @@ Objects {
         }
         Overrides {
           Name: "cs:MinBet"
-          Int: 10
+          Int: 50
         }
         Overrides {
           Name: "cs:MaxBet"
-          Int: 100
+          Int: 500
         }
       }
     }
@@ -580,11 +580,11 @@ Objects {
         }
         Overrides {
           Name: "cs:MinBet"
-          Int: 10
+          Int: 50
         }
         Overrides {
           Name: "cs:MaxBet"
-          Int: 100
+          Int: 500
         }
       }
     }
@@ -631,12 +631,12 @@ Objects {
           }
         }
         Overrides {
-          Name: "cs:MinBet"
-          Int: 10
+          Name: "cs:MaxBet"
+          Int: 500
         }
         Overrides {
-          Name: "cs:MaxBet"
-          Int: 100
+          Name: "cs:MinBet"
+          Int: 50
         }
       }
     }
@@ -729,7 +729,7 @@ Objects {
         }
         Overrides {
           Name: "cs:MaxBet"
-          Int: 100
+          Int: 500
         }
         Overrides {
           Name: "Scale"
@@ -741,7 +741,7 @@ Objects {
         }
         Overrides {
           Name: "cs:MinBet"
-          Int: 10
+          Int: 50
         }
       }
     }
@@ -799,7 +799,7 @@ Objects {
         }
         Overrides {
           Name: "cs:MaxBet"
-          Int: 100
+          Int: 500
         }
         Overrides {
           Name: "Scale"
@@ -811,7 +811,7 @@ Objects {
         }
         Overrides {
           Name: "cs:MinBet"
-          Int: 10
+          Int: 50
         }
       }
     }
@@ -869,7 +869,7 @@ Objects {
         }
         Overrides {
           Name: "cs:MaxBet"
-          Int: 100
+          Int: 500
         }
         Overrides {
           Name: "Scale"
@@ -881,7 +881,7 @@ Objects {
         }
         Overrides {
           Name: "cs:MinBet"
-          Int: 10
+          Int: 50
         }
       }
     }
@@ -930,12 +930,12 @@ Objects {
           }
         }
         Overrides {
-          Name: "cs:MinBet"
-          Int: 10
+          Name: "cs:MaxBet"
+          Int: 500
         }
         Overrides {
-          Name: "cs:MaxBet"
-          Int: 100
+          Name: "cs:MinBet"
+          Int: 50
         }
       }
     }
@@ -1005,6 +1005,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 9707657401528900677
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:forceoff"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16527933051090480381
       value {
         Overrides {
@@ -1034,11 +1045,11 @@ Objects {
         }
         Overrides {
           Name: "cs:MinBet"
-          Int: 10
+          Int: 50
         }
         Overrides {
           Name: "cs:MaxBet"
-          Int: 100
+          Int: 500
         }
       }
     }
@@ -1087,11 +1098,11 @@ Objects {
         }
         Overrides {
           Name: "cs:MinBet"
-          Int: 10
+          Int: 50
         }
         Overrides {
           Name: "cs:MaxBet"
-          Int: 100
+          Int: 500
         }
       }
     }
@@ -1147,11 +1158,11 @@ Objects {
         }
         Overrides {
           Name: "cs:MinBet"
-          Int: 10
+          Int: 50
         }
         Overrides {
           Name: "cs:MaxBet"
-          Int: 100
+          Int: 500
         }
       }
     }
@@ -1199,12 +1210,12 @@ Objects {
           }
         }
         Overrides {
-          Name: "cs:MinBet"
-          Int: 10
+          Name: "cs:MaxBet"
+          Int: 500
         }
         Overrides {
-          Name: "cs:MaxBet"
-          Int: 100
+          Name: "cs:MinBet"
+          Int: 50
         }
       }
     }
@@ -1300,11 +1311,11 @@ Objects {
         }
         Overrides {
           Name: "cs:MinBet"
-          Int: 10
+          Int: 50
         }
         Overrides {
           Name: "cs:MaxBet"
-          Int: 100
+          Int: 500
         }
       }
     }
@@ -1362,11 +1373,11 @@ Objects {
         }
         Overrides {
           Name: "cs:MinBet"
-          Int: 10
+          Int: 50
         }
         Overrides {
           Name: "cs:MaxBet"
-          Int: 100
+          Int: 500
         }
       }
     }
@@ -1424,11 +1435,11 @@ Objects {
         }
         Overrides {
           Name: "cs:MinBet"
-          Int: 10
+          Int: 50
         }
         Overrides {
           Name: "cs:MaxBet"
-          Int: 100
+          Int: 500
         }
       }
     }
@@ -1478,11 +1489,11 @@ Objects {
         }
         Overrides {
           Name: "cs:MinBet"
-          Int: 10
+          Int: 50
         }
         Overrides {
           Name: "cs:MaxBet"
-          Int: 100
+          Int: 500
         }
       }
     }
@@ -1530,12 +1541,12 @@ Objects {
           }
         }
         Overrides {
-          Name: "cs:MinBet"
-          Int: 10
+          Name: "cs:MaxBet"
+          Int: 500
         }
         Overrides {
-          Name: "cs:MaxBet"
-          Int: 100
+          Name: "cs:MinBet"
+          Int: 50
         }
       }
     }

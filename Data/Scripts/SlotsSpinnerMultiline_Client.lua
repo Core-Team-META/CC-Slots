@@ -45,6 +45,7 @@ local GAME_INFO = script:GetCustomProperty("GameInfo"):WaitForObject()
 local SETTINGS = script:GetCustomProperty("Settings"):WaitForObject()
 local SLOT_CAM = script:GetCustomProperty("SlotCam"):WaitForObject()
 local WIN_LINE = script:GetCustomProperty("WinLine"):WaitForObject()
+local GLASS = script:GetCustomProperty("Glass"):WaitForObject()
 local SLOT = {}
 SLOT[1] = script:GetCustomProperty("Slot1"):WaitForObject()
 SLOT[2] = script:GetCustomProperty("Slot2"):WaitForObject()
@@ -150,6 +151,7 @@ local function Show()
         LOCAL_PLAYER:SetOverrideCamera(SLOT_CAM)
         LOCAL_PLAYER.isVisibleToSelf = false
         Events.Broadcast(API.Broadcasts.uiShow)
+        GLASS.visibility = Visibility.FORCE_OFF
     end
 end
 
@@ -162,6 +164,7 @@ local function Hide()
         LOCAL_PLAYER:ClearOverrideCamera()
         LOCAL_PLAYER.isVisibleToSelf = true
         Events.Broadcast(API.Broadcasts.uiHide)
+        GLASS.visibility = Visibility.FORCE_ON
     end
 end
 
