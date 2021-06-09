@@ -14452,16 +14452,15 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: 4.69174e-06
-            Y: -12.067605
-            Z: 164.982574
+            Y: -12.067606
+            Z: 163.406815
           }
           Rotation {
           }
           Scale {
             X: 0.928728
-            Y: 0.907345712
-            Z: 0.102257349
+            Y: 0.907345772
+            Z: 0.146744654
           }
         }
         ParentId: 9256365102679376898
@@ -15205,8 +15204,8 @@ Assets {
         Name: "Cube"
         Transform {
           Location {
-            Y: -4.96428585
-            Z: 155.903915
+            Y: -4.96428633
+            Z: 152.995605
           }
           Rotation {
             Roll: -12.3264771
@@ -15222,7 +15221,16 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 17035106728945461483
+              Id: 10184847056121543272
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.192
+              G: 0.192
+              B: 0.192
+              A: 1
             }
           }
         }

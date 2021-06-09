@@ -247,6 +247,18 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 16089120083956081436
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            Y: -4.96428585
+            Z: 155.903915
+          }
+        }
+      }
+    }
     TemplateAsset {
       Id: 13255042022413876274
     }
