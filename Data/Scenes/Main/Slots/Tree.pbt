@@ -100,6 +100,10 @@ Objects {
           Name: "cs:MaxBet"
           Int: 500
         }
+        Overrides {
+          Name: "cs:Name"
+          String: "Royal Flush"
+        }
       }
     }
     TemplateAsset {
@@ -170,6 +174,10 @@ Objects {
           Name: "cs:MaxBet"
           Int: 500
         }
+        Overrides {
+          Name: "cs:Name"
+          String: "Royal Flush"
+        }
       }
     }
     TemplateAsset {
@@ -224,6 +232,10 @@ Objects {
           Name: "cs:MaxBet"
           Int: 500
         }
+        Overrides {
+          Name: "cs:Name"
+          String: "Royal Flush"
+        }
       }
     }
     TemplateAsset {
@@ -276,6 +288,10 @@ Objects {
         Overrides {
           Name: "cs:MinBet"
           Int: 50
+        }
+        Overrides {
+          Name: "cs:Name"
+          String: "Royal Flush"
         }
       }
     }
