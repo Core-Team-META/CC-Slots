@@ -34,9 +34,7 @@ local LOCAL_PLAYER = Game.GetLocalPlayer()
 
 local ROOT = script:GetCustomProperty("ROOT"):WaitForObject()
 local SCREEN_GROUP = script:GetCustomProperty("ScreenGroup"):WaitForObject()
-local UI_CONTAINER = script:GetCustomProperty("UIContainer"):WaitForObject()
 local LOOT_CARD_TEMPLATE = script:GetCustomProperty("LootCardTemplate")
-local SPIN_BUTTON = script:GetCustomProperty("SpinButton"):WaitForObject()
 local BACKGROUND = script:GetCustomProperty("Background"):WaitForObject()
 local WIN_LINE_OBJECTS = script:GetCustomProperty("WinLinesObjects"):WaitForObject()
 local TRIGGER = script:GetCustomProperty("Trigger"):WaitForObject()
@@ -57,6 +55,8 @@ local WIN_LINES_AUDIO = AUDIO:GetCustomProperty("WinLinesAudio"):WaitForObject()
 local SLOT_SPIN_SOUND = AUDIO:GetCustomProperty("SlotSpinSound"):WaitForObject()
 local LOSS_SOUND = AUDIO:GetCustomProperty("LossSound"):WaitForObject()
 local INFO_CARDS = GAME_INFO:GetCustomProperty("Cards"):WaitForObject()
+local GLASS = script:GetCustomProperty("Glass"):WaitForObject()
+
 
 local NETWORKING = World.FindObjectByName("SLOT_NETWORKING")
 ------------------------------------------------------------------------------------------------------------------------
@@ -150,6 +150,7 @@ local function Show()
         LOCAL_PLAYER:SetOverrideCamera(SLOT_CAM)
         LOCAL_PLAYER.isVisibleToSelf = false
         Events.Broadcast(API.Broadcasts.uiShow)
+        GLASS.visibility = Visibility.FORCE_OFF
     end
 end
 
@@ -162,6 +163,7 @@ local function Hide()
         LOCAL_PLAYER:ClearOverrideCamera()
         LOCAL_PLAYER.isVisibleToSelf = true
         Events.Broadcast(API.Broadcasts.uiHide)
+        GLASS.visibility = Visibility.FORCE_ON
     end
 end
 
@@ -207,10 +209,7 @@ function Init()
     TRIGGER.interactionLabel = "Play " .. SLOT_NAME
     SLOT_CAM:SetRotationOffset(SLOT_CAM:GetWorldRotation())
 
-    -- Need to setup if check if creator has UI enabled
-    UI_CONTAINER.visibility = Visibility.FORCE_OFF
-
-    -- Force run each slot once, to allow portal images to load in
+     -- Force run each slot once, to allow portal images to load in
     Activate()
 end
 
@@ -538,12 +537,6 @@ function Tick(dt)
             WINNER_SOUND:Play()
             isWinner = false
         end
-    end
-
-    if LOCAL_PLAYER == currentPlayer and playerSpamPrevent and playerSpamPrevent > time() then
-        SPIN_BUTTON.isInteractable = false
-    elseif LOCAL_PLAYER == currentPlayer then
-        SPIN_BUTTON.isInteractable = true
     end
 end
 

@@ -5,4 +5,5 @@ Assets {
   TextAsset {
   }
   SerializationVersion: 87
+  DirectlyPublished: true
 }

@@ -130,24 +130,12 @@ Assets {
             Int: 1
           }
           Overrides {
-            Name: "cs:Reward"
-            Int: 2
+            Name: "cs:GamePortal:tooltip"
+            String: "GameID of a published game with the screenshots for this theme."
           }
           Overrides {
-            Name: "cs:isWild"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:Match2SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
-          }
-          Overrides {
-            Name: "cs:Match3SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
+            Name: "cs:ScreenshotIndex:tooltip"
+            String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
           }
         }
         Collidable_v2 {
@@ -189,24 +177,12 @@ Assets {
             Int: 2
           }
           Overrides {
-            Name: "cs:Reward"
-            Int: 3
+            Name: "cs:GamePortal:tooltip"
+            String: "GameID of a published game with the screenshots for this theme."
           }
           Overrides {
-            Name: "cs:isWild"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:Match2SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
-          }
-          Overrides {
-            Name: "cs:Match3SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
+            Name: "cs:ScreenshotIndex:tooltip"
+            String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
           }
         }
         Collidable_v2 {
@@ -248,24 +224,12 @@ Assets {
             Int: 3
           }
           Overrides {
-            Name: "cs:Reward"
-            Int: 4
+            Name: "cs:GamePortal:tooltip"
+            String: "GameID of a published game with the screenshots for this theme."
           }
           Overrides {
-            Name: "cs:isWild"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:Match2SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
-          }
-          Overrides {
-            Name: "cs:Match3SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
+            Name: "cs:ScreenshotIndex:tooltip"
+            String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
           }
         }
         Collidable_v2 {
@@ -307,24 +271,12 @@ Assets {
             Int: 4
           }
           Overrides {
-            Name: "cs:Reward"
-            Int: 5
+            Name: "cs:GamePortal:tooltip"
+            String: "GameID of a published game with the screenshots for this theme."
           }
           Overrides {
-            Name: "cs:isWild"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:Match2SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
-          }
-          Overrides {
-            Name: "cs:Match3SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
+            Name: "cs:ScreenshotIndex:tooltip"
+            String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
           }
         }
         Collidable_v2 {
@@ -366,24 +318,12 @@ Assets {
             Int: 5
           }
           Overrides {
-            Name: "cs:Reward"
-            Int: 20
+            Name: "cs:GamePortal:tooltip"
+            String: "GameID of a published game with the screenshots for this theme."
           }
           Overrides {
-            Name: "cs:isWild"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:Match2SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
-          }
-          Overrides {
-            Name: "cs:Match3SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
+            Name: "cs:ScreenshotIndex:tooltip"
+            String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
           }
         }
         Collidable_v2 {
@@ -458,24 +398,12 @@ Assets {
             Int: 1
           }
           Overrides {
-            Name: "cs:Reward"
-            Int: 15
+            Name: "cs:GamePortal:tooltip"
+            String: "GameID of a published game with the screenshots for this theme."
           }
           Overrides {
-            Name: "cs:isWild"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:Match2SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
-          }
-          Overrides {
-            Name: "cs:Match3SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
+            Name: "cs:ScreenshotIndex:tooltip"
+            String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
           }
         }
         Collidable_v2 {
@@ -517,24 +445,12 @@ Assets {
             Int: 2
           }
           Overrides {
-            Name: "cs:Reward"
-            Int: 25
+            Name: "cs:GamePortal:tooltip"
+            String: "GameID of a published game with the screenshots for this theme."
           }
           Overrides {
-            Name: "cs:isWild"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:Match2SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
-          }
-          Overrides {
-            Name: "cs:Match3SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
+            Name: "cs:ScreenshotIndex:tooltip"
+            String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
           }
         }
         Collidable_v2 {
@@ -576,24 +492,12 @@ Assets {
             Int: 3
           }
           Overrides {
-            Name: "cs:Reward"
-            Int: 50
+            Name: "cs:GamePortal:tooltip"
+            String: "GameID of a published game with the screenshots for this theme."
           }
           Overrides {
-            Name: "cs:isWild"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:Match2SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
-          }
-          Overrides {
-            Name: "cs:Match3SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
+            Name: "cs:ScreenshotIndex:tooltip"
+            String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
           }
         }
         Collidable_v2 {
@@ -635,24 +539,12 @@ Assets {
             Int: 4
           }
           Overrides {
-            Name: "cs:Reward"
-            Int: 100
+            Name: "cs:GamePortal:tooltip"
+            String: "GameID of a published game with the screenshots for this theme."
           }
           Overrides {
-            Name: "cs:isWild"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:Match2SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
-          }
-          Overrides {
-            Name: "cs:Match3SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
+            Name: "cs:ScreenshotIndex:tooltip"
+            String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
           }
         }
         Collidable_v2 {
@@ -694,24 +586,12 @@ Assets {
             Int: 5
           }
           Overrides {
-            Name: "cs:Reward"
-            Int: 250
+            Name: "cs:GamePortal:tooltip"
+            String: "GameID of a published game with the screenshots for this theme."
           }
           Overrides {
-            Name: "cs:isWild"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:Match2SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
-          }
-          Overrides {
-            Name: "cs:Match3SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
+            Name: "cs:ScreenshotIndex:tooltip"
+            String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
           }
         }
         Collidable_v2 {
@@ -786,24 +666,12 @@ Assets {
             Int: 1
           }
           Overrides {
-            Name: "cs:Reward"
-            Int: 15
+            Name: "cs:GamePortal:tooltip"
+            String: "GameID of a published game with the screenshots for this theme."
           }
           Overrides {
-            Name: "cs:isWild"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:Match2SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
-          }
-          Overrides {
-            Name: "cs:Match3SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
+            Name: "cs:ScreenshotIndex:tooltip"
+            String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
           }
         }
         Collidable_v2 {
@@ -845,24 +713,12 @@ Assets {
             Int: 2
           }
           Overrides {
-            Name: "cs:Reward"
-            Int: 25
+            Name: "cs:GamePortal:tooltip"
+            String: "GameID of a published game with the screenshots for this theme."
           }
           Overrides {
-            Name: "cs:isWild"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:Match2SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
-          }
-          Overrides {
-            Name: "cs:Match3SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
+            Name: "cs:ScreenshotIndex:tooltip"
+            String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
           }
         }
         Collidable_v2 {
@@ -904,24 +760,12 @@ Assets {
             Int: 3
           }
           Overrides {
-            Name: "cs:Reward"
-            Int: 50
+            Name: "cs:GamePortal:tooltip"
+            String: "GameID of a published game with the screenshots for this theme."
           }
           Overrides {
-            Name: "cs:isWild"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:Match2SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
-          }
-          Overrides {
-            Name: "cs:Match3SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
+            Name: "cs:ScreenshotIndex:tooltip"
+            String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
           }
         }
         Collidable_v2 {
@@ -963,24 +807,12 @@ Assets {
             Int: 4
           }
           Overrides {
-            Name: "cs:Reward"
-            Int: 100
+            Name: "cs:GamePortal:tooltip"
+            String: "GameID of a published game with the screenshots for this theme."
           }
           Overrides {
-            Name: "cs:isWild"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:Match2SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
-          }
-          Overrides {
-            Name: "cs:Match3SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
+            Name: "cs:ScreenshotIndex:tooltip"
+            String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
           }
         }
         Collidable_v2 {
@@ -1022,24 +854,12 @@ Assets {
             Int: 5
           }
           Overrides {
-            Name: "cs:Reward"
-            Int: 250
+            Name: "cs:GamePortal:tooltip"
+            String: "GameID of a published game with the screenshots for this theme."
           }
           Overrides {
-            Name: "cs:isWild"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:Match2SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
-          }
-          Overrides {
-            Name: "cs:Match3SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
+            Name: "cs:ScreenshotIndex:tooltip"
+            String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
           }
         }
         Collidable_v2 {
@@ -1114,24 +934,12 @@ Assets {
             Int: 1
           }
           Overrides {
-            Name: "cs:Reward"
-            Int: 15
+            Name: "cs:GamePortal:tooltip"
+            String: "GameID of a published game with the screenshots for this theme."
           }
           Overrides {
-            Name: "cs:isWild"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:Match2SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
-          }
-          Overrides {
-            Name: "cs:Match3SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
+            Name: "cs:ScreenshotIndex:tooltip"
+            String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
           }
         }
         Collidable_v2 {
@@ -1173,24 +981,12 @@ Assets {
             Int: 2
           }
           Overrides {
-            Name: "cs:Reward"
-            Int: 25
+            Name: "cs:GamePortal:tooltip"
+            String: "GameID of a published game with the screenshots for this theme."
           }
           Overrides {
-            Name: "cs:isWild"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:Match2SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
-          }
-          Overrides {
-            Name: "cs:Match3SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
+            Name: "cs:ScreenshotIndex:tooltip"
+            String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
           }
         }
         Collidable_v2 {
@@ -1232,24 +1028,12 @@ Assets {
             Int: 3
           }
           Overrides {
-            Name: "cs:Reward"
-            Int: 50
+            Name: "cs:GamePortal:tooltip"
+            String: "GameID of a published game with the screenshots for this theme."
           }
           Overrides {
-            Name: "cs:isWild"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:Match2SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
-          }
-          Overrides {
-            Name: "cs:Match3SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
+            Name: "cs:ScreenshotIndex:tooltip"
+            String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
           }
         }
         Collidable_v2 {
@@ -1291,24 +1075,12 @@ Assets {
             Int: 4
           }
           Overrides {
-            Name: "cs:Reward"
-            Int: 100
+            Name: "cs:GamePortal:tooltip"
+            String: "GameID of a published game with the screenshots for this theme."
           }
           Overrides {
-            Name: "cs:isWild"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:Match2SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
-          }
-          Overrides {
-            Name: "cs:Match3SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
+            Name: "cs:ScreenshotIndex:tooltip"
+            String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
           }
         }
         Collidable_v2 {
@@ -1350,24 +1122,12 @@ Assets {
             Int: 5
           }
           Overrides {
-            Name: "cs:Reward"
-            Int: 250
+            Name: "cs:GamePortal:tooltip"
+            String: "GameID of a published game with the screenshots for this theme."
           }
           Overrides {
-            Name: "cs:isWild"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:Match2SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
-          }
-          Overrides {
-            Name: "cs:Match3SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
+            Name: "cs:ScreenshotIndex:tooltip"
+            String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
           }
         }
         Collidable_v2 {
@@ -1386,7 +1146,7 @@ Assets {
       }
       Objects {
         Id: 10959589220120578754
-        Name: "Buck-Fantasy"
+        Name: "Royal Flush"
         Transform {
           Location {
           }
@@ -1442,24 +1202,12 @@ Assets {
             Int: 1
           }
           Overrides {
-            Name: "cs:Reward"
-            Int: 15
+            Name: "cs:GamePortal:tooltip"
+            String: "GameID of a published game with the screenshots for this theme."
           }
           Overrides {
-            Name: "cs:isWild"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:Match2SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
-          }
-          Overrides {
-            Name: "cs:Match3SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
+            Name: "cs:ScreenshotIndex:tooltip"
+            String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
           }
         }
         Collidable_v2 {
@@ -1501,24 +1249,12 @@ Assets {
             Int: 2
           }
           Overrides {
-            Name: "cs:Reward"
-            Int: 25
+            Name: "cs:GamePortal:tooltip"
+            String: "GameID of a published game with the screenshots for this theme."
           }
           Overrides {
-            Name: "cs:isWild"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:Match2SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
-          }
-          Overrides {
-            Name: "cs:Match3SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
+            Name: "cs:ScreenshotIndex:tooltip"
+            String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
           }
         }
         Collidable_v2 {
@@ -1560,24 +1296,12 @@ Assets {
             Int: 3
           }
           Overrides {
-            Name: "cs:Reward"
-            Int: 50
+            Name: "cs:GamePortal:tooltip"
+            String: "GameID of a published game with the screenshots for this theme."
           }
           Overrides {
-            Name: "cs:isWild"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:Match2SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
-          }
-          Overrides {
-            Name: "cs:Match3SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
+            Name: "cs:ScreenshotIndex:tooltip"
+            String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
           }
         }
         Collidable_v2 {
@@ -1619,24 +1343,12 @@ Assets {
             Int: 4
           }
           Overrides {
-            Name: "cs:Reward"
-            Int: 100
+            Name: "cs:GamePortal:tooltip"
+            String: "GameID of a published game with the screenshots for this theme."
           }
           Overrides {
-            Name: "cs:isWild"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:Match2SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
-          }
-          Overrides {
-            Name: "cs:Match3SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
+            Name: "cs:ScreenshotIndex:tooltip"
+            String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
           }
         }
         Collidable_v2 {
@@ -1678,24 +1390,12 @@ Assets {
             Int: 5
           }
           Overrides {
-            Name: "cs:Reward"
-            Int: 250
+            Name: "cs:GamePortal:tooltip"
+            String: "GameID of a published game with the screenshots for this theme."
           }
           Overrides {
-            Name: "cs:isWild"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:Match2SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
-          }
-          Overrides {
-            Name: "cs:Match3SFX"
-            AssetReference {
-              Id: 841534158063459245
-            }
+            Name: "cs:ScreenshotIndex:tooltip"
+            String: "The index number of the screenshot you\'d like to use for this card (1 - 5) which is based on the order of screenshots in your published project."
           }
         }
         Collidable_v2 {
@@ -1735,7 +1435,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ExitKeybind"
-            String: "ability_feet"
+            String: "ability_extra_33"
           }
           Overrides {
             Name: "cs:isSpinBindEnabled"
@@ -1778,6 +1478,7 @@ Assets {
         }
         ParentId: 5160064929479587706
         ChildIds: 5566472275323412406
+        ChildIds: 6714687697151372593
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -1835,6 +1536,56 @@ Assets {
         }
       }
       Objects {
+        Id: 6714687697151372593
+        Name: "SlotTriggerManager_Client"
+        Transform {
+          Location {
+            X: -94
+            Y: 37150
+            Z: -476
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17470521874740068874
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Networking"
+            ObjectReference {
+              SubObjectId: 6296637947646741831
+            }
+          }
+          Overrides {
+            Name: "cs:API"
+            AssetReference {
+              Id: 16952813177389789887
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 11925167746311812497
+          }
+        }
+      }
+      Objects {
         Id: 6296637947646741831
         Name: "SLOT_NETWORKING"
         Transform {
@@ -1875,4 +1626,5 @@ Assets {
     }
   }
   SerializationVersion: 87
+  DirectlyPublished: true
 }

@@ -15,7 +15,7 @@ Assets {
             Z: 1.2196
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 17410893842474904431
         ChildIds: 4619243534078928043
         ChildIds: 3859701370247625868
         UnregisteredParameters {
@@ -338,18 +338,6 @@ Assets {
             }
           }
           Overrides {
-            Name: "cs:UIContainer"
-            ObjectReference {
-              SelfId: 7637385122368510837
-            }
-          }
-          Overrides {
-            Name: "cs:SpinButton"
-            ObjectReference {
-              SelfId: 17198093286223507946
-            }
-          }
-          Overrides {
             Name: "cs:Background"
             ObjectReference {
               SubObjectId: 13195869507009132058
@@ -407,6 +395,12 @@ Assets {
             Name: "cs:GameInfo"
             ObjectReference {
               SubObjectId: 11527983988166021610
+            }
+          }
+          Overrides {
+            Name: "cs:Glass"
+            ObjectReference {
+              SubObjectId: 6455303877519074826
             }
           }
         }
@@ -1585,7 +1579,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceon"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:forceoff"
@@ -4598,6 +4592,7 @@ Assets {
         ChildIds: 217188583254953572
         ChildIds: 7544062050853755740
         ChildIds: 3644507099326525366
+        ChildIds: 6455303877519074826
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -8013,6 +8008,67 @@ Assets {
         }
         Relevance {
           Value: "mc:eproxyrelevance:high"
+        }
+      }
+      Objects {
+        Id: 6455303877519074826
+        Name: "Glass"
+        Transform {
+          Location {
+            X: 2.98292792e-12
+            Y: 15.6317701
+            Z: 108.33683
+          }
+          Rotation {
+            Roll: -10.0212212
+          }
+          Scale {
+            X: 0.896828949
+            Y: 0.0502998978
+            Z: 1.00000155
+          }
+        }
+        ParentId: 13150363741481466830
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 7625382804772008570
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 1
+              G: 0.20266664
+              B: 0.0799999833
+              A: 0.535
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12095835209017042614
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
         }
       }
       Objects {
@@ -19217,7 +19273,6 @@ Assets {
           }
         }
         ParentId: 8897597681986499364
-        ChildIds: 6455303877519074826
         ChildIds: 14567642578785163365
         ChildIds: 13010425568554352312
         Collidable_v2 {
@@ -19234,66 +19289,6 @@ Assets {
         }
         Folder {
           IsGroup: true
-        }
-      }
-      Objects {
-        Id: 6455303877519074826
-        Name: "Cube"
-        Transform {
-          Location {
-            Y: 15.6317768
-            Z: 108.33683
-          }
-          Rotation {
-            Roll: -10.0212097
-          }
-          Scale {
-            X: 0.89682889
-            Y: 0.0502998978
-            Z: 1.00000155
-          }
-        }
-        ParentId: 15494482374473133804
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 7625382804772008570
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 1
-              G: 0.20266664
-              B: 0.0799999833
-              A: 0.535
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 12095835209017042614
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
         }
       }
       Objects {
@@ -22135,6 +22130,15 @@ Assets {
       }
     }
     Assets {
+      Id: 7625382804772008570
+      Name: "Glass 01 (no distortion)"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_basic_glass_001"
+      }
+    }
+    Assets {
       Id: 7441880884784901044
       Name: "Emissive Glow Transparent"
       PlatformAssetType: 2
@@ -22294,15 +22298,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_prop_urb_barrier_caution_002"
-      }
-    }
-    Assets {
-      Id: 7625382804772008570
-      Name: "Glass 01 (no distortion)"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_basic_glass_001"
       }
     }
     Assets {
@@ -22644,4 +22639,5 @@ Assets {
     }
   }
   SerializationVersion: 87
+  DirectlyPublished: true
 }

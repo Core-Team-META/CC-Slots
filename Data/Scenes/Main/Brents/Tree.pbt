@@ -121,7 +121,6 @@ Objects {
     }
   }
   ParentId: 4675025735314061901
-  ChildIds: 12763635413446526155
   ChildIds: 3995736805583456395
   ChildIds: 11420464408199061256
   Collidable_v2 {
@@ -932,95 +931,6 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
-    }
-  }
-}
-Objects {
-  Id: 12763635413446526155
-  Name: "SlotTriggerManager_Client"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15254095453415006981
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Networking"
-      ObjectReference {
-        SelfId: 13505434300183323837
-        SubObjectId: 6296637947646741831
-        InstanceId: 15814154774213744170
-        TemplateId: 6894717358296652576
-      }
-    }
-    Overrides {
-      Name: "cs:API"
-      AssetReference {
-        Id: 16952813177389789887
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 11925167746311812497
-    }
-  }
-}
-Objects {
-  Id: 7152836542363496704
-  Name: "SlotsPlayerManagerMultiline_Server"
-  Transform {
-    Location {
-      X: -183
-      Y: -489
-      Z: -15
-    }
-    Rotation {
-      Yaw: -1.02452814e-05
-    }
-    Scale {
-      X: 1.2196
-      Y: 1.2196
-      Z: 1.2196
-    }
-  }
-  ParentId: 4675025735314061901
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 12108206478747560337
     }
   }
 }

@@ -19,7 +19,7 @@ Objects {
   ChildIds: 10029497814753878703
   ChildIds: 17390311630592559610
   ChildIds: 10615916000806978389
-  ChildIds: 2357391506206219164
+  ChildIds: 15814154774213744170
   ChildIds: 3877198441100997701
   ChildIds: 4675025735314061901
   ChildIds: 2669417942466758110
@@ -134,16 +134,9 @@ Objects {
   }
 }
 Objects {
-  Id: 2357391506206219164
+  Id: 15814154774213744170
   Name: "Slot Primary Component"
   Transform {
-    Location {
-      X: 94
-      Y: -37150
-      Z: 476
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -157,22 +150,41 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Random Spinner"
-  }
-  InstanceHistory {
-    SelfId: 2357391506206219164
-    SubobjectId: 14752091706979971686
-    InstanceId: 15814154774213744170
-    TemplateId: 6894717358296652576
-    WasRoot: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 10959589220120578754
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Royal Flush"
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14752091706979971686
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Slot Primary Component"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 94
+            Y: -37150
+            Z: 476
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6894717358296652576
+    }
   }
 }
 Objects {
