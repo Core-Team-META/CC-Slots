@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17903305572686483779
+  Name: "Text 01: L"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_011"
+  }
+}
+Assets {
   Id: 17045302299202821513
   Name: "Text 01: D"
   PlatformAssetType: 1
@@ -215,6 +224,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12458108810976213911
+  Name: "Text 01: P"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_015"
+  }
+}
+Assets {
   Id: 12095835209017042614
   Name: "Cube"
   PlatformAssetType: 1
@@ -302,6 +320,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F5_Text_011"
+  }
+}
+Assets {
+  Id: 10228758159025391522
+  Name: "Text 01: O"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_014"
   }
 }
 Assets {
@@ -491,15 +518,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_gen_whitebox_stairs_001_150cm"
-  }
-}
-Assets {
-  Id: 4999763247751813303
-  Name: "Text 01: M"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F1_Text_012"
   }
 }
 Assets {
