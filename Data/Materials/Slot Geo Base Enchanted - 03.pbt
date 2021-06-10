@@ -2,7 +2,7 @@ Assets {
   Id: 6715465747292432635
   Name: "Slot Geo Base Enchanted - 03"
   PlatformAssetType: 13
-  SerializationVersion: 85
+  SerializationVersion: 87
   CustomMaterialAsset {
     BaseMaterialId: 6234051314750017581
     ParameterOverrides {

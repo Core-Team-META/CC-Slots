@@ -15,7 +15,7 @@ Assets {
             Z: 1.25
           }
         }
-        ParentId: 11512474634510021189
+        ParentId: 4781671109827199097
         ChildIds: 5638041414068837082
         UnregisteredParameters {
           Overrides {
@@ -40,6 +40,12 @@ Assets {
             Name: "cs:Border"
             ObjectReference {
               SubObjectId: 2718084433118800432
+            }
+          }
+          Overrides {
+            Name: "cs:Frame"
+            ObjectReference {
+              SubObjectId: 1197113152451169446
             }
           }
         }
@@ -77,6 +83,7 @@ Assets {
         ChildIds: 8783069019403876811
         ChildIds: 1047623518569743366
         ChildIds: 2718084433118800432
+        ChildIds: 1197113152451169446
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -378,6 +385,67 @@ Assets {
           }
         }
       }
+      Objects {
+        Id: 1197113152451169446
+        Name: "Frame"
+        Transform {
+          Location {
+            X: 13.0817223
+            Z: 316.930786
+          }
+          Rotation {
+            Pitch: 90
+          }
+          Scale {
+            X: 5.7666254
+            Y: 5.12588787
+            Z: 0.213578716
+          }
+        }
+        ParentId: 5638041414068837082
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 12827530473249900764
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 3903849135214504619
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
     }
     Assets {
       Id: 17413793273080869839
@@ -406,10 +474,28 @@ Assets {
         AssetId: "fxma_opaque_emissive"
       }
     }
+    Assets {
+      Id: 3903849135214504619
+      Name: "Container - Rectangle Thin 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_container_rectangle_thin_ref"
+      }
+    }
+    Assets {
+      Id: 12827530473249900764
+      Name: "Emissive Glow Opaque"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "fxma_opaque_emissive"
+      }
+    }
     PrimaryAssetId {
       AssetType: "None"
       AssetId: "None"
     }
   }
-  SerializationVersion: 85
+  SerializationVersion: 87
 }

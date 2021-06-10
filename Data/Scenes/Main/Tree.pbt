@@ -15,16 +15,14 @@ Objects {
     }
   }
   ChildIds: 2016695731019551545
-  ChildIds: 17429109800966978246
+  ChildIds: 16394812562420525242
+  ChildIds: 10029497814753878703
   ChildIds: 17390311630592559610
   ChildIds: 10615916000806978389
-  ChildIds: 9904375601217783865
-  ChildIds: 8453249901324603248
-  ChildIds: 10029497814753878703
+  ChildIds: 15814154774213744170
   ChildIds: 3877198441100997701
   ChildIds: 4675025735314061901
   ChildIds: 2669417942466758110
-  ChildIds: 15899737562429904580
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -37,38 +35,6 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
-  }
-}
-Objects {
-  Id: 15899737562429904580
-  Name: "Kurtis"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Kurtis"
   }
 }
 Objects {
@@ -168,13 +134,9 @@ Objects {
   }
 }
 Objects {
-  Id: 10029497814753878703
-  Name: "Town Geo"
+  Id: 15814154774213744170
+  Name: "Slot Primary Component"
   Transform {
-    Location {
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -188,103 +150,41 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Town Geo"
-  }
-}
-Objects {
-  Id: 8453249901324603248
-  Name: "Slot Networking"
-  Transform {
-    Location {
-      X: 94
-      Y: -37150
-      Z: 476
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Random Spinner"
-  }
-  InstanceHistory {
-    SelfId: 17797198791261122129
-    SubobjectId: 5713667807401402765
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
-    WasRoot: true
-  }
-}
-Objects {
-  Id: 9904375601217783865
-  Name: "SLOT_DATABASE"
-  Transform {
-    Location {
-      X: 94
-      Y: -37150
-      Z: 476
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Slots"
-      ObjectReference {
-        SelfId: 688037899985773358
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 10959589220120578754
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Royal Flush"
+        }
       }
     }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "LOOT_DATABASE"
-  }
-  InstanceHistory {
-    SelfId: 2001868220419527220
-    SubobjectId: 11709161199393332712
-    InstanceId: 17771080832798645400
-    TemplateId: 14767819289351633414
+    ParameterOverrideMap {
+      key: 14752091706979971686
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Slot Primary Component"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 94
+            Y: -37150
+            Z: 476
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6894717358296652576
+    }
   }
 }
 Objects {
@@ -355,10 +255,44 @@ Objects {
   }
 }
 Objects {
-  Id: 17429109800966978246
-  Name: "Spawn Point"
+  Id: 10029497814753878703
+  Name: "Environment"
   Transform {
     Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Town Geo"
+  }
+}
+Objects {
+  Id: 16394812562420525242
+  Name: "Spawn Points"
+  Transform {
+    Location {
+      X: -1078
+      Y: -717
       Z: 115
     }
     Rotation {
@@ -370,6 +304,105 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
+  ChildIds: 17429109800966978246
+  ChildIds: 4752946518672690872
+  ChildIds: 11868088348151088341
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 11868088348151088341
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      Y: -12
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16394812562420525242
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 1
+    PlayerScaleMultiplier: 1
+  }
+}
+Objects {
+  Id: 4752946518672690872
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      Y: 212
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16394812562420525242
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 1
+    PlayerScaleMultiplier: 1
+  }
+}
+Objects {
+  Id: 17429109800966978246
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      Y: -200
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16394812562420525242
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -417,6 +450,7 @@ Objects {
       ChatMode {
         Value: "mc:echatmode:teamandall"
       }
+      EnablePlayModeProfiler: true
       ChatSettings {
         ChatMode {
         }

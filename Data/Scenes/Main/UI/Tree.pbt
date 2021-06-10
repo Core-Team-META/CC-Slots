@@ -20,7 +20,6 @@ Objects {
   ParentId: 10615916000806978389
   ChildIds: 6427085408687910965
   ChildIds: 2494581935139453393
-  ChildIds: 17759079554322843417
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -34,51 +33,6 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   NetworkContext {
-  }
-}
-Objects {
-  Id: 17759079554322843417
-  Name: "\"Digital Horizons\" Music Construction Kit (Layers) 01"
-  Transform {
-    Location {
-      X: 513
-      Y: 36876
-      Z: -310.999939
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3069512251355977405
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 3547494299462493723
-    }
-    TeamSettings {
-    }
-    AudioBP {
-      AutoPlay: true
-      Repeat: true
-      Volume: 0.2
-      Falloff: 3600
-      Radius: 1200
-    }
   }
 }
 Objects {
@@ -271,6 +225,12 @@ Objects {
         SelfId: 4695308851505568589
       }
     }
+    Overrides {
+      Name: "cs:UIContainer"
+      ObjectReference {
+        SelfId: 7637385122368510837
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -326,6 +286,7 @@ Objects {
       ContentType {
         Value: "mc:ecanvascontenttype:dynamic"
       }
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -385,6 +346,7 @@ Objects {
       }
     }
     Panel {
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -533,6 +495,7 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Panel {
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -1074,6 +1037,7 @@ Objects {
       }
     }
     Panel {
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {

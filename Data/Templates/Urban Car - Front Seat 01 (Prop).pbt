@@ -236,5 +236,5 @@ Assets {
       AssetId: "Urban_Car_-_Front_Seat_01__Prop_"
     }
   }
-  SerializationVersion: 85
+  SerializationVersion: 87
 }

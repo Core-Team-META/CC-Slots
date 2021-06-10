@@ -2,7 +2,7 @@ Assets {
   Id: 7810507510651988848
   Name: "Western Wood Planks Patio"
   PlatformAssetType: 13
-  SerializationVersion: 85
+  SerializationVersion: 87
   CustomMaterialAsset {
     BaseMaterialId: 16305133500265942150
     ParameterOverrides {

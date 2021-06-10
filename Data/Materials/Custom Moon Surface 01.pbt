@@ -2,7 +2,7 @@ Assets {
   Id: 13814366727595047276
   Name: "Custom Moon Surface 01_zombie"
   PlatformAssetType: 13
-  SerializationVersion: 85
+  SerializationVersion: 87
   CustomMaterialAsset {
     BaseMaterialId: 3440096382190002983
     ParameterOverrides {

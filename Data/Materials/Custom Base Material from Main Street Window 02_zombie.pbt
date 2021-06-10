@@ -2,7 +2,7 @@ Assets {
   Id: 9481208513353350308
   Name: "Custom Base Material from Main Street Window 02_zombie"
   PlatformAssetType: 13
-  SerializationVersion: 85
+  SerializationVersion: 87
   CustomMaterialAsset {
     BaseMaterialId: 5035746317476685436
     ParameterOverrides {

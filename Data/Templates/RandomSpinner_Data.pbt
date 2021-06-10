@@ -26,11 +26,19 @@ Assets {
             Float: 0
           }
           Overrides {
+            Name: "cs:BetAmount"
+            Int: 0
+          }
+          Overrides {
             Name: "cs:playerId:isrep"
             Bool: true
           }
           Overrides {
             Name: "cs:spinTime:isrep"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:BetAmount:isrep"
             Bool: true
           }
         }
@@ -59,5 +67,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 85
+  SerializationVersion: 87
 }

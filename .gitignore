@@ -14,6 +14,7 @@ Screenshots/
 # the "You aren't authorized" message
 # No need to synchronize
 PublishData/
+PublishData/PublishConfig.pbt
 
 # Folder created when you export templates from a game project
 # No need to synchronize
