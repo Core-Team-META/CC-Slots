@@ -104,6 +104,10 @@ Objects {
           Name: "cs:Name"
           String: "Royal Flush"
         }
+        Overrides {
+          Name: "cs:Efficiency"
+          Float: 1.03
+        }
       }
     }
     TemplateAsset {
@@ -178,6 +182,10 @@ Objects {
           Name: "cs:Name"
           String: "Royal Flush"
         }
+        Overrides {
+          Name: "cs:Efficiency"
+          Float: 1.03
+        }
       }
     }
     TemplateAsset {
@@ -236,6 +244,10 @@ Objects {
           Name: "cs:Name"
           String: "Royal Flush"
         }
+        Overrides {
+          Name: "cs:Efficiency"
+          Float: 1.03
+        }
       }
     }
     TemplateAsset {
@@ -292,6 +304,10 @@ Objects {
         Overrides {
           Name: "cs:Name"
           String: "Royal Flush"
+        }
+        Overrides {
+          Name: "cs:Efficiency"
+          Float: 1.03
         }
       }
     }
@@ -399,6 +415,10 @@ Objects {
           Name: "cs:MaxBet"
           Int: 500
         }
+        Overrides {
+          Name: "cs:Efficiency"
+          Float: 1.03
+        }
       }
     }
     TemplateAsset {
@@ -466,6 +486,10 @@ Objects {
         Overrides {
           Name: "cs:MaxBet"
           Int: 500
+        }
+        Overrides {
+          Name: "cs:Efficiency"
+          Float: 1.03
         }
       }
     }
@@ -535,6 +559,10 @@ Objects {
           Name: "cs:MaxBet"
           Int: 500
         }
+        Overrides {
+          Name: "cs:Efficiency"
+          Float: 1.03
+        }
       }
     }
     TemplateAsset {
@@ -602,6 +630,10 @@ Objects {
           Name: "cs:MaxBet"
           Int: 500
         }
+        Overrides {
+          Name: "cs:Efficiency"
+          Float: 1.03
+        }
       }
     }
     TemplateAsset {
@@ -653,6 +685,10 @@ Objects {
         Overrides {
           Name: "cs:MinBet"
           Int: 50
+        }
+        Overrides {
+          Name: "cs:Efficiency"
+          Float: 1.03
         }
       }
     }
@@ -759,6 +795,10 @@ Objects {
           Name: "cs:MinBet"
           Int: 50
         }
+        Overrides {
+          Name: "cs:Efficiency"
+          Float: 1.03
+        }
       }
     }
     TemplateAsset {
@@ -828,6 +868,10 @@ Objects {
         Overrides {
           Name: "cs:MinBet"
           Int: 50
+        }
+        Overrides {
+          Name: "cs:Efficiency"
+          Float: 1.03
         }
       }
     }
@@ -899,6 +943,10 @@ Objects {
           Name: "cs:MinBet"
           Int: 50
         }
+        Overrides {
+          Name: "cs:Efficiency"
+          Float: 1.03
+        }
       }
     }
     TemplateAsset {
@@ -952,6 +1000,10 @@ Objects {
         Overrides {
           Name: "cs:MinBet"
           Int: 50
+        }
+        Overrides {
+          Name: "cs:Efficiency"
+          Float: 1.03
         }
       }
     }
@@ -1067,6 +1119,10 @@ Objects {
           Name: "cs:MaxBet"
           Int: 500
         }
+        Overrides {
+          Name: "cs:Efficiency"
+          Float: 1.03
+        }
       }
     }
     TemplateAsset {
@@ -1119,6 +1175,10 @@ Objects {
         Overrides {
           Name: "cs:MaxBet"
           Int: 500
+        }
+        Overrides {
+          Name: "cs:Efficiency"
+          Float: 1.03
         }
       }
     }
@@ -1180,6 +1240,10 @@ Objects {
           Name: "cs:MaxBet"
           Int: 500
         }
+        Overrides {
+          Name: "cs:Efficiency"
+          Float: 1.03
+        }
       }
     }
     TemplateAsset {
@@ -1232,6 +1296,10 @@ Objects {
         Overrides {
           Name: "cs:MinBet"
           Int: 50
+        }
+        Overrides {
+          Name: "cs:Efficiency"
+          Float: 1.03
         }
       }
     }
@@ -1333,6 +1401,10 @@ Objects {
           Name: "cs:MaxBet"
           Int: 500
         }
+        Overrides {
+          Name: "cs:Efficiency"
+          Float: 1.03
+        }
       }
     }
     TemplateAsset {
@@ -1394,6 +1466,10 @@ Objects {
         Overrides {
           Name: "cs:MaxBet"
           Int: 500
+        }
+        Overrides {
+          Name: "cs:Efficiency"
+          Float: 1.03
         }
       }
     }
@@ -1457,6 +1533,10 @@ Objects {
           Name: "cs:MaxBet"
           Int: 500
         }
+        Overrides {
+          Name: "cs:Efficiency"
+          Float: 1.03
+        }
       }
     }
     TemplateAsset {
@@ -1511,6 +1591,10 @@ Objects {
           Name: "cs:MaxBet"
           Int: 500
         }
+        Overrides {
+          Name: "cs:Efficiency"
+          Float: 1.03
+        }
       }
     }
     TemplateAsset {
@@ -1563,6 +1647,14 @@ Objects {
         Overrides {
           Name: "cs:MinBet"
           Int: 50
+        }
+        Overrides {
+          Name: "cs:Efficiency"
+          Float: 1.03
+        }
+        Overrides {
+          Name: "cs:IsDevMode"
+          Bool: false
         }
       }
     }
