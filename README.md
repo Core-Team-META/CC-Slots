@@ -15,8 +15,8 @@ A simple component that allows creators to add drag and drop Slot Machines to th
 
 **This package is a work in progress.**
 
-Meta Slots is a simple component that allows creators to add drag and drop Slot Machines to their projects.
-Each Slot Machine payout can be tuned on a per Machine basis.
+META Slots is a simple component that allows creators to add drag and drop Slot Machines to their projects.
+Each Slot Machine payout can be tuned on a per machine basis.
 
 ## Setup
 
